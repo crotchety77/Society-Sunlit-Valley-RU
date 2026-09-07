@@ -1219,11 +1219,11 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:needle_bobber",
-    Text.translatable("item.society.needle_bobber.description").gray()
+    Text.translatable("tooltip.society.needle_bobber")
   );
   tooltip.add(
     "society:net_bobber",
-    Text.translatable("item.society.net_bobber.description").gray()
+    Text.translatable("tooltip.society.net_bobber")
   );
   tooltip.add(
     "domesticationinnovation:collar_tag",
@@ -1324,4 +1324,22 @@ ItemEvents.tooltip((tooltip) => {
     ]);
   });
 
+  // Aquaculture Fishing Rods & Hooks
+  [
+    { item: "aquaculture:iron_fishing_rod", key: "tooltip.aquaculture.iron_fishing_rod" },
+    { item: "aquaculture:gold_fishing_rod", key: "tooltip.aquaculture.gold_fishing_rod" },
+    { item: "aquaculture:neptunium_fishing_rod", key: "tooltip.aquaculture.neptunium_fishing_rod" },
+    { item: "netherdepthsupgrade:lava_fishing_rod", key: "tooltip.netherdepthsupgrade.lava_fishing_rod" },
+    { item: "aquaculture:iron_hook", key: "tooltip.aquaculture.iron_hook" },
+    { item: "aquaculture:gold_hook", key: "tooltip.aquaculture.gold_hook" },
+    { item: "aquaculture:diamond_hook", key: "tooltip.aquaculture.diamond_hook" },
+    { item: "aquaculture:redstone_hook", key: "tooltip.aquaculture.redstone_hook" },
+    { item: "aquaculture:nether_star_hook", key: "tooltip.aquaculture.nether_star_hook" },
+  ].forEach((entry) => {
+    tooltip.add(entry.item, [
+      Text.translatable(entry.key)
+    ]);
+  });
+
 });
+

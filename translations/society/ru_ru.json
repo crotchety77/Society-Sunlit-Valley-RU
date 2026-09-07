@@ -1132,8 +1132,8 @@
   "item.society.death_liquid.description": "глупая прямолинейная вода",
   "item.society.treasure_totem.description": "Призывает кольцо удачных мест для раскопок вокруг вас",
   "item.society.bubble_totem.description": "Призывает кольцо удачных мест для рыбалки вокруг вас",
-  "item.society.needle_bobber.description": "+5 к качеству Иридия при успешном улове",
-  "item.society.net_bobber.description": "Утраивает количество нерыбной добычи на 3",
+  "item.society.needle_bobber.description": "§cПри рыбалке в Незере даёт +5 дополнительной рыбы за каждый улов.§r",
+  "item.society.net_bobber.description": "§7Удваивает количество выловленных предметов (не рыбы).\n§cВ Незере утраивает количество добываемого Незер-желе.§r",
   "item.society.collar_tag.description": "Можно зачаровать и дать питомцу, чтобы наделить его особыми способностями.",
   "item.society.pet_bed_white.description": "Питомцы будут возрождаться здесь на следующее утро.\nЧтобы назначить питомца, поместите его сверху, пока не появятся символы ZZZ.",
   "item.society.drum.description": "Приказывает близлежащим животным стоять, следовать или бродить.",
@@ -2069,5 +2069,16 @@
   "tooltip.dew_drop_watering_cans.iron_watering_can": "Зажмите §6ПКМ§7 для полива линии §e1x3 блока§7.",
   "tooltip.dew_drop_watering_cans.gold_watering_can": "Зажмите §6ПКМ§7 для полива линии §e1x5 блоков§7.",
   "tooltip.dew_drop_watering_cans.diamond_watering_can": "Зажмите §6ПКМ§7 для полива области §e3x3 блока§7.",
-  "tooltip.dew_drop_watering_cans.netherite_watering_can": "Зажмите §6ПКМ§7 для полива области §e5x5 блоков§7."
+  "tooltip.dew_drop_watering_cans.netherite_watering_can": "Зажмите §6ПКМ§7 для полива области §e5x5 блоков§7.",
+  "tooltip.aquaculture.iron_fishing_rod": "§7Поддерживает установку крючка, лески, поплавка и наживки.\n§eАвтоматически улучшается при рыбалке (до Приманки IV и Везучего рыбака VI).§r",
+  "tooltip.aquaculture.gold_fishing_rod": "§6Ускоренно повышает чары при рыбалке (до Приманки IV и Везучего рыбака VI).§r",
+  "tooltip.aquaculture.neptunium_fishing_rod": "§eМаксимальная скорость автопрокачки чар удочки (до 10%% шанса в дождь).§r",
+  "tooltip.netherdepthsupgrade.lava_fishing_rod": "§cЕдинственная удочка, позволяющая ловить в лаве.§r\n§eАвтоматически улучшается при рыбалке (до Приманки IV и Везучего рыбака VI).§r\n§7Несовместима с Ящиком для снастей (крючки/лески). Поддерживает только поплавки.§r",
+  "tooltip.aquaculture.iron_hook": "§720%% шанс не потратить прочность удочки.§r\n§650%% шанс дополнительно выловить 4–16 шт. наживки для крабовых ловушек.§r",
+  "tooltip.aquaculture.gold_hook": "§e+1 к уровню «Морской удачи» (повышает шанс ценной добычи и снижает мусор).§r",
+  "tooltip.aquaculture.diamond_hook": "§b50%% шанс не потратить прочность удочки.§r\n§625%% шанс дополнительно выловить 1–4 шт. элитной крабовой наживки.§r",
+  "tooltip.aquaculture.redstone_hook": "§cУвеличивает окно времени на подсечку рыбы до 3,5 сек.§r\n§610%% шанс дополнительно выловить Морское или Речное желе.§r",
+  "tooltip.aquaculture.nether_star_hook": "§d50%% сохранение прочности удочки, +1 к уровню «Морской удачи».§r\n§64%% шанс дополнительно выловить Тайник с магическими реликвиями.§r",
+  "tooltip.society.net_bobber": "§7Удваивает количество выловленных предметов (не рыбы).\n§cВ Незере утраивает количество добываемого Незер-желе.§r",
+  "tooltip.society.needle_bobber": "§cПри рыбалке в Незере даёт +5 дополнительной рыбы за каждый улов.§r"
 }

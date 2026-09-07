@@ -1,15 +1,16 @@
-# Задача: Разбор и аудит крючков Aquaculture 2 (task_aquaculture_hooks)
+# Задача: Полный аудит и подсказки системы рыбалки (task_aquaculture_hooks)
 
-**Мод:** Aquaculture 2 (`Aquaculture-1.20.1-2.5.7.jar`)  
-**Область:** Все рыболовные крючки (`aquaculture:*_hook`), их скрытые параметры, формулы вероятностей и визуальные подсказки.
+**Моды:** Aquaculture 2, Crabber's Delight, Stardew Fishing, Society KubeJS  
+**Область:** Удочки, 15 крючков, лески, приманки, крабовые ловушки, поплавки, KubeJS-триггеры, пределы зачарований (Hard Caps) и игровые подсказки.
 
 ---
 
 ## 🎯 Цели задачи:
-1. **Глубокий технический аудит (Level 1 & Level 2):**
-   * Извлечь точные параметры всех крючков из байткода `Hooks.class`, `Hook.class`, `HookItem.class`.
-   * Определить: прочность (шанс сохранения прочности удочки), удачу (Luck), дальность заброса (Weight), окно поклёвки (Catchable window), шанс двойного улова, звуки поклёвки и поддерживаемые жидкости (Вода / Лава).
+1. **Глубокий технический аудит всей механики:**
+   * Проверить байткод Java-классов модов (`Hooks`, `HookItem`, `AquaFishingRodItem`, `BaitItem`, `CrabTrapBlockEntity`).
+   * Проверить KubeJS-скрипты сборки (`fishingRodLeveling.js`, `fishingLoot.js`, `fishingSkills.js`, `baitMaker.js`, `modifyItems.js`).
+   * Зафиксировать точные формулы, скрытые шансы, дропы, лимиты прокачки (Lure IV, Luck of the Sea VI) в едином файле [MECHANICS-AUDIT.md](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/task_aquaculture_hooks/docs/MECHANICS-AUDIT.md).
 2. **Создание файла согласования `new_translate.md`:**
-   * Сформировать Блок 1 (визуальный макет в игре) и Блок 2 (точные строки JSON для `translations/mods/aquaculture.json` и `translations/society/ru_ru.json`).
+   * Сформировать Блок 1 (визуальный макет в игре) и Блок 2 (точные строки JSON и подсказок для `addTooltips.js` и `translations/`).
 3. **Скрипт синхронизации и физической верификации `apply_and_sync.py`:**
    * Автоматическое применение изменений и проверка физических файлов в `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\`.

@@ -60,6 +60,10 @@ def update_project_files(mod_dict, tooltips_dict):
     # Обновление translations/society/ru_ru.json
     with open(SOCIETY_RU_FILE, "r", encoding="utf-8") as f:
         soc_ru = json.load(f)
+    # Удаляем устаревшие ключи леек, если их больше нет в new_translate
+    for k in list(soc_ru.keys()):
+        if k.startswith("tooltip.dew_drop_watering_cans.") and k not in tooltips_dict:
+            del soc_ru[k]
     for k, v in tooltips_dict.items():
         soc_ru[k] = v
     with open(SOCIETY_RU_FILE, "w", encoding="utf-8") as f:
@@ -80,8 +84,7 @@ def update_project_files(mod_dict, tooltips_dict):
     { item: "dew_drop_watering_cans:netherite_watering_can", key: "tooltip.dew_drop_watering_cans.netherite_watering_can" },
   ].forEach((can) => {
     tooltip.add(can.item, [
-      Text.translatable(can.key).gray(),
-      Text.translatable("tooltip.dew_drop_watering_cans.common_refill").darkGray()
+      Text.translatable(can.key).gray()
     ]);
   });
 """

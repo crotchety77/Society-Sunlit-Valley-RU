@@ -1320,8 +1320,7 @@ ItemEvents.tooltip((tooltip) => {
     { item: "dew_drop_watering_cans:netherite_watering_can", key: "tooltip.dew_drop_watering_cans.netherite_watering_can" },
   ].forEach((can) => {
     tooltip.add(can.item, [
-      Text.translatable(can.key).gray(),
-      Text.translatable("tooltip.dew_drop_watering_cans.common_refill").darkGray()
+      Text.translatable(can.key).gray()
     ]);
   });
 

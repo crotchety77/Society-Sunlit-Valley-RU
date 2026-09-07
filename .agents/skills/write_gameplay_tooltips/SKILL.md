@@ -230,6 +230,18 @@ ItemEvents.tooltip((tooltip) => {
 
 ---
 
+### 8.1. Правило синхронизации основного файла addTooltips.js
+
+В сборке общий скрипт подсказок хранится в репозитории по пути:  
+`game_data/client_scripts/tooltips/addTooltips.js`.
+
+При добавлении общих тултипов или `tooltip.addAdvanced` в этот файл агент ОБЯЗАН:
+1. **Редактировать исходник в репозитории:** Изменения ВСЕГДА вносятся в `game_data/client_scripts/tooltips/addTooltips.js`.
+2. **Запрет редактирования только файла игры:** Если изменить только файл в `D:\ModrinthApp\...\addTooltips.js`, при следующем запуске `sync_all_to_game.js` он будет перезаписан старой версией из `game_data/`.
+3. **Автоматическая синхронизация:** Запуск `node sync_all_to_game.js` копирует `game_data/.../addTooltips.js` в игру и гарантирует целостность.
+
+---
+
 ### 9. Защита от дублирования файлов скриптов (Anti-Duplicate Guard)
 
 KubeJS загружает все скрипты из `kubejs/client_scripts/` **рекурсивно**.

@@ -34,7 +34,6 @@
 ```text
 §fИридиевая лейка§r
 §7Зажмите §6ПКМ§7 для полива области §e5x5 блоков§7.§r
-§6Работает даже в Незере!§r
 ```
 
 ---
@@ -59,6 +58,6 @@
   "tooltip.dew_drop_watering_cans.iron_watering_can": "Зажмите §6ПКМ§7 для полива линии §e1x3 блока§7.",
   "tooltip.dew_drop_watering_cans.gold_watering_can": "Зажмите §6ПКМ§7 для полива линии §e1x5 блоков§7.",
   "tooltip.dew_drop_watering_cans.diamond_watering_can": "Зажмите §6ПКМ§7 для полива области §e3x3 блока§7.",
-  "tooltip.dew_drop_watering_cans.netherite_watering_can": "Зажмите §6ПКМ§7 для полива области §e5x5 блоков§7.\n§6Работает даже в Незере!§r"
+  "tooltip.dew_drop_watering_cans.netherite_watering_can": "Зажмите §6ПКМ§7 для полива области §e5x5 блоков§7."
 }
 ```

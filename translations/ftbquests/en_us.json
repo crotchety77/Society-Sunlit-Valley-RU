@@ -1658,10 +1658,5 @@
   "ftbquests.loot_table.8921602476353446055.title": "Villager Home - Trader",
   "ftbquests.loot_table.9002246533416223198.title": "Artisan Machine",
   "ftbquests.loot_table.9032317954688779283.title": "Villager Home - Librarian",
-  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description4": "&6★ Gift Categories (100 pts = 1 ♥, max 500):&r\n• &d💖 Loved:&r &a+40 pts&r &7(nearly half a heart)&r\n• &b👍 Liked:&r &a+25 pts&r &7(quarter heart)&r\n• &f😐 Neutral:&r &a+10 pts&r\n• &c👎 Disliked:&r &c-15 pts&r\n• &4💔 Hated:&r &4-30 pts&r",
-  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description5": "&6★ Universal Loved (+40 for all):&r\n&ePrismatic Shard&r, &eRabbit's Foot&r, &eOolong Tea&r, &eSunlit Pearl&r, &eJellie Wine&r, &eGnome&r, &eBowl of Soul&r, &ePearl Block&r.",
-  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description6": "&6★ Rewards at ♥5 Hearts:&r\nAt max friendship, villagers give unique &eSkill Books&r (&bBanker&r, &bMarket&r, &bLibrarian&r) and rare artifacts!",
-  "ftbquests.chapter.iii__advanced_farming.quest263CCA4D2EAF2629.description4": "★ Ideal Butterfly Farm:\n\nKeep pairs of 2 individuals on 7-8 flower types within 4 blocks (100% drop chance, 25% egg chance every 5 minutes). Space different pairs >8-10 blocks apart.",
-  "ftbquests.chapter.iii__advanced_farming.quest263CCA4D2EAF2629.description5": "★ Genetics & Breeding:\n\nCrossbreeding different species combines index numbers. Rarity cap is min(Rarity A, Rarity B) - 1. Offspring size = average parent size + 0..0.5 bonus.",
   "ftbquests.chapter.iii__advanced_farming.quest632578AFE8A0D12D.description4": "To identify a Slime's breed and stats, use a &6Slime Inspector&r!"
 }

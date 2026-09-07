@@ -2064,5 +2064,11 @@
   "block.society.caterpillar_box": "Инкубатор для гусениц",
   "tooltip.society.seed_maker.shift_1": "Позволяет добывать семена со §eзвёздным качеством§7. Посадка таких семян значительно повышает шанс собрать §eзолотой§7 и §bиридиевый§7 урожай.",
   "tooltip.society.seed_maker.shift_2": "При загрузке культур разного качества (например, 2 золотые + 1 обычная) итоговые семена получат §cминимальный§7 уровень качества.",
-  "tooltip.society.seed_maker.shift_3": "Может быть улучшен §6Древней шестернёй§7, давая 5%% шанс получить семена §6Древнего плода§7."
+  "tooltip.society.seed_maker.shift_3": "Может быть улучшен §6Древней шестернёй§7, давая 5%% шанс получить семена §6Древнего плода§7.",
+  "tooltip.dew_drop_watering_cans.copper_watering_can": "Поливает 1 блок пашни перед собой.",
+  "tooltip.dew_drop_watering_cans.iron_watering_can": "Зажмите §6ПКМ§7 для полива линии §e1x3 блока§7.",
+  "tooltip.dew_drop_watering_cans.gold_watering_can": "Зажмите §6ПКМ§7 для полива линии §e1x5 блоков§7.",
+  "tooltip.dew_drop_watering_cans.diamond_watering_can": "Зажмите §6ПКМ§7 для полива области §e3x3 блока§7.",
+  "tooltip.dew_drop_watering_cans.netherite_watering_can": "Зажмите §6ПКМ§7 для полива области §e5x5 блоков§7.\n§6Работает даже в Незере!§r",
+  "tooltip.dew_drop_watering_cans.common_refill": "ПКМ по воде для наполнения (25%% шанс ускорения роста культур)"
 }

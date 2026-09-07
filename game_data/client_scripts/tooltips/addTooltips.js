@@ -1311,4 +1311,18 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("quark:diamond_heart", [
     Text.translatable("tooltip.society.diamond_heart.biomancy")
   ]);
+  // Dew Drop Watering Cans
+  [
+    { item: "dew_drop_watering_cans:copper_watering_can", key: "tooltip.dew_drop_watering_cans.copper_watering_can" },
+    { item: "dew_drop_watering_cans:iron_watering_can", key: "tooltip.dew_drop_watering_cans.iron_watering_can" },
+    { item: "dew_drop_watering_cans:gold_watering_can", key: "tooltip.dew_drop_watering_cans.gold_watering_can" },
+    { item: "dew_drop_watering_cans:diamond_watering_can", key: "tooltip.dew_drop_watering_cans.diamond_watering_can" },
+    { item: "dew_drop_watering_cans:netherite_watering_can", key: "tooltip.dew_drop_watering_cans.netherite_watering_can" },
+  ].forEach((can) => {
+    tooltip.add(can.item, [
+      Text.translatable(can.key).gray(),
+      Text.translatable("tooltip.dew_drop_watering_cans.common_refill").darkGray()
+    ]);
+  });
+
 });

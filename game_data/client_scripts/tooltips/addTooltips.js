@@ -721,6 +721,17 @@ ItemEvents.tooltip((tooltip) => {
       ]);
     }
   });
+  tooltip.addAdvanced("society:seed_maker", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.seed_maker.shift_1").gray());
+      text.add(Text.translatable("tooltip.society.seed_maker.shift_2").gray());
+      text.add(Text.translatable("tooltip.society.seed_maker.shift_3").gray());
+    } else {
+      text.add([
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  });
   tooltip.add(
     "meadow:cheese_form",
     Text.translatable("tooltip.society.cheese_form").gray()

@@ -1,6 +1,6 @@
 # Очередь локализации модов (Приоритет игрового процесса)
 
-> **Всего активных модов в очереди:** 143 | **Завершено:** 19 | **Технических/библиотек:** 73
+> **Всего активных модов в очереди:** 141 | **Завершено:** 22 | **Технических/библиотек:** 73
 
 Нумерация строго соответствует **[GAMEPLAY_PRIORITY_AUDIT.md](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/GAMEPLAY_PRIORITY_AUDIT.md)** (по объёму непереведённого контента для игрока: от крупнейших пропусков к единичным строкам).
 
@@ -34,7 +34,7 @@
 | **24** | [`24_geckolib`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/24_geckolib) | `geckolib` | 🎮 Контент | **31** (0.0%) | **21** | 0 | `geckolib-forge-1.20.1-4.8.jar` |
 | **25** | [`25_justhammers`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/25_justhammers) | `justhammers` | 🎮 Контент | **31** (3.1%) | **11** | 18 | `justhammers-forge-2.0.3+mc1.20.1.jar` |
 | **26** | [`26_everycomp`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/26_everycomp) | `everycomp` | 🎮 Контент | **30** (97.0%) | **41** | 0 | `everycomp-1.20-2.9.24-forge.jar` |
-| **27** | [`27_sewingkit`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/27_sewingkit) | `sewingkit` | 🎮 Контент | **29** (0.0%) | **9** | 13 | `SewingKit-1.20.1-1.8.1.jar` |
+| **27** | [~~`27_sewingkit`~~ $\rightarrow$ `completed`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/completed/translate_sewingkit) | `sewingkit` | 🎮 Контент | **29** (0.0%) | **9** | 13 | `SewingKit-1.20.1-1.8.1.jar` |
 | **28** | [`28_dew_drop_farmland_growth`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/28_dew_drop_farmland_growth) | `dew_drop_farmland_growth` | 🎮 Контент | **28** (0.0%) | **27** | 0 | `dew_drop_farmland_growth-9.0.jar` |
 | **29** | [`29_create`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/29_create) | `create` | 🎮 Контент | **27** (99.3%) | **883** | 22 | `create-1.20.1-6.0.8.jar` |
 | **30** | [`30_portable_blueprints`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/30_portable_blueprints) | `portable_blueprints` | 🎮 Контент | **26** (84.0%) | **16** | 0 | `portable_blueprints-v2.0.11-mv1.20.1.jar` |
@@ -97,7 +97,7 @@
 | **87** | [`87_lootr`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/87_lootr) | `lootr` | 🎮 Контент | **4** (92.2%) | **7** | 0 | `lootr-forge-1.20-0.7.35.90.jar` |
 | **88** | [`88_plonk`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/88_plonk) | `plonk` | 🎮 Контент | **4** (0.0%) | **1** | 0 | `plonk-1.20.1-10.0.5-forge.jar` |
 | **89** | [`89_rainbowoaks`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/89_rainbowoaks) | `rainbowoaks` | 🎮 Контент | **4** (0.0%) | **4** | 0 | `rainbowoaks-forge-1.20-1.0.0.jar` |
-| **90** | [`90_sawmill`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/90_sawmill) | `sawmill` | 🎮 Контент | **4** (42.9%) | **1** | 0 | `sawmill-1.20-1.4.10.jar` |
+| **90** | [~~`90_sawmill`~~ $\rightarrow$ `completed`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/completed/translate_sawmill) | `sawmill` | 🎮 Контент | **4** (42.9%) | **1** | 0 | `sawmill-1.20-1.4.10.jar` |
 | **91** | [`91_easy_npc`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/91_easy_npc) | `easy_npc` | 🎮 Контент | **3** (96.0%) | **2** | 7 | `easy_npc-forge-1.20.1-6.1.0.jar` |
 | **92** | [`92_gamediscs`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/92_gamediscs) | `gamediscs` | 🎮 Контент | **3** (92.9%) | **8** | 5 | `gamediscs-0.3.2-forge.jar` |
 | **93** | [`93_herbalbrews`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/93_herbalbrews) | `herbalbrews` | 🎮 Контент | **3** (97.6%) | **45** | 0 | `letsdo-herbalbrews-forge-1.0.12.jar` |
@@ -182,3 +182,6 @@
 | `create_central_kitchen` | [`completed/translate_create_central_kitchen`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/completed/translate_create_central_kitchen) | 🟢 **100%** |
 | `bountiful` | [`completed/translate_bountiful`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/completed/translate_bountiful) | 🟢 **100%** |
 | `legendarycreatures` | [`completed/translate_legendarycreatures`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/completed/translate_legendarycreatures) | 🟢 **100%** |
+| `sewingkit` | [`completed/translate_sewingkit`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/completed/translate_sewingkit) | 🟢 **100%** |
+| `dew_drop_watering_cans` | [`completed/translate_dew_drop_watering_cans`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/completed/translate_dew_drop_watering_cans) | 🟢 **100%** |
+| `sawmill` | [`completed/translate_sawmill`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/Translate_Mods/completed/translate_sawmill) | 🟢 **100%** |

@@ -392,4 +392,38 @@
 | **Bountiful Fertilizer** | **Изобильное удобрение** | `item.dew_drop_farmland_growth.bountiful_fertilizer` | +25% к валовому сбору, принудительно 0★ качество |
 | **Garden Pot** | **Садовый горшок** | `block.dew_drop_farmland_growth.garden_pot` | Круглогодичное выращивание культур в помещении |
 
+---
+
+## 25. Швейное дело (SewingKit)
+
+| Английский (EN) | Русский (RU) | ID предмета / блока | Назначение / Механика |
+| :--- | :--- | :--- | :--- |
+| **Sewing Station / Table** | **Швейный стол** | `block.sewingkit.sewing_station` | Станок для пошива свитеров, шапок и текстиля |
+| **Sewing Station with Drawers** | **Швейный стол с ящиками** | `block.sewingkit.storing_sewing_station` | Швейный стол со встроенным хранилищем материалов |
+| **Iron Sewing Needle** | **Швейная игла** | `item.sewingkit.iron_sewing_needle` | Базовый инструмент для шитья одежды |
+| **Sewing** | **Шитьё** | `jei.category.sewingkit.sewing` | Процесс и вкладка рецептов в JEI / EMI |
+| **Tailor** | **Портной** | `entity.minecraft.villager.sewingkit.tailor` | Профессия деревенского жителя |
+
+---
+
+## 26. Лейки и полив (Dew Drop Watering Cans)
+
+| Английский (EN) | Русский (RU) | ID предмета | Назначение / Механика |
+| :--- | :--- | :--- | :--- |
+| **Copper Watering Can** | **Медная лейка** | `item.dew_drop_watering_cans.copper_watering_can` | Стартовая лейка: полив 1 блока, прочность 12 |
+| **Iron Watering Can** | **Железная лейка** | `item.dew_drop_watering_cans.iron_watering_can` | Полив линии 1×3 блока при зажатии ПКМ, прочность 24 |
+| **Gold Watering Can** | **Золотая лейка** | `item.dew_drop_watering_cans.gold_watering_can` | Полив линии 1×5 блоков при зажатии ПКМ, прочность 54 |
+| **Diamond Watering Can** | **Алмазная лейка** | `item.dew_drop_watering_cans.diamond_watering_can` | Полив области 3×3 блока при зажатии ПКМ, прочность 90 |
+| **Iridium / Netherite Watering Can** | **Иридиевая лейка** | `item.dew_drop_watering_cans.netherite_watering_can` | Полив области 5×5 блоков, мгновенный откат, работает в Незере |
+
+---
+
+## 27. Лесопилка (Sawmill)
+
+| Английский (EN) | Русский (RU) | ID предмета / блока | Назначение / Механика |
+| :--- | :--- | :--- | :--- |
+| **Sawmill** | **Лесопилка** | `block.sawmill.sawmill` | Станок для распила бревен и древесных блоков |
+| **Sawing / Wood Cutting** | **Обработка на лесопилке** | `sawmill.category.wood_cutting` | Процесс и вкладка рецептов распиловки в JEI / EMI |
+
+
 

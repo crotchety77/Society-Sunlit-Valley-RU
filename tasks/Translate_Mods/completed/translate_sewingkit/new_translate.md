@@ -82,7 +82,7 @@
   "item.sewingkit.wool_pants": "Шерстяные штаны",
   "item.sewingkit.wool_roll": "Рулон шерсти",
   "item.sewingkit.wool_shirt": "Шерстяная рубашка",
-  "item.sewingkit.wool_shoes": "Шерстяные туфли",
+  "item.sewingkit.wool_shoes": "Шерстяные ботинки",
   "item.sewingkit.wool_trim": "Шерстяная кайма",
   "jei.category.sewingkit.sewing": "Шитьё",
   "tab.sewing_kit": "Швейный набор",

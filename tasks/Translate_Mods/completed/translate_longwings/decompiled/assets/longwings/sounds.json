@@ -1,0 +1,96 @@
+{
+  "entity.generic.slurp": {
+    "category": "block",
+    "subtitle": "longwings.subtitles.generic.slurp",
+    "sounds": [
+      { "name": "mob/wandering_trader/drink_milk1", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/wandering_trader/drink_milk2", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/wandering_trader/drink_milk3", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/wandering_trader/drink_milk4", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/wandering_trader/drink_milk5", "pitch": 1.0, "volume": 1.0, "stream": false }
+
+    ]
+  },
+  "entity.butterfly.flap": {
+    "category": "ambient",
+    "sounds": [
+      { "name": "mob/enderdragon/wings1", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings2", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings3", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings4", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings5", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings6", "pitch": 1.0, "volume": 1.0, "stream": false }
+
+    ]
+  },
+  "entity.moth.flap": {
+    "category": "ambient",
+    "sounds": [
+      { "name": "mob/enderdragon/wings1", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings2", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings3", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings4", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings5", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/enderdragon/wings6", "pitch": 1.0, "volume": 1.0, "stream": false }
+
+    ]
+  },
+  "item.catching_net.catch": {
+    "category": "ambient",
+    "subtitle": "longwings.subtitles.catching_net.catch",
+    "sounds": [
+      { "name": "item/bundle/drop_contents1", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents1", "pitch": 0.95, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents2", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents2", "pitch": 0.95, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents3", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents3", "pitch": 0.95, "volume": 1.0, "stream": false }
+
+    ]
+  },
+  "item.catching_net.full": {
+    "category": "ambient",
+    "subtitle": "longwings.subtitles.catching_net.full",
+    "sounds": [
+      { "name": "item/bundle/drop_contents1", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents1", "pitch": 0.95, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents2", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents2", "pitch": 0.95, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents3", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "item/bundle/drop_contents3", "pitch": 0.95, "volume": 1.0, "stream": false }
+    ]
+  },
+  "item.bowl.fill": {
+    "category": "block",
+    "subtitle": "longwings.item.bowl.fill",
+    "sounds": [
+      { "name": "entity/boat/paddle_water1", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "entity/boat/paddle_water2", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "entity/boat/paddle_water3", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "entity/boat/paddle_water4", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "entity/boat/paddle_water5", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "entity/boat/paddle_water6", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "entity/boat/paddle_water7", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "entity/boat/paddle_water8", "pitch": 1.0, "volume": 1.0, "stream": false }
+    ]
+  },
+  "item.bowl.empty": {
+    "category": "block",
+    "subtitle": "longwings.item.bowl.empty",
+    "sounds": [
+      { "name": "mob/dolphin/splash1", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/dolphin/splash2", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "mob/dolphin/splash3", "pitch": 1.0, "volume": 1.0, "stream": false }
+    ]
+  },
+  "block.brew.slide": {
+    "category": "block",
+    "subtitle": "longwings.block.brew.slide",
+    "sounds": [
+      { "name": "block/honeyblock/slide1", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "block/honeyblock/slide2", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "block/honeyblock/slide3", "pitch": 1.0, "volume": 1.0, "stream": false },
+      { "name": "block/honeyblock/slide4", "pitch": 1.0, "volume": 1.0, "stream": false }
+    ]
+  }
+}

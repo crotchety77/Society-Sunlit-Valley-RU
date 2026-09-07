@@ -1,0 +1,41 @@
+Compiled from "SeedSnifferEffect.java"
+public class com.cicada.longwings.effect.SeedSnifferEffect extends net.minecraft.world.effect.MobEffect {
+  protected com.cicada.longwings.effect.SeedSnifferEffect(net.minecraft.world.effect.MobEffectCategory, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #9                  // Method net/minecraft/world/effect/MobEffect."<init>":(Lnet/minecraft/world/effect/MobEffectCategory;I)V
+       6: return
+
+  public void m_6742_(net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #19                 // Method net/minecraft/world/effect/MobEffect.m_6742_:(Lnet/minecraft/world/entity/LivingEntity;I)V
+       6: return
+
+  public boolean m_6584_(int, int);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public void m_6386_(net.minecraft.world.entity.LivingEntity, net.minecraft.world.entity.ai.attributes.AttributeMap, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iload_3
+       4: invokespecial #30                 // Method net/minecraft/world/effect/MobEffect.m_6386_:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/attributes/AttributeMap;I)V
+       7: return
+
+  public void m_6385_(net.minecraft.world.entity.LivingEntity, net.minecraft.world.entity.ai.attributes.AttributeMap, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iload_3
+       4: invokespecial #37                 // Method net/minecraft/world/effect/MobEffect.m_6385_:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/attributes/AttributeMap;I)V
+       7: return
+}

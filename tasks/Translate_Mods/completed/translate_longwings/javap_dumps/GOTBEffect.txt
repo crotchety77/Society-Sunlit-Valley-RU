@@ -1,0 +1,142 @@
+Compiled from "GOTBEffect.java"
+public class com.cicada.longwings.effect.GOTBEffect extends net.minecraft.world.effect.MobEffect {
+  protected com.cicada.longwings.effect.GOTBEffect(net.minecraft.world.effect.MobEffectCategory, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #9                  // Method net/minecraft/world/effect/MobEffect."<init>":(Lnet/minecraft/world/effect/MobEffectCategory;I)V
+       6: return
+
+  public void m_6742_(net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_1
+       1: invokevirtual #23                 // Method net/minecraft/world/entity/LivingEntity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+       4: getfield      #29                 // Field net/minecraft/world/phys/Vec3.f_82479_:D
+       7: dstore_3
+       8: aload_1
+       9: invokevirtual #23                 // Method net/minecraft/world/entity/LivingEntity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      12: getfield      #32                 // Field net/minecraft/world/phys/Vec3.f_82480_:D
+      15: dstore        5
+      17: aload_1
+      18: invokevirtual #23                 // Method net/minecraft/world/entity/LivingEntity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      21: getfield      #35                 // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      24: dstore        7
+      26: aload_1
+      27: getstatic     #41                 // Field com/cicada/longwings/effect/LongwingsEffects.GOTB:Lnet/minecraft/world/effect/MobEffect;
+      30: invokevirtual #45                 // Method net/minecraft/world/entity/LivingEntity.m_21023_:(Lnet/minecraft/world/effect/MobEffect;)Z
+      33: ifeq          147
+      36: aload_1
+      37: getstatic     #41                 // Field com/cicada/longwings/effect/LongwingsEffects.GOTB:Lnet/minecraft/world/effect/MobEffect;
+      40: invokevirtual #49                 // Method net/minecraft/world/entity/LivingEntity.m_21124_:(Lnet/minecraft/world/effect/MobEffect;)Lnet/minecraft/world/effect/MobEffectInstance;
+      43: invokevirtual #55                 // Method net/minecraft/world/effect/MobEffectInstance.m_19557_:()I
+      46: istore        9
+      48: aload_1
+      49: invokevirtual #59                 // Method net/minecraft/world/entity/LivingEntity.m_6047_:()Z
+      52: ifeq          76
+      55: dload         5
+      57: dconst_0
+      58: dcmpl
+      59: ifle          68
+      62: ldc2_w        #60                 // double 0.18d
+      65: goto          71
+      68: ldc2_w        #62                 // double -0.20999999999999996d
+      71: dstore        10
+      73: goto          107
+      76: dload         5
+      78: dconst_0
+      79: dcmpl
+      80: ifle          102
+      83: dload         5
+      85: ldc2_w        #64                 // double 0.3799999952316284d
+      88: dcmpg
+      89: ifge          98
+      92: ldc2_w        #66                 // double 0.25d
+      95: goto          105
+      98: dconst_0
+      99: goto          105
+     102: ldc2_w        #68                 // double -0.050000011920928955d
+     105: dstore        10
+     107: iload         9
+     109: sipush        200
+     112: if_icmpgt     127
+     115: dload         10
+     117: iload         9
+     119: i2d
+     120: ldc2_w        #70                 // double 200.0d
+     123: ddiv
+     124: dmul
+     125: dstore        10
+     127: aload_1
+     128: dload_3
+     129: dload         5
+     131: dconst_1
+     132: dload         10
+     134: dadd
+     135: dmul
+     136: ldc2_w        #72                 // double 1.2d
+     139: invokestatic  #79                 // Method java/lang/Math.min:(DD)D
+     142: dload         7
+     144: invokevirtual #83                 // Method net/minecraft/world/entity/LivingEntity.m_20334_:(DDD)V
+     147: aload_1
+     148: aload_1
+     149: invokevirtual #59                 // Method net/minecraft/world/entity/LivingEntity.m_6047_:()Z
+     152: ifeq          159
+     155: fconst_0
+     156: goto          166
+     159: aload_1
+     160: getfield      #87                 // Field net/minecraft/world/entity/LivingEntity.f_19789_:F
+     163: ldc           #88                 // float 1.3f
+     165: fdiv
+     166: putfield      #87                 // Field net/minecraft/world/entity/LivingEntity.f_19789_:F
+     169: aload_0
+     170: aload_1
+     171: iload_2
+     172: invokespecial #90                 // Method net/minecraft/world/effect/MobEffect.m_6742_:(Lnet/minecraft/world/entity/LivingEntity;I)V
+     175: return
+
+  public boolean m_6584_(int, int);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public void m_6386_(net.minecraft.world.entity.LivingEntity, net.minecraft.world.entity.ai.attributes.AttributeMap, int);
+    Code:
+       0: aload_1
+       1: aload_1
+       2: invokevirtual #108                // Method net/minecraft/world/entity/LivingEntity.m_6103_:()F
+       5: iconst_4
+       6: iload_3
+       7: iconst_1
+       8: iadd
+       9: imul
+      10: i2f
+      11: fsub
+      12: invokevirtual #112                // Method net/minecraft/world/entity/LivingEntity.m_7911_:(F)V
+      15: aload_0
+      16: aload_1
+      17: aload_2
+      18: iload_3
+      19: invokespecial #114                // Method net/minecraft/world/effect/MobEffect.m_6386_:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/attributes/AttributeMap;I)V
+      22: return
+
+  public void m_6385_(net.minecraft.world.entity.LivingEntity, net.minecraft.world.entity.ai.attributes.AttributeMap, int);
+    Code:
+       0: aload_1
+       1: aload_1
+       2: invokevirtual #108                // Method net/minecraft/world/entity/LivingEntity.m_6103_:()F
+       5: iconst_4
+       6: iload_3
+       7: iconst_1
+       8: iadd
+       9: imul
+      10: i2f
+      11: fadd
+      12: invokevirtual #112                // Method net/minecraft/world/entity/LivingEntity.m_7911_:(F)V
+      15: aload_0
+      16: aload_1
+      17: aload_2
+      18: iload_3
+      19: invokespecial #121                // Method net/minecraft/world/effect/MobEffect.m_6385_:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/attributes/AttributeMap;I)V
+      22: return
+}

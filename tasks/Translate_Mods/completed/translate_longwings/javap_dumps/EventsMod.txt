@@ -1,0 +1,94 @@
+Compiled from "EventsMod.java"
+public class com.cicada.longwings.event.EventsMod {
+  public com.cicada.longwings.event.EventsMod();
+    Code:
+       0: aload_0
+       1: invokespecial #66                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void addAttributesEvent(net.minecraftforge.event.entity.EntityAttributeCreationEvent);
+    Code:
+       0: aload_0
+       1: getstatic     #77                 // Field com/cicada/longwings/entity/LongwingsEntityTypes.BUTTERFLY:Lnet/minecraft/world/entity/EntityType;
+       4: invokestatic  #81                 // Method com/cicada/longwings/entity/ButterflyEntity.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+       7: invokevirtual #87                 // Method net/minecraftforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+      10: aload_0
+      11: getstatic     #90                 // Field com/cicada/longwings/entity/LongwingsEntityTypes.MOTH:Lnet/minecraft/world/entity/EntityType;
+      14: invokestatic  #81                 // Method com/cicada/longwings/entity/ButterflyEntity.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+      17: invokevirtual #87                 // Method net/minecraftforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+      20: return
+
+  public static void spawnPlacementRegister(net.minecraftforge.event.entity.SpawnPlacementRegisterEvent);
+    Code:
+       0: aload_0
+       1: getstatic     #77                 // Field com/cicada/longwings/entity/LongwingsEntityTypes.BUTTERFLY:Lnet/minecraft/world/entity/EntityType;
+       4: getstatic     #98                 // Field net/minecraft/world/entity/SpawnPlacements$Type.ON_GROUND:Lnet/minecraft/world/entity/SpawnPlacements$Type;
+       7: getstatic     #102                // Field net/minecraft/world/level/levelgen/Heightmap$Types.MOTION_BLOCKING_NO_LEAVES:Lnet/minecraft/world/level/levelgen/Heightmap$Types;
+      10: invokedynamic #120,  0            // InvokeDynamic #0:m_217080_:()Lnet/minecraft/world/entity/SpawnPlacements$SpawnPredicate;
+      15: getstatic     #124                // Field net/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation.OR:Lnet/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation;
+      18: invokevirtual #128                // Method net/minecraftforge/event/entity/SpawnPlacementRegisterEvent.register:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/SpawnPlacements$Type;Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/world/entity/SpawnPlacements$SpawnPredicate;Lnet/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation;)V
+      21: aload_0
+      22: getstatic     #90                 // Field com/cicada/longwings/entity/LongwingsEntityTypes.MOTH:Lnet/minecraft/world/entity/EntityType;
+      25: getstatic     #98                 // Field net/minecraft/world/entity/SpawnPlacements$Type.ON_GROUND:Lnet/minecraft/world/entity/SpawnPlacements$Type;
+      28: getstatic     #102                // Field net/minecraft/world/level/levelgen/Heightmap$Types.MOTION_BLOCKING_NO_LEAVES:Lnet/minecraft/world/level/levelgen/Heightmap$Types;
+      31: invokedynamic #133,  0            // InvokeDynamic #1:m_217080_:()Lnet/minecraft/world/entity/SpawnPlacements$SpawnPredicate;
+      36: getstatic     #124                // Field net/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation.OR:Lnet/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation;
+      39: invokevirtual #128                // Method net/minecraftforge/event/entity/SpawnPlacementRegisterEvent.register:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/SpawnPlacements$Type;Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/world/entity/SpawnPlacements$SpawnPredicate;Lnet/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation;)V
+      42: return
+
+  public static void onParticleTypeRegistry(net.minecraftforge.client.event.RegisterParticleProvidersEvent);
+    Code:
+       0: aload_0
+       1: getstatic     #149                // Field com/cicada/longwings/client/particle/LongwingsParticles.FALLING_SUGAR_WATER:Lcom/cicada/longwings/client/particle/LongParticle;
+       4: invokedynamic #163,  0            // InvokeDynamic #2:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+       9: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+      12: aload_0
+      13: getstatic     #172                // Field com/cicada/longwings/client/particle/LongwingsParticles.FALLING_HONEY_WATER:Lcom/cicada/longwings/client/particle/LongParticle;
+      16: invokedynamic #177,  0            // InvokeDynamic #3:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+      21: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+      24: aload_0
+      25: getstatic     #180                // Field com/cicada/longwings/client/particle/LongwingsParticles.DRIPPING_APPLE_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+      28: invokedynamic #185,  0            // InvokeDynamic #4:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+      33: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+      36: aload_0
+      37: getstatic     #188                // Field com/cicada/longwings/client/particle/LongwingsParticles.DRIPPING_MELON_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+      40: invokedynamic #193,  0            // InvokeDynamic #5:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+      45: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+      48: aload_0
+      49: getstatic     #196                // Field com/cicada/longwings/client/particle/LongwingsParticles.DRIPPING_BERRY_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+      52: invokedynamic #201,  0            // InvokeDynamic #6:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+      57: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+      60: aload_0
+      61: getstatic     #204                // Field com/cicada/longwings/client/particle/LongwingsParticles.FALLING_APPLE_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+      64: invokedynamic #209,  0            // InvokeDynamic #7:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+      69: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+      72: aload_0
+      73: getstatic     #212                // Field com/cicada/longwings/client/particle/LongwingsParticles.FALLING_MELON_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+      76: invokedynamic #217,  0            // InvokeDynamic #8:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+      81: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+      84: aload_0
+      85: getstatic     #220                // Field com/cicada/longwings/client/particle/LongwingsParticles.FALLING_BERRY_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+      88: invokedynamic #225,  0            // InvokeDynamic #9:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+      93: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+      96: aload_0
+      97: getstatic     #228                // Field com/cicada/longwings/client/particle/LongwingsParticles.LANDING_APPLE_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+     100: invokedynamic #233,  0            // InvokeDynamic #10:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+     105: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+     108: aload_0
+     109: getstatic     #236                // Field com/cicada/longwings/client/particle/LongwingsParticles.LANDING_MELON_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+     112: invokedynamic #233,  0            // InvokeDynamic #10:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+     117: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+     120: aload_0
+     121: getstatic     #239                // Field com/cicada/longwings/client/particle/LongwingsParticles.LANDING_BERRY_BRINE:Lcom/cicada/longwings/client/particle/LongParticle;
+     124: invokedynamic #233,  0            // InvokeDynamic #10:m_272232_:()Lnet/minecraft/client/particle/ParticleProvider$Sprite;
+     129: invokevirtual #169                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSprite:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider$Sprite;)V
+     132: aload_0
+     133: getstatic     #242                // Field com/cicada/longwings/client/particle/LongwingsParticles.LANDING_SUGAR_WATER:Lcom/cicada/longwings/client/particle/LongParticle;
+     136: invokedynamic #252,  0            // InvokeDynamic #11:m_107419_:()Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;
+     141: invokevirtual #256                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSpriteSet:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;)V
+     144: aload_0
+     145: getstatic     #259                // Field com/cicada/longwings/client/particle/LongwingsParticles.SPLASH_H0NEY_WATER:Lcom/cicada/longwings/client/particle/LongParticle;
+     148: invokedynamic #252,  0            // InvokeDynamic #11:m_107419_:()Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;
+     153: invokevirtual #256                // Method net/minecraftforge/client/event/RegisterParticleProvidersEvent.registerSpriteSet:(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;)V
+     156: return
+}

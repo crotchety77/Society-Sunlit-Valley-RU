@@ -1,0 +1,134 @@
+# =========================================================================
+# ГЛАВА: textfinis_dierumcolore8a736.snbt
+# Всего квестов: 7
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Finis Dierum
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 57F4F47A0E411EB9] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Trade your &6radiant sunshards &ffor &eperfect &1gems.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 57F4F47A0E411EB9 ---
+
+
+=== [КВЕСТ 2 | ID: 4117F0B665E3CA2D] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Gateway of Memories
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Open the &dgateway of memories &fto fight &cempowered &fversions of &6cisco &fand &4the fell king &fto recieve &echampion coins &fand &6tablets of ascension.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4117F0B665E3CA2D ---
+
+
+=== [КВЕСТ 3 | ID: 4288F14E88A87640] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Cataclysmic Gate
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &4cataclysmic gate &fwill allow you to fight &cempowered &fversions of the &4cataclysmic bosses &fgranting &6radiant sunshards.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4288F14E88A87640 ---
+
+
+=== [КВЕСТ 4 | ID: 3C1CDBC749329522] ===
+EN_TITLE: Ascendant Difficulty
+RU_TITLE: 
+
+EN_SUBTITLE: Renewed Challenge
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+It is time to &arenew&f the &echallenge . &1Carefully &fread the descriptions of each reward and select any number of them to begin your journey a new. 
+
+&aUnlocks &fthe use of most &5Enigmas&f.
+
+&9Azure &fincreases the global level in all dimensions by 150. &4(Be careful on servers as multiple players selecting this reward will stack.)
+
+&dViolet &fresets the Deus Chapter to allow you to tackle all the bosses at the increased levels.
+
+&4Rouge &fresets the Seven Deadly sins chapter allowing you to tackle the bosses again at increased levels.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3C1CDBC749329522 ---
+
+
+=== [КВЕСТ 5 | ID: 10AAB70F4D035819] ===
+EN_TITLE: Divine Difficulty
+RU_TITLE: 
+
+EN_SUBTITLE: Divine Challenge
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&4Reset &fthe deus chapter and slay all the bosses at increased difficulty.
+
+&2Unlocks &fthe use of &cstronger &5Enigmas.
+
+Only for the &eabsolute bravest &fof adventurers.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 10AAB70F4D035819 ---
+
+
+=== [КВЕСТ 6 | ID: 64914C7972F93909] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Hellheim Difficulty
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Raise the world level by 500 and reset the deus chapter to tackle the bosses once more. Enemies at level &d400 - 750 &fwill drop rarer materials such as &bgem dust &fand &9sigils of socketing. 
+
+&fWhilst enemies above level &d750 &f will drop very valuable items such as &6burning ashes &fand &echampion coins.
+
+&aUnlocks &fthe use of the most &4powerful &5Enigmas&f.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 64914C7972F93909 ---
+
+
+=== [КВЕСТ 7 | ID: 3D2D32EB52545FB0] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Descent into Madness
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6The crown &fwas originally designed by &ethe Lawbringers &fas a tool to punish defiant &6gods. 
+
+&fIt would would vicously rend all pleasant memories from the victim's psyche then incinerate them in a streak of purple flame. As you could imagine prolonged exposure to the device's effect would break even the most resolute of minds.
+
+However, some masochistic gods would somehow derive a twisted pleasure from it's use, later replicating the device for thier own personal pleasure.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3D2D32EB52545FB0 ---
+
+

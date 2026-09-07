@@ -1,0 +1,121 @@
+# =========================================================================
+# ГЛАВА: textciscos_legacycolordark_redboldtrueunderlinedfalse.snbt
+# Всего квестов: 6
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Ciscos Legacyrk Red
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 4BDA63A50DFBBDA5] ===
+EN_TITLE: Path of Betrayal
+RU_TITLE: 
+
+EN_SUBTITLE: Where Loyalty Dies
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+*&4Arthas&f approaches you with an offer .* &6Cisco &fis but a foolish half breed born of &0tainted &4blood&f. Look at you his prized pupil forged in his image yet bound needlessly by his chains.
+
+Do you truly believe that &6Cisco's &fpower was ever truly yours to share? The true power he keeps for himself while cautioning you to excercise balance and restraint.  
+
+But i see that blazing hunger flickering behind your loyalty. Join me and together will we strike down the false &6hero &f. We wont kneel before the &egods &fthat toyed with him nor cower before the legacy he clings to. 
+
+Together we will claim that precious spark of divinity he posseses and wield it as we see fit.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4BDA63A50DFBBDA5 ---
+
+
+=== [КВЕСТ 2 | ID: 06FA4049EBC45DA2] ===
+EN_TITLE: Threads of Treason
+RU_TITLE: 
+
+EN_SUBTITLE: The Rite of Treachery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+So you have chosen the shadows over your would be saviour....good. 
+
+Despite his shortcomings Cisco is not to be underestimated. Summoning him with the intent of betrayal without weakining him first would  be a grave blunder. 
+
+Gather fell fragments and nocturnal amethyst then twist the talisman of challenge to gain the upper hand.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 06FA4049EBC45DA2 ---
+
+
+=== [КВЕСТ 3 | ID: 20489A4126AE5804] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Betrayers Seal
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The moment has come little betrayer.
+
+The &etalisman of challenge &fonce a relic forged in trust and used for your freindly duel will carry your treachery straight to &6his &fheart.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 20489A4126AE5804 ---
+
+
+=== [КВЕСТ 4 | ID: 29854A90DE3D647E] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Final Severance
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Call fourth your &6old master &fthe so called &9sage &fwho would cage your true power.
+
+He will come willingly believing this to be another test of your strength. In that moment he will feel his strength sapped. When he stands before you weakened do not hesitate cut him down and claim his &edivine spark &fas your own.
+
+Summon &6him&f. Fight &6him&f. End &6him&f.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 29854A90DE3D647E ---
+
+
+=== [КВЕСТ 5 | ID: 60D7A13216197BB1] ===
+EN_TITLE: Supreme Nightfall
+RU_TITLE: 
+
+EN_SUBTITLE: Balance Unbound
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&cSupreme Nightfall &f, a blade of endless dusk cleaving foes when held, shielding its master when hidden.
+
+Remember this, &cNightfall &fdoes not serve the cowardly. Wield it boldly, betray its trust, and it shall turn on you in time. 
+
+Should you keep its edge sated…no mortal or god shall stand in your way.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 60D7A13216197BB1 ---
+
+
+=== [КВЕСТ 6 | ID: 663F82C45A362B8D] ===
+EN_TITLE: Descended Armor Set
+RU_TITLE: 
+
+EN_SUBTITLE: Avatar Of the Dark One
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The more you bleed the less you break.  When ruin draws near become one with the abyss , unstoppable , untouchable.
+
+The might of iron and shadow is yours to wield .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 663F82C45A362B8D ---
+
+

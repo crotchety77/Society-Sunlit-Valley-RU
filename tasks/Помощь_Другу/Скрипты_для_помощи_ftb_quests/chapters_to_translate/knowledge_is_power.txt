@@ -1,0 +1,158 @@
+# =========================================================================
+# ГЛАВА: knowledge_is_power.snbt
+# Всего квестов: 7
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Knowledge Is Power
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 45E996352E65DF17] ===
+EN_TITLE: Нажми чтобы выполнить.
+RU_TITLE: 
+
+EN_SUBTITLE: Исследование123
+RU_SUBTITLE: Исследование123
+
+EN_DESCRIPTION:
+Строка123
+
+Строка245
+
+Строка376
+
+RU_DESCRIPTION:
+Строка123
+
+Строка245
+
+Строка376
+
+--- КОНЕЦ КВЕСТА 45E996352E65DF17 ---
+
+
+=== [КВЕСТ 2 | ID: 1648B6BCB07BB084] ===
+EN_TITLE: Враги
+RU_TITLE: Враги
+
+EN_SUBTITLE: F123
+RU_SUBTITLE: F123
+
+EN_DESCRIPTION:
+1
+
+2
+
+3
+
+RU_DESCRIPTION:
+1
+
+2
+
+3
+
+--- КОНЕЦ КВЕСТА 1648B6BCB07BB084 ---
+
+
+=== [КВЕСТ 3 | ID: 736C9FD16E542DB6] ===
+EN_TITLE: Increasing your strength
+RU_TITLE: 
+
+EN_SUBTITLE: Acquiring Power
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+There are many ways to increase your &cstrength &fbut the primary ways are the following:
+
+Your &9skill tree will &fallow you to convert &aexperience &fgained from killing monsters into &9skill points &fto spend on valuable passive bonuses.
+Default key (o).
+
+&bGems &fare rare items which can be found all over the &aworld &fat different qualities and grant &cpowerful &fbonuses when &dsocketed &finto your gear. Most gear you obtain will not have sockets by default and those will need to be added at a &6reforging table.
+
+&dEnchantments &fcan be applied to your gear at &dthe enchanting table &fand will also increase your &cstrength &fdrastically.&dThe enchanting table &fcan be configured in many ways to obtain very &cpowerful &denchantments.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 736C9FD16E542DB6 ---
+
+
+=== [КВЕСТ 4 | ID: 19DB4898098E86AB] ===
+EN_TITLE: Coin Shop
+RU_TITLE: 
+
+EN_SUBTITLE: Eloquent Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Champion Coins &fare a valuable resource gained from completing quests and other endgame activities.
+
+These &ecoins &fcan be traded in the &6"Cisco's Wares " &fsection of the quest book for valuable items to aid you in your journey.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 19DB4898098E86AB ---
+
+
+=== [КВЕСТ 5 | ID: 29B7CEE5EB6D2DBA] ===
+EN_TITLE: Food Diversity
+RU_TITLE: 
+
+EN_SUBTITLE: Balanced Diet
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Many origins despite placing light restrictions on your diet will allow you to eat a wide array of prepared meals.
+
+Foods are granted a &adiversity score &fand you will gain &cpowerful buffs &fbased on your total score. Be sure to try many different foods to increase your score.
+
+You are able to track your &adiversity score &fand foods eaten within the &6food book&f default key (.) .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 29B7CEE5EB6D2DBA ---
+
+
+=== [КВЕСТ 6 | ID: 7F414903DEAF07F3] ===
+EN_TITLE: Enigmas
+RU_TITLE: 
+
+EN_SUBTITLE: Trial of the Enigmas
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+During the age of &6heroes &egods &fcreated &cpowerful &5artifacts &fto aid mortals . However the mortals gained such immense &cpower &fthat the &egods &fthemselves became weary.
+
+A mysterious &2primordial &edeity &fknown as &0"the Dark One" &fsacrificed a small portion of his immense &cpower &fto lay a curse upon these &5artifacts &fso that only those willing to undergo great sacrifice may wield them.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7F414903DEAF07F3 ---
+
+
+=== [КВЕСТ 7 | ID: 095A01C3F8830264] ===
+EN_TITLE: The Dark Trials
+RU_TITLE: 
+
+EN_SUBTITLE: Unceremonious Ascent
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+You possess the same &0dark &cpower &fas i which will one day allow you to wear my equipment.
+
+However to fully awaken it and ascend to &egodhood &fyou will need to defeat &4the fell king &fand absorb the &2primordial &fessence he has acquired from &0the realm of the fallen.
+
+&0The Dark One &fwishes to prevent your Ascent to &egodhood &fhowever and will make your journey harder at certain
+points:
+
+&aTrial 1&f :  Begins at the start of your journey increasing enemy cohesion , lethality in addition the possibility of a blood moon.
+
+&1Trial 2&f : Begins upon entering another dimension further increasing the strength of enemies but also the rewards gained from defeating them.
+
+&5Trial 3&f : Begins upon slaying &dthe ender dragon &fwhere enemies are even more merciless granting the chance of elite enemies appearing.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 095A01C3F8830264 ---
+
+

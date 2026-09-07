@@ -1,0 +1,111 @@
+# Локализация мода: buzzier_bees
+
+**JAR:** `buzzier_bees-1.20.1-6.0.1.jar` | **Всего строк:** 89 | **Не переведено:** 6
+
+## 1. Визуальный контекст и оформление
+* Форматирование: Названия предметов/блоков начинаются с Заглавной буквы.
+* Валюта: использовать значок монеты `§e●` (`U+25CF`).
+* Тултипы: подсветка клавиш `§6Shift + ПКМ§7`.
+
+## 2. Непереведённые строки (требуют перевода)
+
+```json
+{
+  "block.buzzier_bees.cupric_candle": "TODO: Cupric Candle",
+  "block.buzzier_bees.cupric_candle_cake": "TODO: Cupric Candle Cake",
+  "block.buzzier_bees.ender_candle": "TODO: Ender Candle",
+  "block.buzzier_bees.ender_candle_cake": "TODO: Ender Candle Cake",
+  "painting.buzzier_bees.candle.author": "TODO: five",
+  "painting.buzzier_bees.candle.title": "TODO: Candle"
+}
+```
+
+## 3. Существующие переводы (для контекста)
+
+```json
+{
+  "advancements.buzzier_bees.adventure.four_leaf_clover.description": "Найдите четырехлистный клевер",
+  "advancements.buzzier_bees.adventure.four_leaf_clover.title": "Повезло, повезло",
+  "advancements.buzzier_bees.husbandry.use_glazed_porkchop.description": "Сьешьте глазированную свинину, чтобы избавится от эффекта «утомление»",
+  "advancements.buzzier_bees.husbandry.use_glazed_porkchop.title": "Тягок труд, да сладок мёд",
+  "advancements.buzzier_bees.husbandry.use_honey_apple.description": "Сьешьте яблоко в меду, чтобы избавится от эффекта «левитация»",
+  "advancements.buzzier_bees.husbandry.use_honey_apple.title": "По яблоку в день",
+  "advancements.buzzier_bees.husbandry.use_honey_bread.description": "Съешьте хлеб с мёдом, чтобы избавится от эффекта «дурное знамение»",
+  "advancements.buzzier_bees.husbandry.use_honey_bread.title": "Доброе знамение",
+  "block.buzzier_bees.buttercup": "Лютик",
+  "block.buzzier_bees.chiseled_honeycomb_bricks": "Резные сотовые кирпичи",
+  "block.buzzier_bees.crystallized_honey_block": "Блок кристаллизованного мёда",
+  "block.buzzier_bees.honey_lamp": "Мёдо-лампа",
+  "block.buzzier_bees.honeycomb_brick_slab": "Плита из сотовых кирпичей",
+  "block.buzzier_bees.honeycomb_brick_stairs": "Ступеньки из сотовых кирпичей",
+  "block.buzzier_bees.honeycomb_brick_wall": "Ограда из сотовых кирпичей",
+  "block.buzzier_bees.honeycomb_bricks": "Сотовые кирпичи",
+  "block.buzzier_bees.honeycomb_door": "Сотовая дверь",
+  "block.buzzier_bees.honeycomb_tile_slab": "Плита из сотовой плитки",
+  "block.buzzier_bees.honeycomb_tile_stairs": "Ступеньки из сотовой плитки",
+  "block.buzzier_bees.honeycomb_tile_wall": "Ограда из сотовой плитки ",
+  "block.buzzier_bees.honeycomb_tiles": "Сотовая плитка",
+  "block.buzzier_bees.honeycomb_trapdoor": "Сотовый люк",
+  "block.buzzier_bees.pink_clover": "Розовый клевер",
+  "block.buzzier_bees.potted_buttercup": "Лютик в горшке",
+  "block.buzzier_bees.potted_pink_clover": "Розовый клевер в горшке",
+  "block.buzzier_bees.potted_white_clover": "Белый клевер в горшке",
+  "block.buzzier_bees.soul_candle": "Свечка душ",
+  "block.buzzier_bees.soul_candle_cake": "Торт со свечкой душ",
+  "block.buzzier_bees.white_clover": "Белый клевер",
+  "block.minecraft.banner.buzzier_bees.honeycomb.black": "Чёрные пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.blue": "Синие пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.brown": "Коричневые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.cyan": "Бирюзовые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.gray": "Серые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.green": "Зелёные пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.light_blue": "Голубые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.light_gray": "Светло-серые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.lime": "Лаймовые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.magenta": "Пурпурные пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.orange": "Оранжевые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.pink": "Розовые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.purple": "Фиолетовые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.red": "Красные пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.white": "Белые пчелиные соты",
+  "block.minecraft.banner.buzzier_bees.honeycomb.yellow": "Жёлтые пчелиные соты",
+  "effect.buzzier_bees.sunny": "Солнечно",
+  "entity.buzzier_bees.grizzly_bear": "Медведь гризли",
+  "entity.buzzier_bees.moobloom": "Лютиковая корова",
+  "item.buzzier_bees.bee_bottle": "Бутылочка с пчелой",
+  "item.buzzier_bees.endermite_bottle": "Бутылочка с эндермитом",
+  "item.buzzier_bees.four_leaf_clover": "Четырёхлистный клевер",
+  "item.buzzier_bees.glazed_porkchop": "Глазированная свинина",
+  "item.buzzier_bees.grizzly_bear_spawn_egg": "Яйцо призыва гризли",
+  "item.buzzier_bees.honey_apple": "Яблоко в меду",
+  "item.buzzier_bees.honey_bread": "Хлеб с мёдом",
+  "item.buzzier_bees.honeycomb_banner_pattern": "Узор флага",
+  "item.buzzier_bees.honeycomb_banner_pattern.desc": "Пчелиные соты",
+  "item.buzzier_bees.moobloom_spawn_egg": "Яйцо призыва лютиковой коровы",
+  "item.buzzier_bees.silverfish_bottle": "Бутылочка с чешуйницой",
+  "item.minecraft.lingering_potion.effect.long_luck": "Туманное зелье удачи",
+  "item.minecraft.lingering_potion.effect.long_unluck": "Туманное зелье невезения",
+  "item.minecraft.lingering_potion.effect.strong_luck": "Туманное зелье удачи",
+  "item.minecraft.lingering_potion.effect.strong_unluck": "Туманное зелье невезения",
+  "item.minecraft.lingering_potion.effect.unluck": "Туманное зелье невезения",
+  "item.minecraft.potion.effect.long_luck": "Зелье удачи",
+  "item.minecraft.potion.effect.long_unluck": "Зелье невезения",
+  "item.minecraft.potion.effect.strong_luck": "Зелье удачи",
+  "item.minecraft.potion.effect.strong_unluck": "Зелье невезения",
+  "item.minecraft.potion.effect.unluck": "Зелье невезения",
+  "item.minecraft.splash_potion.effect.long_luck": "Взрывное зелье удачи",
+  "item.minecraft.splash_potion.effect.long_unluck": "Взрывное зелье невезения",
+  "item.minecraft.splash_potion.effect.strong_luck": "Взрывное зелье удачи",
+  "item.minecraft.splash_potion.effect.strong_unluck": "Взрывное зелье невезения",
+  "item.minecraft.splash_potion.effect.unluck": "Взрывное зелье невезения",
+  "item.minecraft.tipped_arrow.effect.long_luck": "Стрела удачи",
+  "item.minecraft.tipped_arrow.effect.long_unluck": "Стрела невезения",
+  "item.minecraft.tipped_arrow.effect.strong_luck": "Стрела удачи",
+  "item.minecraft.tipped_arrow.effect.strong_unluck": "Стрела невезения",
+  "item.minecraft.tipped_arrow.effect.unluck": "Стрела невезения",
+  "tooltip.buzzier_bees.has_nectar": "Опылён",
+  "tooltip.buzzier_bees.has_stung": "Без жала",
+  "tooltip.buzzier_bees.is_angry": "Злой",
+  "tooltip.buzzier_bees.is_baby": "Детёныш"
+}
+```

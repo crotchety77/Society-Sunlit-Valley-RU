@@ -1,0 +1,399 @@
+# =========================================================================
+# ГЛАВА: fermented_flavours.snbt
+# Всего квестов: 26
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Fermented Flavours
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 261F6609A94B1DAE] ===
+EN_TITLE: Craft an Aging Barrel
+RU_TITLE: 
+
+EN_SUBTITLE: Aged to perfection
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This station is used to turn grape juice into wine .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 261F6609A94B1DAE ---
+
+
+=== [КВЕСТ 2 | ID: 6B877F81B4C36660] ===
+EN_TITLE: Craft the grapevine pot
+RU_TITLE: 
+
+EN_SUBTITLE: Jumpin for Juice
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Used by placing grapes into it then jumping on them to make grape juice.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6B877F81B4C36660 ---
+
+
+=== [КВЕСТ 3 | ID: 6809A4B9748A3329] ===
+EN_TITLE: Aquire All red grape Species
+RU_TITLE: 
+
+EN_SUBTITLE: Red Grape Conniseur
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Found in biomes all over your world find every species of red grape.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6809A4B9748A3329 ---
+
+
+=== [КВЕСТ 4 | ID: 48ACE52B3F556D08] ===
+EN_TITLE: Aquire All white grape Species
+RU_TITLE: 
+
+EN_SUBTITLE: White Grape Coniseur
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Found in biomes all over your world find every species of white grape.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 48ACE52B3F556D08 ---
+
+
+=== [КВЕСТ 5 | ID: 304E5654DE633847] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Increases your maximum health breifly.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 304E5654DE633847 ---
+
+
+=== [КВЕСТ 6 | ID: 4E0E9C41B8A574CB] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants resistance to damage and the absorption effects.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4E0E9C41B8A574CB ---
+
+
+=== [КВЕСТ 7 | ID: 2EF7920F4E87897A] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Pulls nearby items to the player.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2EF7920F4E87897A ---
+
+
+=== [КВЕСТ 8 | ID: 20A8955FEDC3498F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A great way of travelling to random locations.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 20A8955FEDC3498F ---
+
+
+=== [КВЕСТ 9 | ID: 4233865D6448E86A] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This wine helps you see better in dark environments.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4233865D6448E86A ---
+
+
+=== [КВЕСТ 10 | ID: 7EBD3F539BDE1B80] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A perfect wine for the offensively minded.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7EBD3F539BDE1B80 ---
+
+
+=== [КВЕСТ 11 | ID: 4E51813603983427] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Restores health when consumed.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4E51813603983427 ---
+
+
+=== [КВЕСТ 12 | ID: 2FAE951894283826] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants good fortune and attack speed.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2FAE951894283826 ---
+
+
+=== [КВЕСТ 13 | ID: 514F15E78A9EEE8B] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Provides mild regeneration when consumed.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 514F15E78A9EEE8B ---
+
+
+=== [КВЕСТ 14 | ID: 7B605A945DD4E8D2] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A great wine for additional mobility.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7B605A945DD4E8D2 ---
+
+
+=== [КВЕСТ 15 | ID: 7B77DD61F18C5B81] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A powerful regenerative wine.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7B77DD61F18C5B81 ---
+
+
+=== [КВЕСТ 16 | ID: 29A905C82057764F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A great wine for restoring a maintaining high health.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 29A905C82057764F ---
+
+
+=== [КВЕСТ 17 | ID: 3E291D5E02383887] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants resistance to fire and absorbtion when consumed.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3E291D5E02383887 ---
+
+
+=== [КВЕСТ 18 | ID: 26FAA7FEC378D3B8] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants a speed bonus and the ability to walk on water when consumed.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 26FAA7FEC378D3B8 ---
+
+
+=== [КВЕСТ 19 | ID: 35D3631AC2451F08] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Fire resistance and absorbtion.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 35D3631AC2451F08 ---
+
+
+=== [КВЕСТ 20 | ID: 66E91443BD6ACBA2] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Boosts experience gain when consumed.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 66E91443BD6ACBA2 ---
+
+
+=== [КВЕСТ 21 | ID: 56BD1CAA8183E779] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Makes you glow allowing other players to better locate you.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 56BD1CAA8183E779 ---
+
+
+=== [КВЕСТ 22 | ID: 5628FB58F7FDB241] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Go out with a bang!
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5628FB58F7FDB241 ---
+
+
+=== [КВЕСТ 23 | ID: 66CF139A2C3B20C7] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants you strength when consumed.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 66CF139A2C3B20C7 ---
+
+
+=== [КВЕСТ 24 | ID: 3FCD27F122D4FFBE] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants you bad omen providing a better way to initiate raids.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3FCD27F122D4FFBE ---
+
+
+=== [КВЕСТ 25 | ID: 167D0929F7D2FE81] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Raises your hunger  and prevents it from depleting .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 167D0929F7D2FE81 ---
+
+
+=== [КВЕСТ 26 | ID: 33A7327ACA12C8E3] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Winery
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Provides a powerful health boost.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 33A7327ACA12C8E3 ---
+
+

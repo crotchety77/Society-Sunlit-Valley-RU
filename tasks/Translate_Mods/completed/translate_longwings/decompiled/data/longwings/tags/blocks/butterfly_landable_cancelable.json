@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:flower_pot",
+    "minecraft:potted_bamboo",
+    "minecraft:potted_mangrove_propagule",
+    "minecraft:wither_rose",
+    "minecraft:potted_wither_rose",
+    "minecraft:potted_crimson_fungus",
+    "minecraft:potted_cactus",
+    "minecraft:potted_warped_roots",
+    "minecraft:potted_crimson_roots",
+    "minecraft:potted_dead_bush",
+    "minecraft:potted_fern",
+    "minecraft:potted_red_mushroom",
+    "minecraft:potted_brown_mushroom",
+    "minecraft:potted_warped_fungus",
+    "minecraft:potted_oak_sapling",
+    "minecraft:potted_spruce_sapling",
+    "minecraft:potted_birch_sapling",
+    "minecraft:potted_acacia_sapling",
+    "minecraft:potted_jungle_sapling",
+    "minecraft:potted_dark_oak_sapling"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "mappings": {
+    "com/bonker/stardewfishing/mixin/ArmorDyeRecipeMixin": {
+      "matches(Lnet/minecraft/world/inventory/CraftingContainer;Lnet/minecraft/world/level/Level;)Z": "Lnet/minecraft/world/item/crafting/ArmorDyeRecipe;m_5818_(Lnet/minecraft/world/inventory/CraftingContainer;Lnet/minecraft/world/level/Level;)Z",
+      "Lnet/minecraft/world/item/ItemStack;isEmpty()Z": "Lnet/minecraft/world/item/ItemStack;m_41619_()Z"
+    },
+    "com/bonker/stardewfishing/mixin/FishingRodItemMixin": {
+      "use": "Lnet/minecraft/world/item/FishingRodItem;m_7203_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;",
+      "Lnet/minecraft/world/item/ItemStack;hurtAndBreak(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V": "Lnet/minecraft/world/item/ItemStack;m_41622_(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V"
+    },
+    "com/bonker/stardewfishing/mixin/FishingHookAccessor": {
+      "lureSpeed": "f_37097_:I",
+      "timeUntilLured": "f_37090_:I",
+      "nibble": "f_37089_:I",
+      "timeUntilHooked": "f_37091_:I"
+    },
+    "com/bonker/stardewfishing/mixin/AquaFishingBobberEntityMixin": {
+      "catchingFish(Lnet/minecraft/core/BlockPos;)V": "m_37145_(Lnet/minecraft/core/BlockPos;)V",
+      "retrieve(Lnet/minecraft/world/item/ItemStack;)I": "m_37156_(Lnet/minecraft/world/item/ItemStack;)I"
+    },
+    "com/bonker/stardewfishing/mixin/LavaFishingBobberEntityMixin": {
+      "retrieve(Lnet/minecraft/world/item/ItemStack;)I": "m_37156_(Lnet/minecraft/world/item/ItemStack;)I"
+    },
+    "com/bonker/stardewfishing/mixin/FishingHookMixin": {
+      "retrieve": "Lnet/minecraft/world/entity/projectile/FishingHook;m_37156_(Lnet/minecraft/world/item/ItemStack;)I",
+      "catchingFish": "Lnet/minecraft/world/entity/projectile/FishingHook;m_37145_(Lnet/minecraft/core/BlockPos;)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/bonker/stardewfishing/mixin/ArmorDyeRecipeMixin": {
+        "matches(Lnet/minecraft/world/inventory/CraftingContainer;Lnet/minecraft/world/level/Level;)Z": "Lnet/minecraft/world/item/crafting/ArmorDyeRecipe;m_5818_(Lnet/minecraft/world/inventory/CraftingContainer;Lnet/minecraft/world/level/Level;)Z",
+        "Lnet/minecraft/world/item/ItemStack;isEmpty()Z": "Lnet/minecraft/world/item/ItemStack;m_41619_()Z"
+      },
+      "com/bonker/stardewfishing/mixin/FishingRodItemMixin": {
+        "use": "Lnet/minecraft/world/item/FishingRodItem;m_7203_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;",
+        "Lnet/minecraft/world/item/ItemStack;hurtAndBreak(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V": "Lnet/minecraft/world/item/ItemStack;m_41622_(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V"
+      },
+      "com/bonker/stardewfishing/mixin/FishingHookAccessor": {
+        "lureSpeed": "f_37097_:I",
+        "timeUntilLured": "f_37090_:I",
+        "nibble": "f_37089_:I",
+        "timeUntilHooked": "f_37091_:I"
+      },
+      "com/bonker/stardewfishing/mixin/AquaFishingBobberEntityMixin": {
+        "catchingFish(Lnet/minecraft/core/BlockPos;)V": "m_37145_(Lnet/minecraft/core/BlockPos;)V",
+        "retrieve(Lnet/minecraft/world/item/ItemStack;)I": "m_37156_(Lnet/minecraft/world/item/ItemStack;)I"
+      },
+      "com/bonker/stardewfishing/mixin/LavaFishingBobberEntityMixin": {
+        "retrieve(Lnet/minecraft/world/item/ItemStack;)I": "m_37156_(Lnet/minecraft/world/item/ItemStack;)I"
+      },
+      "com/bonker/stardewfishing/mixin/FishingHookMixin": {
+        "retrieve": "Lnet/minecraft/world/entity/projectile/FishingHook;m_37156_(Lnet/minecraft/world/item/ItemStack;)I",
+        "catchingFish": "Lnet/minecraft/world/entity/projectile/FishingHook;m_37145_(Lnet/minecraft/core/BlockPos;)V"
+      }
+    }
+  }
+}

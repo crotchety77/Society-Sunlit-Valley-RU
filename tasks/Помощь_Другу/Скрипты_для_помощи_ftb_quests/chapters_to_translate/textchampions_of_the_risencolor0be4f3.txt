@@ -1,0 +1,519 @@
+# =========================================================================
+# ГЛАВА: textchampions_of_the_risencolor0be4f3.snbt
+# Всего квестов: 32
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Champions Of The Risen
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 346AD4946346FC35] ===
+EN_TITLE: Intro to Hostility
+RU_TITLE: 
+
+EN_SUBTITLE: Artifacts of Endless War
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Throughout your journey, you will discover that the world itself adapts to your growing strength. As you conquer dungeons, defeat mighty foes, and amass powerful equipment, the realm becomes increasingly hostile.
+
+Monsters will begin to manifest powerful &dAbilities&f, ranging from Common traits to Advanced and even Legendary powers. Some will reflect your attacks, regenerate from near death, summon allies, or unleash devastating effects that can overwhelm even seasoned adventurers.
+
+These empowered creatures are known as Champions. Though far deadlier than ordinary monsters, they also guard the greatest treasures.
+
+Fortunately, the world offers a way to fight back.
+
+Hidden within dangerous dungeons, rare loot, and the hands of formidable Champions are legendary &6Artifacts&f , ancient relics forged to counter specific &dAbilities&f. Each artifact weakens or completely negates a particular Champion power, allowing you to turn impossible battles into winnable ones.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 346AD4946346FC35 ---
+
+
+=== [КВЕСТ 2 | ID: 3983BCA121155B3E] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Hostility Haven
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6The Hostility Orb &freduces the Regional Hostility of the current area, making it safer for exploration and building.
+
+Use it alongside the Hostility Detector to identify dangerous regions and reclaim them before the Hostility rises once more.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3983BCA121155B3E ---
+
+
+=== [КВЕСТ 3 | ID: 5A2FA9E3C013A435] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Detecting Danger
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&4The Hostility Detector &fis your most valuable survival tool. When held, it displays both your Personal Hostility and the Regional Hostility of the area around you.
+
+Personal Hostility reflects your own progression through the world. As you grow stronger and conquer greater challenges, increasingly dangerous enemies will begin to appear.
+
+Regional Hostility measures how dangerous the current area has become. Regions with high Hostility spawn stronger Champions with deadlier Abilities, but they also offer better loot, rarer Artifacts, and greater rewards.
+
+Before venturing into unfamiliar lands, always check your Hostility Detector. Understanding the danger ahead is often the difference between victory and death.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5A2FA9E3C013A435 ---
+
+
+=== [КВЕСТ 4 | ID: 27E1F18AFD9BCF98] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Prying Eyes
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+An artifact useful for detecting invisible enemies.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 27E1F18AFD9BCF98 ---
+
+
+=== [КВЕСТ 5 | ID: 7E7F4C3DD8CF567E] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Enamoured by Envy
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Increases difficulty when worn but grants an increased chance to obtain trait items.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7E7F4C3DD8CF567E ---
+
+
+=== [КВЕСТ 6 | ID: 127AE05AD4FDD752] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Glory and Gluttony
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants an increased chance to obtain bottle's of curse per level from slain enemies.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 127AE05AD4FDD752 ---
+
+
+=== [КВЕСТ 7 | ID: 55178E0FFBE8E8D3] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Fortune's Cruel Bargain
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Doubles the hositility loot drop chance at the cost of extra difficulty.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 55178E0FFBE8E8D3 ---
+
+
+=== [КВЕСТ 8 | ID: 33E2609C4D5B8167] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Desire to Derobe
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Make enemies drop thier equipment when slain at the cost of increased difficulty.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 33E2609C4D5B8167 ---
+
+
+=== [КВЕСТ 9 | ID: 6716D8BDD51B4DAA] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Pride and Penance
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Gained increased health and attack damage per difficulty level at the cost of making enemy traits more frequent.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6716D8BDD51B4DAA ---
+
+
+=== [КВЕСТ 10 | ID: 0F995C891EB3483B] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Slow and Steady
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Cease the gain of level from slaying enemies at the expense of gaining loot.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0F995C891EB3483B ---
+
+
+=== [КВЕСТ 11 | ID: 5390E51F64F91AC6] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: When Anger Becomes Power
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Gain increased attack that scales with enemy levels as well as immunity to many negative effects at the cost of increased difficulty.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5390E51F64F91AC6 ---
+
+
+=== [КВЕСТ 12 | ID: 205A59F0F515E87A] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Life Ever Lingering
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Attacks may not surpass 90 percent of your maximum health.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 205A59F0F515E87A ---
+
+
+=== [КВЕСТ 13 | ID: 7A828736803AC8D2] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Crowned by the Deep
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Makes you permanently wet?
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7A828736803AC8D2 ---
+
+
+=== [КВЕСТ 14 | ID: 139FECFBB7C27C72] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Blessing Eternal
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants immunity to magic damage as well as a permanent cleanse effect.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 139FECFBB7C27C72 ---
+
+
+=== [КВЕСТ 15 | ID: 2A3343DCB3C20CA0] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Relic of Reversal
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+When an enemy attempts to apply a negative trait effect to you apply it to nearby enemies targetting you instead.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2A3343DCB3C20CA0 ---
+
+
+=== [КВЕСТ 16 | ID: 597AF5F03E40920F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Silver Shackles
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Applies the incarceration effect to mobs within attack range when sneaking.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 597AF5F03E40920F ---
+
+
+=== [КВЕСТ 17 | ID: 55605CA788231A47] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Corrosion's Caress
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This artifact causes attacks to damage both the equipment of your enemies and yourself.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 55605CA788231A47 ---
+
+
+=== [КВЕСТ 18 | ID: 18CBA1166AD4D5FA] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Breath of Restoration
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Heals you for 5 percent of you max health each second.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 18CBA1166AD4D5FA ---
+
+
+=== [КВЕСТ 19 | ID: 29E3C2F277C31454] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Pyre's Kiss
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Makes your attacks inflict soul flame for 5 seconds based on the amount of traits the enemy has.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 29E3C2F277C31454 ---
+
+
+=== [КВЕСТ 20 | ID: 71F8F60575E850BD] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Hand that Shatters Miracles
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Makes your attacks bypass all magical protection at the cost of obtaining no hositlity loot.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 71F8F60575E850BD ---
+
+
+=== [КВЕСТ 21 | ID: 68C8CC5C6FD3E649] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Fists of Fury
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Your melee attacks will bypass the damage cooldown.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 68C8CC5C6FD3E649 ---
+
+
+=== [КВЕСТ 22 | ID: 1BF781308AB8D8B6] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Grasp of Eternity
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This artifact grants extra ring and charm slots.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1BF781308AB8D8B6 ---
+
+
+=== [КВЕСТ 23 | ID: 3392F747F200EF19] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Seat of Shadows
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Guaranteed trait symbol drops at the cost of enemies gaining all the traits for their level .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3392F747F200EF19 ---
+
+
+=== [КВЕСТ 24 | ID: 0AD74BD5763E180C] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Defying Darkness
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Protects your level one buffs from being cleansed by the enemy.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0AD74BD5763E180C ---
+
+
+=== [КВЕСТ 25 | ID: 5CE8BF5DCE167BAE] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Halo's Gift
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Enemies can no longer adapt to your attacks.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5CE8BF5DCE167BAE ---
+
+
+=== [КВЕСТ 26 | ID: 2F255DE45EA9CBCD] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Gaze beyond Veils
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This artifact grants extra head slots.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2F255DE45EA9CBCD ---
+
+
+=== [КВЕСТ 27 | ID: 1F1482084A2E1164] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Triad Mantle
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This item grants extra back slots.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1F1482084A2E1164 ---
+
+
+=== [КВЕСТ 28 | ID: 7BD1F35903EB3EC9] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Word of Ruin
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+When a negative trait is applied to you this artifact will cleanse and transfer it to nearby enemies targetting you at the cost of extra difficulty.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7BD1F35903EB3EC9 ---
+
+
+=== [КВЕСТ 29 | ID: 370D72F51729888B] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Satchel of Secrets
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Unseals items afflicted with the seal trait effect.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 370D72F51729888B ---
+
+
+=== [КВЕСТ 30 | ID: 323F9FF66FF8F65E] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Hoard of the Horror
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Grants increased loot drop chance per level and increased hostility loot at the cost of extra difficulty.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 323F9FF66FF8F65E ---
+
+
+=== [КВЕСТ 31 | ID: 7D48F3259606663E] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Danger follows the Mighty
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The world grows more dangerous as Hostility increases.
+
+Personal Hostility rises as you progress through your adventure.
+
+Regional Hostility increases as you spend time and fight within an area.
+
+Regional Hostility can be reduced using a Hostility Orb.
+
+Higher Hostility means stronger enemies, deadlier Champions, but also greater &erewards&f.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7D48F3259606663E ---
+
+
+=== [КВЕСТ 32 | ID: 6C1C8C388A6B4EC2] ===
+EN_TITLE: Every Strength has a Weakness
+RU_TITLE: 
+
+EN_SUBTITLE: Countering Champions
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+As Hostility rises, Champions begin to emerge with increasingly powerful Abilities. Some may become invisible, reflect your attacks, or possess other dangerous powers.
+
+Fortunately, each Ability has a counter.
+
+Throughout your journey you will discover powerful Artifacts, each designed to protect you from a specific Champion Ability. Learning which Artifact to use is just as important as finding it.
+
+The greatest adventurers do not simply fight harder they fight smarter.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6C1C8C388A6B4EC2 ---
+
+

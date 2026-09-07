@@ -1,0 +1,444 @@
+# =========================================================================
+# ГЛАВА: ciscos_dread_knight.snbt
+# Всего квестов: 25
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Ciscos Dread Knight
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 5EA56D4E49943492] ===
+EN_TITLE: Slay The Leviathan
+RU_TITLE: 
+
+EN_SUBTITLE: Abyssal Terror
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+&9The sunken city &fcan be located with &5the eye of abyss &fand the Leviathan awakens when an &dabyssal sacrifice &fis placed on it's altar.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5EA56D4E49943492 ---
+
+
+=== [КВЕСТ 2 | ID: 468FD1BC76CAA38A] ===
+EN_TITLE: Slay the Netherite Monstrosity
+RU_TITLE: 
+
+EN_SUBTITLE: Neutralizing Netherite
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+Use the eye of Monstrous to locate it's lair within the &cnether.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 468FD1BC76CAA38A ---
+
+
+=== [КВЕСТ 3 | ID: 43DFF70CCC78EE26] ===
+EN_TITLE: Slay The Ghost of Captain Cornelia
+RU_TITLE: 
+
+EN_SUBTITLE: Culling the Captain
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                        &6Tier 2
+
+Can be summoned near &9water &fwith the &cshell horn &fwhilst in the &bIce Maze biome.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 43DFF70CCC78EE26 ---
+
+
+=== [КВЕСТ 4 | ID: 6E20A83067679C38] ===
+EN_TITLE: Slay the Void Worm
+RU_TITLE: 
+
+EN_SUBTITLE: Voidborn Demon
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+Summoned by tossing a &9mysterious worm &finto the &5void &fwithin the &douter end dimension.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6E20A83067679C38 ---
+
+
+=== [КВЕСТ 5 | ID: 37BECEA9F6F83A3D] ===
+EN_TITLE: Slay the Harbinger
+RU_TITLE: 
+
+EN_SUBTITLE: The Harbinger
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+Use the &ceye of mech &fto locate its structure then awaken it with a &dnether star.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 37BECEA9F6F83A3D ---
+
+
+=== [КВЕСТ 6 | ID: 7D57DE098B9C58D2] ===
+EN_TITLE: Slay the Warden
+RU_TITLE: 
+
+EN_SUBTITLE: Warden Woes
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+Can be found in the &3deep &0dark.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7D57DE098B9C58D2 ---
+
+
+=== [КВЕСТ 7 | ID: 284CC876C5BF4841] ===
+EN_TITLE: Slay The Warped Mosco
+RU_TITLE: 
+
+EN_SUBTITLE: Muscled Mosquito
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &4Tier 3
+
+This amplified version of the &ccrimson mosquito &fcan be created when a &ccrimson mosquito &fsucks the blood of a &9mungus &fthat is covered in &1warped fungus &fwhile in the &aoverworld.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 284CC876C5BF4841 ---
+
+
+=== [КВЕСТ 8 | ID: 33355CF6FE34D418] ===
+EN_TITLE: Slay Ignis
+RU_TITLE: 
+
+EN_SUBTITLE: King of Flame
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+Found within the &6burning arena &fin the &cnether &ddimension.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 33355CF6FE34D418 ---
+
+
+=== [КВЕСТ 9 | ID: 5C4C5ED10BEFCB22] ===
+EN_TITLE: Slay the Monarch of Chaos
+RU_TITLE: 
+
+EN_SUBTITLE: Menacing Monarch
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &6Tier 2
+
+Can be summoned by using a &0shard of uncertainty &fon a &5blackstone pedastal.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5C4C5ED10BEFCB22 ---
+
+
+=== [КВЕСТ 10 | ID: 6EEDFAA5ECCD6D69] ===
+EN_TITLE: Slay the Fallen Icon
+RU_TITLE: 
+
+EN_SUBTITLE: Harbinger of Moonlight
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &aTier 1
+
+Defeat &1the Fallen Icon &fand &eHarbinger of Moonlight.
+
+&fCan be summoned by using an &6essence of eventide &fon an &8old soul altar.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6EEDFAA5ECCD6D69 ---
+
+
+=== [КВЕСТ 11 | ID: 55FC85A0AAE7B542] ===
+EN_TITLE: Slay The Old Champion's Remains
+RU_TITLE: 
+
+EN_SUBTITLE: Frenzied Shade
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                       &aTier 1 
+
+Defeat the &6Old Champion's Remains &fand &5Frenzied Shade. &fCan be located using the &bMoonstone Compass.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 55FC85A0AAE7B542 ---
+
+
+=== [КВЕСТ 12 | ID: 1C30C21B739D5F98] ===
+EN_TITLE: Slay The Returning Knight
+RU_TITLE: 
+
+EN_SUBTITLE: Old Soul
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &aTier 1
+
+Slay &1The Returning Knight. &fCan be summoned by using a &dlost soul &fon an &8old moon altar.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1C30C21B739D5F98 ---
+
+
+=== [КВЕСТ 13 | ID: 368E9A4D5A17F2E4] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Dead King Dies Again
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &6Tier 2
+
+&5The Dead King's &flair can be found by crafting and following the &2wayward compass.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 368E9A4D5A17F2E4 ---
+
+
+=== [КВЕСТ 14 | ID: 2879C3284A204B6E] ===
+EN_TITLE: Slay the Night Lich
+RU_TITLE: 
+
+EN_SUBTITLE: Night Lich Woes
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &4Tier 3
+
+&9The Night Lich &fcan be found in rare towers in &bcold &fbiomes. Locate the towers by following &1soul stars.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2879C3284A204B6E ---
+
+
+=== [КВЕСТ 15 | ID: 712F03F19DE662F9] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Obliterating the Obsidilith
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &4Tier 3
+
+&5The Obsidilith &fcan be found in rare structures in the &dend islands.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 712F03F19DE662F9 ---
+
+
+=== [КВЕСТ 16 | ID: 5C65E6DBA9948523] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Neutralizing the Nether Gauntlet
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &4Tier 3
+
+&4The Nether Gauntlet &fcan be found in rare structures in &cthe nether. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5C65E6DBA9948523 ---
+
+
+=== [КВЕСТ 17 | ID: 11AE539045CFF66D] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Beating the Blossom
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                    &6Tier 2
+
+The &5Void &2Blossom &fcan be found in rare caves at the bottom of the world. &5Void &alilies &fwill point the way.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 11AE539045CFF66D ---
+
+
+=== [КВЕСТ 18 | ID: 4DF63948665C18B3] ===
+EN_TITLE: Slay the ancient Remnant
+RU_TITLE: 
+
+EN_SUBTITLE: Into the Sands
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+This &cprehistoric &eking &fof the sands resides in a pyramid like structure within the &edesert.
+
+It's spawn egg and awaken material can also be found in the &ecisco's wares shop.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4DF63948665C18B3 ---
+
+
+=== [КВЕСТ 19 | ID: 021E592772515E8C] ===
+EN_TITLE: Slay the Day Stalker and Night Prowler
+RU_TITLE: 
+
+EN_SUBTITLE: Deadly Duo
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                           &4Tier 3
+
+These twin bosses can be summoned using the &5chaos orb.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 021E592772515E8C ---
+
+
+=== [КВЕСТ 20 | ID: 678A7FE4D87993D3] ===
+EN_TITLE: Tiers
+RU_TITLE: 
+
+EN_SUBTITLE: Guide
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&aTier 1 &f: Minimum level 75. Small chance to have weak traits.
+
+&6Tier 2 &f: Minimum level 200. Moderate chance to have medium level traits.
+
+&4Tier 3 &f: Minimum level 500. High chance to have exceptional traits.
+
+&dGatekeepers &f: Always have high level traits. Start at slightly higher level than the tier they gatekeep. Must be defeated in order to progress to the next tier.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 678A7FE4D87993D3 ---
+
+
+=== [КВЕСТ 21 | ID: 3109450AC20BB4CF] ===
+EN_TITLE: Slay Umvuthi
+RU_TITLE: 
+
+EN_SUBTITLE: The Sunbird
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                     &6Tier 2
+
+The creator of abavuthana, &eUmvuthi &fcan be found in it's lair within the &6savanna &fbiome.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3109450AC20BB4CF ---
+
+
+=== [КВЕСТ 22 | ID: 0F73EE0DAB5E37FD] ===
+EN_TITLE: Slay Frostmaw
+RU_TITLE: 
+
+EN_SUBTITLE: The Beast of Winter
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                      &6Tier 2
+
+This dangerous beast can be found rarely in &bsnowy &fareas.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0F73EE0DAB5E37FD ---
+
+
+=== [КВЕСТ 23 | ID: 0E673FBC14FEDA40] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Steelborn Guardian
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                     &6Tier 2
+
+&0The Ferrous Wroughtnaut &fcan be found within a structure &7underground.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0E673FBC14FEDA40 ---
+
+
+=== [КВЕСТ 24 | ID: 4831B33EC2E02725] ===
+EN_TITLE: Slay the Decaying King
+RU_TITLE: 
+
+EN_SUBTITLE: Darkin Demon
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                     &6Tier 2
+
+Slay the &0Decaying King.&f It's lair can be found in the &cnether &fusing a moonstone compass.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4831B33EC2E02725 ---
+
+
+=== [КВЕСТ 25 | ID: 4C3CAC9897B0C4DD] ===
+EN_TITLE: Slay Maledictus
+RU_TITLE: 
+
+EN_SUBTITLE: Malevolent Maledictus
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+This &aphantom general &fcan be found in his domain the &bfrosted prison.
+
+&bThe frosted prison &fcan be located using the &aeye of curse.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4C3CAC9897B0C4DD ---
+
+

@@ -1,0 +1,350 @@
+Compiled from "MothFlyToLightGoal.java"
+public class com.cicada.longwings.entity.ai.MothFlyToLightGoal extends net.minecraft.world.entity.ai.goal.Goal {
+  private com.cicada.longwings.entity.ButterflyEntity butterfly;
+
+  net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block> lightSourcesTag;
+
+  net.minecraft.core.BlockPos$MutableBlockPos checkPos;
+
+  net.minecraft.world.level.block.Block blockType;
+
+  public com.cicada.longwings.entity.ai.MothFlyToLightGoal(com.cicada.longwings.entity.ButterflyEntity);
+    Code:
+       0: aload_0
+       1: invokespecial #37                 // Method net/minecraft/world/entity/ai/goal/Goal."<init>":()V
+       4: aload_0
+       5: getstatic     #43                 // Field net/minecraft/core/registries/Registries.f_256747_:Lnet/minecraft/resources/ResourceKey;
+       8: new           #45                 // class net/minecraft/resources/ResourceLocation
+      11: dup
+      12: ldc           #47                 // String longwings
+      14: ldc           #49                 // String moth_light_sources
+      16: invokespecial #52                 // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      19: invokestatic  #58                 // Method net/minecraft/tags/TagKey.m_203882_:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      22: putfield      #60                 // Field lightSourcesTag:Lnet/minecraft/tags/TagKey;
+      25: aload_0
+      26: new           #7                  // class net/minecraft/core/BlockPos$MutableBlockPos
+      29: dup
+      30: invokespecial #61                 // Method net/minecraft/core/BlockPos$MutableBlockPos."<init>":()V
+      33: putfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      36: aload_0
+      37: getstatic     #68                 // Field net/minecraft/world/level/block/Blocks.f_50681_:Lnet/minecraft/world/level/block/Block;
+      40: putfield      #70                 // Field blockType:Lnet/minecraft/world/level/block/Block;
+      43: aload_0
+      44: aload_1
+      45: putfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      48: return
+
+  public boolean m_8036_();
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+       7: invokevirtual #88                 // Method net/minecraft/world/level/Level.m_5776_:()Z
+      10: ifne          193
+      13: aload_0
+      14: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      17: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+      20: astore_1
+      21: aload_1
+      22: invokevirtual #91                 // Method net/minecraft/world/level/Level.m_46462_:()Z
+      25: ifeq          193
+      28: aload_0
+      29: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      32: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+      35: invokevirtual #95                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      38: sipush        1750
+      41: invokeinterface #101,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      46: iconst_5
+      47: if_icmpge     193
+      50: bipush        8
+      52: istore_2
+      53: aload_0
+      54: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      57: invokevirtual #105                // Method com/cicada/longwings/entity/ButterflyEntity.m_20185_:()D
+      60: dstore_3
+      61: aload_0
+      62: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      65: invokevirtual #108                // Method com/cicada/longwings/entity/ButterflyEntity.m_20186_:()D
+      68: dstore        5
+      70: aload_0
+      71: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      74: invokevirtual #111                // Method com/cicada/longwings/entity/ButterflyEntity.m_20189_:()D
+      77: dstore        7
+      79: getstatic     #68                 // Field net/minecraft/world/level/block/Blocks.f_50681_:Lnet/minecraft/world/level/block/Block;
+      82: astore        9
+      84: iload_2
+      85: ineg
+      86: istore        10
+      88: iload         10
+      90: iload_2
+      91: if_icmpgt     193
+      94: iload_2
+      95: ineg
+      96: istore        11
+      98: iload         11
+     100: iload_2
+     101: if_icmpgt     187
+     104: iload_2
+     105: ineg
+     106: istore        12
+     108: iload         12
+     110: iload_2
+     111: if_icmpgt     181
+     114: aload_0
+     115: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+     118: dload_3
+     119: iload         10
+     121: i2d
+     122: dadd
+     123: dload         5
+     125: iload         11
+     127: i2d
+     128: dadd
+     129: dload         7
+     131: iload         12
+     133: i2d
+     134: dadd
+     135: invokevirtual #117                // Method net/minecraft/core/BlockPos$MutableBlockPos.m_122169_:(DDD)Lnet/minecraft/core/BlockPos$MutableBlockPos;
+     138: pop
+     139: aload_1
+     140: invokevirtual #121                // Method net/minecraft/world/level/Level.m_7654_:()Lnet/minecraft/server/MinecraftServer;
+     143: aload_0
+     144: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     147: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+     150: invokevirtual #125                // Method net/minecraft/world/level/Level.m_46472_:()Lnet/minecraft/resources/ResourceKey;
+     153: invokevirtual #131                // Method net/minecraft/server/MinecraftServer.m_129880_:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/server/level/ServerLevel;
+     156: aload_0
+     157: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+     160: invokevirtual #137                // Method net/minecraft/server/level/ServerLevel.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     163: aload_0
+     164: getfield      #60                 // Field lightSourcesTag:Lnet/minecraft/tags/TagKey;
+     167: invokevirtual #143                // Method net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+     170: ifeq          175
+     173: iconst_1
+     174: ireturn
+     175: iinc          12, 1
+     178: goto          108
+     181: iinc          11, 1
+     184: goto          98
+     187: iinc          10, 1
+     190: goto          88
+     193: iconst_0
+     194: ireturn
+
+  public void m_8056_();
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: iconst_0
+       5: invokevirtual #160                // Method com/cicada/longwings/entity/ButterflyEntity.setOnWall:(Z)V
+       8: aload_0
+       9: invokespecial #162                // Method net/minecraft/world/entity/ai/goal/Goal.m_8056_:()V
+      12: return
+
+  public void m_8041_();
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+       7: aload_0
+       8: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      11: invokevirtual #167                // Method com/cicada/longwings/entity/ButterflyEntity.m_20183_:()Lnet/minecraft/core/BlockPos;
+      14: invokevirtual #168                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      17: getstatic     #68                 // Field net/minecraft/world/level/block/Blocks.f_50681_:Lnet/minecraft/world/level/block/Block;
+      20: invokevirtual #172                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      23: ifne          154
+      26: bipush        15
+      28: istore_1
+      29: bipush        -15
+      31: aload_0
+      32: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      35: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+      38: invokevirtual #95                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      41: iload_1
+      42: iconst_2
+      43: imul
+      44: invokeinterface #101,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      49: iadd
+      50: istore_2
+      51: aload_0
+      52: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      55: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+      58: invokevirtual #95                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      61: iconst_5
+      62: invokeinterface #101,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      67: istore_3
+      68: bipush        -15
+      70: aload_0
+      71: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      74: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+      77: invokevirtual #95                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      80: iload_1
+      81: iconst_2
+      82: imul
+      83: invokeinterface #101,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      88: iadd
+      89: istore        4
+      91: aload_0
+      92: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      95: invokevirtual #176                // Method com/cicada/longwings/entity/ButterflyEntity.m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+      98: aload_0
+      99: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     102: invokevirtual #105                // Method com/cicada/longwings/entity/ButterflyEntity.m_20185_:()D
+     105: iload_2
+     106: i2d
+     107: dadd
+     108: aload_0
+     109: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     112: invokevirtual #108                // Method com/cicada/longwings/entity/ButterflyEntity.m_20186_:()D
+     115: iload_3
+     116: i2d
+     117: dadd
+     118: aload_0
+     119: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     122: invokevirtual #111                // Method com/cicada/longwings/entity/ButterflyEntity.m_20189_:()D
+     125: iload         4
+     127: i2d
+     128: dadd
+     129: ldc           #177                // float 0.45f
+     131: aload_0
+     132: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     135: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+     138: getfield      #181                // Field net/minecraft/world/level/Level.f_46441_:Lnet/minecraft/util/RandomSource;
+     141: iconst_2
+     142: invokeinterface #101,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     147: i2f
+     148: fadd
+     149: f2d
+     150: invokevirtual #187                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26519_:(DDDD)Z
+     153: pop
+     154: aload_0
+     155: invokespecial #189                // Method net/minecraft/world/entity/ai/goal/Goal.m_8041_:()V
+     158: return
+
+  public boolean m_8045_();
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+       7: invokevirtual #88                 // Method net/minecraft/world/level/Level.m_5776_:()Z
+      10: ifne          192
+      13: aload_0
+      14: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      17: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+      20: invokevirtual #91                 // Method net/minecraft/world/level/Level.m_46462_:()Z
+      23: ifeq          192
+      26: new           #195                // class net/minecraft/world/phys/Vec3
+      29: dup
+      30: aload_0
+      31: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      34: invokevirtual #199                // Method net/minecraft/core/BlockPos$MutableBlockPos.m_123341_:()I
+      37: i2d
+      38: ldc2_w        #200                // double 0.5d
+      41: dadd
+      42: aload_0
+      43: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      46: invokevirtual #204                // Method net/minecraft/core/BlockPos$MutableBlockPos.m_123342_:()I
+      49: i2d
+      50: ldc2_w        #200                // double 0.5d
+      53: dadd
+      54: aload_0
+      55: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      58: invokevirtual #207                // Method net/minecraft/core/BlockPos$MutableBlockPos.m_123343_:()I
+      61: i2d
+      62: ldc2_w        #200                // double 0.5d
+      65: dadd
+      66: invokespecial #210                // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+      69: astore_1
+      70: aload_1
+      71: aload_0
+      72: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      75: invokevirtual #214                // Method com/cicada/longwings/entity/ButterflyEntity.m_20182_:()Lnet/minecraft/world/phys/Vec3;
+      78: invokevirtual #218                // Method net/minecraft/world/phys/Vec3.m_82546_:(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+      81: invokevirtual #221                // Method net/minecraft/world/phys/Vec3.m_82541_:()Lnet/minecraft/world/phys/Vec3;
+      84: astore_2
+      85: aload_1
+      86: aload_2
+      87: ldc2_w        #200                // double 0.5d
+      90: invokevirtual #225                // Method net/minecraft/world/phys/Vec3.m_82490_:(D)Lnet/minecraft/world/phys/Vec3;
+      93: invokevirtual #218                // Method net/minecraft/world/phys/Vec3.m_82546_:(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+      96: astore_3
+      97: new           #14                 // class net/minecraft/world/level/ClipContext
+     100: dup
+     101: aload_0
+     102: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     105: invokevirtual #214                // Method com/cicada/longwings/entity/ButterflyEntity.m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     108: aload_3
+     109: getstatic     #229                // Field net/minecraft/world/level/ClipContext$Block.COLLIDER:Lnet/minecraft/world/level/ClipContext$Block;
+     112: getstatic     #233                // Field net/minecraft/world/level/ClipContext$Fluid.NONE:Lnet/minecraft/world/level/ClipContext$Fluid;
+     115: aload_0
+     116: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     119: invokespecial #236                // Method net/minecraft/world/level/ClipContext."<init>":(Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/level/ClipContext$Block;Lnet/minecraft/world/level/ClipContext$Fluid;Lnet/minecraft/world/entity/Entity;)V
+     122: astore        4
+     124: aload_0
+     125: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     128: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+     131: aload         4
+     133: invokevirtual #240                // Method net/minecraft/world/level/Level.m_45547_:(Lnet/minecraft/world/level/ClipContext;)Lnet/minecraft/world/phys/BlockHitResult;
+     136: invokevirtual #246                // Method net/minecraft/world/phys/BlockHitResult.m_6662_:()Lnet/minecraft/world/phys/HitResult$Type;
+     139: getstatic     #250                // Field net/minecraft/world/phys/HitResult$Type.MISS:Lnet/minecraft/world/phys/HitResult$Type;
+     142: if_acmpne     192
+     145: aload_0
+     146: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     149: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+     152: aload_0
+     153: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+     156: invokevirtual #168                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     159: getstatic     #68                 // Field net/minecraft/world/level/block/Blocks.f_50681_:Lnet/minecraft/world/level/block/Block;
+     162: invokevirtual #172                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     165: ifeq          192
+     168: aload_0
+     169: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     172: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+     175: invokevirtual #95                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     178: sipush        1750
+     181: invokeinterface #101,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     186: iconst_5
+     187: if_icmplt     192
+     190: iconst_1
+     191: ireturn
+     192: iconst_0
+     193: ireturn
+
+  public void m_8037_();
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+       7: invokevirtual #88                 // Method net/minecraft/world/level/Level.m_5776_:()Z
+      10: ifne          72
+      13: aload_0
+      14: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      17: invokevirtual #176                // Method com/cicada/longwings/entity/ButterflyEntity.m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+      20: aload_0
+      21: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      24: invokevirtual #199                // Method net/minecraft/core/BlockPos$MutableBlockPos.m_123341_:()I
+      27: i2d
+      28: aload_0
+      29: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      32: invokevirtual #204                // Method net/minecraft/core/BlockPos$MutableBlockPos.m_123342_:()I
+      35: i2f
+      36: aload_0
+      37: getfield      #72                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      40: invokevirtual #83                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+      43: invokevirtual #95                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      46: invokeinterface #261,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      51: ldc_w         #262                // float 1.25f
+      54: fmul
+      55: fadd
+      56: f2d
+      57: aload_0
+      58: getfield      #63                 // Field checkPos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      61: invokevirtual #207                // Method net/minecraft/core/BlockPos$MutableBlockPos.m_123343_:()I
+      64: i2d
+      65: ldc2_w        #263                // double 0.8500000238418579d
+      68: invokevirtual #187                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26519_:(DDDD)Z
+      71: pop
+      72: aload_0
+      73: invokespecial #266                // Method net/minecraft/world/entity/ai/goal/Goal.m_8037_:()V
+      76: return
+}

@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+        "type": "minecraft:alternatives",
+        "children": [
+
+        {
+          "type": "minecraft:item",
+          "name": "longwings:netting",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "longwings:netting",
+              "properties": {
+                "design": "2"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{variant:2, CustomModelData:2}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "longwings:netting",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "longwings:netting",
+              "properties": {
+                "design": "3"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{variant:3, CustomModelData:3}"
+            }
+          ]
+        },
+          {
+            "type": "minecraft:item",
+            "name": "longwings:netting",
+            "conditions": [
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "longwings:netting",
+                "properties": {
+                  "design": "4"
+                }
+              }
+            ],
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{variant:4, CustomModelData:4}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "longwings:netting",
+            "conditions": [
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "longwings:netting",
+                "properties": {
+                  "design": "5"
+                }
+              }
+            ],
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{variant:5, CustomModelData:5}"
+              }
+            ]
+          },
+        {
+          "type": "minecraft:item",
+          "name": "longwings:netting"
+        }
+        ]
+        }
+      ]
+    }
+  ]
+}

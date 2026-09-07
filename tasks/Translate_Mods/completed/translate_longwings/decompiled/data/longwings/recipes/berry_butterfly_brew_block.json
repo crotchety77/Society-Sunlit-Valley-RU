@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "##",
+        "##"
+
+    ],
+    "key": {
+        "#": {
+            "item": "longwings:berry_butterfly_brew_bottle"
+        }
+    },
+    "result": {
+        "item": "longwings:berry_butterfly_brew_block",
+        "count": 1
+    }
+}

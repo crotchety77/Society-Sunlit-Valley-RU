@@ -1,0 +1,7 @@
+{
+  "dialog.npc.carpenter.purchase_supplies": "Купить материалы",
+  "dialog.npc.carpenter.invite_villagers": "Пригласить жителей",
+  "dialog.npc.carpenter.build_farm": "Построить ферму",
+  "dialog.npc.carpenter.build_village": "Построить город",
+  "dialog.npc.carpenter.chatter_friendship0.0.line_0": "Чем я могу помочь тебе сегодня, @i?"
+}

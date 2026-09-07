@@ -1,0 +1,276 @@
+# 📝 Согласование перевода: Отношения с жителями, Тултипы подарков, JEI и FTB Quests
+
+> **Как пользоваться этим файлом:**
+> Вы можете редактировать либо **Блок 1 (Визуальный шаблон)**, либо **Блок 2 (Строки для изменения)**.
+> После ваших правок агент автоматически перенесёт изменения в файлы игры и выполнит синхронизацию.
+
+---
+
+## 🎨 БЛОК 1: Визуальный шаблон (Как это выглядит в игре)
+
+### 1. Тултипы под Универсальными подарками (в Инвентаре и JEI)
+
+**Для Любимых подарков (Призматический осколок, Кроличья лапка, Чай Улун и др.):**
+```
+Призматический осколок
+§dУниверсальный подарок (+40 очков)
+```
+
+**Для Нравящихся подарков (Тотем, Моховые ягоды, Свитера, Минералы и др.):**
+```
+Моховая ягода
+§bУниверсальный подарок (+25 очков)
+```
+
+---
+
+### 2. Категория в JEI/EMI: «Универсальные подарки» (по нажатию `U`)
+
+**Вкладка:** `[ Иконка: Отношения с жителями ] Универсальные подарки`
+
+**Карточка 1: Универсальный подарок (+40 ♥)**
+```
+┌────────────────────────────────────────────────────────┐
+│  [ Слот предмета ]  Универсальный                      │
+│                     подарок (+40 ♥)                    │
+└────────────────────────────────────────────────────────┘
+```
+
+**Карточка 2: Универсальный подарок (+25 ♥)**
+```
+┌────────────────────────────────────────────────────────┐
+│  [ Слот предмета ]  Универсальный                      │
+│                     подарок (+25 ♥)                    │
+└────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3. Предмет «Отношения с жителями» (`society:face_note`)
+
+**Обычное состояние:**
+```
+Отношения с жителями
+Показывает отношение всех жителей к вам.
+§8[Удерживайте [§7Shift§8]]
+```
+
+**При удержании [Shift]:**
+```
+Отношения с жителями
+Показывает отношение всех жителей к вам.
+
+§d♥ Награды за максимальную дружбу (5 сердец):
+§7Некоторые жители могут подарить §eКнигу навыков§7
+
+§8ℹ Подарки можно дарить раз в 4 дня 
+§8(+40 очков за любимый).
+```
+
+---
+
+### 4. Квест «Вручение подарков» (FTB Quests > Начало пути)
+
+#### 📖 Страница 1:
+> **Вручение подарков**
+> 
+> Укрепление связей с жителями поможет им чувствовать себя в вашем городке как дома!
+> 
+> Нажмите **`Shift + ПКМ`** по жителю с предметом в руке, чтобы вручить подарок (кулдаун — **`1 раз в 4 дня`**). Ежедневный разговор приносит **`+5 очков`**.
+> 
+> Предметы, имеющие цену продажи, всегда можно дарить, а полный список подарков доступен по поиску **`#villager_gift`** в JEI/EMI.
+
+#### 📖 Страница 2 (после перелистывания `>`):
+> **★ Категории подарков**
+> **(100 очков = 1 ♥, макс. 500):**
+> 
+> • `Любимый:` **`+40 очков`**
+> • `Нравится:` **`+25 очков`**
+> • `😐 Нейтральный:` **`+10 очков`**
+> • `Не нравится:` **`-15 очков`**
+> • `Ненавидит:` **`-30 очков`**
+> 
+> **♥ Универсальные подарки:**
+> Призматический осколок, Кроличья лапка, Чай Улун, Солнечная жемчужина, Желейное вино, Гном, Чаша душ, Блок жемчуга.
+> 
+> **♥ Награды при 5 ♥:**
+> При максимальной дружбе некоторые жители дарят **Книги навыков** (Библиотекарь, Торговец с Рынка, Библиотекарь) и ценные подарки.
+
+---
+
+## 🔤 БЛОК 2: Строки и ключи для изменения
+
+### Файл 1: `kubejs_scripts/client/invitationTooltips.js`
+```javascript
+// 6. Подсказка для Отношений с жителями (society:face_note)
+  tooltip.addAdvanced("society:face_note", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(Text.of(""));
+      text.add(Text.literal("§d♥ Награды за максимальную дружбу (5 сердец):"));
+      text.add(Text.literal("§7Некоторые жители могу подарить §eКнигу навыков§7"));
+      text.add(Text.of(""));
+      text.add(Text.literal("§8ℹ Подарки можно дарить раз в 4 дня "));
+      text.add(Text.literal("§8(+40 очков за любимый)."));
+    } else {
+      text.add(Text.literal("§8[Удерживайте [§7Shift§8]"));
+    }
+  });
+```
+
+  // 7. Подсказки для Универсальных подарков
+  const universalLovedItems = [
+    "society:prismatic_shard",
+    "minecraft:rabbit_foot",
+    "herbalbrews:oolong_tea",
+    "society:sunlit_pearl",
+    "vinery:jellie_wine",
+    "society:gnome",
+    "society:bowl_of_soul",
+    "crabbersdelight:pearl_block"
+  ];
+  tooltip.add(universalLovedItems, Text.literal("§dУниверсальный подарок (+40 очков)"));
+
+  const universalLikedItems = [
+    "minecraft:totem_of_undying",
+    "atmospheric:candied_orange_slices",
+    "quark:diamond_heart",
+    "society:mossberry",
+    "society:mossberry_stew",
+    "crabbersdelight:pearl",
+    "society:furniture_box",
+    "society:ancient_cookie"
+  ];
+  tooltip.add(universalLikedItems, Text.literal("§bУниверсальный подарок (+25 очков)"));
+
+  const universalLikedTags = [
+    "etcetera:sweaters",
+    "etcetera:hats",
+    "society:mineral",
+    "forge:gems",
+    "society:pristine_mineral"
+  ];
+
+  universalLikedTags.forEach((tag) => {
+    tooltip.addAdvanced(`#${tag}`, (item, advanced, text) => {
+      // Исключаем любимые (+40) предметы и предотвращаем повтор от нескольких тегов
+      if (!universalLovedItems.includes(item.id)) {
+        let alreadyAdded = false;
+        for (let i = 0; i < text.size(); i++) {
+          if (text.get(i).getString().includes("Универсальный подарок")) {
+            alreadyAdded = true;
+            break;
+          }
+        }
+        if (!alreadyAdded) {
+          text.add(Text.literal("§bУниверсальный подарок (+25 очков)"));
+        }
+      }
+    });
+  });
+```
+
+### Файл 2: `kubejs_scripts/client/universalGiftsJei.js`
+```javascript
+// Priority: 10
+// Скрипт регистрации категории «Универсальные подарки» в JEI
+
+JEIAddedEvents.registerCategories((e) => {
+  const guiHelper = e.data.jeiHelpers.guiHelper;
+  e.custom("society:universal_gifts", (category) => {
+    category
+      .title(Text.translatable("jei.society.category.universal_gifts"))
+      .background(guiHelper.createBlankDrawable(177, 40))
+      .icon(guiHelper.createDrawableItemStack(Item.of("society:face_note")))
+      .isRecipeHandled(() => true)
+      .setDrawHandler((recipe, recipeSlotsView, guiGraphics) => {
+        const { type } = recipe.data;
+        let titleText = type === "loved" 
+          ? Text.literal("§dУниверсальный\n§dподарок (+40 ♥)") 
+          : Text.literal("§bУниверсальный\n§bподарок (+25 ♥)");
+        
+        guiGraphics.drawWordWrap(Client.font, titleText, 46, 11, 128, 0);
+      })
+      .handleLookup((builder, recipe) => {
+        const { item } = recipe.data;
+        if (item.startsWith("#")) {
+          builder
+            .addSlot("input", 14, 11)
+            .addIngredients([Ingredient.of(item)])
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        } else {
+          builder
+            .addSlot("input", 14, 11)
+            .addItemStack(Item.of(item))
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        }
+      });
+  });
+});
+
+JEIAddedEvents.registerRecipes((e) => {
+  const lovedGifts = [
+    "society:prismatic_shard",
+    "minecraft:rabbit_foot",
+    "herbalbrews:oolong_tea",
+    "society:sunlit_pearl",
+    "vinery:jellie_wine",
+    "society:gnome",
+    "society:bowl_of_soul",
+    "crabbersdelight:pearl_block"
+  ];
+  
+  const likedGifts = [
+    "minecraft:totem_of_undying",
+    "atmospheric:candied_orange_slices",
+    "quark:diamond_heart",
+    "society:mossberry",
+    "society:mossberry_stew",
+    "crabbersdelight:pearl",
+    "society:furniture_box",
+    "society:ancient_cookie",
+    "#etcetera:sweaters",
+    "#etcetera:hats",
+    "#society:mineral",
+    "#forge:gems",
+    "#society:pristine_mineral"
+  ];
+
+  lovedGifts.forEach((item) => {
+    e.custom("society:universal_gifts").add({
+      item: item,
+      type: "loved",
+      bonus: 40
+    });
+  });
+
+  likedGifts.forEach((item) => {
+    e.custom("society:universal_gifts").add({
+      item: item,
+      type: "liked",
+      bonus: 25
+    });
+  });
+});
+```
+
+### Файл 3: `translations/society/ru_ru.json`
+```json
+{
+  "jei.society.category.universal_gifts": "Универсальные подарки"
+}
+```
+
+### Файл 4: `translations/ftbquests/ru_ru.json`
+```json
+{
+  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.title": "Вручение подарков",
+  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description1": "Укрепление связей с жителями поможет им чувствовать себя в вашем городке как дома!",
+  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description2": "Нажмите &6Shift + ПКМ&r по жителю с предметом в руке, чтобы вручить подарок (кулдаун — &61 раз в 4 дня&r). Ежедневный разговор приносит &a+5 очков&r.",
+  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description3": "Предметы, имеющие цену продажи, всегда можно дарить, а полный список подарков доступен по поиску &6#villager_gift&r в JEI/EMI.",
+
+
+  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description4": "&6★ Категории подарков\n&c(100 очков = 1 ♥, макс. 500):&r\n\n• &fЛюбимый:&r &a+40 очков&r\n• &fНравится:&r &a+25 очков&r\n• &f😐 Нейтральный:&r &a+10 очков&r\n• &fНе нравится:&r &c-15 очков&r\n• &fНенавидит:&r &c-30 очков&r",
+  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description5": "&d♥ Универсальные подарки :&r\nПризматический осколок&r, Кроличья лапка, Чай Улун&r, Солнечная жемчужина&r, Желейное вино&r, Гном&r, Чаша душ&r, Блок жемчуга&r.",
+  "ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description6": "&d♥ Награды при 5 ♥:&r\nПри максимальной дружбе некоторые жители дарят &eКниги навыков&r (Библиотекарь, Торговец с Рынка, Библиотекарь) и ценные подарки."
+}
+```

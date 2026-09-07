@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "longwings:item/berry_butterfly_brine_bowl"
+  }
+}

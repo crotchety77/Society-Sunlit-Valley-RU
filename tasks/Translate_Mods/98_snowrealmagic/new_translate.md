@@ -1,0 +1,58 @@
+# Локализация мода: snowrealmagic
+
+**JAR:** `SnowRealMagic-1.20.1-Forge-10.7.0.jar` | **Всего строк:** 36 | **Не переведено:** 3
+
+## 1. Визуальный контекст и оформление
+* Форматирование: Названия предметов/блоков начинаются с Заглавной буквы.
+* Валюта: использовать значок монеты `§e●` (`U+25CF`).
+* Тултипы: подсветка клавиш `§6Shift + ПКМ§7`.
+
+## 2. Непереведённые строки (требуют перевода)
+
+```json
+{
+  "snowrealmagic.config.debug.weatherTickSlowness.desc": "TODO: Speed of the rain and snow ticking. 16 is default",
+  "snowrealmagic.config.debug.preventWorldgenLogSpam.desc": "TODO: Prevents the harmless log spam from snow-covered blocks worldgen",
+  "snowrealmagic.config.debug.skipSnowLoggingMushroom.desc": "TODO: Skip snow logging mushroom blocks during worldgen because it will cause mistakes due to not dark enough"
+}
+```
+
+## 3. Существующие переводы (для контекста)
+
+```json
+{
+  "modmenu.nameTranslation.snowrealmagic": "Снежная магия",
+  "modmenu.descriptionTranslation.snowrealmagic": "Подправляет поведение ванильного снега",
+  "entity.snowrealmagic.snow": "Падающий блок",
+  "block.snowrealmagic.slab": "Заснеженная плита",
+  "block.snowrealmagic.stairs": "Заснеженные ступени",
+  "block.snowrealmagic.wall": "Заснеженная ограда",
+  "block.snowrealmagic.fence": "Заснеженный забор",
+  "block.snowrealmagic.fence_gate": "Заснеженная калитка",
+  "gamerule.snowrealmagic:blizzardStrength": "Шуточная опция: сила метели",
+  "gamerule.snowrealmagic:blizzardStrength.description": "Блоки снега будут падать с неба. Значение от 1 до 8 устанавливает максимальные слои. Добавлено модом «Снежная магия».",
+  "gamerule.snowrealmagic:blizzardFrequency": "Шуточная опция: частота метели",
+  "gamerule.snowrealmagic:blizzardFrequency.description": "Частота метели. Значение N/10000 в тик за чанк. Добавлено модом «Снежная магия».",
+  "commands.gamerule.snowrealmagic.hint": "«Снежная магия» установлен, это игровое правило игнорируется. Вместо этого используйте конфигурацию.",
+  "snowrealmagic.config.particleThroughLeaves.desc": "Образует частицы снежинок под заснежными блоками листвы.",
+  "snowrealmagic.config.snowVariants.desc": "Некоторая заснеженная листва будет отображаться по-другому.",
+  "snowrealmagic.config.snowGravity.desc": "Снег будет падать вниз, как песок.",
+  "snowrealmagic.config.snowMakingIce.desc": "Снег превращает воду в лёд при падении.",
+  "snowrealmagic.config.thinnerBoundingBox.desc": "Хитбокс снега уменьшен вдвое.",
+  "snowrealmagic.config.snowAlwaysReplaceable.desc": "В снег можно поставить блок вне зависимости от количества слоёв снега.",
+  "snowrealmagic.config.snowNeverMelt.desc": "Снег никогда не тает",
+  "snowrealmagic.config.snowReduceFallDamage.desc": "Снег уменьшает урон от падения.",
+  "snowrealmagic.config.sustainGrassIfLayerMoreThanOne.desc": "Предотвращает превращение блока травы в землю, когда слоёв снега больше одного.",
+  "snowrealmagic.config.sneakSnowball.desc": "Получать снежок при приседе + ПКМ по блоку снега",
+  "snowrealmagic.config.mobSpawningMaxLayers.desc": "Максимальное количество слоёв снега, которые может создать моб",
+  "snowrealmagic.config.snow-cover.placeSnowOnBlock.desc": "На некоторые (неполные) блоки можно положить снег, чтобы они стали заснеженными.",
+  "snowrealmagic.config.snow-cover.placeNaturally.desc": "Снег может быть нанесён на некоторые (неполные) блоки не только игроком, но также снегопадом и генератором мира.",
+  "snowrealmagic.config.snow-cover.replaceWorldgenFeature.desc": "Блоки, сгенерированные в мире, будут заменены заснеженными блоками",
+  "snowrealmagic.config.snow-cover.retainOriginalBlocks.desc": "Если вы хотите удалить этот мод, вы, вероятно, захотите вернуть заснеженные блоки в нормальное состояние с помощью случайного тика.",
+  "snowrealmagic.config.accumulation.accumulatesDuringSnowfall.desc": "Снег накапливается во время дождя.",
+  "snowrealmagic.config.accumulation.accumulatesDuringSnowstorm.desc": "Снег накапливается во время грозы.",
+  "snowrealmagic.config.accumulation.maxLayers.desc": "Максимальное количество слоёв снега, которое может быть накоплено на блоке. Значение '9' убирает ограничение.",
+  "snowrealmagic.config.accumulation.naturalMelting.desc": "Снег тает со временем, если его слоёв более одного.",
+  "snowrealmagic.config.accumulation.snowAndIceMeltInWarmBiomes.desc": "Снег и лёд таят в тёплых биомах.\nВсегда включено, если установлен мод Fabric Seasons."
+}
+```

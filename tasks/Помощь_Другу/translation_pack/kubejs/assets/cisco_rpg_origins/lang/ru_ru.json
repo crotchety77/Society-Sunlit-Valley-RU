@@ -1,0 +1,34 @@
+{
+  "layer.cisco_rpg_origins.divineblessings.name": "Божественное благословение",
+  "layer.origins.origin.name": "Происхождение",
+
+  "origin.cisco_rpg_origins.demi_god_lux.name": "Полубог Люкс",
+  "origin.cisco_rpg_origins.demi_god_lux.description": "Потомок священного первородного бога и смертного. Священный свет струится по вашим жилам, не способный полностью вырваться наружу.",
+
+  "power.cisco_rpg_origins.divine_strength.name": "Божественная сила",
+  "power.cisco_rpg_origins.divine_strength.description": "Божественное наследие наполняет вас могуществом. Вы наносите на 40% больше урона.",
+
+  "power.cisco_rpg_origins.hubris.name": "Гордыня",
+  "power.cisco_rpg_origins.hubris.description": "Врождённая сила делает вас излишне самонадеянным и беспечным. Вы получаете на 20% больше урона.",
+
+  "power.cisco_rpg_origins.luxian_lineage.name": "Род Люкс",
+  "power.cisco_rpg_origins.luxian_lineage.description": "Небесный свет наполняет вас силой. Под открытым небом вы получаете на 10% меньше урона.",
+
+  "power.cisco_rpg_origins.divine_hunger.name": "Небесный голод",
+  "power.cisco_rpg_origins.divine_hunger.description": "Ваш организм требует божественной пищи: вы можете есть только золотые яблоки, золотую морковь и особую священную пищу.",
+
+  "power.cisco_rpg_origins.lightbringer.name": "Светоносец",
+  "power.cisco_rpg_origins.lightbringer.description": "Как истинный светоносец, вы обладаете полным иммунитетом к эффектам тьмы и иссушения.",
+
+  "power.cisco_rpg_origins.divine_body.name": "Божественное тело",
+  "power.cisco_rpg_origins.divine_body.description": "Ваше божественное тело исключительно крепко, что дарует вам увеличенный базовый запас здоровья (+10 HP).",
+
+  "origin.cisco_rpg_origins.athenas_blessing.name": "Благословение Афины",
+  "origin.cisco_rpg_origins.athenas_blessing.description": "Вам благоволит Афина, богиня мудрости. Она дарует вам своё защитное благословение.",
+
+  "power.cisco_rpg_origins.athenas_boon_minor.name": "Малый дар стойкости",
+  "power.cisco_rpg_origins.athenas_boon_minor.description": "Афина благословляет вашу броню, увеличивая защиту на +10 единиц.",
+
+  "power.cisco_rpg_origins.athenas_boon_major.name": "Великий дар мудрости",
+  "power.cisco_rpg_origins.athenas_boon_major.description": "После победы над Драконом Края Афина навсегда снижает весь получаемый вами урон на 15%."
+}

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "longwings:bowl",
+    "longwings:butterfly_feeder_bowl",
+    "longwings:sugar_water_bowl",
+    "longwings:berry_brew_bowl",
+    "longwings:apple_brew_bowl",
+    "longwings:melon_brew_bowl",
+    "longwings:berry_butterfly_brew_block",
+    "longwings:apple_butterfly_brew_block",
+    "longwings:melon_butterfly_brew_block",
+
+    "longwings:netting"
+  ]
+}

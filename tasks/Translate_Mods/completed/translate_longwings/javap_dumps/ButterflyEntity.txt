@@ -1,0 +1,2365 @@
+Compiled from "ButterflyEntity.java"
+public class com.cicada.longwings.entity.ButterflyEntity extends net.minecraft.world.entity.animal.Animal implements net.minecraft.world.entity.animal.FlyingAnimal {
+  public int floatCount;
+
+  public float prevDeltaX;
+
+  public float prevDeltaZ;
+
+  public boolean isUsingAI;
+
+  public com.cicada.longwings.entity.ButterflyVariant variant;
+
+  private static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.String> DATA_VARIANT_ID;
+
+  private static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Boolean> NOURISHED;
+
+  private static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Boolean> ONWALL;
+
+  private static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Boolean> INPLANT;
+
+  private static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> SEED;
+
+  private static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Float> SIZE;
+
+  private static final net.minecraft.network.syncher.EntityDataAccessor<net.minecraft.core.BlockPos> HOME_POS;
+
+  private final net.minecraft.util.RandomSource randomSource;
+
+  net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block> pollinationResistantCropsLevel1;
+
+  net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block> pollinationResistantCropsLevel2;
+
+  net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block> pollinationResistantCropsLevel3;
+
+  net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block> pollinationBannedCrops;
+
+  public com.cicada.longwings.entity.ButterflyEntity(net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.animal.Animal>, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #75                 // Method net/minecraft/world/entity/animal/Animal."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+       6: aload_0
+       7: new           #77                 // class net/minecraft/world/level/levelgen/LegacyRandomSource
+      10: dup
+      11: invokestatic  #83                 // Method net/minecraft/world/level/levelgen/RandomSupport.m_224599_:()J
+      14: invokespecial #86                 // Method net/minecraft/world/level/levelgen/LegacyRandomSource."<init>":(J)V
+      17: putfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+      20: aload_0
+      21: getstatic     #94                 // Field net/minecraft/core/registries/Registries.f_256747_:Lnet/minecraft/resources/ResourceKey;
+      24: new           #96                 // class net/minecraft/resources/ResourceLocation
+      27: dup
+      28: ldc           #98                 // String longwings
+      30: ldc           #100                // String pollination_resistant_crops_level_1
+      32: invokespecial #103                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      35: invokestatic  #109                // Method net/minecraft/tags/TagKey.m_203882_:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      38: putfield      #111                // Field pollinationResistantCropsLevel1:Lnet/minecraft/tags/TagKey;
+      41: aload_0
+      42: getstatic     #94                 // Field net/minecraft/core/registries/Registries.f_256747_:Lnet/minecraft/resources/ResourceKey;
+      45: new           #96                 // class net/minecraft/resources/ResourceLocation
+      48: dup
+      49: ldc           #98                 // String longwings
+      51: ldc           #113                // String pollination_resistant_crops_level_2
+      53: invokespecial #103                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      56: invokestatic  #109                // Method net/minecraft/tags/TagKey.m_203882_:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      59: putfield      #115                // Field pollinationResistantCropsLevel2:Lnet/minecraft/tags/TagKey;
+      62: aload_0
+      63: getstatic     #94                 // Field net/minecraft/core/registries/Registries.f_256747_:Lnet/minecraft/resources/ResourceKey;
+      66: new           #96                 // class net/minecraft/resources/ResourceLocation
+      69: dup
+      70: ldc           #98                 // String longwings
+      72: ldc           #117                // String pollination_resistant_crops_level_3
+      74: invokespecial #103                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      77: invokestatic  #109                // Method net/minecraft/tags/TagKey.m_203882_:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      80: putfield      #119                // Field pollinationResistantCropsLevel3:Lnet/minecraft/tags/TagKey;
+      83: aload_0
+      84: getstatic     #94                 // Field net/minecraft/core/registries/Registries.f_256747_:Lnet/minecraft/resources/ResourceKey;
+      87: new           #96                 // class net/minecraft/resources/ResourceLocation
+      90: dup
+      91: ldc           #98                 // String longwings
+      93: ldc           #121                // String pollination_banned_crops
+      95: invokespecial #103                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      98: invokestatic  #109                // Method net/minecraft/tags/TagKey.m_203882_:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+     101: putfield      #123                // Field pollinationBannedCrops:Lnet/minecraft/tags/TagKey;
+     104: aload_0
+     105: new           #125                // class net/minecraft/world/entity/ai/control/FlyingMoveControl
+     108: dup
+     109: aload_0
+     110: bipush        20
+     112: iconst_1
+     113: invokespecial #128                // Method net/minecraft/world/entity/ai/control/FlyingMoveControl."<init>":(Lnet/minecraft/world/entity/Mob;IZ)V
+     116: putfield      #132                // Field f_21342_:Lnet/minecraft/world/entity/ai/control/MoveControl;
+     119: aload_0
+     120: getstatic     #138                // Field net/minecraft/world/level/pathfinder/BlockPathTypes.BLOCKED:Lnet/minecraft/world/level/pathfinder/BlockPathTypes;
+     123: fconst_0
+     124: invokevirtual #142                // Method m_21441_:(Lnet/minecraft/world/level/pathfinder/BlockPathTypes;F)V
+     127: return
+
+  public static net.minecraft.world.entity.ai.attributes.AttributeSupplier createAttributes();
+    Code:
+       0: invokestatic  #157                // Method net/minecraft/world/entity/Mob.m_21552_:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+       3: getstatic     #163                // Field net/minecraft/world/entity/ai/attributes/Attributes.f_22276_:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+       6: ldc2_w        #164                // double 3.0d
+       9: invokevirtual #169                // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.m_22268_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;D)Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      12: getstatic     #172                // Field net/minecraft/world/entity/ai/attributes/Attributes.f_22280_:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+      15: ldc2_w        #173                // double 0.5d
+      18: invokevirtual #169                // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.m_22268_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;D)Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      21: getstatic     #177                // Field net/minecraft/world/entity/ai/attributes/Attributes.f_22279_:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+      24: ldc2_w        #178                // double 0.20000000298023224d
+      27: invokevirtual #169                // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.m_22268_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;D)Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      30: getstatic     #182                // Field net/minecraft/world/entity/ai/attributes/Attributes.f_22281_:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+      33: ldc2_w        #183                // double 2.0d
+      36: invokevirtual #169                // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.m_22268_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;D)Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      39: getstatic     #187                // Field net/minecraft/world/entity/ai/attributes/Attributes.f_22277_:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+      42: ldc2_w        #188                // double 48.0d
+      45: invokevirtual #169                // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.m_22268_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;D)Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      48: invokevirtual #192                // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.m_22265_:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+      51: areturn
+
+  public void m_7350_(net.minecraft.network.syncher.EntityDataAccessor<?>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #197                // Method net/minecraft/world/entity/animal/Animal.m_7350_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)V
+       5: return
+
+  protected void m_8097_();
+    Code:
+       0: aload_0
+       1: invokespecial #203                // Method net/minecraft/world/entity/animal/Animal.m_8097_:()V
+       4: aload_0
+       5: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       8: getstatic     #209                // Field DATA_VARIANT_ID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      11: ldc           #211                // String monarch
+      13: invokevirtual #217                // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      16: aload_0
+      17: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      20: getstatic     #219                // Field NOURISHED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      23: iconst_0
+      24: invokestatic  #225                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      27: invokevirtual #217                // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      30: aload_0
+      31: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      34: getstatic     #227                // Field ONWALL:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      37: iconst_0
+      38: invokestatic  #225                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      41: invokevirtual #217                // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      44: aload_0
+      45: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      48: getstatic     #229                // Field INPLANT:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      51: iconst_0
+      52: invokestatic  #225                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      55: invokevirtual #217                // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      58: aload_0
+      59: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      62: getstatic     #231                // Field SEED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      65: iconst_1
+      66: invokestatic  #236                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      69: invokevirtual #217                // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      72: aload_0
+      73: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      76: getstatic     #238                // Field SIZE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      79: fconst_1
+      80: invokestatic  #243                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      83: invokevirtual #217                // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      86: aload_0
+      87: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      90: getstatic     #245                // Field HOME_POS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      93: new           #34                 // class net/minecraft/core/BlockPos
+      96: dup
+      97: iconst_0
+      98: iconst_0
+      99: iconst_0
+     100: invokespecial #248                // Method net/minecraft/core/BlockPos."<init>":(III)V
+     103: invokevirtual #217                // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+     106: return
+
+  public void m_7380_(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #252                // Method net/minecraft/world/entity/animal/Animal.m_7380_:(Lnet/minecraft/nbt/CompoundTag;)V
+       5: aload_1
+       6: ldc           #254                // String Variant
+       8: aload_0
+       9: invokevirtual #258                // Method getVariant:()Ljava/lang/String;
+      12: invokevirtual #263                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+      15: aload_1
+      16: ldc_w         #265                // String Nourished
+      19: aload_0
+      20: invokevirtual #269                // Method isNourished:()Z
+      23: invokevirtual #273                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      26: aload_1
+      27: ldc_w         #275                // String isOnWall
+      30: aload_0
+      31: invokevirtual #277                // Method isOnWall:()Z
+      34: invokevirtual #273                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      37: aload_1
+      38: ldc_w         #279                // String isInPlant
+      41: aload_0
+      42: invokevirtual #281                // Method isInPlant:()Z
+      45: invokevirtual #273                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      48: aload_1
+      49: ldc_w         #283                // String seed
+      52: aload_0
+      53: invokevirtual #287                // Method getSeed:()Ljava/lang/Integer;
+      56: invokevirtual #291                // Method java/lang/Integer.intValue:()I
+      59: invokevirtual #295                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      62: aload_1
+      63: ldc_w         #297                // String size
+      66: aload_0
+      67: invokevirtual #301                // Method getSize:()Ljava/lang/Float;
+      70: invokevirtual #305                // Method java/lang/Float.floatValue:()F
+      73: invokevirtual #309                // Method net/minecraft/nbt/CompoundTag.m_128350_:(Ljava/lang/String;F)V
+      76: aload_1
+      77: ldc_w         #311                // String HomePosX
+      80: aload_0
+      81: invokevirtual #315                // Method getHomePos:()Lnet/minecraft/core/BlockPos;
+      84: invokevirtual #318                // Method net/minecraft/core/BlockPos.m_123341_:()I
+      87: invokevirtual #295                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      90: aload_1
+      91: ldc_w         #320                // String HomePosY
+      94: aload_0
+      95: invokevirtual #315                // Method getHomePos:()Lnet/minecraft/core/BlockPos;
+      98: invokevirtual #323                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     101: invokevirtual #295                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+     104: aload_1
+     105: ldc_w         #325                // String HomePosZ
+     108: aload_0
+     109: invokevirtual #315                // Method getHomePos:()Lnet/minecraft/core/BlockPos;
+     112: invokevirtual #328                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     115: invokevirtual #295                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+     118: return
+
+  public void m_7378_(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #333                // Method net/minecraft/world/entity/animal/Animal.m_7378_:(Lnet/minecraft/nbt/CompoundTag;)V
+       5: aload_0
+       6: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       9: getstatic     #219                // Field NOURISHED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      12: aload_1
+      13: ldc_w         #265                // String Nourished
+      16: invokevirtual #337                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+      19: invokestatic  #225                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      22: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      25: aload_0
+      26: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      29: getstatic     #227                // Field ONWALL:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      32: aload_1
+      33: ldc_w         #275                // String isOnWall
+      36: invokevirtual #337                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+      39: invokestatic  #225                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      42: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      45: aload_0
+      46: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      49: getstatic     #238                // Field SIZE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      52: aload_1
+      53: ldc_w         #297                // String size
+      56: invokevirtual #344                // Method net/minecraft/nbt/CompoundTag.m_128457_:(Ljava/lang/String;)F
+      59: invokestatic  #243                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      62: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      65: aload_1
+      66: ldc_w         #311                // String HomePosX
+      69: invokevirtual #348                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      72: istore_2
+      73: aload_1
+      74: ldc_w         #320                // String HomePosY
+      77: invokevirtual #348                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      80: istore_3
+      81: aload_1
+      82: ldc_w         #325                // String HomePosZ
+      85: invokevirtual #348                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      88: istore        4
+      90: aload_0
+      91: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      94: getstatic     #245                // Field HOME_POS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      97: new           #34                 // class net/minecraft/core/BlockPos
+     100: dup
+     101: iload_2
+     102: iload_3
+     103: iload         4
+     105: invokespecial #248                // Method net/minecraft/core/BlockPos."<init>":(III)V
+     108: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+     111: aload_1
+     112: ifnull        141
+     115: aload_1
+     116: ldc_w         #349                // String variant
+     119: invokevirtual #353                // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     122: ifnull        141
+     125: aload_0
+     126: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+     129: getstatic     #209                // Field DATA_VARIANT_ID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+     132: aload_1
+     133: ldc           #254                // String Variant
+     135: invokevirtual #353                // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     138: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+     141: return
+
+  public java.lang.Float getSize();
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #238                // Field SIZE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: invokevirtual #361                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      12: checkcast     #240                // class java/lang/Float
+      15: areturn
+
+  public void setSize(float);
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #238                // Field SIZE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: fload_1
+      10: invokestatic  #243                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      13: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      16: return
+
+  public java.lang.Integer getSeed();
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #231                // Field SEED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: invokevirtual #361                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      12: checkcast     #233                // class java/lang/Integer
+      15: areturn
+
+  public void setSeed(int);
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #231                // Field SEED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: iload_1
+      10: invokestatic  #236                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      13: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      16: return
+
+  public net.minecraft.core.BlockPos getHomePos();
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #245                // Field HOME_POS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: invokevirtual #361                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      12: checkcast     #34                 // class net/minecraft/core/BlockPos
+      15: areturn
+
+  public void setHomePos(net.minecraft.core.BlockPos);
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #245                // Field HOME_POS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: aload_1
+      10: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      13: return
+
+  public net.minecraft.world.entity.SpawnGroupData m_6518_(net.minecraft.world.level.ServerLevelAccessor, net.minecraft.world.DifficultyInstance, net.minecraft.world.entity.MobSpawnType, net.minecraft.world.entity.SpawnGroupData, net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokevirtual #374                // Method setButterflyVariantOnBiome:(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/SpawnGroupData;
+      11: areturn
+
+  public int randomHighBiasedCount(int, float, float);
+    Code:
+       0: aload_0
+       1: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+       4: astore        4
+       6: iconst_0
+       7: istore        5
+       9: iconst_0
+      10: istore        6
+      12: iload         6
+      14: iload_1
+      15: if_icmpge     47
+      18: aload         4
+      20: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      25: fload_2
+      26: fconst_1
+      27: iload         6
+      29: i2f
+      30: fload_3
+      31: fmul
+      32: fadd
+      33: fdiv
+      34: fcmpl
+      35: iflt          47
+      38: iinc          5, 1
+      41: iinc          6, 1
+      44: goto          12
+      47: iload         5
+      49: ireturn
+
+  public int randomLowBiasedCount(int, float, float);
+    Code:
+       0: aload_0
+       1: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+       4: astore        4
+       6: iconst_0
+       7: istore        5
+       9: iconst_0
+      10: istore        6
+      12: iload         6
+      14: iload_1
+      15: if_icmpge     47
+      18: aload         4
+      20: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      25: fload_2
+      26: fconst_1
+      27: iload         6
+      29: i2f
+      30: fload_3
+      31: fmul
+      32: fadd
+      33: fdiv
+      34: fcmpg
+      35: ifgt          47
+      38: iinc          5, 1
+      41: iinc          6, 1
+      44: goto          12
+      47: iload         5
+      49: ireturn
+
+  public net.minecraft.world.entity.SpawnGroupData setButterflyVariantOnBiome(net.minecraft.world.level.ServerLevelAccessor, net.minecraft.world.DifficultyInstance, net.minecraft.world.entity.MobSpawnType, net.minecraft.world.entity.SpawnGroupData, net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: instanceof    #9                  // class com/cicada/longwings/entity/ButterflyEntity$MothEntity
+       4: ifeq          13
+       7: invokestatic  #403                // Method com/cicada/longwings/entity/ButterflyVariant.getMothVariantPool:()[Lcom/cicada/longwings/entity/ButterflyVariant;
+      10: goto          16
+      13: invokestatic  #406                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyVariantPool:()[Lcom/cicada/longwings/entity/ButterflyVariant;
+      16: astore        6
+      18: getstatic     #411                // Field com/cicada/longwings/entity/ButterflyVariant.PAINTED_LADY:Lcom/cicada/longwings/entity/ButterflyVariant;
+      21: astore        7
+      23: aload_0
+      24: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      27: aload_0
+      28: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      31: invokevirtual #424                // Method net/minecraft/world/level/Level.m_204166_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
+      34: invokeinterface #430,  1          // InterfaceMethod net/minecraft/core/Holder.m_203334_:()Ljava/lang/Object;
+      39: checkcast     #432                // class net/minecraft/world/level/biome/Biome
+      42: astore        8
+      44: new           #434                // class java/util/ArrayList
+      47: dup
+      48: invokespecial #436                // Method java/util/ArrayList."<init>":()V
+      51: astore        9
+      53: iconst_0
+      54: istore        10
+      56: aload_0
+      57: astore        11
+      59: aload_0
+      60: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+      63: astore        12
+      65: aload         8
+      67: invokestatic  #442                // Method com/cicada/longwings/api/LongwingsHandler.getBiomeTemperature:(Lnet/minecraft/world/level/biome/Biome;)F
+      70: fstore        13
+      72: aload         8
+      74: invokestatic  #445                // Method com/cicada/longwings/api/LongwingsHandler.getBiomeHumidity:(Lnet/minecraft/world/level/biome/Biome;)F
+      77: fstore        14
+      79: iconst_0
+      80: istore        15
+      82: iload         15
+      84: aload         6
+      86: arraylength
+      87: if_icmpge     191
+      90: aload         6
+      92: iload         15
+      94: aaload
+      95: astore        16
+      97: fload         13
+      99: aload         16
+     101: invokevirtual #458                // Method com/cicada/longwings/entity/ButterflyVariant.minTemp:()F
+     104: fcmpl
+     105: iflt          145
+     108: fload         13
+     110: aload         16
+     112: invokevirtual #461                // Method com/cicada/longwings/entity/ButterflyVariant.maxTemp:()F
+     115: fcmpg
+     116: ifgt          145
+     119: fload         14
+     121: aload         16
+     123: invokevirtual #464                // Method com/cicada/longwings/entity/ButterflyVariant.minHumidity:()F
+     126: fcmpl
+     127: iflt          145
+     130: fload         14
+     132: aload         16
+     134: invokevirtual #467                // Method com/cicada/longwings/entity/ButterflyVariant.maxHumidity:()F
+     137: fcmpg
+     138: ifgt          145
+     141: iconst_1
+     142: goto          146
+     145: iconst_0
+     146: istore        17
+     148: iload         17
+     150: ifeq          185
+     153: iconst_0
+     154: istore        18
+     156: iload         18
+     158: aload         16
+     160: invokevirtual #470                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflySpawnRarity:()I
+     163: if_icmpge     185
+     166: aload         9
+     168: aload         16
+     170: invokevirtual #473                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyStringId:()Ljava/lang/String;
+     173: invokeinterface #477,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     178: pop
+     179: iinc          18, 1
+     182: goto          156
+     185: iinc          15, 1
+     188: goto          82
+     191: aload         9
+     193: invokeinterface #480,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     198: ifeq          234
+     201: aload         9
+     203: aload_0
+     204: instanceof    #9                  // class com/cicada/longwings/entity/ButterflyEntity$MothEntity
+     207: ifeq          219
+     210: getstatic     #483                // Field com/cicada/longwings/entity/ButterflyVariant.SMALL_WHITE_WAVE:Lcom/cicada/longwings/entity/ButterflyVariant;
+     213: invokevirtual #473                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyStringId:()Ljava/lang/String;
+     216: goto          225
+     219: getstatic     #411                // Field com/cicada/longwings/entity/ButterflyVariant.PAINTED_LADY:Lcom/cicada/longwings/entity/ButterflyVariant;
+     222: invokevirtual #473                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyStringId:()Ljava/lang/String;
+     225: invokeinterface #477,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     230: pop
+     231: iconst_1
+     232: istore        10
+     234: aload         9
+     236: aload         12
+     238: aload         9
+     240: invokeinterface #487,  1          // InterfaceMethod java/util/List.size:()I
+     245: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     250: invokeinterface #495,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     255: checkcast     #485                // class java/lang/String
+     258: astore        15
+     260: iconst_0
+     261: istore        16
+     263: iload         16
+     265: aload         6
+     267: arraylength
+     268: if_icmpge     300
+     271: aload         15
+     273: aload         6
+     275: iload         16
+     277: aaload
+     278: invokevirtual #473                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyStringId:()Ljava/lang/String;
+     281: invokevirtual #498                // Method java/lang/String.matches:(Ljava/lang/String;)Z
+     284: ifeq          294
+     287: aload         6
+     289: iload         16
+     291: aaload
+     292: astore        7
+     294: iinc          16, 1
+     297: goto          263
+     300: aload_0
+     301: aload         7
+     303: aload_0
+     304: invokevirtual #502                // Method applyLepidopteraTraits:(Lcom/cicada/longwings/entity/ButterflyVariant;Lcom/cicada/longwings/entity/ButterflyEntity;)V
+     307: aload_3
+     308: getstatic     #505                // Field net/minecraft/world/entity/MobSpawnType.CHUNK_GENERATION:Lnet/minecraft/world/entity/MobSpawnType;
+     311: if_acmpeq     321
+     314: aload_3
+     315: getstatic     #508                // Field net/minecraft/world/entity/MobSpawnType.NATURAL:Lnet/minecraft/world/entity/MobSpawnType;
+     318: if_acmpne     325
+     321: iconst_1
+     322: goto          326
+     325: iconst_0
+     326: istore        16
+     328: iload         16
+     330: ifeq          638
+     333: aload_0
+     334: bipush        6
+     336: ldc_w         #509                // float 0.85f
+     339: ldc_w         #510                // float 0.75f
+     342: invokevirtual #512                // Method randomLowBiasedCount:(IFF)I
+     345: istore        17
+     347: fload         14
+     349: fconst_0
+     350: fcmpg
+     351: ifgt          367
+     354: aload_0
+     355: iconst_3
+     356: ldc_w         #513                // float 0.25f
+     359: ldc_w         #514                // float 0.9f
+     362: invokevirtual #512                // Method randomLowBiasedCount:(IFF)I
+     365: istore        17
+     367: aload_0
+     368: instanceof    #9                  // class com/cicada/longwings/entity/ButterflyEntity$MothEntity
+     371: istore        18
+     373: iconst_0
+     374: istore        19
+     376: iload         10
+     378: ifeq          383
+     381: aconst_null
+     382: areturn
+     383: iload         18
+     385: ifne          638
+     388: iload         17
+     390: ifle          638
+     393: iconst_0
+     394: istore        20
+     396: iload         20
+     398: iload         17
+     400: if_icmpge     638
+     403: aload_0
+     404: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     407: aload         11
+     409: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     412: invokevirtual #518                // Method net/minecraft/world/level/Level.m_46749_:(Lnet/minecraft/core/BlockPos;)Z
+     415: ifeq          632
+     418: getstatic     #523                // Field com/cicada/longwings/entity/LongwingsEntityTypes.BUTTERFLY:Lnet/minecraft/world/entity/EntityType;
+     421: aload_0
+     422: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     425: invokevirtual #529                // Method net/minecraft/world/entity/EntityType.m_20615_:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+     428: checkcast     #2                  // class com/cicada/longwings/entity/ButterflyEntity
+     431: astore        21
+     433: aload         12
+     435: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     440: iload         20
+     442: iconst_1
+     443: iadd
+     444: i2f
+     445: ldc_w         #513                // float 0.25f
+     448: fmul
+     449: iload         17
+     451: i2f
+     452: fdiv
+     453: fcmpg
+     454: ifgt          460
+     457: iconst_1
+     458: istore        19
+     460: iload         19
+     462: ifeq          540
+     465: aload         9
+     467: aload         12
+     469: aload         9
+     471: invokeinterface #487,  1          // InterfaceMethod java/util/List.size:()I
+     476: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     481: invokeinterface #495,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     486: checkcast     #485                // class java/lang/String
+     489: astore        15
+     491: aload         6
+     493: astore        22
+     495: aload         22
+     497: arraylength
+     498: istore        23
+     500: iconst_0
+     501: istore        24
+     503: iload         24
+     505: iload         23
+     507: if_icmpge     540
+     510: aload         22
+     512: iload         24
+     514: aaload
+     515: astore        25
+     517: aload         15
+     519: aload         25
+     521: invokevirtual #473                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyStringId:()Ljava/lang/String;
+     524: invokevirtual #498                // Method java/lang/String.matches:(Ljava/lang/String;)Z
+     527: ifeq          534
+     530: aload         25
+     532: astore        7
+     534: iinc          24, 1
+     537: goto          503
+     540: new           #34                 // class net/minecraft/core/BlockPos
+     543: dup
+     544: aload_0
+     545: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     548: invokevirtual #318                // Method net/minecraft/core/BlockPos.m_123341_:()I
+     551: aload_0
+     552: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     555: invokevirtual #323                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     558: aload_0
+     559: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     562: invokevirtual #328                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     565: invokespecial #248                // Method net/minecraft/core/BlockPos."<init>":(III)V
+     568: astore        22
+     570: aload         21
+     572: aload_0
+     573: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     576: invokevirtual #539                // Method net/minecraft/world/phys/Vec3.m_7096_:()D
+     579: aload_0
+     580: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     583: invokevirtual #542                // Method net/minecraft/world/phys/Vec3.m_7098_:()D
+     586: aload_0
+     587: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     590: invokevirtual #545                // Method net/minecraft/world/phys/Vec3.m_7094_:()D
+     593: aload         11
+     595: invokevirtual #548                // Method m_146908_:()F
+     598: aload         11
+     600: invokevirtual #551                // Method m_146909_:()F
+     603: invokevirtual #555                // Method m_7678_:(DDDFF)V
+     606: aload_0
+     607: aload         7
+     609: aload         21
+     611: invokevirtual #502                // Method applyLepidopteraTraits:(Lcom/cicada/longwings/entity/ButterflyVariant;Lcom/cicada/longwings/entity/ButterflyEntity;)V
+     614: aload_0
+     615: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     618: invokevirtual #559                // Method net/minecraft/world/level/Level.m_7654_:()Lnet/minecraft/server/MinecraftServer;
+     621: aload_0
+     622: aload         21
+     624: invokedynamic #576,  0            // InvokeDynamic #0:run:(Lcom/cicada/longwings/entity/ButterflyEntity;Lcom/cicada/longwings/entity/ButterflyEntity;)Ljava/lang/Runnable;
+     629: invokevirtual #582                // Method net/minecraft/server/MinecraftServer.execute:(Ljava/lang/Runnable;)V
+     632: iinc          20, 1
+     635: goto          396
+     638: aload_0
+     639: aload_1
+     640: aload_2
+     641: aload_3
+     642: aload         4
+     644: aload         5
+     646: invokespecial #584                // Method net/minecraft/world/entity/animal/Animal.m_6518_:(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/SpawnGroupData;
+     649: areturn
+
+  public void applyLepidopteraTraits(com.cicada.longwings.entity.ButterflyVariant, com.cicada.longwings.entity.ButterflyEntity);
+    Code:
+       0: aload_0
+       1: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+       4: astore_3
+       5: fconst_1
+       6: ldc_w         #607                // float 0.5f
+       9: ldc_w         #607                // float 0.5f
+      12: aload_3
+      13: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      18: fconst_2
+      19: fdiv
+      20: fadd
+      21: invokestatic  #613                // Method java/lang/Math.max:(FF)F
+      24: invokestatic  #616                // Method java/lang/Math.min:(FF)F
+      27: fstore        4
+      29: aload_1
+      30: invokevirtual #620                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflySize:()Lcom/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes;
+      33: getstatic     #624                // Field com/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes.NORMAL:Lcom/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes;
+      36: if_acmpne     67
+      39: ldc_w         #625                // float 1.15f
+      42: ldc_w         #509                // float 0.85f
+      45: ldc_w         #509                // float 0.85f
+      48: aload_3
+      49: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      54: ldc_w         #626                // float 5.0f
+      57: fdiv
+      58: fadd
+      59: invokestatic  #613                // Method java/lang/Math.max:(FF)F
+      62: invokestatic  #616                // Method java/lang/Math.min:(FF)F
+      65: fstore        4
+      67: aload_1
+      68: invokevirtual #620                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflySize:()Lcom/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes;
+      71: getstatic     #629                // Field com/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes.LARGER:Lcom/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes;
+      74: if_acmpne     105
+      77: ldc_w         #625                // float 1.15f
+      80: ldc_w         #509                // float 0.85f
+      83: ldc_w         #509                // float 0.85f
+      86: aload_3
+      87: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      92: ldc_w         #630                // float 3.0f
+      95: fdiv
+      96: fadd
+      97: invokestatic  #613                // Method java/lang/Math.max:(FF)F
+     100: invokestatic  #616                // Method java/lang/Math.min:(FF)F
+     103: fstore        4
+     105: aload_2
+     106: aload_1
+     107: invokevirtual #473                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyStringId:()Ljava/lang/String;
+     110: invokevirtual #634                // Method setVariant:(Ljava/lang/String;)V
+     113: aload_2
+     114: fload         4
+     116: ldc_w         #635                // float 100.0f
+     119: fmul
+     120: invokestatic  #639                // Method java/lang/Math.round:(F)I
+     123: i2d
+     124: ldc2_w        #640                // double 100.0d
+     127: ddiv
+     128: d2f
+     129: invokevirtual #643                // Method setSize:(F)V
+     132: aload_2
+     133: aload_3
+     134: bipush        100
+     136: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     141: i2b
+     142: invokevirtual #645                // Method setSeed:(I)V
+     145: return
+
+  public boolean m_20096_();
+    Code:
+       0: aload_0
+       1: invokespecial #650                // Method net/minecraft/world/entity/animal/Animal.m_20096_:()Z
+       4: ireturn
+
+  public void m_6853_(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokespecial #654                // Method net/minecraft/world/entity/animal/Animal.m_6853_:(Z)V
+       5: return
+
+  protected void m_8099_();
+    Code:
+       0: aload_0
+       1: invokespecial #658                // Method net/minecraft/world/entity/animal/Animal.m_8099_:()V
+       4: aload_0
+       5: getfield      #662                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+       8: iconst_1
+       9: new           #664                // class com/cicada/longwings/entity/ai/ButterflyScareGoal
+      12: dup
+      13: aload_0
+      14: invokespecial #666                // Method com/cicada/longwings/entity/ai/ButterflyScareGoal."<init>":(Lcom/cicada/longwings/entity/ButterflyEntity;)V
+      17: invokevirtual #672                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      20: aload_0
+      21: getfield      #662                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      24: iconst_2
+      25: new           #674                // class com/cicada/longwings/entity/ai/ButterflyTemptGoal
+      28: dup
+      29: aload_0
+      30: getstatic     #677                // Field net/minecraft/core/registries/Registries.f_256913_:Lnet/minecraft/resources/ResourceKey;
+      33: new           #96                 // class net/minecraft/resources/ResourceLocation
+      36: dup
+      37: ldc           #98                 // String longwings
+      39: ldc_w         #679                // String butterfly_tempt_items
+      42: invokespecial #103                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      45: invokestatic  #109                // Method net/minecraft/tags/TagKey.m_203882_:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      48: invokestatic  #685                // Method net/minecraft/world/item/crafting/Ingredient.m_204132_:(Lnet/minecraft/tags/TagKey;)Lnet/minecraft/world/item/crafting/Ingredient;
+      51: invokespecial #688                // Method com/cicada/longwings/entity/ai/ButterflyTemptGoal."<init>":(Lcom/cicada/longwings/entity/ButterflyEntity;Lnet/minecraft/world/item/crafting/Ingredient;)V
+      54: invokevirtual #672                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      57: aload_0
+      58: getfield      #662                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      61: iconst_3
+      62: new           #690                // class com/cicada/longwings/entity/ai/ButterflyFeedGoal
+      65: dup
+      66: aload_0
+      67: bipush        7
+      69: getstatic     #696                // Field com/cicada/longwings/block/LongwingsBlocks.SUGAR_WATER_BOWL:Lcom/cicada/longwings/block/BowlPlaced$SugarWaterBowl;
+      72: invokespecial #699                // Method com/cicada/longwings/entity/ai/ButterflyFeedGoal."<init>":(Lcom/cicada/longwings/entity/ButterflyEntity;ILnet/minecraft/world/level/block/Block;)V
+      75: invokevirtual #672                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      78: aload_0
+      79: getfield      #662                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      82: iconst_4
+      83: new           #701                // class com/cicada/longwings/entity/ai/ButterflyFlyToPOIGoal
+      86: dup
+      87: aload_0
+      88: invokespecial #702                // Method com/cicada/longwings/entity/ai/ButterflyFlyToPOIGoal."<init>":(Lcom/cicada/longwings/entity/ButterflyEntity;)V
+      91: invokevirtual #672                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      94: aload_0
+      95: getfield      #662                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      98: iconst_5
+      99: new           #704                // class com/cicada/longwings/entity/ai/ButterflyWanderGoal
+     102: dup
+     103: aload_0
+     104: invokespecial #705                // Method com/cicada/longwings/entity/ai/ButterflyWanderGoal."<init>":(Lcom/cicada/longwings/entity/ButterflyEntity;)V
+     107: invokevirtual #672                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+     110: return
+
+  protected net.minecraft.world.entity.ai.navigation.PathNavigation m_6037_(net.minecraft.world.level.Level);
+    Code:
+       0: new           #709                // class com/cicada/longwings/entity/ButterflyFlightNavigation
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokespecial #712                // Method com/cicada/longwings/entity/ButterflyFlightNavigation."<init>":(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/Level;)V
+       9: astore_2
+      10: aload_2
+      11: iconst_1
+      12: invokevirtual #715                // Method com/cicada/longwings/entity/ButterflyFlightNavigation.m_7008_:(Z)V
+      15: aload_2
+      16: iconst_1
+      17: invokevirtual #718                // Method com/cicada/longwings/entity/ButterflyFlightNavigation.setCanPassDoors:(Z)V
+      20: aload_2
+      21: areturn
+
+  public boolean m_6783_(double);
+    Code:
+       0: aload_0
+       1: ldc2_w        #724                // double 5.0d
+       4: invokespecial #727                // Method net/minecraft/world/entity/animal/Animal.m_6783_:(D)Z
+       7: ireturn
+
+  public void m_6478_(net.minecraft.world.entity.MoverType, net.minecraft.world.phys.Vec3);
+    Code:
+       0: aload_0
+       1: invokevirtual #734                // Method isInsideJar:()Z
+       4: ifeq          204
+       7: aload_0
+       8: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      11: astore_3
+      12: aload_3
+      13: aload_0
+      14: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      17: invokevirtual #738                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      20: astore        4
+      22: aload         4
+      24: getstatic     #742                // Field com/cicada/longwings/block/JarPlaced$EmptyJarPlaced.OPEN:Lnet/minecraft/world/level/block/state/properties/BooleanProperty;
+      27: invokevirtual #748                // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+      30: checkcast     #221                // class java/lang/Boolean
+      33: invokevirtual #751                // Method java/lang/Boolean.booleanValue:()Z
+      36: istore        5
+      38: aload_0
+      39: invokevirtual #754                // Method m_20185_:()D
+      42: aload_2
+      43: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      46: dadd
+      47: aload_0
+      48: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      51: invokevirtual #318                // Method net/minecraft/core/BlockPos.m_123341_:()I
+      54: i2d
+      55: ldc2_w        #758                // double 0.35d
+      58: dadd
+      59: aload_0
+      60: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      63: invokevirtual #318                // Method net/minecraft/core/BlockPos.m_123341_:()I
+      66: iconst_1
+      67: iadd
+      68: i2d
+      69: ldc2_w        #758                // double 0.35d
+      72: dsub
+      73: invokestatic  #765                // Method net/minecraft/util/Mth.m_14008_:(DDD)D
+      76: dstore        6
+      78: iload         5
+      80: ifeq          110
+      83: aload_0
+      84: invokevirtual #768                // Method m_20186_:()D
+      87: aload_2
+      88: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+      91: dadd
+      92: aload_0
+      93: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      96: invokevirtual #323                // Method net/minecraft/core/BlockPos.m_123342_:()I
+      99: i2d
+     100: ldc2_w        #772                // double 0.15d
+     103: dadd
+     104: invokestatic  #776                // Method java/lang/Math.max:(DD)D
+     107: goto          149
+     110: aload_0
+     111: invokevirtual #768                // Method m_20186_:()D
+     114: aload_2
+     115: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     118: dadd
+     119: aload_0
+     120: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     123: invokevirtual #323                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     126: i2d
+     127: ldc2_w        #772                // double 0.15d
+     130: dadd
+     131: aload_0
+     132: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     135: invokevirtual #323                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     138: iconst_1
+     139: iadd
+     140: i2f
+     141: ldc_w         #607                // float 0.5f
+     144: fsub
+     145: f2d
+     146: invokestatic  #765                // Method net/minecraft/util/Mth.m_14008_:(DDD)D
+     149: dstore        8
+     151: aload_0
+     152: invokevirtual #781                // Method m_20189_:()D
+     155: aload_2
+     156: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     159: dadd
+     160: aload_0
+     161: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     164: invokevirtual #328                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     167: i2d
+     168: ldc2_w        #758                // double 0.35d
+     171: dadd
+     172: aload_0
+     173: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     176: invokevirtual #328                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     179: iconst_1
+     180: iadd
+     181: i2d
+     182: ldc2_w        #758                // double 0.35d
+     185: dsub
+     186: invokestatic  #765                // Method net/minecraft/util/Mth.m_14008_:(DDD)D
+     189: dstore        10
+     191: aload_0
+     192: dload         6
+     194: dload         8
+     196: dload         10
+     198: invokevirtual #788                // Method m_6034_:(DDD)V
+     201: goto          210
+     204: aload_0
+     205: aload_1
+     206: aload_2
+     207: invokespecial #790                // Method net/minecraft/world/entity/animal/Animal.m_6478_:(Lnet/minecraft/world/entity/MoverType;Lnet/minecraft/world/phys/Vec3;)V
+     210: return
+
+  public boolean isInsideJar();
+    Code:
+       0: aload_0
+       1: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+       4: astore_1
+       5: aload_1
+       6: aload_0
+       7: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      10: invokevirtual #738                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      13: astore_2
+      14: aload_2
+      15: getstatic     #804                // Field com/cicada/longwings/block/LongwingsBlocks.GLASS_JAR:Lcom/cicada/longwings/block/JarPlaced$EmptyJarPlaced;
+      18: invokevirtual #808                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      21: ifeq          111
+      24: aload_0
+      25: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      28: aload_0
+      29: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      32: invokevirtual #738                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      35: aload_0
+      36: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      39: aload_0
+      40: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      43: invokevirtual #812                // Method net/minecraft/world/level/block/state/BlockState.m_60812_:(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      46: astore_3
+      47: ldc2_w        #813                // double 4.0d
+      50: dconst_1
+      51: ldc2_w        #813                // double 4.0d
+      54: ldc2_w        #815                // double 12.0d
+      57: ldc2_w        #815                // double 12.0d
+      60: ldc2_w        #815                // double 12.0d
+      63: invokestatic  #822                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      66: astore        4
+      68: aload         4
+      70: invokevirtual #827                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+      73: ifne          108
+      76: aload_0
+      77: invokevirtual #831                // Method m_20191_:()Lnet/minecraft/world/phys/AABB;
+      80: dconst_0
+      81: dconst_0
+      82: dconst_0
+      83: invokevirtual #837                // Method net/minecraft/world/phys/AABB.m_82386_:(DDD)Lnet/minecraft/world/phys/AABB;
+      86: aload         4
+      88: invokevirtual #840                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83215_:()Lnet/minecraft/world/phys/AABB;
+      91: aload_0
+      92: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+      95: invokevirtual #844                // Method net/minecraft/world/phys/AABB.m_82338_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/AABB;
+      98: invokevirtual #848                // Method net/minecraft/world/phys/AABB.m_82381_:(Lnet/minecraft/world/phys/AABB;)Z
+     101: ifeq          106
+     104: iconst_1
+     105: ireturn
+     106: iconst_0
+     107: ireturn
+     108: goto          113
+     111: iconst_0
+     112: ireturn
+     113: iconst_0
+     114: ireturn
+
+  protected void m_6138_();
+    Code:
+       0: aload_0
+       1: invokevirtual #734                // Method isInsideJar:()Z
+       4: ifeq          10
+       7: goto          14
+      10: aload_0
+      11: invokespecial #854                // Method net/minecraft/world/entity/animal/Animal.m_6138_:()V
+      14: return
+
+  public void m_8107_();
+    Code:
+       0: aload_0
+       1: invokespecial #857                // Method net/minecraft/world/entity/animal/Animal.m_8107_:()V
+       4: aload_0
+       5: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+       8: getfield      #860                // Field net/minecraft/world/level/Level.f_46443_:Z
+      11: ifeq          142
+      14: aload_0
+      15: invokevirtual #861                // Method m_20096_:()Z
+      18: ifne          130
+      21: aload_0
+      22: invokevirtual #277                // Method isOnWall:()Z
+      25: ifne          130
+      28: aload_0
+      29: invokevirtual #281                // Method isInPlant:()Z
+      32: ifne          130
+      35: aload_0
+      36: dup
+      37: getfield      #863                // Field floatCount:I
+      40: iconst_1
+      41: iadd
+      42: putfield      #863                // Field floatCount:I
+      45: aload_0
+      46: getfield      #863                // Field floatCount:I
+      49: bipush        7
+      51: irem
+      52: ifne          142
+      55: aload_0
+      56: invokevirtual #734                // Method isInsideJar:()Z
+      59: ifne          142
+      62: aload_0
+      63: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      66: aload_0
+      67: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+      70: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      73: aload_0
+      74: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+      77: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+      80: aload_0
+      81: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+      84: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      87: getstatic     #869                // Field com/cicada/longwings/LongwingsSounds.BUTTERFLY_FLAP:Lnet/minecraft/sounds/SoundEvent;
+      90: getstatic     #875                // Field net/minecraft/sounds/SoundSource.NEUTRAL:Lnet/minecraft/sounds/SoundSource;
+      93: ldc_w         #876                // float 0.0075f
+      96: aload_0
+      97: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     100: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     105: ldc_w         #877                // float 5.0E-4f
+     108: fmul
+     109: fsub
+     110: ldc_w         #510                // float 0.75f
+     113: aload_0
+     114: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     117: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     122: fadd
+     123: iconst_0
+     124: invokevirtual #881                // Method net/minecraft/world/level/Level.m_7785_:(DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFZ)V
+     127: goto          142
+     130: aload_0
+     131: getfield      #863                // Field floatCount:I
+     134: ifle          142
+     137: aload_0
+     138: iconst_0
+     139: putfield      #863                // Field floatCount:I
+     142: return
+
+  public void setUsingAI(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #884                // Field isUsingAI:Z
+       5: return
+
+  public boolean isUsingAI();
+    Code:
+       0: aload_0
+       1: getfield      #884                // Field isUsingAI:Z
+       4: ireturn
+
+  public void m_8119_();
+    Code:
+       0: aload_0
+       1: invokespecial #888                // Method net/minecraft/world/entity/animal/Animal.m_8119_:()V
+       4: aload_0
+       5: invokevirtual #734                // Method isInsideJar:()Z
+       8: ifeq          105
+      11: aload_0
+      12: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      15: invokevirtual #892                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      18: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      23: f2d
+      24: ldc2_w        #893                // double 0.01d
+      27: dcmpg
+      28: ifge          105
+      31: aload_0
+      32: invokevirtual #898                // Method m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+      35: aload_0
+      36: invokevirtual #754                // Method m_20185_:()D
+      39: bipush        -2
+      41: aload_0
+      42: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      45: invokevirtual #892                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      48: iconst_4
+      49: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      54: iadd
+      55: i2d
+      56: dadd
+      57: aload_0
+      58: invokevirtual #768                // Method m_20186_:()D
+      61: aload_0
+      62: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      65: invokevirtual #892                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      68: iconst_3
+      69: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      74: i2d
+      75: dadd
+      76: aload_0
+      77: invokevirtual #781                // Method m_20189_:()D
+      80: bipush        -2
+      82: aload_0
+      83: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      86: invokevirtual #892                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      89: iconst_4
+      90: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      95: iadd
+      96: i2d
+      97: dadd
+      98: ldc2_w        #173                // double 0.5d
+     101: invokevirtual #904                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26519_:(DDDD)Z
+     104: pop
+     105: aload_0
+     106: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     109: aload_0
+     110: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     113: invokevirtual #738                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     116: aload_0
+     117: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     120: aload_0
+     121: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     124: invokevirtual #907                // Method net/minecraft/world/level/block/state/BlockState.m_60808_:(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     127: astore_1
+     128: aload_0
+     129: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     132: getfield      #860                // Field net/minecraft/world/level/Level.f_46443_:Z
+     135: ifne          340
+     138: aload_0
+     139: invokevirtual #898                // Method m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+     142: invokevirtual #910                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26571_:()Z
+     145: ifeq          191
+     148: aload_0
+     149: invokevirtual #277                // Method isOnWall:()Z
+     152: ifne          191
+     155: aload_0
+     156: invokevirtual #913                // Method m_20069_:()Z
+     159: ifne          191
+     162: aload_0
+     163: aload_0
+     164: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     167: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     170: aload_0
+     171: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     174: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     177: ldc2_w        #917                // double 0.0044999998062849045d
+     180: dsub
+     181: aload_0
+     182: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     185: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     188: invokevirtual #921                // Method m_20334_:(DDD)V
+     191: aload_0
+     192: invokevirtual #913                // Method m_20069_:()Z
+     195: ifeq          340
+     198: aload_0
+     199: aload_0
+     200: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     203: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     206: ldc2_w        #922                // double 0.045d
+     209: aload_0
+     210: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     213: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     216: invokevirtual #921                // Method m_20334_:(DDD)V
+     219: aload_0
+     220: invokevirtual #898                // Method m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+     223: invokevirtual #910                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26571_:()Z
+     226: ifeq          340
+     229: aload_0
+     230: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     233: aload_0
+     234: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     237: invokevirtual #926                // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+     240: invokevirtual #738                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     243: invokevirtual #929                // Method net/minecraft/world/level/block/state/BlockState.m_60795_:()Z
+     246: ifeq          340
+     249: aload_0
+     250: invokevirtual #898                // Method m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+     253: bipush        -15
+     255: aload_0
+     256: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     259: invokevirtual #318                // Method net/minecraft/core/BlockPos.m_123341_:()I
+     262: iadd
+     263: aload_0
+     264: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     267: bipush        15
+     269: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     274: iconst_2
+     275: imul
+     276: iadd
+     277: i2d
+     278: aload_0
+     279: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     282: invokevirtual #323                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     285: aload_0
+     286: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     289: iconst_5
+     290: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     295: iadd
+     296: i2d
+     297: bipush        -15
+     299: aload_0
+     300: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     303: invokevirtual #328                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     306: iadd
+     307: aload_0
+     308: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     311: bipush        15
+     313: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     318: iconst_2
+     319: imul
+     320: iadd
+     321: i2d
+     322: ldc_w         #930                // float 0.35f
+     325: aload_0
+     326: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     329: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     334: fadd
+     335: f2d
+     336: invokevirtual #904                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26519_:(DDDD)Z
+     339: pop
+     340: aload_0
+     341: aload_0
+     342: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     345: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     348: d2f
+     349: putfield      #932                // Field prevDeltaX:F
+     352: aload_0
+     353: aload_0
+     354: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     357: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     360: d2f
+     361: putfield      #934                // Field prevDeltaZ:F
+     364: aload_0
+     365: invokevirtual #938                // Method m_6350_:()Lnet/minecraft/core/Direction;
+     368: getstatic     #944                // Field net/minecraft/core/Direction.NORTH:Lnet/minecraft/core/Direction;
+     371: if_acmpeq     384
+     374: aload_0
+     375: invokevirtual #938                // Method m_6350_:()Lnet/minecraft/core/Direction;
+     378: getstatic     #947                // Field net/minecraft/core/Direction.SOUTH:Lnet/minecraft/core/Direction;
+     381: if_acmpne     388
+     384: iconst_1
+     385: goto          389
+     388: iconst_0
+     389: istore_2
+     390: aload_0
+     391: invokevirtual #938                // Method m_6350_:()Lnet/minecraft/core/Direction;
+     394: getstatic     #947                // Field net/minecraft/core/Direction.SOUTH:Lnet/minecraft/core/Direction;
+     397: if_acmpeq     410
+     400: aload_0
+     401: invokevirtual #938                // Method m_6350_:()Lnet/minecraft/core/Direction;
+     404: getstatic     #950                // Field net/minecraft/core/Direction.EAST:Lnet/minecraft/core/Direction;
+     407: if_acmpne     416
+     410: ldc_w         #951                // float 0.105f
+     413: goto          419
+     416: ldc_w         #952                // float -0.105f
+     419: fstore_3
+     420: aload_0
+     421: invokevirtual #955                // Method m_146892_:()Lnet/minecraft/world/phys/Vec3;
+     424: iload_2
+     425: ifeq          432
+     428: dconst_0
+     429: goto          434
+     432: fload_3
+     433: f2d
+     434: ldc2_w        #956                // double -0.10499999672174454d
+     437: iload_2
+     438: ifeq          446
+     441: fload_3
+     442: f2d
+     443: goto          447
+     446: dconst_0
+     447: invokevirtual #961                // Method net/minecraft/world/phys/Vec3.m_82520_:(DDD)Lnet/minecraft/world/phys/Vec3;
+     450: astore        4
+     452: new           #32                 // class net/minecraft/core/BlockPos$MutableBlockPos
+     455: dup
+     456: aload         4
+     458: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     461: aload         4
+     463: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     466: aload         4
+     468: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     471: invokespecial #963                // Method net/minecraft/core/BlockPos$MutableBlockPos."<init>":(DDD)V
+     474: astore        5
+     476: aload_0
+     477: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     480: aload         4
+     482: invokestatic  #967                // Method net/minecraft/core/BlockPos.m_274446_:(Lnet/minecraft/core/Position;)Lnet/minecraft/core/BlockPos;
+     485: invokevirtual #738                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     488: aload_0
+     489: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     492: aload         4
+     494: invokestatic  #967                // Method net/minecraft/core/BlockPos.m_274446_:(Lnet/minecraft/core/Position;)Lnet/minecraft/core/BlockPos;
+     497: invokevirtual #812                // Method net/minecraft/world/level/block/state/BlockState.m_60812_:(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     500: astore        6
+     502: aload_0
+     503: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     506: invokevirtual #970                // Method net/minecraft/world/level/Level.m_5776_:()Z
+     509: ifne          899
+     512: aload_0
+     513: invokevirtual #281                // Method isInPlant:()Z
+     516: ifeq          575
+     519: aload_0
+     520: invokevirtual #972                // Method isUsingAI:()Z
+     523: ifne          543
+     526: aload_0
+     527: invokevirtual #898                // Method m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+     530: invokevirtual #910                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26571_:()Z
+     533: ifeq          543
+     536: aload_1
+     537: invokevirtual #827                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+     540: ifeq          548
+     543: aload_0
+     544: iconst_0
+     545: invokevirtual #975                // Method setInPlant:(Z)V
+     548: aload_0
+     549: aload_0
+     550: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     553: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     556: aload_0
+     557: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     560: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     563: dconst_0
+     564: dmul
+     565: aload_0
+     566: invokevirtual #916                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     569: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     572: invokevirtual #921                // Method m_20334_:(DDD)V
+     575: aload_0
+     576: invokevirtual #277                // Method isOnWall:()Z
+     579: ifeq          656
+     582: aload         6
+     584: invokevirtual #827                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+     587: ifne          651
+     590: aload         6
+     592: invokevirtual #827                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+     595: ifne          656
+     598: aload         6
+     600: invokevirtual #840                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83215_:()Lnet/minecraft/world/phys/AABB;
+     603: aload         5
+     605: invokevirtual #844                // Method net/minecraft/world/phys/AABB.m_82338_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/AABB;
+     608: new           #833                // class net/minecraft/world/phys/AABB
+     611: dup
+     612: aload         4
+     614: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     617: aload         4
+     619: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     622: aload         4
+     624: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     627: aload         4
+     629: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     632: aload         4
+     634: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     637: aload         4
+     639: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     642: invokespecial #978                // Method net/minecraft/world/phys/AABB."<init>":(DDDDDD)V
+     645: invokevirtual #848                // Method net/minecraft/world/phys/AABB.m_82381_:(Lnet/minecraft/world/phys/AABB;)Z
+     648: ifne          656
+     651: aload_0
+     652: iconst_0
+     653: invokevirtual #981                // Method setOnWall:(Z)V
+     656: aload_0
+     657: invokevirtual #734                // Method isInsideJar:()Z
+     660: ifne          899
+     663: aload_0
+     664: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     667: aload_0
+     668: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     671: invokevirtual #738                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     674: astore        7
+     676: aload         7
+     678: getstatic     #987                // Field net/minecraft/world/level/block/Blocks.f_220864_:Lnet/minecraft/world/level/block/Block;
+     681: invokevirtual #808                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     684: ifne          758
+     687: aload         7
+     689: getstatic     #804                // Field com/cicada/longwings/block/LongwingsBlocks.GLASS_JAR:Lcom/cicada/longwings/block/JarPlaced$EmptyJarPlaced;
+     692: invokevirtual #808                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     695: ifne          758
+     698: aload_0
+     699: invokevirtual #281                // Method isInPlant:()Z
+     702: ifne          758
+     705: aload_0
+     706: invokevirtual #972                // Method isUsingAI:()Z
+     709: ifne          758
+     712: aload_1
+     713: invokevirtual #827                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+     716: ifne          758
+     719: aload_0
+     720: invokevirtual #831                // Method m_20191_:()Lnet/minecraft/world/phys/AABB;
+     723: dconst_0
+     724: dconst_0
+     725: dconst_0
+     726: invokevirtual #837                // Method net/minecraft/world/phys/AABB.m_82386_:(DDD)Lnet/minecraft/world/phys/AABB;
+     729: aload_1
+     730: invokevirtual #840                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83215_:()Lnet/minecraft/world/phys/AABB;
+     733: aload_0
+     734: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     737: invokevirtual #844                // Method net/minecraft/world/phys/AABB.m_82338_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/AABB;
+     740: invokevirtual #848                // Method net/minecraft/world/phys/AABB.m_82381_:(Lnet/minecraft/world/phys/AABB;)Z
+     743: ifeq          758
+     746: aload_0
+     747: iconst_1
+     748: invokevirtual #975                // Method setInPlant:(Z)V
+     751: aload_0
+     752: invokevirtual #898                // Method m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+     755: invokevirtual #990                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26573_:()V
+     758: aload_0
+     759: aload_0
+     760: invokevirtual #861                // Method m_20096_:()Z
+     763: ifne          773
+     766: aload_0
+     767: invokevirtual #277                // Method isOnWall:()Z
+     770: ifeq          777
+     773: fconst_0
+     774: goto          781
+     777: aload_0
+     778: getfield      #993                // Field f_146794_:F
+     781: putfield      #993                // Field f_146794_:F
+     784: aload_0
+     785: getfield      #996                // Field f_19797_:I
+     788: bipush        10
+     790: if_icmplt     819
+     793: aload_0
+     794: getfield      #993                // Field f_146794_:F
+     797: fconst_1
+     798: fcmpl
+     799: ifle          899
+     802: aload_0
+     803: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     806: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     811: f2d
+     812: ldc2_w        #997                // double 0.025d
+     815: dcmpg
+     816: ifge          899
+     819: aload_0
+     820: invokevirtual #277                // Method isOnWall:()Z
+     823: ifne          899
+     826: aload         6
+     828: invokevirtual #827                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+     831: ifne          899
+     834: aload         6
+     836: invokevirtual #840                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83215_:()Lnet/minecraft/world/phys/AABB;
+     839: aload         5
+     841: invokevirtual #844                // Method net/minecraft/world/phys/AABB.m_82338_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/AABB;
+     844: new           #833                // class net/minecraft/world/phys/AABB
+     847: dup
+     848: aload         4
+     850: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     853: aload         4
+     855: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     858: aload         4
+     860: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     863: aload         4
+     865: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     868: aload         4
+     870: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     873: aload         4
+     875: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     878: invokespecial #978                // Method net/minecraft/world/phys/AABB."<init>":(DDDDDD)V
+     881: invokevirtual #848                // Method net/minecraft/world/phys/AABB.m_82381_:(Lnet/minecraft/world/phys/AABB;)Z
+     884: ifeq          899
+     887: aload_0
+     888: iconst_1
+     889: invokevirtual #981                // Method setOnWall:(Z)V
+     892: aload_0
+     893: invokevirtual #898                // Method m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+     896: invokevirtual #990                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26573_:()V
+     899: aload_0
+     900: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     903: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     908: ldc_w         #999                // float 1.0E-5f
+     911: fcmpg
+     912: ifge          927
+     915: aload_0
+     916: invokevirtual #269                // Method isNourished:()Z
+     919: ifeq          927
+     922: aload_0
+     923: iconst_0
+     924: invokevirtual #1002               // Method setNourishment:(Z)V
+     927: aload_0
+     928: invokevirtual #277                // Method isOnWall:()Z
+     931: ifeq          1007
+     934: aload_0
+     935: invokevirtual #898                // Method m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+     938: invokevirtual #1005               // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26572_:()Z
+     941: ifne          1007
+     944: aload_0
+     945: aload_0
+     946: invokevirtual #938                // Method m_6350_:()Lnet/minecraft/core/Direction;
+     949: invokevirtual #1008               // Method net/minecraft/core/Direction.m_122435_:()F
+     952: invokevirtual #1011               // Method m_146922_:(F)V
+     955: aload_0
+     956: aload_0
+     957: invokevirtual #938                // Method m_6350_:()Lnet/minecraft/core/Direction;
+     960: invokevirtual #1008               // Method net/minecraft/core/Direction.m_122435_:()F
+     963: invokevirtual #1014               // Method m_5618_:(F)V
+     966: aload_0
+     967: aload_0
+     968: invokevirtual #938                // Method m_6350_:()Lnet/minecraft/core/Direction;
+     971: invokevirtual #1008               // Method net/minecraft/core/Direction.m_122435_:()F
+     974: invokevirtual #1017               // Method m_5616_:(F)V
+     977: aload_0
+     978: aload_0
+     979: invokevirtual #548                // Method m_146908_:()F
+     982: putfield      #1020               // Field f_19859_:F
+     985: aload_0
+     986: ldc_w         #1021               // float -90.0f
+     989: invokevirtual #1024               // Method m_146926_:(F)V
+     992: aload_0
+     993: aload_0
+     994: invokevirtual #551                // Method m_146909_:()F
+     997: putfield      #1027               // Field f_19860_:F
+    1000: aload_0
+    1001: dconst_0
+    1002: dconst_0
+    1003: dconst_0
+    1004: invokevirtual #921                // Method m_20334_:(DDD)V
+    1007: aload_0
+    1008: invokevirtual #1030               // Method attemptPlantFertilization:()V
+    1011: return
+
+  private void attemptPlantFertilization();
+    Code:
+       0: aload_0
+       1: invokevirtual #861                // Method m_20096_:()Z
+       4: ifne          379
+       7: aload_0
+       8: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+      11: sipush        150
+      14: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      19: ifne          379
+      22: iconst_0
+      23: istore_1
+      24: iload_1
+      25: bipush        8
+      27: if_icmpge     379
+      30: aload_0
+      31: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      34: new           #34                 // class net/minecraft/core/BlockPos
+      37: dup
+      38: aload_0
+      39: invokevirtual #1039               // Method m_146903_:()I
+      42: aload_0
+      43: invokevirtual #1042               // Method m_146904_:()I
+      46: iload_1
+      47: isub
+      48: aload_0
+      49: invokevirtual #1045               // Method m_146907_:()I
+      52: invokespecial #248                // Method net/minecraft/core/BlockPos."<init>":(III)V
+      55: invokevirtual #738                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      58: astore_2
+      59: aload_2
+      60: invokevirtual #1049               // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+      63: instanceof    #1051               // class net/minecraft/world/level/block/CropBlock
+      66: ifeq          373
+      69: aload_2
+      70: aload_0
+      71: getfield      #123                // Field pollinationBannedCrops:Lnet/minecraft/tags/TagKey;
+      74: invokevirtual #1055               // Method net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+      77: ifne          373
+      80: fconst_1
+      81: fstore_3
+      82: aload_2
+      83: aload_0
+      84: getfield      #111                // Field pollinationResistantCropsLevel1:Lnet/minecraft/tags/TagKey;
+      87: invokevirtual #1055               // Method net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+      90: ifeq          97
+      93: ldc_w         #513                // float 0.25f
+      96: fstore_3
+      97: aload_2
+      98: aload_0
+      99: getfield      #115                // Field pollinationResistantCropsLevel2:Lnet/minecraft/tags/TagKey;
+     102: invokevirtual #1055               // Method net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+     105: ifeq          112
+     108: ldc_w         #1056               // float 0.1f
+     111: fstore_3
+     112: aload_2
+     113: aload_0
+     114: getfield      #119                // Field pollinationResistantCropsLevel3:Lnet/minecraft/tags/TagKey;
+     117: invokevirtual #1055               // Method net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+     120: ifeq          127
+     123: ldc_w         #1057               // float 0.01f
+     126: fstore_3
+     127: aload_0
+     128: getfield      #88                 // Field randomSource:Lnet/minecraft/util/RandomSource;
+     131: invokeinterface #390,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     136: fload_3
+     137: fcmpg
+     138: ifgt          373
+     141: aload_0
+     142: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     145: getstatic     #1063               // Field net/minecraft/core/particles/ParticleTypes.f_123782_:Lnet/minecraft/core/particles/SimpleParticleType;
+     148: aload_0
+     149: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     152: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     155: aload_0
+     156: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     159: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     162: aload_0
+     163: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     166: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     169: dconst_0
+     170: dconst_0
+     171: dconst_0
+     172: invokevirtual #1067               // Method net/minecraft/world/level/Level.m_7106_:(Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
+     175: aload_2
+     176: invokevirtual #1049               // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+     179: checkcast     #1051               // class net/minecraft/world/level/block/CropBlock
+     182: aload_2
+     183: invokevirtual #1071               // Method net/minecraft/world/level/block/CropBlock.m_52305_:(Lnet/minecraft/world/level/block/state/BlockState;)I
+     186: aload_2
+     187: invokevirtual #1049               // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+     190: checkcast     #1051               // class net/minecraft/world/level/block/CropBlock
+     193: invokevirtual #1074               // Method net/minecraft/world/level/block/CropBlock.m_7419_:()I
+     196: if_icmpge     373
+     199: aload_0
+     200: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     203: aconst_null
+     204: checkcast     #1076               // class net/minecraft/world/entity/player/Player
+     207: aload_0
+     208: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     211: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     214: aload_0
+     215: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     218: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     221: iload_1
+     222: i2d
+     223: dsub
+     224: aload_0
+     225: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     228: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     231: getstatic     #1081               // Field net/minecraft/sounds/SoundEvents.f_11839_:Lnet/minecraft/sounds/SoundEvent;
+     234: getstatic     #875                // Field net/minecraft/sounds/SoundSource.NEUTRAL:Lnet/minecraft/sounds/SoundSource;
+     237: ldc_w         #1082               // float 0.15f
+     240: invokestatic  #1085               // Method java/lang/Math.random:()D
+     243: d2f
+     244: fconst_1
+     245: fadd
+     246: invokevirtual #1089               // Method net/minecraft/world/level/Level.m_6263_:(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+     249: aload_0
+     250: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     253: invokevirtual #970                // Method net/minecraft/world/level/Level.m_5776_:()Z
+     256: ifne          311
+     259: aload_0
+     260: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     263: new           #34                 // class net/minecraft/core/BlockPos
+     266: dup
+     267: aload_0
+     268: invokevirtual #1039               // Method m_146903_:()I
+     271: aload_0
+     272: invokevirtual #1042               // Method m_146904_:()I
+     275: iload_1
+     276: isub
+     277: aload_0
+     278: invokevirtual #1045               // Method m_146907_:()I
+     281: invokespecial #248                // Method net/minecraft/core/BlockPos."<init>":(III)V
+     284: aload_2
+     285: invokevirtual #1049               // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+     288: checkcast     #1051               // class net/minecraft/world/level/block/CropBlock
+     291: aload_2
+     292: invokevirtual #1049               // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+     295: checkcast     #1051               // class net/minecraft/world/level/block/CropBlock
+     298: aload_2
+     299: invokevirtual #1071               // Method net/minecraft/world/level/block/CropBlock.m_52305_:(Lnet/minecraft/world/level/block/state/BlockState;)I
+     302: iconst_1
+     303: iadd
+     304: invokevirtual #1093               // Method net/minecraft/world/level/block/CropBlock.m_52289_:(I)Lnet/minecraft/world/level/block/state/BlockState;
+     307: invokevirtual #1097               // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+     310: pop
+     311: iconst_0
+     312: istore        4
+     314: iload         4
+     316: iconst_5
+     317: if_icmpge     373
+     320: aload_0
+     321: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     324: getstatic     #1100               // Field net/minecraft/core/particles/ParticleTypes.f_123748_:Lnet/minecraft/core/particles/SimpleParticleType;
+     327: aload_0
+     328: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     331: invokevirtual #318                // Method net/minecraft/core/BlockPos.m_123341_:()I
+     334: i2d
+     335: invokestatic  #1085               // Method java/lang/Math.random:()D
+     338: dadd
+     339: aload_0
+     340: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     343: invokevirtual #323                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     346: iload_1
+     347: isub
+     348: i2d
+     349: aload_0
+     350: invokevirtual #418                // Method m_20183_:()Lnet/minecraft/core/BlockPos;
+     353: invokevirtual #328                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     356: i2d
+     357: invokestatic  #1085               // Method java/lang/Math.random:()D
+     360: dadd
+     361: dconst_0
+     362: dconst_0
+     363: dconst_0
+     364: invokevirtual #1067               // Method net/minecraft/world/level/Level.m_7106_:(Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
+     367: iinc          4, 1
+     370: goto          314
+     373: iinc          1, 1
+     376: goto          24
+     379: return
+
+  protected void m_7840_(double, boolean, net.minecraft.world.level.block.state.BlockState, net.minecraft.core.BlockPos);
+    Code:
+       0: return
+
+  public net.minecraft.world.InteractionResult m_6071_(net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
+    Code:
+       0: new           #1113               // class net/minecraft/world/item/ItemStack
+       3: dup
+       4: aload_0
+       5: instanceof    #9                  // class com/cicada/longwings/entity/ButterflyEntity$MothEntity
+       8: ifeq          17
+      11: getstatic     #1119               // Field com/cicada/longwings/item/LongwingsItems.MOTH_ITEM:Lnet/minecraft/world/item/Item;
+      14: goto          20
+      17: getstatic     #1124               // Field com/cicada/longwings/item/LongwingsItems.BUTTERFLY_ITEM:Lnet/minecraft/world/item/Item;
+      20: invokespecial #1129               // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      23: astore_3
+      24: aload_0
+      25: instanceof    #9                  // class com/cicada/longwings/entity/ButterflyEntity$MothEntity
+      28: istore        4
+      30: iload         4
+      32: ifeq          41
+      35: ldc_w         #1131               // String moths
+      38: goto          44
+      41: ldc_w         #1133               // String butterflies
+      44: astore        5
+      46: iconst_0
+      47: istore        6
+      49: iconst_0
+      50: istore        7
+      52: iload         7
+      54: aload_1
+      55: invokevirtual #1137               // Method net/minecraft/world/entity/player/Player.m_150109_:()Lnet/minecraft/world/entity/player/Inventory;
+      58: invokevirtual #1142               // Method net/minecraft/world/entity/player/Inventory.m_6643_:()I
+      61: if_icmpge     212
+      64: aload_1
+      65: invokevirtual #1137               // Method net/minecraft/world/entity/player/Player.m_150109_:()Lnet/minecraft/world/entity/player/Inventory;
+      68: iload         7
+      70: invokevirtual #1146               // Method net/minecraft/world/entity/player/Inventory.m_8020_:(I)Lnet/minecraft/world/item/ItemStack;
+      73: astore        8
+      75: aload         8
+      77: getstatic     #1150               // Field com/cicada/longwings/item/LongwingsItems.LEPIDOPTERAPEDIA:Lcom/cicada/longwings/item/ButterflyHandbook;
+      80: invokevirtual #1154               // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+      83: ifeq          206
+      86: aload         8
+      88: invokevirtual #1158               // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+      91: aload         5
+      93: invokevirtual #1161               // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      96: ifeq          189
+      99: aload         8
+     101: invokevirtual #1158               // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+     104: aload         5
+     106: invokevirtual #1165               // Method net/minecraft/nbt/CompoundTag.m_128423_:(Ljava/lang/String;)Lnet/minecraft/nbt/Tag;
+     109: invokeinterface #1170,  1         // InterfaceMethod net/minecraft/nbt/Tag.m_7916_:()Ljava/lang/String;
+     114: astore        9
+     116: new           #434                // class java/util/ArrayList
+     119: dup
+     120: aload         9
+     122: ldc_w         #1172               // String ,
+     125: invokevirtual #1176               // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+     128: invokestatic  #1182               // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     131: invokespecial #1185               // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     134: astore        10
+     136: aload         10
+     138: invokevirtual #1189               // Method java/util/ArrayList.stream:()Ljava/util/stream/Stream;
+     141: aload_0
+     142: invokedynamic #1199,  0           // InvokeDynamic #1:test:(Lcom/cicada/longwings/entity/ButterflyEntity;)Ljava/util/function/Predicate;
+     147: invokeinterface #1205,  2         // InterfaceMethod java/util/stream/Stream.noneMatch:(Ljava/util/function/Predicate;)Z
+     152: ifeq          186
+     155: iconst_1
+     156: istore        6
+     158: aload         10
+     160: aload_0
+     161: invokevirtual #258                // Method getVariant:()Ljava/lang/String;
+     164: invokevirtual #1206               // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     167: pop
+     168: aload         8
+     170: invokevirtual #1158               // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+     173: aload         5
+     175: ldc_w         #1172               // String ,
+     178: aload         10
+     180: invokestatic  #1210               // Method java/lang/String.join:(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+     183: invokevirtual #263                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+     186: goto          206
+     189: iconst_1
+     190: istore        6
+     192: aload         8
+     194: invokevirtual #1158               // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+     197: aload         5
+     199: aload_0
+     200: invokevirtual #258                // Method getVariant:()Ljava/lang/String;
+     203: invokevirtual #263                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+     206: iinc          7, 1
+     209: goto          52
+     212: aload_0
+     213: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     216: getfield      #860                // Field net/minecraft/world/level/Level.f_46443_:Z
+     219: ifeq          240
+     222: invokestatic  #1214               // Method com/cicada/longwings/api/LongwingsHandler.getHandbookHandler:()Lcom/cicada/longwings/api/HandbookHandler;
+     225: iload         6
+     227: aload_0
+     228: instanceof    #9                  // class com/cicada/longwings/entity/ButterflyEntity$MothEntity
+     231: aload_0
+     232: invokevirtual #258                // Method getVariant:()Ljava/lang/String;
+     235: invokeinterface #1220,  4         // InterfaceMethod com/cicada/longwings/api/HandbookHandler.tryPlayToast:(ZZLjava/lang/String;)V
+     240: aload_0
+     241: aload_1
+     242: aload_2
+     243: invokespecial #1222               // Method net/minecraft/world/entity/animal/Animal.m_6071_:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;
+     246: pop
+     247: aload_1
+     248: aload_2
+     249: invokevirtual #1226               // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     252: getstatic     #1231               // Field net/minecraft/tags/ItemTags.f_13149_:Lnet/minecraft/tags/TagKey;
+     255: invokevirtual #1234               // Method net/minecraft/world/item/ItemStack.m_204117_:(Lnet/minecraft/tags/TagKey;)Z
+     258: ifeq          406
+     261: invokestatic  #1085               // Method java/lang/Math.random:()D
+     264: ldc2_w        #1235               // double 0.25d
+     267: dmul
+     268: invokestatic  #1085               // Method java/lang/Math.random:()D
+     271: ldc2_w        #1235               // double 0.25d
+     274: dmul
+     275: dsub
+     276: dstore        7
+     278: invokestatic  #1085               // Method java/lang/Math.random:()D
+     281: ldc2_w        #1235               // double 0.25d
+     284: dmul
+     285: invokestatic  #1085               // Method java/lang/Math.random:()D
+     288: ldc2_w        #1235               // double 0.25d
+     291: dmul
+     292: dsub
+     293: dstore        9
+     295: invokestatic  #1085               // Method java/lang/Math.random:()D
+     298: ldc2_w        #1235               // double 0.25d
+     301: dmul
+     302: invokestatic  #1085               // Method java/lang/Math.random:()D
+     305: ldc2_w        #1235               // double 0.25d
+     308: dmul
+     309: dsub
+     310: dstore        11
+     312: aload_1
+     313: aload_2
+     314: invokevirtual #1226               // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     317: aload_1
+     318: aload_2
+     319: invokevirtual #1226               // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     322: invokevirtual #1239               // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+     325: iconst_1
+     326: isub
+     327: invokevirtual #1242               // Method net/minecraft/world/item/ItemStack.m_41764_:(I)V
+     330: aload_0
+     331: getstatic     #1245               // Field net/minecraft/sounds/SoundEvents.f_11970_:Lnet/minecraft/sounds/SoundEvent;
+     334: invokevirtual #1249               // Method m_216990_:(Lnet/minecraft/sounds/SoundEvent;)V
+     337: iconst_0
+     338: istore        13
+     340: iload         13
+     342: bipush        10
+     344: if_icmpge     402
+     347: aload_0
+     348: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     351: getstatic     #1252               // Field net/minecraft/core/particles/ParticleTypes.f_175828_:Lnet/minecraft/core/particles/SimpleParticleType;
+     354: aload_0
+     355: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     358: getfield      #757                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     361: dload         7
+     363: dadd
+     364: aload_0
+     365: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     368: getfield      #771                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     371: dload         9
+     373: dadd
+     374: aload_0
+     375: invokevirtual #533                // Method m_20182_:()Lnet/minecraft/world/phys/Vec3;
+     378: getfield      #784                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     381: dload         11
+     383: dadd
+     384: ldc2_w        #1235               // double 0.25d
+     387: ldc2_w        #1253               // double 7.0d
+     390: ldc2_w        #1235               // double 0.25d
+     393: invokevirtual #1067               // Method net/minecraft/world/level/Level.m_7106_:(Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
+     396: iinc          13, 1
+     399: goto          340
+     402: getstatic     #1260               // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+     405: areturn
+     406: aload_1
+     407: aload_2
+     408: invokevirtual #1226               // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     411: getstatic     #1264               // Field com/cicada/longwings/item/LongwingsItems.CATCHING_NET_ITEM:Lcom/cicada/longwings/item/CatchingNetItem;
+     414: invokevirtual #1154               // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+     417: ifeq          571
+     420: aload_0
+     421: invokevirtual #1268               // Method m_7770_:()Lnet/minecraft/network/chat/Component;
+     424: ifnull        446
+     427: aload_3
+     428: invokevirtual #1158               // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+     431: ldc_w         #1270               // String name
+     434: aload_0
+     435: invokevirtual #1268               // Method m_7770_:()Lnet/minecraft/network/chat/Component;
+     438: invokeinterface #1275,  1         // InterfaceMethod net/minecraft/network/chat/Component.getString:()Ljava/lang/String;
+     443: invokevirtual #263                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+     446: aload_3
+     447: invokevirtual #1158               // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+     450: ldc_w         #349                // String variant
+     453: aload_0
+     454: invokevirtual #258                // Method getVariant:()Ljava/lang/String;
+     457: getstatic     #1281               // Field java/util/Locale.ROOT:Ljava/util/Locale;
+     460: invokevirtual #1285               // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+     463: invokevirtual #263                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+     466: aload_3
+     467: invokevirtual #1158               // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+     470: ldc_w         #297                // String size
+     473: aload_0
+     474: invokevirtual #301                // Method getSize:()Ljava/lang/Float;
+     477: ifnull        490
+     480: aload_0
+     481: invokevirtual #301                // Method getSize:()Ljava/lang/Float;
+     484: invokevirtual #305                // Method java/lang/Float.floatValue:()F
+     487: goto          491
+     490: fconst_1
+     491: invokevirtual #309                // Method net/minecraft/nbt/CompoundTag.m_128350_:(Ljava/lang/String;F)V
+     494: aload_1
+     495: aload_3
+     496: invokevirtual #1289               // Method net/minecraft/world/entity/player/Player.m_36356_:(Lnet/minecraft/world/item/ItemStack;)Z
+     499: ifeq          556
+     502: aload_1
+     503: aload_2
+     504: invokevirtual #1226               // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     507: iconst_1
+     508: aload_0
+     509: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     512: invokevirtual #892                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     515: iconst_2
+     516: invokeinterface #491,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     521: iadd
+     522: aload_1
+     523: aload_2
+     524: invokedynamic #1302,  0           // InvokeDynamic #2:accept:(Lnet/minecraft/world/InteractionHand;)Ljava/util/function/Consumer;
+     529: invokevirtual #1306               // Method net/minecraft/world/item/ItemStack.m_41622_:(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V
+     532: aload_1
+     533: aload_3
+     534: invokevirtual #1289               // Method net/minecraft/world/entity/player/Player.m_36356_:(Lnet/minecraft/world/item/ItemStack;)Z
+     537: pop
+     538: aload_1
+     539: getstatic     #1309               // Field com/cicada/longwings/LongwingsSounds.CATCHING_NET_CATCH:Lnet/minecraft/sounds/SoundEvent;
+     542: ldc_w         #607                // float 0.5f
+     545: fconst_1
+     546: invokevirtual #1313               // Method net/minecraft/world/entity/player/Player.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     549: aload_0
+     550: invokevirtual #1316               // Method m_146870_:()V
+     553: goto          567
+     556: aload_1
+     557: getstatic     #1319               // Field com/cicada/longwings/LongwingsSounds.CATCHING_NET_FULL:Lnet/minecraft/sounds/SoundEvent;
+     560: ldc_w         #607                // float 0.5f
+     563: fconst_2
+     564: invokevirtual #1313               // Method net/minecraft/world/entity/player/Player.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     567: getstatic     #1260               // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+     570: areturn
+     571: getstatic     #1322               // Field net/minecraft/world/InteractionResult.FAIL:Lnet/minecraft/world/InteractionResult;
+     574: areturn
+
+  public boolean m_21691_();
+    Code:
+       0: aload_0
+       1: invokevirtual #1342               // Method m_21691_:()Z
+       4: ireturn
+
+  public float m_21439_(net.minecraft.world.level.pathfinder.BlockPathTypes);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #1346               // Method net/minecraft/world/entity/animal/Animal.m_21439_:(Lnet/minecraft/world/level/pathfinder/BlockPathTypes;)F
+       5: freturn
+
+  public boolean m_142535_(float, float, net.minecraft.world.damagesource.DamageSource);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  protected void m_7355_(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: return
+
+  protected void m_6677_(net.minecraft.world.damagesource.DamageSource);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #1361               // Method net/minecraft/world/entity/animal/Animal.m_6677_:(Lnet/minecraft/world/damagesource/DamageSource;)V
+       5: return
+
+  public boolean m_20039_(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #1365               // Method net/minecraft/world/entity/animal/Animal.m_20039_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+       6: ireturn
+
+  public void m_21441_(net.minecraft.world.level.pathfinder.BlockPathTypes, float);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: fload_2
+       3: invokespecial #1368               // Method net/minecraft/world/entity/animal/Animal.m_21441_:(Lnet/minecraft/world/level/pathfinder/BlockPathTypes;F)V
+       6: return
+
+  public net.minecraft.world.entity.AgeableMob m_142606_(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.AgeableMob);
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public boolean m_6149_();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public boolean m_29443_();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public static boolean checkButterflySpawnRules(net.minecraft.world.entity.EntityType<com.cicada.longwings.entity.ButterflyEntity>, net.minecraft.world.level.LevelAccessor, net.minecraft.world.entity.MobSpawnType, net.minecraft.core.BlockPos, net.minecraft.util.RandomSource);
+    Code:
+       0: aload_1
+       1: aload_3
+       2: invokeinterface #1384,  2         // InterfaceMethod net/minecraft/world/level/LevelAccessor.m_204166_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
+       7: invokeinterface #430,  1          // InterfaceMethod net/minecraft/core/Holder.m_203334_:()Ljava/lang/Object;
+      12: checkcast     #432                // class net/minecraft/world/level/biome/Biome
+      15: invokevirtual #1387               // Method net/minecraft/world/level/biome/Biome.m_47554_:()F
+      18: fconst_0
+      19: fcmpg
+      20: ifgt          27
+      23: iconst_1
+      24: goto          28
+      27: iconst_0
+      28: istore        5
+      30: aload_1
+      31: aload_3
+      32: invokevirtual #1390               // Method net/minecraft/core/BlockPos.m_7495_:()Lnet/minecraft/core/BlockPos;
+      35: invokeinterface #1391,  2         // InterfaceMethod net/minecraft/world/level/LevelAccessor.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      40: getstatic     #94                 // Field net/minecraft/core/registries/Registries.f_256747_:Lnet/minecraft/resources/ResourceKey;
+      43: new           #96                 // class net/minecraft/resources/ResourceLocation
+      46: dup
+      47: ldc           #98                 // String longwings
+      49: ldc_w         #1393               // String longwings_spawnable_on
+      52: invokespecial #103                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      55: invokestatic  #109                // Method net/minecraft/tags/TagKey.m_203882_:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      58: invokevirtual #1055               // Method net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+      61: istore        6
+      63: aload_1
+      64: aload_3
+      65: invokeinterface #1384,  2         // InterfaceMethod net/minecraft/world/level/LevelAccessor.m_204166_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
+      70: getstatic     #1396               // Field net/minecraft/core/registries/Registries.f_256952_:Lnet/minecraft/resources/ResourceKey;
+      73: new           #96                 // class net/minecraft/resources/ResourceLocation
+      76: dup
+      77: ldc           #98                 // String longwings
+      79: ldc_w         #1398               // String longwings_biome_banlist
+      82: invokespecial #103                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      85: invokestatic  #109                // Method net/minecraft/tags/TagKey.m_203882_:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      88: invokeinterface #1401,  2         // InterfaceMethod net/minecraft/core/Holder.m_203656_:(Lnet/minecraft/tags/TagKey;)Z
+      93: istore        7
+      95: aload_1
+      96: aload_3
+      97: invokeinterface #1384,  2         // InterfaceMethod net/minecraft/world/level/LevelAccessor.m_204166_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
+     102: invokeinterface #430,  1          // InterfaceMethod net/minecraft/core/Holder.m_203334_:()Ljava/lang/Object;
+     107: checkcast     #432                // class net/minecraft/world/level/biome/Biome
+     110: astore        8
+     112: aload         8
+     114: invokevirtual #1405               // Method net/minecraft/world/level/biome/Biome.m_47518_:()Lnet/minecraft/world/level/biome/MobSpawnSettings;
+     117: getstatic     #1411               // Field net/minecraft/world/entity/MobCategory.CREATURE:Lnet/minecraft/world/entity/MobCategory;
+     120: invokevirtual #1417               // Method net/minecraft/world/level/biome/MobSpawnSettings.m_151798_:(Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/util/random/WeightedRandomList;
+     123: invokevirtual #1423               // Method net/minecraft/util/random/WeightedRandomList.m_146338_:()Ljava/util/List;
+     126: invokeinterface #487,  1          // InterfaceMethod java/util/List.size:()I
+     131: istore        9
+     133: iload         9
+     135: iconst_2
+     136: if_icmpgt     151
+     139: invokestatic  #1085               // Method java/lang/Math.random:()D
+     142: ldc2_w        #1424               // double 0.1d
+     145: dcmpl
+     146: iflt          151
+     149: iconst_0
+     150: ireturn
+     151: iload         9
+     153: iconst_3
+     154: if_icmpne     169
+     157: invokestatic  #1085               // Method java/lang/Math.random:()D
+     160: ldc2_w        #1235               // double 0.25d
+     163: dcmpl
+     164: iflt          169
+     167: iconst_0
+     168: ireturn
+     169: iload         9
+     171: iconst_4
+     172: if_icmpne     187
+     175: invokestatic  #1085               // Method java/lang/Math.random:()D
+     178: ldc2_w        #173                // double 0.5d
+     181: dcmpl
+     182: iflt          187
+     185: iconst_0
+     186: ireturn
+     187: iload         5
+     189: ifne          206
+     192: iload         6
+     194: ifeq          206
+     197: iload         7
+     199: ifne          206
+     202: iconst_1
+     203: goto          207
+     206: iconst_0
+     207: ireturn
+
+  public boolean m_5545_(net.minecraft.world.level.LevelAccessor, net.minecraft.world.entity.MobSpawnType);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #1440               // Method net/minecraft/world/entity/animal/Animal.m_5545_:(Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/MobSpawnType;)Z
+       6: ireturn
+
+  public boolean m_142391_();
+    Code:
+       0: aload_0
+       1: invokespecial #1444               // Method net/minecraft/world/entity/animal/Animal.m_142391_:()Z
+       4: ireturn
+
+  public java.lang.String getVariant();
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #209                // Field DATA_VARIANT_ID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: invokevirtual #361                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      12: checkcast     #485                // class java/lang/String
+      15: areturn
+
+  public void setVariant(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #209                // Field DATA_VARIANT_ID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: aload_1
+      10: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      13: return
+
+  public boolean isNourished();
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #219                // Field NOURISHED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: invokevirtual #361                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      12: checkcast     #221                // class java/lang/Boolean
+      15: invokevirtual #751                // Method java/lang/Boolean.booleanValue:()Z
+      18: ireturn
+
+  public void setNourishment(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #219                // Field NOURISHED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: iload_1
+      10: invokestatic  #225                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      13: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      16: return
+
+  public boolean isOnWall();
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #227                // Field ONWALL:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: invokevirtual #361                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      12: checkcast     #221                // class java/lang/Boolean
+      15: invokevirtual #751                // Method java/lang/Boolean.booleanValue:()Z
+      18: ireturn
+
+  public void setOnWall(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #227                // Field ONWALL:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: iload_1
+      10: invokestatic  #225                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      13: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      16: return
+
+  public boolean isInPlant();
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #229                // Field INPLANT:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: invokevirtual #361                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      12: checkcast     #221                // class java/lang/Boolean
+      15: invokevirtual #751                // Method java/lang/Boolean.booleanValue:()Z
+      18: ireturn
+
+  public void setInPlant(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #207                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: aload_0
+       5: pop
+       6: getstatic     #229                // Field INPLANT:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       9: iload_1
+      10: invokestatic  #225                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      13: invokevirtual #340                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      16: return
+
+  private static void lambda$mobInteract$2(net.minecraft.world.InteractionHand, net.minecraft.world.entity.player.Player);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokevirtual #1452               // Method net/minecraft/world/entity/player/Player.m_21190_:(Lnet/minecraft/world/InteractionHand;)V
+       5: return
+
+  private boolean lambda$mobInteract$1(java.lang.String);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokevirtual #258                // Method getVariant:()Ljava/lang/String;
+       5: invokevirtual #498                // Method java/lang/String.matches:(Ljava/lang/String;)Z
+       8: ireturn
+
+  private void lambda$setButterflyVariantOnBiome$0(com.cicada.longwings.entity.ButterflyEntity);
+    Code:
+       0: aload_0
+       1: invokevirtual #415                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+       4: aload_1
+       5: invokevirtual #1458               // Method net/minecraft/world/level/Level.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+       8: pop
+       9: return
+
+  static {};
+    Code:
+       0: ldc           #2                  // class com/cicada/longwings/entity/ButterflyEntity
+       2: getstatic     #1465               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135030_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+       5: invokestatic  #1469               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+       8: putstatic     #209                // Field DATA_VARIANT_ID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      11: ldc           #2                  // class com/cicada/longwings/entity/ButterflyEntity
+      13: getstatic     #1472               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135035_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      16: invokestatic  #1469               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      19: putstatic     #219                // Field NOURISHED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      22: ldc           #2                  // class com/cicada/longwings/entity/ButterflyEntity
+      24: getstatic     #1472               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135035_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      27: invokestatic  #1469               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      30: putstatic     #227                // Field ONWALL:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      33: ldc           #2                  // class com/cicada/longwings/entity/ButterflyEntity
+      35: getstatic     #1472               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135035_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      38: invokestatic  #1469               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      41: putstatic     #229                // Field INPLANT:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      44: ldc           #2                  // class com/cicada/longwings/entity/ButterflyEntity
+      46: getstatic     #1475               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      49: invokestatic  #1469               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      52: putstatic     #231                // Field SEED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      55: ldc           #2                  // class com/cicada/longwings/entity/ButterflyEntity
+      57: getstatic     #1478               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135029_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      60: invokestatic  #1469               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      63: putstatic     #238                // Field SIZE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      66: ldc           #2                  // class com/cicada/longwings/entity/ButterflyEntity
+      68: getstatic     #1481               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135038_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      71: invokestatic  #1469               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      74: putstatic     #245                // Field HOME_POS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      77: return
+}

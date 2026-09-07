@@ -1,0 +1,82 @@
+Compiled from "CatchingNetItem.java"
+public class com.cicada.longwings.item.CatchingNetItem extends net.minecraft.world.item.Item {
+  public com.cicada.longwings.item.CatchingNetItem(net.minecraft.world.item.Item$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #17                 // Method net/minecraft/world/item/Item."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+       5: return
+
+  public net.minecraft.world.InteractionResultHolder<net.minecraft.world.item.ItemStack> m_7203_(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
+    Code:
+       0: aload_2
+       1: invokevirtual #30                 // Method net/minecraft/world/entity/player/Player.m_20154_:()Lnet/minecraft/world/phys/Vec3;
+       4: ldc2_w        #31                 // double 1.5d
+       7: ldc2_w        #31                 // double 1.5d
+      10: ldc2_w        #31                 // double 1.5d
+      13: invokevirtual #38                 // Method net/minecraft/world/phys/Vec3.m_82542_:(DDD)Lnet/minecraft/world/phys/Vec3;
+      16: astore        4
+      18: aload_2
+      19: invokevirtual #41                 // Method net/minecraft/world/entity/player/Player.m_146892_:()Lnet/minecraft/world/phys/Vec3;
+      22: getfield      #45                 // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      25: aload         4
+      27: invokevirtual #49                 // Method net/minecraft/world/phys/Vec3.m_7096_:()D
+      30: dadd
+      31: d2f
+      32: fstore        5
+      34: aload_2
+      35: invokevirtual #41                 // Method net/minecraft/world/entity/player/Player.m_146892_:()Lnet/minecraft/world/phys/Vec3;
+      38: getfield      #52                 // Field net/minecraft/world/phys/Vec3.f_82480_:D
+      41: aload         4
+      43: invokevirtual #55                 // Method net/minecraft/world/phys/Vec3.m_7098_:()D
+      46: dadd
+      47: d2f
+      48: fstore        6
+      50: aload_2
+      51: invokevirtual #41                 // Method net/minecraft/world/entity/player/Player.m_146892_:()Lnet/minecraft/world/phys/Vec3;
+      54: getfield      #58                 // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      57: aload         4
+      59: invokevirtual #61                 // Method net/minecraft/world/phys/Vec3.m_7094_:()D
+      62: dadd
+      63: d2f
+      64: fstore        7
+      66: aload_2
+      67: invokevirtual #30                 // Method net/minecraft/world/entity/player/Player.m_20154_:()Lnet/minecraft/world/phys/Vec3;
+      70: astore        8
+      72: aload_1
+      73: invokevirtual #67                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      76: bipush        15
+      78: invokeinterface #73,  2           // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      83: iconst_1
+      84: if_icmpge     114
+      87: aload_2
+      88: aload_3
+      89: invokevirtual #77                 // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+      92: iconst_1
+      93: aload_1
+      94: invokevirtual #67                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      97: iconst_2
+      98: invokeinterface #73,  2           // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     103: iadd
+     104: aload_2
+     105: aload_3
+     106: invokedynamic #97,  0             // InvokeDynamic #0:accept:(Lnet/minecraft/world/InteractionHand;)Ljava/util/function/Consumer;
+     111: invokevirtual #103                // Method net/minecraft/world/item/ItemStack.m_41622_:(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V
+     114: aload_2
+     115: getstatic     #111                // Field com/cicada/longwings/LongwingsSounds.CATCHING_NET_CATCH:Lnet/minecraft/sounds/SoundEvent;
+     118: ldc           #112                // float 0.5f
+     120: fconst_1
+     121: invokevirtual #116                // Method net/minecraft/world/entity/player/Player.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     124: aload_2
+     125: aload_3
+     126: invokevirtual #77                 // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     129: invokestatic  #122                // Method net/minecraft/world/InteractionResultHolder.m_19090_:(Ljava/lang/Object;)Lnet/minecraft/world/InteractionResultHolder;
+     132: areturn
+
+  private static void lambda$use$0(net.minecraft.world.InteractionHand, net.minecraft.world.entity.player.Player);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokevirtual #139                // Method net/minecraft/world/entity/player/Player.m_21190_:(Lnet/minecraft/world/InteractionHand;)V
+       5: return
+}

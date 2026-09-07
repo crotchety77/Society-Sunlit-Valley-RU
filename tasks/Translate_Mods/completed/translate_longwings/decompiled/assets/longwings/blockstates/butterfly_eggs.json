@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=up":
+    [{"model": "longwings:block/butterfly_eggs"},
+    {"model": "longwings:block/butterfly_eggs", "y": 90},
+      {"model": "longwings:block/butterfly_eggs", "y": 180 },
+      {"model": "longwings:block/butterfly_eggs", "y": 270}
+    ],
+    "facing=down":
+    [{"model": "longwings:block/butterfly_eggs", "x": 180},
+      {"model": "longwings:block/butterfly_eggs", "x": 180, "y": 90},
+      {"model": "longwings:block/butterfly_eggs", "x": 180, "y": 180 },
+      {"model": "longwings:block/butterfly_eggs", "x": 180, "y": 270}
+    ],
+    "facing=north":
+    [{"model": "longwings:block/butterfly_eggs", "x": 90}
+    ],
+    "facing=south":
+    [{"model": "longwings:block/butterfly_eggs", "x": 270}
+      ],
+    "facing=east":
+    [{"model": "longwings:block/butterfly_eggs", "x": 90,"y": 90}
+    ],
+    "facing=west":
+    [{"model": "longwings:block/butterfly_eggs", "x": 270,"y": 90}
+    ]
+  }
+}

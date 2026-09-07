@@ -1,0 +1,219 @@
+# =========================================================================
+# ГЛАВА: divine_equipment.snbt
+# Всего квестов: 12
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Divine Equipment
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 340BCEB3585A311C] ===
+EN_TITLE: {"text":"Divine Armor","color":"#DCC815","bold":false,"underlined":false}
+RU_TITLE: 
+
+EN_SUBTITLE: Chosen Champion
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco &fthen fashioned an &6ornate &farmor set &fand one by one, he gained the favour of the &egods. &fHe would obtain four unique blessings one for each piece of armor.
+
+The &cpower &fcontained within the armor was at first too much for his body to withstand. However, with deep meditation and focus he learned to &dcontrol &fand even amplify it with his own &cstrength.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 340BCEB3585A311C ---
+
+
+=== [КВЕСТ 2 | ID: 4CC94BA5994DB6F7] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Sleeping Giant
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco &fneeded a &cpowerful weapon &fand so he travelled to the depths of &4&fhell in a bid to find the most resilent &0material &fknown at the time.
+
+With it he fashioned a &cblade &fdecorating it with softer more &6ornate metals. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4CC94BA5994DB6F7 ---
+
+
+=== [КВЕСТ 3 | ID: 4D13391578E4A553] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Blade of Balance
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco &finserted the &4gem &fand the &cblade &elit&f up before him. Enemies struck with it were torched by &ddragonfire.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4D13391578E4A553 ---
+
+
+=== [КВЕСТ 4 | ID: 35898195DCC583A6] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Size Matters
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco's &ffriend and legendary blacksmith &4arthas, &fwhilst maintaining the  blade thought it would be more efficient to use it as a lighter variant of the original. This would allow for faster more agile attacks . 
+
+Reluctant &6Cisco &fallowed &4him &fto make his modifications upon the assurance that he would return it to its original state if need be.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 35898195DCC583A6 ---
+
+
+=== [КВЕСТ 5 | ID: 4B3AED224389528F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: A fallen hero rises
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+An &4unforseen enemy&f.... his brothers and sisters in the &eheavens &fslain.. at the brink of death, through sheer rage, &6Cisco's &ftrue &cpower &r&ffinally awakened.
+
+He felt the hold of something &0sinister, &fbut also a &cstrength &ffar beyond anything he had felt before. &0Tainted &fbut &ereborn,  &fhe vowed to avenge the lost.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4B3AED224389528F ---
+
+
+=== [КВЕСТ 6 | ID: 45D8D5B8D47651DF] ===
+EN_TITLE: {"text":"Fallen Hero","color":"red","bold":false,"underlined":false}
+RU_TITLE: 
+
+EN_SUBTITLE: At what cost?
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco &fcut his way through what felt like thousands of the &4Fell King's&f forces. His &cstrength however, &fonly increased with each swing of &cNightfall.
+
+Perhaps &4he &fgrew tired of his &0legion's &fincompetence or thought it best to put an end to &6Cisco &4himself &fthe &4fell king &fwould descend upon &6Cisco &fwith an unmatched ferocity . &fAfter hours of furious fighting &6Cisco &fwould stand atop his defeated body.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 45D8D5B8D47651DF ---
+
+
+=== [КВЕСТ 7 | ID: 5AFA5CB101E31BE4] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Crimson Radiance
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco &fenhanced and refined the &4gem &funtill the &cpower &fwithin it overflowed so vigourously he thought the gem would consume itself. 
+
+With the &4gem &fnow stable it was finally ready to serve it's purpose. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5AFA5CB101E31BE4 ---
+
+
+=== [КВЕСТ 8 | ID: 479168EE1144DBB1] ===
+EN_TITLE: {"text":"The Fell King","color":"dark_red","bold":false,"underlined":false}
+RU_TITLE: 
+
+EN_SUBTITLE: Freinds and Foes
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco &fknelt down and lifted &4the fell king's &fhelm revealing not the face of a demon but the bloodied grin of &4arthas&f...the blacksmith ... one who he had considered a close freind.
+
+&4Arthas &flifted his arm slowly....There was a brief pause before a sudden searing pain in &6Cisco's &fchest completely paralysed him. &6Cisco &fcould see a &0dark energy &fleaving his body being transfered to &4Arthas. &fThe colour returned to &4Arthas' &fface as &4he &fgot back up to his feet.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 479168EE1144DBB1 ---
+
+
+=== [КВЕСТ 9 | ID: 49EB4B9AE3365883] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Ragnarok
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Severely weakened &6Cisco &ftried in vain to get to his feet.. But a deliberate and vicious strike from &5Fell Ragnarok &fwould &fshatter his chestplate and send him flying off a nearby cliff edge.
+
+As he plunged into the depths he could see &4Arthas' &fonce familiar face staring down at him eyes blazing with &0dark energy &fand utter contempt as &4he &fslowly turned his back walking away, leaving &6Cisco &fto his fate.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 49EB4B9AE3365883 ---
+
+
+=== [КВЕСТ 10 | ID: 134D9801D13D58F5] ===
+EN_TITLE: Cisco's Trial
+RU_TITLE: 
+
+EN_SUBTITLE: Challenging Cisco
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco &fused the last portion of his &4power &fto teleport himself to the &dend dimension &fsuccessfully &faverting impending doom. &fThere the &5enderdragon &fembraced him as her kin whilst he slowly recuperated .
+
+&6Cisco &frealised he &flacked the &4power &fto defeat &4the &4fell &4king &falone &fand thus beseeched the aid of a champion. He however, wished to test the champion's &4strength &fbefore allowing to fight &4Arthas.
+
+Uttering these words to the champion "Craft and use the &6talisman &6of &6challenge &fand we shall begin your &btrial".
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 134D9801D13D58F5 ---
+
+
+=== [КВЕСТ 11 | ID: 238511D8E52BB53E] ===
+EN_TITLE: Defeat the Fell King
+RU_TITLE: 
+
+EN_SUBTITLE: Felling The Fell King
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+During &6Cisco's &fjourney to the &5fallen realm &fin search of a way to defeat &4the Fell King &fhe stumbled upon &4Arthas' &fsoldiers mining a mysterious &0dark crystal. &fUpon thorough examination it dawned on him that it was indeed the source of &4Arthas' &fimmense &cpower.
+
+&fAfter many experiments &6Cisco &fwas able to tamper with the unique &9magical &fsignature of the crystal to create a weakening effect. 
+
+He instructed the champion to create an &5altar &fusing it as a gateway, then to &0corrupt &fthe &etalisman &fwith the &0fell fragments. &fThe altar would then extract &4Arthas' &f primordial essence once he was defeated.
+
+Once again instructing his champion "&fUse the &0corrupted &etalisman &fon the &5altar &fand defeat &4the &4Fell king &f taking your rightful place as divinity".
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 238511D8E52BB53E ---
+
+
+=== [КВЕСТ 12 | ID: 288608ED892DC5EB] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Red as a Ruby
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The son of a &afarmerwoman &fand an &0unknown god &6Cisco &fgrew up being no stronger than the average mortal. Despite this his half brothers and sisters in the &eheavens&f looked favourably upon him intervening at key points in his life.
+
+&6Cisco &fhowever, had a natural apptitude for things &1arcane &fand so the minute he was of age he left his small village to enroll with &dthe order of the owl &fat &2the grand citadel. 
+
+&fThere he would relatively quickly attain the prestigous rank of &bSage. &6Cisco &fwould eventually grow bored of the citadel deciding to embark on a journey to truly make a name for himself. Using his knowledge of &9alchemy &fhe forged a &4ruby &fthat would help him borrow and harness the &edivine gifts &fof his more powerful &ekin.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 288608ED892DC5EB ---
+
+

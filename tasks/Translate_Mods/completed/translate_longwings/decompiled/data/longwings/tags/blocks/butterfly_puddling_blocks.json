@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+	  "longwings:sugar_water_bowl",
+	  "longwings:berry_butterfly_brew_block",
+	  "longwings:apple_butterfly_brew_block",
+	  "longwings:melon_butterfly_brew_block",
+	  "#minecraft:flowers",
+	  "#minecraft:flower_pots",
+	  "minecraft:honey_block",
+	  "minecraft:mud",
+	  "minecraft:clay",
+	  "minecraft:muddy_mangrove_roots",
+	  "minecraft:mud_bricks",
+	  "minecraft:mud_brick_stairs",
+	  "minecraft:packed_mud",
+	  "minecraft:mud_brick_slab",
+	  "minecraft:mud_brick_wall"
+  ]
+}

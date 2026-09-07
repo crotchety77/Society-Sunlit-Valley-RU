@@ -1,0 +1,669 @@
+# =========================================================================
+# ГЛАВА: ciscos_wares.snbt
+# Всего квестов: 44
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Ciscos Wares
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 576A68E80DC58777] ===
+EN_TITLE: Legendary Loot Crate
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 576A68E80DC58777 ---
+
+
+=== [КВЕСТ 2 | ID: 3641C469C243DE3F] ===
+EN_TITLE: Epic Loot Crate
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3641C469C243DE3F ---
+
+
+=== [КВЕСТ 3 | ID: 2F43D065E76BAC8A] ===
+EN_TITLE: Rare Loot Crate
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2F43D065E76BAC8A ---
+
+
+=== [КВЕСТ 4 | ID: 6CEDAE878E5ABB0D] ===
+EN_TITLE: Netherite Ingot
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6CEDAE878E5ABB0D ---
+
+
+=== [КВЕСТ 5 | ID: 5ACBAA051A586F1A] ===
+EN_TITLE: Talisman of Challenge
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5ACBAA051A586F1A ---
+
+
+=== [КВЕСТ 6 | ID: 4E0F4C5859E752C2] ===
+EN_TITLE: Tainted Talisman
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4E0F4C5859E752C2 ---
+
+
+=== [КВЕСТ 7 | ID: 1DE09E80E0F08DE7] ===
+EN_TITLE: Brightsteel Block
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1DE09E80E0F08DE7 ---
+
+
+=== [КВЕСТ 8 | ID: 352ABB214ED29314] ===
+EN_TITLE: Wind Core
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 352ABB214ED29314 ---
+
+
+=== [КВЕСТ 9 | ID: 5C8AD0C57152EB8E] ===
+EN_TITLE: Thunder Core
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5C8AD0C57152EB8E ---
+
+
+=== [КВЕСТ 10 | ID: 240C64F99C280FBF] ===
+EN_TITLE: Dark Core
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 240C64F99C280FBF ---
+
+
+=== [КВЕСТ 11 | ID: 3549D1628A6DA56C] ===
+EN_TITLE: Light Core
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3549D1628A6DA56C ---
+
+
+=== [КВЕСТ 12 | ID: 1844D8263FD2DAF5] ===
+EN_TITLE: Glacial Core
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1844D8263FD2DAF5 ---
+
+
+=== [КВЕСТ 13 | ID: 508F3D484B28C407] ===
+EN_TITLE: Ember Core
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 508F3D484B28C407 ---
+
+
+=== [КВЕСТ 14 | ID: 22B46C7A778A21E0] ===
+EN_TITLE: Divine Ruby
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 22B46C7A778A21E0 ---
+
+
+=== [КВЕСТ 15 | ID: 6C141F245A25CAD5] ===
+EN_TITLE: Wisdom Scroll
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6C141F245A25CAD5 ---
+
+
+=== [КВЕСТ 16 | ID: 759F120170CD9FE7] ===
+EN_TITLE: Random Flawed Gem
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 759F120170CD9FE7 ---
+
+
+=== [КВЕСТ 17 | ID: 73DD41F1E5332485] ===
+EN_TITLE: Sin of gluttony
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 73DD41F1E5332485 ---
+
+
+=== [КВЕСТ 18 | ID: 6A81B7297530DC47] ===
+EN_TITLE: Sin of Sloth
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6A81B7297530DC47 ---
+
+
+=== [КВЕСТ 19 | ID: 1965BA5DAC47ACC7] ===
+EN_TITLE: Sin of Greed
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1965BA5DAC47ACC7 ---
+
+
+=== [КВЕСТ 20 | ID: 406888C5E049E3D6] ===
+EN_TITLE: Sin of Pride
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 406888C5E049E3D6 ---
+
+
+=== [КВЕСТ 21 | ID: 3846FF794614E6A5] ===
+EN_TITLE: Sin of Envy
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3846FF794614E6A5 ---
+
+
+=== [КВЕСТ 22 | ID: 7DBF0A5E56CEE3F8] ===
+EN_TITLE: Sin of Lust
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7DBF0A5E56CEE3F8 ---
+
+
+=== [КВЕСТ 23 | ID: 67CE4EDF87F112A2] ===
+EN_TITLE: Sin of Wrath
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 67CE4EDF87F112A2 ---
+
+
+=== [КВЕСТ 24 | ID: 29F8130C7AE1A75D] ===
+EN_TITLE: Amulet of Vitality
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 29F8130C7AE1A75D ---
+
+
+=== [КВЕСТ 25 | ID: 1FF12F09A1CEC290] ===
+EN_TITLE: Amulet of Swin Speed
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1FF12F09A1CEC290 ---
+
+
+=== [КВЕСТ 26 | ID: 0A0DD56751DC1C24] ===
+EN_TITLE: Amulet of Luck
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0A0DD56751DC1C24 ---
+
+
+=== [КВЕСТ 27 | ID: 6B1614AD10F33C54] ===
+EN_TITLE: Amnesia Scroll
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6B1614AD10F33C54 ---
+
+
+=== [КВЕСТ 28 | ID: 2AE651270FD58200] ===
+EN_TITLE: Plate of Honey Glazed Ham
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2AE651270FD58200 ---
+
+
+=== [КВЕСТ 29 | ID: 4057862FA8DB2C5E] ===
+EN_TITLE: Bottle of Sanity
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Reduces world level by 25 . Requires the quest ascendant difficulty to be completed.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4057862FA8DB2C5E ---
+
+
+=== [КВЕСТ 30 | ID: 0D7120FAA767086B] ===
+EN_TITLE: Ancient Remnant
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0D7120FAA767086B ---
+
+
+=== [КВЕСТ 31 | ID: 0A239CE5AE3D9DEC] ===
+EN_TITLE: Grace of the Creator
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0A239CE5AE3D9DEC ---
+
+
+=== [КВЕСТ 32 | ID: 32CA254752FEA51F] ===
+EN_TITLE: Celestial Fruit
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 32CA254752FEA51F ---
+
+
+=== [КВЕСТ 33 | ID: 104A981DC54BA459] ===
+EN_TITLE: Forbidden Fruit
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 104A981DC54BA459 ---
+
+
+=== [КВЕСТ 34 | ID: 6E66FB9B9FB5311E] ===
+EN_TITLE: Non-Euclidean Cube
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6E66FB9B9FB5311E ---
+
+
+=== [КВЕСТ 35 | ID: 77A697FDEDF472D1] ===
+EN_TITLE: Emperor's Crown
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 77A697FDEDF472D1 ---
+
+
+=== [КВЕСТ 36 | ID: 4BB0E401FB2BA73D] ===
+EN_TITLE: Belt of Bracing
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4BB0E401FB2BA73D ---
+
+
+=== [КВЕСТ 37 | ID: 21BE64A51E739104] ===
+EN_TITLE: Pinnacle Reforge Mat Crate
+RU_TITLE: 
+
+EN_SUBTITLE: Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 21BE64A51E739104 ---
+
+
+=== [КВЕСТ 38 | ID: 00FC2C161FCDBED3] ===
+EN_TITLE: Temporal Core
+RU_TITLE: 
+
+EN_SUBTITLE: Equivalent Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 00FC2C161FCDBED3 ---
+
+
+=== [КВЕСТ 39 | ID: 67E093A9B7D479F1] ===
+EN_TITLE: Talisman of Betrayal
+RU_TITLE: 
+
+EN_SUBTITLE: Equivalent Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 67E093A9B7D479F1 ---
+
+
+=== [КВЕСТ 40 | ID: 15D0FFFA8A20DE35] ===
+EN_TITLE: Bottle of Curse
+RU_TITLE: 
+
+EN_SUBTITLE: 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 15D0FFFA8A20DE35 ---
+
+
+=== [КВЕСТ 41 | ID: 41E19C5A11A733A4] ===
+EN_TITLE: Dreadsteel Ingot
+RU_TITLE: 
+
+EN_SUBTITLE: Equivalent Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 41E19C5A11A733A4 ---
+
+
+=== [КВЕСТ 42 | ID: 12D216753DD8E7D4] ===
+EN_TITLE: Levitater Trait Item
+RU_TITLE: 
+
+EN_SUBTITLE: Equivalent Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 12D216753DD8E7D4 ---
+
+
+=== [КВЕСТ 43 | ID: 015F1651F5F00E71] ===
+EN_TITLE: Undying Trait Item
+RU_TITLE: 
+
+EN_SUBTITLE: Equivalent Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 015F1651F5F00E71 ---
+
+
+=== [КВЕСТ 44 | ID: 02113C83CFEBFA54] ===
+EN_TITLE: Dread Lich Spawn Egg
+RU_TITLE: 
+
+EN_SUBTITLE: Equivalent Exchange
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+(нет описания)
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 02113C83CFEBFA54 ---
+
+

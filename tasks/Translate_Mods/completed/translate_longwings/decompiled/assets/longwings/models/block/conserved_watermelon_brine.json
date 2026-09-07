@@ -1,0 +1,35 @@
+{
+	"parent": "block/block",
+	"render_type": "translucent",
+	"textures": {
+		"particle": "longwings:block/conserved_watermelon_brine",
+		"outer": "longwings:block/conserved_watermelon_brine",
+		"inner": "longwings:block/conserved_watermelon_brine_inner"
+	},
+	"elements": [
+		{
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down":  { "texture": "#outer", "cullface": "down" },
+				"up":    { "texture": "#outer", "cullface": "up" },
+				"north": { "texture": "#outer", "cullface": "north" },
+				"south": { "texture": "#outer", "cullface": "south" },
+				"west":  { "texture": "#outer", "cullface": "west" },
+				"east":  { "texture": "#outer", "cullface": "east" }
+			}
+		},
+		{
+			"from": [1, 1, 1],
+			"to": [15, 15, 15],
+			"faces": {
+				"north": {"uv": [1, 1, 15, 15], "texture": "#inner"},
+				"east": {"uv": [1, 1, 15, 15], "texture": "#inner"},
+				"south": {"uv": [1, 1, 15, 15], "texture": "#inner"},
+				"west": {"uv": [1, 1, 15, 15], "texture": "#inner"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#inner"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#inner"}
+			}
+		}
+	]
+}

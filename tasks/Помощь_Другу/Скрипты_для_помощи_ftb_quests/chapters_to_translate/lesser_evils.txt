@@ -1,0 +1,77 @@
+# =========================================================================
+# ГЛАВА: lesser_evils.snbt
+# Всего квестов: 4
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Lesser Evils
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 31FBA523D6A35AA4] ===
+EN_TITLE: Slay Mutant Skeleton
+RU_TITLE: 
+
+EN_SUBTITLE: Skeletal Sniper
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Armed with a large bow this mutated &7skeleton &fposes a significant ranged threat . 
+
+It will vicously knockback enemies that get within &4melee range.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 31FBA523D6A35AA4 ---
+
+
+=== [КВЕСТ 2 | ID: 46E426066D19DABA] ===
+EN_TITLE: Slay Mutant Creeper
+RU_TITLE: 
+
+EN_SUBTITLE: Calamitous Creeper
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This mutated &acreeper &fhas increased mobility and can attack in melee.
+
+Upon recieving fatal damage it will charge up and &4explode &fviolently leaving behind an egg.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 46E426066D19DABA ---
+
+
+=== [КВЕСТ 3 | ID: 16E8B9A8E0CC70B6] ===
+EN_TITLE: Slay Mutated Enderman
+RU_TITLE: 
+
+EN_SUBTITLE: Erratic Enderman
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This mutated &denderman &fcan be found within the &5end &fand is significantly more threatening that it's lesser counterparts.
+
+After recieving fatal damage it will attempt to pull in and damage nearby enemies.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 16E8B9A8E0CC70B6 ---
+
+
+=== [КВЕСТ 4 | ID: 417CD90BAD812204] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Zealous Zombie
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This mutated variant of the &2zombie &fwill attempt to launch you into the air before quickly slamming you back to ground . 
+
+It must be set on &6fire &for it will &aregenerate.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 417CD90BAD812204 ---
+
+

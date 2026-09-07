@@ -1,0 +1,711 @@
+# =========================================================================
+# ГЛАВА: adventem_per_tempus.snbt
+# Всего квестов: 44
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Adventem Per Tempus
+RU_CHAPTER_TITLE: # =========================================================================
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 0FD14512C4901D04] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Pockets of Time
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+One of the ramifications of &aAlexander's &dTemporal &cDetonation &fwas the creation of small underground pockets of &dtime.
+
+Different Era's throughtout history  could be found perfectly preserved within caverns with all thier respective flora and fauna on display.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0FD14512C4901D04 ---
+
+
+=== [КВЕСТ 2 | ID: 0741942A0CF808E5] ===
+EN_TITLE: Obtain the neccesary equipment
+RU_TITLE: 
+
+EN_SUBTITLE: Searching for Supplies
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Once you have found the underground cabin search within it for the items  neccesary to begin your journey.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0741942A0CF808E5 ---
+
+
+=== [КВЕСТ 3 | ID: 137369684C76C395] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Adventure through Time
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+It may be benificial to your journey to gain combat experience from every era.
+
+To begin your journey you will need to find the underground cabin once used coincidentally by a scholar also named alexander.
+
+Within will be the equipment needed to locate the caves.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 137369684C76C395 ---
+
+
+=== [КВЕСТ 4 | ID: 0008DBE99D0FA5FE] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Spelunkery Table
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Once you find a spelunkery table you will need to inset a relevant tablet and a piece of paper then attempt to decipher the tablet.
+
+After finding a word three times you will obtain a cave codex respective to the tablet used.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0008DBE99D0FA5FE ---
+
+
+=== [КВЕСТ 5 | ID: 07B085B983D1332D] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Crafting a Cave Map 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+After a obtaining a cave codex you may use it craft a map by surrounding it with paper in a crafting table.
+
+This will create a map that will point you in the direction of that cave.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 07B085B983D1332D ---
+
+
+=== [КВЕСТ 6 | ID: 1554C3B1C7193C51] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Prehistoric Places 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The primordial cave is a region suspended in the prehistoric era.
+
+Plants and creatures thought to be lost to time roam this cavern freely.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1554C3B1C7193C51 ---
+
+
+=== [КВЕСТ 7 | ID: 6DD05439A53758C5] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Amber Monolith when activated will replinish mobs killed in the area.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6DD05439A53758C5 ---
+
+
+=== [КВЕСТ 8 | ID: 215703FC1615AC07] ===
+EN_TITLE: Tame a Subterranodon
+RU_TITLE: 
+
+EN_SUBTITLE: Ancient Flight
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Subterrandon are ancient winged creatures powerful enough to carry an individual.
+
+It is believed that ancient humans tamed these creatures and used them for transportation.
+
+They can be tamed with raw trilocaris.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 215703FC1615AC07 ---
+
+
+=== [КВЕСТ 9 | ID: 33DE110D96BBF2E3] ===
+EN_TITLE: Slay Tremorsaurus
+RU_TITLE: 
+
+EN_SUBTITLE: Tangling with Tremorsaurus
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Tremorsaurus is a large and ferocious ancient beast that can provide you a formiddable challenge.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 33DE110D96BBF2E3 ---
+
+
+=== [КВЕСТ 10 | ID: 2FAED2E6F7B65282] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+One Amber Curiosity has a very small chance to drop from amber when mined with a stone-tiered pickaxe or higher.
+
+
+A pickaxe enchanted with fortune will increase the chance of amber dropping an amber curiousity.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2FAED2E6F7B65282 ---
+
+
+=== [КВЕСТ 11 | ID: 7C2B59D7623E6903] ===
+EN_TITLE: Slay Relicheirus
+RU_TITLE: 
+
+EN_SUBTITLE: 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Relecheirus is a giant bird like dinosaur which when fed primordial soup will go into a frenzy .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7C2B59D7623E6903 ---
+
+
+=== [КВЕСТ 12 | ID: 2CD1643474611548] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Majestic Magnetism
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The magnetic cave is a region suspended in a futuristic electronic era.
+
+
+The technology within is far superior than that of our time but may be useful to a sharpened mind.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2CD1643474611548 ---
+
+
+=== [КВЕСТ 13 | ID: 50F7DC414439D885] ===
+EN_TITLE: Kill Notor
+RU_TITLE: 
+
+EN_SUBTITLE: Nefarius Notor
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These flying creatures are not hostile but will scan you and alert hostile mobs of your location.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 50F7DC414439D885 ---
+
+
+=== [КВЕСТ 14 | ID: 7F752FC1838B0EFF] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Galena Gauntlet
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Galena Gauntlet is a useful device allowing its user to wield a weapon or tool at a distance.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7F752FC1838B0EFF ---
+
+
+=== [КВЕСТ 15 | ID: 5214F8437728A5FE] ===
+EN_TITLE: Kill Teletors
+RU_TITLE: 
+
+EN_SUBTITLE: Magnetic Menace
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Teletors are powerful futuristic creatures capable of using thier magnetic abilities to wield weapons.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5214F8437728A5FE ---
+
+
+=== [КВЕСТ 16 | ID: 0600B6A16DC78F7C] ===
+EN_TITLE: Slay Magnetron
+RU_TITLE: 
+
+EN_SUBTITLE: Malevolent Magnetron
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The magnetron is a creature able to use it's magnetic abilities to create a body out of nearby blocks and metal items making it very deadly in combat.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0600B6A16DC78F7C ---
+
+
+=== [КВЕСТ 17 | ID: 4F1B32CA37E2A101] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Darkness and Desolation
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The forlorn hollow is a mysterious region where the temporal detonation caused dark energy to take hold corrupting the area completely.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4F1B32CA37E2A101 ---
+
+
+=== [КВЕСТ 18 | ID: 04C8EF0D5E1EB54B] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Vampiric Vessels
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Vespers are corrupted bat like entities that will use thier swift flight to to make devasting aerial attacks against you.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 04C8EF0D5E1EB54B ---
+
+
+=== [КВЕСТ 19 | ID: 406D833105080368] ===
+EN_TITLE: Slay the Watcher
+RU_TITLE: 
+
+EN_SUBTITLE: Watcher Woes
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+When the &0unholy ritual &fis performed using a &5gloomoth&f as a catalyst this &csinister wraith &fis born,
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 406D833105080368 ---
+
+
+=== [КВЕСТ 20 | ID: 46D9BA6A18760EE7] ===
+EN_TITLE: Witness the Black Ritual
+RU_TITLE: 
+
+EN_SUBTITLE: Watching the Watcher
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Underzealots are mole like cultists who reside in the forlorn hollows.
+
+In a group they are capable of performing a ritual to transform a gloomoth into a watcher or a vesper into a forsaken.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 46D9BA6A18760EE7 ---
+
+
+=== [КВЕСТ 21 | ID: 4DC4475F8BD09678] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Fighting the Forsaken
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This unholy beast is created by the underzealots when they complete the dark ritual with a vesper catalyst.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4DC4475F8BD09678 ---
+
+
+=== [КВЕСТ 22 | ID: 745009C6401BC53F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Dreadbow
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This dark bow imbues shot arrows with powerful dark magic to bypass immunities and rain down  volleys of shadow on enemies.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 745009C6401BC53F ---
+
+
+=== [КВЕСТ 23 | ID: 42F38D5AB8011318] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Lava Laiden Luctructosaurus
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This &cinfernal monstrosity &flies sealed within the heart of &4volcanoes &fin the primordial caves.
+
+It can be summoned by dropping an &2ominous catalyst &finto one such &4volcano.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 42F38D5AB8011318 ---
+
+
+=== [КВЕСТ 24 | ID: 5E8BE41E8FBD5CB8] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Poisonous Places
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The toxic caves are a volatile area made inhospitable by the effects of the temporal detonation.
+
+Though it remains hostile to life remnants of futuristic technology lie within it's wastes waiting to be discovered.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5E8BE41E8FBD5CB8 ---
+
+
+=== [КВЕСТ 25 | ID: 027CBE32E8E02628] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Busting Brains
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These deadly creatures are able to irridiate you with their tongue attacks and also have a tendency to  toss acid filled drums.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 027CBE32E8E02628 ---
+
+
+=== [КВЕСТ 26 | ID: 79BDEEE3A070CA62] ===
+EN_TITLE: Kill Nucleepers
+RU_TITLE: 
+
+EN_SUBTITLE: Neutralising Nucleepers
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These creeper variants are enhanced with nuclear technology.
+
+They take a longer time to prime themselves for detonation but cannot be interrupted once started creating a devastating nuclear explosion.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 79BDEEE3A070CA62 ---
+
+
+=== [КВЕСТ 27 | ID: 607259B9B14E9290] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Rearing Raycats
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These undead cats can be used to repel nucleepers and cure the irridiated status effect.
+
+They can be tamed by being fed radgill.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 607259B9B14E9290 ---
+
+
+=== [КВЕСТ 28 | ID: 5A4F2A37CE2D7BDD] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Rays of Radiation
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This futuristic weapon fires a beam of continuous energy damaging any creatures in it's path.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5A4F2A37CE2D7BDD ---
+
+
+=== [КВЕСТ 29 | ID: 1B951B417D8F664F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Greivous Gammaroaches
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+While primarily neutral these creatures will attack anyone affected by the irridiated effect.
+
+These creatures are capable of carrying hostile mobs to your location in an attempt to overwhelm you.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1B951B417D8F664F ---
+
+
+=== [КВЕСТ 30 | ID: 66928DC47375D3B5] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Alluring Abyss
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The only underwater region affected by the temporal detonation. 
+
+It is afflicted by extreme darkness requiring the deepsight effect to navigate.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 66928DC47375D3B5 ---
+
+
+=== [КВЕСТ 31 | ID: 3474E47ECA6CBDC1] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Candy Cavern
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The temporal detonation has made this region into an area twisted by childlike fantasies.
+
+Everything in this area seems to be made of the sweetest candy attempting to diguise it's lethal nature.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3474E47ECA6CBDC1 ---
+
+
+=== [КВЕСТ 32 | ID: 460E30869B32B76D] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Killing Caramel
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This slimey monstrosity is made of pure caramel and secretes movement impeding patches of caramel when struck.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 460E30869B32B76D ---
+
+
+=== [КВЕСТ 33 | ID: 5908CC1D7B2D95B3] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Crazy Caniacs
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Caniacs are ferocious peppermint skeletons which charge down foes with it's thrashing arms.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5908CC1D7B2D95B3 ---
+
+
+=== [КВЕСТ 34 | ID: 6F4A9148EC4A6CEE] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Greivous Gumbeeper
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These mini mechanical creepers launch bouncing gumballs at it's enemies.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6F4A9148EC4A6CEE ---
+
+
+=== [КВЕСТ 35 | ID: 23B6E22F179B7FDF] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Leery Licowitches
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These evil witches cast harmful spells to damage explorers.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 23B6E22F179B7FDF ---
+
+
+=== [КВЕСТ 36 | ID: 2B058E98209CABA5] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Ravenous Rucksack
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This ravenous sack can be fed food items to store hunger and will slowly replinish that hunger when in your inventory.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2B058E98209CABA5 ---
+
+
+=== [КВЕСТ 37 | ID: 3C52DBCF31A38053] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Building Biomes
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This special food item can only be eaten when you are on 0 hunger, once eaten it records the information of the biome where it was consumed to be later used in the conversion crucible.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3C52DBCF31A38053 ---
+
+
+=== [КВЕСТ 38 | ID: 5A2CEB9CDAE648C1] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Cavernous Conversion
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This extraordinarily powerful item is capable of using the information recorded in a biome treat to convert another biome to the recorded biome.
+
+You will need to feed it blocks from that biome and can only have one converted biome active at a time.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5A2CEB9CDAE648C1 ---
+
+
+=== [КВЕСТ 39 | ID: 198C538DE3A14408] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Marine Mages
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These aquatic creatures are capable of using powerful water magic to defend themselves.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 198C538DE3A14408 ---
+
+
+=== [КВЕСТ 40 | ID: 7A4C19D5D37BAF89] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Maneavouring through Mines
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These creatures are usually found anchored and guarding a structure. They however will attack you on sight and may detonate themselves .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7A4C19D5D37BAF89 ---
+
+
+=== [КВЕСТ 41 | ID: 70C4BA8D3CB4C093] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Waterborn Warriors
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These aquatic knights will ferociously defend themseves with melee attacks.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 70C4BA8D3CB4C093 ---
+
+
+=== [КВЕСТ 42 | ID: 1EB80A737C0458BA] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Calling the Deep
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This magical item will summon a group on deep ones to fight on your behalf.
+
+It must be obtained by trading with deep ones via the abyssal altar.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1EB80A737C0458BA ---
+
+
+=== [КВЕСТ 43 | ID: 3C7CA42AFDA8EC22] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Deep Dwellers
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These aquatic creatures possess some sentience and while they may initially be hostile to you can be befreinded by trading them pearls upon an abyssal altar.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3C7CA42AFDA8EC22 ---
+
+
+=== [КВЕСТ 44 | ID: 5E66C47F3B7F5BCD] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Hunting Hullbreakers
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These abyssal monstrosities feed on glowing objects and pose a significant threat to submarines.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5E66C47F3B7F5BCD ---
+
+

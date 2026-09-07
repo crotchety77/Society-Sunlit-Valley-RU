@@ -1,0 +1,62 @@
+# Локализация мода: etched
+
+**JAR:** `etched-3.0.4.jar` | **Всего строк:** 40 | **Не переведено:** 1
+
+## 1. Визуальный контекст и оформление
+* Форматирование: Названия предметов/блоков начинаются с Заглавной буквы.
+* Валюта: использовать значок монеты `§e●` (`U+25CF`).
+* Тултипы: подсветка клавиш `§6Shift + ПКМ§7`.
+
+## 2. Непереведённые строки (требуют перевода)
+
+```json
+{
+  "sound_source.etched.info": "TODO: %s - %s"
+}
+```
+
+## 3. Существующие переводы (для контекста)
+
+```json
+{
+  "block.etched.album_jukebox": "Альбомный проигрыватель",
+  "block.etched.etching_table": "Стол для гравировки",
+  "block.etched.radio": "Радио",
+  "container.etched.album_jukebox": "Альбомный проигрыватель",
+  "container.etched.etching_table": "Стол для гравировки",
+  "container.etched.etching_table.url": "URL Музыки",
+  "container.etched.radio": "Радио",
+  "container.etched.radio.url": "URL Радио",
+  "entity.etched.jukebox_minecart": "Вагонетка с проигрывателем",
+  "entity.minecraft.villager.bard": "Менестрель",
+  "entity.minecraft.villager.etched.bard": "Менестрель",
+  "item.etched.album_cover": "Обложка альбома",
+  "item.etched.blank_music_disc": "Пустая пластинка",
+  "item.etched.boombox": "Бумбокс",
+  "item.etched.boombox.paused": "На паузе",
+  "item.etched.boombox.pause": "%s + %s поставить на паузу ",
+  "item.etched.boombox.records": "Композиции:",
+  "item.etched.complex_music_label": "Сложный ярлык",
+  "item.etched.etched_music_disc": "Гравированная пластинка",
+  "item.etched.etched_music_disc.album": "(Альбом)",
+  "item.etched.jukebox_minecart": "Вагонетка с проигрывателем",
+  "item.etched.music_label": "Ярлык",
+  "item.etched.portal_radio": "Радио Portal",
+  "record.etched.downloadFail": "Не удалось загрузить %s",
+  "record.etched.downloadProgress": "Загружается (%s MB / %s MB): %s",
+  "record.etched.loading": "Загрузка %s",
+  "record.etched.resolvingTracks": "Регулирование дорожек...",
+  "screen.etched.album_jukebox.now_playing": "Играет",
+  "screen.etched.edit_music_label.author": "Автор",
+  "screen.etched.edit_music_label.title": "Название",
+  "screen.etched.etching_table.error.cannot_create": "Нельзя создать пластинку",
+  "screen.etched.etching_table.error.cannot_create.missing_disc": "Отсутствует пустая пластинка",
+  "screen.etched.etching_table.error.cannot_create.missing_label": "Отсутствует ярлык",
+  "screen.etched.etching_table.error.invalid_url": "Неправильный URL",
+  "sound_source.etched.bandcamp": "Предоставлено Bandcamp",
+  "sound_source.etched.radio": "Радиостанция",
+  "sound_source.etched.requesting": "Запрос от %s...",
+  "sound_source.etched.sound_cloud": "Предоставлено SoundCloud",
+  "subtitles.etched.ui.etching_table.take_result": "Стол для гравировки использован"
+}
+```

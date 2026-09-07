@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+
+    ],
+    "key": {
+        "#": {
+            "item": "longwings:melon_butterfly_brew_bottle"
+        }
+    },
+    "result": {
+        "item": "longwings:melon_butterfly_brew_block",
+        "count": 1
+    }
+}

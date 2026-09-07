@@ -1,0 +1,128 @@
+# Локализация мода: scholar
+
+**JAR:** `scholar-1.20.1-1.2.5.1-forge.jar` | **Всего строк:** 106 | **Не переведено:** 62
+
+## 1. Визуальный контекст и оформление
+* Форматирование: Названия предметов/блоков начинаются с Заглавной буквы.
+* Валюта: использовать значок монеты `§e●` (`U+25CF`).
+* Тултипы: подсветка клавиш `§6Shift + ПКМ§7`.
+
+## 2. Непереведённые строки (требуют перевода)
+
+```json
+{
+  "gui.scholar.bookmark": "TODO: Bookmark",
+  "gui.scholar.bookmark.remove": "TODO: Remove Bookmark",
+  "gui.scholar.bookmark.set": "TODO: Set Bookmark",
+  "gui.scholar.golden": "TODO: Golden",
+  "gui.scholar.golden.change_skin": "TODO: Change Skin",
+  "gui.scholar.insert_empty_page_left.hotkey": "TODO: §8Ctrl+Shift+Insert",
+  "gui.scholar.insert_empty_page_right.hotkey": "TODO: §8Ctrl+Shift+Alt+Insert",
+  "gui.scholar.remove_page_left.hotkey": "TODO: §8Ctrl+Shift+Delete",
+  "gui.scholar.remove_page_right.hotkey": "TODO: §8Ctrl+Shift+Alt+Delete",
+  "gui.scholar.shift_jump_to_end": "TODO: §8[§7Shift§8] Jump to end",
+  "gui.scholar.shift_jump_to_start": "TODO: §8[§7Shift§8] Jump to beginning",
+  "gui.scholar.tools.tooltip.copy_without_formatting": "TODO: §8[§7Ctrl+Shift+C§8] Copy without formatting",
+  "gui.scholar.tools.tooltip.paste_without_formatting": "TODO: §8[§7Ctrl+Shift+V§8] Paste without formatting",
+  "key.scholar.categories.scholar": "TODO: Scholar",
+  "key.scholar.insert_empty_page_left": "TODO: Insert Empty Page Left",
+  "key.scholar.insert_empty_page_right": "TODO: Insert Empty Page Right",
+  "key.scholar.remove_page_left": "TODO: Remove Page Left",
+  "key.scholar.remove_page_right": "TODO: Remove Page Right",
+  "scholar.book_singing.error_title_too_long": "TODO: Title is too long",
+  "scholar.configuration.animation": "TODO: Animation",
+  "scholar.configuration.book": "TODO: Book",
+  "scholar.configuration.book_coloring": "TODO: Coloring",
+  "scholar.configuration.writable_book_coloring": "TODO: Writable",
+  "scholar.configuration.written_book_coloring": "TODO: Written",
+  "scholar.configuration.book_drop_chance": "TODO: Book Drop Chance",
+  "scholar.configuration.book_reading_chance": "TODO: Book Reading Chance",
+  "scholar.configuration.book_spawn_chance": "TODO: Book Spawn Chance",
+  "scholar.configuration.by_author_color": "TODO: \"by: <author>\" Text Color",
+  "scholar.configuration.changeable_author": "TODO: Changeable Author",
+  "scholar.configuration.chiseled_bookshelf_tooltip": "TODO: Chiseled Bookshelf Tooltip",
+  "scholar.configuration.colors": "TODO: Colors",
+  "scholar.configuration.enter_title_color": "TODO: \"Enter Book Title\" Text Color",
+  "scholar.configuration.extra_tools": "TODO: Extra Tools",
+  "scholar.configuration.hide_offhand_item": "TODO: Hide Offhand Item",
+  "scholar.configuration.integration": "TODO: Integration",
+  "scholar.configuration.jei": "TODO: JEI",
+  "scholar.configuration.jei_dyeing_recipes": "TODO: Item Dyeing Recipes",
+  "scholar.configuration.jei_dyeing_recipes_only_books": "TODO: Item Dyeing Recipes: Only Books",
+  "scholar.configuration.lectern_colored_book": "TODO: Lectern Colored Book",
+  "scholar.configuration.lectern_tooltip": "TODO: Lectern Tooltip",
+  "scholar.configuration.literate_mobs": "TODO: Literate Mobs",
+  "scholar.configuration.page_numbers_color": "TODO: Page Numbers Color",
+  "scholar.configuration.pause_game": "TODO: Pause Singleplayer Game",
+  "scholar.configuration.reading": "TODO: Reading",
+  "scholar.configuration.replace_screens_in_hand": "TODO: Replace In-Hand Screens",
+  "scholar.configuration.replace_screens_on_lectern": "TODO: Replace Lectern Screens",
+  "scholar.configuration.requires_sneak": "TODO: Sneaking Required",
+  "scholar.configuration.screen": "TODO: Screen",
+  "scholar.configuration.selection_color": "TODO: Selection Color",
+  "scholar.configuration.selection_unfocused_color": "TODO: Selection Unfocused Color",
+  "scholar.configuration.show_done_button": "TODO: Show Done Button",
+  "scholar.configuration.show_extra_tools": "TODO: Show Extra Editing Tools",
+  "scholar.configuration.sneaking_opens_vanilla_screen": "TODO: Sneaking Opens Vanilla Screen",
+  "scholar.configuration.text_color": "TODO: Text Color",
+  "scholar.configuration.tooltip": "TODO: Tooltip",
+  "scholar.configuration.tutorial": "TODO: Tutorial",
+  "scholar.configuration.ui": "TODO: UI",
+  "scholar.configuration.visuals": "TODO: Visuals",
+  "scholar.configuration.written_book_enchantment_glint": "TODO: Written Book Enchantment Glint",
+  "subtitles.scholar.ui.book_signed": "TODO: Book signing scribbles",
+  "subtitles.scholar.ui.ink": "TODO: Ink splashes",
+  "subtitles.scholar.ui.scribble": "TODO: Pen scribbles"
+}
+```
+
+## 3. Существующие переводы (для контекста)
+
+```json
+{
+  "gui.scholar.cannot_insert_page": "Невозможно вставить больше страниц",
+  "gui.scholar.export_book": "Экспорт книги...",
+  "gui.scholar.export_book.failure": "Не удалось экспортировать книгу. Подробности в журнале игры.",
+  "gui.scholar.export_book.success": "Книга экспортирована в ",
+  "gui.scholar.export_book.tooltip": "§8Сохраняет все страницы в текстовый файл\n§8Удерживайте §8[§7Shift§8] для включения кодов форматирования",
+  "gui.scholar.formatting.aqua": "Аква",
+  "gui.scholar.formatting.black": "Чёрный",
+  "gui.scholar.formatting.blue": "Синий",
+  "gui.scholar.formatting.bold": "Жирный",
+  "gui.scholar.formatting.dark_aqua": "Тёмно-аква",
+  "gui.scholar.formatting.dark_blue": "Тёмно-синий",
+  "gui.scholar.formatting.dark_gray": "Тёмно-серый",
+  "gui.scholar.formatting.dark_green": "Тёмно-зелёный",
+  "gui.scholar.formatting.dark_purple": "Тёмно-фиолетовый",
+  "gui.scholar.formatting.dark_red": "Тёмно-красный",
+  "gui.scholar.formatting.gold": "Золотой",
+  "gui.scholar.formatting.gray": "Серый",
+  "gui.scholar.formatting.green": "Зелёный",
+  "gui.scholar.formatting.italic": "Курсив",
+  "gui.scholar.formatting.light_purple": "Светло-фиолетовый",
+  "gui.scholar.formatting.obfuscated": "Запутанный",
+  "gui.scholar.formatting.red": "Красный",
+  "gui.scholar.formatting.reset": "Сброс",
+  "gui.scholar.formatting.strikethrough": "Зачёркнутый",
+  "gui.scholar.formatting.underline": "Подчёркнутый",
+  "gui.scholar.formatting.white": "Белый",
+  "gui.scholar.formatting.yellow": "Жёлтый",
+  "gui.scholar.import_book": "Импорт книги...",
+  "gui.scholar.import_book.failure": "Не удалось импортировать книгу. Подробности в журнале игры.",
+  "gui.scholar.import_book.tooltip": "§8Заменит весь текст в книге текстом из файла\n§8Удерживайте [§7Shift§8] для включения форматирования",
+  "gui.scholar.insert_empty_page": "Вставить пустую страницу",
+  "gui.scholar.lectern.set_current_page": "Установить текущей страницей",
+  "gui.scholar.remove_page": "Удалить страницу",
+  "gui.scholar.tools.toggle": "Дополнительные инструменты",
+  "gui.scholar.tools.tooltip.redo": "§8[§7Ctrl+Shift+Z§8] Вернуть",
+  "gui.scholar.tools.tooltip.undo": "§8[§7Ctrl+Z§8] Отменить",
+  "key.scholar.export_book": "Экспорт книги",
+  "key.scholar.import_book": "Импорт книги",
+  "key.scholar.toggle_book_tools": "Переключить инструменты редактирования",
+  "resourcepack.scholar.chiseled_bookshelf_colored_books.name": "Scholar: цветные книги в резной книжной полке",
+  "resourcepack.scholar.chiseled_bookshelf_colored_books_abnww_compat.name": "Scholar: совместимость с цветными книгами Woodworks",
+  "resourcepack.scholar.chiseled_bookshelf_colored_books_lolmcbv_compat.name": "Scholar: совместимость с цветными книгами MCBV",
+  "resourcepack.scholar.chiseled_bookshelf_colored_books_woodster_compat.name": "Scholar: совместимость с цветными книгами Woodster",
+  "resourcepack.scholar.colored_books.name": "Scholar: цветные книги"
+}
+```

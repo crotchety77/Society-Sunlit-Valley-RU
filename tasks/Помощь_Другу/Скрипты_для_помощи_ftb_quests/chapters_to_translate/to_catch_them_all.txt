@@ -1,0 +1,565 @@
+# =========================================================================
+# ГЛАВА: to_catch_them_all.snbt
+# Всего квестов: 36
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: To Catch Them All
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 508B2896433C0FD2] ===
+EN_TITLE: Craft a Stone fishing Rod
+RU_TITLE: 
+
+EN_SUBTITLE: Ready to Reel
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Every great angler starts with a reliable rod.
+
+The right rod, bait, hook, and bobber can mean the difference between a common catch and a legendary one. Improve your equipment as you travel to discover rarer fish hidden throughout the world.
+
+Craft a Stone Fishing Rod and cast your first line.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 508B2896433C0FD2 ---
+
+
+=== [КВЕСТ 2 | ID: 4C0118A4314C479A] ===
+EN_TITLE: Arapaima
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Arapaima to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4C0118A4314C479A ---
+
+
+=== [КВЕСТ 3 | ID: 79304805795D2052] ===
+EN_TITLE: Catch the Carp
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the carp to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 79304805795D2052 ---
+
+
+=== [КВЕСТ 4 | ID: 2FF855494EC1A358] ===
+EN_TITLE: Catch the Black Crappie
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Black Crappie to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2FF855494EC1A358 ---
+
+
+=== [КВЕСТ 5 | ID: 22B2DC295DB9942B] ===
+EN_TITLE: Catch the Violet Carp
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Violet Carp to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 22B2DC295DB9942B ---
+
+
+=== [КВЕСТ 6 | ID: 669A58EED7974F36] ===
+EN_TITLE: Catch the Slimy Salmon
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Slimy Salmon to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 669A58EED7974F36 ---
+
+
+=== [КВЕСТ 7 | ID: 4EF05E8961A84202] ===
+EN_TITLE: Catch Neptune Koi
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Neptune Koi to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4EF05E8961A84202 ---
+
+
+=== [КВЕСТ 8 | ID: 59EE376FF7441095] ===
+EN_TITLE: Catch the Largemouth Bass
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Largemouth Bass to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 59EE376FF7441095 ---
+
+
+=== [КВЕСТ 9 | ID: 7ACCEBD4B0E14458] ===
+EN_TITLE: Catch the Bluegill
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Bluegill to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7ACCEBD4B0E14458 ---
+
+
+=== [КВЕСТ 10 | ID: 4BD979392CBA653E] ===
+EN_TITLE: Catch the Brook Trout
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Brook Trout to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4BD979392CBA653E ---
+
+
+=== [КВЕСТ 11 | ID: 6529AEDA004AB1EE] ===
+EN_TITLE: Catch the Shooting Starfish
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Catch the shooting star fish.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6529AEDA004AB1EE ---
+
+
+=== [КВЕСТ 12 | ID: 65E0A1C332E32EAE] ===
+EN_TITLE: Catch the Sleepy Carp
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the the Sleepy Carp to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 65E0A1C332E32EAE ---
+
+
+=== [КВЕСТ 13 | ID: 6E8C6CC9FA43BFD1] ===
+EN_TITLE: Catch the Ember Koi
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Ember Koi to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6E8C6CC9FA43BFD1 ---
+
+
+=== [КВЕСТ 14 | ID: 0C647E0922374143] ===
+EN_TITLE: Catch the Ash Perch
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Ash perch to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0C647E0922374143 ---
+
+
+=== [КВЕСТ 15 | ID: 61B9931B3F82A987] ===
+EN_TITLE: Catch the Elytrout
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Elytrout to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 61B9931B3F82A987 ---
+
+
+=== [КВЕСТ 16 | ID: 3E24ABC71B67D6B8] ===
+EN_TITLE: Catch the White Crappie
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the white crappie to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3E24ABC71B67D6B8 ---
+
+
+=== [КВЕСТ 17 | ID: 59E68B0FA66C1C0E] ===
+EN_TITLE: Catch the Rainbow Trout
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Rainbow Trout to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 59E68B0FA66C1C0E ---
+
+
+=== [КВЕСТ 18 | ID: 0A84E2D9DC88BCE5] ===
+EN_TITLE: Catch the Blazing Swordfish
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the blazing swordfish to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0A84E2D9DC88BCE5 ---
+
+
+=== [КВЕСТ 19 | ID: 3BE1B31D0E70DE1B] ===
+EN_TITLE: Catch the Manta Ray
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Manta ray to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3BE1B31D0E70DE1B ---
+
+
+=== [КВЕСТ 20 | ID: 6D4350F2E19E0991] ===
+EN_TITLE: Catch the Cave Eel
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the cave eel to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6D4350F2E19E0991 ---
+
+
+=== [КВЕСТ 21 | ID: 078FB6D55A3474A7] ===
+EN_TITLE: Catch the Sand Tiger Shark
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Sand tiger shark to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 078FB6D55A3474A7 ---
+
+
+=== [КВЕСТ 22 | ID: 325EFB65E8866115] ===
+EN_TITLE: Catch the Swordfish
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Swordfish to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 325EFB65E8866115 ---
+
+
+=== [КВЕСТ 23 | ID: 238E54DFBC82CEB9] ===
+EN_TITLE: Catch the Yellowperch
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the yellow perch to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 238E54DFBC82CEB9 ---
+
+
+=== [КВЕСТ 24 | ID: 0496358871EF502B] ===
+EN_TITLE: Catch the Ocean Perch
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the ocean perch to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0496358871EF502B ---
+
+
+=== [КВЕСТ 25 | ID: 749E67CE6B7DC915] ===
+EN_TITLE: Catch the Shadow Shark
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Shadow Shark to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 749E67CE6B7DC915 ---
+
+
+=== [КВЕСТ 26 | ID: 7750EEF61F093126] ===
+EN_TITLE: Catch the Crystalline Carp
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the crystalline carp to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7750EEF61F093126 ---
+
+
+=== [КВЕСТ 27 | ID: 5F6BA6903D655CEB] ===
+EN_TITLE: Catch the Midas fish
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the midas fish to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5F6BA6903D655CEB ---
+
+
+=== [КВЕСТ 28 | ID: 2F0C491BAE702AE6] ===
+EN_TITLE: Catch the Blossom Bass
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Blossom Bass to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2F0C491BAE702AE6 ---
+
+
+=== [КВЕСТ 29 | ID: 59D992BD32908464] ===
+EN_TITLE: Catch the Great White Shark
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Great White Shark to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 59D992BD32908464 ---
+
+
+=== [КВЕСТ 30 | ID: 4F03742F77A11AA9] ===
+EN_TITLE: Catch the Abyss Angler
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Abyss Angler to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4F03742F77A11AA9 ---
+
+
+=== [КВЕСТ 31 | ID: 59E47267D700F46C] ===
+EN_TITLE: Catch the Chasm Eel
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the Chasm Eel to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 59E47267D700F46C ---
+
+
+=== [КВЕСТ 32 | ID: 22159B2FA352990E] ===
+EN_TITLE: Catch the Angelfish
+RU_TITLE: 
+
+EN_SUBTITLE: Fishing
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Add the angel fish to your collection.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 22159B2FA352990E ---
+
+
+=== [КВЕСТ 33 | ID: 77D98612A3933E48] ===
+EN_TITLE: Never Leave a Catch Behind
+RU_TITLE: 
+
+EN_SUBTITLE: Angler's Companion
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A successful angler always comes prepared.
+
+The Fish Satchel stores your catches separately, freeing valuable inventory space so you can spend more time fishing and less time managing your supplies.
+
+Whether you're exploring rivers, oceans, or hidden waters, no prized catch has to be left behind.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 77D98612A3933E48 ---
+
+
+=== [КВЕСТ 34 | ID: 139CA48F6C83BC2B] ===
+EN_TITLE: Tools for the Bob
+RU_TITLE: 
+
+EN_SUBTITLE: Fisherman's Friends
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Fishing hooks affect which fish are available to catch. Different hooks grant access to different catches and special fishing environments.
+
+Your fishing line is the connection between you and your catch. Stronger lines can withstand tougher fish and help prevent valuable catches from escaping.
+
+A stylish bobber won't help you catch more fish, but every legendary angler needs a signature look.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 139CA48F6C83BC2B ---
+
+
+=== [КВЕСТ 35 | ID: 7BA304FC7940C01A] ===
+EN_TITLE: Craft the Fish Finder
+RU_TITLE: 
+
+EN_SUBTITLE: An Angler's Compass
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Not every fish can be found in every body of water.
+
+The Fish Finder reveals the species that inhabit nearby waters, helping you locate the fish you're searching for before you cast your line.
+
+A knowledgeable angler wastes neither time nor bait.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7BA304FC7940C01A ---
+
+
+=== [КВЕСТ 36 | ID: 06130AAF9FED6333] ===
+EN_TITLE: Acquire Bait
+RU_TITLE: 
+
+EN_SUBTITLE: Baiting Bass
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Bait provides bonuses while fishing, such as improving bite speed or other effects. Different bait can be combined on higher tier rods to stack their bonuses.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 06130AAF9FED6333 ---
+
+

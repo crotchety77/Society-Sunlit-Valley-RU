@@ -1,0 +1,114 @@
+# =========================================================================
+# ГЛАВА: seven_deadly_sins.snbt
+# Всего квестов: 7
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Seven Deadly Sins
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 6169E1E5C020E11B] ===
+EN_TITLE: {"text":"Sin of Gluttony","color":"#E51856"}
+RU_TITLE: 
+
+EN_SUBTITLE: Glorious Gluttony
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+With it's insatiable hunger for power the wistiver's health and attack increases with each kill.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6169E1E5C020E11B ---
+
+
+=== [КВЕСТ 2 | ID: 4829D2888CBBA822] ===
+EN_TITLE: {"text":"Sin of Sloth","color":"#DF1111"}
+RU_TITLE: 
+
+EN_SUBTITLE: Slaying Sloth
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The walking bed is slow but pack's an incredible punch and boasts very high defenses.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4829D2888CBBA822 ---
+
+
+=== [КВЕСТ 3 | ID: 108AF03D0ADF4789] ===
+EN_TITLE: {"text":"Sin of Pride","color":"#E2D519"}
+RU_TITLE: 
+
+EN_SUBTITLE: Purging Pride
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Fast and deadly.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 108AF03D0ADF4789 ---
+
+
+=== [КВЕСТ 4 | ID: 6E615D01AB60DF8C] ===
+EN_TITLE: {"text":"Sin of Envy","color":"#21BA10"}
+RU_TITLE: 
+
+EN_SUBTITLE: Eliminating Envy
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Slower than his brothers but still as vicious.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6E615D01AB60DF8C ---
+
+
+=== [КВЕСТ 5 | ID: 0DD90C867DB3D242] ===
+EN_TITLE: {"text":"Sin of Lust","color":"#E812E8"}
+RU_TITLE: 
+
+EN_SUBTITLE: Lust Laments
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The curse prefers flight as it's better for casting it's lustful eyes upon it's prey.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0DD90C867DB3D242 ---
+
+
+=== [КВЕСТ 6 | ID: 0FCF704C2011B3A9] ===
+EN_TITLE: {"text":"Sin of Greed","color":"#D7921B"}
+RU_TITLE: 
+
+EN_SUBTITLE: Greed's Grimace
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Less mobile but the most robust also possesing ranged attacks.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0FCF704C2011B3A9 ---
+
+
+=== [КВЕСТ 7 | ID: 3A9CFF1C4772BF49] ===
+EN_TITLE: {"text":"Sin of Wrath","color":"#CB7C79"}
+RU_TITLE: 
+
+EN_SUBTITLE: Wrecking Wrath
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Versatile and vicious.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3A9CFF1C4772BF49 ---
+
+

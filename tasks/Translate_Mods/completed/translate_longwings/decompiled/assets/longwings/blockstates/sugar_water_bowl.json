@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "longwings:block/sugar_water_feeder_1"
+    },
+    "level=2": {
+      "model": "longwings:block/sugar_water_feeder_2"
+    },
+    "level=3": {
+      "model": "longwings:block/sugar_water_feeder_3"
+    },
+    "level=4": {
+      "model": "longwings:block/sugar_water_feeder_4"
+    }
+  }
+}

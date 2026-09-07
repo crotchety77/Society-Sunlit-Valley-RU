@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "$ $",
+        " $ "
+    ],
+    "key": {
+        "$": {
+            "item": "minecraft:glass_bottle"
+        }
+    },
+    "result": {
+        "item": "longwings:glass_jar",
+        "count": 1
+    }
+}

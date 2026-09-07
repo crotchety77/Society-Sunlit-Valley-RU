@@ -1,0 +1,196 @@
+# =========================================================================
+# ГЛАВА: textchampions_of_the_risencolor0be4f3_2.snbt
+# Всего квестов: 11
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Champions Of The Risen
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 1F42D7C3A2431C43] ===
+EN_TITLE: Slay the Skeletosaurus
+RU_TITLE: 
+
+EN_SUBTITLE: Splintering the Skeletosaurus
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A massive skeletal dinosaur that stomps the ground, creating shockwaves and tail slams. 
+
+Found roaming &9the Soul Sand Valley &fin &cthe Nether.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1F42D7C3A2431C43 ---
+
+
+=== [КВЕСТ 2 | ID: 22463A6F9764AA59] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Fumigating the Fungusus
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A warped mushroom beast that teleports between attacks and spreads spores. 
+
+Lurks in &bthe Warped Forest &fbiome of &cthe Nether.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 22463A6F9764AA59 ---
+
+
+=== [КВЕСТ 3 | ID: 101340A065E59CD4] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Silencing the Scent
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A powerful Endborne creature that teleports and inflicts “chorus infection” on wanderers. 
+
+Encountered deep in &dThe End.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 101340A065E59CD4 ---
+
+
+=== [КВЕСТ 4 | ID: 4312DFFB55318A5B] ===
+EN_TITLE: Slay the Shulker Mimic
+RU_TITLE: 
+
+EN_SUBTITLE: Shattering the Shulker
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A deceptive mimic disguised as a normal shulker; levitates and pulls wanderers with gravity tricks. 
+
+Resides in Shulker Towers in &dthe End.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4312DFFB55318A5B ---
+
+
+=== [КВЕСТ 5 | ID: 2514003EB1314CEB] ===
+EN_TITLE: Slay the Frostbitten Golem
+RU_TITLE: 
+
+EN_SUBTITLE: Frosbitten Finale
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A hulking golem of ice and stone, summoning frost spikes and chilling winds. 
+
+Stalks snowy biomes like &bIce Plains or &3snowy taiga.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2514003EB1314CEB ---
+
+
+=== [КВЕСТ 6 | ID: 27BA2DC0AD14FB6F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Crushing the Colossus
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A jungle titan overrun with moss and roots, spreading poisonous clouds and regenerating in them.
+
+Emerges from the depths of dense &2jungle &fbiomes and within &aAncient Temples.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 27BA2DC0AD14FB6F ---
+
+
+=== [КВЕСТ 7 | ID: 30F96A6A3154988D] ===
+EN_TITLE: Slay the Withered Abomination
+RU_TITLE: 
+
+EN_SUBTITLE: Ashes of the Abomination
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A horned, corrupted behemoth with wither like powers and brutal charges. 
+
+Guards &9Soul Fortress Remains&f in &cthe Nether.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 30F96A6A3154988D ---
+
+
+=== [КВЕСТ 8 | ID: 4B4BEED69BBF9E45] ===
+EN_TITLE: Slay the Cloud Golem
+RU_TITLE: 
+
+EN_SUBTITLE: Culling Cumolonimbus
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A sky colossus wielding thunder and laser storms, only vulnerable when its shoulders break. 
+
+Floats in &bsky structures &for cloud altitudes.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4B4BEED69BBF9E45 ---
+
+
+=== [КВЕСТ 9 | ID: 3EDFDE7629FDAFCC] ===
+EN_TITLE: Slay the Ancient Guardian
+RU_TITLE: 
+
+EN_SUBTITLE: The Guardian's Grudge
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+An ancient armored monstrosity that punishes reckless attackers with crushing blows. 
+
+Awaits challengers in underground ruins and &2strongholds.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3EDFDE7629FDAFCC ---
+
+
+=== [КВЕСТ 10 | ID: 39AFCAF488C48022] ===
+EN_TITLE: Slay the Possessed Paladin
+RU_TITLE: 
+
+EN_SUBTITLE: Penance of the Possesed Paladin
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A cursed knight clad in netherite, switching into a golden phase mid battle, causes bleeding and stun effects. 
+
+Dwells in abandoned crypts and &0dark strongholds.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 39AFCAF488C48022 ---
+
+
+=== [КВЕСТ 11 | ID: 39A082DC316DF69A] ===
+EN_TITLE: Slay the Lava Eater
+RU_TITLE: 
+
+EN_SUBTITLE: Eradicating the Eater
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A fiery, lizard like predator that thrives in heat, tail whipping and summoning fire. 
+
+Dwells near lava lakes and underground magma caverns within &cthe Nether.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 39A082DC316DF69A ---
+
+

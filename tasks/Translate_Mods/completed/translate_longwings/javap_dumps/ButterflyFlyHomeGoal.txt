@@ -1,0 +1,208 @@
+Compiled from "ButterflyFlyHomeGoal.java"
+public class com.cicada.longwings.entity.ai.ButterflyFlyHomeGoal extends net.minecraft.world.entity.ai.goal.Goal {
+  private com.cicada.longwings.entity.ButterflyEntity butterfly;
+
+  private net.minecraft.world.level.block.Block blockType;
+
+  private int radius;
+
+  private net.minecraft.core.BlockPos nearestBlockPos;
+
+  public com.cicada.longwings.entity.ai.ButterflyFlyHomeGoal(com.cicada.longwings.entity.ButterflyEntity);
+    Code:
+       0: aload_0
+       1: invokespecial #23                 // Method net/minecraft/world/entity/ai/goal/Goal."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       9: aload_0
+      10: aload_0
+      11: getfield      #27                 // Field radius:I
+      14: putfield      #27                 // Field radius:I
+      17: aload_0
+      18: aload_0
+      19: getfield      #29                 // Field blockType:Lnet/minecraft/world/level/block/Block;
+      22: putfield      #29                 // Field blockType:Lnet/minecraft/world/level/block/Block;
+      25: return
+
+  public boolean m_8036_();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: invokevirtual #40                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+       7: invokevirtual #45                 // Method net/minecraft/world/level/Level.m_5776_:()Z
+      10: ifne          141
+      13: aload_0
+      14: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      17: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      20: invokevirtual #55                 // Method net/minecraft/core/BlockPos.m_123341_:()I
+      23: ifeq          141
+      26: aload_0
+      27: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      30: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      33: invokevirtual #58                 // Method net/minecraft/core/BlockPos.m_123342_:()I
+      36: ifeq          141
+      39: aload_0
+      40: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      43: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      46: invokevirtual #61                 // Method net/minecraft/core/BlockPos.m_123343_:()I
+      49: ifeq          141
+      52: aload_0
+      53: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      56: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      59: invokevirtual #55                 // Method net/minecraft/core/BlockPos.m_123341_:()I
+      62: aload_0
+      63: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      66: invokevirtual #64                 // Method com/cicada/longwings/entity/ButterflyEntity.m_20183_:()Lnet/minecraft/core/BlockPos;
+      69: invokevirtual #55                 // Method net/minecraft/core/BlockPos.m_123341_:()I
+      72: isub
+      73: invokestatic  #70                 // Method java/lang/Math.abs:(I)I
+      76: bipush        32
+      78: if_icmpgt     139
+      81: aload_0
+      82: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      85: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      88: invokevirtual #58                 // Method net/minecraft/core/BlockPos.m_123342_:()I
+      91: aload_0
+      92: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      95: invokevirtual #64                 // Method com/cicada/longwings/entity/ButterflyEntity.m_20183_:()Lnet/minecraft/core/BlockPos;
+      98: invokevirtual #58                 // Method net/minecraft/core/BlockPos.m_123342_:()I
+     101: isub
+     102: invokestatic  #70                 // Method java/lang/Math.abs:(I)I
+     105: bipush        32
+     107: if_icmpgt     139
+     110: aload_0
+     111: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     114: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+     117: invokevirtual #61                 // Method net/minecraft/core/BlockPos.m_123343_:()I
+     120: aload_0
+     121: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     124: invokevirtual #64                 // Method com/cicada/longwings/entity/ButterflyEntity.m_20183_:()Lnet/minecraft/core/BlockPos;
+     127: invokevirtual #61                 // Method net/minecraft/core/BlockPos.m_123343_:()I
+     130: isub
+     131: invokestatic  #70                 // Method java/lang/Math.abs:(I)I
+     134: bipush        32
+     136: if_icmple     141
+     139: iconst_1
+     140: ireturn
+     141: iconst_0
+     142: ireturn
+
+  public void m_8056_();
+    Code:
+       0: aload_0
+       1: invokespecial #73                 // Method net/minecraft/world/entity/ai/goal/Goal.m_8056_:()V
+       4: return
+
+  public void m_8041_();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: invokevirtual #78                 // Method com/cicada/longwings/entity/ButterflyEntity.m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+       7: invokevirtual #83                 // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26573_:()V
+      10: aload_0
+      11: invokespecial #85                 // Method net/minecraft/world/entity/ai/goal/Goal.m_8041_:()V
+      14: return
+
+  public boolean m_8045_();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+       7: invokevirtual #55                 // Method net/minecraft/core/BlockPos.m_123341_:()I
+      10: aload_0
+      11: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      14: invokevirtual #64                 // Method com/cicada/longwings/entity/ButterflyEntity.m_20183_:()Lnet/minecraft/core/BlockPos;
+      17: invokevirtual #55                 // Method net/minecraft/core/BlockPos.m_123341_:()I
+      20: isub
+      21: invokestatic  #70                 // Method java/lang/Math.abs:(I)I
+      24: bipush        32
+      26: if_icmpgt     87
+      29: aload_0
+      30: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      33: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      36: invokevirtual #58                 // Method net/minecraft/core/BlockPos.m_123342_:()I
+      39: aload_0
+      40: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      43: invokevirtual #64                 // Method com/cicada/longwings/entity/ButterflyEntity.m_20183_:()Lnet/minecraft/core/BlockPos;
+      46: invokevirtual #58                 // Method net/minecraft/core/BlockPos.m_123342_:()I
+      49: isub
+      50: invokestatic  #70                 // Method java/lang/Math.abs:(I)I
+      53: bipush        32
+      55: if_icmpgt     87
+      58: aload_0
+      59: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      62: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      65: invokevirtual #61                 // Method net/minecraft/core/BlockPos.m_123343_:()I
+      68: aload_0
+      69: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      72: invokevirtual #64                 // Method com/cicada/longwings/entity/ButterflyEntity.m_20183_:()Lnet/minecraft/core/BlockPos;
+      75: invokevirtual #61                 // Method net/minecraft/core/BlockPos.m_123343_:()I
+      78: isub
+      79: invokestatic  #70                 // Method java/lang/Math.abs:(I)I
+      82: bipush        32
+      84: if_icmple     89
+      87: iconst_1
+      88: ireturn
+      89: iconst_0
+      90: ireturn
+
+  public void m_8037_();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+       4: invokevirtual #40                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+       7: invokevirtual #45                 // Method net/minecraft/world/level/Level.m_5776_:()Z
+      10: ifne          135
+      13: aload_0
+      14: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      17: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      20: getstatic     #90                 // Field net/minecraft/core/BlockPos.f_121853_:Lnet/minecraft/core/BlockPos;
+      23: if_acmpeq     73
+      26: aload_0
+      27: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      30: invokevirtual #78                 // Method com/cicada/longwings/entity/ButterflyEntity.m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+      33: aload_0
+      34: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      37: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      40: invokevirtual #55                 // Method net/minecraft/core/BlockPos.m_123341_:()I
+      43: i2d
+      44: aload_0
+      45: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      48: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      51: invokevirtual #58                 // Method net/minecraft/core/BlockPos.m_123342_:()I
+      54: i2d
+      55: aload_0
+      56: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      59: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      62: invokevirtual #61                 // Method net/minecraft/core/BlockPos.m_123343_:()I
+      65: i2d
+      66: ldc2_w        #91                 // double 0.5d
+      69: invokevirtual #96                 // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26519_:(DDDD)Z
+      72: pop
+      73: aload_0
+      74: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      77: invokevirtual #40                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+      80: aload_0
+      81: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+      84: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+      87: invokevirtual #100                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      90: invokevirtual #106                // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+      93: instanceof    #7                  // class com/cicada/longwings/block/BowlPlaced$SugarWaterBowl
+      96: ifne          135
+      99: aload_0
+     100: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     103: invokevirtual #40                 // Method com/cicada/longwings/entity/ButterflyEntity.m_9236_:()Lnet/minecraft/world/level/Level;
+     106: aload_0
+     107: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     110: invokevirtual #49                 // Method com/cicada/longwings/entity/ButterflyEntity.getHomePos:()Lnet/minecraft/core/BlockPos;
+     113: invokevirtual #100                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     116: invokevirtual #106                // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+     119: instanceof    #9                  // class com/cicada/longwings/block/BowlPlaced
+     122: ifne          135
+     125: aload_0
+     126: getfield      #25                 // Field butterfly:Lcom/cicada/longwings/entity/ButterflyEntity;
+     129: getstatic     #90                 // Field net/minecraft/core/BlockPos.f_121853_:Lnet/minecraft/core/BlockPos;
+     132: invokevirtual #110                // Method com/cicada/longwings/entity/ButterflyEntity.setHomePos:(Lnet/minecraft/core/BlockPos;)V
+     135: return
+}

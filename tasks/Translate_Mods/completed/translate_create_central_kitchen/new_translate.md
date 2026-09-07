@@ -1,0 +1,228 @@
+# Локализация мода: create_central_kitchen
+
+**JAR:** `create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar` | **Всего строк:** 180 | **Переведено:** 180 (100.0%)
+
+---
+
+## 1. Визуальный контекст и оформление
+
+### 🍲 Оборудование и блоки кухни
+* **Плита всполоха** (`block.create_central_kitchen.blaze_stove`): `Плита всполоха`
+* **Древесный сок** (`block.create_central_kitchen.sap`): `Древесный сок`
+* **Сироп** (`block.create_central_kitchen.syrup`): `Сироп`
+* **Томатный соус** (`block.create_central_kitchen.tomato_sauce`): `Томатный соус`
+
+### 📖 Руководства и инструменты
+* **Руководство по готовке** (`item.create_central_kitchen.cooking_guide`): `Руководство по готовке` (продаётся на Рынке за монеты)
+* **Шахтёрское руководство** (`item.create_central_kitchen.miners_cooking_guide`): `Шахтёрское руководство по готовке`
+
+### 🍨 Жидкости и напитки (Fluids)
+* **Мороженое:**
+  - `Мороженое из фасоли адзуки`, `Мороженое из алоэ`, `Банановое мороженое`, `Шоколадное мороженое`, `Лаймовое мороженое`, `Мятное мороженое`, `Мороженое из маракуйи`, `Гранатовое мороженое`, `Тыквенное мороженое`, `Клубничное мороженое`, `Мороженое из сладких ягод`, `Ванильное мороженое`, `Мороженое из юкки`.
+* **Молочные коктейли:**
+  - `Молочный коктейль из фасоли адзуки`, `Молочный коктейль из алоэ`, `Банановый молочный коктейль`, `Шоколадный молочный коктейль`, `Лаймовый молочный коктейль`, `Мятный молочный коктейль`, `Молочный коктейль из маракуйи`, `Гранатовый молочный коктейль`, `Тыквенный молочный коктейль`, `Клубничный молочный коктейль`, `Молочный коктейль из сладких ягод`, `Ванильный молочный коктейль`, `Молочный коктейль из юкки`.
+* **Чаи и напитки:**
+  - `Чёрный чай`, `Зелёный чай`, `Жёлтый чай`, `Чай из цветка хоруса`, `Чай из шиповника`, `Одуванчиковый чай`, `Чай игрока`, `Нарывный чай`, `Чёрный чай с гранатом`, `Лаймовый зелёный чай`.
+  - `Кофе`, `Яблочный сидр`, `Горячее какао`, `Арбузный сок`, `Гранатовый смузи`, `Кукурузный суп`, `Сливочно-кукурузный напиток`, `Дыхание дракона`, `Газировка «Дыхание дракона»`, `Вино из плода хоруса`, `Бабл-ти из плода хоруса`.
+  - Продлённые версии (`long_`): `Долгий яблочный сидр`, `Долгий чёрный чай`, `Долгий кофе`, `Долгий одуванчиковый чай`, `Долгий чай игрока`, `Долгий зелёный чай`, `Долгий нарывный чай`, `Долгий чай из шиповника`, `Долгий жёлтый чай`.
+  - Крепкие версии (`strong_`): `Крепкий яблочный сидр`, `Крепкий чёрный чай`, `Крепкий кофе`, `Крепкий чай игрока`, `Крепкий зелёный чай`, `Крепкое горячее какао`, `Крепкий арбузный сок`, `Крепкий нарывный чай`, `Крепкий чай из шиповника`, `Крепкий жёлтый чай`.
+
+### 🪣 Вёдра и полуфабрикаты (Sequenced Assembly)
+* **Вёдра:** `Ведро геля алоэ`, `Ведро шелковичного варенья`, `Ведро древесного сока`, `Ведро сиропа`, `Ведро томатного соуса`.
+* **Полуфабрикаты сборки Create:**
+  - `Незаконченный яблочный пирог`, `Незаконченный вишнёвый пирог`, `Незаконченный тыквенный пирог`, `Незаконченный шелковичный пирог`, `Незаконченный лаймовый пирог`, `Незаконченный трюфельный пирог`, `Незаконченный пирог из цветка хоруса`, `Незаконченный пирог из плода хоруса`.
+  - `Незаконченный сэндвич с беконом`, `Незаконченный сэндвич с курицей`, `Незаконченный сэндвич с яйцом`, `Незаконченный гамбургер`, `Незаконченный ролл с бараниной`, `Незаконченный чизкейк из сладких ягод`.
+  - `Незаконченный бургер с портобелло`, `Незаконченный киш с портобелло`, `Незаконченный ролл с портобелло`.
+  - `Незаконченное шоколадное мороженое`, `Незаконченное клубничное мороженое`.
+
+### 💡 Ponder (Обучение Create)
+* Полностью переведены и вычитаны все обучающие сцены для Плиты всполоха (`blaze_stove`) и Корзины (`basket`).
+
+---
+
+## 2. Полный языковой словарь (JSON)
+
+```json
+{
+  "_": "Приятной игры с Create: Central Kitchen!",
+  "block.create_central_kitchen.blaze_stove": "Плита всполоха",
+  "block.create_central_kitchen.sap": "Древесный сок",
+  "block.create_central_kitchen.syrup": "Сироп",
+  "block.create_central_kitchen.tomato_sauce": "Томатный соус",
+  "fluid.create_central_kitchen.adzuki_ice_cream": "Мороженое из фасоли адзуки",
+  "fluid.create_central_kitchen.adzuki_milkshake": "Молочный коктейль из фасоли адзуки",
+  "fluid.create_central_kitchen.aloe_gel": "Гель алоэ",
+  "fluid.create_central_kitchen.aloe_ice_cream": "Мороженое из алоэ",
+  "fluid.create_central_kitchen.aloe_milkshake": "Молочный коктейль из алоэ",
+  "fluid.create_central_kitchen.apple_cider": "Яблочный сидр",
+  "fluid.create_central_kitchen.banana_ice_cream": "Банановое мороженое",
+  "fluid.create_central_kitchen.banana_milkshake": "Банановый молочный коктейль",
+  "fluid.create_central_kitchen.berry_limeade": "Ягодный лаймад",
+  "fluid.create_central_kitchen.black_tea": "Чёрный чай",
+  "fluid.create_central_kitchen.chocolate_ice_cream": "Шоколадное мороженое",
+  "fluid.create_central_kitchen.chocolate_milkshake": "Шоколадный молочный коктейль",
+  "fluid.create_central_kitchen.chorus_flower_tea": "Чай из цветка хоруса",
+  "fluid.create_central_kitchen.chorus_fruit_bubble_tea": "Бабл-ти из плода хоруса",
+  "fluid.create_central_kitchen.chorus_fruit_milk_tea": "Чай с молоком из плода хоруса",
+  "fluid.create_central_kitchen.chorus_fruit_wine": "Вино из плода хоруса",
+  "fluid.create_central_kitchen.coffee": "Кофе",
+  "fluid.create_central_kitchen.corn_soup": "Кукурузный суп",
+  "fluid.create_central_kitchen.creamy_corn_drink": "Сливочно-кукурузный напиток",
+  "fluid.create_central_kitchen.dandelion_tea": "Одуванчиковый чай",
+  "fluid.create_central_kitchen.dragon_breath": "Дыхание дракона",
+  "fluid.create_central_kitchen.dragon_breath_soda": "Газировка «Дыхание дракона»",
+  "fluid.create_central_kitchen.gamblers_tea": "Чай игрока",
+  "fluid.create_central_kitchen.green_tea": "Зелёный чай",
+  "fluid.create_central_kitchen.hot_cocoa": "Горячее какао",
+  "fluid.create_central_kitchen.lime_green_tea": "Лаймовый зелёный чай",
+  "fluid.create_central_kitchen.lime_ice_cream": "Лаймовое мороженое",
+  "fluid.create_central_kitchen.lime_milkshake": "Лаймовый молочный коктейль",
+  "fluid.create_central_kitchen.limeade": "Лаймад",
+  "fluid.create_central_kitchen.long_apple_cider": "Долгий яблочный сидр",
+  "fluid.create_central_kitchen.long_black_tea": "Долгий чёрный чай",
+  "fluid.create_central_kitchen.long_coffee": "Долгий кофе",
+  "fluid.create_central_kitchen.long_dandelion_tea": "Долгий одуванчиковый чай",
+  "fluid.create_central_kitchen.long_gamblers_tea": "Долгий чай игрока",
+  "fluid.create_central_kitchen.long_green_tea": "Долгий зелёный чай",
+  "fluid.create_central_kitchen.long_purulent_tea": "Долгий нарывный чай",
+  "fluid.create_central_kitchen.long_rose_hip_tea": "Долгий чай из шиповника",
+  "fluid.create_central_kitchen.long_yellow_tea": "Долгий жёлтый чай",
+  "fluid.create_central_kitchen.melon_juice": "Арбузный сок",
+  "fluid.create_central_kitchen.mint_ice_cream": "Мятное мороженое",
+  "fluid.create_central_kitchen.mint_limeade": "Мятный лаймад",
+  "fluid.create_central_kitchen.mint_milkshake": "Мятный молочный коктейль",
+  "fluid.create_central_kitchen.mulberry_jam": "Шелковичное варенье",
+  "fluid.create_central_kitchen.passion_fruit_ice_cream": "Мороженое из маракуйи",
+  "fluid.create_central_kitchen.passion_fruit_milkshake": "Молочный коктейль из маракуйи",
+  "fluid.create_central_kitchen.pink_limeade": "Розовый лаймад",
+  "fluid.create_central_kitchen.pomegranate_black_tea": "Чёрный чай с гранатом",
+  "fluid.create_central_kitchen.pomegranate_ice_cream": "Гранатовое мороженое",
+  "fluid.create_central_kitchen.pomegranate_milkshake": "Гранатовый молочный коктейль",
+  "fluid.create_central_kitchen.pomegranate_smoothie": "Гранатовый смузи",
+  "fluid.create_central_kitchen.pumpkin_ice_cream": "Тыквенное мороженое",
+  "fluid.create_central_kitchen.pumpkin_milkshake": "Тыквенный молочный коктейль",
+  "fluid.create_central_kitchen.purulent_tea": "Нарывный чай",
+  "fluid.create_central_kitchen.rose_hip_tea": "Чай из шиповника",
+  "fluid.create_central_kitchen.sap": "Древесный сок",
+  "fluid.create_central_kitchen.strawberry_ice_cream": "Клубничное мороженое",
+  "fluid.create_central_kitchen.strawberry_milkshake": "Клубничный молочный коктейль",
+  "fluid.create_central_kitchen.strong_apple_cider": "Крепкий яблочный сидр",
+  "fluid.create_central_kitchen.strong_black_tea": "Крепкий чёрный чай",
+  "fluid.create_central_kitchen.strong_coffee": "Крепкий кофе",
+  "fluid.create_central_kitchen.strong_gamblers_tea": "Крепкий чай игрока",
+  "fluid.create_central_kitchen.strong_green_tea": "Крепкий зелёный чай",
+  "fluid.create_central_kitchen.strong_hot_cocoa": "Крепкое горячее какао",
+  "fluid.create_central_kitchen.strong_melon_juice": "Крепкий арбузный сок",
+  "fluid.create_central_kitchen.strong_purulent_tea": "Крепкий нарывный чай",
+  "fluid.create_central_kitchen.strong_rose_hip_tea": "Крепкий чай из шиповника",
+  "fluid.create_central_kitchen.strong_yellow_tea": "Крепкий жёлтый чай",
+  "fluid.create_central_kitchen.sweet_berry_ice_cream": "Мороженое из сладких ягод",
+  "fluid.create_central_kitchen.sweet_berry_milkshake": "Молочный коктейль из сладких ягод",
+  "fluid.create_central_kitchen.syrup": "Сироп",
+  "fluid.create_central_kitchen.tomato_sauce": "Томатный соус",
+  "fluid.create_central_kitchen.vanilla_ice_cream": "Ванильное мороженое",
+  "fluid.create_central_kitchen.vanilla_milkshake": "Ванильный молочный коктейль",
+  "fluid.create_central_kitchen.yellow_tea": "Жёлтый чай",
+  "fluid.create_central_kitchen.yucca_ice_cream": "Мороженое из юкки",
+  "fluid.create_central_kitchen.yucca_milkshake": "Молочный коктейль из юкки",
+  "item.create_central_kitchen.aloe_cake_slice": "Кусок торта с алоэ",
+  "item.create_central_kitchen.aloe_gel_bucket": "Ведро геля алоэ",
+  "item.create_central_kitchen.cherry_pie_slice": "Кусок вишнёвого пирога",
+  "item.create_central_kitchen.chocolate_cake_slice": "Кусок шоколадного торта",
+  "item.create_central_kitchen.cooking_guide": "Руководство по готовке",
+  "item.create_central_kitchen.creative_tab_icon": "Иконка вкладки",
+  "item.create_central_kitchen.honey_cake_slice": "Кусок медового торта",
+  "item.create_central_kitchen.incomplete_apple_pie": "Незаконченный яблочный пирог",
+  "item.create_central_kitchen.incomplete_bacon_sandwich": "Незаконченный сэндвич с беконом",
+  "item.create_central_kitchen.incomplete_cherry_pie": "Незаконченный вишнёвый пирог",
+  "item.create_central_kitchen.incomplete_chicken_sandwich": "Незаконченный сэндвич с курицей",
+  "item.create_central_kitchen.incomplete_chorus_flower_pie": "Незаконченный пирог из цветка хоруса",
+  "item.create_central_kitchen.incomplete_chorus_fruit_pie": "Незаконченный пирог из плода хоруса",
+  "item.create_central_kitchen.incomplete_egg_sandwich": "Незаконченный сэндвич с яйцом",
+  "item.create_central_kitchen.incomplete_hamburger": "Незаконченный гамбургер",
+  "item.create_central_kitchen.incomplete_lime_pie": "Незаконченный лаймовый пирог",
+  "item.create_central_kitchen.incomplete_mulberry_pie": "Незаконченный шелковичный пирог",
+  "item.create_central_kitchen.incomplete_mutton_wrap": "Незаконченный ролл с бараниной",
+  "item.create_central_kitchen.incomplete_neapolitan_ice_cream_chocolate": "Незаконченное шоколадное мороженое",
+  "item.create_central_kitchen.incomplete_neapolitan_ice_cream_strawberry": "Незаконченное клубничное мороженое",
+  "item.create_central_kitchen.incomplete_portobello_burger": "Незаконченный бургер с портобелло",
+  "item.create_central_kitchen.incomplete_portobello_quiche": "Незаконченный киш с портобелло",
+  "item.create_central_kitchen.incomplete_portobello_wrap": "Незаконченный ролл с портобелло",
+  "item.create_central_kitchen.incomplete_pumpkin_pie": "Незаконченный тыквенный пирог",
+  "item.create_central_kitchen.incomplete_sweet_berry_cheesecake": "Незаконченный чизкейк из сладких ягод",
+  "item.create_central_kitchen.incomplete_truffle_pie": "Незаконченный трюфельный пирог",
+  "item.create_central_kitchen.miners_cooking_guide": "Шахтёрское руководство по готовке",
+  "item.create_central_kitchen.mulberry_jam_bucket": "Ведро шелковичного варенья",
+  "item.create_central_kitchen.mulberry_pie_slice": "Кусок шелковичного пирога",
+  "item.create_central_kitchen.passion_fruit_cake_slice": "Кусок торта с маракуйей",
+  "item.create_central_kitchen.pumpkin_cake_slice": "Кусок тыквенного торта",
+  "item.create_central_kitchen.pumpkin_pie_slice": "Кусок тыквенного пирога",
+  "item.create_central_kitchen.sap_bucket": "Ведро древесного сока",
+  "item.create_central_kitchen.sweet_berry_cake_slice": "Кусок торта из сладких ягод",
+  "item.create_central_kitchen.syrup_bucket": "Ведро сиропа",
+  "item.create_central_kitchen.tomato_sauce_bucket": "Ведро томатного соуса",
+  "item.create_central_kitchen.truffle_pie_slice": "Кусок трюфельного пирога",
+  "item.create_central_kitchen.yucca_cake_slice": "Кусок торта из юкки",
+  "recipe.create_central_kitchen.cutting_board_deploying": "Автономное разделывание",
+  "create_central_kitchen.ponder.tag.cooking_automation": "Автоматизация готовки",
+  "create_central_kitchen.ponder.tag.cooking_automation.description": "Компоненты для автоматизации готовки блюд",
+  "create_central_kitchen.ponder.basket.belt_interaction.header": "Сбор предметов корзиной",
+  "create_central_kitchen.ponder.basket.belt_interaction.text_1": "Корзина позволяет собирать предметы с механического ремня.",
+  "create_central_kitchen.ponder.basket.belt_interaction.text_2": "Корзина может располагаться как вертикально, так и горизонтально.",
+  "create_central_kitchen.ponder.basket.intro.header": "Сбор выпавших предметов в корзину",
+  "create_central_kitchen.ponder.basket.intro.text_1": "Так же, как и воронка, корзина подбирает выпавшие предметы сверху.",
+  "create_central_kitchen.ponder.basket.intro.text_2": "Корзины могут быть ориентированы в различных направлениях.",
+  "create_central_kitchen.ponder.basket.intro.text_3": "Корзины не могут самостоятельно забирать предметы из сторонних контейнеров.",
+  "create_central_kitchen.ponder.blaze_stove.automation.header": "Автоматизация плиты всполоха",
+  "create_central_kitchen.ponder.blaze_stove.automation.text_1": "Плита всполоха позволяет механической руке взаимодействовать с кухонным котлом, если задать рецепт.",
+  "create_central_kitchen.ponder.blaze_stove.automation.text_2": "Нажмите ПКМ по плите всполоха, чтобы открыть интерфейс руководства по готовке.",
+  "create_central_kitchen.ponder.blaze_stove.automation.text_3": "Нажмите по плите всполоха другим руководством по готовке, чтобы заменить установленное.",
+  "create_central_kitchen.ponder.blaze_stove.automation.text_4": "Когда в плите настроен рецепт, механическая рука автоматически начинает работать с котлом.",
+  "create_central_kitchen.ponder.blaze_stove.automation.text_5": "Механическая рука будет загружать все требуемые ингредиенты внутрь.",
+  "create_central_kitchen.ponder.blaze_stove.automation.text_6": "Механическая рука также будет извлекать готовое блюдо и неподходящие ингредиенты.",
+  "create_central_kitchen.ponder.blaze_stove.heat_source.header": "Плита всполоха как источник тепла",
+  "create_central_kitchen.ponder.blaze_stove.heat_source.text_1": "Плита всполоха служит источником жара: чем сильнее нагрев, тем быстрее идёт готовка.",
+  "create_central_kitchen.ponder.blaze_stove.heat_source.text_2": "Базовые блюда могут готовиться даже без активного топлива в горелке.",
+  "create_central_kitchen.ponder.blaze_stove.heat_source.text_3": "Плиту всполоха можно использовать и как обычную кухонную плиту для жарки.",
+  "create_central_kitchen.ponder.blaze_stove.heat_source.text_4": "Будьте внимательны! Слишком сильный перегрев может сжечь ваше блюдо!",
+  "create_central_kitchen.ponder.blaze_stove.intro.header": "Создание плиты всполоха",
+  "create_central_kitchen.ponder.blaze_stove.intro.text_1": "Для создания плиты всполоха нажмите Shift + ПКМ по горелке всполоха руководством по готовке.",
+  "create_central_kitchen.ponder.blaze_stove.intro.text_2": "Руководства используются для котлов и другой кухонной посуды.",
+  "create_central_kitchen.ponder.blaze_stove.intro.text_3": "Чтобы снять руководство по готовке, нажмите Shift + ПКМ по плите всполоха гаечным ключом.",
+  "datapack.create_central_kitchen.atmospheric": "Create: Central Kitchen — Atmospheric",
+  "datapack.create_central_kitchen.atmospheric.desc": "Добавляет поддержку для мода Atmospheric",
+  "datapack.create_central_kitchen.autumnity": "Create: Central Kitchen — Autumnity",
+  "datapack.create_central_kitchen.autumnity.desc": "Добавляет поддержку для мода Autumnity",
+  "datapack.create_central_kitchen.buzzier_bees": "Create: Central Kitchen — Buzzier Bees",
+  "datapack.create_central_kitchen.buzzier_bees.desc": "Добавляет поддержку для мода Buzzier Bees",
+  "datapack.create_central_kitchen.collectorsreap": "Create: Central Kitchen — Collector's Reap",
+  "datapack.create_central_kitchen.collectorsreap.desc": "Добавляет поддержку для мода Collector's Reap",
+  "datapack.create_central_kitchen.farmersdelight": "Create: Central Kitchen — Farmer's Delight",
+  "datapack.create_central_kitchen.farmersdelight.desc": "Добавляет поддержку для мода Farmer's Delight",
+  "datapack.create_central_kitchen.farmersrespite": "Create: Central Kitchen — Farmer's Respite",
+  "datapack.create_central_kitchen.farmersrespite.desc": "Добавляет поддержку для мода Farmer's Respite",
+  "datapack.create_central_kitchen.miners_delight": "Create: Central Kitchen — Miner's Delight",
+  "datapack.create_central_kitchen.miners_delight.desc": "Добавляет поддержку для мода Miner's Delight",
+  "datapack.create_central_kitchen.corn_delight": "Create: Central Kitchen — Corn Delight",
+  "datapack.create_central_kitchen.corn_delight.desc": "Добавляет поддержку для мода Corn Delight",
+  "datapack.create_central_kitchen.neapolitan": "Create: Central Kitchen — Neapolitan",
+  "datapack.create_central_kitchen.neapolitan.desc": "Добавляет поддержку для мода Neapolitan",
+  "datapack.create_central_kitchen.peculiars": "Create: Central Kitchen — Peculiars",
+  "datapack.create_central_kitchen.peculiars.desc": "Добавляет поддержку для мода Peculiars",
+  "datapack.create_central_kitchen.respiteful": "Create: Central Kitchen — Respiteful",
+  "datapack.create_central_kitchen.respiteful.desc": "Добавляет поддержку для мода Respiteful",
+  "datapack.create_central_kitchen.seasonals": "Create: Central Kitchen — Seasonals",
+  "datapack.create_central_kitchen.seasonals.desc": "Добавляет поддержку для мода Seasonals",
+  "datapack.create_central_kitchen.overweight_farming": "Create: Central Kitchen — Overweight Farming",
+  "datapack.create_central_kitchen.overweight_farming.desc": "Добавляет поддержку для мода Overweight Farming",
+  "datapack.create_central_kitchen.ends_delight": "Create: Central Kitchen — End's Delight",
+  "datapack.create_central_kitchen.ends_delight.desc": "Добавляет поддержку для мода End's Delight",
+  "datapack.create_central_kitchen.upgrade_aquatic": "Create: Central Kitchen — Upgrade Aquatic",
+  "datapack.create_central_kitchen.upgrade_aquatic.desc": "Добавляет поддержку для мода Upgrade Aquatic",
+  "resourcepack.create_central_kitchen.create_styled": "Create: Central Kitchen — Стилизация Create",
+  "resourcepack.create_central_kitchen.create_styled.desc": "Перерисовка некоторых текстур под стиль мода Create",
+  "create_central_kitchen.generic.unobtainable": "Недоступно",
+  "create_central_kitchen.gui.goggles.blaze_stove.no_result": "Рецепт не задан",
+  "create_central_kitchen.gui.goggles.blaze_stove.recipe_result": "Рецепт:"
+}
+```

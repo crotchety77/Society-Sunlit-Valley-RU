@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "###",
+        "$ $",
+        "#$#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:copper_ingot"
+        },
+        "$": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "longwings:butterfly_driplure",
+        "count": 1
+    }
+}

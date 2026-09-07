@@ -1,0 +1,11 @@
+{
+	"credit": "Made with Blockbench",
+	"render_type": "translucent",
+
+	"textures": {
+		"1": "longwings:block/glass_jar",
+		"2": "longwings:block/fermented_fruit_block",
+		"3": "longwings:block/fermented_fruit_block_inner",
+		"particle": "longwings:block/butterfly_essence"
+	}
+}

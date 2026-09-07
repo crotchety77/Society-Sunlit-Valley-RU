@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: stardew_fishing
+Specification-Vendor: bonker
+Specification-Version: 1
+Implementation-Title: stardewfishing
+Implementation-Version: 3.7
+Implementation-Vendor: bonker
+Implementation-Timestamp: 2026-05-10T12:38:08-0700
+MixinConfigs: mixins.stardew_fishing.json
+

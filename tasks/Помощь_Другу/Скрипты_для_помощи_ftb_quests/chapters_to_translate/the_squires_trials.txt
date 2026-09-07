@@ -1,0 +1,1093 @@
+# =========================================================================
+# ГЛАВА: the_squires_trials.snbt
+# Всего квестов: 67
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: The Squires Trials
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 6F010E22CD886969] ===
+EN_TITLE: The Adventure Begins!
+RU_TITLE: 
+
+EN_SUBTITLE: New Adventure
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Cisco &fsensed a familiar &cpower &fwithin the champion. Believing they may be able to aid him in his quest to defeat &4the fell king &fhe offered his guidance.
+
+Relive the champion's journey and ascent to legendary status.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6F010E22CD886969 ---
+
+
+=== [КВЕСТ 2 | ID: 23864A4966441D61] ===
+EN_TITLE: The path of the warrior
+RU_TITLE: 
+
+EN_SUBTITLE: Blade and Shield
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Up close and personal.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 23864A4966441D61 ---
+
+
+=== [КВЕСТ 3 | ID: 76E6E42A538C69FB] ===
+EN_TITLE: Novice spell caster
+RU_TITLE: 
+
+EN_SUBTITLE: My first Tome
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&dSource &fcan be manipulated in almost infinite ways limited only by your creativity and the &bglyphs &favailable to you.
+
+To do this you will need to craft a &1spell book. &fIt can later be dyed in your favourite color.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 76E6E42A538C69FB ---
+
+
+=== [КВЕСТ 4 | ID: 642C85E431896FB0] ===
+EN_TITLE: The path of the mage
+RU_TITLE: 
+
+EN_SUBTITLE: Spellcaster Trainee
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+It is time to begin your &1spell &1caster &ftraining.
+
+The are two main origins of magic in the world, one uses a resource called &d"source" &fand the other uses &a"ambient mana" &fpresent within the world and it's living creatures.
+
+Which path will you choose?
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 642C85E431896FB0 ---
+
+
+=== [КВЕСТ 5 | ID: 363D127C20EAC8FC] ===
+EN_TITLE: Obtain iron
+RU_TITLE: 
+
+EN_SUBTITLE: Finding Metal
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Iron is a key component in many recipes and is vital early on in your adventure.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 363D127C20EAC8FC ---
+
+
+=== [КВЕСТ 6 | ID: 7D47CA06F299BB0A] ===
+EN_TITLE: The relic of the ancients
+RU_TITLE: 
+
+EN_SUBTITLE: Relic Retrieved
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+There is a tale of a &6legendary relic &fwhich lies in the possesion of the &avillagers.&f
+
+Perhaps if you can gain their favor they may entrust it to you?
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7D47CA06F299BB0A ---
+
+
+=== [КВЕСТ 7 | ID: 068B6DC27BC66D89] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Mage's Workstation
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Here is where you craft the &bglyphs &fused for spell casting. 
+
+With each new &bglyph &fyour &2maximum &1mana &aincreases &fslightly.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 068B6DC27BC66D89 ---
+
+
+=== [КВЕСТ 8 | ID: 10B64A3D6500AC09] ===
+EN_TITLE: Amplified Magics
+RU_TITLE: 
+
+EN_SUBTITLE: More Power
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This &bglyph &fincreases the potency of many other glyphs when used in tandem in a spell.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 10B64A3D6500AC09 ---
+
+
+=== [КВЕСТ 9 | ID: 643A6BD7BE518653] ===
+EN_TITLE: Aquire Obsidian
+RU_TITLE: 
+
+EN_SUBTITLE: Portal to Purgatory
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Aquire &5obsidian &fand craft a nether portal.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 643A6BD7BE518653 ---
+
+
+=== [КВЕСТ 10 | ID: 7D59BD1308E6778F] ===
+EN_TITLE: The depths of Hell
+RU_TITLE: 
+
+EN_SUBTITLE: Brave the Nether
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &4Nether &fis filled with large structures and powerful enemies, prepare carefully before entering.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7D59BD1308E6778F ---
+
+
+=== [КВЕСТ 11 | ID: 3E13EB56EE51145F] ===
+EN_TITLE: Acquire Quartz
+RU_TITLE: 
+
+EN_SUBTITLE: Shiny?
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Quartz is needed for some important recipes like upgrading to a tier 2 spellbook.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3E13EB56EE51145F ---
+
+
+=== [КВЕСТ 12 | ID: 5426802195E9DEA6] ===
+EN_TITLE: Rank up your magic
+RU_TITLE: 
+
+EN_SUBTITLE: Promoted
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Upgrading your &1spell book &fwill allow you to cast more &cpowerful &1spells.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5426802195E9DEA6 ---
+
+
+=== [КВЕСТ 13 | ID: 279BC431D5D067A3] ===
+EN_TITLE: Find the an ancient runic tablet
+RU_TITLE: 
+
+EN_SUBTITLE: Runic Rituals
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+These can be found in dungeon chests.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 279BC431D5D067A3 ---
+
+
+=== [КВЕСТ 14 | ID: 2A5A2B19FD4A1ABE] ===
+EN_TITLE: Aquire an enchanting table
+RU_TITLE: 
+
+EN_SUBTITLE: Novice Enchanter
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This will be your second main source of &cpower.&f
+
+Master the &5apotheosis &9enchanting &fsystem and even weaker tier gear can become godly.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2A5A2B19FD4A1ABE ---
+
+
+=== [КВЕСТ 15 | ID: 4472063587820DF7] ===
+EN_TITLE: For Glory!
+RU_TITLE: 
+
+EN_SUBTITLE: Righteousness Reborn
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Embrace the &elight.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4472063587820DF7 ---
+
+
+=== [КВЕСТ 16 | ID: 0D03A91A96743E87] ===
+EN_TITLE: All shall kneel...
+RU_TITLE: 
+
+EN_SUBTITLE: Abyss Awakened
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Embrace the &0darkness.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0D03A91A96743E87 ---
+
+
+=== [КВЕСТ 17 | ID: 441A82CED3F13122] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Acquiring Netherite
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&0Netherite ingots &fare a crucial part of many complex item recipes and as such you will need a fair amount of it.
+
+Pickaxes with &cpowerful &9enhantments &for certain dungeon chests are great ways to get more of it.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 441A82CED3F13122 ---
+
+
+=== [КВЕСТ 18 | ID: 5FFC0E01052944A7] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Finding the burning Arena
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The eye of flame can be used to locate the &eburning arena &fhome to the &6Flame King Ignis.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5FFC0E01052944A7 ---
+
+
+=== [КВЕСТ 19 | ID: 64286A21FDB8288F] ===
+EN_TITLE: Slay the terror of the nether
+RU_TITLE: 
+
+EN_SUBTITLE: Wither Woes
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+The &4nether &bstar &fobtained from slaying the &0Wither &fis used in the crafting of very powerful items.
+
+The wither will grow in strength every time you defeat it.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 64286A21FDB8288F ---
+
+
+=== [КВЕСТ 20 | ID: 2AF361BA2A4FB5EF] ===
+EN_TITLE: Slay the flame king
+RU_TITLE: 
+
+EN_SUBTITLE: Flame King Falls
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                 &dGatekeeper
+
+Acquire &eburning ashes&f from &6ignited revenants &fguarding &4the burning arena.
+
+Use the &eashes &fon the altar in the center of the &4arena &fand extinguish &6The King of Flames.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2AF361BA2A4FB5EF ---
+
+
+=== [КВЕСТ 21 | ID: 1AA5DCEFEC43DCA6] ===
+EN_TITLE: Not gold but certainly glitters
+RU_TITLE: 
+
+EN_SUBTITLE: Acquired Amethyst
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&dAmethyst &fis another key ingredient in all things arcane and you may need quite alot of it. 
+
+Thankfully you can automate its production using the &dAmethyst Golem &ffamiliars.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1AA5DCEFEC43DCA6 ---
+
+
+=== [КВЕСТ 22 | ID: 1413A1E7155AB369] ===
+EN_TITLE: Apothic Enchanting
+RU_TITLE: 
+
+EN_SUBTITLE: Beyond Limits
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Apotheosis allows you to enchant your gear far beyond what you are used to.
+
+It may take some configuration but eventually you will be able to fashion gear that makes you unstoppable.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1413A1E7155AB369 ---
+
+
+=== [КВЕСТ 23 | ID: 1AB06DC31FD237A6] ===
+EN_TITLE: Collecting the 12 eyes
+RU_TITLE: 
+
+EN_SUBTITLE: Eye collector
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The 12 eyes needed to ignite the &dend portal &fcan be found in dungeon chests all over the &aworld &f, &fin the &4nether&f, as well a few of them needing to be crafted.
+
+These three are a good starting point.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1AB06DC31FD237A6 ---
+
+
+=== [КВЕСТ 24 | ID: 53F1FB5EE35750DC] ===
+EN_TITLE: Enter the End Dimension
+RU_TITLE: 
+
+EN_SUBTITLE: Into the void
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+It is now time to face the &5Dragon.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 53F1FB5EE35750DC ---
+
+
+=== [КВЕСТ 25 | ID: 2F764777B6E4D941] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: End the Ender Dragon
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                 &dGatekeeper
+
+Not even the &5Ender Dragon &fcan stand before your &4might&f .
+
+Slay her and liberate the &dend dimension.
+
+Each time you battle her she will grow  in strength.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2F764777B6E4D941 ---
+
+
+=== [КВЕСТ 26 | ID: 2504D1884D6894FB] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Finding the ruined Citadel
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The eye of the void is used to locate the ruined citadel where the powerful &dEnder Guardian &fresides.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2504D1884D6894FB ---
+
+
+=== [КВЕСТ 27 | ID: 6880914EF91D2C85] ===
+EN_TITLE: Slay the Ender Guardian
+RU_TITLE: 
+
+EN_SUBTITLE: Ender Guardian Falls
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                  &dGatekeeper
+
+Can you conquer this powerful foe?
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6880914EF91D2C85 ---
+
+
+=== [КВЕСТ 28 | ID: 1B9997B20D2187C9] ===
+EN_TITLE: The Greatest Magician
+RU_TITLE: 
+
+EN_SUBTITLE: Master Magician
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Upgrage your &1spell book &fto the final tier by combining it with the rarest of materials.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1B9997B20D2187C9 ---
+
+
+=== [КВЕСТ 29 | ID: 438D84B0F7BFD2A0] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Merged Monstrosity
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Summon the &cWilden Chimera &fand defeat him to obtain the wilden tribute.
+
+This can be done using the &dritual brazer&f , a &9tablet of summon wilden &fand the 3 types of wilden drops.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 438D84B0F7BFD2A0 ---
+
+
+=== [КВЕСТ 30 | ID: 0F7160FDDB088526] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Blazing Righteousness 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The final form of the sword of &ejustice .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0F7160FDDB088526 ---
+
+
+=== [КВЕСТ 31 | ID: 00CB68DA83F73719] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Herald of the Abyss
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The final form of the sword of &0darkness.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 00CB68DA83F73719 ---
+
+
+=== [КВЕСТ 32 | ID: 5A24E1249722EEA9] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Tiny Workhorse
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Starbuncles &fare crucial to automating &dsource &fproduction which is needed for all things ars nouveau . 
+
+Interact with a wild &6starbuncle &fby feeding it &egold nuggets &fand use the fragment to craft its charm.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5A24E1249722EEA9 ---
+
+
+=== [КВЕСТ 33 | ID: 4C0B49A4548B6DF4] ===
+EN_TITLE: Craft the Ignitium set
+RU_TITLE: 
+
+EN_SUBTITLE: Ignitium Armor
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Ignitium Armor &fis indestructible and provides various effects such as &elava walking.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4C0B49A4548B6DF4 ---
+
+
+=== [КВЕСТ 34 | ID: 74C563F2BB321AF9] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Grinding Gems
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+You can grind &1gems &fto &1gem dust &fhere which is used to imbue your gear with special affixes via the reforging table.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 74C563F2BB321AF9 ---
+
+
+=== [КВЕСТ 35 | ID: 28B406CDB662AAF8] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Novice Reforger
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This is where you reforge your &agear&f. 
+
+Reforging adds stats and sockets for &1gems &fto your &aequipment &fbased on the quality of reforging materials used.
+
+Can be upgraged further.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 28B406CDB662AAF8 ---
+
+
+=== [КВЕСТ 36 | ID: 78C3CC2B67ED66B6] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Divine Temper
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This reforging table allows you reroll up to &6mythic &ftier affixes.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 78C3CC2B67ED66B6 ---
+
+
+=== [КВЕСТ 37 | ID: 5319E400556CDC4D] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Storing Knowledge
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+You can store enchantments here for later use. Can be upgraded further.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5319E400556CDC4D ---
+
+
+=== [КВЕСТ 38 | ID: 1436BCC4578225DB] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Master Librarian
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The ultimate enchantment library.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1436BCC4578225DB ---
+
+
+=== [КВЕСТ 39 | ID: 7519AF7B737CB8AB] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Arcane Amplification
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&ePotion charms &fare very powerful items which can give you a potion effect permanently when in your inventory.
+
+By default they &4lose durability &fwhilst &aactive &fbut you can make them &2unbreakable &fby enchanting them with a certain amount of quanta , eterna etc refer to your recipes.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7519AF7B737CB8AB ---
+
+
+=== [КВЕСТ 40 | ID: 569DA7BBDC1F40FE] ===
+EN_TITLE: View the skill tree.
+RU_TITLE: 
+
+EN_SUBTITLE: Seeking Skill
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The skill tree will allow you customise your character and gain the strength required to face the challenges that await.
+
+Default key is (o). Click the checkmark to complete the quest.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 569DA7BBDC1F40FE ---
+
+
+=== [КВЕСТ 41 | ID: 7B1FA4C0929A40D9] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Acquiring Brightsteel
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+A combination of metals and nonmetals enhanced with &9magic &fthis resilient metal is used to craft many different weapons and armor.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7B1FA4C0929A40D9 ---
+
+
+=== [КВЕСТ 42 | ID: 7F28DA2696D94242] ===
+EN_TITLE: Brightsteel Armor
+RU_TITLE: 
+
+EN_SUBTITLE: Heavy Knight
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&eBrightsteel Armor &fprovides good protection and a small &8resistance &fbuff when healthy.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7F28DA2696D94242 ---
+
+
+=== [КВЕСТ 43 | ID: 25B412C443489BF9] ===
+EN_TITLE: Gilded Eagle
+RU_TITLE: 
+
+EN_SUBTITLE: Master Assassin
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&eThe Gilded Eagle &farmor set provides medium protections but bonus and speed and the &eability &fto breifly &ddodge &fincoming attacks.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 25B412C443489BF9 ---
+
+
+=== [КВЕСТ 44 | ID: 6853D0C9370FDC1F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: All purpose Tool
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This &4multitool &ffashioned with &ebrightsteel &fwill greatly aid in the acquisition of natural resources.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6853D0C9370FDC1F ---
+
+
+=== [КВЕСТ 45 | ID: 7C0C571649F8E5AA] ===
+EN_TITLE: Slay Spiders
+RU_TITLE: 
+
+EN_SUBTITLE: Annihilating Arachnids
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &0spider &fpopulation has grown out of hand, reduce thier numbers.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7C0C571649F8E5AA ---
+
+
+=== [КВЕСТ 46 | ID: 553D2E842160B922] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Extending Experience
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Used to store and retrieve &aexperience levels.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 553D2E842160B922 ---
+
+
+=== [КВЕСТ 47 | ID: 159FD707980D3015] ===
+EN_TITLE: Adventurers Garments
+RU_TITLE: 
+
+EN_SUBTITLE: Suiting Up
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Craft the &9Adventurer's Armor &fand continue your journey.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 159FD707980D3015 ---
+
+
+=== [КВЕСТ 48 | ID: 163054D41143A0B9] ===
+EN_TITLE: Craft the brightsteel pickaxe
+RU_TITLE: 
+
+EN_SUBTITLE: Breaking with Brightsteel
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This highly efficient pickaxe is second only to the &0darksteel &5variant.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 163054D41143A0B9 ---
+
+
+=== [КВЕСТ 49 | ID: 5F0BBBF9A4360E45] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Digging with darksteel
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &0darksteel pickaxe &fuses &cancient magic &fto enhance the users strikes increasing efficiency to unparralled levels.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5F0BBBF9A4360E45 ---
+
+
+=== [КВЕСТ 50 | ID: 30A0BC21027B02A6] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Banishing the Betrayed
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&4Demons &fborn of the &cseven deadly sins &fhave found their way into our world.
+
+They pose a significant danger and must be dealt with quickly. 
+
+Rumors are they only spawn at night.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 30A0BC21027B02A6 ---
+
+
+=== [КВЕСТ 51 | ID: 7916F83211133602] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Initiate
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+To begin your study of &aambient magic &fyou will need to craft a &9spell book.
+
+&fMore powerful &9spellbooks &fcan be found in dungeon chests , aquired from &4slaying enemies &for crafted with very rare materials. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7916F83211133602 ---
+
+
+=== [КВЕСТ 52 | ID: 12E6E8AA3ADA8496] ===
+EN_TITLE: Acquiring Ink
+RU_TITLE: 
+
+EN_SUBTITLE: Finding Ink
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Before you are able to &binscribe &fyour &1spell &finto your &1spell book &fyou will need &0ink.
+
+&fThese can be found in chests at different rarities but easily found from &dmage towers &fand defeating the &1wizards &fwithin.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 12E6E8AA3ADA8496 ---
+
+
+=== [КВЕСТ 53 | ID: 1713C024E6505594] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Inscribing Spells
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+With the &0ink &fyou have collected you will also require a table to do the &binscription.
+
+&bThe inscription table &fcan be easily crafted or "borrowed" from a &dmage structure.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1713C024E6505594 ---
+
+
+=== [КВЕСТ 54 | ID: 5C15BCCD252805DC] ===
+EN_TITLE: Use Gems to increase spell power
+RU_TITLE: 
+
+EN_SUBTITLE: Outrageous Gems
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&9Gems &fwhich increase spell power when socketed in the correct pieces of gear can significantly boost your &1magic &cdamage output.
+
+You may only socket one &9gem of the archmage &finto your chestplate so it is recommended to use one of the highest &aquality &favailable.
+
+Multiple &dsource jewels &fmay be socketed in thier respective pieces of gear however , which can provide stacking &aincreases &fto &cdamage.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5C15BCCD252805DC ---
+
+
+=== [КВЕСТ 55 | ID: 430E2D9A0D2D5C61] ===
+EN_TITLE: Socketing Gems
+RU_TITLE: 
+
+EN_SUBTITLE: Gem power
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Socketing &9gems &finto your equipment will &aboost &fthe respective &cpower &fof that &1magical &dschool.
+
+The main way to find these &1gems &fwould be within dungeons throughout
+the world.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 430E2D9A0D2D5C61 ---
+
+
+=== [КВЕСТ 56 | ID: 609257BFA1739C99] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Arcane Anvil
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &barcane anvil &fhas multiple uses with the main being the &acombination &fof &ftwo &7scrolls &fof the same rarity into higher tier versions of themselves.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 609257BFA1739C99 ---
+
+
+=== [КВЕСТ 57 | ID: 03E41C9A2A59791A] ===
+EN_TITLE: The ultimate Spell Book
+RU_TITLE: 
+
+EN_SUBTITLE: The Codex
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&8The ancient codex &fis the most &cpowerful &1spell book &fand can be crafted with very rare materials.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 03E41C9A2A59791A ---
+
+
+=== [КВЕСТ 58 | ID: 4F6408ADEB30E0FB] ===
+EN_TITLE: First Spell
+RU_TITLE: 
+
+EN_SUBTITLE: Firebolt
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&9Spells &fcan be found throughout the &aworld &fin dungeons and &dmage towers &fin the form of &7scrolls.
+
+&fThese &7scrolls &fare &4single &fuse only but can and should be &3inscribed &finto a &9spellbook &fto use &arepeatedly.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4F6408ADEB30E0FB ---
+
+
+=== [КВЕСТ 59 | ID: 526D9E48AED9FF47] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Ancient and All Purpose
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &0darksteel variant &fof the &ebrightsteel &4multitool &funrivalled in speed an efficiency.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 526D9E48AED9FF47 ---
+
+
+=== [КВЕСТ 60 | ID: 1E29BFDBAB318BB6] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Temple of the Ancients
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&bOcean monuments &fcan be found within &1ocean &fbiomes.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1E29BFDBAB318BB6 ---
+
+
+=== [КВЕСТ 61 | ID: 58711E64C6F2ABF5] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Glaring Guardian 
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+                 &dGatekeeper
+
+&4The Elder Guardian &fis a powerful creature which guards the ocean monument.
+
+You can obtain the guardian eye required for opening the end portal from killing it.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 58711E64C6F2ABF5 ---
+
+
+=== [КВЕСТ 62 | ID: 7DB626B9F20BAADC] ===
+EN_TITLE: Darksteel Armor
+RU_TITLE: 
+
+EN_SUBTITLE: Heavier Knight
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&0Darksteel Armor &fprovides superior overall protection with added defence against especially lethal hits.
+
+It also grants a permanent &8resistance &fbuff.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7DB626B9F20BAADC ---
+
+
+=== [КВЕСТ 63 | ID: 3AF40CDF74652218] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Unlimited Power
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This table uses sigils of enhancement to further increase the power of your reforged affixes.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3AF40CDF74652218 ---
+
+
+=== [КВЕСТ 64 | ID: 22B92DE71F6F923D] ===
+EN_TITLE: Find a Bounty Board
+RU_TITLE: 
+
+EN_SUBTITLE: Bargains and Bounties
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The bounty board allows you  to accept and complete small tasks in exchange for rewards.
+
+They can usually be found in villages.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 22B92DE71F6F923D ---
+
+
+=== [КВЕСТ 65 | ID: 5E23B10D82DBB573] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Voyages and Villages
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The villagers may be able to aid you in your journey  providing resources in exchange for protection.
+
+Seek out a village.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5E23B10D82DBB573 ---
+
+
+=== [КВЕСТ 66 | ID: 6C3BF7E0C3286EF7] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Eldritch Steel
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This reforging table allows you reroll up to &0esoteric &ftier affixes.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6C3BF7E0C3286EF7 ---
+
+
+=== [КВЕСТ 67 | ID: 0A9E8BACB6289283] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Timeless Temper
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This reforging table allows you reroll up to &cancient &ftier affixes.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0A9E8BACB6289283 ---
+
+

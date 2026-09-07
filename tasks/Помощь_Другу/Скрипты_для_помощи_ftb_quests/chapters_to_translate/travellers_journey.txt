@@ -1,0 +1,866 @@
+# =========================================================================
+# ГЛАВА: travellers_journey.snbt
+# Всего квестов: 55
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Travellers Journey
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 7815C719227C80E6] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Locating Lanscapes
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This useful tool will help you find any biome you desire.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7815C719227C80E6 ---
+
+
+=== [КВЕСТ 2 | ID: 0409EE265B906649] ===
+EN_TITLE: Visit the twilight forest
+RU_TITLE: 
+
+EN_SUBTITLE: Travelling through twilight
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This portal can be crafted with flowers and dirt and will take you to the twilight forest.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0409EE265B906649 ---
+
+
+=== [КВЕСТ 3 | ID: 3BD706C24344CD30] ===
+EN_TITLE: Slay the naga
+RU_TITLE: 
+
+EN_SUBTITLE: Naga Neutralized
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Can be found in Naga's Courtyard.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3BD706C24344CD30 ---
+
+
+=== [КВЕСТ 4 | ID: 008B7E891A9C410E] ===
+EN_TITLE: Slay the twilight lich
+RU_TITLE: 
+
+EN_SUBTITLE: Lacerating the Lich
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Can be found in the lich's tower.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 008B7E891A9C410E ---
+
+
+=== [КВЕСТ 5 | ID: 5BA1AE423D7C3C4A] ===
+EN_TITLE: Slay the Minoshroom
+RU_TITLE: 
+
+EN_SUBTITLE: Massacring the Minoshroom
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Can be found at the bottom of the Labyrinth.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5BA1AE423D7C3C4A ---
+
+
+=== [КВЕСТ 6 | ID: 5A7F819BCFDB9CBF] ===
+EN_TITLE: Slay the Hydra
+RU_TITLE: 
+
+EN_SUBTITLE: Beheading the Hydra
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Can be found in it's lair in a fire swamp.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5A7F819BCFDB9CBF ---
+
+
+=== [КВЕСТ 7 | ID: 215073B10639703F] ===
+EN_TITLE: Slay the Knight Phantom
+RU_TITLE: 
+
+EN_SUBTITLE: Cutting down the KnightPhantom
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Can be found in a large room inside of the Goblin Knight Stronghold.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 215073B10639703F ---
+
+
+=== [КВЕСТ 8 | ID: 50D2E142736F982F] ===
+EN_TITLE: Slay the Ur-Ghast
+RU_TITLE: 
+
+EN_SUBTITLE: Slaying the Ur-Ghast
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Can be found at the top of the Dark Tower.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 50D2E142736F982F ---
+
+
+=== [КВЕСТ 9 | ID: 6799E933C08DA23D] ===
+EN_TITLE: Slay the Alpha yeti
+RU_TITLE: 
+
+EN_SUBTITLE: Winter Troll
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Can be found in it's lair in the snowy forest.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6799E933C08DA23D ---
+
+
+=== [КВЕСТ 10 | ID: 1F2D9615BA7CE672] ===
+EN_TITLE: Slay the Snow Queen
+RU_TITLE: 
+
+EN_SUBTITLE: Overthrowing the Queen
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Can be found at the top of the Aurora Palace.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1F2D9615BA7CE672 ---
+
+
+=== [КВЕСТ 11 | ID: 0C7EF344C1930A6F] ===
+EN_TITLE: Craft the explorer's compass
+RU_TITLE: 
+
+EN_SUBTITLE: Locating Landmarks
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This item will help you locate structures in your world.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0C7EF344C1930A6F ---
+
+
+=== [КВЕСТ 12 | ID: 3C812F7976A9223D] ===
+EN_TITLE: Raid Keep Kayra
+RU_TITLE: 
+
+EN_SUBTITLE: Keep Kayra
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Raid this massive keep and take it's treasures.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3C812F7976A9223D ---
+
+
+=== [КВЕСТ 13 | ID: 6C2DCE962AC28480] ===
+EN_TITLE: Raid Shiraz Palace
+RU_TITLE: 
+
+EN_SUBTITLE: Shiraz Palace
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Clear out this massive palace structure filled with powerful enemies and loot.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6C2DCE962AC28480 ---
+
+
+=== [КВЕСТ 14 | ID: 4B649072887655A1] ===
+EN_TITLE: Raid Bastille
+RU_TITLE: 
+
+EN_SUBTITLE: Bastille Blues
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Clear out this fortified pillager camp.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4B649072887655A1 ---
+
+
+=== [КВЕСТ 15 | ID: 0AC77373513B6CC9] ===
+EN_TITLE: Raid the Dungeon Crawl Dungeon
+RU_TITLE: 
+
+EN_SUBTITLE: Descending Dungeon
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This massive dungeon may appear small on the surface but houses many floors which get harder but more rewarding as you descend.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0AC77373513B6CC9 ---
+
+
+=== [КВЕСТ 16 | ID: 22A1E4BA57D4A830] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Aetheric Ascent
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Visit the dimension in the sky.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 22A1E4BA57D4A830 ---
+
+
+=== [КВЕСТ 17 | ID: 3034FC307834E034] ===
+EN_TITLE: Find the bronze dungeon
+RU_TITLE: 
+
+EN_SUBTITLE: Bronze Buildings
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The first of the three dungeons in the aether.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3034FC307834E034 ---
+
+
+=== [КВЕСТ 18 | ID: 4569AE5E16C87B01] ===
+EN_TITLE: Find the silver dungeon
+RU_TITLE: 
+
+EN_SUBTITLE: Searching for Silver
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Find the the silver dungeon and slay valkyries to obtain victory medals.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4569AE5E16C87B01 ---
+
+
+=== [КВЕСТ 19 | ID: 3576D8407E23183E] ===
+EN_TITLE: Find the gold dungeon
+RU_TITLE: 
+
+EN_SUBTITLE: Going for Gold
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The last of the dungeons within the aether .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3576D8407E23183E ---
+
+
+=== [КВЕСТ 20 | ID: 1FA1B5AF726F368E] ===
+EN_TITLE: Defeat the slider
+RU_TITLE: 
+
+EN_SUBTITLE: Stopping the Slider
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This boss can be found in the bronze dungeon. Must be defeated using pickaxes or shovels.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1FA1B5AF726F368E ---
+
+
+=== [КВЕСТ 21 | ID: 2E5BF8D65A759FFF] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Vanquishing Valkyries
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+After obtaining 10 victory medals you may challenge the valkyrie queen.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2E5BF8D65A759FFF ---
+
+
+=== [КВЕСТ 22 | ID: 2DD7B0278EACD633] ===
+EN_TITLE: Slay the Sun Spirit
+RU_TITLE: 
+
+EN_SUBTITLE: Slaying the sun
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The sun spirit resides in the gold dungeon once slain the aether will no longer be in a a state of perputual daytime.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2DD7B0278EACD633 ---
+
+
+=== [КВЕСТ 23 | ID: 5F2456E5BF06098C] ===
+EN_TITLE: Craft a backpack
+RU_TITLE: 
+
+EN_SUBTITLE: Building a backpack
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The backpack is an item that holds items and can be carried with the player. It has numerous utility upgrades and can be expanded all the way from standard to netherite tier for even more extra storage.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5F2456E5BF06098C ---
+
+
+=== [КВЕСТ 24 | ID: 39ADA7B5ED04F4C1] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Stacking Stacks
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This utility upgrade allows the user to store stacks of items in the same slot. Can be upgraded from 2 stacks all the way to 16.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 39ADA7B5ED04F4C1 ---
+
+
+=== [КВЕСТ 25 | ID: 22388F2D91480E82] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Everlasting
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This utility upgrade allows the backpack to to become indestructible.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 22388F2D91480E82 ---
+
+
+=== [КВЕСТ 26 | ID: 1972EE649FC972E7] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Smelting Upgrade
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This ultility upgrade allows for smelting within the backpack. This function can be upgraded further.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1972EE649FC972E7 ---
+
+
+=== [КВЕСТ 27 | ID: 2DCCC1E1567DE875] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Crampt Crafting
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This utility upgrade allows for crafting within the backpack.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2DCCC1E1567DE875 ---
+
+
+=== [КВЕСТ 28 | ID: 513C6A72927972C9] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Feeding Upgrade
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This utility upgrade allows the backpack to automatically feed the player with items from thier inventory.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 513C6A72927972C9 ---
+
+
+=== [КВЕСТ 29 | ID: 4FAECF44CFBE7EEC] ===
+EN_TITLE: Craft the iron furnace
+RU_TITLE: 
+
+EN_SUBTITLE: Iron Furnace
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Furnaces can be upgrade by combining them with rare metals.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4FAECF44CFBE7EEC ---
+
+
+=== [КВЕСТ 30 | ID: 02D166E4FFB3BAF6] ===
+EN_TITLE: Craft the golden furnace
+RU_TITLE: 
+
+EN_SUBTITLE: Gold furnace
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The gold furnace boasts faster cook speed than the iron and can be upgraded even further .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 02D166E4FFB3BAF6 ---
+
+
+=== [КВЕСТ 31 | ID: 2754C959BC321288] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Woodworks
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This station will act as &8stone cutter&f for &2wood &fallowing you to obtain many different variants.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2754C959BC321288 ---
+
+
+=== [КВЕСТ 32 | ID: 736E4B5E45E37F9C] ===
+EN_TITLE: Stone Wand
+RU_TITLE: 
+
+EN_SUBTITLE: Crafting a Building Wand
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Building wands will allow you to build large structures quickly and effieciently.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 736E4B5E45E37F9C ---
+
+
+=== [КВЕСТ 33 | ID: 4524817476A2B36D] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Upgrading Wands
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Building wands can be upgrade from stone tier to infinity tier.
+
+Cores may also be combined with wands to increase functionality.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4524817476A2B36D ---
+
+
+=== [КВЕСТ 34 | ID: 5E30054F5210D394] ===
+EN_TITLE: Easy Villagers Auto Trader
+RU_TITLE: 
+
+EN_SUBTITLE: Easy Auto Trading
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+You may place a &2villager &fwith an occupation into the &bautotrader &fselecting the items you wish to trade. 
+
+The &bauto trader &fwill then automate that trade.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5E30054F5210D394 ---
+
+
+=== [КВЕСТ 35 | ID: 2D15560C7952AFF6] ===
+EN_TITLE: Easy Villagers Trading
+RU_TITLE: 
+
+EN_SUBTITLE: Easy Trading
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+You may place a &2villager &fwith an occupation within the &btrader &fto gain easy access to thier trades whenever you require.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2D15560C7952AFF6 ---
+
+
+=== [КВЕСТ 36 | ID: 2FF19466E4710C4D] ===
+EN_TITLE: Easy Villagers Iron Farm
+RU_TITLE: 
+
+EN_SUBTITLE: Easy Iron Farming
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+You may place a &2villager &finto the &biron farm &fto begin automatically farming &8iron.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2FF19466E4710C4D ---
+
+
+=== [КВЕСТ 37 | ID: 514E2CB906303E01] ===
+EN_TITLE: Easy Villagers Farmer
+RU_TITLE: 
+
+EN_SUBTITLE: Easy Farming
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+You may place a farmer &avillager &fand seeds within the &bfarmer &fto automate crop farming.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 514E2CB906303E01 ---
+
+
+=== [КВЕСТ 38 | ID: 2EC1BD31A2A70282] ===
+EN_TITLE: Easy Villagers Converting
+RU_TITLE: 
+
+EN_SUBTITLE: Easy Converting
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&bThe converter &fautomatically converts &avillagers &fto &czombie &avillagers &fthen back into regular &avillagers.
+
+This process decreases their trade prices and requires you to input a &2villager &f, golden apple and any potion of weakness.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2EC1BD31A2A70282 ---
+
+
+=== [КВЕСТ 39 | ID: 61164317E99BF787] ===
+EN_TITLE: Easy Villagers Breeding
+RU_TITLE: 
+
+EN_SUBTITLE: Easy Breeding
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&bThe breeder &frequires you two input two &avillagers &fand a food item to then produce baby &avillagers.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 61164317E99BF787 ---
+
+
+=== [КВЕСТ 40 | ID: 0342DBA7699AE3D0] ===
+EN_TITLE: Easy Villagers Incubator
+RU_TITLE: 
+
+EN_SUBTITLE: Easy Incubating
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&bThe Incubator &fincreases the growth rate of baby &avillagers.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0342DBA7699AE3D0 ---
+
+
+=== [КВЕСТ 41 | ID: 54EC21B27A5A31AD] ===
+EN_TITLE: Visit the Olympic Citadel
+RU_TITLE: 
+
+EN_SUBTITLE: Home of the Gods
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&eThe olympic Citadel &fwas once believed to be the home of &6gods &fnow abadoned after they were almost completely wiped out by &4Fell King Arthas &fand &0the fell forces.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 54EC21B27A5A31AD ---
+
+
+=== [КВЕСТ 42 | ID: 099E53EE758F1F2C] ===
+EN_TITLE: Visit the Nether Dimension
+RU_TITLE: 
+
+EN_SUBTITLE: Better Nether
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&cThe Nether &fdimension has been enhanced now featuring a more varied and atmospheric version with new landscapes and challenges.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 099E53EE758F1F2C ---
+
+
+=== [КВЕСТ 43 | ID: 0037E919A5DA26DF] ===
+EN_TITLE: Visit the End Dimension
+RU_TITLE: 
+
+EN_SUBTITLE: Better End
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&dThe End dimension &fhas undergone a massive transformation, turning it into a vibrant, more diverse, and visually stunning world.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0037E919A5DA26DF ---
+
+
+=== [КВЕСТ 44 | ID: 3B36C3EF12B4FF3C] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Soul Searching
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Soul Plain  is a desolate, eerie landscape filled with dark, ghostly elements.
+
+It features a twisted, haunting environment with a purple-gray palette, and is often inhabited by hostile mobs like Soul Eaters. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3B36C3EF12B4FF3C ---
+
+
+=== [КВЕСТ 45 | ID: 2FC3C0EF214ED424] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Finding the Platinum Dungeon
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Find the platinum dungeon, within lies your final foe the aerwhale king.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2FC3C0EF214ED424 ---
+
+
+=== [КВЕСТ 46 | ID: 63007C16471DB9E3] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Dethroning the King
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Residing atop the platinum dungeon the aerwhale king is a formiddable foe.
+
+Defeat him and claim the platinum key.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 63007C16471DB9E3 ---
+
+
+=== [КВЕСТ 47 | ID: 7D909ECB706F1882] ===
+EN_TITLE: Visit the Bone Reef
+RU_TITLE: 
+
+EN_SUBTITLE: Beauty in Bones
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Bone Reef underwater-like environment found within the &cNether. 
+
+It features large, bleached bone structures that resemble a vast coral reef, with bones and skeletons scattered throughout. 
+
+The biome has a haunting aesthetic, often filled with hostile mobs like Bone Sharks and other skeleton-themed creatures.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7D909ECB706F1882 ---
+
+
+=== [КВЕСТ 48 | ID: 74FBEA79142079D2] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Crimson Causeway
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Crimson Glowing Woods is a vibrant and eerie area filled with towering crimson trees that emit a soft, glowing light.
+
+The landscape is dominated by dense forests of these glowing trees, with the ground covered in crimson-colored grass and fungi. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 74FBEA79142079D2 ---
+
+
+=== [КВЕСТ 49 | ID: 71D9B5A1692B2449] ===
+EN_TITLE: Visit the upside down forest
+RU_TITLE: 
+
+EN_SUBTITLE: Flipped Forest
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Upside Down Forest is a surreal landscape where the trees grow inverted, with their roots reaching toward the sky. 
+
+The forest is filled with dead, twisted trees and a haunting atmosphere, as the ground is covered in withered foliage and dark vegetation.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 71D9B5A1692B2449 ---
+
+
+=== [КВЕСТ 50 | ID: 7AB3A2FEB07E0D8F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Facade of Flood
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Flooded Deltas is a murky, waterlogged area within the &cNether. 
+
+The terrain is covered in pools of dark, stagnant water and is filled with jagged, often submerged rocks and volcanic features. 
+
+The biome's atmosphere is gloomy and treacherous, with hostile mobs like Sludges and other water-adapted creatures lurking in the depths. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7AB3A2FEB07E0D8F ---
+
+
+=== [КВЕСТ 51 | ID: 715F9E89062B1F30] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Amber and Adventure
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Amber Land biome  is one of the more visually striking and immersive areas within the revamped End dimension.
+
+It’s a rich, warm colored biome that feels like stepping into a completely different realm within the End, full of both beauty and mystery.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 715F9E89062B1F30 ---
+
+
+=== [КВЕСТ 52 | ID: 22D351C8D4C06690] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Beauty Blossoms
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Blossoming Spires biome is a stunning and ethereal landscape characterized by towering spires of glowing, crystalline structures and vibrant, floating flora. 
+
+The biome is filled with Blossoming Trees that have delicate, colorful petals, and the ground is covered in lush, flower-filled grass.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 22D351C8D4C06690 ---
+
+
+=== [КВЕСТ 53 | ID: 6C6310591CF4D15F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Chorus Forest
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Chorus Forest biome is a mystical and vibrant landscape, featuring towering Chorus Trees that grow in dense clusters, their twisted branches covered in glowing Chorus Flowers.
+
+The biome is filled with a variety of Chorus-like vegetation, giving it a surreal, otherworldly appearance.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6C6310591CF4D15F ---
+
+
+=== [КВЕСТ 54 | ID: 1CD2BF55B58E0DC0] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Crystalline Mountains
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Crystal Mountains biome  is a breathtaking, jagged landscape dominated by towering, glittering Crystal Spires and massive, crystalline formations. 
+
+The ground is dotted with Crystal Shards and rich veins of Endstone Ore, glowing with various colors that reflect off the crystals scattered throughout the area.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1CD2BF55B58E0DC0 ---
+
+
+=== [КВЕСТ 55 | ID: 0E8170950EEDE373] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Dusk of Dragons
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The Dragon Graveyards biome is a haunting, eerie area filled with the remains of ancient dragons. 
+
+The biome is characterized by vast, desolate landscapes littered with Dragon Bones, massive Skeletons, and crumbled dragon skulls that serve as eerie reminders of a forgotten time.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0E8170950EEDE373 ---
+
+

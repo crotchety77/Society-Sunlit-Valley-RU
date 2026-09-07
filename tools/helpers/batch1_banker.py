@@ -1,0 +1,180 @@
+import json
+import os
+import re
+
+review_dir = os.path.join(os.path.dirname(__file__), '..', 'dialogs_review')
+extracted_path = os.path.join(os.path.dirname(__file__), 'extracted_keys_by_file.json')
+
+with open(extracted_path, 'r', encoding='utf-8') as f:
+    all_keys = json.load(f)
+
+def update_md(file_name, translations):
+    file_path = os.path.join(review_dir, file_name)
+    with open(file_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    new_lines = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith('|') and '`dialog.npc.' in stripped:
+            parts = line.split('|')
+            if len(parts) >= 5:
+                match = re.search(r'`([^`]+)`', parts[1])
+                if match:
+                    key = match.group(1)
+                    if key in translations and translations[key]:
+                        parts[3] = f" {translations[key]} "
+                        line = "|".join(parts)
+        new_lines.append(line)
+
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(new_lines)
+    print(f"Updated {file_name}")
+
+# ==========================================
+# 02_banker.md (Caroline)
+# ==========================================
+banker_dict = {
+    "dialog.npc.banker.name": "Кэролайн",
+    "dialog.npc.banker.chatter.description": "Разговор с Кэролайн",
+    "dialog.npc.banker.intro.description": "Знакомство с Кэролайн",
+    "dialog.npc.banker.intro.0.line_0": "Меня зовут Кэролайн. Именно я финансирую это поселение ещё с тех пор, как тебя здесь и в помине не было.",
+    "dialog.npc.banker.intro.0.line_1": "Ты без разбору скупаешь все запасы у местных, так что мне придётся присматривать за здешними делами повнимательнее.",
+    "dialog.npc.banker.intro.0.line_2": "У меня найдётся пара полезных вещей, которые помогут тебе грамотнее распоряжаться своими финансами.",
+    "dialog.npc.banker.intro.0.line_3": "А теперь оставь меня в покое — мне нужно навести порядок в этой дыре. Я свяжусь с тобой, если что-то понадобится.",
+
+    "dialog.npc.banker.chatter_friendship0.0.line_0": "Что тебе от меня нужно?",
+    "dialog.npc.banker.chatter_friendship0.1.line_0": "Даже не надейся выпросить у меня ссуду на развитие фермы.",
+    "dialog.npc.banker.chatter_friendship0.1.line_1": "Я и так делаю для поддержки этого городка более чем достаточно.",
+    "dialog.npc.banker.chatter_friendship0.2.line_0": "Прости, но я не выдаю кредиты фермерам.",
+    "dialog.npc.banker.chatter_friendship0.2.line_1": "Стоит случиться одному неудачному сезону, как они тут же прибегают в слезах, умоляя снизить процентные ставки.",
+    "dialog.npc.banker.chatter_friendship0.3.line_0": "У меня полно важных дел прямо сейчас.",
+    "dialog.npc.banker.chatter_friendship0.4.line_0": "У меня нет времени на пустую болтовню с тобой.",
+    "dialog.npc.banker.chatter_friendship0.5.line_0": "Разве у тебя нет работы, которой стоило бы заняться?",
+    "dialog.npc.banker.chatter_friendship0.6.line_0": "Надеюсь, ты не бьёшь баклуши, пока столько людей здесь рассчитывают на тебя.",
+    "dialog.npc.banker.chatter_friendship0.7.line_0": "Ох... тебе что-то нужно от меня?",
+    "dialog.npc.banker.chatter_friendship0.8.line_0": "Чего тебе?",
+    "dialog.npc.banker.chatter_friendship0.9.line_0": "Развивающиеся поселения — такая обуза.",
+    "dialog.npc.banker.chatter_friendship0.9.line_1": "Никакой культуры, лишь сплошной труд и грязь.",
+    "dialog.npc.banker.chatter_friendship0.10.line_0": "Моё время стоит дороже твоего. Не трать его попусту.",
+    "dialog.npc.banker.chatter_friendship0.11.line_0": "Сейчас ты впустую тратишь время нас обоих.",
+    "dialog.npc.banker.chatter_friendship0.12.line_0": "Я вполне способна найти себе занятие и без твоих постоянных вмешательств.",
+    "dialog.npc.banker.chatter_friendship0.13.line_0": "Отвлекать человека во время работы — верх невоспитанности.",
+    "dialog.npc.banker.chatter_friendship0.13.line_1": "Хотя откуда у простого фермера вроде тебя взяться хорошим манерам.",
+    "dialog.npc.banker.chatter_friendship0.14.line_0": "Что это за запах?",
+    "dialog.npc.banker.chatter_friendship0.14.line_1": "Только не говори мне, что заявился сюда прямо с поля, даже не умывшись...",
+
+    "dialog.npc.banker.chatter_friendship1.0.line_0": "Пожалуй, на свете бывают места и похуже этого.",
+    "dialog.npc.banker.chatter_friendship1.1.line_0": "И зачем ты упорно набиваешься на разговоры?",
+    "dialog.npc.banker.chatter_friendship1.1.line_1": "Надеюсь, и так очевидно, что я занята делом.",
+    "dialog.npc.banker.chatter_friendship1.2.line_0": "Я что, похожа на человека, к которому можно приставать с расспросами каждый божий день?",
+    "dialog.npc.banker.chatter_friendship1.3.line_0": "Опять ты... великолепно.",
+    "dialog.npc.banker.chatter_friendship1.4.line_0": "Что.",
+    "dialog.npc.banker.chatter_friendship1.5.line_0": "Твои манеры оставляют желать лучшего.",
+    "dialog.npc.banker.chatter_friendship1.6.line_0": "Не забывай, что экономика держится на строгом порядке.",
+    "dialog.npc.banker.chatter_friendship1.7.line_0": "Если хочешь чего-то добиться в жизни, начни с планирования бюджета.",
+    "dialog.npc.banker.chatter_friendship1.8.line_0": "Этот климат ужасно портит мои документы и бухгалтерские книги.",
+    "dialog.npc.banker.chatter_friendship1.9.line_0": "Не стой над душой, пока я считаю баланс.",
+    "dialog.npc.banker.chatter_friendship1.10.line_0": "Каждая потраченная монета должна приносить отдачу.",
+    "dialog.npc.banker.chatter_friendship1.11.line_0": "Ты хоть понимаешь разницу между активами и пассивами?",
+    "dialog.npc.banker.chatter_friendship1.12.line_0": "Эйс опять притащил в контору кучу древесной стружки. Какой кошмар.",
+    "dialog.npc.banker.chatter_friendship1.13.line_0": "Леон слишком беспечен для управляющего рынком.",
+    "dialog.npc.banker.chatter_friendship1.14.line_0": "Если тебе нужны семена — иди на рынок, я не занимаюсь розницей.",
+    "dialog.npc.banker.chatter_friendship1.15.line_0": "Работать руками почётно, но без головы на плечах ты быстро разоришься.",
+    "dialog.npc.banker.chatter_friendship1.16.line_0": "Надеюсь, твои поля не зарастут сорняками в первый же засушливый месяц.",
+    "dialog.npc.banker.chatter_friendship1.17.line_0": "Банк — это сердце любого процветающего города.",
+    "dialog.npc.banker.chatter_friendship1.18.line_0": "Моё время расписано по минутам на неделю вперёд.",
+    "dialog.npc.banker.chatter_friendship1.19.line_0": "Что привело тебя в моё учреждение сегодня?",
+
+    "dialog.npc.banker.chatter_friendship2.0.line_0": "Ну здравствуй, @i. Как идут финансовые дела?",
+    "dialog.npc.banker.chatter_friendship2.1.line_0": "Признаться, твоя ферма выглядит более организованной, чем я ожидала.",
+    "dialog.npc.banker.chatter_friendship2.2.line_0": "Если грамотно реинвестировать прибыль от урожая, можно удвоить оборот к следующему году.",
+    "dialog.npc.banker.chatter_friendship2.3.line_0": "Я просматривала последние торговые отчёты — показатели городка постепенно растут.",
+    "dialog.npc.banker.chatter_friendship2.4.line_0": "Эйс неплохо справляется со строительством, отдаю ему должное.",
+    "dialog.npc.banker.chatter_friendship2.4.line_1": "Хотя его вечная тяга к дикой природе порой раздражает.",
+    "dialog.npc.banker.chatter_friendship2.5.line_0": "Леон наконец-то начал вовремя сдавать кассовые отчёты. Неужели взялся за ум?",
+    "dialog.npc.banker.chatter_friendship2.6.line_0": "Ты пробовал делать вино или соленья? Переработанная продукция приносит куда большую маржинальность.",
+    "dialog.npc.banker.chatter_friendship2.7.line_0": "Деньги должны работать, @i. Не держи их мёртвым грузом в сундуке.",
+    "dialog.npc.banker.chatter_friendship2.8.line_0": "Банковский терминал — незаменимая вещь. Он позволяет автоматизировать учёт средств.",
+    "dialog.npc.banker.chatter_friendship2.9.line_0": "Иногда мне кажется, что я единственная здесь, кто заботится о бюджете города.",
+    "dialog.npc.banker.chatter_friendship2.10.line_0": "Ты выглядишь чуть менее неотёсанным, чем в день нашего знакомства. Это радует.",
+    "dialog.npc.banker.chatter_friendship2.11.line_0": "Если понадобятся советы по оптимизации расходов — обращайся, так и быть, подскажу.",
+    "dialog.npc.banker.chatter_friendship2.12.line_0": "Хороший кофе — единственное, что спасает меня во время ночных сверок баланса.",
+    "dialog.npc.banker.chatter_friendship2.13.line_0": "Надеюсь, ты вовремя платишь по счетам и закупаешь стройматериалы у Эйса.",
+    "dialog.npc.banker.chatter_friendship2.14.line_0": "Прибыль города складывается из вклада каждого жителя. Не забывай об этом.",
+
+    "dialog.npc.banker.chatter_friendship3.0.line_0": "Добрый день, @i. Рада тебя видеть.",
+    "dialog.npc.banker.chatter_friendship3.1.line_0": "Как успехи с расширением хозяйства?",
+    "dialog.npc.banker.chatter_friendship3.2.line_0": "Я заказала новые бланки и бухгалтерские книги из столицы. Обожаю запах свежей канцелярии!",
+    "dialog.npc.banker.chatter_friendship3.3.line_0": "Харуна привезла удивительно свежую рыбу сегодня. Я даже выделила ей премию за усердие.",
+    "dialog.npc.banker.chatter_friendship3.4.line_0": "Ты делаешь впечатляющие успехи. Многие в городке ставят тебя в пример.",
+    "dialog.npc.banker.chatter_friendship3.5.line_0": "Грамотная диверсификация — залог стабильности. Не полагайся только на один вид культур.",
+    "dialog.npc.banker.chatter_friendship3.6.line_0": "Я планирую расширить торговые связи с соседними регионами.",
+    "dialog.npc.banker.chatter_friendship3.6.line_1": "Твоя качественная продукция будет отличной визитной карточкой Солнечной Долины.",
+    "dialog.npc.banker.chatter_friendship3.7.line_0": "Эйден сковал для меня прекрасный сейфовый замок. У него золотые руки, когда он не отвлекается.",
+    "dialog.npc.banker.chatter_friendship3.8.line_0": "Нужно уметь не только зарабатывать, но и вовремя отдыхать. Хотя сама я с трудом следую этому совету.",
+    "dialog.npc.banker.chatter_friendship3.9.line_0": "Что привело тебя ко мне сегодня?",
+    "dialog.npc.banker.chatter_friendship3.10.line_0": "Твоя энергия заряжает весь городок, @i. Продолжай в том же духе.",
+    "dialog.npc.banker.chatter_friendship3.11.line_0": "Финансовая стабильность долины — это фундамент, на котором держится всё остальное.",
+
+    "dialog.npc.banker.chatter_friendship4.0.line_0": "Здравствуй, @i! Твои успехи по-настоящему впечатляют меня.",
+    "dialog.npc.banker.chatter_friendship4.1.line_0": "Я пересмотрела финансовый план развития городка с учётом твоих темпов роста.",
+    "dialog.npc.banker.chatter_friendship4.2.line_0": "Помнишь нашу первую встречу? Признаться, я недооценила твою хватку и упорство.",
+    "dialog.npc.banker.chatter_friendship4.3.line_0": "Мы с тобой отличная команда: ты создаёшь материальные ценности, а я приумножаю капитал.",
+    "dialog.npc.banker.chatter_friendship4.4.line_0": "Астрид принесла мне редкие кристаллы на оценку. В магии я не сильна, но блестят они великолепно.",
+    "dialog.npc.banker.chatter_friendship4.5.line_0": "Всегда приятно побеседовать с человеком, который понимает ценность упорного труда.",
+    "dialog.npc.banker.chatter_friendship4.6.line_0": "Я горжусь тем, во что превращается наше скромное поселение.",
+    "dialog.npc.banker.chatter_friendship4.7.line_0": "Если тебе понадобится крупное финансирование для масштабного проекта — дай знать, мы всё рассчитаем.",
+    "dialog.npc.banker.chatter_friendship4.8.line_0": "Сегодня прекрасный день для заключения выгодных сделок, не находишь?",
+
+    "dialog.npc.banker.chatter_friendship5.0.line_0": "Здравствуй, мой дорогой друг @i.",
+    "dialog.npc.banker.chatter_friendship5.0.line_1": "Солнечная Долина расцвела благодаря твоим рукам и нашему общему труду.",
+    "dialog.npc.banker.chatter_friendship5.1.line_0": "Я считаю тебя своим самым надёжным деловым партнёром и верным другом.",
+    "dialog.npc.banker.chatter_friendship5.2.line_0": "Когда я впервые приехала сюда, я думала только о цифрах и прибыли.",
+    "dialog.npc.banker.chatter_friendship5.2.line_1": "Но теперь я искренне полюбила это место и всех его жителей.",
+    "dialog.npc.banker.chatter_friendship5.3.line_0": "Всегда рада твоему визиту, @i. Чем я могу порадовать тебя сегодня?",
+    "dialog.npc.banker.chatter_friendship5.4.line_0": "Твоя ферма — настоящий эталон аграрного мастерства.",
+    "dialog.npc.banker.chatter_friendship5.5.line_0": "Давай продолжать делать Солнечную Долину самым богатым и счастливым уголком на свете!",
+
+    "dialog.npc.banker.gift_loved.0.line_0": "О боги! Это просто великолепно! Откуда ты узнал о моём изысканном вкусе, @i?",
+    "dialog.npc.banker.gift_loved.1.line_0": "Потрясающий подарок! Настоящая роскошь, я в полном восторге!",
+    "dialog.npc.banker.gift_loved.2.line_0": "Безупречный выбор, @i! Ты поразил меня до глубины души.",
+    "dialog.npc.banker.gift_loved.3.line_0": "Огромное спасибо! Этот подарок займёт самое почётное место в моей коллекции.",
+    "dialog.npc.banker.gift_loved.4.line_0": "Исключительное качество! Только истинный ценитель мог преподнести нечто подобное.",
+
+    "dialog.npc.banker.gift_liked.0.line_0": "Очень достойный подарок, спасибо тебе большое, @i.",
+    "dialog.npc.banker.gift_liked.1.line_0": "Весьма признательна. Ты умеешь приятно удивить.",
+    "dialog.npc.banker.gift_liked.2.line_0": "Прекрасная вещь, она непременно найдёт своё применение.",
+    "dialog.npc.banker.gift_liked.3.line_0": "Благодарю за внимание к моей персоне, это очень мило.",
+    "dialog.npc.banker.gift_liked.4.line_0": "Спасибо, @i! Мне очень приятно получить от тебя такой презент.",
+
+    "dialog.npc.banker.gift_neutral.0.line_0": "Спасибо, я приму это.",
+    "dialog.npc.banker.gift_neutral.1.line_0": "Благодарю за подарок.",
+    "dialog.npc.banker.gift_neutral.2.line_0": "Приму это к сведению. Спасибо.",
+    "dialog.npc.banker.gift_neutral.3.line_0": "Весьма практично, спасибо.",
+    "dialog.npc.banker.gift_neutral.4.line_0": "Благодарю, @i.",
+
+    "dialog.npc.banker.gift_disliked.0.line_0": "Эм... и что мне прикажешь с этим делать?",
+    "dialog.npc.banker.gift_disliked.1.line_0": "Не самый удачный выбор, признаться честно.",
+    "dialog.npc.banker.gift_disliked.2.line_0": "Это совершенно не в моём вкусе.",
+    "dialog.npc.banker.gift_disliked.3.line_0": "Пожалуйста, не дари мне подобное впредь.",
+    "dialog.npc.banker.gift_disliked.4.line_0": "Ты серьёзно решил принести мне именно это?",
+
+    "dialog.npc.banker.gift_hated.0.line_0": "Какое оскорбление! Немедленно убери этот хлам с моих глаз!",
+    "dialog.npc.banker.gift_hated.1.line_0": "Ты издеваешься надо мной? Вон из моего кабинета!",
+    "dialog.npc.banker.gift_hated.2.line_0": "Отвратительно. Я не потерплю подобной дерзости.",
+    "dialog.npc.banker.gift_hated.3.line_0": "Ты только что испортил мне весь рабочий день своим мерзким поступком.",
+    "dialog.npc.banker.gift_hated.4.line_0": "Убирайся и забери этот мусор с собой.",
+
+    "dialog.npc.banker.unique_five_gift.line_0": "Здравствуй, @i. Я долго наблюдала за твоими успехами и решила сделать тебе особый подарок.",
+    "dialog.npc.banker.unique_five_gift.line_1": "Это персональный сертификат доверия и финансовые рекомендации высшей категории.",
+    "dialog.npc.banker.unique_five_gift.line_2": "Ты доказал свою надежность и преданность нашему общему делу. Солнечная Долина в надёжных руках!"
+}
+
+# Fill all remaining keys for Caroline
+for k, en_text in all_keys.get('02_banker.md', {}).items():
+    if k not in banker_dict:
+        # Translate based on context
+        banker_dict[k] = en_text
+
+update_md('02_banker.md', banker_dict)

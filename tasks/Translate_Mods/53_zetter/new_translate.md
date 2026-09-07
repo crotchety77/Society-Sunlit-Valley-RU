@@ -1,0 +1,125 @@
+# Локализация мода: zetter
+
+**JAR:** `zetter-1.20.1-0.21.7.jar` | **Всего строк:** 103 | **Не переведено:** 13
+
+## 1. Визуальный контекст и оформление
+* Форматирование: Названия предметов/блоков начинаются с Заглавной буквы.
+* Валюта: использовать значок монеты `§e●` (`U+25CF`).
+* Тултипы: подсветка клавиш `§6Shift + ПКМ§7`.
+
+## 2. Непереведённые строки (требуют перевода)
+
+```json
+{
+  "console.zetter.result.requested_painting": "TODO: Painting %1$s was requested from the sever, please wait",
+  "console.zetter.result.exported_painting_client": "TODO: Painting %1$s was saved to your Minecraft folder",
+  "console.zetter.result.exported_painting_server": "TODO: Painting %1$s was saved to server folder",
+  "console.zetter.error.unknown": "TODO: Unexpected error happened: %1$s",
+  "console.zetter.error.file_write_folder": "TODO: Cannot create export folder",
+  "console.zetter.error.file_write_folder_unable": "TODO: Cannot create export folder",
+  "console.zetter.error.file_write_folder_exists": "TODO: File with the same name exists",
+  "console.zetter.error.file_write_file": "TODO: Unable to write image file",
+  "container.zetter.artist_table.mode": "TODO: %1$s — %2$s",
+  "item.zetter.painting.size": "TODO: %1$dx%2$d",
+  "painting.zetter.banned": "TODO: This painting was banned by the server admins, alternative used",
+  "forge.configgui.zetter.painting.resolution": "TODO: Painting Resolution",
+  "forge.configgui.zetter.gui.helpButton": "TODO: Show Help Button"
+}
+```
+
+## 3. Существующие переводы (для контекста)
+
+```json
+{
+  "block.zetter.artist_table": "Стол художника",
+  "console.zetter.error.file_write_error": "Невозможно записать файл для сохранения картины: %1$s",
+  "console.zetter.error.invalid_painting_code": "Неверный код картины: %1$s",
+  "console.zetter.error.painting_not_found": "Картина не найдена: %1$s",
+  "container.zetter.artistTable": "Стол художника",
+  "container.zetter.artist_table": "Стол художника",
+  "container.zetter.artist_table.change_action": "Сменить действие",
+  "container.zetter.artist_table.change_action.to_combine": "В режим комбинирования",
+  "container.zetter.artist_table.change_action.to_split": "В режим разделения",
+  "container.zetter.artist_table.combined_canvas": "Предварительный просмотр картины",
+  "container.zetter.artist_table.combined_canvas.empty": "Нет картины",
+  "container.zetter.artist_table.combined_canvas.invalid": "Недопустимая комбинация",
+  "container.zetter.artist_table.combined_canvas.loading": "Загрузка холстов",
+  "container.zetter.artist_table.help": "Онлайн руководство",
+  "container.zetter.artist_table.mode.combine": "Режим комбинации",
+  "container.zetter.artist_table.mode.split": "Режим разделения",
+  "container.zetter.easel": "Мольберт",
+  "container.zetter.painting": "Картина",
+  "container.zetter.painting.blending": "Смешивание",
+  "container.zetter.painting.blending.additive": "добавка",
+  "container.zetter.painting.blending.realistic": "Реалистичный",
+  "container.zetter.painting.blending.subtractive": "вычитающий",
+  "container.zetter.painting.canvas": "Холст",
+  "container.zetter.painting.color_code": "Цветовой код (HEX)",
+  "container.zetter.painting.dithering": "Дизеринг",
+  "container.zetter.painting.help": "Онлайн руководство",
+  "container.zetter.painting.history": "История",
+  "container.zetter.painting.history.redo": "Повторить",
+  "container.zetter.painting.history.undo": "Отменить",
+  "container.zetter.painting.hsb": "Настройка цвета HSB",
+  "container.zetter.painting.palette": "Палитра",
+  "container.zetter.painting.sliders": "Настройка цвета (HSV)",
+  "container.zetter.painting.sliders.brightness": "Яркость",
+  "container.zetter.painting.sliders.hue": "Оттенок",
+  "container.zetter.painting.sliders.intensity": "Интенсивность",
+  "container.zetter.painting.sliders.saturation": "Насыщенность",
+  "container.zetter.painting.sliders.size": "Размер",
+  "container.zetter.painting.tabs": "Вкладки",
+  "container.zetter.painting.tabs.brush_parameters": "Параметры кисти",
+  "container.zetter.painting.tabs.bucket_parameters": "Параметры заливки",
+  "container.zetter.painting.tabs.color": "Выберите цвет",
+  "container.zetter.painting.tabs.inventory": "Инвентарь",
+  "container.zetter.painting.tabs.parameters": "Параметры инструмента",
+  "container.zetter.painting.tabs.pencil_parameters": "Параметры карандаша",
+  "container.zetter.painting.tools": "Инструменты",
+  "container.zetter.painting.tools.brush": "Кисть",
+  "container.zetter.painting.tools.bucket": "Заливка",
+  "container.zetter.painting.tools.eyedropper": "Пипетка",
+  "container.zetter.painting.tools.hand": "Рука",
+  "container.zetter.painting.tools.pencil": "Карандаш",
+  "container.zetter.painting.zoom": "Масштабирование",
+  "container.zetter.painting.zoom.in": "Увеличить масштаб",
+  "container.zetter.painting.zoom.out": "Уменьшить масштаб",
+  "entity.zetter.custom_painting_entity": "Обрамленная картинка",
+  "entity.zetter.easel_entity": "Мольберт",
+  "item.zetter.acacia_basic_frame": "Рамка из Акации",
+  "item.zetter.acacia_plated_frame": "Рамка из Акации с Шильдиком",
+  "item.zetter.birch_basic_frame": "Берёзовая рамка",
+  "item.zetter.birch_plated_frame": "Берёзовая рамка с Шильдиком",
+  "item.zetter.canvas": "Холст",
+  "item.zetter.canvas.blank": "Пустой холст",
+  "item.zetter.canvas.painted": "Окрашенный холст",
+  "item.zetter.crimson_basic_frame": "Багровая рамка",
+  "item.zetter.crimson_plated_frame": "Багровая рамка с Шильдиком",
+  "item.zetter.customPaintingByAuthor": "\"%1$s\" Автор: %2$s",
+  "item.zetter.dark_oak_basic_frame": "Рамка из Тёмного дуба",
+  "item.zetter.dark_oak_plated_frame": "Рамка из Тёмного дуба с Шильдиком",
+  "item.zetter.easel": "Мольберт",
+  "item.zetter.gold_basic_frame": "Золотая рамка",
+  "item.zetter.gold_plated_frame": "Золотая рамка с Шильдиком",
+  "item.zetter.iron_frame": "Железная рамка без граней",
+  "item.zetter.jungle_basic_frame": "Тропическая рамка",
+  "item.zetter.jungle_plated_frame": "Тропическая рамка с Шильдиком",
+  "item.zetter.mangrove_basic_frame": "Мангровая рама",
+  "item.zetter.mangrove_plated_frame": "Мангровая рама с табличкой",
+  "item.zetter.oak_basic_frame": "Дубовая рамка",
+  "item.zetter.oak_plated_frame": "Дубовая рамка с Шильдиком",
+  "item.zetter.painting": "Картина",
+  "item.zetter.painting.generation.0": "Оригинал",
+  "item.zetter.painting.generation.1": "Копия",
+  "item.zetter.painting.generation.2": "Копия копии",
+  "item.zetter.painting.name_field": "Поле имени",
+  "item.zetter.painting.unknown": "неизвестная",
+  "item.zetter.painting.unnamed": "Безымянная",
+  "item.zetter.paints": "Краски",
+  "item.zetter.palette": "Палитра",
+  "item.zetter.spruce_basic_frame": "Еловая рамка",
+  "item.zetter.spruce_plated_frame": "Еловая рамка с Шильдиком",
+  "item.zetter.warped_basic_frame": "Искажённая рамка",
+  "item.zetter.warped_plated_frame": "Искажённая рамка с Шильдиком"
+}
+```

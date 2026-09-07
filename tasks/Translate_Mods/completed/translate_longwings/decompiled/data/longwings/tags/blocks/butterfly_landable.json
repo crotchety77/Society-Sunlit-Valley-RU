@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "longwings:melon_butterfly_brew_block",
+    "longwings:apple_butterfly_brew_block",
+    "longwings:berry_butterfly_brew_block",
+    "#minecraft:flower_pots",
+    "#minecraft:flowers"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "longwings:block/netting"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 2 }, "model": "longwings:item/netting_2" },
+    { "predicate": { "custom_model_data": 3 }, "model": "longwings:item/netting_3" },
+    { "predicate": { "custom_model_data": 4 }, "model": "longwings:item/netting_4" },
+    { "predicate": { "custom_model_data": 5 }, "model": "longwings:item/netting_5" }
+
+  ]
+}

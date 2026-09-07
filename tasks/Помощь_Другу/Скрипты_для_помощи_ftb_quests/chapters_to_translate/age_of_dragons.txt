@@ -1,0 +1,534 @@
+# =========================================================================
+# ГЛАВА: age_of_dragons.snbt
+# Всего квестов: 30
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Age Of Dragons
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 4B4BF1FF89C31ACA] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Prudent Preparation
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&9Knowlwedge &fkeeps you alive.
+
+&aA Bestiary &fcontains information about most of the &1magical &fcreatures you may encounter possibly granting you a combat advantage.
+
+&2The manuscripts &fyou will need can be found within chests in caves , dragon roosts or graveyards.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4B4BF1FF89C31ACA ---
+
+
+=== [КВЕСТ 2 | ID: 2FB1578EBE95B902] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Studious and Strong
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&aThe Bestiary Lecturn &fwill allow you add chapters to your &abestiary &fby combining it with &2manuscripts.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2FB1578EBE95B902 ---
+
+
+=== [КВЕСТ 3 | ID: 57F0E543419B8D21] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Shining Silver
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Silver is a metal that can be found on the same level as gold and can be used to create tools and armor which are especially effective against undead.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 57F0E543419B8D21 ---
+
+
+=== [КВЕСТ 4 | ID: 7799076A92B03CA8] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Summoning Winter
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&bThe Ice dragon &dsummoning crystal &fis an item that can teleport a &bice dragon &fto you. To do so, use on a &ddragon &fto bind it and after, use when bound to teleport the &ddragon .
+
+After usage, the crystal will be unbound to the &ddragon &fand therefore you must use on the &ddragon &fagain to rebind the &dcrystal. 
+
+&dCrystals &fare bound to a &ddragon &fwhen a &0black &ddragon &fsilhouette appears on the &dcrystal. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7799076A92B03CA8 ---
+
+
+=== [КВЕСТ 5 | ID: 4E213C9D6719A0E0] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Summoning Thunder
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&9The lightning dragon &dsummoning crystal &fis an item that can teleport a &9lightning dragon &fto you. To do so, use on a &ddragon &fto bind it and after, use when bound to teleport the &ddragon .
+
+After usage, the crystal will be unbound to the &ddragon &fand therefore you must use on the &ddragon &fagain to rebind the &dcrystal. 
+
+&dCrystals &fare bound to a &ddragon &fwhen a &0black &ddragon &fsilhouette appears on the &dcrystal. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4E213C9D6719A0E0 ---
+
+
+=== [КВЕСТ 6 | ID: 49B6952745916F6A] ===
+EN_TITLE: Pixies
+RU_TITLE: 
+
+EN_SUBTITLE: Pixie Pals
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Pixies are small magical creatures that glow in the dark and may attempt to steal your items.
+
+They are found in pixie villages and can be captured  with a jar or befriended with cake.
+
+They also give special buffs respective to thier colour.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 49B6952745916F6A ---
+
+
+=== [КВЕСТ 7 | ID: 42115CD2D6BECADC] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Hiring Hippocampi
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Hippocampi are aquatic creatures with the head of a horse
+and the body of a fish which can be found swimming within the ocean and deep ocean biomes.
+
+They can be tamed with kelp and bred with prismarine crystals.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 42115CD2D6BECADC ---
+
+
+=== [КВЕСТ 8 | ID: 1A46CB18C1EBA3CC] ===
+EN_TITLE: Hippogryph
+RU_TITLE: 
+
+EN_SUBTITLE: Hippogryph come Home
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Hippogryphs are half eagle half horse hybrids that usually live on mountains.
+
+They can be tamed with 8 rabbit feet and bred with rabbit stew.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 1A46CB18C1EBA3CC ---
+
+
+=== [КВЕСТ 9 | ID: 08F7CB6DC5642787] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Gravemaster's Key
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+There is a &0dark fortress &flurking within &bcold &abiomes &fthat houses great rewards but equally &cpowerful &ffoes.
+
+In order to gain entry you will need to obtain the &3gravemasters key  &fwhich drops from &0dread liches.
+
+&0Dread liches &fcan also be found within &bcold biomes.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 08F7CB6DC5642787 ---
+
+
+=== [КВЕСТ 10 | ID: 739E8ACF6D6CB5F2] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Dark Fortress
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This &0impenetrable fortress &fmust be accessed with the &3gravemasters key. 
+
+Deep within you will find a partially incomplete &bice dragon forge &fwhich can be repaired and used to make &5dragonsteel.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 739E8ACF6D6CB5F2 ---
+
+
+=== [КВЕСТ 11 | ID: 3581698345B96E17] ===
+EN_TITLE: Slay Fire Dragons
+RU_TITLE: 
+
+EN_SUBTITLE: Wrath of the Inferno
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6Fire dragons &fcan be recognised by thier colours which range from fiery red , emerald green , bold yellow or smoky black.
+
+&6Fire dragons &fusally linger around any &abiome &fabove -0.5 degrees in temperature except jungles, savannahs and badlands. 
+
+Stages 1-3 prefer roosts on the surface , whilst stages 4-5 lurk in caverns underground.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3581698345B96E17 ---
+
+
+=== [КВЕСТ 12 | ID: 5FDFC696623E2BDA] ===
+EN_TITLE: Slay Lightning Dragons
+RU_TITLE: 
+
+EN_SUBTITLE: Wrath of Thunder
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&9Lightning dragons &fcan be recognised by their colours which range from amethyst purple, dark black copper brown or electric blue.
+
+&9Lightning dragons &fcan only be found in jungle , savannah and badlands &abiomes &fand are nocturnal creatures.
+
+Stage 1-3 &9lightning dragons &fare usually found in roosts on the surface whilst stage 4-5 are found underground in caverns.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5FDFC696623E2BDA ---
+
+
+=== [КВЕСТ 13 | ID: 76EA98DB3C884C58] ===
+EN_TITLE: Slay Ice Dragons
+RU_TITLE: 
+
+EN_SUBTITLE: Wrath of Winter
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&bIce dragons &fcan be recognised by thier colours which range from icy blue , gem blue , silver white or snowy white.
+
+&bIce dragons &fcan usually be found in &bcold &abiomes &franging from -0.5 degrees in temperature and below. Stage 1-3 dragons prefer roosts on the surface , whilst stage 4-5 dragons lurk in subterrean caverns .
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 76EA98DB3C884C58 ---
+
+
+=== [КВЕСТ 14 | ID: 6B949CDB464620FC] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Summoning Flame
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&6The fire dragon &dsummoning crystal &fis an item that can teleport a &6fire dragon &fto you. To do so, use on a &ddragon &fto bind it and after, use when bound to teleport the &ddragon .
+
+After usage, the crystal will be unbound to the &ddragon &fand therefore you must use on the &ddragon &fagain to rebind the &dcrystal. 
+
+&dCrystals &fare bound to a &ddragon &fwhen a &0black &ddragon &fsilhouette appears on the &dcrystal. 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6B949CDB464620FC ---
+
+
+=== [КВЕСТ 15 | ID: 415040716E8B4EDB] ===
+EN_TITLE: The Cyclops
+RU_TITLE: 
+
+EN_SUBTITLE: Crucifying the Cyclops
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The cyclops is a giant humanoid creature that can usually be found in the cyclops cove and savannah biomes.
+
+It's eye can be damaged with projectiles to make the fight easier.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 415040716E8B4EDB ---
+
+
+=== [КВЕСТ 16 | ID: 17CCA12D76F9F396] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Meddling with Medusa
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&2The Gorgon &fis a half human half serpent creature capable of &8petrifying &fit's victims with it's gaze.
+
+It will also attempt to &apoison &fand weaken you. Should you fight it,  an equipped blindfold will greatly aid you.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 17CCA12D76F9F396 ---
+
+
+=== [КВЕСТ 17 | ID: 0116C409C773F4A2] ===
+EN_TITLE: The Hydra
+RU_TITLE: 
+
+EN_SUBTITLE: Heads and Horrors
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&2The Hydra &fis a powerful multiheaded serpent which can be found in &2the hydra lair &fexclusive to swamp &abiomes.
+
+It is recommended to fight it with &6fire &fdamage to avoid it regenerating and growing new heads.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0116C409C773F4A2 ---
+
+
+=== [КВЕСТ 18 | ID: 2B2CFA2D079B5332] ===
+EN_TITLE: Tame a Dragon
+RU_TITLE: 
+
+EN_SUBTITLE: Mother of Dragons
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Wild &ddragons &fcannot be tamed. However upon slaying one you may obtain an egg that you can hatch to tame one for yourself.
+
+&6Fire dragon eggs &fmust be hatched in fire or lava.
+
+&bIce dragon eggs &fmust be hatched in water surrounded by ice.
+
+&9Lightning dragon &feggs must be hatched exposed to rain.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2B2CFA2D079B5332 ---
+
+
+=== [КВЕСТ 19 | ID: 290D9D572A5D6C04] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: End of An Era
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Long after the deaths of &6Cisco &fand &1the mysterious hero &fwho helped him defeat &4Fell King Arthas, &fthe  conflict continued between the descendants of &4Arthas&f and &6Cisco.
+
+The conflict lasted for hundreds of years before &6Cisco's &fdescendant &cArthur &fmade a bold move in marrying &4Arthas' &fdescendant &bSylvi &fcombining their bloodlines to end the conflict.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 290D9D572A5D6C04 ---
+
+
+=== [КВЕСТ 20 | ID: 292408BF95DC3F81] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Sovereign Sleeps
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&cArthur &fand &bSylvi's &ason &fwould inherit a power so great that &ahe &fcould warp reality and bend time itself. &aHe &fwould use his power to unite all the known realms under his fair and just rule.
+
+He lived for hundreds of years de-aging himself when he got too old increasing the chaotic &dtemporal energy &fwithin himself..
+
+This however would impact anyone who got too close to him stealing thier &1"time" &fand causing them to rapidly age eventually into dust.
+
+This made &ahim &fseverly lonely and one day leaving instructions on how to rule to his heir &ahe &fflew up into the sky and released all the &dtemporal energy &fback into the world ending &ahis &fown life in the process.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 292408BF95DC3F81 ---
+
+
+=== [КВЕСТ 21 | ID: 0D904A47C1EDA7DE] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Age of Dragons
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The released &5temporal energy &fwould have disastrous effects on the world empowering once docile &1magical &fcreatures , resurrecting ancient beasts, empowering existing hostile creatures and creating &8pockets underground &fwhere time would behave differently.
+
+One such &1magical &fbeast was the &dDragon. &fOnce passive docile creatures they became aggresive and began to hunt humans attacking thier settlements.
+
+With the &cpower &fin the blood of humans diluted and weakened through the ages none could stand against the threat they posed.
+
+Until..
+
+ 
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0D904A47C1EDA7DE ---
+
+
+=== [КВЕСТ 22 | ID: 32E7D93BB699594E] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Seeking Thunder
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &aeye &fof the &9lightning dragon &fcan be crafted using &9lightning  dragon &4blood &fand &5ender pearls &fand used to locate &9lightning dragons &fin the same way you would locate a &2stronghold.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 32E7D93BB699594E ---
+
+
+=== [КВЕСТ 23 | ID: 50D03004776882CB] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Seeking Flame
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &aeye &fof the &6fire dragon &fcan be crafted using &6fire  dragon &4blood &fand &5ender pearls &fand used to locate &6fire dragons &fin the same way you would locate a &2stronghold.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 50D03004776882CB ---
+
+
+=== [КВЕСТ 24 | ID: 42821297260C128F] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Seeking Winter
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &aeye &fof the &bice dragon &fcan be crafted using &bice  dragon &4blood &fand &5ender pearls &fand used to locate &bice dragons &fin the same way you would locate a &2stronghold.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 42821297260C128F ---
+
+
+=== [КВЕСТ 25 | ID: 630C84A0FD01DD37] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Dohaeras !
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This relic can be used to command tamed &ddragons&f to wander stay or follow you.
+
+It can also be set a home for tamed &ddragons.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 630C84A0FD01DD37 ---
+
+
+=== [КВЕСТ 26 | ID: 65747B80333E3613] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Forged in Flame
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Once you have completed a &5dragonforge &fyou may begin crafting &6dragonsteel &fby placing &ddragon &4blood &0within &5the forge &fand having a stage 3 - 5 &ddragon&f use thier breath attack on it.
+
+&6Dragonsteel &fcan be used to craft powerful tools and armor that will aid you in slaying even more powerful &5dragons.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 65747B80333E3613 ---
+
+
+=== [КВЕСТ 27 | ID: 2E78225F6244BF7A] ===
+EN_TITLE: Craft dreadsteel
+RU_TITLE: 
+
+EN_SUBTITLE: Dreadforged Steel
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&5Dreadsteel &fis the most powerful material that can be forged to combat &ddragons.
+
+Armor forged with &5dreadsteel &fprovide incredible defense and resistances whilst weapons forged in &5dreadsteel &fare unmatched in lethality.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 2E78225F6244BF7A ---
+
+
+=== [КВЕСТ 28 | ID: 5129A01A2DC55BB4] ===
+EN_TITLE: Craft Dreadsteel Armor
+RU_TITLE: 
+
+EN_SUBTITLE: Dreadknight
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&5Dreadsteel Armor &fprovides immunity to damage from &6fire &f,&9lightning &fand &bspikes &fmaking it especially good against &ddragons.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 5129A01A2DC55BB4 ---
+
+
+=== [КВЕСТ 29 | ID: 031859030D60C602] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Dreadforged Scythe
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This weapon is capable of firing armor piercing projectiles which can easily keep up with dragons flying and high speeds.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 031859030D60C602 ---
+
+
+=== [КВЕСТ 30 | ID: 635DD0DAC9CF17D5] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Dreadforged Shield
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This shield incinerates incoming projectiles and burns melee attacks when blocking.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 635DD0DAC9CF17D5 ---
+
+

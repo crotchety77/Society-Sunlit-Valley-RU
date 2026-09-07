@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Temporary / scratch / backup files
+scratch/
+backups/
+temp*
+*.class
+*.bak
+*.tmp
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Agent / AI internal state
+.gemini/

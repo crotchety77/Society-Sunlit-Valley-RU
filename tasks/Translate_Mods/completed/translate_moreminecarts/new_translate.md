@@ -1,0 +1,191 @@
+# Локализация мода: More Minecarts (Расширение железных дорог) (`moreminecarts`)
+
+**JAR:** `moreminecarts-1.8.3.jar` | **Всего строк:** 138 | **Готово к применению:** 138
+
+## 1. Визуальный контекст и оформление
+
+### Основные рельсы и стрелки:
+* **Поворотный рельс** (`block.moreminecarts.rail_turn`) / **Параллельный рельс** (`block.moreminecarts.parallel_rail`)
+* **Пересечение рельсов** (`block.moreminecarts.cross_rail`) / **Рельсовый трамплин** (`block.moreminecarts.rail_jump`)
+* **Голографический рельс** (`block.moreminecarts.projector_rail`)
+* **Деревянные рельсы:** *Деревянный рельс*, *Деревянный поворотный рельс*, *Деревянное пересечение рельсов*, *Деревянный трамплин*.
+* **Маглев-пути:** *Маглев-рельс*, *Энергорельс маглева*, *Маглев-трамплин*.
+* **Световые и турбо-пути:** *Светоскоростной рельс*, *Турбо-рельс*.
+* **Специальные рельсы:** *Биолюминесцентный рельс*, *Фиксирующий рельс*, *Поршневой рельс-подъёмник*, *Сигнальный стрелочный рельс*, *Рельсы с датчиком цвета* (16 цветов).
+
+### Механизмы и логистика:
+* **Погрузчик вагонеток** (`block.moreminecarts.minecart_loader`)
+* **Разгрузчик вагонеток** (`block.moreminecarts.minecart_unloader`)
+* **Фильтрующий разгрузчик** (`block.moreminecarts.filter_unloader`)
+* **Стазис-камера жемчуга Края** (`block.moreminecarts.pearl_stasis_chamber`)
+* **Генератор голографических лесов** (`block.moreminecarts.holo_scaffold_generator`)
+
+### Специальные вагонетки и тележки:
+* **Вагонетка с ловчей сетью** (`item.moreminecarts.minecart_with_net`)
+* **Вагонетка с прогрузчиком чанков** (`item.moreminecarts.minecart_with_chunk_loader`)
+* **Вагонетка со стазис-камерой** (`item.moreminecarts.pearl_stasis_minecart`)
+* **Сигнальная вагонетка** (`item.moreminecarts.flag_cart`)
+* **Вагонетка с цистерной** (`item.moreminecarts.tank_cart`) / **с аккумулятором** (`item.moreminecarts.battery_cart`)
+* **Вагонетка с костром** (`item.moreminecarts.campfire_cart`) / **костром душ** / **эндер-костром**
+* **Ручные тележки:** *Деревянная ручная тележка*, *Железная ручная тележка*, *Поршневая тележка*, *Липкая поршневая тележка*.
+* **Аэродинамические вагонетки:** скоростные варианты всех типов вагонеток.
+
+---
+
+## 2. Предлагаемый перевод (JSON)
+
+```json
+{
+  "itemGroup.moreminecarts": "Больше вагонеток и рельсов",
+  "lore.glass_cactus": "§6§oМожет расти только в пустынном климате!",
+  "block.moreminecarts.rail_turn": "Поворотный рельс",
+  "block.moreminecarts.parallel_rail": "Параллельный рельс",
+  "block.moreminecarts.cross_rail": "Пересечение рельсов",
+  "block.moreminecarts.projector_rail": "Голографический рельс",
+  "block.moreminecarts.rail_jump": "Рельсовый трамплин",
+  "block.moreminecarts.wooden_rail": "Деревянный рельс",
+  "block.moreminecarts.wooden_rail_turn": "Деревянный поворотный рельс",
+  "block.moreminecarts.wooden_parallel_rail": "Деревянный параллельный рельс",
+  "block.moreminecarts.wooden_cross_rail": "Деревянное пересечение рельсов",
+  "block.moreminecarts.wooden_projector_rail": "Деревянный голографический рельс",
+  "block.moreminecarts.wooden_rail_jump": "Деревянный рельсовый трамплин",
+  "block.moreminecarts.maglev_rail": "Маглев-рельс",
+  "block.moreminecarts.maglev_rail_turn": "Поворотный маглев-рельс",
+  "block.moreminecarts.maglev_parallel_rail": "Параллельный маглев-рельс",
+  "block.moreminecarts.maglev_cross_rail": "Пересечение маглев-рельсов",
+  "block.moreminecarts.maglev_projector_rail": "Голографический маглев-рельс",
+  "block.moreminecarts.maglev_rail_jump": "Маглев-трамплин",
+  "block.moreminecarts.maglev_powered_rail": "Энергорельс маглева",
+  "block.moreminecarts.lightspeed_rail": "Светоскоростной рельс",
+  "block.moreminecarts.lightspeed_cross_rail": "Пересечение светоскоростных рельсов",
+  "block.moreminecarts.lightspeed_rail_jump": "Светоскоростной трамплин",
+  "block.moreminecarts.lightspeed_powered_rail": "Турбо-рельс",
+  "block.moreminecarts.color_detector_rail": "Рельс с датчиком цвета",
+  "block.moreminecarts.bioluminescent_rail": "Биолюминесцентный рельс",
+  "block.moreminecarts.locking_rail": "Фиксирующий рельс",
+  "block.moreminecarts.powered_locking_rail": "Активируемый фиксирующий рельс",
+  "block.moreminecarts.piston_lifter_rail": "Поршневой рельс-подъёмник",
+  "block.moreminecarts.arithmetic_rail": "Сигнальный стрелочный рельс",
+  "block.moreminecarts.minecart_loader": "Погрузчик вагонеток",
+  "block.moreminecarts.minecart_unloader": "Разгрузчик вагонеток",
+  "block.moreminecarts.filter_unloader": "Фильтрующий разгрузчик",
+  "block.moreminecarts.pearl_stasis_chamber": "Стазис-камера жемчуга Края",
+  "block.moreminecarts.silica_steel_block": "Блок кремневой стали",
+  "block.moreminecarts.corrugated_silica_steel": "Гофрированная кремневая сталь",
+  "block.moreminecarts.silica_steel_pillar": "Колонна из кремневой стали",
+  "block.moreminecarts.chunkrodite_block": "Блок чанкродита",
+  "block.moreminecarts.holo_scaffold_generator": "Генератор голографических лесов",
+  "block.moreminecarts.potted_glass_cactus": "Кристаллический кактус в горшке",
+  "block.moreminecarts.potted_beet": "Свёкла в горшке",
+  "block.moreminecarts.color_detector_rail_white": "Рельс с датчиком цвета (Белый)",
+  "block.moreminecarts.color_detector_rail_orange": "Рельс с датчиком цвета (Оранжевый)",
+  "block.moreminecarts.color_detector_rail_magenta": "Рельс с датчиком цвета (Пурпурный)",
+  "block.moreminecarts.color_detector_rail_light_blue": "Рельс с датчиком цвета (Голубой)",
+  "block.moreminecarts.color_detector_rail_yellow": "Рельс с датчиком цвета (Жёлтый)",
+  "block.moreminecarts.color_detector_rail_lime": "Рельс с датчиком цвета (Лаймовый)",
+  "block.moreminecarts.color_detector_rail_pink": "Рельс с датчиком цвета (Розовый)",
+  "block.moreminecarts.color_detector_rail_gray": "Рельс с датчиком цвета (Серый)",
+  "block.moreminecarts.color_detector_rail_light_gray": "Рельс с датчиком цвета (Светло-серый)",
+  "block.moreminecarts.color_detector_rail_cyan": "Рельс с датчиком цвета (Бирюзовый)",
+  "block.moreminecarts.color_detector_rail_purple": "Рельс с датчиком цвета (Фиолетовый)",
+  "block.moreminecarts.color_detector_rail_blue": "Рельс с датчиком цвета (Синий)",
+  "block.moreminecarts.color_detector_rail_brown": "Рельс с датчиком цвета (Коричневый)",
+  "block.moreminecarts.color_detector_rail_green": "Рельс с датчиком цвета (Зелёный)",
+  "block.moreminecarts.color_detector_rail_red": "Рельс с датчиком цвета (Красный)",
+  "block.moreminecarts.color_detector_rail_black": "Рельс с датчиком цвета (Чёрный)",
+  "item.moreminecarts.minecart_with_net": "Вагонетка с ловчей сетью",
+  "item.moreminecarts.minecart_with_chunk_loader": "Вагонетка с прогрузчиком чанков",
+  "item.moreminecarts.pearl_stasis_minecart": "Вагонетка со стазис-камерой",
+  "tooltip.moreminecarts.pearl_stasis.note": "Используется для кнопок SOS, экстренной эвакуации и станций вызова.",
+  "tooltip.moreminecarts.pearl_stasis.details_2": "При активации редстоуном мгновенно телепортирует владельца к себе из любой точки мира.",
+  "tooltip.moreminecarts.pearl_stasis.details_1": "Положите Жемчуг Края (ПКМ), чтобы привязать камеру к себе.",
+  "tooltip.moreminecarts.pearl_stasis.short": "Устройство удалённой телепортации игрока.",
+  "item.moreminecarts.flag_cart": "Сигнальная вагонетка",
+  "item.moreminecarts.tank_cart": "Вагонетка с цистерной",
+  "item.moreminecarts.battery_cart": "Вагонетка с аккумулятором",
+  "item.moreminecarts.campfire_cart": "Вагонетка с костром",
+  "item.moreminecarts.soulfire_cart": "Вагонетка с костром душ",
+  "item.moreminecarts.endfire_cart": "Вагонетка с эндер-костром",
+  "item.moreminecarts.wooden_pushcart": "Деревянная ручная тележка",
+  "item.moreminecarts.iron_pushcart": "Железная ручная тележка",
+  "item.moreminecarts.piston_pushcart": "Поршневая тележка",
+  "item.moreminecarts.sticky_piston_pushcart": "Липкая поршневая тележка",
+  "item.moreminecarts.coupler": "Пружинная сцепка",
+  "item.moreminecarts.high_speed_upgrade": "Аэродинамический комплект улучшения",
+  "item.moreminecarts.rail_signal_white": "Сигнал рельсов (Белый)",
+  "item.moreminecarts.rail_signal_orange": "Сигнал рельсов (Оранжевый)",
+  "item.moreminecarts.rail_signal_magenta": "Сигнал рельсов (Пурпурный)",
+  "item.moreminecarts.rail_signal_light_blue": "Сигнал рельсов (Голубой)",
+  "item.moreminecarts.rail_signal_yellow": "Сигнал рельсов (Жёлтый)",
+  "item.moreminecarts.rail_signal_lime": "Сигнал рельсов (Лаймовый)",
+  "item.moreminecarts.rail_signal_pink": "Сигнал рельсов (Розовый)",
+  "item.moreminecarts.rail_signal_gray": "Сигнал рельсов (Серый)",
+  "item.moreminecarts.rail_signal_light_gray": "Сигнал рельсов (Светло-серый)",
+  "item.moreminecarts.rail_signal_cyan": "Сигнал рельсов (Бирюзовый)",
+  "item.moreminecarts.rail_signal_purple": "Сигнал рельсов (Фиолетовый)",
+  "item.moreminecarts.rail_signal_blue": "Сигнал рельсов (Синий)",
+  "item.moreminecarts.rail_signal_brown": "Сигнал рельсов (Коричневый)",
+  "item.moreminecarts.rail_signal_green": "Сигнал рельсов (Зелёный)",
+  "item.moreminecarts.rail_signal_red": "Сигнал рельсов (Красный)",
+  "item.moreminecarts.rail_signal_black": "Сигнал рельсов (Чёрный)",
+  "item.moreminecarts.holo_remote": "Пульт голографических лесов",
+  "item.moreminecarts.backwards_holo_remote": "Перевёрнутый пульт голографических лесов",
+  "item.moreminecarts.simple_holo_remote": "Разряженный пульт голографических лесов",
+  "item.moreminecarts.broken_holo_remote": "Разбитый пульт голографических лесов",
+  "item.moreminecarts.levitation_powder": "Смазка левитации",
+  "item.moreminecarts.silica_steel_mix": "Смесь кремневой стали",
+  "item.moreminecarts.silica_steel": "Слиток кремневой стали",
+  "item.moreminecarts.chunkrodite": "Чанкродит",
+  "tooltip.moreminecarts.chunk_loader.note": "Используется для автономных грузовых поездов через весь мир.",
+  "tooltip.moreminecarts.chunk_loader.fuel_3": "▪ Осколок аметиста: §e30 сек§7 | Алмаз: §e9 ч§7 | Незерит: §e48 ч§7",
+  "tooltip.moreminecarts.chunk_loader.fuel_2": "▪ Уголь: §e5 мин§7 | Редстоун / Лазурит: §e45 мин§7",
+  "tooltip.moreminecarts.chunk_loader.fuel_1": "▪ Чанкродит: §e15 мин§7 | Блок чанкродита: §e2 ч 15 мин§7",
+  "tooltip.moreminecarts.chunk_loader.fuel_header": "Топливо и время работы:",
+  "tooltip.moreminecarts.chunk_loader.details_1": "Непрерывно удерживает активным чанк, в котором находится в данный момент, прогружая путь перед собой.",
+  "tooltip.moreminecarts.chunk_loader.short": "Мобильный прогрузчик чанков для транспортных путей.",
+  "block.moreminecarts.chunkrodite_block.desc": "Топливо для Вагонетки с прогрузчиком чанков (2 часа 15 минут)",
+  "item.moreminecarts.chunkrodite.desc": "Топливо для Вагонетки с прогрузчиком чанков (15 минут)",
+  "item.moreminecarts.hard_light_lens": "Линза твёрдого света",
+  "item.moreminecarts.transport_tank": "Транспортная цистерна",
+  "item.moreminecarts.transport_battery": "Транспортный аккумулятор",
+  "entity.moreminecarts.minecart_with_net": "Вагонетка с ловчей сетью",
+  "entity.moreminecarts.minecart_with_chunk_loader": "Вагонетка с прогрузчиком чанков",
+  "entity.moreminecarts.minecart_with_stasis": "Вагонетка со стазис-камерой",
+  "entity.moreminecarts.flag_cart": "Сигнальная вагонетка",
+  "entity.moreminecarts.tank_cart": "Вагонетка с цистерной",
+  "entity.moreminecarts.battery_cart": "Вагонетка с аккумулятором",
+  "entity.moreminecarts.campfire_cart": "Вагонетка с костром",
+  "entity.moreminecarts.soulfire_cart": "Вагонетка с костром душ",
+  "entity.moreminecarts.endfire_cart": "Вагонетка с эндер-костром",
+  "entity.moreminecarts.wooden_pushcart": "Деревянная ручная тележка",
+  "entity.moreminecarts.iron_pushcart": "Железная ручная тележка",
+  "entity.moreminecarts.piston_pushcart": "Поршневая тележка",
+  "entity.moreminecarts.sticky_piston_pushcart": "Липкая поршневая тележка",
+  "entity.moreminecarts.high_speed_minecart": "Аэродинамическая вагонетка",
+  "entity.moreminecarts.high_speed_chest_minecart": "Аэродинамическая грузовая вагонетка",
+  "entity.moreminecarts.high_speed_tnt_minecart": "Аэродинамическая вагонетка с динамитом",
+  "entity.moreminecarts.high_speed_command_block_minecart": "Аэродинамическая вагонетка с командным блоком",
+  "entity.moreminecarts.high_speed_hopper_minecart": "Аэродинамическая загрузочная вагонетка",
+  "entity.moreminecarts.high_speed_spawner_minecart": "Аэродинамическая вагонетка с рассадником",
+  "entity.moreminecarts.high_speed_furnace_minecart": "Аэродинамическая самоходная вагонетка",
+  "entity.moreminecarts.high_speed_net_minecart": "Аэродинамическая вагонетка с ловчей сетью",
+  "entity.moreminecarts.high_speed_chunk_loader_minecart": "Аэродинамическая вагонетка с прогрузчиком чанков",
+  "entity.moreminecarts.high_speed_stasis_minecart": "Аэродинамическая вагонетка со стазис-камерой",
+  "entity.moreminecarts.high_speed_flag_cart": "Аэродинамическая сигнальная вагонетка",
+  "entity.moreminecarts.high_speed_tank_minecart": "Аэродинамическая вагонетка с цистерной",
+  "entity.moreminecarts.high_speed_battery_minecart": "Аэродинамическая вагонетка с аккумулятором",
+  "entity.moreminecarts.high_speed_campfire_minecart": "Аэродинамическая вагонетка с костром",
+  "entity.moreminecarts.high_speed_soulfire_minecart": "Аэродинамическая вагонетка с костром душ",
+  "entity.moreminecarts.high_speed_endfire_minecart": "Аэродинамическая вагонетка с эндер-костром",
+  "entity.moreminecarts.high_speed_pushcart": "Аэродинамическая ручная тележка",
+  "entity.moreminecarts.high_speed_piston_pushcart": "Аэродинамическая поршневая тележка",
+  "entity.moreminecarts.high_speed_sticky_piston_pushcart": "Аэродинамическая липкая поршневая тележка",
+  "block.moreminecarts.chunk_loader": "Топливный прогрузчик чанков",
+  "block.moreminecarts.organic_glass": "Органическое стекло",
+  "block.moreminecarts.organic_glass_pane": "Органическая стеклянная панель",
+  "block.moreminecarts.chiseled_organic_glass": "Тепличное стекло",
+  "block.moreminecarts.chiseled_organic_glass_pane": "Тепличная стеклянная панель",
+  "block.moreminecarts.glass_cactus": "Кристаллический кактус",
+  "item.moreminecarts.glass_spines": "Стеклянные шипы"
+}
+```

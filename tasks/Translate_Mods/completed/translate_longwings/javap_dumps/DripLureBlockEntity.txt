@@ -1,0 +1,578 @@
+Compiled from "DripLureBlockEntity.java"
+public class com.cicada.longwings.block.blockentity.DripLureBlockEntity extends net.minecraft.world.level.block.entity.BlockEntity {
+  int a;
+
+  public com.cicada.longwings.block.blockentity.DripLureBlockEntity(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: aload_0
+       1: getstatic     #38                 // Field com/cicada/longwings/block/LongwingsBlocks.DRIPLURE_BLOCK_ENTITY:Lnet/minecraft/world/level/block/entity/BlockEntityType;
+       4: aload_1
+       5: aload_2
+       6: invokespecial #41                 // Method net/minecraft/world/level/block/entity/BlockEntity."<init>":(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+       9: aload_0
+      10: iconst_0
+      11: putfield      #43                 // Field a:I
+      14: return
+
+  public void tick();
+    Code:
+       0: aload_0
+       1: invokevirtual #55                 // Method m_58904_:()Lnet/minecraft/world/level/Level;
+       4: ifnull        1202
+       7: aload_0
+       8: invokevirtual #55                 // Method m_58904_:()Lnet/minecraft/world/level/Level;
+      11: invokevirtual #61                 // Method net/minecraft/world/level/Level.m_5776_:()Z
+      14: ifne          1202
+      17: aload_0
+      18: invokevirtual #55                 // Method m_58904_:()Lnet/minecraft/world/level/Level;
+      21: aload_0
+      22: invokevirtual #65                 // Method m_58899_:()Lnet/minecraft/core/BlockPos;
+      25: invokevirtual #69                 // Method net/minecraft/world/level/Level.m_46749_:(Lnet/minecraft/core/BlockPos;)Z
+      28: ifeq          1202
+      31: aload_0
+      32: invokevirtual #55                 // Method m_58904_:()Lnet/minecraft/world/level/Level;
+      35: astore_1
+      36: aload_0
+      37: invokevirtual #65                 // Method m_58899_:()Lnet/minecraft/core/BlockPos;
+      40: astore_2
+      41: aload_0
+      42: invokevirtual #73                 // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      45: getstatic     #77                 // Field com/cicada/longwings/block/LongwingsBlocks.DRIPLURE:Lcom/cicada/longwings/block/DripLure;
+      48: invokevirtual #83                 // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      51: istore_3
+      52: aload_0
+      53: invokevirtual #73                 // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      56: getstatic     #87                 // Field com/cicada/longwings/block/LongwingsBlocks.MELON_BUTTERFLY_DRIPLURE:Lcom/cicada/longwings/block/DripLure$FilledDripLure;
+      59: invokevirtual #83                 // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      62: istore        4
+      64: aload_0
+      65: invokevirtual #73                 // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      68: getstatic     #90                 // Field com/cicada/longwings/block/LongwingsBlocks.APPLE_BUTTERFLY_DRIPLURE:Lcom/cicada/longwings/block/DripLure$FilledDripLure;
+      71: invokevirtual #83                 // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      74: istore        5
+      76: aload_0
+      77: invokevirtual #73                 // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      80: getstatic     #93                 // Field com/cicada/longwings/block/LongwingsBlocks.BERRY_BUTTERFLY_DRIPLURE:Lcom/cicada/longwings/block/DripLure$FilledDripLure;
+      83: invokevirtual #83                 // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      86: istore        6
+      88: aload_0
+      89: invokevirtual #55                 // Method m_58904_:()Lnet/minecraft/world/level/Level;
+      92: aload_2
+      93: invokevirtual #98                 // Method net/minecraft/core/BlockPos.m_7495_:()Lnet/minecraft/core/BlockPos;
+      96: invokevirtual #102                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      99: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockState.m_60795_:()Z
+     102: istore        7
+     104: aload_0
+     105: invokevirtual #55                 // Method m_58904_:()Lnet/minecraft/world/level/Level;
+     108: aload_2
+     109: invokevirtual #108                // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+     112: invokevirtual #102                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     115: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockState.m_60795_:()Z
+     118: istore        8
+     120: iload_3
+     121: ifeq          132
+     124: aload_0
+     125: iconst_0
+     126: putfield      #43                 // Field a:I
+     129: goto          1202
+     132: aload_0
+     133: dup
+     134: getfield      #43                 // Field a:I
+     137: iconst_1
+     138: iadd
+     139: putfield      #43                 // Field a:I
+     142: aload_0
+     143: getfield      #43                 // Field a:I
+     146: sipush        1200
+     149: if_icmpge     168
+     152: aload_1
+     153: invokevirtual #112                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     156: invokeinterface #118,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188500_:()D
+     161: ldc2_w        #119                // double 0.0020000000949949026d
+     164: dcmpg
+     165: ifgt          1202
+     168: new           #122                // class java/util/Random
+     171: dup
+     172: invokespecial #124                // Method java/util/Random."<init>":()V
+     175: astore        9
+     177: bipush        15
+     179: istore        10
+     181: fconst_1
+     182: aload_1
+     183: invokevirtual #112                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     186: invokeinterface #128,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     191: fconst_2
+     192: fdiv
+     193: fadd
+     194: fstore        11
+     196: iconst_m1
+     197: istore        12
+     199: iload         7
+     201: ifeq          217
+     204: bipush        -6
+     206: istore        12
+     208: iload         8
+     210: ifeq          217
+     213: bipush        -3
+     215: istore        12
+     217: aload_1
+     218: invokevirtual #112                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     221: invokeinterface #128,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     226: ldc           #129                // float 0.2f
+     228: fcmpg
+     229: ifgt          1051
+     232: aload_2
+     233: invokevirtual #133                // Method net/minecraft/core/BlockPos.m_123341_:()I
+     236: aload         9
+     238: iload         10
+     240: iconst_2
+     241: imul
+     242: invokevirtual #137                // Method java/util/Random.nextInt:(I)I
+     245: iload         10
+     247: isub
+     248: iadd
+     249: istore        13
+     251: aload_2
+     252: invokevirtual #140                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     255: iload         12
+     257: iadd
+     258: aload         9
+     260: bipush        7
+     262: invokevirtual #137                // Method java/util/Random.nextInt:(I)I
+     265: iadd
+     266: istore        14
+     268: aload_2
+     269: invokevirtual #143                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     272: aload         9
+     274: iload         10
+     276: iconst_2
+     277: imul
+     278: invokevirtual #137                // Method java/util/Random.nextInt:(I)I
+     281: iload         10
+     283: isub
+     284: iadd
+     285: istore        15
+     287: new           #95                 // class net/minecraft/core/BlockPos
+     290: dup
+     291: iload         13
+     293: iload         14
+     295: iload         15
+     297: invokespecial #146                // Method net/minecraft/core/BlockPos."<init>":(III)V
+     300: astore        16
+     302: aload_1
+     303: aload         16
+     305: invokevirtual #69                 // Method net/minecraft/world/level/Level.m_46749_:(Lnet/minecraft/core/BlockPos;)Z
+     308: ifeq          1051
+     311: aload_1
+     312: aload         16
+     314: invokevirtual #102                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     317: astore        17
+     319: iconst_0
+     320: istore        18
+     322: iload         18
+     324: bipush        15
+     326: if_icmpge     507
+     329: new           #148                // class net/minecraft/world/entity/item/ItemEntity
+     332: dup
+     333: aload_0
+     334: getfield      #152                // Field f_58857_:Lnet/minecraft/world/level/Level;
+     337: dconst_0
+     338: dconst_0
+     339: dconst_0
+     340: getstatic     #158                // Field net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+     343: invokespecial #161                // Method net/minecraft/world/entity/item/ItemEntity."<init>":(Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V
+     346: astore        19
+     348: new           #14                 // class net/minecraft/world/level/ClipContext
+     351: dup
+     352: aload         16
+     354: invokevirtual #165                // Method net/minecraft/core/BlockPos.m_252807_:()Lnet/minecraft/world/phys/Vec3;
+     357: aload_2
+     358: invokevirtual #165                // Method net/minecraft/core/BlockPos.m_252807_:()Lnet/minecraft/world/phys/Vec3;
+     361: getstatic     #169                // Field net/minecraft/world/level/ClipContext$Block.COLLIDER:Lnet/minecraft/world/level/ClipContext$Block;
+     364: getstatic     #173                // Field net/minecraft/world/level/ClipContext$Fluid.NONE:Lnet/minecraft/world/level/ClipContext$Fluid;
+     367: aload         19
+     369: invokespecial #176                // Method net/minecraft/world/level/ClipContext."<init>":(Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/level/ClipContext$Block;Lnet/minecraft/world/level/ClipContext$Fluid;Lnet/minecraft/world/entity/Entity;)V
+     372: astore        20
+     374: aload_1
+     375: aload         20
+     377: invokevirtual #180                // Method net/minecraft/world/level/Level.m_45547_:(Lnet/minecraft/world/level/ClipContext;)Lnet/minecraft/world/phys/BlockHitResult;
+     380: invokevirtual #186                // Method net/minecraft/world/phys/BlockHitResult.m_6662_:()Lnet/minecraft/world/phys/HitResult$Type;
+     383: getstatic     #190                // Field net/minecraft/world/phys/HitResult$Type.BLOCK:Lnet/minecraft/world/phys/HitResult$Type;
+     386: if_acmpne     507
+     389: aload_1
+     390: aload_1
+     391: aload         20
+     393: invokevirtual #180                // Method net/minecraft/world/level/Level.m_45547_:(Lnet/minecraft/world/level/ClipContext;)Lnet/minecraft/world/phys/BlockHitResult;
+     396: invokevirtual #193                // Method net/minecraft/world/phys/BlockHitResult.m_82425_:()Lnet/minecraft/core/BlockPos;
+     399: invokevirtual #102                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     402: astore        21
+     404: aload         21
+     406: invokevirtual #196                // Method net/minecraft/world/level/block/state/BlockState.m_280296_:()Z
+     409: ifeq          507
+     412: aload         21
+     414: getstatic     #200                // Field com/cicada/longwings/block/LongwingsBlocks.NETTING:Lcom/cicada/longwings/block/NettingBlock;
+     417: invokevirtual #83                 // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     420: ifne          507
+     423: aload_2
+     424: invokevirtual #133                // Method net/minecraft/core/BlockPos.m_123341_:()I
+     427: aload         9
+     429: iload         10
+     431: iconst_2
+     432: imul
+     433: invokevirtual #137                // Method java/util/Random.nextInt:(I)I
+     436: iload         10
+     438: isub
+     439: iadd
+     440: istore        13
+     442: aload_2
+     443: invokevirtual #140                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     446: iload         12
+     448: iadd
+     449: aload         9
+     451: bipush        7
+     453: invokevirtual #137                // Method java/util/Random.nextInt:(I)I
+     456: iadd
+     457: istore        14
+     459: aload_2
+     460: invokevirtual #143                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     463: aload         9
+     465: iload         10
+     467: iconst_2
+     468: imul
+     469: invokevirtual #137                // Method java/util/Random.nextInt:(I)I
+     472: iload         10
+     474: isub
+     475: iadd
+     476: istore        15
+     478: new           #95                 // class net/minecraft/core/BlockPos
+     481: dup
+     482: iload         13
+     484: iload         14
+     486: iload         15
+     488: invokespecial #146                // Method net/minecraft/core/BlockPos."<init>":(III)V
+     491: astore        16
+     493: aload_1
+     494: aload         16
+     496: invokevirtual #102                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     499: astore        17
+     501: iinc          18, 1
+     504: goto          322
+     507: aload         17
+     509: invokevirtual #196                // Method net/minecraft/world/level/block/state/BlockState.m_280296_:()Z
+     512: ifne          1051
+     515: aload_1
+     516: invokevirtual #203                // Method net/minecraft/world/level/Level.m_46462_:()Z
+     519: ifeq          528
+     522: invokestatic  #209                // Method com/cicada/longwings/entity/ButterflyVariant.getMothVariantPool:()[Lcom/cicada/longwings/entity/ButterflyVariant;
+     525: goto          531
+     528: invokestatic  #212                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyVariantPool:()[Lcom/cicada/longwings/entity/ButterflyVariant;
+     531: astore        18
+     533: new           #216                // class java/util/ArrayList
+     536: dup
+     537: invokespecial #217                // Method java/util/ArrayList."<init>":()V
+     540: astore        19
+     542: new           #216                // class java/util/ArrayList
+     545: dup
+     546: invokespecial #217                // Method java/util/ArrayList."<init>":()V
+     549: astore        20
+     551: iconst_0
+     552: istore        21
+     554: iload         21
+     556: aload         18
+     558: arraylength
+     559: if_icmpge     769
+     562: aload         18
+     564: iload         21
+     566: aaload
+     567: astore        22
+     569: iconst_0
+     570: istore        23
+     572: aload         22
+     574: invokevirtual #222                // Method com/cicada/longwings/entity/ButterflyVariant.minTemp:()F
+     577: ldc           #223                // float 0.9f
+     579: fcmpl
+     580: ifge          594
+     583: aload         22
+     585: invokevirtual #226                // Method com/cicada/longwings/entity/ButterflyVariant.maxTemp:()F
+     588: ldc           #223                // float 0.9f
+     590: fcmpl
+     591: iflt          598
+     594: iconst_1
+     595: goto          599
+     598: iconst_0
+     599: istore        24
+     601: aload         22
+     603: invokevirtual #222                // Method com/cicada/longwings/entity/ButterflyVariant.minTemp:()F
+     606: ldc           #227                // float 0.4f
+     608: fcmpl
+     609: ifgt          623
+     612: aload         22
+     614: invokevirtual #226                // Method com/cicada/longwings/entity/ButterflyVariant.maxTemp:()F
+     617: ldc           #227                // float 0.4f
+     619: fcmpl
+     620: ifle          649
+     623: aload         22
+     625: invokevirtual #222                // Method com/cicada/longwings/entity/ButterflyVariant.minTemp:()F
+     628: ldc           #223                // float 0.9f
+     630: fcmpg
+     631: iflt          645
+     634: aload         22
+     636: invokevirtual #226                // Method com/cicada/longwings/entity/ButterflyVariant.maxTemp:()F
+     639: ldc           #223                // float 0.9f
+     641: fcmpg
+     642: ifge          649
+     645: iconst_1
+     646: goto          650
+     649: iconst_0
+     650: istore        25
+     652: aload         22
+     654: invokevirtual #222                // Method com/cicada/longwings/entity/ButterflyVariant.minTemp:()F
+     657: ldc           #227                // float 0.4f
+     659: fcmpg
+     660: ifle          674
+     663: aload         22
+     665: invokevirtual #226                // Method com/cicada/longwings/entity/ButterflyVariant.maxTemp:()F
+     668: ldc           #227                // float 0.4f
+     670: fcmpg
+     671: ifgt          678
+     674: iconst_1
+     675: goto          679
+     678: iconst_0
+     679: istore        26
+     681: iload         4
+     683: ifeq          691
+     686: iload         24
+     688: ifne          711
+     691: iload         5
+     693: ifeq          701
+     696: iload         25
+     698: ifne          711
+     701: iload         6
+     703: ifeq          715
+     706: iload         26
+     708: ifeq          715
+     711: bipush        7
+     713: istore        23
+     715: iconst_0
+     716: istore        27
+     718: iload         27
+     720: aload         22
+     722: invokevirtual #230                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflySpawnRarity:()I
+     725: iload         23
+     727: iadd
+     728: if_icmpge     763
+     731: aload         19
+     733: aload         22
+     735: invokevirtual #234                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyStringId:()Ljava/lang/String;
+     738: invokeinterface #238,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     743: pop
+     744: aload         20
+     746: aload         22
+     748: invokevirtual #242                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflySize:()Lcom/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes;
+     751: invokeinterface #238,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     756: pop
+     757: iinc          27, 1
+     760: goto          718
+     763: iinc          21, 1
+     766: goto          554
+     769: aload_1
+     770: invokevirtual #112                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     773: aload         19
+     775: invokeinterface #245,  1          // InterfaceMethod java/util/List.size:()I
+     780: invokeinterface #248,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     785: istore        21
+     787: aload         19
+     789: iload         21
+     791: invokeinterface #252,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     796: checkcast     #254                // class java/lang/String
+     799: astore        22
+     801: aload         20
+     803: iload         21
+     805: invokeinterface #252,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     810: checkcast     #25                 // class com/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes
+     813: astore        23
+     815: aload_1
+     816: invokevirtual #203                // Method net/minecraft/world/level/Level.m_46462_:()Z
+     819: ifeq          835
+     822: getstatic     #260                // Field com/cicada/longwings/entity/LongwingsEntityTypes.MOTH:Lnet/minecraft/world/entity/EntityType;
+     825: aload_1
+     826: invokevirtual #266                // Method net/minecraft/world/entity/EntityType.m_20615_:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+     829: checkcast     #268                // class com/cicada/longwings/entity/ButterflyEntity
+     832: goto          845
+     835: getstatic     #271                // Field com/cicada/longwings/entity/LongwingsEntityTypes.BUTTERFLY:Lnet/minecraft/world/entity/EntityType;
+     838: aload_1
+     839: invokevirtual #266                // Method net/minecraft/world/entity/EntityType.m_20615_:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+     842: checkcast     #268                // class com/cicada/longwings/entity/ButterflyEntity
+     845: astore        24
+     847: aload         24
+     849: iload         13
+     851: i2f
+     852: ldc_w         #272                // float 0.5f
+     855: fadd
+     856: f2d
+     857: iload         14
+     859: i2d
+     860: iload         15
+     862: i2f
+     863: ldc_w         #272                // float 0.5f
+     866: fadd
+     867: f2d
+     868: invokevirtual #276                // Method com/cicada/longwings/entity/ButterflyEntity.m_6027_:(DDD)V
+     871: aload         24
+     873: aload         22
+     875: invokevirtual #280                // Method com/cicada/longwings/entity/ButterflyEntity.setVariant:(Ljava/lang/String;)V
+     878: fconst_1
+     879: ldc_w         #281                // float 0.7f
+     882: ldc_w         #281                // float 0.7f
+     885: aload         9
+     887: invokevirtual #284                // Method java/util/Random.nextFloat:()F
+     890: ldc_w         #285                // float 3.0f
+     893: fmul
+     894: ldc_w         #286                // float 9.0f
+     897: fdiv
+     898: fadd
+     899: invokestatic  #292                // Method java/lang/Math.max:(FF)F
+     902: invokestatic  #295                // Method java/lang/Math.min:(FF)F
+     905: fstore        25
+     907: aload         23
+     909: getstatic     #299                // Field com/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes.NORMAL:Lcom/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes;
+     912: if_acmpne     942
+     915: ldc_w         #300                // float 1.15f
+     918: ldc_w         #301                // float 0.85f
+     921: ldc_w         #301                // float 0.85f
+     924: aload         9
+     926: invokevirtual #284                // Method java/util/Random.nextFloat:()F
+     929: ldc_w         #302                // float 5.0f
+     932: fdiv
+     933: fadd
+     934: invokestatic  #292                // Method java/lang/Math.max:(FF)F
+     937: invokestatic  #295                // Method java/lang/Math.min:(FF)F
+     940: fstore        25
+     942: aload         23
+     944: getstatic     #305                // Field com/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes.LARGER:Lcom/cicada/longwings/entity/EnumButterflyTraits$ButterflySizes;
+     947: if_acmpne     977
+     950: ldc_w         #300                // float 1.15f
+     953: ldc_w         #301                // float 0.85f
+     956: ldc_w         #301                // float 0.85f
+     959: aload         9
+     961: invokevirtual #284                // Method java/util/Random.nextFloat:()F
+     964: ldc_w         #285                // float 3.0f
+     967: fdiv
+     968: fadd
+     969: invokestatic  #292                // Method java/lang/Math.max:(FF)F
+     972: invokestatic  #295                // Method java/lang/Math.min:(FF)F
+     975: fstore        25
+     977: aload         24
+     979: fload         25
+     981: ldc_w         #306                // float 100.0f
+     984: fmul
+     985: invokestatic  #310                // Method java/lang/Math.round:(F)I
+     988: i2d
+     989: ldc2_w        #311                // double 100.0d
+     992: ddiv
+     993: d2f
+     994: invokevirtual #316                // Method com/cicada/longwings/entity/ButterflyEntity.setSize:(F)V
+     997: aload_1
+     998: aload         24
+    1000: invokevirtual #320                // Method net/minecraft/world/level/Level.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+    1003: pop
+    1004: aload         24
+    1006: invokevirtual #324                // Method com/cicada/longwings/entity/ButterflyEntity.m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+    1009: aload_2
+    1010: invokevirtual #133                // Method net/minecraft/core/BlockPos.m_123341_:()I
+    1013: i2f
+    1014: ldc_w         #272                // float 0.5f
+    1017: fadd
+    1018: f2d
+    1019: aload_2
+    1020: invokevirtual #140                // Method net/minecraft/core/BlockPos.m_123342_:()I
+    1023: i2f
+    1024: ldc_w         #325                // float 1.2f
+    1027: fadd
+    1028: f2d
+    1029: aload_2
+    1030: invokevirtual #143                // Method net/minecraft/core/BlockPos.m_123343_:()I
+    1033: i2f
+    1034: ldc_w         #272                // float 0.5f
+    1037: fadd
+    1038: f2d
+    1039: ldc2_w        #326                // double 1.7000000476837158d
+    1042: invokevirtual #333                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26519_:(DDDD)Z
+    1045: pop
+    1046: ldc_w         #272                // float 0.5f
+    1049: fstore        11
+    1051: aload_1
+    1052: aconst_null
+    1053: checkcast     #335                // class net/minecraft/world/entity/player/Player
+    1056: aload_2
+    1057: invokevirtual #133                // Method net/minecraft/core/BlockPos.m_123341_:()I
+    1060: i2f
+    1061: ldc_w         #272                // float 0.5f
+    1064: fadd
+    1065: f2d
+    1066: aload_2
+    1067: invokevirtual #140                // Method net/minecraft/core/BlockPos.m_123342_:()I
+    1070: i2f
+    1071: ldc_w         #272                // float 0.5f
+    1074: fadd
+    1075: f2d
+    1076: aload_2
+    1077: invokevirtual #143                // Method net/minecraft/core/BlockPos.m_123343_:()I
+    1080: i2f
+    1081: ldc_w         #272                // float 0.5f
+    1084: fadd
+    1085: f2d
+    1086: getstatic     #341                // Field net/minecraft/sounds/SoundEvents.f_11769_:Lnet/minecraft/sounds/SoundEvent;
+    1089: getstatic     #347                // Field net/minecraft/sounds/SoundSource.BLOCKS:Lnet/minecraft/sounds/SoundSource;
+    1092: ldc           #223                // float 0.9f
+    1094: fload         11
+    1096: invokevirtual #351                // Method net/minecraft/world/level/Level.m_6263_:(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+    1099: aload_0
+    1100: invokevirtual #73                 // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+    1103: getstatic     #355                // Field com/cicada/longwings/block/DripLure.LEVEL_DRIPLURE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+    1106: invokevirtual #359                // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+    1109: checkcast     #361                // class java/lang/Integer
+    1112: invokevirtual #364                // Method java/lang/Integer.intValue:()I
+    1115: iconst_1
+    1116: if_icmpne     1123
+    1119: iconst_1
+    1120: goto          1124
+    1123: iconst_0
+    1124: istore        13
+    1126: iload         13
+    1128: ifeq          1150
+    1131: getstatic     #77                 // Field com/cicada/longwings/block/LongwingsBlocks.DRIPLURE:Lcom/cicada/longwings/block/DripLure;
+    1134: invokevirtual #367                // Method com/cicada/longwings/block/DripLure.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+    1137: astore        14
+    1139: aload_1
+    1140: aload_2
+    1141: aload         14
+    1143: invokevirtual #371                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+    1146: pop
+    1147: goto          1197
+    1150: aload_0
+    1151: invokevirtual #73                 // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+    1154: getstatic     #355                // Field com/cicada/longwings/block/DripLure.LEVEL_DRIPLURE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+    1157: aload_0
+    1158: invokevirtual #73                 // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+    1161: getstatic     #355                // Field com/cicada/longwings/block/DripLure.LEVEL_DRIPLURE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+    1164: invokevirtual #359                // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+    1167: checkcast     #361                // class java/lang/Integer
+    1170: invokevirtual #364                // Method java/lang/Integer.intValue:()I
+    1173: iconst_1
+    1174: isub
+    1175: invokestatic  #375                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1178: invokevirtual #379                // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+    1181: checkcast     #79                 // class net/minecraft/world/level/block/state/BlockState
+    1184: astore        14
+    1186: aload_1
+    1187: aload_0
+    1188: invokevirtual #65                 // Method m_58899_:()Lnet/minecraft/core/BlockPos;
+    1191: aload         14
+    1193: invokevirtual #371                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+    1196: pop
+    1197: aload_0
+    1198: iconst_0
+    1199: putfield      #43                 // Field a:I
+    1202: return
+}

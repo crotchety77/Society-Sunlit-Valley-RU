@@ -1,0 +1,138 @@
+# 🛠️ Локализация мода: Building Gadgets 2 (`buildinggadgets2`)
+
+> **JAR:** `buildinggadgets2-1.0.7.jar` | **Всего строк:** 111 | **Статус:** 100% готов к согласованию
+
+---
+
+## 1. Визуальный контекст и ключевые предметы
+
+| Предмет / Блок | Перевод | Назначение |
+| :--- | :--- | :--- |
+| `Building Gadget` | **Строительный гаджет** | Высокоскоростное возведение стен, колонн, лестниц и поверхностей |
+| `Exchanging Gadget` | **Гаджет замены** | Быстрая замена одних блоков на другие по площади без разрушения |
+| `Copy Paste Gadget` | **Гаджет копирования и вставки** | Копирование построек и вставка их в любом месте |
+| `Cut Paste Gadget` | **Гаджет вырезания и вставки** | Перенос построек (вырезает структуру и размещает на новом месте) |
+| `Destruction Gadget` | **Гаджет разрушения** | Моментальное стирание кубических областей блоков (без выпадения дропа) |
+| `Template Manager` | **Менеджер шаблонов** | Блок для сохранения, загрузки и экспорта чертежей в буфер/бумагу |
+| `Template` | **Шаблон** | Бумажный носитель для записи схем и чертежей |
+| `Redprint` | **Редпринт** | Чертеж для сохранения и быстрой загрузки шаблонов |
+
+---
+
+## 2. Полный словарь локализации (JSON)
+
+```json
+{
+  "block.buildinggadgets2.render_block": "Блок визуализации",
+  "block.buildinggadgets2.template_manager": "Менеджер шаблонов",
+  "buildinggadgets2.buttons.copy": "Копировать",
+  "buildinggadgets2.buttons.load": "Загрузить",
+  "buildinggadgets2.buttons.materials": "Материалы",
+  "buildinggadgets2.buttons.paste": "Вставить",
+  "buildinggadgets2.buttons.render": "Отрисовка",
+  "buildinggadgets2.buttons.save": "Сохранить",
+  "buildinggadgets2.fade": "Угасание",
+  "buildinggadgets2.grow": "Рост",
+  "buildinggadgets2.growup": "Рост вверх",
+  "buildinggadgets2.gui.range": "Дальность",
+  "buildinggadgets2.keymapping.mode-switch": "Смена режима",
+  "buildinggadgets2.messages.anchorcleared": "Якорь сброшен",
+  "buildinggadgets2.messages.anchorset": "Якорь установлен на: ",
+  "buildinggadgets2.messages.areatoolarge": "Область слишком велика! Максимум: %d. Выбрано: %d",
+  "buildinggadgets2.messages.bindfailed": "Ошибка привязки: недопустимый блок",
+  "buildinggadgets2.messages.bindremoved": "Привязка снята",
+  "buildinggadgets2.messages.bindsuccess": "Успешно привязано к: %s",
+  "buildinggadgets2.messages.copyblocks": "Скопировано блоков: %d",
+  "buildinggadgets2.messages.copycoordsfailed": "Ошибка копирования координат.",
+  "buildinggadgets2.messages.cutblocks": "Вырезано блоков: %d",
+  "buildinggadgets2.messages.cutinprogress": "Идёт вырезание — пожалуйста, подождите!",
+  "buildinggadgets2.messages.invalidblock": "Недопустимый блок",
+  "buildinggadgets2.messages.namealreadyexists": "Это имя уже используется. Удалите его командой или задайте новое.",
+  "buildinggadgets2.messages.namerequired": "Для редпринта требуется имя. Пожалуйста, попробуйте снова.",
+  "buildinggadgets2.messages.notenoughenergy": "Недостаточно энергии для вырезания. Требуется: %d, доступно: %d",
+  "buildinggadgets2.messages.outofpower": "В гаджете закончилась энергия!",
+  "buildinggadgets2.messages.overwritecut": "В инструменте уже сохранены вырезанные данные. Нажмите ещё раз для ПЕРЕЗАПИСИ",
+  "buildinggadgets2.messages.range_set": "Дальность установлена на: %d",
+  "buildinggadgets2.messages.redprintgivefail": "Не удалось выдать редпринт %s игроку %s",
+  "buildinggadgets2.messages.redprintremovefail": "Не удалось удалить редпринт: %s",
+  "buildinggadgets2.messages.redprintremovesuccess": "Редпринт успешно удалён: %s",
+  "buildinggadgets2.messages.relativepaste": "Относительная вставка установлена на: [%s]",
+  "buildinggadgets2.messages.render_set": "Тип отрисовки установлен на: %s",
+  "buildinggadgets2.messages.undofailedunloaded": "Ошибка отмены: чанки не загружены (слишком далеко): %s",
+  "buildinggadgets2.modes.build_to_me": "Строить ко мне",
+  "buildinggadgets2.modes.copy": "Копирование",
+  "buildinggadgets2.modes.cut": "Вырезание",
+  "buildinggadgets2.modes.grid": "Сетка",
+  "buildinggadgets2.modes.horizontal_row": "Горизонтальный ряд",
+  "buildinggadgets2.modes.horizontal_wall": "Горизонтальная стена",
+  "buildinggadgets2.modes.paste": "Вставка",
+  "buildinggadgets2.modes.stairs": "Лестница",
+  "buildinggadgets2.modes.surface": "Поверхность",
+  "buildinggadgets2.modes.vertical_column": "Вертикальный столб",
+  "buildinggadgets2.modes.vertical_wall": "Вертикальная стена",
+  "buildinggadgets2.radialmenu.anchor": "Якорь",
+  "buildinggadgets2.radialmenu.bind": "Привязать инвентарь",
+  "buildinggadgets2.radialmenu.connected_area": "Связная область",
+  "buildinggadgets2.radialmenu.copypastemenu": "Меню настроек",
+  "buildinggadgets2.radialmenu.cut": "Вырезать",
+  "buildinggadgets2.radialmenu.fuzzy": "Нечёткий режим (Fuzzy)",
+  "buildinggadgets2.radialmenu.materiallist": "Список материалов",
+  "buildinggadgets2.radialmenu.raytracefluids": "Учитывать жидкости",
+  "buildinggadgets2.radialmenu.rotate": "Поворот",
+  "buildinggadgets2.radialmenu.undo": "Отмена",
+  "buildinggadgets2.riseup": "Подъём",
+  "buildinggadgets2.screen.absolutecoords": "Абсолютные",
+  "buildinggadgets2.screen.affecttiles": "Затрагивать блоки с данными",
+  "buildinggadgets2.screen.cancel": "Отмена",
+  "buildinggadgets2.screen.clear": "Очистить",
+  "buildinggadgets2.screen.close": "Закрыть",
+  "buildinggadgets2.screen.confirm": "Подтвердить",
+  "buildinggadgets2.screen.copyheading": "Настройка выделения",
+  "buildinggadgets2.screen.copysubheading": "Используйте абсолютный режим для переключения на координаты блоков",
+  "buildinggadgets2.screen.depth": "Глубина",
+  "buildinggadgets2.screen.destructiontoolarge": "Область разрушения слишком велика",
+  "buildinggadgets2.screen.down": "Вниз",
+  "buildinggadgets2.screen.end": "Конец",
+  "buildinggadgets2.screen.invalidjson": "Недопустимый вставленный JSON",
+  "buildinggadgets2.screen.left": "Влево",
+  "buildinggadgets2.screen.missingasc": "Недостающие (по возр.)",
+  "buildinggadgets2.screen.missingdesc": "Недостающие (по убыв.)",
+  "buildinggadgets2.screen.namefieldtext": "Имя?",
+  "buildinggadgets2.screen.paste_replace": "Заменять блоки (ВНИМАНИЕ: уничтожает дроп)",
+  "buildinggadgets2.screen.pasteheading": "Настройка размещения",
+  "buildinggadgets2.screen.placeatop": "Размещать поверх",
+  "buildinggadgets2.screen.relativecoords": "Относительные",
+  "buildinggadgets2.screen.requiredasc": "Требуемые (по возр.)",
+  "buildinggadgets2.screen.requireddesc": "Требуемые (по убыв.)",
+  "buildinggadgets2.screen.revert": "Вернуть",
+  "buildinggadgets2.screen.right": "Вправо",
+  "buildinggadgets2.screen.sortaz": "Сортировка А-Я",
+  "buildinggadgets2.screen.sortza": "Сортировка Я-А",
+  "buildinggadgets2.screen.start": "Начало",
+  "buildinggadgets2.screen.templateplaceholder": "Имя шаблона",
+  "buildinggadgets2.screen.up": "Вверх",
+  "buildinggadgets2.snap": "Щелчок (SNAP)",
+  "buildinggadgets2.squish": "Сжатие",
+  "buildinggadgets2.templatename": "Имя: %s",
+  "buildinggadgets2.tooltips.blockstate": "Блок: %s",
+  "buildinggadgets2.tooltips.boundto": "Привязано к: %s:%s",
+  "buildinggadgets2.tooltips.energy": "Энергия: %d/%d FE",
+  "buildinggadgets2.tooltips.holdshift": "Удерживайте Shift для подробностей",
+  "buildinggadgets2.tooltips.mode": "Режим: %s",
+  "buildinggadgets2.tooltips.range": "Дальность: %d",
+  "buildinggadgets2.voidwarning": "ВНИМАНИЕ: Удаляемые блоки уничтожаются без выпадения дропа!",
+  "item.buildinggadgets2.gadget_building": "Строительный гаджет",
+  "item.buildinggadgets2.gadget_copy_paste": "Гаджет копирования и вставки",
+  "item.buildinggadgets2.gadget_cut_paste": "Гаджет вырезания и вставки",
+  "item.buildinggadgets2.gadget_destruction": "Гаджет разрушения",
+  "item.buildinggadgets2.gadget_exchanging": "Гаджет замены",
+  "item.buildinggadgets2.redprint": "Редпринт",
+  "item.buildinggadgets2.template": "Шаблон",
+  "itemGroup.buildinggadgets2": "Building Gadgets 2",
+  "key.buildinggadgets2.anchor": "Якорь",
+  "key.buildinggadgets2.category": "Building Gadgets 2",
+  "key.buildinggadgets2.range": "Дальность",
+  "key.buildinggadgets2.settings_menu": "Меню настроек",
+  "key.buildinggadgets2.undo": "Отмена действия"
+}
+```

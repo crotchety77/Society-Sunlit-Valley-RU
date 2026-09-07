@@ -1,0 +1,182 @@
+Compiled from "FruitMushBlock.java"
+public class com.cicada.longwings.block.FruitMushBlock extends net.minecraft.world.level.block.HalfTransparentBlock {
+  public static final net.minecraft.world.level.block.state.properties.IntegerProperty LEVEL;
+
+  protected static final net.minecraft.world.phys.shapes.VoxelShape SHAPE;
+
+  public com.cicada.longwings.block.FruitMushBlock(net.minecraft.world.level.block.state.BlockBehaviour$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #23                 // Method net/minecraft/world/level/block/HalfTransparentBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+       5: return
+
+  protected void m_7926_(net.minecraft.world.level.block.state.StateDefinition$Builder<net.minecraft.world.level.block.Block, net.minecraft.world.level.block.state.BlockState>);
+    Code:
+       0: return
+
+  public net.minecraft.world.phys.shapes.VoxelShape m_5939_(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos, net.minecraft.world.phys.shapes.CollisionContext);
+    Code:
+       0: getstatic     #37                 // Field SHAPE:Lnet/minecraft/world/phys/shapes/VoxelShape;
+       3: areturn
+
+  public void m_7892_(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.entity.Entity);
+    Code:
+       0: aload         4
+       2: getfield      #53                 // Field net/minecraft/world/entity/Entity.f_19789_:F
+       5: fconst_0
+       6: fcmpl
+       7: ifle          15
+      10: aload         4
+      12: invokevirtual #57                 // Method net/minecraft/world/entity/Entity.m_183634_:()V
+      15: aload         4
+      17: instanceof    #59                 // class net/minecraft/world/entity/player/Player
+      20: ifne          31
+      23: aload         4
+      25: instanceof    #61                 // class net/minecraft/world/entity/item/ItemEntity
+      28: ifeq          80
+      31: aload         4
+      33: aload         4
+      35: invokevirtual #65                 // Method net/minecraft/world/entity/Entity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      38: getfield      #71                 // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      41: ldc2_w        #72                 // double 0.75d
+      44: dmul
+      45: aload         4
+      47: instanceof    #59                 // class net/minecraft/world/entity/player/Player
+      50: ifeq          59
+      53: ldc2_w        #74                 // double 0.07999999821186066d
+      56: goto          62
+      59: ldc2_w        #82                 // double 0.040495000779628754d
+      62: aload         4
+      64: invokevirtual #65                 // Method net/minecraft/world/entity/Entity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      67: getfield      #86                 // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      70: ldc2_w        #72                 // double 0.75d
+      73: dmul
+      74: invokevirtual #90                 // Method net/minecraft/world/entity/Entity.m_20334_:(DDD)V
+      77: goto          120
+      80: aload         4
+      82: instanceof    #92                 // class com/cicada/longwings/entity/ButterflyEntity
+      85: ifne          120
+      88: aload         4
+      90: aload         4
+      92: invokevirtual #65                 // Method net/minecraft/world/entity/Entity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      95: getfield      #71                 // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      98: ldc2_w        #72                 // double 0.75d
+     101: dmul
+     102: ldc2_w        #74                 // double 0.07999999821186066d
+     105: aload         4
+     107: invokevirtual #65                 // Method net/minecraft/world/entity/Entity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     110: getfield      #86                 // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     113: ldc2_w        #72                 // double 0.75d
+     116: dmul
+     117: invokevirtual #90                 // Method net/minecraft/world/entity/Entity.m_20334_:(DDD)V
+     120: aload_2
+     121: getfield      #96                 // Field net/minecraft/world/level/Level.f_46441_:Lnet/minecraft/util/RandomSource;
+     124: bipush        25
+     126: invokeinterface #102,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+     131: ifne          180
+     134: aload         4
+     136: invokevirtual #65                 // Method net/minecraft/world/entity/Entity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     139: invokevirtual #106                // Method net/minecraft/world/phys/Vec3.m_7096_:()D
+     142: invokestatic  #112                // Method java/lang/Math.abs:(D)D
+     145: ldc2_w        #113                // double 4.999999987376214E-7d
+     148: dcmpl
+     149: ifgt          170
+     152: aload         4
+     154: invokevirtual #65                 // Method net/minecraft/world/entity/Entity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     157: invokevirtual #117                // Method net/minecraft/world/phys/Vec3.m_7094_:()D
+     160: invokestatic  #112                // Method java/lang/Math.abs:(D)D
+     163: ldc2_w        #113                // double 4.999999987376214E-7d
+     166: dcmpl
+     167: ifle          180
+     170: aload         4
+     172: getstatic     #123                // Field com/cicada/longwings/LongwingsSounds.SLIDE_ON_BRINE:Lnet/minecraft/sounds/SoundEvent;
+     175: fconst_1
+     176: fconst_1
+     177: invokevirtual #127                // Method net/minecraft/world/entity/Entity.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     180: aload_0
+     181: aload_1
+     182: aload_2
+     183: aload_3
+     184: aload         4
+     186: invokespecial #129                // Method net/minecraft/world/level/block/HalfTransparentBlock.m_7892_:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;)V
+     189: return
+
+  private void doSlideMovement(net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_1
+       1: invokevirtual #65                 // Method net/minecraft/world/entity/Entity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+       4: astore_2
+       5: aload_2
+       6: getfield      #140                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+       9: ldc2_w        #141                // double -0.13d
+      12: dcmpg
+      13: ifge          54
+      16: ldc2_w        #143                // double -0.05d
+      19: aload_2
+      20: getfield      #140                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+      23: ddiv
+      24: dstore_3
+      25: aload_1
+      26: new           #67                 // class net/minecraft/world/phys/Vec3
+      29: dup
+      30: aload_2
+      31: getfield      #71                 // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      34: dload_3
+      35: dmul
+      36: ldc2_w        #143                // double -0.05d
+      39: aload_2
+      40: getfield      #86                 // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      43: dload_3
+      44: dmul
+      45: invokespecial #146                // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+      48: invokevirtual #150                // Method net/minecraft/world/entity/Entity.m_20256_:(Lnet/minecraft/world/phys/Vec3;)V
+      51: goto          76
+      54: aload_1
+      55: new           #67                 // class net/minecraft/world/phys/Vec3
+      58: dup
+      59: aload_2
+      60: getfield      #71                 // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      63: ldc2_w        #143                // double -0.05d
+      66: aload_2
+      67: getfield      #86                 // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      70: invokespecial #146                // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+      73: invokevirtual #150                // Method net/minecraft/world/entity/Entity.m_20256_:(Lnet/minecraft/world/phys/Vec3;)V
+      76: aload_1
+      77: invokevirtual #57                 // Method net/minecraft/world/entity/Entity.m_183634_:()V
+      80: return
+
+  public void m_142072_(net.minecraft.world.level.Level, net.minecraft.world.level.block.state.BlockState, net.minecraft.core.BlockPos, net.minecraft.world.entity.Entity, float);
+    Code:
+       0: aload_1
+       1: getfield      #160                // Field net/minecraft/world/level/Level.f_46443_:Z
+       4: ifne          7
+       7: return
+
+  public void m_214162_(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.util.RandomSource);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokespecial #169                // Method net/minecraft/world/level/block/HalfTransparentBlock.m_214162_:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)V
+       9: return
+
+  static {};
+    Code:
+       0: ldc           #176                // String level
+       2: iconst_1
+       3: bipush        7
+       5: invokestatic  #182                // Method net/minecraft/world/level/block/state/properties/IntegerProperty.m_61631_:(Ljava/lang/String;II)Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+       8: putstatic     #184                // Field LEVEL:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+      11: dconst_1
+      12: dconst_1
+      13: dconst_1
+      14: ldc2_w        #185                // double 15.0d
+      17: ldc2_w        #185                // double 15.0d
+      20: ldc2_w        #185                // double 15.0d
+      23: invokestatic  #192                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      26: putstatic     #37                 // Field SHAPE:Lnet/minecraft/world/phys/shapes/VoxelShape;
+      29: return
+}

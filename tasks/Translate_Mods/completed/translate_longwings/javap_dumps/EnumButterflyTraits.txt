@@ -1,0 +1,8 @@
+Compiled from "EnumButterflyTraits.java"
+public class com.cicada.longwings.entity.EnumButterflyTraits {
+  public com.cicada.longwings.entity.EnumButterflyTraits();
+    Code:
+       0: aload_0
+       1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+       4: return
+}

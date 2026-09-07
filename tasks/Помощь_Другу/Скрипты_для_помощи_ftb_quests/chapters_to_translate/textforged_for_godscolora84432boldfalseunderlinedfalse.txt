@@ -1,0 +1,79 @@
+# =========================================================================
+# ГЛАВА: textforged_for_godscolora84432boldfalseunderlinedfalse.snbt
+# Всего квестов: 4
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Forged For Godsoldfalse
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 6CEA4BBBA399DF4F] ===
+EN_TITLE: Celestial Archery
+RU_TITLE: 
+
+EN_SUBTITLE: Shooting Stars
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+Legends speak of a bow woven from the essence of falling rain and cooled starlight.
+
+&bRainfall Serenity &ffires beams of pure starlight, completely bypassing foes' arrow immunity thus making it the ultimate weapon for any established archer.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6CEA4BBBA399DF4F ---
+
+
+=== [КВЕСТ 2 | ID: 0C6531A8C19D0F9F] ===
+EN_TITLE: Absolute Equillibrium
+RU_TITLE: 
+
+EN_SUBTITLE: Harmony Restored
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+After the &4Fell King's &fdefeat, &6Cisco &fachieved &9azure ascendancy &fimbuing &6equillibrium &fwith his newly found sacred power.
+
+&eAbsolute Equllibrium &fdeals damage equivalent to a portion of the enemy's lifeforce ensuring that's it's wielder is never outmatched.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0C6531A8C19D0F9F ---
+
+
+=== [КВЕСТ 3 | ID: 7174070087002A46] ===
+EN_TITLE: Floral Surge
+RU_TITLE: 
+
+EN_SUBTITLE: Petal's Wrath
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+In the heart of the Verdant Deep, where ocean meets forest and silence hums with power, lies the whisper of a forgotten weapon.
+
+&dAquaflora &ftruly &fblossoms when critical hits are obtained, allowing you ro decimate foes with precison and grace.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 7174070087002A46 ---
+
+
+=== [КВЕСТ 4 | ID: 0BC487662704AE6E] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Balance Unbound
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+In an alternate timeline the &4Fell King &fconvinces the unamed hero to betray &6Cisco. 
+
+&6Cisco &ffully embraces the darkness within becoming the descended hero with Nightfall attaining it's final form.
+
+&cSupreme Nightfall &fpossesses a mysterious hunger for blood being able to take on a sentient defensive form when not in use to still be in the battle.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 0BC487662704AE6E ---
+
+

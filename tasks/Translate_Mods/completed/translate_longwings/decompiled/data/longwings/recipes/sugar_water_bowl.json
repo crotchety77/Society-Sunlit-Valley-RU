@@ -1,0 +1,20 @@
+{
+    "type": "longwings:empty_bottle_custom",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "item": "minecraft:potion"
+        },
+        {
+            "item": "minecraft:bowl"
+        }
+
+    ],
+    "result": {
+        "item": "longwings:sugar_water_bowl",
+        "count": 1
+    }
+}

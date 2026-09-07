@@ -1,0 +1,5 @@
+{
+  "layer.origins-classes.class.name": "Класс",
+  "layer.origins-classes.class.missing_origin.name": "Без класса",
+  "layer.origins-classes.class.missing_origin.description": "У вас пока не выбран класс персонажа."
+}

@@ -1,0 +1,67 @@
+{
+  "variants": {
+    "facing=east,design=1": {
+      "model": "longwings:block/netting",
+      "y": 180
+    },
+    "facing=north,design=1": {
+      "model": "longwings:block/netting",
+      "y": 90
+    },
+    "facing=south,design=1": {
+      "model": "longwings:block/netting",
+      "y": 270
+    },
+    "facing=west,design=1": {
+      "model": "longwings:block/netting"
+    },
+    "facing=up,design=1": {
+      "model": "longwings:block/netting_up"
+    },
+    "facing=down,design=1": {
+      "model": "longwings:block/netting_down"
+    },
+    "facing=east,design=2": {
+      "model": "longwings:block/netting_design_1",
+      "y": 180
+    },
+    "facing=north,design=2": {
+      "model": "longwings:block/netting_design_1",
+      "y": 90
+    },
+    "facing=south,design=2": {
+      "model": "longwings:block/netting_design_1",
+      "y": 270
+    },
+    "facing=west,design=2": {
+      "model": "longwings:block/netting_design_1"
+    },
+    "facing=up,design=2": {
+      "model": "longwings:block/netting_design_1_up"
+    },
+    "facing=down,design=2": {
+      "model": "longwings:block/netting_design_1_down"
+    },
+    "facing=east,design=3": {
+      "model": "longwings:block/netting_design_2",
+      "y": 180
+    },
+    "facing=north,design=3": {
+      "model": "longwings:block/netting_design_2",
+      "y": 90
+    },
+    "facing=south,design=3": {
+      "model": "longwings:block/netting_design_2",
+      "y": 270
+    },
+    "facing=west,design=3": {
+      "model": "longwings:block/netting_design_2"
+    },
+    "facing=up,design=3": {
+      "model": "longwings:block/netting_design_2_up"
+    },
+    "facing=down,design=3": {
+      "model": "longwings:block/netting_design_2_down"
+    }
+  }
+}

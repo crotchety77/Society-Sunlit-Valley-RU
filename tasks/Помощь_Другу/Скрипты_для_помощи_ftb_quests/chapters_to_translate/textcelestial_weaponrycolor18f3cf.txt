@@ -1,0 +1,164 @@
+# =========================================================================
+# ГЛАВА: textcelestial_weaponrycolor18f3cf.snbt
+# Всего квестов: 9
+# 
+# НАЗВАНИЕ ГЛАВЫ (Вкладка в левом меню FTB Quests):
+EN_CHAPTER_TITLE: Celestial Weaponry
+RU_CHAPTER_TITLE: 
+# =========================================================================
+
+=== [КВЕСТ 1 | ID: 4516659941A8ACA3] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Celestial Weaponry
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&bCelestial &fweapons are incredibly &cpowerful &fweapons which drastically change the way you approach combat.
+
+To begin crafting them you will need to craft a &bstarlit factory&f.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 4516659941A8ACA3 ---
+
+
+=== [КВЕСТ 2 | ID: 61E1C4092341059D] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Starfall Bow
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &9bow of stars &fdoes not use arrows but rather fires &bbeams &fof pure starlight at it's foes , completely &dbypassing &ftheir projectile immunities and piercing through them.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 61E1C4092341059D ---
+
+
+=== [КВЕСТ 3 | ID: 73577C298D8325F9] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Blade of Flowers
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &dblade of flowers &fexcels at area control and continuous damage.
+
+It's base material consists of plants and flowers which can be found in the overworld.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 73577C298D8325F9 ---
+
+
+=== [КВЕСТ 4 | ID: 73FF0D06DB7C9169] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Blade of Hurricane
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &ablade of hurricane &fgrants its user unparralled mobility.
+
+It's extremely light weight allows it to be used as an offhand pairing with many unlikely weapons such as the &9rainfall serinity.
+
+It's material can be found anwhere between Y 100 and 320 high atop mountains.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 73FF0D06DB7C9169 ---
+
+
+=== [КВЕСТ 5 | ID: 3C6E507E27435CA4] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Axe of Spirits
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+The &cmighty &aaxe of spirits &fexcels at high burst damage.
+
+It's base materials consist mainly of eyes of ender and can be obtained through crafting.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3C6E507E27435CA4 ---
+
+
+=== [КВЕСТ 6 | ID: 3039D1DD7A08CF86] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Blade of the Sun
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This &cpowerful &6blade of flame &fexcels at doing high continuous damage while remaning mobile.
+
+The base material required to craft it can be found in the &4nether.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 3039D1DD7A08CF86 ---
+
+
+=== [КВЕСТ 7 | ID: 718D18633766EA28] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: Scythe of the Sorrowful Moon
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This &blunar scythe &fexcels at granting &1defensive &abuffs &fand dealing moderate continous damage.
+
+It's  base materials can be found in caves.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 718D18633766EA28 ---
+
+
+=== [КВЕСТ 8 | ID: 6B121B9E3C3A4773] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Blood Blade
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+&4Keres the blood blade &fallows you to exchange your life essence for &cpower.
+
+Effective against high Hp targets the material to craft to craft it can be found in the &cnether.
+
+Locate a blood monolith in a nether fortress and wait for traversers to spawn , slaying them will grant the neccesary crafting materials.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6B121B9E3C3A4773 ---
+
+
+=== [КВЕСТ 9 | ID: 6FA887259B2B5C89] ===
+EN_TITLE: 
+RU_TITLE: 
+
+EN_SUBTITLE: The Blade of Frost
+RU_SUBTITLE: 
+
+EN_DESCRIPTION:
+This shimmering &bblade of frost &fis adept at area control and provides a balanced damage output.
+
+It's materials an be found in caves under cold biomes below Y-Level 60.
+
+RU_DESCRIPTION:
+
+--- КОНЕЦ КВЕСТА 6FA887259B2B5C89 ---
+
+

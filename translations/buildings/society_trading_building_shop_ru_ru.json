@@ -1,0 +1,20 @@
+{
+  "selector.society_trading.building_shop": "Фермерские постройки",
+  "selector.society_trading.town_building_shop": "Деревенские постройки",
+  "shop.society_trading.building_shop.banker": "Дом банкира",
+  "shop.society_trading.building_shop.barn": "Хлев",
+  "shop.society_trading.building_shop.blacksmith": "Дом кузнеца",
+  "shop.society_trading.building_shop.carpenter": "Дом плотника",
+  "shop.society_trading.building_shop.coop": "Курятник",
+  "shop.society_trading.building_shop.deluxe_barn": "Большой хлев",
+  "shop.society_trading.building_shop.fisher": "Дом рыбака",
+  "shop.society_trading.building_shop.greenhouse": "Теплица",
+  "shop.society_trading.building_shop.home": "Дом фермера",
+  "shop.society_trading.building_shop.large_shed": "Большой сарай",
+  "shop.society_trading.building_shop.librarian": "Дом библиотекаря",
+  "shop.society_trading.building_shop.market": "Дом торговца",
+  "shop.society_trading.building_shop.shed": "Сарай",
+  "shop.society_trading.building_shop.shepherd": "Дом пастуха",
+  "shop.society_trading.building_shop.trader": "Дом странствующего торговца",
+  "shop.society_trading.building_shop.witch": "Дом ведьмы"
+}

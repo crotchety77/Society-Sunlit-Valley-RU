@@ -1,0 +1,815 @@
+Classfile /C:/Users/Foxi8/AppData/Local/Temp/tmpwy70rapx/com/cicada/longwings/event/EventsForge.class
+  Last modified 4 сент. 2026 г.; size 9191 bytes
+  SHA-256 checksum 65f347aebb363b535704d6bf8efcdca2196e245dfe4eab2de8e724e044a29082
+  Compiled from "EventsForge.java"
+public class com.cicada.longwings.event.EventsForge
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // com/cicada/longwings/event/EventsForge
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 6, attributes: 4
+Constant pool:
+    #1 = Utf8               com/cicada/longwings/event/EventsForge
+    #2 = Class              #1            // com/cicada/longwings/event/EventsForge
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               EventsForge.java
+    #6 = Utf8               Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;
+    #7 = Utf8               modid
+    #8 = Utf8               longwings
+    #9 = Utf8               bus
+   #10 = Utf8               Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;
+   #11 = Utf8               FORGE
+   #12 = Utf8               net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock
+   #13 = Class              #12           // net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock
+   #14 = Utf8               net/minecraftforge/event/entity/player/PlayerInteractEvent
+   #15 = Class              #14           // net/minecraftforge/event/entity/player/PlayerInteractEvent
+   #16 = Utf8               RightClickBlock
+   #17 = Utf8               net/minecraftforge/event/level/BlockEvent$BreakEvent
+   #18 = Class              #17           // net/minecraftforge/event/level/BlockEvent$BreakEvent
+   #19 = Utf8               net/minecraftforge/event/level/BlockEvent
+   #20 = Class              #19           // net/minecraftforge/event/level/BlockEvent
+   #21 = Utf8               BreakEvent
+   #22 = Utf8               net/minecraftforge/event/TickEvent$PlayerTickEvent
+   #23 = Class              #22           // net/minecraftforge/event/TickEvent$PlayerTickEvent
+   #24 = Utf8               net/minecraftforge/event/TickEvent
+   #25 = Class              #24           // net/minecraftforge/event/TickEvent
+   #26 = Utf8               PlayerTickEvent
+   #27 = Utf8               net/minecraft/world/level/biome/Biome$ClimateSettings
+   #28 = Class              #27           // net/minecraft/world/level/biome/Biome$ClimateSettings
+   #29 = Utf8               net/minecraft/world/level/biome/Biome
+   #30 = Class              #29           // net/minecraft/world/level/biome/Biome
+   #31 = Utf8               ClimateSettings
+   #32 = Utf8               net/minecraftforge/fml/common/Mod$EventBusSubscriber
+   #33 = Class              #32           // net/minecraftforge/fml/common/Mod$EventBusSubscriber
+   #34 = Utf8               net/minecraftforge/fml/common/Mod
+   #35 = Class              #34           // net/minecraftforge/fml/common/Mod
+   #36 = Utf8               EventBusSubscriber
+   #37 = Utf8               net/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus
+   #38 = Class              #37           // net/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus
+   #39 = Utf8               Bus
+   #40 = Utf8               java/lang/invoke/MethodHandles$Lookup
+   #41 = Class              #40           // java/lang/invoke/MethodHandles$Lookup
+   #42 = Utf8               java/lang/invoke/MethodHandles
+   #43 = Class              #42           // java/lang/invoke/MethodHandles
+   #44 = Utf8               Lookup
+   #45 = Utf8               <init>
+   #46 = Utf8               ()V
+   #47 = NameAndType        #45:#46       // "<init>":()V
+   #48 = Methodref          #4.#47        // java/lang/Object."<init>":()V
+   #49 = Utf8               this
+   #50 = Utf8               Lcom/cicada/longwings/event/EventsForge;
+   #51 = Utf8               joinLevelEvent
+   #52 = Utf8               (Lnet/minecraftforge/event/entity/EntityJoinLevelEvent;)V
+   #53 = Utf8               Lnet/minecraftforge/eventbus/api/SubscribeEvent;
+   #54 = Utf8               net/minecraftforge/event/entity/EntityJoinLevelEvent
+   #55 = Class              #54           // net/minecraftforge/event/entity/EntityJoinLevelEvent
+   #56 = Utf8               getLevel
+   #57 = Utf8               ()Lnet/minecraft/world/level/Level;
+   #58 = NameAndType        #56:#57       // getLevel:()Lnet/minecraft/world/level/Level;
+   #59 = Methodref          #55.#58       // net/minecraftforge/event/entity/EntityJoinLevelEvent.getLevel:()Lnet/minecraft/world/level/Level;
+   #60 = Utf8               net/minecraft/world/level/Level
+   #61 = Class              #60           // net/minecraft/world/level/Level
+   #62 = Utf8               m_46791_
+   #63 = Utf8               ()Lnet/minecraft/world/Difficulty;
+   #64 = NameAndType        #62:#63       // m_46791_:()Lnet/minecraft/world/Difficulty;
+   #65 = Methodref          #61.#64       // net/minecraft/world/level/Level.m_46791_:()Lnet/minecraft/world/Difficulty;
+   #66 = Utf8               net/minecraft/world/Difficulty
+   #67 = Class              #66           // net/minecraft/world/Difficulty
+   #68 = Utf8               HARD
+   #69 = Utf8               Lnet/minecraft/world/Difficulty;
+   #70 = NameAndType        #68:#69       // HARD:Lnet/minecraft/world/Difficulty;
+   #71 = Fieldref           #67.#70       // net/minecraft/world/Difficulty.HARD:Lnet/minecraft/world/Difficulty;
+   #72 = Utf8               getEntity
+   #73 = Utf8               ()Lnet/minecraft/world/entity/Entity;
+   #74 = NameAndType        #72:#73       // getEntity:()Lnet/minecraft/world/entity/Entity;
+   #75 = Methodref          #55.#74       // net/minecraftforge/event/entity/EntityJoinLevelEvent.getEntity:()Lnet/minecraft/world/entity/Entity;
+   #76 = Utf8               net/minecraft/world/entity/monster/Spider
+   #77 = Class              #76           // net/minecraft/world/entity/monster/Spider
+   #78 = Utf8               event
+   #79 = Utf8               Lnet/minecraftforge/event/entity/EntityJoinLevelEvent;
+   #80 = Utf8               rightClick
+   #81 = Utf8               (Lnet/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock;)V
+   #82 = Methodref          #13.#58       // net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock.getLevel:()Lnet/minecraft/world/level/Level;
+   #83 = Utf8               getHitVec
+   #84 = Utf8               ()Lnet/minecraft/world/phys/BlockHitResult;
+   #85 = NameAndType        #83:#84       // getHitVec:()Lnet/minecraft/world/phys/BlockHitResult;
+   #86 = Methodref          #13.#85       // net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock.getHitVec:()Lnet/minecraft/world/phys/BlockHitResult;
+   #87 = Utf8               ()Lnet/minecraft/world/entity/player/Player;
+   #88 = NameAndType        #72:#87       // getEntity:()Lnet/minecraft/world/entity/player/Player;
+   #89 = Methodref          #13.#88       // net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock.getEntity:()Lnet/minecraft/world/entity/player/Player;
+   #90 = Utf8               getHand
+   #91 = Utf8               ()Lnet/minecraft/world/InteractionHand;
+   #92 = NameAndType        #90:#91       // getHand:()Lnet/minecraft/world/InteractionHand;
+   #93 = Methodref          #13.#92       // net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock.getHand:()Lnet/minecraft/world/InteractionHand;
+   #94 = Utf8               net/minecraft/world/phys/BlockHitResult
+   #95 = Class              #94           // net/minecraft/world/phys/BlockHitResult
+   #96 = Utf8               m_82425_
+   #97 = Utf8               ()Lnet/minecraft/core/BlockPos;
+   #98 = NameAndType        #96:#97       // m_82425_:()Lnet/minecraft/core/BlockPos;
+   #99 = Methodref          #95.#98       // net/minecraft/world/phys/BlockHitResult.m_82425_:()Lnet/minecraft/core/BlockPos;
+  #100 = Utf8               m_8055_
+  #101 = Utf8               (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+  #102 = NameAndType        #100:#101     // m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+  #103 = Methodref          #61.#102      // net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+  #104 = Utf8               com/cicada/longwings/block/LongwingsBlocks
+  #105 = Class              #104          // com/cicada/longwings/block/LongwingsBlocks
+  #106 = Utf8               NETTING
+  #107 = Utf8               Lcom/cicada/longwings/block/NettingBlock;
+  #108 = NameAndType        #106:#107     // NETTING:Lcom/cicada/longwings/block/NettingBlock;
+  #109 = Fieldref           #105.#108     // com/cicada/longwings/block/LongwingsBlocks.NETTING:Lcom/cicada/longwings/block/NettingBlock;
+  #110 = Utf8               net/minecraft/world/level/block/state/BlockState
+  #111 = Class              #110          // net/minecraft/world/level/block/state/BlockState
+  #112 = Utf8               m_60713_
+  #113 = Utf8               (Lnet/minecraft/world/level/block/Block;)Z
+  #114 = NameAndType        #112:#113     // m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+  #115 = Methodref          #111.#114     // net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+  #116 = Utf8               net/minecraft/world/entity/player/Player
+  #117 = Class              #116          // net/minecraft/world/entity/player/Player
+  #118 = Utf8               m_21120_
+  #119 = Utf8               (Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+  #120 = NameAndType        #118:#119     // m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+  #121 = Methodref          #117.#120     // net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+  #122 = Utf8               net/minecraft/world/item/Items
+  #123 = Class              #122          // net/minecraft/world/item/Items
+  #124 = Utf8               f_42574_
+  #125 = Utf8               Lnet/minecraft/world/item/Item;
+  #126 = NameAndType        #124:#125     // f_42574_:Lnet/minecraft/world/item/Item;
+  #127 = Fieldref           #123.#126     // net/minecraft/world/item/Items.f_42574_:Lnet/minecraft/world/item/Item;
+  #128 = Utf8               net/minecraft/world/item/ItemStack
+  #129 = Class              #128          // net/minecraft/world/item/ItemStack
+  #130 = Utf8               m_150930_
+  #131 = Utf8               (Lnet/minecraft/world/item/Item;)Z
+  #132 = NameAndType        #130:#131     // m_150930_:(Lnet/minecraft/world/item/Item;)Z
+  #133 = Methodref          #129.#132     // net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+  #134 = Utf8               net/minecraft/sounds/SoundEvents
+  #135 = Class              #134          // net/minecraft/sounds/SoundEvents
+  #136 = Utf8               f_12344_
+  #137 = Utf8               Lnet/minecraft/sounds/SoundEvent;
+  #138 = NameAndType        #136:#137     // f_12344_:Lnet/minecraft/sounds/SoundEvent;
+  #139 = Fieldref           #135.#138     // net/minecraft/sounds/SoundEvents.f_12344_:Lnet/minecraft/sounds/SoundEvent;
+  #140 = Utf8               m_216990_
+  #141 = Utf8               (Lnet/minecraft/sounds/SoundEvent;)V
+  #142 = NameAndType        #140:#141     // m_216990_:(Lnet/minecraft/sounds/SoundEvent;)V
+  #143 = Methodref          #117.#142     // net/minecraft/world/entity/player/Player.m_216990_:(Lnet/minecraft/sounds/SoundEvent;)V
+  #144 = Utf8               com/cicada/longwings/block/NettingBlock
+  #145 = Class              #144          // com/cicada/longwings/block/NettingBlock
+  #146 = Utf8               DESIGN
+  #147 = Utf8               Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+  #148 = NameAndType        #146:#147     // DESIGN:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+  #149 = Fieldref           #145.#148     // com/cicada/longwings/block/NettingBlock.DESIGN:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+  #150 = Utf8               m_61122_
+  #151 = Utf8               (Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Object;
+  #152 = NameAndType        #150:#151     // m_61122_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Object;
+  #153 = Methodref          #111.#152     // net/minecraft/world/level/block/state/BlockState.m_61122_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Object;
+  #154 = Utf8               m_7731_
+  #155 = Utf8               (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+  #156 = NameAndType        #154:#155     // m_7731_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+  #157 = Methodref          #61.#156      // net/minecraft/world/level/Level.m_7731_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+  #158 = Utf8               m_213780_
+  #159 = Utf8               ()Lnet/minecraft/util/RandomSource;
+  #160 = NameAndType        #158:#159     // m_213780_:()Lnet/minecraft/util/RandomSource;
+  #161 = Methodref          #61.#160      // net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+  #162 = Utf8               net/minecraft/util/RandomSource
+  #163 = Class              #162          // net/minecraft/util/RandomSource
+  #164 = Utf8               m_188501_
+  #165 = Utf8               ()F
+  #166 = NameAndType        #164:#165     // m_188501_:()F
+  #167 = InterfaceMethodref #163.#166     // net/minecraft/util/RandomSource.m_188501_:()F
+  #168 = Double             0.05d
+  #170 = Utf8               (Ljava/lang/Object;)V
+  #171 = MethodType         #170          //  (Ljava/lang/Object;)V
+  #172 = Utf8               lambda$rightClick$0
+  #173 = Utf8               (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/entity/player/Player;)V
+  #174 = NameAndType        #172:#173     // lambda$rightClick$0:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/entity/player/Player;)V
+  #175 = Methodref          #2.#174       // com/cicada/longwings/event/EventsForge.lambda$rightClick$0:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/entity/player/Player;)V
+  #176 = MethodHandle       6:#175        // REF_invokeStatic com/cicada/longwings/event/EventsForge.lambda$rightClick$0:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/entity/player/Player;)V
+  #177 = Utf8               (Lnet/minecraft/world/entity/player/Player;)V
+  #178 = MethodType         #177          //  (Lnet/minecraft/world/entity/player/Player;)V
+  #179 = Utf8               java/lang/invoke/LambdaMetafactory
+  #180 = Class              #179          // java/lang/invoke/LambdaMetafactory
+  #181 = Utf8               metafactory
+  #182 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #183 = NameAndType        #181:#182     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #184 = Methodref          #180.#183     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #185 = MethodHandle       6:#184        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #186 = Utf8               accept
+  #187 = Utf8               (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Ljava/util/function/Consumer;
+  #188 = NameAndType        #186:#187     // accept:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Ljava/util/function/Consumer;
+  #189 = InvokeDynamic      #0:#188       // #0:accept:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Ljava/util/function/Consumer;
+  #190 = Utf8               m_41622_
+  #191 = Utf8               (ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V
+  #192 = NameAndType        #190:#191     // m_41622_:(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V
+  #193 = Methodref          #129.#192     // net/minecraft/world/item/ItemStack.m_41622_:(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V
+  #194 = Utf8               net/minecraft/world/InteractionHand
+  #195 = Class              #194          // net/minecraft/world/InteractionHand
+  #196 = Utf8               net/minecraft/core/BlockPos
+  #197 = Class              #196          // net/minecraft/core/BlockPos
+  #198 = Utf8               m_6674_
+  #199 = Utf8               (Lnet/minecraft/world/InteractionHand;)V
+  #200 = NameAndType        #198:#199     // m_6674_:(Lnet/minecraft/world/InteractionHand;)V
+  #201 = Methodref          #117.#200     // net/minecraft/world/entity/player/Player.m_6674_:(Lnet/minecraft/world/InteractionHand;)V
+  #202 = Utf8               Lnet/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock;
+  #203 = Utf8               level
+  #204 = Utf8               Lnet/minecraft/world/level/Level;
+  #205 = Utf8               hitResult
+  #206 = Utf8               Lnet/minecraft/world/phys/BlockHitResult;
+  #207 = Utf8               player
+  #208 = Utf8               Lnet/minecraft/world/entity/player/Player;
+  #209 = Utf8               hand
+  #210 = Utf8               Lnet/minecraft/world/InteractionHand;
+  #211 = Utf8               state
+  #212 = Utf8               Lnet/minecraft/world/level/block/state/BlockState;
+  #213 = Utf8               pos
+  #214 = Utf8               Lnet/minecraft/core/BlockPos;
+  #215 = Utf8               breakBlockEvent
+  #216 = Utf8               (Lnet/minecraftforge/event/level/BlockEvent$BreakEvent;)V
+  #217 = Utf8               getPlayer
+  #218 = NameAndType        #217:#87      // getPlayer:()Lnet/minecraft/world/entity/player/Player;
+  #219 = Methodref          #18.#218      // net/minecraftforge/event/level/BlockEvent$BreakEvent.getPlayer:()Lnet/minecraft/world/entity/player/Player;
+  #220 = Utf8               com/cicada/longwings/effect/LongwingsEffects
+  #221 = Class              #220          // com/cicada/longwings/effect/LongwingsEffects
+  #222 = Utf8               SEED_SNIFFER
+  #223 = Utf8               Lnet/minecraft/world/effect/MobEffect;
+  #224 = NameAndType        #222:#223     // SEED_SNIFFER:Lnet/minecraft/world/effect/MobEffect;
+  #225 = Fieldref           #221.#224     // com/cicada/longwings/effect/LongwingsEffects.SEED_SNIFFER:Lnet/minecraft/world/effect/MobEffect;
+  #226 = Utf8               m_21023_
+  #227 = Utf8               (Lnet/minecraft/world/effect/MobEffect;)Z
+  #228 = NameAndType        #226:#227     // m_21023_:(Lnet/minecraft/world/effect/MobEffect;)Z
+  #229 = Methodref          #117.#228     // net/minecraft/world/entity/player/Player.m_21023_:(Lnet/minecraft/world/effect/MobEffect;)Z
+  #230 = Utf8               getState
+  #231 = Utf8               ()Lnet/minecraft/world/level/block/state/BlockState;
+  #232 = NameAndType        #230:#231     // getState:()Lnet/minecraft/world/level/block/state/BlockState;
+  #233 = Methodref          #18.#232      // net/minecraftforge/event/level/BlockEvent$BreakEvent.getState:()Lnet/minecraft/world/level/block/state/BlockState;
+  #234 = Utf8               net/minecraft/tags/BlockTags
+  #235 = Class              #234          // net/minecraft/tags/BlockTags
+  #236 = Utf8               f_144274_
+  #237 = Utf8               Lnet/minecraft/tags/TagKey;
+  #238 = NameAndType        #236:#237     // f_144274_:Lnet/minecraft/tags/TagKey;
+  #239 = Fieldref           #235.#238     // net/minecraft/tags/BlockTags.f_144274_:Lnet/minecraft/tags/TagKey;
+  #240 = Utf8               m_204336_
+  #241 = Utf8               (Lnet/minecraft/tags/TagKey;)Z
+  #242 = NameAndType        #240:#241     // m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+  #243 = Methodref          #111.#242     // net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+  #244 = Utf8               ()Lnet/minecraft/world/level/LevelAccessor;
+  #245 = NameAndType        #56:#244      // getLevel:()Lnet/minecraft/world/level/LevelAccessor;
+  #246 = Methodref          #18.#245      // net/minecraftforge/event/level/BlockEvent$BreakEvent.getLevel:()Lnet/minecraft/world/level/LevelAccessor;
+  #247 = Utf8               net/minecraft/world/level/LevelAccessor
+  #248 = Class              #247          // net/minecraft/world/level/LevelAccessor
+  #249 = InterfaceMethodref #248.#160     // net/minecraft/world/level/LevelAccessor.m_213780_:()Lnet/minecraft/util/RandomSource;
+  #250 = Utf8               m_188503_
+  #251 = Utf8               (I)I
+  #252 = NameAndType        #250:#251     // m_188503_:(I)I
+  #253 = InterfaceMethodref #163.#252     // net/minecraft/util/RandomSource.m_188503_:(I)I
+  #254 = Utf8               java/lang/Math
+  #255 = Class              #254          // java/lang/Math
+  #256 = Utf8               random
+  #257 = Utf8               ()D
+  #258 = NameAndType        #256:#257     // random:()D
+  #259 = Methodref          #255.#258     // java/lang/Math.random:()D
+  #260 = Double             2.0d
+  #262 = Utf8               f_276594_
+  #263 = NameAndType        #262:#125     // f_276594_:Lnet/minecraft/world/item/Item;
+  #264 = Fieldref           #123.#263     // net/minecraft/world/item/Items.f_276594_:Lnet/minecraft/world/item/Item;
+  #265 = Utf8               net/minecraft/world/item/Item
+  #266 = Class              #265          // net/minecraft/world/item/Item
+  #267 = Utf8               m_5456_
+  #268 = Utf8               ()Lnet/minecraft/world/item/Item;
+  #269 = NameAndType        #267:#268     // m_5456_:()Lnet/minecraft/world/item/Item;
+  #270 = Methodref          #266.#269     // net/minecraft/world/item/Item.m_5456_:()Lnet/minecraft/world/item/Item;
+  #271 = Utf8               (Lnet/minecraft/world/level/ItemLike;)V
+  #272 = NameAndType        #45:#271      // "<init>":(Lnet/minecraft/world/level/ItemLike;)V
+  #273 = Methodref          #129.#272     // net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+  #274 = Utf8               f_271133_
+  #275 = NameAndType        #274:#125     // f_271133_:Lnet/minecraft/world/item/Item;
+  #276 = Fieldref           #123.#275     // net/minecraft/world/item/Items.f_271133_:Lnet/minecraft/world/item/Item;
+  #277 = Utf8               net/minecraft/world/entity/item/ItemEntity
+  #278 = Class              #277          // net/minecraft/world/entity/item/ItemEntity
+  #279 = Utf8               m_9236_
+  #280 = NameAndType        #279:#57      // m_9236_:()Lnet/minecraft/world/level/Level;
+  #281 = Methodref          #117.#280     // net/minecraft/world/entity/player/Player.m_9236_:()Lnet/minecraft/world/level/Level;
+  #282 = Utf8               getPos
+  #283 = NameAndType        #282:#97      // getPos:()Lnet/minecraft/core/BlockPos;
+  #284 = Methodref          #18.#283      // net/minecraftforge/event/level/BlockEvent$BreakEvent.getPos:()Lnet/minecraft/core/BlockPos;
+  #285 = Utf8               m_123341_
+  #286 = Utf8               ()I
+  #287 = NameAndType        #285:#286     // m_123341_:()I
+  #288 = Methodref          #197.#287     // net/minecraft/core/BlockPos.m_123341_:()I
+  #289 = Utf8               m_123342_
+  #290 = NameAndType        #289:#286     // m_123342_:()I
+  #291 = Methodref          #197.#290     // net/minecraft/core/BlockPos.m_123342_:()I
+  #292 = Utf8               m_123343_
+  #293 = NameAndType        #292:#286     // m_123343_:()I
+  #294 = Methodref          #197.#293     // net/minecraft/core/BlockPos.m_123343_:()I
+  #295 = Utf8               (Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V
+  #296 = NameAndType        #45:#295      // "<init>":(Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V
+  #297 = Methodref          #278.#296     // net/minecraft/world/entity/item/ItemEntity."<init>":(Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V
+  #298 = Utf8               m_7967_
+  #299 = Utf8               (Lnet/minecraft/world/entity/Entity;)Z
+  #300 = NameAndType        #298:#299     // m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+  #301 = InterfaceMethodref #248.#300     // net/minecraft/world/level/LevelAccessor.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+  #302 = Utf8               stack
+  #303 = Utf8               Lnet/minecraft/world/item/ItemStack;
+  #304 = Utf8               itementity
+  #305 = Utf8               Lnet/minecraft/world/entity/item/ItemEntity;
+  #306 = Utf8               Lnet/minecraftforge/event/level/BlockEvent$BreakEvent;
+  #307 = Utf8               playerTickEvent
+  #308 = Utf8               (Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
+  #309 = NameAndType        #207:#208     // player:Lnet/minecraft/world/entity/player/Player;
+  #310 = Fieldref           #23.#309      // net/minecraftforge/event/TickEvent$PlayerTickEvent.player:Lnet/minecraft/world/entity/player/Player;
+  #311 = Utf8               MAIN_HAND
+  #312 = NameAndType        #311:#210     // MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+  #313 = Fieldref           #195.#312     // net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+  #314 = Utf8               com/cicada/longwings/item/LongwingsItems
+  #315 = Class              #314          // com/cicada/longwings/item/LongwingsItems
+  #316 = Utf8               LEPIDOPTERAPEDIA
+  #317 = Utf8               Lcom/cicada/longwings/item/ButterflyHandbook;
+  #318 = NameAndType        #316:#317     // LEPIDOPTERAPEDIA:Lcom/cicada/longwings/item/ButterflyHandbook;
+  #319 = Fieldref           #315.#318     // com/cicada/longwings/item/LongwingsItems.LEPIDOPTERAPEDIA:Lcom/cicada/longwings/item/ButterflyHandbook;
+  #320 = Utf8               OFF_HAND
+  #321 = NameAndType        #320:#210     // OFF_HAND:Lnet/minecraft/world/InteractionHand;
+  #322 = Fieldref           #195.#321     // net/minecraft/world/InteractionHand.OFF_HAND:Lnet/minecraft/world/InteractionHand;
+  #323 = Utf8               f_46443_
+  #324 = Utf8               Z
+  #325 = NameAndType        #323:#324     // f_46443_:Z
+  #326 = Fieldref           #61.#325      // net/minecraft/world/level/Level.f_46443_:Z
+  #327 = Utf8               m_20183_
+  #328 = NameAndType        #327:#97      // m_20183_:()Lnet/minecraft/core/BlockPos;
+  #329 = Methodref          #117.#328     // net/minecraft/world/entity/player/Player.m_20183_:()Lnet/minecraft/core/BlockPos;
+  #330 = Utf8               m_204166_
+  #331 = Utf8               (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
+  #332 = NameAndType        #330:#331     // m_204166_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
+  #333 = Methodref          #61.#332      // net/minecraft/world/level/Level.m_204166_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
+  #334 = Utf8               net/minecraft/core/Holder
+  #335 = Class              #334          // net/minecraft/core/Holder
+  #336 = Utf8               get
+  #337 = Utf8               ()Ljava/lang/Object;
+  #338 = NameAndType        #336:#337     // get:()Ljava/lang/Object;
+  #339 = InterfaceMethodref #335.#338     // net/minecraft/core/Holder.get:()Ljava/lang/Object;
+  #340 = Utf8               getModifiedClimateSettings
+  #341 = Utf8               ()Lnet/minecraft/world/level/biome/Biome$ClimateSettings;
+  #342 = NameAndType        #340:#341     // getModifiedClimateSettings:()Lnet/minecraft/world/level/biome/Biome$ClimateSettings;
+  #343 = Methodref          #30.#342      // net/minecraft/world/level/biome/Biome.getModifiedClimateSettings:()Lnet/minecraft/world/level/biome/Biome$ClimateSettings;
+  #344 = Utf8               f_47681_
+  #345 = NameAndType        #344:#165     // f_47681_:()F
+  #346 = Methodref          #28.#345      // net/minecraft/world/level/biome/Biome$ClimateSettings.f_47681_:()F
+  #347 = Utf8               f_47683_
+  #348 = NameAndType        #347:#165     // f_47683_:()F
+  #349 = Methodref          #28.#348      // net/minecraft/world/level/biome/Biome$ClimateSettings.f_47683_:()F
+  #350 = Utf8               ? : \u0001 | ? : \u0001
+  #351 = String             #350          // ? : \u0001 | ? : \u0001
+  #352 = Utf8               java/lang/invoke/StringConcatFactory
+  #353 = Class              #352          // java/lang/invoke/StringConcatFactory
+  #354 = Utf8               makeConcatWithConstants
+  #355 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #356 = NameAndType        #354:#355     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #357 = Methodref          #353.#356     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #358 = MethodHandle       6:#357        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #359 = Utf8               (FF)Ljava/lang/String;
+  #360 = NameAndType        #354:#359     // makeConcatWithConstants:(FF)Ljava/lang/String;
+  #361 = InvokeDynamic      #1:#360       // #1:makeConcatWithConstants:(FF)Ljava/lang/String;
+  #362 = Utf8               net/minecraft/network/chat/Component
+  #363 = Class              #362          // net/minecraft/network/chat/Component
+  #364 = Utf8               m_237115_
+  #365 = Utf8               (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+  #366 = NameAndType        #364:#365     // m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+  #367 = InterfaceMethodref #363.#366     // net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+  #368 = Utf8               title.longwings.temperature
+  #369 = String             #368          // title.longwings.temperature
+  #370 = Utf8               net/minecraft/network/chat/MutableComponent
+  #371 = Class              #370          // net/minecraft/network/chat/MutableComponent
+  #372 = Utf8               getString
+  #373 = Utf8               ()Ljava/lang/String;
+  #374 = NameAndType        #372:#373     // getString:()Ljava/lang/String;
+  #375 = Methodref          #371.#374     // net/minecraft/network/chat/MutableComponent.getString:()Ljava/lang/String;
+  #376 = Utf8               title.longwings.humidity
+  #377 = String             #376          // title.longwings.humidity
+  #378 = Utf8               \u0001 : \u0001 | \u0001 : \u0001
+  #379 = String             #378          // \u0001 : \u0001 | \u0001 : \u0001
+  #380 = Utf8               (Ljava/lang/String;FLjava/lang/String;F)Ljava/lang/String;
+  #381 = NameAndType        #354:#380     // makeConcatWithConstants:(Ljava/lang/String;FLjava/lang/String;F)Ljava/lang/String;
+  #382 = InvokeDynamic      #2:#381       // #2:makeConcatWithConstants:(Ljava/lang/String;FLjava/lang/String;F)Ljava/lang/String;
+  #383 = Utf8               m_237113_
+  #384 = NameAndType        #383:#365     // m_237113_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+  #385 = InterfaceMethodref #363.#384     // net/minecraft/network/chat/Component.m_237113_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+  #386 = Utf8               m_6047_
+  #387 = Utf8               ()Z
+  #388 = NameAndType        #386:#387     // m_6047_:()Z
+  #389 = Methodref          #117.#388     // net/minecraft/world/entity/player/Player.m_6047_:()Z
+  #390 = Utf8               m_5661_
+  #391 = Utf8               (Lnet/minecraft/network/chat/Component;Z)V
+  #392 = NameAndType        #390:#391     // m_5661_:(Lnet/minecraft/network/chat/Component;Z)V
+  #393 = Methodref          #117.#392     // net/minecraft/world/entity/player/Player.m_5661_:(Lnet/minecraft/network/chat/Component;Z)V
+  #394 = Utf8               climateSettings
+  #395 = Utf8               Lnet/minecraft/world/level/biome/Biome$ClimateSettings;
+  #396 = Utf8               component
+  #397 = Utf8               Lnet/minecraft/network/chat/Component;
+  #398 = Utf8               componentShift
+  #399 = Utf8               Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;
+  #400 = Utf8               lepidopterapediaInHand
+  #401 = Utf8               m_21190_
+  #402 = NameAndType        #401:#199     // m_21190_:(Lnet/minecraft/world/InteractionHand;)V
+  #403 = Methodref          #117.#402     // net/minecraft/world/entity/player/Player.m_21190_:(Lnet/minecraft/world/InteractionHand;)V
+  #404 = Utf8               player1
+  #405 = Utf8               Code
+  #406 = Utf8               LineNumberTable
+  #407 = Utf8               LocalVariableTable
+  #408 = Utf8               StackMapTable
+  #409 = Utf8               RuntimeVisibleAnnotations
+  #410 = Utf8               InnerClasses
+  #411 = Utf8               SourceFile
+  #412 = Utf8               BootstrapMethods
+{
+  public com.cicada.longwings.event.EventsForge();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #48                 // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 36: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/cicada/longwings/event/EventsForge;
+
+  public static void joinLevelEvent(net.minecraftforge.event.entity.EntityJoinLevelEvent);
+    descriptor: (Lnet/minecraftforge/event/entity/EntityJoinLevelEvent;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #59                 // Method net/minecraftforge/event/entity/EntityJoinLevelEvent.getLevel:()Lnet/minecraft/world/level/Level;
+         4: invokevirtual #65                 // Method net/minecraft/world/level/Level.m_46791_:()Lnet/minecraft/world/Difficulty;
+         7: getstatic     #71                 // Field net/minecraft/world/Difficulty.HARD:Lnet/minecraft/world/Difficulty;
+        10: if_acmpne     23
+        13: aload_0
+        14: invokevirtual #75                 // Method net/minecraftforge/event/entity/EntityJoinLevelEvent.getEntity:()Lnet/minecraft/world/entity/Entity;
+        17: instanceof    #77                 // class net/minecraft/world/entity/monster/Spider
+        20: ifeq          23
+        23: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 23 /* same */
+      LineNumberTable:
+        line 40: 0
+        line 41: 13
+        line 46: 23
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      24     0 event   Lnet/minecraftforge/event/entity/EntityJoinLevelEvent;
+    RuntimeVisibleAnnotations:
+      0: #53()
+        net.minecraftforge.eventbus.api.SubscribeEvent
+
+  public static void rightClick(net.minecraftforge.event.entity.player.PlayerInteractEvent$RightClickBlock);
+    descriptor: (Lnet/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=7, args_size=1
+         0: aload_0
+         1: invokevirtual #82                 // Method net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock.getLevel:()Lnet/minecraft/world/level/Level;
+         4: astore_1
+         5: aload_0
+         6: invokevirtual #86                 // Method net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock.getHitVec:()Lnet/minecraft/world/phys/BlockHitResult;
+         9: astore_2
+        10: aload_0
+        11: invokevirtual #89                 // Method net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock.getEntity:()Lnet/minecraft/world/entity/player/Player;
+        14: astore_3
+        15: aload_0
+        16: invokevirtual #93                 // Method net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock.getHand:()Lnet/minecraft/world/InteractionHand;
+        19: astore        4
+        21: aload_1
+        22: aload_2
+        23: invokevirtual #99                 // Method net/minecraft/world/phys/BlockHitResult.m_82425_:()Lnet/minecraft/core/BlockPos;
+        26: invokevirtual #103                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+        29: astore        5
+        31: aload_2
+        32: invokevirtual #99                 // Method net/minecraft/world/phys/BlockHitResult.m_82425_:()Lnet/minecraft/core/BlockPos;
+        35: astore        6
+        37: aload_1
+        38: aload         6
+        40: invokevirtual #103                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+        43: getstatic     #109                // Field com/cicada/longwings/block/LongwingsBlocks.NETTING:Lcom/cicada/longwings/block/NettingBlock;
+        46: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+        49: ifeq          135
+        52: aload_3
+        53: aload         4
+        55: invokevirtual #121                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+        58: getstatic     #127                // Field net/minecraft/world/item/Items.f_42574_:Lnet/minecraft/world/item/Item;
+        61: invokevirtual #133                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+        64: ifeq          135
+        67: aload_3
+        68: getstatic     #139                // Field net/minecraft/sounds/SoundEvents.f_12344_:Lnet/minecraft/sounds/SoundEvent;
+        71: invokevirtual #143                // Method net/minecraft/world/entity/player/Player.m_216990_:(Lnet/minecraft/sounds/SoundEvent;)V
+        74: aload_1
+        75: aload         6
+        77: aload         5
+        79: getstatic     #149                // Field com/cicada/longwings/block/NettingBlock.DESIGN:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+        82: invokevirtual #153                // Method net/minecraft/world/level/block/state/BlockState.m_61122_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Object;
+        85: checkcast     #111                // class net/minecraft/world/level/block/state/BlockState
+        88: iconst_2
+        89: invokevirtual #157                // Method net/minecraft/world/level/Level.m_7731_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+        92: pop
+        93: aload_1
+        94: invokevirtual #161                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+        97: invokeinterface #167,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+       102: f2d
+       103: ldc2_w        #168                // double 0.05d
+       106: dcmpg
+       107: ifge          129
+       110: aload_3
+       111: aload         4
+       113: invokevirtual #121                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+       116: iconst_1
+       117: aload_3
+       118: aload_3
+       119: aload         4
+       121: invokedynamic #189,  0            // InvokeDynamic #0:accept:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Ljava/util/function/Consumer;
+       126: invokevirtual #193                // Method net/minecraft/world/item/ItemStack.m_41622_:(ILnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V
+       129: aload_3
+       130: aload         4
+       132: invokevirtual #201                // Method net/minecraft/world/entity/player/Player.m_6674_:(Lnet/minecraft/world/InteractionHand;)V
+       135: return
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 129
+          locals = [ class net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock, class net/minecraft/world/level/Level, class net/minecraft/world/phys/BlockHitResult, class net/minecraft/world/entity/player/Player, class net/minecraft/world/InteractionHand, class net/minecraft/world/level/block/state/BlockState, class net/minecraft/core/BlockPos ]
+          stack = []
+        frame_type = 5 /* same */
+      LineNumberTable:
+        line 50: 0
+        line 51: 5
+        line 52: 10
+        line 53: 15
+        line 54: 21
+        line 55: 31
+        line 56: 37
+        line 57: 52
+        line 58: 67
+        line 60: 74
+        line 61: 93
+        line 62: 110
+        line 66: 129
+        line 69: 135
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     136     0 event   Lnet/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock;
+            5     131     1 level   Lnet/minecraft/world/level/Level;
+           10     126     2 hitResult   Lnet/minecraft/world/phys/BlockHitResult;
+           15     121     3 player   Lnet/minecraft/world/entity/player/Player;
+           21     115     4  hand   Lnet/minecraft/world/InteractionHand;
+           31     105     5 state   Lnet/minecraft/world/level/block/state/BlockState;
+           37      99     6   pos   Lnet/minecraft/core/BlockPos;
+    RuntimeVisibleAnnotations:
+      0: #53()
+        net.minecraftforge.eventbus.api.SubscribeEvent
+
+  public static void breakBlockEvent(net.minecraftforge.event.level.BlockEvent$BreakEvent);
+    descriptor: (Lnet/minecraftforge/event/level/BlockEvent$BreakEvent;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=10, locals=3, args_size=1
+         0: aload_0
+         1: invokevirtual #219                // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getPlayer:()Lnet/minecraft/world/entity/player/Player;
+         4: getstatic     #225                // Field com/cicada/longwings/effect/LongwingsEffects.SEED_SNIFFER:Lnet/minecraft/world/effect/MobEffect;
+         7: invokevirtual #229                // Method net/minecraft/world/entity/player/Player.m_21023_:(Lnet/minecraft/world/effect/MobEffect;)Z
+        10: ifeq          139
+        13: aload_0
+        14: invokevirtual #233                // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getState:()Lnet/minecraft/world/level/block/state/BlockState;
+        17: getstatic     #239                // Field net/minecraft/tags/BlockTags.f_144274_:Lnet/minecraft/tags/TagKey;
+        20: invokevirtual #243                // Method net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+        23: ifeq          139
+        26: aload_0
+        27: invokevirtual #246                // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getLevel:()Lnet/minecraft/world/level/LevelAccessor;
+        30: invokeinterface #249,  1          // InterfaceMethod net/minecraft/world/level/LevelAccessor.m_213780_:()Lnet/minecraft/util/RandomSource;
+        35: bipush        25
+        37: invokeinterface #253,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+        42: iconst_2
+        43: if_icmpge     139
+        46: invokestatic  #259                // Method java/lang/Math.random:()D
+        49: ldc2_w        #260                // double 2.0d
+        52: dmul
+        53: dconst_1
+        54: dcmpl
+        55: ifle          74
+        58: new           #129                // class net/minecraft/world/item/ItemStack
+        61: dup
+        62: getstatic     #264                // Field net/minecraft/world/item/Items.f_276594_:Lnet/minecraft/world/item/Item;
+        65: invokevirtual #270                // Method net/minecraft/world/item/Item.m_5456_:()Lnet/minecraft/world/item/Item;
+        68: invokespecial #273                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+        71: goto          87
+        74: new           #129                // class net/minecraft/world/item/ItemStack
+        77: dup
+        78: getstatic     #276                // Field net/minecraft/world/item/Items.f_271133_:Lnet/minecraft/world/item/Item;
+        81: invokevirtual #270                // Method net/minecraft/world/item/Item.m_5456_:()Lnet/minecraft/world/item/Item;
+        84: invokespecial #273                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+        87: astore_1
+        88: new           #278                // class net/minecraft/world/entity/item/ItemEntity
+        91: dup
+        92: aload_0
+        93: invokevirtual #219                // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getPlayer:()Lnet/minecraft/world/entity/player/Player;
+        96: invokevirtual #281                // Method net/minecraft/world/entity/player/Player.m_9236_:()Lnet/minecraft/world/level/Level;
+        99: aload_0
+       100: invokevirtual #284                // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getPos:()Lnet/minecraft/core/BlockPos;
+       103: invokevirtual #288                // Method net/minecraft/core/BlockPos.m_123341_:()I
+       106: i2d
+       107: aload_0
+       108: invokevirtual #284                // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getPos:()Lnet/minecraft/core/BlockPos;
+       111: invokevirtual #291                // Method net/minecraft/core/BlockPos.m_123342_:()I
+       114: i2d
+       115: aload_0
+       116: invokevirtual #284                // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getPos:()Lnet/minecraft/core/BlockPos;
+       119: invokevirtual #294                // Method net/minecraft/core/BlockPos.m_123343_:()I
+       122: i2d
+       123: aload_1
+       124: invokespecial #297                // Method net/minecraft/world/entity/item/ItemEntity."<init>":(Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V
+       127: astore_2
+       128: aload_0
+       129: invokevirtual #246                // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getLevel:()Lnet/minecraft/world/level/LevelAccessor;
+       132: aload_2
+       133: invokeinterface #301,  2          // InterfaceMethod net/minecraft/world/level/LevelAccessor.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+       138: pop
+       139: return
+      StackMapTable: number_of_entries = 3
+        frame_type = 251 /* same_frame_extended */
+          offset_delta = 74
+        frame_type = 76 /* same_locals_1_stack_item */
+          stack = [ class net/minecraft/world/item/ItemStack ]
+        frame_type = 51 /* same */
+      LineNumberTable:
+        line 73: 0
+        line 74: 13
+        line 75: 26
+        line 76: 46
+        line 77: 88
+        line 78: 128
+        line 82: 139
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           88      51     1 stack   Lnet/minecraft/world/item/ItemStack;
+          128      11     2 itementity   Lnet/minecraft/world/entity/item/ItemEntity;
+            0     140     0 event   Lnet/minecraftforge/event/level/BlockEvent$BreakEvent;
+    RuntimeVisibleAnnotations:
+      0: #53()
+        net.minecraftforge.eventbus.api.SubscribeEvent
+
+  public static void playerTickEvent(net.minecraftforge.event.TickEvent$PlayerTickEvent);
+    descriptor: (Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=5, args_size=1
+         0: aload_0
+         1: getfield      #310                // Field net/minecraftforge/event/TickEvent$PlayerTickEvent.player:Lnet/minecraft/world/entity/player/Player;
+         4: getstatic     #313                // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+         7: invokevirtual #121                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+        10: getstatic     #319                // Field com/cicada/longwings/item/LongwingsItems.LEPIDOPTERAPEDIA:Lcom/cicada/longwings/item/ButterflyHandbook;
+        13: invokevirtual #133                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+        16: ifne          38
+        19: aload_0
+        20: getfield      #310                // Field net/minecraftforge/event/TickEvent$PlayerTickEvent.player:Lnet/minecraft/world/entity/player/Player;
+        23: getstatic     #322                // Field net/minecraft/world/InteractionHand.OFF_HAND:Lnet/minecraft/world/InteractionHand;
+        26: invokevirtual #121                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+        29: getstatic     #319                // Field com/cicada/longwings/item/LongwingsItems.LEPIDOPTERAPEDIA:Lcom/cicada/longwings/item/ButterflyHandbook;
+        32: invokevirtual #133                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+        35: ifeq          42
+        38: iconst_1
+        39: goto          43
+        42: iconst_0
+        43: istore_1
+        44: iload_1
+        45: ifeq          167
+        48: aload_0
+        49: getfield      #310                // Field net/minecraftforge/event/TickEvent$PlayerTickEvent.player:Lnet/minecraft/world/entity/player/Player;
+        52: invokevirtual #281                // Method net/minecraft/world/entity/player/Player.m_9236_:()Lnet/minecraft/world/level/Level;
+        55: getfield      #326                // Field net/minecraft/world/level/Level.f_46443_:Z
+        58: ifeq          167
+        61: aload_0
+        62: getfield      #310                // Field net/minecraftforge/event/TickEvent$PlayerTickEvent.player:Lnet/minecraft/world/entity/player/Player;
+        65: invokevirtual #281                // Method net/minecraft/world/entity/player/Player.m_9236_:()Lnet/minecraft/world/level/Level;
+        68: aload_0
+        69: getfield      #310                // Field net/minecraftforge/event/TickEvent$PlayerTickEvent.player:Lnet/minecraft/world/entity/player/Player;
+        72: invokevirtual #329                // Method net/minecraft/world/entity/player/Player.m_20183_:()Lnet/minecraft/core/BlockPos;
+        75: invokevirtual #333                // Method net/minecraft/world/level/Level.m_204166_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Holder;
+        78: invokeinterface #339,  1          // InterfaceMethod net/minecraft/core/Holder.get:()Ljava/lang/Object;
+        83: checkcast     #30                 // class net/minecraft/world/level/biome/Biome
+        86: invokevirtual #343                // Method net/minecraft/world/level/biome/Biome.getModifiedClimateSettings:()Lnet/minecraft/world/level/biome/Biome$ClimateSettings;
+        89: astore_2
+        90: aload_2
+        91: invokevirtual #346                // Method net/minecraft/world/level/biome/Biome$ClimateSettings.f_47681_:()F
+        94: aload_2
+        95: invokevirtual #349                // Method net/minecraft/world/level/biome/Biome$ClimateSettings.f_47683_:()F
+        98: invokedynamic #361,  0            // InvokeDynamic #1:makeConcatWithConstants:(FF)Ljava/lang/String;
+       103: invokestatic  #367                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       106: astore_3
+       107: ldc_w         #369                // String title.longwings.temperature
+       110: invokestatic  #367                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       113: invokevirtual #375                // Method net/minecraft/network/chat/MutableComponent.getString:()Ljava/lang/String;
+       116: aload_2
+       117: invokevirtual #346                // Method net/minecraft/world/level/biome/Biome$ClimateSettings.f_47681_:()F
+       120: ldc_w         #377                // String title.longwings.humidity
+       123: invokestatic  #367                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       126: invokevirtual #375                // Method net/minecraft/network/chat/MutableComponent.getString:()Ljava/lang/String;
+       129: aload_2
+       130: invokevirtual #349                // Method net/minecraft/world/level/biome/Biome$ClimateSettings.f_47683_:()F
+       133: invokedynamic #382,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;FLjava/lang/String;F)Ljava/lang/String;
+       138: invokestatic  #385                // InterfaceMethod net/minecraft/network/chat/Component.m_237113_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       141: astore        4
+       143: aload_0
+       144: getfield      #310                // Field net/minecraftforge/event/TickEvent$PlayerTickEvent.player:Lnet/minecraft/world/entity/player/Player;
+       147: aload_0
+       148: getfield      #310                // Field net/minecraftforge/event/TickEvent$PlayerTickEvent.player:Lnet/minecraft/world/entity/player/Player;
+       151: invokevirtual #389                // Method net/minecraft/world/entity/player/Player.m_6047_:()Z
+       154: ifeq          162
+       157: aload         4
+       159: goto          163
+       162: aload_3
+       163: iconst_1
+       164: invokevirtual #393                // Method net/minecraft/world/entity/player/Player.m_5661_:(Lnet/minecraft/network/chat/Component;Z)V
+       167: return
+      StackMapTable: number_of_entries = 6
+        frame_type = 38 /* same */
+        frame_type = 3 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 118
+          locals = [ class net/minecraftforge/event/TickEvent$PlayerTickEvent, int, class net/minecraft/world/level/biome/Biome$ClimateSettings, class net/minecraft/network/chat/Component, class net/minecraft/network/chat/Component ]
+          stack = [ class net/minecraft/world/entity/player/Player ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class net/minecraftforge/event/TickEvent$PlayerTickEvent, int, class net/minecraft/world/level/biome/Biome$ClimateSettings, class net/minecraft/network/chat/Component, class net/minecraft/network/chat/Component ]
+          stack = [ class net/minecraft/world/entity/player/Player, class net/minecraft/network/chat/Component ]
+        frame_type = 248 /* chop */
+          offset_delta = 3
+      LineNumberTable:
+        line 86: 0
+        line 88: 44
+        line 89: 48
+        line 90: 61
+        line 92: 90
+        line 93: 107
+        line 94: 110
+        line 95: 117
+        line 96: 123
+        line 97: 130
+        line 93: 138
+        line 99: 143
+        line 102: 167
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           90      77     2 climateSettings   Lnet/minecraft/world/level/biome/Biome$ClimateSettings;
+          107      60     3 component   Lnet/minecraft/network/chat/Component;
+          143      24     4 componentShift   Lnet/minecraft/network/chat/Component;
+            0     168     0 event   Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;
+           44     124     1 lepidopterapediaInHand   Z
+    RuntimeVisibleAnnotations:
+      0: #53()
+        net.minecraftforge.eventbus.api.SubscribeEvent
+
+  private static void lambda$rightClick$0(net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand, net.minecraft.world.entity.player.Player);
+    descriptor: (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/entity/player/Player;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #403                // Method net/minecraft/world/entity/player/Player.m_21190_:(Lnet/minecraft/world/InteractionHand;)V
+         5: return
+      LineNumberTable:
+        line 63: 0
+        line 64: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0 player   Lnet/minecraft/world/entity/player/Player;
+            0       6     1  hand   Lnet/minecraft/world/InteractionHand;
+            0       6     2 player1   Lnet/minecraft/world/entity/player/Player;
+}
+InnerClasses:
+  public static #16= #13 of #15;          // RightClickBlock=class net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock of class net/minecraftforge/event/entity/player/PlayerInteractEvent
+  public static #21= #18 of #20;          // BreakEvent=class net/minecraftforge/event/level/BlockEvent$BreakEvent of class net/minecraftforge/event/level/BlockEvent
+  public static #26= #23 of #25;          // PlayerTickEvent=class net/minecraftforge/event/TickEvent$PlayerTickEvent of class net/minecraftforge/event/TickEvent
+  public static final #31= #28 of #30;    // ClimateSettings=class net/minecraft/world/level/biome/Biome$ClimateSettings of class net/minecraft/world/level/biome/Biome
+  public static #36= #33 of #35;          // EventBusSubscriber=class net/minecraftforge/fml/common/Mod$EventBusSubscriber of class net/minecraftforge/fml/common/Mod
+  public static final #39= #38 of #33;    // Bus=class net/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus of class net/minecraftforge/fml/common/Mod$EventBusSubscriber
+  public static final #44= #41 of #43;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+SourceFile: "EventsForge.java"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8,#9=e#10.#11)
+    net.minecraftforge.fml.common.Mod$EventBusSubscriber(
+      modid="longwings"
+      bus=Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus;.FORGE
+    )
+BootstrapMethods:
+  0: #185 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #171 (Ljava/lang/Object;)V
+      #176 REF_invokeStatic com/cicada/longwings/event/EventsForge.lambda$rightClick$0:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/entity/player/Player;)V
+      #178 (Lnet/minecraft/world/entity/player/Player;)V
+  1: #358 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #351 ? : \u0001 | ? : \u0001
+  2: #358 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #379 \u0001 : \u0001 | \u0001 : \u0001

@@ -1,0 +1,527 @@
+Compiled from "ButterflyEggs.java"
+public class com.cicada.longwings.block.ButterflyEggs extends net.minecraft.world.level.block.Block {
+  public static final net.minecraft.world.level.block.state.properties.IntegerProperty LEVEL_BOWL_PLACED;
+
+  public com.cicada.longwings.block.ButterflyEggs(net.minecraft.world.level.block.state.BlockBehaviour$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #28                 // Method net/minecraft/world/level/block/Block."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+       5: aload_0
+       6: aload_0
+       7: getfield      #32                 // Field f_49792_:Lnet/minecraft/world/level/block/state/StateDefinition;
+      10: invokevirtual #36                 // Method net/minecraft/world/level/block/state/StateDefinition.m_61090_:()Lnet/minecraft/world/level/block/state/StateHolder;
+      13: checkcast     #38                 // class net/minecraft/world/level/block/state/BlockState
+      16: getstatic     #44                 // Field net/minecraft/world/level/block/state/properties/BlockStateProperties.f_61372_:Lnet/minecraft/world/level/block/state/properties/DirectionProperty;
+      19: getstatic     #50                 // Field net/minecraft/core/Direction.NORTH:Lnet/minecraft/core/Direction;
+      22: invokevirtual #54                 // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+      25: checkcast     #38                 // class net/minecraft/world/level/block/state/BlockState
+      28: invokevirtual #58                 // Method m_49959_:(Lnet/minecraft/world/level/block/state/BlockState;)V
+      31: return
+
+  protected void m_7926_(net.minecraft.world.level.block.state.StateDefinition$Builder<net.minecraft.world.level.block.Block, net.minecraft.world.level.block.state.BlockState>);
+    Code:
+       0: aload_1
+       1: iconst_1
+       2: anewarray     #67                 // class net/minecraft/world/level/block/state/properties/Property
+       5: dup
+       6: iconst_0
+       7: getstatic     #44                 // Field net/minecraft/world/level/block/state/properties/BlockStateProperties.f_61372_:Lnet/minecraft/world/level/block/state/properties/DirectionProperty;
+      10: aastore
+      11: invokevirtual #71                 // Method net/minecraft/world/level/block/state/StateDefinition$Builder.m_61104_:([Lnet/minecraft/world/level/block/state/properties/Property;)Lnet/minecraft/world/level/block/state/StateDefinition$Builder;
+      14: pop
+      15: return
+
+  public void m_141947_(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, net.minecraft.world.entity.Entity);
+    Code:
+       0: aload         4
+       2: instanceof    #78                 // class com/cicada/longwings/entity/ButterflyEntity
+       5: ifne          15
+       8: aload_1
+       9: aload_2
+      10: iconst_0
+      11: invokevirtual #84                 // Method net/minecraft/world/level/Level.m_46961_:(Lnet/minecraft/core/BlockPos;Z)Z
+      14: pop
+      15: return
+
+  public net.minecraft.world.phys.shapes.VoxelShape m_5940_(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos, net.minecraft.world.phys.shapes.CollisionContext);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: aload_3
+       3: invokevirtual #98                 // Method net/minecraft/world/level/block/state/BlockState.m_60824_:(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/Vec3;
+       6: astore        5
+       8: getstatic     #44                 // Field net/minecraft/world/level/block/state/properties/BlockStateProperties.f_61372_:Lnet/minecraft/world/level/block/state/properties/DirectionProperty;
+      11: astore        6
+      13: aload_1
+      14: aload         6
+      16: invokevirtual #102                // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+      19: checkcast     #46                 // class net/minecraft/core/Direction
+      22: astore        7
+      24: ldc2_w        #103                // double 3.0d
+      27: dconst_0
+      28: ldc2_w        #103                // double 3.0d
+      31: ldc2_w        #105                // double 13.0d
+      34: ldc2_w        #107                // double 4.0d
+      37: ldc2_w        #105                // double 13.0d
+      40: invokestatic  #112                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      43: aload         5
+      45: getfield      #118                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      48: aload         5
+      50: getfield      #121                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+      53: aload         5
+      55: getfield      #124                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      58: invokevirtual #130                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83216_:(DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      61: astore        8
+      63: aload         7
+      65: getstatic     #133                // Field net/minecraft/core/Direction.UP:Lnet/minecraft/core/Direction;
+      68: if_acmpne     110
+      71: ldc2_w        #103                // double 3.0d
+      74: dconst_0
+      75: ldc2_w        #103                // double 3.0d
+      78: ldc2_w        #105                // double 13.0d
+      81: ldc2_w        #107                // double 4.0d
+      84: ldc2_w        #105                // double 13.0d
+      87: invokestatic  #112                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      90: aload         5
+      92: getfield      #118                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      95: aload         5
+      97: getfield      #121                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     100: aload         5
+     102: getfield      #124                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     105: invokevirtual #130                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83216_:(DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     108: astore        8
+     110: aload         7
+     112: getstatic     #144                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+     115: if_acmpne     159
+     118: ldc2_w        #103                // double 3.0d
+     121: ldc2_w        #145                // double 12.0d
+     124: ldc2_w        #103                // double 3.0d
+     127: ldc2_w        #105                // double 13.0d
+     130: ldc2_w        #147                // double 16.0d
+     133: ldc2_w        #105                // double 13.0d
+     136: invokestatic  #112                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     139: aload         5
+     141: getfield      #118                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     144: aload         5
+     146: getfield      #121                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     149: aload         5
+     151: getfield      #124                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     154: invokevirtual #130                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83216_:(DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     157: astore        8
+     159: aload         7
+     161: getstatic     #50                 // Field net/minecraft/core/Direction.NORTH:Lnet/minecraft/core/Direction;
+     164: if_acmpne     208
+     167: ldc2_w        #103                // double 3.0d
+     170: ldc2_w        #103                // double 3.0d
+     173: ldc2_w        #145                // double 12.0d
+     176: ldc2_w        #105                // double 13.0d
+     179: ldc2_w        #105                // double 13.0d
+     182: ldc2_w        #147                // double 16.0d
+     185: invokestatic  #112                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     188: aload         5
+     190: getfield      #118                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     193: aload         5
+     195: getfield      #121                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     198: aload         5
+     200: getfield      #124                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     203: invokevirtual #130                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83216_:(DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     206: astore        8
+     208: aload         7
+     210: getstatic     #151                // Field net/minecraft/core/Direction.SOUTH:Lnet/minecraft/core/Direction;
+     213: if_acmpne     255
+     216: ldc2_w        #103                // double 3.0d
+     219: ldc2_w        #103                // double 3.0d
+     222: dconst_0
+     223: ldc2_w        #105                // double 13.0d
+     226: ldc2_w        #105                // double 13.0d
+     229: ldc2_w        #107                // double 4.0d
+     232: invokestatic  #112                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     235: aload         5
+     237: getfield      #118                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     240: aload         5
+     242: getfield      #121                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     245: aload         5
+     247: getfield      #124                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     250: invokevirtual #130                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83216_:(DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     253: astore        8
+     255: aload         7
+     257: getstatic     #154                // Field net/minecraft/core/Direction.EAST:Lnet/minecraft/core/Direction;
+     260: if_acmpne     302
+     263: dconst_0
+     264: ldc2_w        #103                // double 3.0d
+     267: ldc2_w        #103                // double 3.0d
+     270: ldc2_w        #107                // double 4.0d
+     273: ldc2_w        #105                // double 13.0d
+     276: ldc2_w        #105                // double 13.0d
+     279: invokestatic  #112                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     282: aload         5
+     284: getfield      #118                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     287: aload         5
+     289: getfield      #121                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     292: aload         5
+     294: getfield      #124                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     297: invokevirtual #130                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83216_:(DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     300: astore        8
+     302: aload         7
+     304: getstatic     #157                // Field net/minecraft/core/Direction.WEST:Lnet/minecraft/core/Direction;
+     307: if_acmpne     351
+     310: ldc2_w        #145                // double 12.0d
+     313: ldc2_w        #103                // double 3.0d
+     316: ldc2_w        #103                // double 3.0d
+     319: ldc2_w        #147                // double 16.0d
+     322: ldc2_w        #105                // double 13.0d
+     325: ldc2_w        #105                // double 13.0d
+     328: invokestatic  #112                // Method net/minecraft/world/level/block/Block.m_49796_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     331: aload         5
+     333: getfield      #118                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     336: aload         5
+     338: getfield      #121                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     341: aload         5
+     343: getfield      #124                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     346: invokevirtual #130                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83216_:(DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     349: astore        8
+     351: aload         8
+     353: areturn
+
+  public void m_213898_(net.minecraft.world.level.block.state.BlockState, net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos, net.minecraft.util.RandomSource);
+    Code:
+       0: aload_2
+       1: aload_3
+       2: iconst_0
+       3: invokevirtual #174                // Method net/minecraft/server/level/ServerLevel.m_46961_:(Lnet/minecraft/core/BlockPos;Z)Z
+       6: pop
+       7: new           #176                // class java/util/Random
+      10: dup
+      11: invokespecial #179                // Method java/util/Random."<init>":()V
+      14: astore        5
+      16: iconst_0
+      17: istore        6
+      19: iload         6
+      21: iconst_2
+      22: aload         5
+      24: iconst_3
+      25: invokevirtual #183                // Method java/util/Random.nextInt:(I)I
+      28: iadd
+      29: if_icmpge     145
+      32: getstatic     #189                // Field com/cicada/longwings/entity/LongwingsEntityTypes.BUTTERFLY:Lnet/minecraft/world/entity/EntityType;
+      35: aload_2
+      36: invokevirtual #193                // Method net/minecraft/server/level/ServerLevel.m_6018_:()Lnet/minecraft/server/level/ServerLevel;
+      39: invokevirtual #199                // Method net/minecraft/world/entity/EntityType.m_20615_:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+      42: checkcast     #78                 // class com/cicada/longwings/entity/ButterflyEntity
+      45: astore        7
+      47: aload         7
+      49: aload_3
+      50: invokevirtual #203                // Method net/minecraft/core/BlockPos.m_123341_:()I
+      53: i2f
+      54: ldc           #204                // float 0.5f
+      56: fadd
+      57: f2d
+      58: aload_3
+      59: invokevirtual #207                // Method net/minecraft/core/BlockPos.m_123342_:()I
+      62: i2f
+      63: ldc           #204                // float 0.5f
+      65: fadd
+      66: f2d
+      67: aload_3
+      68: invokevirtual #210                // Method net/minecraft/core/BlockPos.m_123343_:()I
+      71: i2f
+      72: ldc           #204                // float 0.5f
+      74: fadd
+      75: f2d
+      76: invokevirtual #214                // Method com/cicada/longwings/entity/ButterflyEntity.m_6027_:(DDD)V
+      79: aload         7
+      81: invokestatic  #220                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyVariantPool:()[Lcom/cicada/longwings/entity/ButterflyVariant;
+      84: aload         4
+      86: invokestatic  #220                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyVariantPool:()[Lcom/cicada/longwings/entity/ButterflyVariant;
+      89: arraylength
+      90: invokeinterface #225,  2          // InterfaceMethod net/minecraft/util/RandomSource.m_188503_:(I)I
+      95: aaload
+      96: invokevirtual #229                // Method com/cicada/longwings/entity/ButterflyVariant.getButterflyStringId:()Ljava/lang/String;
+      99: invokevirtual #233                // Method com/cicada/longwings/entity/ButterflyEntity.setVariant:(Ljava/lang/String;)V
+     102: aload_2
+     103: invokevirtual #193                // Method net/minecraft/server/level/ServerLevel.m_6018_:()Lnet/minecraft/server/level/ServerLevel;
+     106: aload         7
+     108: invokevirtual #237                // Method net/minecraft/server/level/ServerLevel.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+     111: pop
+     112: aload         7
+     114: invokevirtual #241                // Method com/cicada/longwings/entity/ButterflyEntity.m_21573_:()Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+     117: aload_3
+     118: invokevirtual #203                // Method net/minecraft/core/BlockPos.m_123341_:()I
+     121: i2d
+     122: aload_3
+     123: invokevirtual #207                // Method net/minecraft/core/BlockPos.m_123342_:()I
+     126: i2d
+     127: aload_3
+     128: invokevirtual #210                // Method net/minecraft/core/BlockPos.m_123343_:()I
+     131: i2d
+     132: ldc2_w        #242                // double 0.5d
+     135: invokevirtual #249                // Method net/minecraft/world/entity/ai/navigation/PathNavigation.m_26519_:(DDDD)Z
+     138: pop
+     139: iinc          6, 1
+     142: goto          19
+     145: aload_0
+     146: aload_1
+     147: aload_2
+     148: aload_3
+     149: aload         4
+     151: invokespecial #251                // Method net/minecraft/world/level/block/Block.m_213898_:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)V
+     154: return
+
+  public net.minecraft.world.InteractionResult m_6227_(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand, net.minecraft.world.phys.BlockHitResult);
+    Code:
+       0: aload         4
+       2: aload         5
+       4: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+       7: getstatic     #277                // Field net/minecraft/world/item/Items.f_42399_:Lnet/minecraft/world/item/Item;
+      10: invokevirtual #283                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+      13: ifeq          253
+      16: aload_1
+      17: getstatic     #289                // Field com/cicada/longwings/block/LongwingsBlocks.SUGAR_WATER_BOWL:Lcom/cicada/longwings/block/BowlPlaced$SugarWaterBowl;
+      20: invokevirtual #293                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      23: ifeq          143
+      26: aload_1
+      27: getstatic     #295                // Field LEVEL_BOWL_PLACED:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+      30: invokevirtual #102                // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+      33: checkcast     #297                // class java/lang/Integer
+      36: invokevirtual #300                // Method java/lang/Integer.intValue:()I
+      39: iconst_4
+      40: if_icmpne     143
+      43: aload         4
+      45: aload         5
+      47: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+      50: invokevirtual #303                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+      53: iconst_1
+      54: if_icmple     104
+      57: aload         4
+      59: aload         5
+      61: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+      64: iconst_1
+      65: invokevirtual #307                // Method net/minecraft/world/item/ItemStack.m_41774_:(I)V
+      68: aload         4
+      70: invokevirtual #311                // Method net/minecraft/world/entity/player/Player.m_150109_:()Lnet/minecraft/world/entity/player/Inventory;
+      73: getstatic     #316                // Field com/cicada/longwings/item/LongwingsItems.SUGAR_WATER_BOWL:Lcom/cicada/longwings/item/BowlPlacedItem;
+      76: invokevirtual #322                // Method com/cicada/longwings/item/BowlPlacedItem.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+      79: invokevirtual #328                // Method net/minecraft/world/entity/player/Inventory.m_36054_:(Lnet/minecraft/world/item/ItemStack;)Z
+      82: ifeq          88
+      85: goto          117
+      88: aload         4
+      90: getstatic     #316                // Field com/cicada/longwings/item/LongwingsItems.SUGAR_WATER_BOWL:Lcom/cicada/longwings/item/BowlPlacedItem;
+      93: invokevirtual #322                // Method com/cicada/longwings/item/BowlPlacedItem.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+      96: iconst_0
+      97: invokevirtual #332                // Method net/minecraft/world/entity/player/Player.m_36176_:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/entity/item/ItemEntity;
+     100: pop
+     101: goto          117
+     104: aload         4
+     106: aload         5
+     108: getstatic     #316                // Field com/cicada/longwings/item/LongwingsItems.SUGAR_WATER_BOWL:Lcom/cicada/longwings/item/BowlPlacedItem;
+     111: invokevirtual #322                // Method com/cicada/longwings/item/BowlPlacedItem.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     114: invokevirtual #336                // Method net/minecraft/world/entity/player/Player.m_21008_:(Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V
+     117: aload_2
+     118: aload_3
+     119: getstatic     #340                // Field com/cicada/longwings/block/LongwingsBlocks.DIRT_BOWL:Lcom/cicada/longwings/block/BowlPlaced;
+     122: invokevirtual #344                // Method com/cicada/longwings/block/BowlPlaced.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+     125: invokevirtual #348                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+     128: pop
+     129: aload         4
+     131: getstatic     #354                // Field net/minecraft/sounds/SoundEvents.f_11707_:Lnet/minecraft/sounds/SoundEvent;
+     134: fconst_1
+     135: fconst_1
+     136: invokevirtual #358                // Method net/minecraft/world/entity/player/Player.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     139: getstatic     #364                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+     142: areturn
+     143: aload_1
+     144: getstatic     #340                // Field com/cicada/longwings/block/LongwingsBlocks.DIRT_BOWL:Lcom/cicada/longwings/block/BowlPlaced;
+     147: invokevirtual #293                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     150: ifeq          253
+     153: aload         4
+     155: aload         5
+     157: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     160: invokevirtual #303                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+     163: iconst_1
+     164: if_icmple     214
+     167: aload         4
+     169: aload         5
+     171: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     174: iconst_1
+     175: invokevirtual #307                // Method net/minecraft/world/item/ItemStack.m_41774_:(I)V
+     178: aload         4
+     180: invokevirtual #311                // Method net/minecraft/world/entity/player/Player.m_150109_:()Lnet/minecraft/world/entity/player/Inventory;
+     183: getstatic     #368                // Field com/cicada/longwings/item/LongwingsItems.BUTTERFLY_FEEDER_BOWL:Lnet/minecraft/world/item/BlockItem;
+     186: invokevirtual #371                // Method net/minecraft/world/item/BlockItem.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     189: invokevirtual #328                // Method net/minecraft/world/entity/player/Inventory.m_36054_:(Lnet/minecraft/world/item/ItemStack;)Z
+     192: ifeq          198
+     195: goto          227
+     198: aload         4
+     200: getstatic     #368                // Field com/cicada/longwings/item/LongwingsItems.BUTTERFLY_FEEDER_BOWL:Lnet/minecraft/world/item/BlockItem;
+     203: invokevirtual #371                // Method net/minecraft/world/item/BlockItem.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     206: iconst_0
+     207: invokevirtual #332                // Method net/minecraft/world/entity/player/Player.m_36176_:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/entity/item/ItemEntity;
+     210: pop
+     211: goto          227
+     214: aload         4
+     216: aload         5
+     218: getstatic     #368                // Field com/cicada/longwings/item/LongwingsItems.BUTTERFLY_FEEDER_BOWL:Lnet/minecraft/world/item/BlockItem;
+     221: invokevirtual #371                // Method net/minecraft/world/item/BlockItem.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     224: invokevirtual #336                // Method net/minecraft/world/entity/player/Player.m_21008_:(Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V
+     227: aload_2
+     228: aload_3
+     229: getstatic     #374                // Field com/cicada/longwings/block/LongwingsBlocks.BOWL:Lcom/cicada/longwings/block/BowlPlaced;
+     232: invokevirtual #344                // Method com/cicada/longwings/block/BowlPlaced.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+     235: invokevirtual #348                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+     238: pop
+     239: aload         4
+     241: getstatic     #377                // Field net/minecraft/sounds/SoundEvents.f_144209_:Lnet/minecraft/sounds/SoundEvent;
+     244: fconst_1
+     245: fconst_1
+     246: invokevirtual #358                // Method net/minecraft/world/entity/player/Player.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     249: getstatic     #364                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+     252: areturn
+     253: aload         4
+     255: aload         5
+     257: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     260: getstatic     #316                // Field com/cicada/longwings/item/LongwingsItems.SUGAR_WATER_BOWL:Lcom/cicada/longwings/item/BowlPlacedItem;
+     263: invokevirtual #283                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+     266: ifeq          393
+     269: aload_1
+     270: getstatic     #340                // Field com/cicada/longwings/block/LongwingsBlocks.DIRT_BOWL:Lcom/cicada/longwings/block/BowlPlaced;
+     273: invokevirtual #293                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     276: ifne          289
+     279: aload_1
+     280: getstatic     #289                // Field com/cicada/longwings/block/LongwingsBlocks.SUGAR_WATER_BOWL:Lcom/cicada/longwings/block/BowlPlaced$SugarWaterBowl;
+     283: invokevirtual #293                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     286: ifeq          393
+     289: aload         4
+     291: aload         5
+     293: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     296: invokevirtual #303                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+     299: iconst_1
+     300: if_icmple     350
+     303: aload         4
+     305: aload         5
+     307: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     310: iconst_1
+     311: invokevirtual #307                // Method net/minecraft/world/item/ItemStack.m_41774_:(I)V
+     314: aload         4
+     316: invokevirtual #311                // Method net/minecraft/world/entity/player/Player.m_150109_:()Lnet/minecraft/world/entity/player/Inventory;
+     319: getstatic     #277                // Field net/minecraft/world/item/Items.f_42399_:Lnet/minecraft/world/item/Item;
+     322: invokevirtual #380                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     325: invokevirtual #328                // Method net/minecraft/world/entity/player/Inventory.m_36054_:(Lnet/minecraft/world/item/ItemStack;)Z
+     328: ifeq          334
+     331: goto          363
+     334: aload         4
+     336: getstatic     #277                // Field net/minecraft/world/item/Items.f_42399_:Lnet/minecraft/world/item/Item;
+     339: invokevirtual #380                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     342: iconst_0
+     343: invokevirtual #332                // Method net/minecraft/world/entity/player/Player.m_36176_:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/entity/item/ItemEntity;
+     346: pop
+     347: goto          363
+     350: aload         4
+     352: aload         5
+     354: getstatic     #277                // Field net/minecraft/world/item/Items.f_42399_:Lnet/minecraft/world/item/Item;
+     357: invokevirtual #380                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     360: invokevirtual #336                // Method net/minecraft/world/entity/player/Player.m_21008_:(Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V
+     363: aload_2
+     364: aload_3
+     365: getstatic     #289                // Field com/cicada/longwings/block/LongwingsBlocks.SUGAR_WATER_BOWL:Lcom/cicada/longwings/block/BowlPlaced$SugarWaterBowl;
+     368: invokevirtual #381                // Method com/cicada/longwings/block/BowlPlaced$SugarWaterBowl.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+     371: invokevirtual #348                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+     374: pop
+     375: aload         4
+     377: getstatic     #384                // Field net/minecraft/sounds/SoundEvents.f_144066_:Lnet/minecraft/sounds/SoundEvent;
+     380: ldc_w         #385                // float 0.25f
+     383: ldc_w         #386                // float 1.25f
+     386: invokevirtual #358                // Method net/minecraft/world/entity/player/Player.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     389: getstatic     #364                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+     392: areturn
+     393: aload         4
+     395: aload         5
+     397: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     400: getstatic     #368                // Field com/cicada/longwings/item/LongwingsItems.BUTTERFLY_FEEDER_BOWL:Lnet/minecraft/world/item/BlockItem;
+     403: invokevirtual #283                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+     406: ifeq          543
+     409: aload_1
+     410: getstatic     #374                // Field com/cicada/longwings/block/LongwingsBlocks.BOWL:Lcom/cicada/longwings/block/BowlPlaced;
+     413: invokevirtual #293                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     416: ifne          439
+     419: aload_1
+     420: getstatic     #340                // Field com/cicada/longwings/block/LongwingsBlocks.DIRT_BOWL:Lcom/cicada/longwings/block/BowlPlaced;
+     423: invokevirtual #293                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     426: ifne          439
+     429: aload_1
+     430: getstatic     #289                // Field com/cicada/longwings/block/LongwingsBlocks.SUGAR_WATER_BOWL:Lcom/cicada/longwings/block/BowlPlaced$SugarWaterBowl;
+     433: invokevirtual #293                // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+     436: ifeq          543
+     439: aload         4
+     441: aload         5
+     443: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     446: invokevirtual #303                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+     449: iconst_1
+     450: if_icmple     500
+     453: aload         4
+     455: aload         5
+     457: invokevirtual #271                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     460: iconst_1
+     461: invokevirtual #307                // Method net/minecraft/world/item/ItemStack.m_41774_:(I)V
+     464: aload         4
+     466: invokevirtual #311                // Method net/minecraft/world/entity/player/Player.m_150109_:()Lnet/minecraft/world/entity/player/Inventory;
+     469: getstatic     #277                // Field net/minecraft/world/item/Items.f_42399_:Lnet/minecraft/world/item/Item;
+     472: invokevirtual #380                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     475: invokevirtual #328                // Method net/minecraft/world/entity/player/Inventory.m_36054_:(Lnet/minecraft/world/item/ItemStack;)Z
+     478: ifeq          484
+     481: goto          513
+     484: aload         4
+     486: getstatic     #277                // Field net/minecraft/world/item/Items.f_42399_:Lnet/minecraft/world/item/Item;
+     489: invokevirtual #380                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     492: iconst_0
+     493: invokevirtual #332                // Method net/minecraft/world/entity/player/Player.m_36176_:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/entity/item/ItemEntity;
+     496: pop
+     497: goto          513
+     500: aload         4
+     502: aload         5
+     504: getstatic     #277                // Field net/minecraft/world/item/Items.f_42399_:Lnet/minecraft/world/item/Item;
+     507: invokevirtual #380                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     510: invokevirtual #336                // Method net/minecraft/world/entity/player/Player.m_21008_:(Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;)V
+     513: aload_2
+     514: aload_3
+     515: getstatic     #340                // Field com/cicada/longwings/block/LongwingsBlocks.DIRT_BOWL:Lcom/cicada/longwings/block/BowlPlaced;
+     518: invokevirtual #344                // Method com/cicada/longwings/block/BowlPlaced.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+     521: invokevirtual #348                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+     524: pop
+     525: aload         4
+     527: getstatic     #377                // Field net/minecraft/sounds/SoundEvents.f_144209_:Lnet/minecraft/sounds/SoundEvent;
+     530: ldc_w         #385                // float 0.25f
+     533: ldc_w         #386                // float 1.25f
+     536: invokevirtual #358                // Method net/minecraft/world/entity/player/Player.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     539: getstatic     #364                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+     542: areturn
+     543: aload_0
+     544: aload_1
+     545: aload_2
+     546: aload_3
+     547: aload         4
+     549: aload         5
+     551: aload         6
+     553: invokespecial #388                // Method net/minecraft/world/level/block/Block.m_6227_:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;
+     556: areturn
+
+  public net.minecraft.world.level.block.state.BlockState m_5573_(net.minecraft.world.item.context.BlockPlaceContext);
+    Code:
+       0: aload_0
+       1: invokevirtual #400                // Method m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+       4: getstatic     #44                 // Field net/minecraft/world/level/block/state/properties/BlockStateProperties.f_61372_:Lnet/minecraft/world/level/block/state/properties/DirectionProperty;
+       7: aload_1
+       8: invokevirtual #406                // Method net/minecraft/world/item/context/BlockPlaceContext.m_43719_:()Lnet/minecraft/core/Direction;
+      11: invokevirtual #54                 // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+      14: checkcast     #38                 // class net/minecraft/world/level/block/state/BlockState
+      17: areturn
+
+  static {};
+    Code:
+       0: ldc_w         #411                // String level
+       3: iconst_1
+       4: iconst_4
+       5: invokestatic  #417                // Method net/minecraft/world/level/block/state/properties/IntegerProperty.m_61631_:(Ljava/lang/String;II)Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+       8: putstatic     #295                // Field LEVEL_BOWL_PLACED:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+      11: return
+}

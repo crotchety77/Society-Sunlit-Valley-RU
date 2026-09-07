@@ -50,7 +50,7 @@ tooltip.society.charting_map	Allows you to link two signs together via a path fo
 block.society.artisan_hopper.filter	This Artisan Hopper cannot work with a filter upgrade!	Эта Ремесленная воронка не может работать с улучшением-фильтром!
 block.society.drum_cornucopia.description	Harvest fruits from nearby trees at 7am	Собирает плоды с соседних деревьев каждое утро в 7:00
 block.society.fish_pond_manager.description	Submits quests for fish ponds at 7am every morning	Автоматически сдает квесты для рыбных садков каждое утро в 7:00
-block.society.caterpillar_box.description	Hatches Caterpillar Eggs placed inside every 5 minutes. Butterflies and Moths fly out of the box's top.	Высиживает помещённые внутрь яйца гусениц каждые 5 минут. Бабочки и мотыльки вылетают через верх ящика.
+block.society.caterpillar_box.description	Hatches Caterpillar Eggs placed inside every 5 minutes. Butterflies and Moths fly out of the box's top.	Высиживает помещённые внутрь яйца гусениц каждые 5 минут. Вылупившиеся бабочки и мотыльки вылетают через верх инкубатора.
 6. 🪄 Предметы, Тотемы и Гусеницы
 Ключ	Английский оригинал	Предлагаемый перевод
 item.society.ancient_builders_tool.description	Relic of the World-Shapers	Реликвия Создателей Мира

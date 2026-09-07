@@ -87,7 +87,7 @@ ItemEvents.tooltip((tooltip) => {
     }
   });
 
-  // 7. Подсказки для Универсальных подарков
+  // 7. Подсказки для Универсальных любимых подарков (+40 очков)
   const universalLovedItems = [
     "society:prismatic_shard",
     "minecraft:rabbit_foot",
@@ -99,44 +99,6 @@ ItemEvents.tooltip((tooltip) => {
     "crabbersdelight:pearl_block"
   ];
   tooltip.add(universalLovedItems, Text.literal("§dУниверсальный подарок (+40 очков)"));
-
-  const universalLikedItems = [
-    "minecraft:totem_of_undying",
-    "atmospheric:candied_orange_slices",
-    "quark:diamond_heart",
-    "society:mossberry",
-    "society:mossberry_stew",
-    "crabbersdelight:pearl",
-    "society:furniture_box",
-    "society:ancient_cookie"
-  ];
-  tooltip.add(universalLikedItems, Text.literal("§bУниверсальный подарок (+25 очков)"));
-
-  const universalLikedTags = [
-    "etcetera:sweaters",
-    "etcetera:hats",
-    "society:mineral",
-    "forge:gems",
-    "society:pristine_mineral"
-  ];
-
-  universalLikedTags.forEach((tag) => {
-    tooltip.addAdvanced(`#${tag}`, (item, advanced, text) => {
-      // Исключаем любимые (+40) предметы и предотвращаем повтор от нескольких тегов
-      if (!universalLovedItems.includes(item.id)) {
-        let alreadyAdded = false;
-        for (let i = 0; i < text.size(); i++) {
-          if (text.get(i).getString().includes("Универсальный подарок")) {
-            alreadyAdded = true;
-            break;
-          }
-        }
-        if (!alreadyAdded) {
-          text.add(Text.literal("§bУниверсальный подарок (+25 очков)"));
-        }
-      }
-    });
-  });
 
   // Тултип для Билета слайма с поддержкой [SHIFT]
   tooltip.addAdvanced("splendid_slimes:slime_ticket", (item, advanced, text) => {

@@ -3464,7 +3464,7 @@ EN title:
 RU title: 
 
 EN description1: The &6Black Opal&r upgrade can be used on a &6Crystalarium&r to let it produce Pristine versions of the mineral or gem grown.
-RU description1: Улучшение &6чёрный опал&r можно применить к &6кристалляриуму&r, чтобы он производил безупречные версии выращиваемых минералов или драгоценных камней.
+RU description1: Улучшение &6чёрный опал&r можно применить к &6кристаллариуму&r, чтобы он производил безупречные версии выращиваемых минералов или драгоценных камней.
 EN description2: Not only are these more valuable, but they can also be broken down into multiple of the basic versions.
 RU description2: Они не только более ценные, но и могут быть разделены на несколько базовых версий.
 
@@ -4379,7 +4379,7 @@ EN title: Growing Crystals
 RU title: Выращивание кристаллов
 
 EN description1: Expensive and slow, the &6Crystalarium&r will duplicate any gem or mineral placed inside. The amount of days to complete will depend on the inserted item.
-RU description1: Дорогой и медленный &6кристалляриум&r будет дублировать любой помещённый внутрь драгоценный камень или минерал. Количество дней до завершения будет зависеть от вставленного предмета.
+RU description1: Дорогой и медленный &6кристаллариум&r будет дублировать любой помещённый внутрь драгоценный камень или минерал. Количество дней до завершения будет зависеть от вставленного предмета.
 EN description2: They should be your first goal if you dislike mining for crafting minerals.
 RU description2: Это должно быть вашей первой целью, если вам не нравится добывать минералы для крафта.
 

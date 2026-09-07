@@ -1999,7 +1999,7 @@
   "block.society.artisan_hopper.filter": "Эта Ремесленная воронка не может работать с улучшением-фильтром!",
   "block.society.drum_cornucopia.description": "Собирает плоды с соседних деревьев каждое утро в 7:00",
   "block.society.fish_pond_manager.description": "Автоматически сдает квесты для рыбных прудов каждое утро в 7:00",
-  "block.society.caterpillar_box.description": "Высиживает помещённые внутрь яйца гусениц каждые 5 минут. Бабочки и мотыльки вылетают через верх ящика.",
+  "block.society.caterpillar_box.description": "Инкубирует помещённые внутрь яйца гусениц каждые 5 минут. Вылупившиеся бабочки и мотыльки вылетают через верх инкубатора.",
   "item.society.ancient_builders_tool.description": "Реликвия Создателей Мира",
   "item.society.red_wrench.description": "Клянусь, я не буду её использовать...",
   "item.society.the_metamorphosize.description": "§7Влияние размера бабочек и мотыльков на цену продажи утроено (§ax3§7).§8\n\n§8Основной способ получения: разведение бабочек и мотыльков (§70.1%§8).\n\n§8Другие способы: Книжная ярмарка в конце любого сезона (§649 152 §e●§8).§r",
@@ -2060,5 +2060,6 @@
   "tooltip.cluttered.willow_log": "Образуется при выращивании §6Саженца ивы§7.",
   "tooltip.cluttered.willow_sapling": "Продаётся на §6Рынке§7 после открытия §bМастерства фермерства§7 (меню §eK§7).",
   "tooltip.atmospheric.grimwood_sapling": "Шанс найти §e0,5%§7 при сборе созревших культур после открытия §bМастерства фермерства§7.",
-  "tooltip.society.sprinkler.area": "Область: %s §f(Радиус: %s)§r"
+  "tooltip.society.sprinkler.area": "Область: %s §f(Радиус: %s)§r",
+  "block.society.caterpillar_box": "Инкубатор для гусениц"
 }

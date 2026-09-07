@@ -1,0 +1,10 @@
+{
+  "item.minecraft.netherite_upgrade_smithing_template": "Кузнечный шаблон §5иридиевого§r улучшения",
+  "upgrade.minecraft.netherite_upgrade": "§5Иридиевое улучшение§r",
+  "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": "Добавьте незеритовый слиток",
+  "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Незеритовый слиток",
+  "item.minecraft.smithing_template.netherite_upgrade.applies_to": "Алмазное снаряжение",
+  "entity.minecraft.villager.beachparty.barkeeper": "Бармен",
+  "entity.minecraft.villager.beachparty.beach_boy": "Пляжный парень",
+  "entity.minecraft.villager.beachparty.beach_guy": "Пляжный парень"
+}

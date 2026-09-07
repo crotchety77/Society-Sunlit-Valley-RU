@@ -1,0 +1,18 @@
+{
+  "name": "Иглобрюх",
+  "category": "patchouli:fish",
+  "icon": "minecraft:pufferfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Статистика$()$(li):coin: 16$(li)§0🌼 §2Весна§0 🔥 §6Лето§0 🍂 §4Осень§0$(li)Вода: Океан$(li)Погода: Ясно$(li)Время: Ночь"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:pufferfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "У него довольно хороший мод на навыки."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Обсидиановая рыба",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:obsidianfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 512$(li)Измерение: Незер$(li)Биом: Базальтовые дельты"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:obsidianfish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Она очень любит RPG игры. Не то чтобы она могла в них играть."
+    }
+  ]
+}

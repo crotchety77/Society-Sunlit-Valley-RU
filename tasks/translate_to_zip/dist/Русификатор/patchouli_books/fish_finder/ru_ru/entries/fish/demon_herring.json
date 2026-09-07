@@ -1,0 +1,18 @@
+{
+  "name": "Сельдь-демон",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_demon_herring",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 192$(li)§0🍂 §4Осень§0$(li)Вода: Океан$(li)Погода: Любая$(li)Время: Ночь"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:demon_herring",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Танджиро передаёт привет."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Костная рыба",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:bonefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 364$(li)Измерение: Незер$(li)Биом: Пустоши Незера"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:bonefish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Кость мира была найдена в крыле динозавра."
+    }
+  ]
+}

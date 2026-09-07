@@ -1,0 +1,19 @@
+{
+  "name": "Душесос",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:soulsucker",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 312$(li)Измерение: Незер$(li)Биом: Долина песка душ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:soulsucker",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Я не собираюсь шутить, вы можете сделать это сами."
+    }
+  ]
+}

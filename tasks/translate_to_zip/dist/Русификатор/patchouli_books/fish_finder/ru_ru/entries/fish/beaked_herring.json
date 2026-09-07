@@ -1,0 +1,18 @@
+{
+  "name": "Сельдь-носатка",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_beaked_herring",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 32$(li)§0🌼 §2Весна§0$(li)Вода: Пресная$(li)Погода: Любая$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:beaked_herring",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Я что-то не вижу никакого клюва?"
+    }
+  ]
+}

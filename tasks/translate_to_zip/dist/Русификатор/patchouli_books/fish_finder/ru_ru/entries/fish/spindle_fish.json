@@ -1,0 +1,18 @@
+{
+  "name": "Веретенопёр",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_spindlefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Статистика$()$(li):coin: 368$(li)§0🌼 §2Весна§0$(li)Вода: Океан$(li)Погода: Любая$(li)Время: Ночь"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:spindlefish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Ей суждено прожить жизнь, собирая искрокамень."
+    }
+  ]
+}

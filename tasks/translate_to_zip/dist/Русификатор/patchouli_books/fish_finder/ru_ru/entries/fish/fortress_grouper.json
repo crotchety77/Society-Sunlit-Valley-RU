@@ -1,0 +1,19 @@
+{
+  "name": "Крепостной Групер",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:fortress_grouper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 666$(li)Измерение: Незер$(li)Биом: Любой"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:fortressgrouper",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "И И И: Наблюдатель за рыбой"
+    }
+  ]
+}

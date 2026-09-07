@@ -1,0 +1,19 @@
+{
+  "name": "Обжигающая треска",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:searing_cod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 264$(li)Измерение: Незер$(li)Биом: Любой"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:searing_cod",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Набби говорит: «Ой!»"
+    }
+  ]
+}

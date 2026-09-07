@@ -1,0 +1,19 @@
+{
+  "name": "Костлявая рыба-иссушитель",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:wither_bonefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 412$(li)Измерение: Незер$(li)Биом: Долина песка душ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:wither_bonefish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Я прыгал повсюду, но мои виды медленно сужались."
+    }
+  ]
+}

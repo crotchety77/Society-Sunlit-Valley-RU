@@ -1,0 +1,19 @@
+{
+  "name": "Светлянка",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:glowdine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 448$(li)Измерение: Незер$(li)Биом: Искажённый лес"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:glowdine",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Рыба-брызгун."
+    }
+  ]
+}

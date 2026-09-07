@@ -1,29 +1,44 @@
-# Локализация мода: sawmill
+# Локализация мода: sawmill (Лесопилка)
 
-**JAR:** `sawmill-1.20-1.4.10.jar` | **Всего строк:** 7 | **Не переведено:** 4
+**JAR:** `sawmill-1.20-1.4.10.jar` | **Всего строк:** 7 | **Статус:** 100% переведено
 
-## 1. Визуальный контекст и оформление
-* Форматирование: Названия предметов/блоков начинаются с Заглавной буквы.
-* Валюта: использовать значок монеты `§e●` (`U+25CF`).
-* Тултипы: подсветка клавиш `§6Shift + ПКМ§7`.
+---
 
-## 2. Непереведённые строки (требуют перевода)
+## Блок 1: Визуальный макет (как это выглядит в игре)
 
-```json
-{
-  "sawmill.category.wood_cutting": "TODO: Sawing",
-  "entity.minecraft.villager.carpenter": "TODO: Carpenter",
-  "subtitles.sawmill.entity.villager.work_carpenter": "TODO: Carpenter works",
-  "subtitles.sawmill.ui.sawmill.take_result": "TODO: Sawmill used"
-}
+### 🪓 1. Блок и контейнер
+```text
+§fЛесопилка§r
 ```
 
-## 3. Существующие переводы (для контекста)
+### 📋 2. Процесс в JEI / EMI
+```text
+§fОбработка на лесопилке§r
+```
+
+### 👷 3. Профессия жителя
+```text
+§fПлотник§r
+```
+
+### 🔊 4. Субтитры
+```text
+Плотник работает
+Лесопилка распиливает
+```
+
+---
+
+## Блок 2: Точные строки и ключи локализации (`translations/mods/sawmill.json`)
 
 ```json
 {
   "container.sawmill.sawmill": "Лесопилка",
   "block.sawmill.sawmill": "Лесопилка",
-  "entity.minecraft.villager.sawmill.carpenter": "Плотник"
+  "sawmill.category.wood_cutting": "Обработка на лесопилке",
+  "entity.minecraft.villager.carpenter": "Плотник",
+  "entity.minecraft.villager.sawmill.carpenter": "Плотник",
+  "subtitles.sawmill.entity.villager.work_carpenter": "Плотник работает",
+  "subtitles.sawmill.ui.sawmill.take_result": "Лесопилка распиливает"
 }
 ```

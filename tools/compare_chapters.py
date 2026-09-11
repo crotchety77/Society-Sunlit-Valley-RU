@@ -12,3 +12,5 @@ for f in sorted(os.listdir(dir1)):
     s2 = os.path.getsize(p2) if os.path.exists(p2) else -1
     diff = "DIFF" if s1 != s2 else "SAME"
     print(f"{f:<35} | Active: {s1:>6} | (1): {s2:>6} | {diff}")
+
+

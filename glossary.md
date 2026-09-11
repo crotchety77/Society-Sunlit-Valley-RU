@@ -440,3 +440,29 @@
 | **Mining Dynamite** | **Шахтёрский динамит** | `gag:mining_dynamite` | Направленная взрывчатка со 100% сохранением руд |
 | **Escape Rope** | **Спасательная верёвка** | `gag:escape_rope` | Телепортация на поверхность с запасом 1024 блока |
 
+---
+
+## 29. Различные предметы и механики (Misc Items)
+
+| Английский (EN) | Русский (RU) | ID предмета / блока | Назначение / Механика |
+| :--- | :--- | :--- | :--- |
+| **Miracle Potion** | **Чудодейственное зелье** | `society:miracle_potion` | Размножение фермерских животных любого уровня ♥ (1 раз/день) |
+| **Mood Scanner** | **Сканер настроения** | `society:mood_scanner` | Сканирование настроения, факторов ласки (-96), крыши (-32) и тесноты (-96) |
+| **Magic Shears** | **Магические ножницы** | `society:magic_shears` | Безвредный сбор лута с живых животных при 5♥ (снижает дружбу на -7) |
+| **Diamond Lasso** | **Алмазное лассо** | `item.moblassos.diamond_lasso` | Захват и перенос любых мирных животных |
+| **Hostile Lasso** | **Лассо для монстров** | `item.moblassos.hostile_lasso` | Захват враждебных монстров с < 50% здоровья |
+| **Holding** | **Удержание** | `enchantment.moblassos.holding` | Зачарование: увеличивает время удержания моба в лассо |
+| **Collar Tag** | **Ошейник для питомца** | `item.domesticationinnovation.collar_tag` | Ошейник под зачарования для усиления прирученных питомцев |
+| **Wayward Lantern** | **Путеводный фонарь** | `block.domesticationinnovation.wayward_lantern` | Точка телепортации для отставших питомцев |
+| **Automobile Assembler** | **Сборщик автомобилей** | `block.automobility.automobile_assembler` | Станок для сборки автомобилей из рам, двигателей и колёс |
+| **Hooks (Wood, Iron, Diamond, Red, Blaze, Ender)** | **Крюки (Деревянный, Железный, Алмазный, Редстоуновый, Огненный, Эндер)** | `item.rehooked:*_hook` | Крюки-кошки для перемещения и зависания в воздухе |
+| **Portable Bank Terminal** | **Карманный банковский терминал** | `item.numismatics_utils.portable_bank_terminal` | Удалённый доступ к банковскому счёту |
+| **Bank Meter** | **Банковский счётчик** | `item.numismatics_utils.bank_meter` | Отображение баланса банка в HUD при ношении в слоте аксессуара |
+| **Lunchbag (5 slots)** | **Пакет для ланча** | `item.solonion.lunchbag` | Бумажный пакет на 5 слотов для еды, питание на ПКМ |
+| **Lunchbox (9 slots)** | **Ланч-бокс** | `item.solonion.lunchbox` | Металлический контейнер на 9 слотов для еды, питание на ПКМ |
+| **Golden Lunchbox (14 slots)** | **Золотой ланч-бокс** | `item.solonion.golden_lunchbox` | Элитный контейнер на 14 слотов для еды, питание на ПКМ |
+| **Crocs** | **Кроксы** | `item.beachparty.crocs` | Лёгкая пляжная обувь |
+| **Starfruit / Starfruit Sapling** | **Карамбола / Саженец карамболы** | `pamhc2trees:starfruititem` / `pamhc2trees:starfruit_sapling` | Тропический фрукт и саженец для срезки ножницами |
+| **Straw Statue** | **Соломенная статуя** | `item.strawstatues.straw_statue` | Настраиваемый манекен с возможностью установки скина по нику |
+| **Charting Map** | **Карта путей** | `via_romana:charting_map` | Связывание дорожных табличек мощёным покрытием для телепортации |
+

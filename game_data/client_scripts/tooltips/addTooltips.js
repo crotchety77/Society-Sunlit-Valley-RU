@@ -683,96 +683,17 @@ ItemEvents.tooltip((tooltip) => {
     "society:animal_feed_sack",
     Text.translatable("item.society.animal_feed_sack.description").red()
   );
-  tooltip.add(
-    "society:magic_shears",
-    Text.translatable("item.society.magic_shears.description").gray()
-  );
-  tooltip.add(
-    "society:magic_shears",
-    Text.translatable("item.society.magic_shears.description.warn").red()
-  );
-  tooltip.add(
-    "society:mood_scanner",
-    Text.translatable("item.society.mood_scanner.description").gray()
-  );
-  tooltip.add(
-    "society:mood_scanner",
-    Text.translatable("item.society.mood_scanner.description.warn").red()
-  );
-  tooltip.add(
-    "vintagedelight:deluxe_burger",
-    Text.translatable("tooltip.society.deluxe_burger").gray()
-  );
-  tooltip.add(
-    "society:miracle_potion",
-    Text.translatable("item.society.miracle_potion.description").gray()
-  );
-  tooltip.add(
-    "meadow:cheese_stick",
-    Text.translatable("tooltip.society.cheese_stick").gray()
-  );
-  tooltip.addAdvanced("society:cheese_press", (item, advanced, text) => {
+  tooltip.addAdvanced("society:magic_shears", (item, advanced, text) => {
+    text.add(Text.translatable("item.society.magic_shears.description").gray());
+    text.add(Text.translatable("item.society.magic_shears.description.warn").red());
     if (tooltip.shift) {
-      text.add(Text.translatable("tooltip.society.cheese_press.shift_1").gray());
-      text.add(Text.translatable("tooltip.society.cheese_press.shift_2").gray());
+      text.add(Text.translatable("tooltip.society.magic_shears.shift_1").gray());
+      text.add(Text.translatable("tooltip.society.magic_shears.shift_2").gray());
+      text.add(Text.translatable("tooltip.society.magic_shears.shift_3").gray());
     } else {
-      text.add([
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-      ]);
+      text.add(Text.translatable("tooltip.society.press_shift_details"));
     }
   });
-  tooltip.addAdvanced("society:seed_maker", (item, advanced, text) => {
-    if (tooltip.shift) {
-      text.add(Text.translatable("tooltip.society.seed_maker.shift_1").gray());
-      text.add(Text.translatable("tooltip.society.seed_maker.shift_2").gray());
-      text.add(Text.translatable("tooltip.society.seed_maker.shift_3").gray());
-    } else {
-      text.add([
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-      ]);
-    }
-  });
-  tooltip.add(
-    "meadow:cheese_form",
-    Text.translatable("tooltip.society.cheese_form").gray()
-  );
-  tooltip.add(
-    "meadow:cheese_form",
-    Text.translatable("tooltip.society.cheese_form.tip").gray()
-  );
-  tooltip.addAdvanced("meadow:cheese_form", (item, advanced, text) => {
-    if (tooltip.shift) {
-      text.add(Text.translatable("tooltip.society.cheese_form.shift_1").gray());
-    } else {
-      text.add([
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-      ]);
-    }
-  });
-  tooltip.add(
-    "society:friendship_necklace",
-    Text.translatable("item.society.friendship_necklace.description").gray()
-  );
-  tooltip.add(
-    "society:frozen_tear",
-    Text.translatable("item.society.frozen_tear.description").gray()
-  );
-  tooltip.add(
-    ["displaydelight:food_plate", "displaydelight:small_food_plate"],
-    Text.translatable("tooltip.society.food_plate").gray()
-  );
-  tooltip.add(
-    "society:prize_ticket",
-    Text.translatable("item.society.prize_ticket.description").gray()
-  );
-  tooltip.add(
-    "splendid_slimes:slime_ticket",
-    Text.translatable("tooltip.society.slime_ticket").gray()
-  );
-  tooltip.add(
-    "splendid_slimes:slime_candy",
-    Text.translatable("tooltip.society.slime_candy").gray()
-  );
   tooltip.add(
     "splendid_slimes:slime_feeder",
     Text.translatable("tooltip.society.slime_feeder").gray()
@@ -1346,6 +1267,98 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(entry.item, [
       Text.translatable(entry.key)
     ]);
+  });
+
+
+  tooltip.add("solonion:lunchbag", Text.translatable("tooltip.society.lunchbag"));
+  tooltip.add("solonion:lunchbox", Text.translatable("tooltip.society.lunchbox"));
+  tooltip.add("solonion:golden_lunchbox", Text.translatable("tooltip.society.golden_lunchbox"));
+  tooltip.add("beachparty:crocs", Text.translatable("tooltip.society.crocs"));
+  tooltip.add("pamhc2trees:starfruit_sapling", Text.translatable("tooltip.society.starfruit_sapling"));
+  tooltip.add("strawstatues:straw_statue", Text.translatable("tooltip.society.straw_statue"));
+  tooltip.add("numismatics_utils:portable_bank_terminal", Text.translatable("tooltip.society.portable_bank_terminal"));
+
+
+  tooltip.addAdvanced("society:miracle_potion", (item, advanced, text) => {
+    text.add(Text.translatable("item.society.miracle_potion.description").gray());
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_1").gold());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_2").gray());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_3").gray());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_4").gray());
+    }
+  });
+
+
+  tooltip.addAdvanced("society:mood_scanner", (item, advanced, text) => {
+    text.add(Text.translatable("item.society.mood_scanner.description").gray());
+    text.add(Text.translatable("item.society.mood_scanner.description.warn").red());
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_header").gold());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_pet").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_quality").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_daily").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_roof").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_cramped").gray());
+    }
+  });
+
+
+  tooltip.addAdvanced("society:miracle_potion", (item, advanced, text) => {
+    text.add(Text.translatable("item.society.miracle_potion.description").gray());
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_1").gold());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_2").gray());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_3").gray());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_4").gray());
+    } else {
+      text.add(Text.translatable("tooltip.society.press_shift_details"));
+    }
+  });
+
+
+  tooltip.addAdvanced("society:mood_scanner", (item, advanced, text) => {
+    text.add(Text.translatable("item.society.mood_scanner.description").gray());
+    text.add(Text.translatable("item.society.mood_scanner.description.warn").red());
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_header").gold());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_pet").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_quality").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_daily").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_roof").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_cramped").gray());
+    } else {
+      text.add(Text.translatable("tooltip.society.press_shift_details"));
+    }
+  });
+
+
+  tooltip.addAdvanced("society:miracle_potion", (item, advanced, text) => {
+    text.add(Text.translatable("item.society.miracle_potion.description").gray());
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_1").gold());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_2").gray());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_3").gray());
+      text.add(Text.translatable("tooltip.society.miracle_potion.shift_4").gray());
+    } else {
+      text.add(Text.translatable("tooltip.society.press_shift_details"));
+    }
+  });
+
+
+  tooltip.addAdvanced("society:mood_scanner", (item, advanced, text) => {
+    text.add(Text.translatable("item.society.mood_scanner.description").gray());
+    text.add(Text.translatable("item.society.mood_scanner.description.warn").red());
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_header").gold());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_pet").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_quality").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_daily").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_roof").gray());
+      text.add(Text.translatable("tooltip.society.mood_scanner.shift_cramped").gray());
+    } else {
+      text.add(Text.translatable("tooltip.society.press_shift_details"));
+    }
   });
 
 });

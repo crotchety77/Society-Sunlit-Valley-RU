@@ -433,15 +433,7 @@
 				"{ftbquests.chapter.ii__building_up_the_farm.quest2DD84A5F127B1463.description6}"
 			]
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "minecraft:painting"
-				tag: {
-					EntityTag: {
-						variant: "minecraft:fighters"
-					}
-				}
-			}
+			icon: "minecraft:painting"
 			id: "2DD84A5F127B1463"
 			min_required_dependencies: 1
 			min_required_tasks: 1

@@ -1,0 +1,17 @@
+{
+  "item.moblassos.diamond_lasso": "Алмазное лассо",
+  "item.moblassos.diamond_lasso.desc": "Захватывает: Любых мирных животных (бессрочно, зачарование «Удержание зверя» не требуется)",
+  "item.moblassos.hostile_lasso": "Лассо для монстров",
+  "item.moblassos.hostile_lasso.desc": "Захватывает: Враждебных монстров (3 минуты, продлевается чарами «Удержание зверя»)",
+  "item.moblassos.hostile_lasso.hostile": "У %s должно остаться менее %s здоровья (сейчас %s)",
+  "item.moblassos.golden_lasso": "Золотое лассо",
+  "item.moblassos.golden_lasso.desc": "Захватывает: Животных (на 2 минуты)",
+  "item.moblassos.aqua_lasso": "Водное лассо",
+  "item.moblassos.aqua_lasso.desc": "Захватывает: Водных животных (на 4 минуты)",
+  "item.moblassos.emerald_lasso": "Изумрудное лассо",
+  "item.moblassos.emerald_lasso.desc": "Захватывает: Жителей (на 5 минут)",
+  "item.moblassos.contract": "Договор с жителем",
+  "item.moblassos.contract.desc": "Житель должен подписать договор перед помещением в изумрудное лассо.",
+  "enchantment.moblassos.holding": "Удержание зверя",
+  "enchantment.moblassos.holding.desc": "Применяется к Лассо для монстров. Увеличивает время удержания на +20%% за каждый уровень (до +60%% на III уровне)."
+}

@@ -16,5 +16,22 @@
   "shop.society_trading.building_shop.shed": "Сарай",
   "shop.society_trading.building_shop.shepherd": "Дом пастуха",
   "shop.society_trading.building_shop.trader": "Дом странствующего торговца",
-  "shop.society_trading.building_shop.witch": "Дом ведьмы"
+  "shop.society_trading.building_shop.witch": "Дом ведьмы",
+  "gui.society_trading.shop_selector.title": "   Магазины",
+  "gui.society_trading.search_trades": "Поиск обмена",
+  "gui.society_trading.back_button": "Назад",
+  "gui.society_trading.auto_trader.change_shop": "Сменить магазин",
+  "gui.society_trading.hover_price_two": "С банковского счёта",
+  "jei.society_trading.category.trades": "Обмены",
+  "jei.society_trading.category.shops": "Магазины",
+  "jei.society_trading.seasons": "Доступно только в:",
+  "jei.society_trading.limit": "Лимит в день: %s",
+  "shop.society_trading.book_fair": "Ярмарка книг",
+  "shop.society_trading.book_fair.description": "Предлагает особые книги навыков в зависимости от сезона. Можно вызвать по телефону в конце сезона (20-30 числа).",
+  "block.society_trading.auto_trader": "Автоторговец",
+  "itemGroup.society_trading": "Society: Торговля",
+  "gui.society_trading.price": "§e●%s",
+  "gui.society_trading.hover_price_one": "Цена: §e●%s",
+  "command.society_trading.wrong_id": "Зарегистрированный магазин с ID %s не найден.",
+  "jei.society_trading.price": "§e●%s"
 }

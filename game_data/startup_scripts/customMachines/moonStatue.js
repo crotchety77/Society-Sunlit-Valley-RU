@@ -21,10 +21,10 @@ global.handleMoonStatueClick = (click) => {
         let selectedBuff =
           statueBuffs[Math.floor(Math.random() * statueBuffs.length)];
         player.tell(
-          Text.translatable(`block.society.moon_statue.announce`).aqua()
+          Text.translatable(`block.society.moon_statue.announce`).lightPurple()
         );
         player.tell(
-          Text.translatable(`block.society.moon_statue.${selectedBuff}`).green()
+          Text.translatable(`block.society.moon_statue.${selectedBuff}`).white()
         );
         player.persistentData.days.moonStatueDay = day;
         statueBuffs.forEach((buff) => {

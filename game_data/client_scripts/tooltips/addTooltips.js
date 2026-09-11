@@ -915,6 +915,13 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.right_click_open").gray()
   );
   tooltip.add(
+    "society:plushie_capsule",
+    Text.translatable(
+      "tooltip.society.plushie_capsule.info",
+      Text.translatable("item.society.women_who_run_with_the_plushies")
+    ).gray()
+  );
+  tooltip.add(
     "society:furniture_box",
     Text.translatable("tooltip.society.right_click_open").gray()
   );

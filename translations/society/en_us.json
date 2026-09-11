@@ -585,6 +585,7 @@
   "tooltip.society.statue_endless_fortune": "Gives a valuable item once a day",
   "tooltip.society.statue_endless_fortune.warn": "Definitely not overpriced.",
   "tooltip.society.gatcha_machine": "Right click with an %s to purchase a Plushie Capsule",
+  "tooltip.society.plushie_capsule.info": "For details on rare plushie chances, see the skill book '%s'",
   "tooltip.society.petal_apothecary.obtain": "🏹 §6Abandoned Farm Reward",
   "tooltip.society.petal_apothecary.description": "The Abandoned Farm is located in the Community Center section of the Quest Book after completing 3 other chapters.",
   "tooltip.society.kinetic_blueprint.obtain": "🏹 §6Boiler Room Reward",

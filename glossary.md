@@ -71,6 +71,9 @@
 | **Iron / Gold / Diamond / Netherite Sprinkler** | **Железный / Золотой / Алмазный / Незеритовый спринклер** | `dew_drop_farmland_growth:*_sprinkler` | Автополив посевов в 6:00 утра (области 3x3, 5x5, 7x7, 9x9) |
 | **Fertilizers (Speed / Hydrating / Quality / Bountiful)** | **Удобрения (Скорости / Увлажнения / Качества / Обильные)** | `dew_drop_farmland_growth:*_fertilizer` | Сельскохозяйственные удобрения для грядок и пашни |
 | **Garden Pot** | **Садовый горшок** | `dew_drop_farmland_growth:garden_pot` | Выращивание культур в помещении в любой сезон |
+| **Plushie Capsule** | **Капсула с плюшевой игрушкой** | `society:plushie_capsule`, `whimsy_deco:gatcha_capsule` | Капсула, содержащая коллекционную плюшевую игрушку |
+| **Gacha Machine** | **Автомат с гача-понами** | `whimsy_deco:gatcha_machine` | Торговый автомат с капсулами игрушек |
+| **Froggy Chair** | **Стул-лягушка** | `whimsy_deco:froggy_chair` | Декоративный стул |
 
 ---
 
@@ -425,5 +428,15 @@
 | **Sawmill** | **Лесопилка** | `block.sawmill.sawmill` | Станок для распила бревен и древесных блоков |
 | **Sawing / Wood Cutting** | **Обработка на лесопилке** | `sawmill.category.wood_cutting` | Процесс и вкладка рецептов распиловки в JEI / EMI |
 
+---
 
+## 28. Товары торговца Карлоса (Carlos Goods)
+
+| Английский (EN) | Русский (RU) | ID предмета / блока | Назначение / Механика |
+| :--- | :--- | :--- | :--- |
+| **Ginger Crate** | **Ящик с имбирём** | `snowyspirit:ginger_crate` | Компактный блок хранения урожая имбиря |
+| **Prize Ticket** | **Призовой билет** | `society:prize_ticket` | Билет для участия в призовом автомате городка |
+| **Skull Cavern Trial Chamber Map** | **Карта дворца испытаний Пещеры Черепа** | `supplementaries:cartographers_quill` / `filled_map.trial_chamber` | Карта с красным крестом к Дворцу испытаний |
+| **Mining Dynamite** | **Шахтёрский динамит** | `gag:mining_dynamite` | Направленная взрывчатка со 100% сохранением руд |
+| **Escape Rope** | **Спасательная верёвка** | `gag:escape_rope` | Телепортация на поверхность с запасом 1024 блока |
 

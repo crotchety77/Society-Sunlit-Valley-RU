@@ -1,0 +1,18 @@
+{
+  "society_skills.mastery.category.title": "Мастерство",
+
+  "society_skills.mastery.farming_mastery": "Мастерство фермерства",
+  "society_skills.mastery.farming_mastery.description": "На Рынке теперь продаются §dИскростручки§7 и §dСаженцы ивы§7.\nПри сборе созревших культур есть шанс §e0,5%%§7 найти §dСаженец мрачного дерева§7.",
+
+  "society_skills.mastery.husbandry_mastery": "Мастерство животноводства",
+  "society_skills.mastery.husbandry_mastery.description": "Теперь можно найти §dКрекеры для животных§7 и §fПлюшевые капсулы§7 в мире.\nВедьма теперь продаёт §dСолнечные кристаллы§7.",
+
+  "society_skills.mastery.mining_mastery": "Мастерство шахтёрства",
+  "society_skills.mastery.mining_mastery.description": "Торговец теперь предлагает §dПереработанное ядро§7 для обмена.\nКузнец теперь продаёт §dСтатую Лунного гнома§7.",
+
+  "society_skills.mastery.fishing_mastery": "Мастерство рыболовства",
+  "society_skills.mastery.fishing_mastery.description": "Рыбак теперь продаёт §dПереработчик икры§7.\nРыбак теперь продаёт §dПоплавок-иглу§7 и §dПоплавок-сеть§7.",
+
+  "society_skills.mastery.adventuring_mastery": "Мастерство искателя приключений",
+  "society_skills.mastery.adventuring_mastery.description": "Гильдия теперь продаёт снаряжение для улучшения питомцев.\nВедьма теперь продаёт §dЧародейский стол§7."
+}

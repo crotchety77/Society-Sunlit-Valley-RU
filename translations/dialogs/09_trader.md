@@ -11,13 +11,13 @@
 ## 🏷️ Системные строки и имя
 | ID ключа | Оригинал (EN) | Перевод (RU) | Примечание |
 |---|---|---|---|
-| `dialog.npc.trader.name` | Carlos | Странствующий торговец | Имя персонажа |
-| `dialog.npc.trader.chatter.description` | Chatting with Carlos | Разговор со Странствующим торговцем | Статус диалогового окна |
+| `dialog.npc.trader.name` | Carlos | Карлос | Имя персонажа |
+| `dialog.npc.trader.chatter.description` | Chatting with Carlos | Разговор с Карлосом | Статус диалогового окна |
 
 ## 🤝 Знакомство (Первая встреча / Intro)
 | ID ключа | Оригинал (EN) | Перевод (RU) | Заметки редактора |
 |---|---|---|---|
-| `dialog.npc.trader.intro.description` | Carlos's Introduction | Знакомство со Странствующим торговцем | Описание окна знакомства |
+| `dialog.npc.trader.intro.description` | Carlos's Introduction | Знакомство с Карлосом | Описание окна знакомства |
 | `dialog.npc.trader.intro.0.line_0` | Hey hey it's @i! The one and only! | О, приветствую тебя, друг мой! Я странствую по дальним землям в поисках редчайших диковинок. | Реплика 1 |
 | `dialog.npc.trader.intro.0.line_1` | I've been searching for someone that's been down in the Skull Cavern for ages! | Мой караван везёт товары, которых ты не сыщешь ни на одном местном рынке. | Реплика 2 |
 | `dialog.npc.trader.intro.0.line_2` | It's a real treasure trove since so few people are willing to brave it! | Заглядывай в мою повозку, пока я не снялся с лагеря и не отправился дальше в путь! | Реплика 3 |

@@ -6,5 +6,6 @@
   "item.minecraft.smithing_template.netherite_upgrade.applies_to": "Алмазное снаряжение",
   "entity.minecraft.villager.beachparty.barkeeper": "Бармен",
   "entity.minecraft.villager.beachparty.beach_boy": "Пляжный парень",
-  "entity.minecraft.villager.beachparty.beach_guy": "Пляжный парень"
+  "entity.minecraft.villager.beachparty.beach_guy": "Пляжный парень",
+  "entity.minecraft.wandering_trader": "Карлос"
 }

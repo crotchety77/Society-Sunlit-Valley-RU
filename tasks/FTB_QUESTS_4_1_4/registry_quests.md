@@ -1125,7 +1125,7 @@
 | `33338792EF0994BD` | `villagers` | Calling Villagers | Звонки жителям | `translated` | `4.0.4` | Нет |
 | `3CF0897E67574877` | `villagers` | — | — | `translated` | `4.0.4` | Нет |
 | `4633C0427ACA18D3` | `villagers` | — | — | `translated` | `4.0.4` | Нет |
-| `49477F09DF6EBA50` | `villagers` | Librarian | Кладовщик | `translated` | `4.0.4` | Нет |
+| `49477F09DF6EBA50` | `villagers` | Librarian | Библиотекарь | `translated` | `4.0.4` | Нет |
 | `499871FDD2A65F2C` | `villagers` | — | — | `translated` | `4.0.4` | Нет |
 | `52F1DCA9462F825F` | `villagers` | Witch | Ведьма | `partially_translated` | `4.0.4` | Нет |
 | `55F17BB945CA5BB2` | `villagers` | — | — | `translated` | `4.0.4` | Нет |

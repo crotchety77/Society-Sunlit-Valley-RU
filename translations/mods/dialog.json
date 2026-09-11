@@ -1,4 +1,12 @@
 {
+  "dialog.ui.history": "История",
+  "dialog.ui.auto_play": "Авто",
+  "dialog.ui.close_history": "Закрыть историю",
+  "dialog.ui.continue": "Продолжить",
+  "dialog.ui.back": "Назад",
+  "dialog.ui.exit": "Выход",
+  "dialog.ui.esc": "Выйти из диалога",
+  "dialog.ui.confirm_esc": "Вы уверены, что хотите пропустить весь диалог?",
   "dialog.automobility.use_crowbar": "Use a crowbar to remove parts.",
   "dialog.automobility.incomplete_automobile": "Incomplete automobile!"
 }

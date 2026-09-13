@@ -1,0 +1,19 @@
+{
+  "name": "Огненная рыба",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:blazefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 408$(li)Измерение: Незер$(li)Биом: Любой"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:blazefish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Это что-то вроде Урана, только огненного."
+    }
+  ]
+}

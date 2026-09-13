@@ -1,0 +1,19 @@
+{
+  "name": "Рыба-магмовый куб",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:magmacubefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 620$(li)Измерение: Незер$(li)Биом: Базальтовые дельты"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:magmacubefish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Дрожащий обитатель лавы, раздутый от жара"
+    }
+  ]
+}

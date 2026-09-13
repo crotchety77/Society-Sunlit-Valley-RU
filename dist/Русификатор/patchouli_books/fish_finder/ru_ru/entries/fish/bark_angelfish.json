@@ -1,0 +1,18 @@
+{
+  "name": "Рыба-ангел-кора",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_bark_angelfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 144$(li)🍂 §4Осень§0$(li)Вода: Пресная$(li)Погода: Любая$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:bark_angelfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Маскируется под корягу, прячась у всех на виду."
+    }
+  ]
+}

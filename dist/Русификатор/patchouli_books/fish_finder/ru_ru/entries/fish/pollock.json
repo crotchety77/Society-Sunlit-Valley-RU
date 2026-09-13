@@ -1,0 +1,18 @@
+{
+  "name": "Минтай",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:pollock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 56$(li)§0❆ §bЗима§0$(li)Вода: Океан$(li)Погода: Дождь Снег$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:pollock",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Есть бесплатная морковь и платная морковь? Минтай."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Баяд",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:bayad",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 208$(li)§0🌼 §2Весна§0$(li)Вода: Река$(li)Погода: Дождь Снег$(li)Время: Ночь"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:bayad",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Баяд."
+    }
+  ]
+}

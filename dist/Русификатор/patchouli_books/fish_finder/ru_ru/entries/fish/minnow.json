@@ -1,0 +1,18 @@
+{
+  "name": "Пескарь",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:minnow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 16$(li)Круглый год$(li)Вода: Пресная Река$(li)Погода: Любая$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:minnow",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Рыба, которая никогда не стоила тех усилий, что были потрачены на её поимку."
+    }
+  ]
+}

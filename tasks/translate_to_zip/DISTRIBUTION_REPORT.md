@@ -1,137 +1,160 @@
-# Отчёт по формированию дистрибутива русификатора (v1.0)
+# Отчёт по формированию дистрибутива русификатора (Society: Sunlit Valley)
 
-> **Статус задачи:** Выполнено  
-> **Дата формирования:** 07.09.2026  
+> **Статус дистрибутива:** ✅ Сформирован и верифицирован  
 > **Источник истины:** Установленная сборка `D:\ModrinthApp\profiles\Society_ Sunlit Valley`  
-> **Исходный архив для сравнения:** `Scriptora_Society.Sunlit.Valley.4.0.4 (1).zip`
+> **Исходный архив для сравнения:** `Scriptora_Society.Sunlit.Valley.4.0.4 (1).zip`  
+> **Кодировка всех файлов:** UTF-8 (без BOM), валидный JSON и JS  
 
 ---
 
-## 📊 Итоговая статистика аудита
+## 📊 Итоговая статистика
 
 ```text
-Количество файлов в исходном архиве Scriptora:         268
-Количество файлов в актуальном пакете русификатора:     137
-Количество новых файлов (добавлены нами):               55
-Количество изменённых файлов (глубоко доработаны):      5
-Количество неизменных файлов (из архива Scriptora):     77
-Количество неиспользуемых файлов старого архива:        186
-Количество служебных файлов вне сборки:                 1 (translateInspector.js)
+Всего файлов в исходном архиве Scriptora:         268
+Всего файлов в актуальном пакете русификатора:     157
+  ├── Новых файлов (добавлены нами):               75
+  ├── Изменённых файлов (глубоко доработаны):      5
+  └── Неизменных файлов (из архива Scriptora):     77
+Неиспользуемых файлов старого архива:              186
+Служебных файлов разработчика (исключены):         1 (translateInspector.js)
 ```
 
 ---
 
-## 📦 Расположение готового пакета
+## 📦 Расположение дистрибутива
 
 - **Директория с готовой структурой:**  
-  [`tasks/translate_to_zip/dist/Русификатор/`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/translate_to_zip/dist/Русификатор)
-- **Готовый ZIP-архив для распространения:**  
-  [`tasks/translate_to_zip/dist/Русификатор.zip`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/translate_to_zip/dist/Русификатор.zip) *(723 КБ)*
+  [`tasks/translate_to_zip/dist/Русификатор/`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/translate_to_zip/dist/Русификатор)  
+  [`dist/Русификатор/`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/dist/Русификатор)
+- **Готовый ZIP-архив для игроков:**  
+  [`tasks/translate_to_zip/dist/Русификатор.zip`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/translate_to_zip/dist/Русификатор.zip)  
+  [`dist/Русификатор.zip`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/dist/Русификатор.zip)
 
 ---
 
-## 🔍 Детальный анализ изменений по категориям
+## 🗂 Структура пакета русификатора
 
-### 1. Изменённые файлы (5 ключевых словарей)
-
-Файлы присутствовали в исходном архиве переводчика Scriptora, но были кардинально переработаны, дополнены и синхронизированы:
-
-| Файл | Кол-во ключей | Что было изменено / улучшено |
-| :--- | :---: | :--- |
-| `kubejs/assets/ftbquestlocalizer/lang/ru_ru.json` | 1973 | Полная вычитка и исправление всех квестов FTB Quests, восстановление оригинальной структуры `.snbt`, устранение битых ссылок и некорректных переводов. |
-| `kubejs/assets/society/lang/ru_ru.json` | 2063 | Основной словарь сборки: названия предметов, машин, удобрений, семян, наград, тултипов и интерфейсов. Приведён к стандартам глобального глоссария. |
-| `kubejs/assets/society_skills/lang/ru_ru.json` | 196 | Древо навыков Puffish Skills (меню `K`). Исправлено форматирование и строго экранированы проценты (`%%`) для предотвращения `Format Error`. |
-| `kubejs/assets/society_tips/lang/ru_ru.json` | 111 | Игровые советы на экранах загрузки и в HUD. Исправлены термины и формулировки. |
-| `kubejs/assets/society_trading/lang/ru_ru.json` | 93 | Категории торговли и вывески магазинов деревенских жителей. |
-
----
-
-### 2. Новые файлы, добавленные в сборку (55 файлов)
-
-#### А. Языковые файлы модов — 41 файл (`kubejs/assets/<namespace>/lang/ru_ru.json`)
-Полная локализация модов, для которых ранее отсутствовал перевод или он был неполным:
-1. `dialog` (1477 ключей) — все диалоги NPC, приветствия, сезонные реплики и сюжетные ветки.
-2. `portable_blueprints` (399 ключей) — чертежи построек, домов и ферм.
-3. `dramaticdoors` (2276 ключей) — все высокие двери (высотой в 3 блока).
-4. `cluttered` (1062 ключа) — мебель и декорации.
-5. `refurbished_furniture` (652 ключа) — обновлённая мебель мистера Крайфиша.
-6. `longwings` (317 ключей) — бабочки, мотыльки, инкубаторы гусениц и банки для бабочек.
-7. `simplehats` (317 ключей) — коллекция косметических шляп.
-8. `splendid_slimes` (320 ключей) — породы слаймов, плорты и шляпки слаймов.
-9. `aquaculture` (279 ключей) — рыбы, удочки, снасти и филе.
-10. `twigs` (269 ключей) — декоративные блоки и ветви.
-11. `unusualfishmod` (264 ключа) — необычные рыбы и рецепты.
-12. `meadow` (247 ключей) — пастушество, сыроварение и шерсть.
-13. `tanukidecor` (234 ключа) — японские декорации Тануки.
-14. `vintagedelight` (189 ключей) — консервация, банки и соленья.
-15. `create_central_kitchen` (180 ключей) — интеграция Farmer's Delight и Create.
-16. `automobility` (161 ключ) — автомобили, детали и дорожные знаки.
-17. `pamhc2trees` (158 ключей) — плодовые деревья Pam's HarvestCraft 2.
-18. `moreminecarts` (156 ключей) — расширенные вагонетки и рельсы.
-19. `beachparty` (120 ключей) — пляжная мебель и напитки.
-20. `etcetera` (119 ключей) — механики, колокола, барабаны и декор.
-21. `functionalstorage` (115 ключей) — функциональные ящики и контроллеры.
-22. `buildinggadgets2` (111 ключей) — строительные гаджеты 2.
-23. `legendarycreatures` (102 ключа) — легендарные существа.
-24. `paraglider` (98 ключей) — парапланы и сосуды выносливости/сердец.
-25. `nightlights` (86 ключей) — ночники и гирлянды.
-26. `stardew_fishing` (85 ключей) — мини-игра рыбалки Stardew Valley.
-27. `bountiful` (77 ключей) — доска объявлений и контракты.
-28. `cozycafe` (63 ключа) — напитки и блюда уютного кафе.
-29. `chimes` (50 ключей) — колокольчики ветра.
-30. `painting` (48 ключей) — картины и холсты.
-31. `dew_drop_farmland_growth` (28 ключей) — механика роста от капель росы.
-32. `minecraft` (8 ключей) — переопределения стандартных подсказок.
-33. `oreganized` (5 ключей) — свинцовые и серебряные предметы.
-34. `extractinator` (4 ключа) — экстрактор руды.
-35. `bakery` (1 ключ) — пекарня.
-36. `justhammers` (1 ключ) — молоты.
-37. `quark` (1 ключ) — твики Quark.
-38. `dramaticdoors_chipped` (1 ключ) — интеграция дверей Chipped.
-39. `dramaticdoors_macaw` (1 ключ) — интеграция дверей Macaw.
-40. `dramaticdoors_manyideas` (1 ключ) — интеграция дверей Many Ideas.
-41. `society/tooltipoverhaul/custom_frames.json` (1 файл) — стилизация рамок тултипов.
-
-#### Б. Клиентские скрипты KubeJS (Tooltips & JEI) — 10 файлов
-Созданы для отображения качественных всплывающих подсказок (`[Shift]`) и интеграции механик в JEI:
-* `kubejs/client_scripts/tooltips/bountifulTooltips.js` — подсказки по декретам и контрактам Bountiful.
-* `kubejs/client_scripts/tooltips/buildinggadgets2Tooltips.js` — управление строительными гаджетами.
-* `kubejs/client_scripts/tooltips/createCentralKitchenTooltips.js` — рецепты кастрюль и кухни Create.
-* `kubejs/client_scripts/tooltips/etceteraTooltips.js` — описание механик колокольчиков и инструментов Etcetera.
-* `kubejs/client_scripts/tooltips/invitationTooltips.js` — пригласительные билеты для жителей.
-* `kubejs/client_scripts/tooltips/longwingsTooltips.js` — инкубаторы, банки для бабочек и приманки.
-* `kubejs/client_scripts/tooltips/tanukiDecorTooltips.js` — статуи и функционал декора Тануки.
-* `kubejs/client_scripts/tooltips/unusualFishTooltips.js` — условия вылова редких рыб.
-* `kubejs/client_scripts/etceteraJei.js` — отображение кастомных механик в JEI.
-* `kubejs/client_scripts/universalGiftsJei.js` — интеграция подарков для жителей в JEI (любимые подарки +40).
-
-#### В. Серверные скрипты KubeJS (Исправления механик и геймплей) — 4 файла
-* `kubejs/server_scripts/globalServer.js` — **Критический фикс**: сохранение посещений больницы и долгов в `server.persistentData` (исправлен сброс данных при гибели игрока), корректная генерация NBT записок Candlelight (`global.getNotePaperItem`), локализация цитат доктора Харви и уведомлений в HUD/чат.
-* `kubejs/server_scripts/handleDebt.js` — **Критический фикс**: генерация справки об освобождении от долга при нулевом балансе с корректным NBT записки Candlelight.
-* `kubejs/server_scripts/entities/slimeTicket.js` — логика применения Билета слайма, разблокировка знаний о любимой еде слаймов.
-* `kubejs/server_scripts/entities/slimeInspectorEnhanced.js` — форматированный вывод анализа пород, настроения, сытости и стоимости плортов в чат.
+```text
+Русификатор/
+├── kubejs/
+│   ├── assets/
+│   │   ├── <namespace>/lang/ru_ru.json                # 60 языковых файлов модов и квестов
+│   │   ├── ftbquestlocalizer/lang/en_us.json          # Фоллбэк ключей FTB Quests
+│   │   ├── society/textures/gui/community_center_*.png # Переведённые текстуры клуба (6 шт.)
+│   │   └── society/tooltipoverhaul/custom_frames.json # Конфигурация рамок подсказок
+│   ├── client_scripts/
+│   │   ├── tooltips/                                  # 12 скриптов всплывающих подсказок [Shift]
+│   │   │   ├── addTooltips.js                         # Основной сводный скрипт подсказок
+│   │   │   ├── addAdvancedTooltips.js
+│   │   │   ├── addFishTooltips.js
+│   │   │   ├── addPriceTooltips.js
+│   │   │   ├── bountifulTooltips.js
+│   │   │   ├── buildinggadgets2Tooltips.js
+│   │   │   ├── createCentralKitchenTooltips.js
+│   │   │   ├── etceteraTooltips.js
+│   │   │   ├── invitationTooltips.js
+│   │   │   ├── longwingsTooltips.js
+│   │   │   ├── tanukiDecorTooltips.js
+│   │   │   └── unusualFishTooltips.js
+│   │   ├── etceteraJei.js                             # Интеграция предметов Etcetera в JEI
+│   │   └── universalGiftsJei.js                       # Вкладка универсальных подарков в JEI
+│   └── server_scripts/
+│       ├── globalServer.js                            # Фикс персистентности NBT, записок и уведомлений
+│       ├── handleDebt.js                              # Фикс освобождения от долга банка/больницы
+│       └── entities/
+│           ├── slimeTicket.js                         # Обработка Билетов слайма
+│           └── slimeInspectorEnhanced.js              # Анализатор слаймов в чате
+├── patchouli_books/
+│   └── fish_finder/ru_ru/                             # Книга рыболова: категории и 63 вида рыб
+└── resourcepacks/
+    └── Перевод модов.zip                              # Ресурспак базовых переводов модов
+```
 
 ---
 
-### 3. Неизменные файлы (77 файлов)
+## 🔍 Детальный анализ изменений
 
-* **6 текстур интерфейса:** `kubejs/assets/society/textures/gui/community_center_*.png` (русские текстуры комнат Общественного центра).
-* **70 файлов справочника рыб:** `patchouli_books/fish_finder/ru_ru/...` (категории и описания рыб).
-* **1 ресурспак модов:** `resourcepacks/Перевод модов.zip` (содержит 227 стандартных файлов локализации модов).
+### 1. Изменённые ключевые словари (5 файлов)
+
+| Файл | Описание изменений |
+| :--- | :--- |
+| `kubejs/assets/ftbquestlocalizer/lang/ru_ru.json` | Полная вычитка всех квестов FTB Quests, страниц `{@pagebreak}`, цветовых кодов `&6` / `&a`, исправление битых ссылок и терминов. |
+| `kubejs/assets/society/lang/ru_ru.json` | Основной словарь сборки: названия предметов, машин, удобрений, семян, наград, тултипов и интерфейсов. Приведён к стандартам единого глоссария. |
+| `kubejs/assets/society_skills/lang/ru_ru.json` | Древо навыков Puffish Skills (меню `K`). Исправлено форматирование, экранированы знаки процента (`%%`) для предотвращения `Format Error`. |
+| `kubejs/assets/society_tips/lang/ru_ru.json` | Игровые советы на экранах загрузки и в HUD. Исправлены формулировки и терминология. |
+| `kubejs/assets/society_trading/lang/ru_ru.json` | Категории торговли и вывески магазинов деревенских жителей. |
 
 ---
 
-### 4. Неиспользуемые файлы старого архива (186 файлов)
+### 2. Новые компоненты, добавленные в сборку (75 файлов)
 
-* **`patchouli_books/almanac/ru_ru/` (186 файлов):**  
-  В исходном архиве присутствовали старые файлы Альманаха, но в актуальной установленной игре альманах отображается на английском / генерируется динамически через скрипты KubeJS. Согласно правилу приоритета реальной игры они исключены из пакета.
+#### А. Языковые файлы модов (57 файлов)
+Полная локализация модов сборки:
+- `dialog` (1477 ключей) — все диалоги NPC, приветствия, сезонные реплики и сюжетные ветки.
+- `portable_blueprints` (399 ключей) — чертежи построек, домов и ферм.
+- `dramaticdoors` (2276 ключей) — все высокие двери (высотой в 3 блока).
+- `cluttered` (1062 ключа) — мебель и декорации.
+- `refurbished_furniture` (652 ключа) — обновлённая мебель мистера Крайфиша.
+- `longwings` (317 ключей) — бабочки, мотыльки, инкубаторы гусениц и банки для бабочек.
+- `simplehats` (317 ключей) — коллекция косметических шляп.
+- `splendid_slimes` (320 ключей) — породы слаймов, плорты и шляпки слаймов.
+- `aquaculture` (279 ключей) — рыбы, удочки, снасти и филе.
+- `twigs` (269 ключей) — декоративные блоки и ветви.
+- `unusualfishmod` (264 ключа) — необычные рыбы и рецепты.
+- `meadow` (247 ключей) — пастушество, сыроварение и шерсть.
+- `tanukidecor` (234 ключа) — японские декорации Тануки.
+- `vintagedelight` (189 ключей) — консервация, банки и соленья.
+- `create_central_kitchen` (180 ключей) — интеграция Farmer's Delight и Create.
+- `automobility` (161 ключ) — автомобили, детали и дорожные знаки.
+- `pamhc2trees` (158 ключей) — плодовые деревья Pam's HarvestCraft 2.
+- `moreminecarts` (156 ключей) — расширенные вагонетки и рельсы.
+- `beachparty` (120 ключей) — пляжная мебель и напитки.
+- `etcetera` (119 ключей) — механики, колокола, барабаны и декор.
+- `functionalstorage` (115 ключей) — функциональные ящики и контроллеры.
+- `buildinggadgets2` (111 ключей) — строительные гаджеты 2.
+- `legendarycreatures` (102 ключа) — легендарные существа.
+- `paraglider` (98 ключей) — парапланы и сосуды выносливости/сердец.
+- `nightlights` (86 ключей) — ночники и гирлянды.
+- `stardew_fishing` (85 ключей) — мини-игра рыбалки Stardew Valley.
+- `bountiful` (77 ключей) — доска объявлений и контракты.
+- `cozycafe` (63 ключа) — напитки и блюда уютного кафе.
+- `chimes` (50 ключей) — колокольчики ветра.
+- `painting` (48 ключей) — картины и холсты.
+- `dew_drop_farmland_growth` (28 ключей) — механика роста от капель росы.
+- `dew_drop_watering_cans` (5 ключей) — лейки Росы.
+- `domesticationinnovation` (84 ключа) — ошейники и зачарования питомцев.
+- `sawmill` (7 ключей) — лесопилка.
+- `sewingkit` (29 ключей) — швейный набор.
+- `snowyspirit` (1 ключ), `solonion` (4 ключа), `strawstatues` (2 ключа), `supplementaries` (1 ключ), `via_romana` (1 ключ), `whimsy_deco` (95 ключей).
+
+#### Б. Клиентские скрипты KubeJS (Tooltips & JEI — 14 файлов)
+- `kubejs/client_scripts/tooltips/addTooltips.js` — центральный реестр подсказок (предметы, семена, книги, бесконечная прочность).
+- `kubejs/client_scripts/tooltips/bountifulTooltips.js` — подсказки по декретам и контрактам Bountiful.
+- `kubejs/client_scripts/tooltips/buildinggadgets2Tooltips.js` — управление строительными гаджетами.
+- `kubejs/client_scripts/tooltips/createCentralKitchenTooltips.js` — рецепты кастрюль и кухни Create.
+- `kubejs/client_scripts/tooltips/etceteraTooltips.js` — описание механик колокольчиков и инструментов Etcetera.
+- `kubejs/client_scripts/tooltips/invitationTooltips.js` — приглашения жителей и заселение.
+- `kubejs/client_scripts/tooltips/longwingsTooltips.js` — руководство по разведению бабочек.
+- `kubejs/client_scripts/tooltips/tanukiDecorTooltips.js` — японские декорации.
+- `kubejs/client_scripts/tooltips/unusualFishTooltips.js` — наживки и условия ловли рыб.
+- `kubejs/client_scripts/etceteraJei.js` — интеграция предметов Etcetera в JEI.
+- `kubejs/client_scripts/universalGiftsJei.js` — вкладка универсальных подарков в JEI.
+
+#### В. Серверные скрипты с фиксами механик (4 файлов)
+- `kubejs/server_scripts/globalServer.js` — персистентность данных при смерти в `server.persistentData`, фикс NBT записок Candlelight (`global.getNotePaperItem`), уведомления в чат и HUD.
+- `kubejs/server_scripts/handleDebt.js` — фикс справок об освобождении от долга банка/больницы.
+- `kubejs/server_scripts/entities/slimeTicket.js` — механика Билетов слайма.
+- `kubejs/server_scripts/entities/slimeInspectorEnhanced.js` — интерактивный анализатор слаймов.
 
 ---
 
-## 🚀 Инструкция по установке русификатора
+## 🛠 Инструкция по установке для игроков
 
-Для применения перевода на чистую сборку **Society: Sunlit Valley** (версии 4.0.4+):
-1. Открыть папку профиля игры (например, `.../profiles/Society_ Sunlit Valley`).
-2. Скопировать содержимое папки `tasks/translate_to_zip/dist/Русификатор/` (или распаковать `Русификатор.zip`) в корень профиля игры с заменой совпадающих файлов.
-3. В настройках ресурспаков игры убедиться, что включён ресурспак `Перевод модов.zip`.
-4. Запустить игру. При обновлении «на лету» в открытом мире нажать **`F3 + T`** и ввести команду **`/ftbquests reload`**.
+1. Скачайте архив [`Русификатор.zip`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/tasks/translate_to_zip/dist/Русификатор.zip).
+2. Откройте папку вашего профиля с установленным модпаком **Society: Sunlit Valley** (в CurseForge / Modrinth App / Prism Launcher).
+3. Скопируйте содержимое папки `Русификатор` (папки `kubejs`, `patchouli_books`, `resourcepacks`) в корень профиля игры с подтверждением замены файлов.
+4. Запустите Minecraft.
+5. В меню игры:
+   - В разделе **Настройки $ightarrow$ Пакеты ресурсов** убедитесь, что ресурспак `Перевод модов` включён (находится в правом столбце).
+   - В игре нажмите **`F3 + T`** для перезагрузки текстур и языковых файлов.
+   - Выполните команду **`/ftbquests reload`** в чате для обновления квестов.

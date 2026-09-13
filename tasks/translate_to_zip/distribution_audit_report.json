@@ -1,8 +1,8 @@
 {
   "metrics": {
     "scriptora_total": 268,
-    "package_total": 137,
-    "new_files": 55,
+    "package_total": 157,
+    "new_files": 75,
     "modified_files": 5,
     "unchanged_files": 77,
     "removed_or_unused_from_scriptora": 186,
@@ -21,50 +21,70 @@
     "kubejs/assets/cozycafe/lang/ru_ru.json",
     "kubejs/assets/create_central_kitchen/lang/ru_ru.json",
     "kubejs/assets/dew_drop_farmland_growth/lang/ru_ru.json",
+    "kubejs/assets/dew_drop_watering_cans/lang/ru_ru.json",
     "kubejs/assets/dialog/lang/ru_ru.json",
+    "kubejs/assets/domesticationinnovation/lang/ru_ru.json",
     "kubejs/assets/dramaticdoors/lang/ru_ru.json",
     "kubejs/assets/dramaticdoors_chipped/lang/ru_ru.json",
     "kubejs/assets/dramaticdoors_macaw/lang/ru_ru.json",
     "kubejs/assets/dramaticdoors_manyideas/lang/ru_ru.json",
     "kubejs/assets/etcetera/lang/ru_ru.json",
     "kubejs/assets/extractinator/lang/ru_ru.json",
+    "kubejs/assets/ftbquestlocalizer/lang/en_us.json",
     "kubejs/assets/functionalstorage/lang/ru_ru.json",
+    "kubejs/assets/gag/lang/ru_ru.json",
     "kubejs/assets/justhammers/lang/ru_ru.json",
     "kubejs/assets/legendarycreatures/lang/ru_ru.json",
     "kubejs/assets/longwings/lang/ru_ru.json",
     "kubejs/assets/meadow/lang/ru_ru.json",
     "kubejs/assets/minecraft/lang/ru_ru.json",
+    "kubejs/assets/moblassos/lang/ru_ru.json",
     "kubejs/assets/moreminecarts/lang/ru_ru.json",
     "kubejs/assets/nightlights/lang/ru_ru.json",
+    "kubejs/assets/numismatics_utils/lang/ru_ru.json",
     "kubejs/assets/oreganized/lang/ru_ru.json",
     "kubejs/assets/painting/lang/ru_ru.json",
     "kubejs/assets/pamhc2trees/lang/ru_ru.json",
     "kubejs/assets/paraglider/lang/ru_ru.json",
+    "kubejs/assets/passablefoliage/lang/ru_ru.json",
     "kubejs/assets/portable_blueprints/lang/ru_ru.json",
     "kubejs/assets/quark/lang/ru_ru.json",
     "kubejs/assets/refurbished_furniture/lang/ru_ru.json",
+    "kubejs/assets/rehooked/lang/ru_ru.json",
+    "kubejs/assets/sawmill/lang/ru_ru.json",
+    "kubejs/assets/sewingkit/lang/ru_ru.json",
     "kubejs/assets/simplehats/lang/ru_ru.json",
+    "kubejs/assets/snowyspirit/lang/ru_ru.json",
     "kubejs/assets/society/tooltipoverhaul/custom_frames.json",
+    "kubejs/assets/solonion/lang/ru_ru.json",
     "kubejs/assets/splendid_slimes/lang/ru_ru.json",
     "kubejs/assets/stardew_fishing/lang/ru_ru.json",
+    "kubejs/assets/strawstatues/lang/ru_ru.json",
+    "kubejs/assets/supplementaries/lang/ru_ru.json",
     "kubejs/assets/tanukidecor/lang/ru_ru.json",
     "kubejs/assets/twigs/lang/ru_ru.json",
     "kubejs/assets/unusualfishmod/lang/ru_ru.json",
+    "kubejs/assets/via_romana/lang/ru_ru.json",
     "kubejs/assets/vintagedelight/lang/ru_ru.json",
+    "kubejs/assets/whimsy_deco/lang/ru_ru.json",
+    "kubejs/client_scripts/etceteraJei.js",
+    "kubejs/client_scripts/tooltips/addAdvancedTooltips.js",
+    "kubejs/client_scripts/tooltips/addFishTooltips.js",
+    "kubejs/client_scripts/tooltips/addPriceTooltips.js",
+    "kubejs/client_scripts/tooltips/addTooltips.js",
     "kubejs/client_scripts/tooltips/bountifulTooltips.js",
     "kubejs/client_scripts/tooltips/buildinggadgets2Tooltips.js",
     "kubejs/client_scripts/tooltips/createCentralKitchenTooltips.js",
-    "kubejs/client_scripts/etceteraJei.js",
     "kubejs/client_scripts/tooltips/etceteraTooltips.js",
     "kubejs/client_scripts/tooltips/invitationTooltips.js",
     "kubejs/client_scripts/tooltips/longwingsTooltips.js",
     "kubejs/client_scripts/tooltips/tanukiDecorTooltips.js",
-    "kubejs/client_scripts/universalGiftsJei.js",
     "kubejs/client_scripts/tooltips/unusualFishTooltips.js",
-    "kubejs/server_scripts/globalServer.js",
-    "kubejs/server_scripts/handleDebt.js",
+    "kubejs/client_scripts/universalGiftsJei.js",
+    "kubejs/server_scripts/entities/slimeInspectorEnhanced.js",
     "kubejs/server_scripts/entities/slimeTicket.js",
-    "kubejs/server_scripts/entities/slimeInspectorEnhanced.js"
+    "kubejs/server_scripts/globalServer.js",
+    "kubejs/server_scripts/handleDebt.js"
   ],
   "modified_files_list": [
     "kubejs/assets/ftbquestlocalizer/lang/ru_ru.json",
@@ -343,14 +363,14 @@
   "unsafe_or_mixed_files": [
     {
       "path": "kubejs/server_scripts/translateInspector.js",
-      "reason": "Инструмент разработчика (/trans) для инспекции NBT и ключей предметов. Не требуется обычному игроку, оставлен вне сборки."
+      "reason": "Инструмент разработчика (/trans) для инспекции NBT и ключей предметов. Не требуется обычному игроку, исключён из дистрибутива."
     }
   ],
   "manual_check_files": [
     {
       "path": "patchouli_books/almanac/ru_ru/",
       "count": 201,
-      "reason": "Присутствовал в архиве Scriptora (201 файл альманаха), но в актуальной установленной игре отсутствует (в игре только en_us/fr_fr/ko_kr, а сам альманах генерируется/ссылается иначе). Не включен в пакет по правилу приоритета игры как источника истины."
+      "reason": "Присутствовал в архиве Scriptora (201 файл альманаха), но в актуальной установленной игре отсутствует (в игре только en_us/fr_fr/ko_kr, альманах генерируется иначе). Исключён по принципу приоритета игры как источника истины."
     }
   ]
 }

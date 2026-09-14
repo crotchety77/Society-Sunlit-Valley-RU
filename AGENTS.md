@@ -100,6 +100,16 @@
     - При добавлении общих тултипов или `tooltip.addAdvanced` изменения ОБЯЗАНЫ вноситься в `game_data/.../addTooltips.js`.
     - Прямое редактирование только файла игры запрещено: при запуске `node sync_all_to_game.js` он будет перезаписан версией из `game_data/`.
 
+15. **Изоляция и правила для сборки Cobblemon (`SborkaCobblemon/`)**:
+    - В проекте поддерживаются две независимые сборки:
+      1. 🌲 **Основная сборка (Society: Sunlit Valley)**: `D:\ModrinthApp\profiles\Society_ Sunlit Valley`. Исходники: `translations/`, `tasks/`, `kubejs_scripts/`, `game_data/`. Синхронизация: `node sync_all_to_game.js`.
+      2. ⚡ **Сборка Cobblemon (Society Sunlit Cobblemon)**: `G:\curseforge\minecraft\Instances\Society Sunlit Cobblemon`. Исходники, аудиты, квесты и скрипты: **СТРОГО в `SborkaCobblemon/`**.
+    - **Железный регламент изоляции:**
+      - **Запрещено** переносить Cobblemon-специфичные файлы в корень `translations/` или синхронизировать их в `D:\ModrinthApp\...`.
+      - **Запрещено** перезаписывать `ftbquestlocalizer/lang/en_us.json` в Cobblemon базовым файлом Sunlit Valley (в Cobblemon 673+ уникальных квестов тренеров и покемонов).
+      - Все задачи по Cobblemon (аудит ветки навыков Puffish Skills, 5 новых книг навыков, квесты рангов, `sunlit_cobblemon`, `cobblemon_farmers` и др.) ведутся изолированно внутри `SborkaCobblemon/tasks/`.
+      - Синхронизация Cobblemon выполняется отдельным скриптом `SborkaCobblemon/scripts/sync_cobblemon_to_game.js` (или `.py`).
+
 ### Доступные специализированные навыки (.agents/skills/):
 * **`ftb_quests_workflow`** — Рабочий регламент квестов FTB Quests, форматирование `&6`, `{@pagebreak}`, защита и валидация `.snbt`.
 * **`translate_mod`** — Полная локализация отдельного мода, извлечение ключей из `.jar`, аудит пропусков и создание файла согласования.

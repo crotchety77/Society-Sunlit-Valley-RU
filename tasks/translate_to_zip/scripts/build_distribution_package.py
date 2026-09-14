@@ -111,18 +111,28 @@ def main():
         if os.path.exists(os.path.join(game_root, js.replace('/', os.sep))):
             files_to_package.append(js)
 
-    # E. server_scripts/ Mechanics & Bugfixes
+    # E. server_scripts/ Mechanics & Bugfixes & Tags
     server_scripts = [
         'kubejs/server_scripts/globalServer.js',
         'kubejs/server_scripts/handleDebt.js',
         'kubejs/server_scripts/entities/slimeTicket.js',
-        'kubejs/server_scripts/entities/slimeInspectorEnhanced.js'
+        'kubejs/server_scripts/entities/slimeInspectorEnhanced.js',
+        'kubejs/server_scripts/tags/handleItemBlockFluidTags.js'
     ]
     for ss in server_scripts:
         if os.path.exists(os.path.join(game_root, ss.replace('/', os.sep))):
             files_to_package.append(ss)
 
-    # F. resourcepacks/ (Перевод модов.zip)
+    # F. kubejs/data/ Custom tags for JEI/EMI
+    custom_data_tags = [
+        'kubejs/data/society/tags/items/machine_upgrades.json',
+        'kubejs/data/forge/tags/items/upgrades.json'
+    ]
+    for dt in custom_data_tags:
+        if os.path.exists(os.path.join(game_root, dt.replace('/', os.sep))):
+            files_to_package.append(dt)
+
+    # G. resourcepacks/ (Перевод модов.zip)
     # Find the translation resourcepack in game profile
     rp_dir = os.path.join(game_root, 'resourcepacks')
     translation_rp_source = None

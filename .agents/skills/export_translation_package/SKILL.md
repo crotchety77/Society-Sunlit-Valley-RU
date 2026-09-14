@@ -54,14 +54,18 @@ description: Полный регламент и автоматизация эк�
 3. **Клиентские скрипты KubeJS (Tooltips & JEI):**
    * Все скрипты тултипов: `kubejs/client_scripts/tooltips/*.js`.
    * Кастомные вкладки JEI: `kubejs/client_scripts/etceteraJei.js`, `universalGiftsJei.js`.
-4. **Серверные скрипты с фиксами механик:**
+5. **Серверные скрипты с фиксами механик и тегами:**
    * `globalServer.js` — персистентность данных при смерти в `server.persistentData`, фикс NBT и генерации записок Candlelight (`global.getNotePaperItem`), уведомления в чат и HUD.
    * `handleDebt.js` — фикс справок об освобождении от долга банка.
    * `entities/slimeTicket.js` — обработка Билетов слайма и разблокировка знаний о лакомствах.
    * `entities/slimeInspectorEnhanced.js` — интерактивный анализ слаймов в чате.
-5. **Активные книги Patchouli:**
+   * `tags/handleItemBlockFluidTags.js` — регистрация предметов в теги `#society:machine_upgrades` и `#forge:upgrades`.
+6. **Кастомные датапак-теги (`kubejs/data/`):**
+   * `kubejs/data/society/tags/items/machine_upgrades.json` (поиск по `#machine_upgrades`).
+   * `kubejs/data/forge/tags/items/upgrades.json` (поиск по `#upgrades`).
+7. **Активные книги Patchouli:**
    * `patchouli_books/fish_finder/ru_ru/` (категории и описания всех рыб).
-6. **Ресурспаки:**
+8. **Ресурспаки:**
    * `resourcepacks/Перевод модов.zip` (пакет базовых локализаций модов).
 
 ---

@@ -1,8 +1,8 @@
 {
   "metrics": {
     "scriptora_total": 268,
-    "package_total": 157,
-    "new_files": 75,
+    "package_total": 160,
+    "new_files": 78,
     "modified_files": 5,
     "unchanged_files": 77,
     "removed_or_unused_from_scriptora": 186,
@@ -81,10 +81,13 @@
     "kubejs/client_scripts/tooltips/tanukiDecorTooltips.js",
     "kubejs/client_scripts/tooltips/unusualFishTooltips.js",
     "kubejs/client_scripts/universalGiftsJei.js",
+    "kubejs/data/forge/tags/items/upgrades.json",
+    "kubejs/data/society/tags/items/machine_upgrades.json",
     "kubejs/server_scripts/entities/slimeInspectorEnhanced.js",
     "kubejs/server_scripts/entities/slimeTicket.js",
     "kubejs/server_scripts/globalServer.js",
-    "kubejs/server_scripts/handleDebt.js"
+    "kubejs/server_scripts/handleDebt.js",
+    "kubejs/server_scripts/tags/handleItemBlockFluidTags.js"
   ],
   "modified_files_list": [
     "kubejs/assets/ftbquestlocalizer/lang/ru_ru.json",

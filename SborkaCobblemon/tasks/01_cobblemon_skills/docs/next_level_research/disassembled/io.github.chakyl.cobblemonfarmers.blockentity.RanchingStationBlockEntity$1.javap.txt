@@ -1,0 +1,24 @@
+Compiled from "RanchingStationBlockEntity.java"
+class io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity$1 extends net.minecraftforge.items.ItemStackHandler {
+  final io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity this$0;
+
+  io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity$1(io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #13                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+       5: aload_0
+       6: iload_2
+       7: invokespecial #16                 // Method net/minecraftforge/items/ItemStackHandler."<init>":(I)V
+      10: return
+
+  protected void onContentsChanged(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokespecial #23                 // Method net/minecraftforge/items/ItemStackHandler.onContentsChanged:(I)V
+       5: aload_0
+       6: getfield      #13                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+       9: invokevirtual #27                 // Method io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.m_6596_:()V
+      12: return
+}

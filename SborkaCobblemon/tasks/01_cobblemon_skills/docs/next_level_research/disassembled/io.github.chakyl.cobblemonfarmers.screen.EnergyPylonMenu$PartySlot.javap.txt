@@ -1,0 +1,29 @@
+Compiled from "EnergyPylonMenu.java"
+class io.github.chakyl.cobblemonfarmers.screen.EnergyPylonMenu$PartySlot extends io.github.chakyl.cobblemonfarmers.screen.helpers.WorkstationPartySlot {
+  final io.github.chakyl.cobblemonfarmers.screen.EnergyPylonMenu this$0;
+
+  public io.github.chakyl.cobblemonfarmers.screen.EnergyPylonMenu$PartySlot(io.github.chakyl.cobblemonfarmers.screen.EnergyPylonMenu, net.minecraft.world.Container, int, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #14                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/screen/EnergyPylonMenu;
+       5: aload_0
+       6: aload_2
+       7: iload_3
+       8: iload         4
+      10: iload         5
+      12: invokespecial #17                 // Method io/github/chakyl/cobblemonfarmers/screen/helpers/WorkstationPartySlot."<init>":(Lnet/minecraft/world/Container;III)V
+      15: return
+
+  public java.util.Optional<net.minecraft.world.item.ItemStack> m_150641_(int, int, net.minecraft.world.entity.player.Player);
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/screen/EnergyPylonMenu;
+       4: aload_0
+       5: getfield      #14                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/screen/EnergyPylonMenu;
+       8: getfield      #32                 // Field io/github/chakyl/cobblemonfarmers/screen/EnergyPylonMenu.player:Lnet/minecraft/world/entity/player/Player;
+      11: aload_0
+      12: invokevirtual #36                 // Method io/github/chakyl/cobblemonfarmers/screen/EnergyPylonMenu.transferFromPartyToWorkerSlot:(Lnet/minecraft/world/entity/player/Player;Lio/github/chakyl/cobblemonfarmers/screen/EnergyPylonMenu$PartySlot;)V
+      15: invokestatic  #42                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+      18: areturn
+}

@@ -1,0 +1,13 @@
+Compiled from "CobblemonFarmersRegistery.java"
+class io.github.chakyl.cobblemonfarmers.registry.CobblemonFarmersRegistery$RecipeRegistry$2 implements net.minecraft.world.item.crafting.RecipeType<io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe> {
+  io.github.chakyl.cobblemonfarmers.registry.CobblemonFarmersRegistery$RecipeRegistry$2();
+    Code:
+       0: aload_0
+       1: invokespecial #19                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public java.lang.String toString();
+    Code:
+       0: ldc           #25                 // String mystery_mine
+       2: areturn
+}

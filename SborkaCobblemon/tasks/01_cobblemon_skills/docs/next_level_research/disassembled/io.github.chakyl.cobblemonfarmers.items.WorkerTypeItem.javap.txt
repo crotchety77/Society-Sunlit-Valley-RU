@@ -1,0 +1,158 @@
+Compiled from "WorkerTypeItem.java"
+public class io.github.chakyl.cobblemonfarmers.items.WorkerTypeItem extends net.minecraft.world.item.Item {
+  private static java.util.List<com.cobblemon.mod.common.api.types.ElementalType> GARDENING_STATION_TYPES;
+
+  com.cobblemon.mod.common.api.types.ElementalType type;
+
+  public io.github.chakyl.cobblemonfarmers.items.WorkerTypeItem(net.minecraft.world.item.Item$Properties, com.cobblemon.mod.common.api.types.ElementalType);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #23                 // Method net/minecraft/world/item/Item."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+       5: aload_0
+       6: aload_2
+       7: putfield      #25                 // Field type:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      10: return
+
+  public void m_7373_(net.minecraft.world.item.ItemStack, net.minecraft.world.level.Level, java.util.List<net.minecraft.network.chat.Component>, net.minecraft.world.item.TooltipFlag);
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field type:Lcom/cobblemon/mod/common/api/types/ElementalType;
+       4: invokevirtual #38                 // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+       7: astore        5
+       9: aload_0
+      10: getfield      #25                 // Field type:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      13: getstatic     #44                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      16: invokevirtual #48                 // Method com/cobblemon/mod/common/api/types/ElementalTypes.getELECTRIC:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      19: if_acmpne     79
+      22: aload_3
+      23: ldc           #50                 // String block.cobblemon_farmers.energy_pylon
+      25: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      28: getstatic     #62                 // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+      31: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      34: getstatic     #71                 // Field net/minecraft/ChatFormatting.UNDERLINE:Lnet/minecraft/ChatFormatting;
+      37: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      40: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      45: pop
+      46: aload_3
+      47: aload         5
+      49: invokedynamic #89,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      54: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      57: getstatic     #92                 // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+      60: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      63: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      68: pop
+      69: aload_3
+      70: invokestatic  #96                 // InterfaceMethod net/minecraft/network/chat/Component.m_237119_:()Lnet/minecraft/network/chat/MutableComponent;
+      73: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      78: pop
+      79: aload_0
+      80: getfield      #25                 // Field type:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      83: getstatic     #44                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      86: invokevirtual #101                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getPSYCHIC:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      89: if_acmpne     149
+      92: aload_3
+      93: ldc           #103                // String block.cobblemon_farmers.crystal_ball
+      95: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      98: getstatic     #62                 // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+     101: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     104: getstatic     #71                 // Field net/minecraft/ChatFormatting.UNDERLINE:Lnet/minecraft/ChatFormatting;
+     107: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     110: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     115: pop
+     116: aload_3
+     117: aload         5
+     119: invokedynamic #106,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     124: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     127: getstatic     #92                 // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+     130: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     133: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     138: pop
+     139: aload_3
+     140: invokestatic  #96                 // InterfaceMethod net/minecraft/network/chat/Component.m_237119_:()Lnet/minecraft/network/chat/MutableComponent;
+     143: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     148: pop
+     149: getstatic     #108                // Field GARDENING_STATION_TYPES:Ljava/util/List;
+     152: aload_0
+     153: getfield      #25                 // Field type:Lcom/cobblemon/mod/common/api/types/ElementalType;
+     156: invokeinterface #111,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+     161: ifeq          221
+     164: aload_3
+     165: ldc           #113                // String block.cobblemon_farmers.gardening_station
+     167: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     170: getstatic     #62                 // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+     173: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     176: getstatic     #71                 // Field net/minecraft/ChatFormatting.UNDERLINE:Lnet/minecraft/ChatFormatting;
+     179: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     182: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     187: pop
+     188: aload_3
+     189: aload         5
+     191: invokedynamic #116,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     196: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     199: getstatic     #92                 // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+     202: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     205: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     210: pop
+     211: aload_3
+     212: invokestatic  #96                 // InterfaceMethod net/minecraft/network/chat/Component.m_237119_:()Lnet/minecraft/network/chat/MutableComponent;
+     215: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     220: pop
+     221: aload_3
+     222: ldc           #118                // String block.cobblemon_farmers.craft_station
+     224: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     227: getstatic     #62                 // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+     230: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     233: getstatic     #71                 // Field net/minecraft/ChatFormatting.UNDERLINE:Lnet/minecraft/ChatFormatting;
+     236: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     239: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     244: pop
+     245: aload_3
+     246: aload         5
+     248: invokedynamic #121,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     253: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     256: getstatic     #92                 // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+     259: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     262: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     267: pop
+     268: aload_3
+     269: invokestatic  #96                 // InterfaceMethod net/minecraft/network/chat/Component.m_237119_:()Lnet/minecraft/network/chat/MutableComponent;
+     272: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     277: pop
+     278: aload_3
+     279: ldc           #123                // String block.cobblemon_farmers.mystery_mine
+     281: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     284: getstatic     #62                 // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+     287: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     290: getstatic     #71                 // Field net/minecraft/ChatFormatting.UNDERLINE:Lnet/minecraft/ChatFormatting;
+     293: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     296: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     301: pop
+     302: aload_3
+     303: aload         5
+     305: invokedynamic #126,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     310: invokestatic  #56                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     313: getstatic     #92                 // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+     316: invokevirtual #68                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     319: invokeinterface #77,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     324: pop
+     325: return
+
+  static {};
+    Code:
+       0: getstatic     #44                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+       3: invokevirtual #141                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getWATER:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+       6: getstatic     #44                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+       9: invokevirtual #144                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getGRASS:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      12: getstatic     #44                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      15: invokevirtual #147                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getDARK:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      18: getstatic     #44                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      21: invokevirtual #150                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getFAIRY:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      24: getstatic     #44                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      27: invokevirtual #153                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getNORMAL:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      30: getstatic     #44                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      33: invokevirtual #156                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getFLYING:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      36: invokestatic  #160                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+      39: putstatic     #108                // Field GARDENING_STATION_TYPES:Ljava/util/List;
+      42: return
+}

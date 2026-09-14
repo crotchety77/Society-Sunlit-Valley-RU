@@ -1,0 +1,85 @@
+Compiled from "PacketHandler.java"
+public class io.github.chakyl.cobblemonfarmers.network.PacketHandler {
+  private static final net.minecraftforge.network.simple.SimpleChannel INSTANCE;
+
+  public io.github.chakyl.cobblemonfarmers.network.PacketHandler();
+    Code:
+       0: aload_0
+       1: invokespecial #31                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void register();
+    Code:
+       0: getstatic     #36                 // Field INSTANCE:Lnet/minecraftforge/network/simple/SimpleChannel;
+       3: ldc           #38                 // class io/github/chakyl/cobblemonfarmers/network/ServerBoundSwapPriorityPacket
+       5: iconst_0
+       6: getstatic     #44                 // Field net/minecraftforge/network/NetworkDirection.PLAY_TO_SERVER:Lnet/minecraftforge/network/NetworkDirection;
+       9: invokevirtual #48                 // Method net/minecraftforge/network/simple/SimpleChannel.messageBuilder:(Ljava/lang/Class;ILnet/minecraftforge/network/NetworkDirection;)Lnet/minecraftforge/network/simple/SimpleChannel$MessageBuilder;
+      12: invokedynamic #68,  0             // InvokeDynamic #0:accept:()Ljava/util/function/BiConsumer;
+      17: invokevirtual #72                 // Method net/minecraftforge/network/simple/SimpleChannel$MessageBuilder.encoder:(Ljava/util/function/BiConsumer;)Lnet/minecraftforge/network/simple/SimpleChannel$MessageBuilder;
+      20: invokedynamic #83,  0             // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+      25: invokevirtual #87                 // Method net/minecraftforge/network/simple/SimpleChannel$MessageBuilder.decoder:(Ljava/util/function/Function;)Lnet/minecraftforge/network/simple/SimpleChannel$MessageBuilder;
+      28: invokedynamic #95,  0             // InvokeDynamic #2:accept:()Ljava/util/function/BiConsumer;
+      33: invokevirtual #98                 // Method net/minecraftforge/network/simple/SimpleChannel$MessageBuilder.consumerMainThread:(Ljava/util/function/BiConsumer;)Lnet/minecraftforge/network/simple/SimpleChannel$MessageBuilder;
+      36: invokevirtual #101                // Method net/minecraftforge/network/simple/SimpleChannel$MessageBuilder.add:()V
+      39: return
+
+  public static <MSG> void sendToServer(MSG);
+    Code:
+       0: getstatic     #36                 // Field INSTANCE:Lnet/minecraftforge/network/simple/SimpleChannel;
+       3: getstatic     #108                // Field net/minecraftforge/network/PacketDistributor.SERVER:Lnet/minecraftforge/network/PacketDistributor;
+       6: invokevirtual #112                // Method net/minecraftforge/network/PacketDistributor.noArg:()Lnet/minecraftforge/network/PacketDistributor$PacketTarget;
+       9: aload_0
+      10: invokevirtual #116                // Method net/minecraftforge/network/simple/SimpleChannel.send:(Lnet/minecraftforge/network/PacketDistributor$PacketTarget;Ljava/lang/Object;)V
+      13: return
+
+  public static <MSG> void sendToPlayer(MSG, net.minecraft.server.level.ServerPlayer);
+    Code:
+       0: getstatic     #36                 // Field INSTANCE:Lnet/minecraftforge/network/simple/SimpleChannel;
+       3: getstatic     #125                // Field net/minecraftforge/network/PacketDistributor.PLAYER:Lnet/minecraftforge/network/PacketDistributor;
+       6: aload_1
+       7: invokedynamic #138,  0            // InvokeDynamic #3:get:(Lnet/minecraft/server/level/ServerPlayer;)Ljava/util/function/Supplier;
+      12: invokevirtual #142                // Method net/minecraftforge/network/PacketDistributor.with:(Ljava/util/function/Supplier;)Lnet/minecraftforge/network/PacketDistributor$PacketTarget;
+      15: aload_0
+      16: invokevirtual #116                // Method net/minecraftforge/network/simple/SimpleChannel.send:(Lnet/minecraftforge/network/PacketDistributor$PacketTarget;Ljava/lang/Object;)V
+      19: return
+
+  private static net.minecraft.server.level.ServerPlayer lambda$sendToPlayer$3(net.minecraft.server.level.ServerPlayer);
+    Code:
+       0: aload_0
+       1: areturn
+
+  private static java.lang.String lambda$static$2();
+    Code:
+       0: iconst_1
+       1: invokestatic  #152                // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+       4: areturn
+
+  private static boolean lambda$static$1(java.lang.String);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  private static boolean lambda$static$0(java.lang.String);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  static {};
+    Code:
+       0: new           #160                // class net/minecraft/resources/ResourceLocation
+       3: dup
+       4: ldc           #162                // String cobblemon_farmers
+       6: ldc           #164                // String main
+       8: invokespecial #167                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      11: invokestatic  #171                // Method net/minecraftforge/network/NetworkRegistry$ChannelBuilder.named:(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraftforge/network/NetworkRegistry$ChannelBuilder;
+      14: invokedynamic #181,  0            // InvokeDynamic #4:test:()Ljava/util/function/Predicate;
+      19: invokevirtual #185                // Method net/minecraftforge/network/NetworkRegistry$ChannelBuilder.serverAcceptedVersions:(Ljava/util/function/Predicate;)Lnet/minecraftforge/network/NetworkRegistry$ChannelBuilder;
+      22: invokedynamic #189,  0            // InvokeDynamic #5:test:()Ljava/util/function/Predicate;
+      27: invokevirtual #192                // Method net/minecraftforge/network/NetworkRegistry$ChannelBuilder.clientAcceptedVersions:(Ljava/util/function/Predicate;)Lnet/minecraftforge/network/NetworkRegistry$ChannelBuilder;
+      30: invokedynamic #199,  0            // InvokeDynamic #6:get:()Ljava/util/function/Supplier;
+      35: invokevirtual #203                // Method net/minecraftforge/network/NetworkRegistry$ChannelBuilder.networkProtocolVersion:(Ljava/util/function/Supplier;)Lnet/minecraftforge/network/NetworkRegistry$ChannelBuilder;
+      38: invokevirtual #207                // Method net/minecraftforge/network/NetworkRegistry$ChannelBuilder.simpleChannel:()Lnet/minecraftforge/network/simple/SimpleChannel;
+      41: putstatic     #36                 // Field INSTANCE:Lnet/minecraftforge/network/simple/SimpleChannel;
+      44: return
+}

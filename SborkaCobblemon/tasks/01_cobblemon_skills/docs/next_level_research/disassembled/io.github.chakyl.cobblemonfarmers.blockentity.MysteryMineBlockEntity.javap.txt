@@ -1,0 +1,932 @@
+Compiled from "MysteryMineBlockEntity.java"
+public class io.github.chakyl.cobblemonfarmers.blockentity.MysteryMineBlockEntity extends io.github.chakyl.cobblemonfarmers.blockentity.StationBaseBlockEntity implements net.minecraft.world.MenuProvider {
+  protected final net.minecraft.world.inventory.ContainerData data;
+
+  private int progress;
+
+  private int craftingTime;
+
+  private net.minecraft.resources.ResourceLocation lastRecipeID;
+
+  private boolean checkNewRecipe;
+
+  private boolean swapPriority;
+
+  private final net.minecraftforge.items.ItemStackHandler inputInventory;
+
+  private final net.minecraftforge.items.ItemStackHandler pokemonInventory;
+
+  private final net.minecraftforge.common.util.LazyOptional<net.minecraftforge.items.ItemStackHandler> inputOptional;
+
+  private final net.minecraftforge.common.util.LazyOptional<net.minecraftforge.items.ItemStackHandler> pokemonOptional;
+
+  public io.github.chakyl.cobblemonfarmers.blockentity.MysteryMineBlockEntity(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: aload_0
+       1: getstatic     #55                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockEntityRegistry.MYSTERY_MINE:Lnet/minecraftforge/registries/RegistryObject;
+       4: invokevirtual #61                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       7: checkcast     #63                 // class net/minecraft/world/level/block/entity/BlockEntityType
+      10: aload_1
+      11: aload_2
+      12: invokespecial #66                 // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity."<init>":(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+      15: aload_0
+      16: iconst_0
+      17: putfield      #68                 // Field progress:I
+      20: aload_0
+      21: iconst_0
+      22: putfield      #70                 // Field swapPriority:Z
+      25: aload_0
+      26: new           #13                 // class io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity$1
+      29: dup
+      30: aload_0
+      31: iconst_1
+      32: invokespecial #73                 // Method io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity$1."<init>":(Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;I)V
+      35: putfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      38: aload_0
+      39: new           #11                 // class io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity$2
+      42: dup
+      43: aload_0
+      44: iconst_1
+      45: invokespecial #76                 // Method io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity$2."<init>":(Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;I)V
+      48: putfield      #78                 // Field pokemonInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      51: aload_0
+      52: aload_0
+      53: invokedynamic #95,  0             // InvokeDynamic #0:get:(Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;)Lnet/minecraftforge/common/util/NonNullSupplier;
+      58: invokestatic  #101                // Method net/minecraftforge/common/util/LazyOptional.of:(Lnet/minecraftforge/common/util/NonNullSupplier;)Lnet/minecraftforge/common/util/LazyOptional;
+      61: putfield      #103                // Field inputOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      64: aload_0
+      65: aload_0
+      66: invokedynamic #108,  0            // InvokeDynamic #1:get:(Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;)Lnet/minecraftforge/common/util/NonNullSupplier;
+      71: invokestatic  #101                // Method net/minecraftforge/common/util/LazyOptional.of:(Lnet/minecraftforge/common/util/NonNullSupplier;)Lnet/minecraftforge/common/util/LazyOptional;
+      74: putfield      #110                // Field pokemonOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      77: aload_0
+      78: iconst_1
+      79: putfield      #112                // Field checkNewRecipe:Z
+      82: aload_0
+      83: new           #9                  // class io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity$3
+      86: dup
+      87: aload_0
+      88: invokespecial #115                // Method io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity$3."<init>":(Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;)V
+      91: putfield      #117                // Field data:Lnet/minecraft/world/inventory/ContainerData;
+      94: return
+
+  public net.minecraft.world.item.ItemStack getPokemonItem();
+    Code:
+       0: aload_0
+       1: getfield      #78                 // Field pokemonInventory:Lnet/minecraftforge/items/ItemStackHandler;
+       4: iconst_0
+       5: invokevirtual #131                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+       8: areturn
+
+  public void tick(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: iconst_0
+       1: istore        4
+       3: aload_0
+       4: aload_1
+       5: aload_2
+       6: aload_3
+       7: invokespecial #135                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.tick:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+      10: aload_1
+      11: invokevirtual #141                // Method net/minecraft/world/level/Level.m_5776_:()Z
+      14: ifne          221
+      17: aload_0
+      18: invokevirtual #144                // Method hasWorker:()Z
+      21: ifeq          177
+      24: aload_0
+      25: invokevirtual #147                // Method hasInput:()Z
+      28: ifeq          177
+      31: aload_0
+      32: new           #149                // class net/minecraftforge/items/wrapper/RecipeWrapper
+      35: dup
+      36: aload_0
+      37: getfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      40: invokespecial #152                // Method net/minecraftforge/items/wrapper/RecipeWrapper."<init>":(Lnet/minecraftforge/items/IItemHandlerModifiable;)V
+      43: invokevirtual #156                // Method getMatchingRecipe:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;)Ljava/util/Optional;
+      46: astore        5
+      48: aload         5
+      50: invokevirtual #161                // Method java/util/Optional.isPresent:()Z
+      53: ifeq          146
+      56: aload_0
+      57: aload         5
+      59: invokevirtual #162                // Method java/util/Optional.get:()Ljava/lang/Object;
+      62: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      65: invokevirtual #166                // Method canProcess:(Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe;)Z
+      68: ifeq          146
+      71: aload_0
+      72: aload         5
+      74: invokevirtual #162                // Method java/util/Optional.get:()Ljava/lang/Object;
+      77: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      80: invokevirtual #170                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getElementalType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      83: aload_1
+      84: invokestatic  #176                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.validWorkerType:(Lio/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity;Lcom/cobblemon/mod/common/api/types/ElementalType;Lnet/minecraft/world/level/Level;)Z
+      87: ifeq          146
+      90: aload_0
+      91: aload         5
+      93: invokevirtual #162                // Method java/util/Optional.get:()Ljava/lang/Object;
+      96: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      99: invokevirtual #179                // Method processRecipe:(Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe;)Z
+     102: istore        4
+     104: aload_0
+     105: getfield      #183                // Field speedModifier:D
+     108: dconst_0
+     109: dcmpg
+     110: ifgt          174
+     113: aload_0
+     114: aload         5
+     116: invokevirtual #162                // Method java/util/Optional.get:()Ljava/lang/Object;
+     119: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+     122: invokevirtual #187                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getSpeedStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     125: invokevirtual #191                // Method fetchSpeedModifier:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;)V
+     128: aload_0
+     129: aload         5
+     131: invokevirtual #162                // Method java/util/Optional.get:()Ljava/lang/Object;
+     134: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+     137: invokevirtual #194                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     140: invokevirtual #197                // Method fetchMultChance:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;)V
+     143: goto          174
+     146: aload_0
+     147: dconst_0
+     148: putfield      #183                // Field speedModifier:D
+     151: aload_0
+     152: iconst_0
+     153: putfield      #200                // Field multChance:I
+     156: aload_0
+     157: aload_0
+     158: getfield      #68                 // Field progress:I
+     161: iconst_2
+     162: isub
+     163: iconst_0
+     164: aload_0
+     165: getfield      #202                // Field craftingTime:I
+     168: invokestatic  #208                // Method net/minecraft/util/Mth.m_14045_:(III)I
+     171: putfield      #68                 // Field progress:I
+     174: goto          212
+     177: aload_0
+     178: getfield      #68                 // Field progress:I
+     181: ifle          212
+     184: aload_0
+     185: aload_0
+     186: getfield      #68                 // Field progress:I
+     189: iconst_2
+     190: isub
+     191: iconst_0
+     192: aload_0
+     193: getfield      #202                // Field craftingTime:I
+     196: invokestatic  #208                // Method net/minecraft/util/Mth.m_14045_:(III)I
+     199: putfield      #68                 // Field progress:I
+     202: aload_0
+     203: dconst_0
+     204: putfield      #183                // Field speedModifier:D
+     207: aload_0
+     208: iconst_0
+     209: putfield      #200                // Field multChance:I
+     212: iload         4
+     214: ifeq          221
+     217: aload_0
+     218: invokevirtual #212                // Method m_6596_:()V
+     221: return
+
+  public void setPrioritySwapped();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #70                 // Field swapPriority:Z
+       5: ifne          12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: putfield      #70                 // Field swapPriority:Z
+      16: aload_0
+      17: iconst_1
+      18: putfield      #112                // Field checkNewRecipe:Z
+      21: aload_0
+      22: invokevirtual #212                // Method m_6596_:()V
+      25: return
+
+  public boolean hasWorker();
+    Code:
+       0: aload_0
+       1: getfield      #78                 // Field pokemonInventory:Lnet/minecraftforge/items/ItemStackHandler;
+       4: iconst_0
+       5: invokevirtual #131                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+       8: invokevirtual #224                // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      11: ifne          25
+      14: aload_0
+      15: getfield      #228                // Field primaryType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      18: ifnull        25
+      21: iconst_1
+      22: goto          26
+      25: iconst_0
+      26: ireturn
+
+  public boolean hasInput();
+    Code:
+       0: aload_0
+       1: getfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+       4: iconst_0
+       5: invokevirtual #131                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+       8: invokevirtual #224                // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      11: ifne          18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ireturn
+
+  public <T> net.minecraftforge.common.util.LazyOptional<T> getCapability(net.minecraftforge.common.capabilities.Capability<T>, net.minecraft.core.Direction);
+    Code:
+       0: aload_1
+       1: getstatic     #237                // Field net/minecraftforge/common/capabilities/ForgeCapabilities.ITEM_HANDLER:Lnet/minecraftforge/common/capabilities/Capability;
+       4: if_acmpne     15
+       7: aload_0
+       8: getfield      #103                // Field inputOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      11: invokevirtual #241                // Method net/minecraftforge/common/util/LazyOptional.cast:()Lnet/minecraftforge/common/util/LazyOptional;
+      14: areturn
+      15: aload_0
+      16: aload_1
+      17: aload_2
+      18: invokespecial #243                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getCapability:(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/core/Direction;)Lnet/minecraftforge/common/util/LazyOptional;
+      21: areturn
+
+  public <T> net.minecraftforge.common.util.LazyOptional<T> getPokemonCapability(net.minecraftforge.common.capabilities.Capability<T>);
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field pokemonOptional:Lnet/minecraftforge/common/util/LazyOptional;
+       4: invokevirtual #241                // Method net/minecraftforge/common/util/LazyOptional.cast:()Lnet/minecraftforge/common/util/LazyOptional;
+       7: areturn
+
+  public void invalidateCaps();
+    Code:
+       0: aload_0
+       1: invokespecial #253                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.invalidateCaps:()V
+       4: aload_0
+       5: getfield      #103                // Field inputOptional:Lnet/minecraftforge/common/util/LazyOptional;
+       8: invokevirtual #256                // Method net/minecraftforge/common/util/LazyOptional.invalidate:()V
+      11: aload_0
+      12: getfield      #110                // Field pokemonOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      15: invokevirtual #256                // Method net/minecraftforge/common/util/LazyOptional.invalidate:()V
+      18: return
+
+  public void m_6596_();
+    Code:
+       0: aload_0
+       1: invokespecial #257                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.m_6596_:()V
+       4: aload_0
+       5: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+       8: ifnull        31
+      11: aload_0
+      12: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      15: aload_0
+      16: invokevirtual #264                // Method m_58899_:()Lnet/minecraft/core/BlockPos;
+      19: aload_0
+      20: invokevirtual #268                // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      23: aload_0
+      24: invokevirtual #268                // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      27: iconst_3
+      28: invokevirtual #272                // Method net/minecraft/world/level/Level.m_7260_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V
+      31: return
+
+  public net.minecraftforge.common.util.LazyOptional<net.minecraftforge.items.ItemStackHandler> getInputOptional();
+    Code:
+       0: aload_0
+       1: getfield      #103                // Field inputOptional:Lnet/minecraftforge/common/util/LazyOptional;
+       4: areturn
+
+  public net.minecraftforge.common.util.LazyOptional<net.minecraftforge.items.ItemStackHandler> getPokemonOptional();
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field pokemonOptional:Lnet/minecraftforge/common/util/LazyOptional;
+       4: areturn
+
+  public void drops();
+    Code:
+       0: new           #278                // class net/minecraft/world/SimpleContainer
+       3: dup
+       4: iconst_2
+       5: invokespecial #281                // Method net/minecraft/world/SimpleContainer."<init>":(I)V
+       8: astore_1
+       9: aload_1
+      10: iconst_0
+      11: aload_0
+      12: getfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      15: iconst_0
+      16: invokevirtual #131                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      19: invokevirtual #285                // Method net/minecraft/world/SimpleContainer.m_6836_:(ILnet/minecraft/world/item/ItemStack;)V
+      22: aload_0
+      23: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      26: aload_0
+      27: getfield      #288                // Field f_58858_:Lnet/minecraft/core/BlockPos;
+      30: aload_1
+      31: invokestatic  #294                // Method net/minecraft/world/Containers.m_19002_:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/Container;)V
+      34: return
+
+  public net.minecraft.world.inventory.AbstractContainerMenu m_7208_(int, net.minecraft.world.entity.player.Inventory, net.minecraft.world.entity.player.Player);
+    Code:
+       0: new           #301                // class io/github/chakyl/cobblemonfarmers/screen/MysteryMineMenu
+       3: dup
+       4: iload_1
+       5: aload_2
+       6: aload_0
+       7: aload_0
+       8: getfield      #117                // Field data:Lnet/minecraft/world/inventory/ContainerData;
+      11: invokespecial #304                // Method io/github/chakyl/cobblemonfarmers/screen/MysteryMineMenu."<init>":(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/inventory/ContainerData;)V
+      14: areturn
+
+  private java.util.Optional<io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe> getMatchingRecipe(net.minecraftforge.items.wrapper.RecipeWrapper);
+    Code:
+       0: aload_0
+       1: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+       4: ifnonnull     11
+       7: invokestatic  #314                // Method java/util/Optional.empty:()Ljava/util/Optional;
+      10: areturn
+      11: aload_0
+      12: getfield      #316                // Field lastRecipeID:Lnet/minecraft/resources/ResourceLocation;
+      15: ifnull        96
+      18: aload_0
+      19: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      22: invokevirtual #320                // Method net/minecraft/world/level/Level.m_7465_:()Lnet/minecraft/world/item/crafting/RecipeManager;
+      25: checkcast     #322                // class io/github/chakyl/cobblemonfarmers/mixin/CWRecipeManagerAccessor
+      28: getstatic     #326                // Field io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe$Type;
+      31: invokeinterface #330,  2          // InterfaceMethod io/github/chakyl/cobblemonfarmers/mixin/CWRecipeManagerAccessor.getRecipeMap:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/Map;
+      36: aload_0
+      37: getfield      #316                // Field lastRecipeID:Lnet/minecraft/resources/ResourceLocation;
+      40: invokeinterface #335,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      45: checkcast     #337                // class net/minecraft/world/item/crafting/Recipe
+      48: astore_2
+      49: aload_2
+      50: instanceof    #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      53: ifeq          96
+      56: aload_2
+      57: aload_1
+      58: aload_0
+      59: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      62: invokeinterface #341,  3          // InterfaceMethod net/minecraft/world/item/crafting/Recipe.m_5818_:(Lnet/minecraft/world/Container;Lnet/minecraft/world/level/Level;)Z
+      67: ifeq          96
+      70: aload_0
+      71: aload_2
+      72: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      75: invokevirtual #170                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getElementalType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      78: aload_0
+      79: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      82: invokestatic  #176                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.validWorkerType:(Lio/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity;Lcom/cobblemon/mod/common/api/types/ElementalType;Lnet/minecraft/world/level/Level;)Z
+      85: ifeq          96
+      88: aload_2
+      89: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      92: invokestatic  #344                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+      95: areturn
+      96: aload_0
+      97: getfield      #112                // Field checkNewRecipe:Z
+     100: ifeq          299
+     103: aload_0
+     104: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+     107: invokevirtual #320                // Method net/minecraft/world/level/Level.m_7465_:()Lnet/minecraft/world/item/crafting/RecipeManager;
+     110: getstatic     #347                // Field io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type;
+     113: aload_1
+     114: aload_0
+     115: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+     118: invokevirtual #353                // Method net/minecraft/world/item/crafting/RecipeManager.m_44056_:(Lnet/minecraft/world/item/crafting/RecipeType;Lnet/minecraft/world/Container;Lnet/minecraft/world/level/Level;)Ljava/util/List;
+     121: astore_2
+     122: aconst_null
+     123: astore_3
+     124: aload_2
+     125: invokeinterface #359,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     130: astore        4
+     132: aload         4
+     134: invokeinterface #364,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     139: ifeq          183
+     142: aload         4
+     144: invokeinterface #367,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     149: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+     152: astore        5
+     154: aload_0
+     155: aload         5
+     157: invokevirtual #170                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getElementalType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     160: aload_0
+     161: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+     164: aload_0
+     165: getfield      #70                 // Field swapPriority:Z
+     168: invokestatic  #371                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.priorityWorkerType:(Lio/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity;Lcom/cobblemon/mod/common/api/types/ElementalType;Lnet/minecraft/world/level/Level;Z)Z
+     171: ifeq          180
+     174: aload         5
+     176: astore_3
+     177: goto          183
+     180: goto          132
+     183: aload_3
+     184: ifnonnull     254
+     187: aload_2
+     188: invokeinterface #359,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     193: astore        4
+     195: aload         4
+     197: invokeinterface #364,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     202: ifeq          254
+     205: aload         4
+     207: invokeinterface #367,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     212: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+     215: astore        5
+     217: aload_0
+     218: aload         5
+     220: invokevirtual #170                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getElementalType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     223: aload_0
+     224: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+     227: aload_0
+     228: getfield      #70                 // Field swapPriority:Z
+     231: ifne          238
+     234: iconst_1
+     235: goto          239
+     238: iconst_0
+     239: invokestatic  #371                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.priorityWorkerType:(Lio/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity;Lcom/cobblemon/mod/common/api/types/ElementalType;Lnet/minecraft/world/level/Level;Z)Z
+     242: ifeq          251
+     245: aload         5
+     247: astore_3
+     248: goto          254
+     251: goto          195
+     254: aload_3
+     255: ifnull        299
+     258: aload_3
+     259: invokevirtual #377                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.m_6423_:()Lnet/minecraft/resources/ResourceLocation;
+     262: astore        4
+     264: aload_0
+     265: getfield      #316                // Field lastRecipeID:Lnet/minecraft/resources/ResourceLocation;
+     268: ifnull        288
+     271: aload_0
+     272: getfield      #316                // Field lastRecipeID:Lnet/minecraft/resources/ResourceLocation;
+     275: aload         4
+     277: invokevirtual #383                // Method net/minecraft/resources/ResourceLocation.equals:(Ljava/lang/Object;)Z
+     280: ifne          288
+     283: aload_0
+     284: iconst_0
+     285: putfield      #202                // Field craftingTime:I
+     288: aload_0
+     289: aload         4
+     291: putfield      #316                // Field lastRecipeID:Lnet/minecraft/resources/ResourceLocation;
+     294: aload_3
+     295: invokestatic  #344                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+     298: areturn
+     299: aload_0
+     300: iconst_0
+     301: putfield      #112                // Field checkNewRecipe:Z
+     304: invokestatic  #314                // Method java/util/Optional.empty:()Ljava/util/Optional;
+     307: areturn
+
+  private boolean processRecipe(io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe);
+    Code:
+       0: aload_0
+       1: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+       4: ifnonnull     9
+       7: iconst_0
+       8: ireturn
+       9: aload_0
+      10: dup
+      11: getfield      #68                 // Field progress:I
+      14: iconst_1
+      15: iadd
+      16: putfield      #68                 // Field progress:I
+      19: aload_0
+      20: aload_1
+      21: invokevirtual #397                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getCraftingTime:()I
+      24: putfield      #202                // Field craftingTime:I
+      27: aload_0
+      28: getfield      #68                 // Field progress:I
+      31: i2d
+      32: aload_0
+      33: invokevirtual #401                // Method getBoostedSpeedModifier:()D
+      36: dmul
+      37: invokestatic  #405                // Method net/minecraft/util/Mth.m_14107_:(D)I
+      40: aload_0
+      41: getfield      #202                // Field craftingTime:I
+      44: if_icmpge     49
+      47: iconst_0
+      48: ireturn
+      49: aload_0
+      50: iconst_0
+      51: putfield      #68                 // Field progress:I
+      54: aload_1
+      55: aconst_null
+      56: invokevirtual #409                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getResults:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/core/NonNullList;
+      59: astore_2
+      60: aload_1
+      61: aconst_null
+      62: invokevirtual #413                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getWeights:(Lnet/minecraft/core/RegistryAccess;)Ljava/util/List;
+      65: astore        4
+      67: iconst_0
+      68: istore        5
+      70: iconst_0
+      71: istore        6
+      73: aload         4
+      75: invokeinterface #359,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      80: astore        7
+      82: aload         7
+      84: invokeinterface #364,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      89: ifeq          117
+      92: aload         7
+      94: invokeinterface #367,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      99: checkcast     #417                // class java/lang/Integer
+     102: astore        8
+     104: iload         5
+     106: aload         8
+     108: invokevirtual #420                // Method java/lang/Integer.intValue:()I
+     111: iadd
+     112: istore        5
+     114: goto          82
+     117: iconst_1
+     118: istore        7
+     120: iload         5
+     122: iconst_1
+     123: if_icmple     146
+     126: new           #422                // class java/util/Random
+     129: dup
+     130: invokespecial #424                // Method java/util/Random."<init>":()V
+     133: astore        8
+     135: aload         8
+     137: iload         5
+     139: invokevirtual #428                // Method java/util/Random.nextInt:(I)I
+     142: iconst_1
+     143: iadd
+     144: istore        7
+     146: iconst_0
+     147: istore        8
+     149: iload         8
+     151: aload_2
+     152: invokevirtual #431                // Method net/minecraft/core/NonNullList.size:()I
+     155: if_icmpge     343
+     158: iload         6
+     160: aload         4
+     162: iload         8
+     164: invokeinterface #434,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     169: checkcast     #417                // class java/lang/Integer
+     172: invokevirtual #420                // Method java/lang/Integer.intValue:()I
+     175: iadd
+     176: istore        6
+     178: iload         6
+     180: iload         7
+     182: if_icmplt     337
+     185: iconst_1
+     186: istore        9
+     188: aload_0
+     189: invokevirtual #437                // Method getBoostedMultChance:()I
+     192: istore        10
+     194: iload         10
+     196: ifle          245
+     199: iload         10
+     201: istore        11
+     203: iload         11
+     205: ifle          245
+     208: aload_0
+     209: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+     212: invokevirtual #441                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     215: invokeinterface #446,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188500_:()D
+     220: ldc2_w        #447                // double 100.0d
+     223: dmul
+     224: iload         11
+     226: bipush        100
+     228: invokestatic  #454                // Method java/lang/Math.min:(II)I
+     231: i2d
+     232: dcmpg
+     233: ifge          239
+     236: iinc          9, 1
+     239: iinc          11, -100
+     242: goto          203
+     245: aload_2
+     246: iload         8
+     248: invokevirtual #455                // Method net/minecraft/core/NonNullList.get:(I)Ljava/lang/Object;
+     251: checkcast     #221                // class net/minecraft/world/item/ItemStack
+     254: invokevirtual #458                // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+     257: astore_3
+     258: aload_3
+     259: aload_3
+     260: invokevirtual #461                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+     263: iload         9
+     265: imul
+     266: iconst_0
+     267: aload_3
+     268: invokevirtual #464                // Method net/minecraft/world/item/ItemStack.m_41741_:()I
+     271: invokestatic  #208                // Method net/minecraft/util/Mth.m_14045_:(III)I
+     274: invokevirtual #467                // Method net/minecraft/world/item/ItemStack.m_41764_:(I)V
+     277: aload_0
+     278: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+     281: aload_0
+     282: invokevirtual #264                // Method m_58899_:()Lnet/minecraft/core/BlockPos;
+     285: aload_0
+     286: invokevirtual #268                // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+     289: getstatic     #473                // Field io/github/chakyl/cobblemonfarmers/block/MysteryMineBlock.FACING:Lnet/minecraft/world/level/block/state/properties/DirectionProperty;
+     292: invokevirtual #479                // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+     295: checkcast     #481                // class net/minecraft/core/Direction
+     298: aload_3
+     299: invokevirtual #458                // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+     302: invokestatic  #485                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.insertIntoFacingOrPopOut:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/world/item/ItemStack;)V
+     305: aload_1
+     306: invokevirtual #397                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getCraftingTime:()I
+     309: bipush        30
+     311: if_icmpgt     324
+     314: invokestatic  #488                // Method java/lang/Math.random:()D
+     317: ldc2_w        #489                // double 0.25d
+     320: dcmpg
+     321: ifge          329
+     324: aload_0
+     325: dconst_0
+     326: putfield      #493                // Field bonusSpeed:D
+     329: aload_0
+     330: iconst_0
+     331: putfield      #496                // Field bonusMult:I
+     334: goto          343
+     337: iinc          8, 1
+     340: goto          149
+     343: aload_0
+     344: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+     347: invokevirtual #441                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     350: invokeinterface #446,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188500_:()D
+     355: aload_1
+     356: invokevirtual #500                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getConsumeChance:()F
+     359: f2d
+     360: dcmpg
+     361: ifge          378
+     364: aload_0
+     365: getfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+     368: iconst_0
+     369: invokevirtual #131                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+     372: iconst_1
+     373: invokevirtual #503                // Method net/minecraft/world/item/ItemStack.m_41774_:(I)V
+     376: iconst_1
+     377: ireturn
+     378: iconst_0
+     379: ireturn
+
+  protected boolean canProcess(io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+       5: invokevirtual #524                // Method net/minecraft/world/level/Level.m_9598_:()Lnet/minecraft/core/RegistryAccess;
+       8: invokevirtual #528                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.m_8043_:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      11: astore_2
+      12: aload_2
+      13: invokevirtual #224                // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      16: ifeq          21
+      19: iconst_0
+      20: ireturn
+      21: iconst_1
+      22: ireturn
+
+  public io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe getCurrentRecipe();
+    Code:
+       0: aload_0
+       1: new           #149                // class net/minecraftforge/items/wrapper/RecipeWrapper
+       4: dup
+       5: aload_0
+       6: getfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+       9: invokespecial #152                // Method net/minecraftforge/items/wrapper/RecipeWrapper."<init>":(Lnet/minecraftforge/items/IItemHandlerModifiable;)V
+      12: invokevirtual #156                // Method getMatchingRecipe:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;)Ljava/util/Optional;
+      15: astore_1
+      16: aload_1
+      17: invokevirtual #161                // Method java/util/Optional.isPresent:()Z
+      20: ifeq          66
+      23: aload_0
+      24: aload_1
+      25: invokevirtual #162                // Method java/util/Optional.get:()Ljava/lang/Object;
+      28: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      31: invokevirtual #166                // Method canProcess:(Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe;)Z
+      34: ifeq          66
+      37: aload_0
+      38: aload_1
+      39: invokevirtual #162                // Method java/util/Optional.get:()Ljava/lang/Object;
+      42: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      45: invokevirtual #170                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getElementalType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      48: aload_0
+      49: getfield      #260                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      52: invokestatic  #176                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.validWorkerType:(Lio/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity;Lcom/cobblemon/mod/common/api/types/ElementalType;Lnet/minecraft/world/level/Level;)Z
+      55: ifeq          66
+      58: aload_1
+      59: invokevirtual #162                // Method java/util/Optional.get:()Ljava/lang/Object;
+      62: checkcast     #27                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+      65: areturn
+      66: aconst_null
+      67: areturn
+
+  public boolean canReceiveBonusMult();
+    Code:
+       0: aload_0
+       1: invokevirtual #535                // Method hasBonusMult:()Z
+       4: ifeq          9
+       7: iconst_0
+       8: ireturn
+       9: aload_0
+      10: invokevirtual #537                // Method getCurrentRecipe:()Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe;
+      13: astore_1
+      14: aload_1
+      15: ifnull        31
+      18: aload_1
+      19: invokevirtual #194                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      22: ifnull        29
+      25: iconst_1
+      26: goto          30
+      29: iconst_0
+      30: ireturn
+      31: iconst_0
+      32: ireturn
+
+  public void m_183515_(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #541                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.m_183515_:(Lnet/minecraft/nbt/CompoundTag;)V
+       5: new           #543                // class net/minecraft/nbt/CompoundTag
+       8: dup
+       9: invokespecial #544                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+      12: astore_2
+      13: aload_0
+      14: getfield      #548                // Field owner:Ljava/util/UUID;
+      17: ifnull        31
+      20: aload_2
+      21: ldc_w         #550                // String Owner
+      24: aload_0
+      25: getfield      #548                // Field owner:Ljava/util/UUID;
+      28: invokevirtual #554                // Method net/minecraft/nbt/CompoundTag.m_128362_:(Ljava/lang/String;Ljava/util/UUID;)V
+      31: aload_2
+      32: ldc_w         #556                // String InputInventory
+      35: aload_0
+      36: getfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      39: invokevirtual #560                // Method net/minecraftforge/items/ItemStackHandler.serializeNBT:()Lnet/minecraft/nbt/CompoundTag;
+      42: invokevirtual #564                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      45: pop
+      46: aload_2
+      47: ldc_w         #566                // String PokemonInventory
+      50: aload_0
+      51: getfield      #78                 // Field pokemonInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      54: invokevirtual #560                // Method net/minecraftforge/items/ItemStackHandler.serializeNBT:()Lnet/minecraft/nbt/CompoundTag;
+      57: invokevirtual #564                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      60: pop
+      61: aload_2
+      62: ldc_w         #568                // String PrimaryType
+      65: aload_0
+      66: getfield      #228                // Field primaryType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      69: ifnull        82
+      72: aload_0
+      73: getfield      #228                // Field primaryType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      76: invokevirtual #572                // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+      79: goto          85
+      82: ldc_w         #576                // String
+      85: invokevirtual #580                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+      88: aload_2
+      89: ldc_w         #582                // String SecondaryType
+      92: aload_0
+      93: getfield      #585                // Field secondaryType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      96: ifnull        109
+      99: aload_0
+     100: getfield      #585                // Field secondaryType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+     103: invokevirtual #572                // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+     106: goto          112
+     109: ldc_w         #576                // String
+     112: invokevirtual #580                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+     115: aload_2
+     116: ldc_w         #587                // String CraftingTime
+     119: aload_0
+     120: getfield      #202                // Field craftingTime:I
+     123: invokevirtual #591                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+     126: aload_2
+     127: ldc_w         #593                // String Progress
+     130: aload_0
+     131: getfield      #68                 // Field progress:I
+     134: invokevirtual #591                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+     137: aload_2
+     138: ldc_w         #595                // String BonusMult
+     141: aload_0
+     142: getfield      #496                // Field bonusMult:I
+     145: invokevirtual #591                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+     148: aload_2
+     149: ldc_w         #597                // String BonusSpeed
+     152: aload_0
+     153: getfield      #493                // Field bonusSpeed:D
+     156: invokevirtual #601                // Method net/minecraft/nbt/CompoundTag.m_128347_:(Ljava/lang/String;D)V
+     159: aload_2
+     160: ldc_w         #603                // String SwapPriority
+     163: aload_0
+     164: getfield      #70                 // Field swapPriority:Z
+     167: invokevirtual #607                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+     170: aload_2
+     171: ldc_w         #609                // String PublicContract
+     174: aload_0
+     175: getfield      #612                // Field publicContract:Z
+     178: invokevirtual #607                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+     181: aload_1
+     182: ldc_w         #614                // String cobblemon_farmers
+     185: aload_2
+     186: invokevirtual #564                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+     189: pop
+     190: return
+
+  public void m_142466_(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #619                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.m_142466_:(Lnet/minecraft/nbt/CompoundTag;)V
+       5: aload_1
+       6: ldc_w         #614                // String cobblemon_farmers
+       9: invokevirtual #623                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      12: astore_2
+      13: aload_0
+      14: aload_2
+      15: ldc_w         #550                // String Owner
+      18: invokevirtual #627                // Method net/minecraft/nbt/CompoundTag.m_128403_:(Ljava/lang/String;)Z
+      21: ifeq          34
+      24: aload_2
+      25: ldc_w         #550                // String Owner
+      28: invokevirtual #631                // Method net/minecraft/nbt/CompoundTag.m_128342_:(Ljava/lang/String;)Ljava/util/UUID;
+      31: goto          35
+      34: aconst_null
+      35: putfield      #548                // Field owner:Ljava/util/UUID;
+      38: aload_2
+      39: ldc_w         #556                // String InputInventory
+      42: bipush        10
+      44: invokevirtual #637                // Method net/minecraft/nbt/CompoundTag.m_128425_:(Ljava/lang/String;I)Z
+      47: ifeq          64
+      50: aload_0
+      51: getfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      54: aload_2
+      55: ldc_w         #556                // String InputInventory
+      58: invokevirtual #623                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      61: invokevirtual #640                // Method net/minecraftforge/items/ItemStackHandler.deserializeNBT:(Lnet/minecraft/nbt/CompoundTag;)V
+      64: aload_2
+      65: ldc_w         #566                // String PokemonInventory
+      68: bipush        10
+      70: invokevirtual #637                // Method net/minecraft/nbt/CompoundTag.m_128425_:(Ljava/lang/String;I)Z
+      73: ifeq          110
+      76: aload_2
+      77: ldc_w         #566                // String PokemonInventory
+      80: invokevirtual #623                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      83: astore_3
+      84: aload_0
+      85: getfield      #78                 // Field pokemonInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      88: invokevirtual #560                // Method net/minecraftforge/items/ItemStackHandler.serializeNBT:()Lnet/minecraft/nbt/CompoundTag;
+      91: aload_3
+      92: invokevirtual #641                // Method net/minecraft/nbt/CompoundTag.equals:(Ljava/lang/Object;)Z
+      95: ifne          110
+      98: aload_0
+      99: getfield      #78                 // Field pokemonInventory:Lnet/minecraftforge/items/ItemStackHandler;
+     102: aload_3
+     103: invokevirtual #640                // Method net/minecraftforge/items/ItemStackHandler.deserializeNBT:(Lnet/minecraft/nbt/CompoundTag;)V
+     106: aload_0
+     107: invokevirtual #644                // Method initializeWorker:()V
+     110: aload_0
+     111: getstatic     #649                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     114: aload_2
+     115: ldc_w         #568                // String PrimaryType
+     118: invokevirtual #653                // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     121: invokevirtual #656                // Method com/cobblemon/mod/common/api/types/ElementalTypes.get:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/types/ElementalType;
+     124: putfield      #228                // Field primaryType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+     127: aload_0
+     128: getstatic     #649                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     131: aload_2
+     132: ldc_w         #582                // String SecondaryType
+     135: invokevirtual #653                // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     138: invokevirtual #656                // Method com/cobblemon/mod/common/api/types/ElementalTypes.get:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/types/ElementalType;
+     141: putfield      #585                // Field secondaryType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+     144: aload_0
+     145: aload_2
+     146: ldc_w         #587                // String CraftingTime
+     149: invokevirtual #660                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     152: putfield      #202                // Field craftingTime:I
+     155: aload_0
+     156: aload_2
+     157: ldc_w         #593                // String Progress
+     160: invokevirtual #660                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     163: putfield      #68                 // Field progress:I
+     166: aload_0
+     167: aload_2
+     168: ldc_w         #595                // String BonusMult
+     171: invokevirtual #660                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     174: putfield      #496                // Field bonusMult:I
+     177: aload_0
+     178: aload_2
+     179: ldc_w         #597                // String BonusSpeed
+     182: invokevirtual #664                // Method net/minecraft/nbt/CompoundTag.m_128459_:(Ljava/lang/String;)D
+     185: putfield      #493                // Field bonusSpeed:D
+     188: aload_0
+     189: aload_2
+     190: ldc_w         #603                // String SwapPriority
+     193: invokevirtual #667                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+     196: putfield      #70                 // Field swapPriority:Z
+     199: aload_0
+     200: aload_2
+     201: ldc_w         #609                // String PublicContract
+     204: invokevirtual #667                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+     207: putfield      #612                // Field publicContract:Z
+     210: return
+
+  public net.minecraft.network.chat.Component m_5446_();
+    Code:
+       0: ldc_w         #673                // String block.cobblemon_farmers.mystery_mine
+       3: invokestatic  #679                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       6: areturn
+
+  private net.minecraftforge.items.ItemStackHandler lambda$new$1();
+    Code:
+       0: aload_0
+       1: getfield      #78                 // Field pokemonInventory:Lnet/minecraftforge/items/ItemStackHandler;
+       4: areturn
+
+  private net.minecraftforge.items.ItemStackHandler lambda$new$0();
+    Code:
+       0: aload_0
+       1: getfield      #75                 // Field inputInventory:Lnet/minecraftforge/items/ItemStackHandler;
+       4: areturn
+}

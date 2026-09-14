@@ -1,0 +1,312 @@
+Compiled from "CobblemonFarmersEMIPlugin.java"
+public class io.github.chakyl.cobblemonfarmers.EMI.CobblemonFarmersEMIPlugin implements dev.emi.emi.api.EmiPlugin {
+  public static final dev.emi.emi.api.recipe.EmiRecipeCategory CRAFT_STATION;
+
+  public static final dev.emi.emi.api.recipe.EmiRecipeCategory GARDENING_STATION;
+
+  public static final dev.emi.emi.api.recipe.EmiRecipeCategory MYSTERY_MINE;
+
+  public static final dev.emi.emi.api.recipe.EmiRecipeCategory CRYSTAL_BALL;
+
+  public static final dev.emi.emi.api.recipe.EmiRecipeCategory ENERGY_PYLON;
+
+  public static final dev.emi.emi.api.recipe.EmiRecipeCategory RANCHING_STATION_FORAGES;
+
+  public static final dev.emi.emi.api.recipe.EmiRecipeCategory RANCHING_STATION_MILKING;
+
+  public io.github.chakyl.cobblemonfarmers.EMI.CobblemonFarmersEMIPlugin();
+    Code:
+       0: aload_0
+       1: invokespecial #50                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public void register(dev.emi.emi.api.EmiRegistry);
+    Code:
+       0: invokestatic  #60                 // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+       3: getfield      #64                 // Field net/minecraft/client/Minecraft.f_91073_:Lnet/minecraft/client/multiplayer/ClientLevel;
+       6: invokevirtual #70                 // Method net/minecraft/client/multiplayer/ClientLevel.m_7465_:()Lnet/minecraft/world/item/crafting/RecipeManager;
+       9: astore_2
+      10: aload_1
+      11: getstatic     #72                 // Field CRAFT_STATION:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      14: invokeinterface #78,  2           // InterfaceMethod dev/emi/emi/api/EmiRegistry.addCategory:(Ldev/emi/emi/api/recipe/EmiRecipeCategory;)V
+      19: aload_1
+      20: getstatic     #80                 // Field GARDENING_STATION:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      23: invokeinterface #78,  2           // InterfaceMethod dev/emi/emi/api/EmiRegistry.addCategory:(Ldev/emi/emi/api/recipe/EmiRecipeCategory;)V
+      28: aload_1
+      29: getstatic     #82                 // Field MYSTERY_MINE:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      32: invokeinterface #78,  2           // InterfaceMethod dev/emi/emi/api/EmiRegistry.addCategory:(Ldev/emi/emi/api/recipe/EmiRecipeCategory;)V
+      37: aload_1
+      38: getstatic     #84                 // Field CRYSTAL_BALL:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      41: invokeinterface #78,  2           // InterfaceMethod dev/emi/emi/api/EmiRegistry.addCategory:(Ldev/emi/emi/api/recipe/EmiRecipeCategory;)V
+      46: aload_1
+      47: getstatic     #86                 // Field ENERGY_PYLON:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      50: invokeinterface #78,  2           // InterfaceMethod dev/emi/emi/api/EmiRegistry.addCategory:(Ldev/emi/emi/api/recipe/EmiRecipeCategory;)V
+      55: aload_1
+      56: getstatic     #88                 // Field RANCHING_STATION_FORAGES:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      59: invokeinterface #78,  2           // InterfaceMethod dev/emi/emi/api/EmiRegistry.addCategory:(Ldev/emi/emi/api/recipe/EmiRecipeCategory;)V
+      64: aload_1
+      65: getstatic     #90                 // Field RANCHING_STATION_MILKING:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      68: invokeinterface #78,  2           // InterfaceMethod dev/emi/emi/api/EmiRegistry.addCategory:(Ldev/emi/emi/api/recipe/EmiRecipeCategory;)V
+      73: aload_2
+      74: getstatic     #94                 // Field io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe$Type;
+      77: invokevirtual #100                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+      80: astore_3
+      81: aload_3
+      82: invokeinterface #106,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      87: astore        4
+      89: aload         4
+      91: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      96: ifeq          129
+      99: aload         4
+     101: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     106: checkcast     #12                 // class io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe
+     109: astore        5
+     111: aload_1
+     112: new           #118                // class io/github/chakyl/cobblemonfarmers/EMI/EMICraftStationRecipe
+     115: dup
+     116: aload         5
+     118: invokespecial #121                // Method io/github/chakyl/cobblemonfarmers/EMI/EMICraftStationRecipe."<init>":(Lio/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe;)V
+     121: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     126: goto          89
+     129: aload_2
+     130: getstatic     #128                // Field io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type;
+     133: invokevirtual #100                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+     136: astore        4
+     138: aload         4
+     140: invokeinterface #106,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     145: astore        5
+     147: aload         5
+     149: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     154: ifeq          187
+     157: aload         5
+     159: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     164: checkcast     #17                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+     167: astore        6
+     169: aload_1
+     170: new           #130                // class io/github/chakyl/cobblemonfarmers/EMI/EMIMysteryMineRecipe
+     173: dup
+     174: aload         6
+     176: invokespecial #133                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIMysteryMineRecipe."<init>":(Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe;)V
+     179: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     184: goto          147
+     187: aload_2
+     188: getstatic     #136                // Field io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe$Type;
+     191: invokevirtual #100                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+     194: astore        5
+     196: aload         5
+     198: invokeinterface #106,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     203: astore        6
+     205: aload         6
+     207: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     212: ifeq          245
+     215: aload         6
+     217: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     222: checkcast     #21                 // class io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe
+     225: astore        7
+     227: aload_1
+     228: new           #138                // class io/github/chakyl/cobblemonfarmers/EMI/EMICrystalBallRecipe
+     231: dup
+     232: aload         7
+     234: invokespecial #141                // Method io/github/chakyl/cobblemonfarmers/EMI/EMICrystalBallRecipe."<init>":(Lio/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe;)V
+     237: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     242: goto          205
+     245: aload_2
+     246: getstatic     #144                // Field io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe$Type;
+     249: invokevirtual #100                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+     252: astore        6
+     254: aload         6
+     256: invokeinterface #106,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     261: astore        7
+     263: aload         7
+     265: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     270: ifeq          303
+     273: aload         7
+     275: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     280: checkcast     #25                 // class io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe
+     283: astore        8
+     285: aload_1
+     286: new           #146                // class io/github/chakyl/cobblemonfarmers/EMI/EMIEnergyPylonRecipe
+     289: dup
+     290: aload         8
+     292: invokespecial #149                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIEnergyPylonRecipe."<init>":(Lio/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe;)V
+     295: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     300: goto          263
+     303: aload_1
+     304: new           #151                // class io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe
+     307: dup
+     308: getstatic     #156                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     311: invokevirtual #160                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getGRASS:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     314: getstatic     #166                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPEED:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     317: sipush        24000
+     320: invokespecial #169                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     323: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     328: aload_1
+     329: new           #151                // class io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe
+     332: dup
+     333: getstatic     #156                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     336: invokevirtual #172                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getWATER:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     339: getstatic     #175                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     342: sipush        600
+     345: invokespecial #169                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     348: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     353: aload_1
+     354: new           #151                // class io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe
+     357: dup
+     358: getstatic     #156                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     361: invokevirtual #178                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getDARK:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     364: getstatic     #181                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.HP:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     367: sipush        20000
+     370: invokespecial #169                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     373: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     378: aload_1
+     379: new           #151                // class io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe
+     382: dup
+     383: getstatic     #156                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     386: invokevirtual #184                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getNORMAL:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     389: getstatic     #166                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPEED:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     392: sipush        300
+     395: invokespecial #169                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     398: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     403: aload_1
+     404: new           #151                // class io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe
+     407: dup
+     408: getstatic     #156                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     411: invokevirtual #187                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getFAIRY:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     414: getstatic     #175                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     417: sipush        800
+     420: invokespecial #169                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     423: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     428: aload_1
+     429: new           #151                // class io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe
+     432: dup
+     433: getstatic     #156                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     436: invokevirtual #190                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getFLYING:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     439: getstatic     #193                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_DEFENCE:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     442: sipush        200
+     445: invokespecial #169                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     448: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     453: aload_2
+     454: getstatic     #196                // Field io/github/chakyl/cobblemonfarmers/recipe/RanchingStationForageRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationForageRecipe$Type;
+     457: invokevirtual #100                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+     460: astore        7
+     462: aload         7
+     464: invokeinterface #106,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     469: astore        8
+     471: aload         8
+     473: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     478: ifeq          511
+     481: aload         8
+     483: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     488: checkcast     #29                 // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationForageRecipe
+     491: astore        9
+     493: aload_1
+     494: new           #198                // class io/github/chakyl/cobblemonfarmers/EMI/EMIRanchingStationForageRecipe
+     497: dup
+     498: aload         9
+     500: invokespecial #201                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIRanchingStationForageRecipe."<init>":(Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationForageRecipe;)V
+     503: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     508: goto          471
+     511: aload_2
+     512: getstatic     #204                // Field io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe$Type;
+     515: invokevirtual #100                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+     518: astore        8
+     520: aload         8
+     522: invokeinterface #106,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     527: astore        9
+     529: aload         9
+     531: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     536: ifeq          569
+     539: aload         9
+     541: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     546: checkcast     #33                 // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe
+     549: astore        10
+     551: aload_1
+     552: new           #206                // class io/github/chakyl/cobblemonfarmers/EMI/EMIRanchingStationMilkingRecipe
+     555: dup
+     556: aload         10
+     558: invokespecial #209                // Method io/github/chakyl/cobblemonfarmers/EMI/EMIRanchingStationMilkingRecipe."<init>":(Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe;)V
+     561: invokeinterface #125,  2          // InterfaceMethod dev/emi/emi/api/EmiRegistry.addRecipe:(Ldev/emi/emi/api/recipe/EmiRecipe;)V
+     566: goto          529
+     569: return
+
+  static {};
+    Code:
+       0: new           #236                // class dev/emi/emi/api/recipe/EmiRecipeCategory
+       3: dup
+       4: ldc           #238                // String cobblemon_farmers
+       6: ldc           #240                // String emi/craft_station
+       8: invokestatic  #246                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      11: getstatic     #249                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.CRAFT_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      14: invokevirtual #254                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      17: checkcast     #256                // class net/minecraft/world/level/ItemLike
+      20: invokestatic  #262                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/level/ItemLike;)Ldev/emi/emi/api/stack/EmiStack;
+      23: invokespecial #265                // Method dev/emi/emi/api/recipe/EmiRecipeCategory."<init>":(Lnet/minecraft/resources/ResourceLocation;Ldev/emi/emi/api/render/EmiRenderable;)V
+      26: putstatic     #72                 // Field CRAFT_STATION:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      29: new           #236                // class dev/emi/emi/api/recipe/EmiRecipeCategory
+      32: dup
+      33: ldc           #238                // String cobblemon_farmers
+      35: ldc_w         #267                // String emi/gardening_station
+      38: invokestatic  #246                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      41: getstatic     #269                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.GARDENING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      44: invokevirtual #254                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      47: checkcast     #256                // class net/minecraft/world/level/ItemLike
+      50: invokestatic  #262                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/level/ItemLike;)Ldev/emi/emi/api/stack/EmiStack;
+      53: invokespecial #265                // Method dev/emi/emi/api/recipe/EmiRecipeCategory."<init>":(Lnet/minecraft/resources/ResourceLocation;Ldev/emi/emi/api/render/EmiRenderable;)V
+      56: putstatic     #80                 // Field GARDENING_STATION:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      59: new           #236                // class dev/emi/emi/api/recipe/EmiRecipeCategory
+      62: dup
+      63: ldc           #238                // String cobblemon_farmers
+      65: ldc_w         #271                // String emi/mystery_mine
+      68: invokestatic  #246                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      71: getstatic     #273                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.MYSTERY_MINE:Lnet/minecraftforge/registries/RegistryObject;
+      74: invokevirtual #254                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      77: checkcast     #256                // class net/minecraft/world/level/ItemLike
+      80: invokestatic  #262                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/level/ItemLike;)Ldev/emi/emi/api/stack/EmiStack;
+      83: invokespecial #265                // Method dev/emi/emi/api/recipe/EmiRecipeCategory."<init>":(Lnet/minecraft/resources/ResourceLocation;Ldev/emi/emi/api/render/EmiRenderable;)V
+      86: putstatic     #82                 // Field MYSTERY_MINE:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+      89: new           #236                // class dev/emi/emi/api/recipe/EmiRecipeCategory
+      92: dup
+      93: ldc           #238                // String cobblemon_farmers
+      95: ldc_w         #275                // String emi/crystal_ball
+      98: invokestatic  #246                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     101: getstatic     #277                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.CRYSTAL_BALL:Lnet/minecraftforge/registries/RegistryObject;
+     104: invokevirtual #254                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     107: checkcast     #256                // class net/minecraft/world/level/ItemLike
+     110: invokestatic  #262                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/level/ItemLike;)Ldev/emi/emi/api/stack/EmiStack;
+     113: invokespecial #265                // Method dev/emi/emi/api/recipe/EmiRecipeCategory."<init>":(Lnet/minecraft/resources/ResourceLocation;Ldev/emi/emi/api/render/EmiRenderable;)V
+     116: putstatic     #84                 // Field CRYSTAL_BALL:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+     119: new           #236                // class dev/emi/emi/api/recipe/EmiRecipeCategory
+     122: dup
+     123: ldc           #238                // String cobblemon_farmers
+     125: ldc_w         #279                // String emi/energy_pylon
+     128: invokestatic  #246                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     131: getstatic     #281                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.ENERGY_PYLON:Lnet/minecraftforge/registries/RegistryObject;
+     134: invokevirtual #254                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     137: checkcast     #256                // class net/minecraft/world/level/ItemLike
+     140: invokestatic  #262                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/level/ItemLike;)Ldev/emi/emi/api/stack/EmiStack;
+     143: invokespecial #265                // Method dev/emi/emi/api/recipe/EmiRecipeCategory."<init>":(Lnet/minecraft/resources/ResourceLocation;Ldev/emi/emi/api/render/EmiRenderable;)V
+     146: putstatic     #86                 // Field ENERGY_PYLON:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+     149: new           #236                // class dev/emi/emi/api/recipe/EmiRecipeCategory
+     152: dup
+     153: ldc           #238                // String cobblemon_farmers
+     155: ldc_w         #283                // String emi/ranching_station_forages
+     158: invokestatic  #246                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     161: getstatic     #286                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.RANCHING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+     164: invokevirtual #254                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     167: checkcast     #256                // class net/minecraft/world/level/ItemLike
+     170: invokestatic  #262                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/level/ItemLike;)Ldev/emi/emi/api/stack/EmiStack;
+     173: invokespecial #265                // Method dev/emi/emi/api/recipe/EmiRecipeCategory."<init>":(Lnet/minecraft/resources/ResourceLocation;Ldev/emi/emi/api/render/EmiRenderable;)V
+     176: putstatic     #88                 // Field RANCHING_STATION_FORAGES:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+     179: new           #236                // class dev/emi/emi/api/recipe/EmiRecipeCategory
+     182: dup
+     183: ldc           #238                // String cobblemon_farmers
+     185: ldc_w         #288                // String emi/ranching_station_milking
+     188: invokestatic  #246                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     191: getstatic     #286                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.RANCHING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+     194: invokevirtual #254                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     197: checkcast     #256                // class net/minecraft/world/level/ItemLike
+     200: invokestatic  #262                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/level/ItemLike;)Ldev/emi/emi/api/stack/EmiStack;
+     203: invokespecial #265                // Method dev/emi/emi/api/recipe/EmiRecipeCategory."<init>":(Lnet/minecraft/resources/ResourceLocation;Ldev/emi/emi/api/render/EmiRenderable;)V
+     206: putstatic     #90                 // Field RANCHING_STATION_MILKING:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+     209: return
+}

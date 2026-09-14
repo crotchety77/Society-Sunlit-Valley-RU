@@ -1,0 +1,143 @@
+Compiled from "RanchingStationInfoProvider.java"
+public final class io.github.chakyl.cobblemonfarmers.jade.RanchingStationInfoProvider extends java.lang.Enum<io.github.chakyl.cobblemonfarmers.jade.RanchingStationInfoProvider> implements snownee.jade.api.IBlockComponentProvider, snownee.jade.api.IServerDataProvider<snownee.jade.api.BlockAccessor> {
+  public static final io.github.chakyl.cobblemonfarmers.jade.RanchingStationInfoProvider INSTANCE;
+
+  private static final io.github.chakyl.cobblemonfarmers.jade.RanchingStationInfoProvider[] $VALUES;
+
+  public static io.github.chakyl.cobblemonfarmers.jade.RanchingStationInfoProvider[] values();
+    Code:
+       0: getstatic     #23                 // Field $VALUES:[Lio/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider;
+       3: invokevirtual #28                 // Method "[Lio/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider;".clone:()Ljava/lang/Object;
+       6: checkcast     #24                 // class "[Lio/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider;"
+       9: areturn
+
+  public static io.github.chakyl.cobblemonfarmers.jade.RanchingStationInfoProvider valueOf(java.lang.String);
+    Code:
+       0: ldc           #2                  // class io/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider
+       2: aload_0
+       3: invokestatic  #33                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #2                  // class io/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider
+       9: areturn
+
+  private io.github.chakyl.cobblemonfarmers.jade.RanchingStationInfoProvider();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #40                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public void appendTooltip(snownee.jade.api.ITooltip, snownee.jade.api.BlockAccessor, snownee.jade.api.config.IPluginConfig);
+    Code:
+       0: aload_2
+       1: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+       6: ldc           #51                 // String ranchingPower
+       8: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      11: ifeq          58
+      14: aload_2
+      15: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+      20: ldc           #51                 // String ranchingPower
+      22: invokevirtual #61                 // Method net/minecraft/nbt/CompoundTag.m_128459_:(Ljava/lang/String;)D
+      25: dstore        4
+      27: dload         4
+      29: dconst_0
+      30: dcmpl
+      31: ifle          58
+      34: aload_1
+      35: ldc           #63                 // String tooltip.cobblemon_farmers.ranching_station.ranching_power
+      37: iconst_1
+      38: anewarray     #65                 // class java/lang/Object
+      41: dup
+      42: iconst_0
+      43: dload         4
+      45: d2i
+      46: invokestatic  #70                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      49: aastore
+      50: invokestatic  #76                 // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      53: invokeinterface #82,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+      58: aload_2
+      59: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+      64: ldc           #84                 // String bonusMult
+      66: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      69: ifeq          123
+      72: aload_2
+      73: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+      78: ldc           #84                 // String bonusMult
+      80: invokevirtual #61                 // Method net/minecraft/nbt/CompoundTag.m_128459_:(Ljava/lang/String;)D
+      83: dstore        4
+      85: dload         4
+      87: dconst_0
+      88: dcmpl
+      89: ifle          123
+      92: aload_1
+      93: ldc           #86                 // String gui.cobblemon_farmers.bonus_mult_chance
+      95: iconst_1
+      96: anewarray     #65                 // class java/lang/Object
+      99: dup
+     100: iconst_0
+     101: dload         4
+     103: invokedynamic #98,  0             // InvokeDynamic #0:makeConcatWithConstants:(D)Ljava/lang/String;
+     108: aastore
+     109: invokestatic  #76                 // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     112: getstatic     #104                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+     115: invokevirtual #110                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     118: invokeinterface #82,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     123: aload_1
+     124: invokestatic  #114                // InterfaceMethod net/minecraft/network/chat/Component.m_237119_:()Lnet/minecraft/network/chat/MutableComponent;
+     127: invokeinterface #82,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     132: return
+
+  public void appendServerData(net.minecraft.nbt.CompoundTag, snownee.jade.api.BlockAccessor);
+    Code:
+       0: aload_2
+       1: invokeinterface #128,  1          // InterfaceMethod snownee/jade/api/BlockAccessor.getBlockEntity:()Lnet/minecraft/world/level/block/entity/BlockEntity;
+       6: checkcast     #130                // class io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity
+       9: astore_3
+      10: aload_1
+      11: ldc           #51                 // String ranchingPower
+      13: aload_3
+      14: invokevirtual #134                // Method io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.getRanchingPower:()I
+      17: invokevirtual #137                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      20: aload_1
+      21: ldc           #84                 // String bonusMult
+      23: aload_3
+      24: invokevirtual #140                // Method io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.getBonusMult:()I
+      27: invokevirtual #137                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      30: return
+
+  public net.minecraft.resources.ResourceLocation getUid();
+    Code:
+       0: getstatic     #152                // Field io/github/chakyl/cobblemonfarmers/jade/WorkstationInfoPlugin.UID:Lnet/minecraft/resources/ResourceLocation;
+       3: areturn
+
+  public void appendServerData(net.minecraft.nbt.CompoundTag, snownee.jade.api.Accessor);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: checkcast     #45                 // class snownee/jade/api/BlockAccessor
+       6: invokevirtual #155                // Method appendServerData:(Lnet/minecraft/nbt/CompoundTag;Lsnownee/jade/api/BlockAccessor;)V
+       9: return
+
+  private static io.github.chakyl.cobblemonfarmers.jade.RanchingStationInfoProvider[] $values();
+    Code:
+       0: iconst_1
+       1: anewarray     #2                  // class io/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider
+       4: dup
+       5: iconst_0
+       6: getstatic     #158                // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider;
+       9: aastore
+      10: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class io/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider
+       3: dup
+       4: ldc           #160                // String INSTANCE
+       6: iconst_0
+       7: invokespecial #161                // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #158                // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider;
+      13: invokestatic  #163                // Method $values:()[Lio/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider;
+      16: putstatic     #23                 // Field $VALUES:[Lio/github/chakyl/cobblemonfarmers/jade/RanchingStationInfoProvider;
+      19: return
+}

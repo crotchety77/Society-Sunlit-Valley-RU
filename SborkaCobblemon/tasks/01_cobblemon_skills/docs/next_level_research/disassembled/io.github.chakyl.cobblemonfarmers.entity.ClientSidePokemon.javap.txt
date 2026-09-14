@@ -1,0 +1,271 @@
+Compiled from "ClientSidePokemon.java"
+public class io.github.chakyl.cobblemonfarmers.entity.ClientSidePokemon extends com.cobblemon.mod.common.pokemon.Pokemon {
+  public io.github.chakyl.cobblemonfarmers.entity.ClientSidePokemon();
+    Code:
+       0: aload_0
+       1: invokespecial #9                  // Method com/cobblemon/mod/common/pokemon/Pokemon."<init>":()V
+       4: return
+
+  public com.cobblemon.mod.common.api.abilities.Ability rollAbility();
+    Code:
+       0: getstatic     #19                 // Field com/cobblemon/mod/common/api/abilities/Abilities.INSTANCE:Lcom/cobblemon/mod/common/api/abilities/Abilities;
+       3: invokevirtual #23                 // Method com/cobblemon/mod/common/api/abilities/Abilities.getDUMMY:()Lcom/cobblemon/mod/common/api/abilities/AbilityTemplate;
+       6: iconst_1
+       7: invokevirtual #29                 // Method com/cobblemon/mod/common/api/abilities/AbilityTemplate.create:(Z)Lcom/cobblemon/mod/common/api/abilities/Ability;
+      10: areturn
+
+  public io.github.chakyl.cobblemonfarmers.entity.ClientSidePokemon loadFromNBTClient(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_1
+       1: ldc           #33                 // String Species
+       3: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+       6: ifeq          44
+       9: aload_1
+      10: ldc           #33                 // String Species
+      12: invokevirtual #43                 // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+      15: astore_2
+      16: aload_0
+      17: getstatic     #48                 // Field com/cobblemon/mod/common/api/pokemon/PokemonSpecies.INSTANCE:Lcom/cobblemon/mod/common/api/pokemon/PokemonSpecies;
+      20: aload_2
+      21: aload_2
+      22: ldc           #50                 // String :
+      24: invokevirtual #56                 // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+      27: iconst_1
+      28: iadd
+      29: invokevirtual #60                 // Method java/lang/String.substring:(I)Ljava/lang/String;
+      32: invokevirtual #64                 // Method com/cobblemon/mod/common/api/pokemon/PokemonSpecies.getByName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokemon/Species;
+      35: invokestatic  #70                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      38: checkcast     #72                 // class com/cobblemon/mod/common/pokemon/Species
+      41: invokevirtual #76                 // Method setSpecies:(Lcom/cobblemon/mod/common/pokemon/Species;)V
+      44: aload_1
+      45: ldc           #78                 // String Gender
+      47: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      50: ifeq          68
+      53: aload_1
+      54: ldc           #78                 // String Gender
+      56: invokevirtual #43                 // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+      59: astore_2
+      60: aload_0
+      61: aload_2
+      62: invokestatic  #84                 // Method com/cobblemon/mod/common/pokemon/Gender.valueOf:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokemon/Gender;
+      65: invokevirtual #88                 // Method setGender:(Lcom/cobblemon/mod/common/pokemon/Gender;)V
+      68: aload_1
+      69: ldc           #90                 // String Shiny
+      71: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      74: ifeq          87
+      77: aload_0
+      78: aload_1
+      79: ldc           #90                 // String Shiny
+      81: invokevirtual #93                 // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+      84: invokevirtual #97                 // Method setShiny:(Z)V
+      87: aload_1
+      88: ldc           #99                 // String Level
+      90: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      93: ifeq          106
+      96: aload_0
+      97: aload_1
+      98: ldc           #99                 // String Level
+     100: invokevirtual #103                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+     103: invokevirtual #107                // Method setLevel:(I)V
+     106: aload_1
+     107: ldc           #109                // String Health
+     109: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     112: ifeq          125
+     115: aload_0
+     116: aload_1
+     117: ldc           #109                // String Health
+     119: invokevirtual #103                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+     122: invokevirtual #112                // Method setCurrentHealth:(I)V
+     125: aload_1
+     126: ldc           #114                // String EVs
+     128: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     131: ifeq          148
+     134: aload_0
+     135: invokevirtual #118                // Method getEvs:()Lcom/cobblemon/mod/common/pokemon/EVs;
+     138: aload_1
+     139: ldc           #114                // String EVs
+     141: invokevirtual #122                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+     144: invokevirtual #128                // Method com/cobblemon/mod/common/pokemon/EVs.loadFromNBT:(Lnet/minecraft/nbt/CompoundTag;)Lcom/cobblemon/mod/common/pokemon/PokemonStats;
+     147: pop
+     148: aload_1
+     149: ldc           #130                // String IVs
+     151: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     154: ifeq          302
+     157: aload_1
+     158: ldc           #130                // String IVs
+     160: invokevirtual #122                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+     163: astore_2
+     164: aload_0
+     165: invokevirtual #134                // Method getIvs:()Lcom/cobblemon/mod/common/pokemon/IVs;
+     168: getstatic     #140                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     171: aload_2
+     172: getstatic     #140                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     175: invokevirtual #144                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getIdentifier:()Lnet/minecraft/resources/ResourceLocation;
+     178: invokevirtual #150                // Method net/minecraft/resources/ResourceLocation.m_135815_:()Ljava/lang/String;
+     181: invokevirtual #103                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+     184: invokevirtual #156                // Method com/cobblemon/mod/common/pokemon/IVs.set:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stat;I)V
+     187: aload_0
+     188: invokevirtual #134                // Method getIvs:()Lcom/cobblemon/mod/common/pokemon/IVs;
+     191: getstatic     #159                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     194: aload_2
+     195: getstatic     #159                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     198: invokevirtual #144                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getIdentifier:()Lnet/minecraft/resources/ResourceLocation;
+     201: invokevirtual #150                // Method net/minecraft/resources/ResourceLocation.m_135815_:()Ljava/lang/String;
+     204: invokevirtual #103                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+     207: invokevirtual #156                // Method com/cobblemon/mod/common/pokemon/IVs.set:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stat;I)V
+     210: aload_0
+     211: invokevirtual #134                // Method getIvs:()Lcom/cobblemon/mod/common/pokemon/IVs;
+     214: getstatic     #162                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.DEFENCE:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     217: aload_2
+     218: getstatic     #162                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.DEFENCE:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     221: invokevirtual #144                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getIdentifier:()Lnet/minecraft/resources/ResourceLocation;
+     224: invokevirtual #150                // Method net/minecraft/resources/ResourceLocation.m_135815_:()Ljava/lang/String;
+     227: invokevirtual #103                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+     230: invokevirtual #156                // Method com/cobblemon/mod/common/pokemon/IVs.set:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stat;I)V
+     233: aload_0
+     234: invokevirtual #134                // Method getIvs:()Lcom/cobblemon/mod/common/pokemon/IVs;
+     237: getstatic     #165                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_DEFENCE:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     240: aload_2
+     241: getstatic     #165                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_DEFENCE:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     244: invokevirtual #144                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getIdentifier:()Lnet/minecraft/resources/ResourceLocation;
+     247: invokevirtual #150                // Method net/minecraft/resources/ResourceLocation.m_135815_:()Ljava/lang/String;
+     250: invokevirtual #103                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+     253: invokevirtual #156                // Method com/cobblemon/mod/common/pokemon/IVs.set:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stat;I)V
+     256: aload_0
+     257: invokevirtual #134                // Method getIvs:()Lcom/cobblemon/mod/common/pokemon/IVs;
+     260: getstatic     #168                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPEED:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     263: aload_2
+     264: getstatic     #168                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPEED:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     267: invokevirtual #144                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getIdentifier:()Lnet/minecraft/resources/ResourceLocation;
+     270: invokevirtual #150                // Method net/minecraft/resources/ResourceLocation.m_135815_:()Ljava/lang/String;
+     273: invokevirtual #103                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+     276: invokevirtual #156                // Method com/cobblemon/mod/common/pokemon/IVs.set:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stat;I)V
+     279: aload_0
+     280: invokevirtual #134                // Method getIvs:()Lcom/cobblemon/mod/common/pokemon/IVs;
+     283: getstatic     #171                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.HP:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     286: aload_2
+     287: getstatic     #171                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.HP:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     290: invokevirtual #144                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getIdentifier:()Lnet/minecraft/resources/ResourceLocation;
+     293: invokevirtual #150                // Method net/minecraft/resources/ResourceLocation.m_135815_:()Ljava/lang/String;
+     296: invokevirtual #103                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+     299: invokevirtual #156                // Method com/cobblemon/mod/common/pokemon/IVs.set:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stat;I)V
+     302: aload_1
+     303: ldc           #173                // String Nature
+     305: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     308: ifeq          349
+     311: aload_1
+     312: ldc           #173                // String Nature
+     314: invokevirtual #43                 // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     317: astore_2
+     318: aload_2
+     319: invokevirtual #177                // Method java/lang/String.isEmpty:()Z
+     322: ifne          349
+     325: aload_0
+     326: getstatic     #182                // Field com/cobblemon/mod/common/api/pokemon/Natures.INSTANCE:Lcom/cobblemon/mod/common/api/pokemon/Natures;
+     329: new           #146                // class net/minecraft/resources/ResourceLocation
+     332: dup
+     333: aload_2
+     334: invokespecial #185                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;)V
+     337: invokevirtual #189                // Method com/cobblemon/mod/common/api/pokemon/Natures.getNature:(Lnet/minecraft/resources/ResourceLocation;)Lcom/cobblemon/mod/common/pokemon/Nature;
+     340: invokestatic  #70                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+     343: checkcast     #191                // class com/cobblemon/mod/common/pokemon/Nature
+     346: invokevirtual #195                // Method setNature:(Lcom/cobblemon/mod/common/pokemon/Nature;)V
+     349: aload_1
+     350: ldc           #197                // String MintedNature
+     352: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     355: ifeq          396
+     358: aload_1
+     359: ldc           #197                // String MintedNature
+     361: invokevirtual #43                 // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     364: astore_2
+     365: aload_2
+     366: invokevirtual #177                // Method java/lang/String.isEmpty:()Z
+     369: ifne          396
+     372: aload_0
+     373: getstatic     #182                // Field com/cobblemon/mod/common/api/pokemon/Natures.INSTANCE:Lcom/cobblemon/mod/common/api/pokemon/Natures;
+     376: new           #146                // class net/minecraft/resources/ResourceLocation
+     379: dup
+     380: aload_2
+     381: invokespecial #185                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;)V
+     384: invokevirtual #189                // Method com/cobblemon/mod/common/api/pokemon/Natures.getNature:(Lnet/minecraft/resources/ResourceLocation;)Lcom/cobblemon/mod/common/pokemon/Nature;
+     387: invokestatic  #70                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+     390: checkcast     #191                // class com/cobblemon/mod/common/pokemon/Nature
+     393: invokevirtual #200                // Method setMintedNature:(Lcom/cobblemon/mod/common/pokemon/Nature;)V
+     396: aload_1
+     397: ldc           #202                // String aspects
+     399: bipush        9
+     401: invokevirtual #206                // Method net/minecraft/nbt/CompoundTag.m_128425_:(Ljava/lang/String;I)Z
+     404: ifeq          469
+     407: new           #208                // class java/util/HashSet
+     410: dup
+     411: invokespecial #209                // Method java/util/HashSet."<init>":()V
+     414: astore_2
+     415: aload_1
+     416: ldc           #202                // String aspects
+     418: bipush        8
+     420: invokevirtual #213                // Method net/minecraft/nbt/CompoundTag.m_128437_:(Ljava/lang/String;I)Lnet/minecraft/nbt/ListTag;
+     423: invokevirtual #219                // Method net/minecraft/nbt/ListTag.iterator:()Ljava/util/Iterator;
+     426: astore_3
+     427: aload_3
+     428: invokeinterface #226,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     433: ifeq          464
+     436: aload_3
+     437: invokeinterface #230,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     442: checkcast     #232                // class net/minecraft/nbt/Tag
+     445: astore        4
+     447: aload_2
+     448: aload         4
+     450: invokeinterface #235,  1          // InterfaceMethod net/minecraft/nbt/Tag.m_7916_:()Ljava/lang/String;
+     455: invokeinterface #239,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+     460: pop
+     461: goto          427
+     464: aload_0
+     465: aload_2
+     466: invokevirtual #243                // Method setAspects:(Ljava/util/Set;)V
+     469: aload_1
+     470: ldc           #245                // String FormId
+     472: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     475: ifeq          547
+     478: aload_0
+     479: invokevirtual #249                // Method getSpecies:()Lcom/cobblemon/mod/common/pokemon/Species;
+     482: invokevirtual #253                // Method com/cobblemon/mod/common/pokemon/Species.getStandardForm:()Lcom/cobblemon/mod/common/pokemon/FormData;
+     485: astore_2
+     486: aload_0
+     487: invokevirtual #249                // Method getSpecies:()Lcom/cobblemon/mod/common/pokemon/Species;
+     490: invokevirtual #257                // Method com/cobblemon/mod/common/pokemon/Species.getForms:()Ljava/util/List;
+     493: invokeinterface #260,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     498: astore_3
+     499: aload_3
+     500: invokeinterface #226,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     505: ifeq          542
+     508: aload_3
+     509: invokeinterface #230,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     514: checkcast     #262                // class com/cobblemon/mod/common/pokemon/FormData
+     517: astore        4
+     519: aload         4
+     521: invokevirtual #265                // Method com/cobblemon/mod/common/pokemon/FormData.formOnlyShowdownId:()Ljava/lang/String;
+     524: aload_1
+     525: ldc           #245                // String FormId
+     527: invokevirtual #43                 // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     530: invokevirtual #268                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     533: ifeq          539
+     536: aload         4
+     538: astore_2
+     539: goto          499
+     542: aload_0
+     543: aload_2
+     544: invokevirtual #272                // Method setForm:(Lcom/cobblemon/mod/common/pokemon/FormData;)V
+     547: aload_1
+     548: ldc_w         #274                // String Friendship
+     551: invokevirtual #39                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     554: ifeq          570
+     557: aload_0
+     558: aload_1
+     559: ldc_w         #274                // String Friendship
+     562: invokevirtual #277                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     565: iconst_1
+     566: invokevirtual #281                // Method setFriendship:(IZ)Z
+     569: pop
+     570: aload_0
+     571: areturn
+}

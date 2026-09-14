@@ -1,0 +1,200 @@
+Compiled from "RanchingStationMilkingRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe implements net.minecraft.world.item.crafting.Recipe<net.minecraftforge.items.wrapper.RecipeWrapper> {
+  private final java.lang.String pokemon;
+
+  private final java.lang.String form;
+
+  private final boolean consumeBucket;
+
+  private final net.minecraft.world.item.ItemStack smallMilk;
+
+  private final net.minecraft.world.item.ItemStack largeMilk;
+
+  private final net.minecraft.resources.ResourceLocation id;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe(java.lang.String, java.lang.String, boolean, net.minecraft.world.item.ItemStack, net.minecraft.world.item.ItemStack, net.minecraft.resources.ResourceLocation);
+    Code:
+       0: aload_0
+       1: invokespecial #34                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #36                 // Field pokemon:Ljava/lang/String;
+       9: aload_0
+      10: aload_2
+      11: putfield      #38                 // Field form:Ljava/lang/String;
+      14: aload_0
+      15: iload_3
+      16: putfield      #40                 // Field consumeBucket:Z
+      19: aload_0
+      20: aload         4
+      22: putfield      #42                 // Field smallMilk:Lnet/minecraft/world/item/ItemStack;
+      25: aload_0
+      26: aload         5
+      28: putfield      #44                 // Field largeMilk:Lnet/minecraft/world/item/ItemStack;
+      31: aload_0
+      32: aload         6
+      34: putfield      #46                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+      37: return
+
+  public boolean matches(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.world.level.Level);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #36                 // Field pokemon:Ljava/lang/String;
+       5: aload_0
+       6: getfield      #38                 // Field form:Ljava/lang/String;
+       9: invokestatic  #56                 // Method io/github/chakyl/cobblemonfarmers/utils/RanchingStationUtils.ranchingRecipeMatches:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Ljava/lang/String;Ljava/lang/String;)Z
+      12: ireturn
+
+  public net.minecraft.world.item.ItemStack assemble(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #42                 // Field smallMilk:Lnet/minecraft/world/item/ItemStack;
+       4: invokevirtual #68                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+       7: areturn
+
+  public boolean m_8004_(int, int);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public net.minecraft.world.item.ItemStack m_8043_(net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #42                 // Field smallMilk:Lnet/minecraft/world/item/ItemStack;
+       4: invokevirtual #68                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+       7: areturn
+
+  public net.minecraft.resources.ResourceLocation m_6423_();
+    Code:
+       0: aload_0
+       1: getfield      #46                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+       4: areturn
+
+  public net.minecraft.world.item.crafting.RecipeSerializer<?> m_7707_();
+    Code:
+       0: getstatic     #86                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$RecipeRegistry.RANCHING_STATION_MILK_SERIALIZER:Lnet/minecraftforge/registries/RegistryObject;
+       3: invokevirtual #92                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       6: checkcast     #94                 // class net/minecraft/world/item/crafting/RecipeSerializer
+       9: areturn
+
+  public boolean milkIsSized();
+    Code:
+       0: aload_0
+       1: getfield      #42                 // Field smallMilk:Lnet/minecraft/world/item/ItemStack;
+       4: invokevirtual #99                 // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+       7: ifne          24
+      10: aload_0
+      11: getfield      #44                 // Field largeMilk:Lnet/minecraft/world/item/ItemStack;
+      14: invokevirtual #99                 // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      17: ifne          24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+
+  public net.minecraft.world.item.ItemStack getMilk(int);
+    Code:
+       0: getstatic     #104                // Field net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+       3: astore_2
+       4: aload_0
+       5: getfield      #42                 // Field smallMilk:Lnet/minecraft/world/item/ItemStack;
+       8: invokevirtual #99                 // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      11: ifeq          22
+      14: aload_0
+      15: getfield      #44                 // Field largeMilk:Lnet/minecraft/world/item/ItemStack;
+      18: invokevirtual #68                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      21: astore_2
+      22: aload_0
+      23: getfield      #44                 // Field largeMilk:Lnet/minecraft/world/item/ItemStack;
+      26: invokevirtual #99                 // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      29: ifeq          40
+      32: aload_0
+      33: getfield      #42                 // Field smallMilk:Lnet/minecraft/world/item/ItemStack;
+      36: invokevirtual #68                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      39: astore_2
+      40: aload_0
+      41: invokevirtual #106                // Method milkIsSized:()Z
+      44: ifeq          71
+      47: iload_1
+      48: iconst_5
+      49: if_icmple     63
+      52: aload_0
+      53: getfield      #44                 // Field largeMilk:Lnet/minecraft/world/item/ItemStack;
+      56: invokevirtual #68                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      59: astore_2
+      60: goto          71
+      63: aload_0
+      64: getfield      #42                 // Field smallMilk:Lnet/minecraft/world/item/ItemStack;
+      67: invokevirtual #68                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      70: astore_2
+      71: aload_2
+      72: invokevirtual #99                 // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      75: ifne          99
+      78: aload_0
+      79: invokevirtual #106                // Method milkIsSized:()Z
+      82: ifeq          93
+      85: aload_2
+      86: iload_1
+      87: invokestatic  #110                // Method io/github/chakyl/cobblemonfarmers/utils/RanchingStationUtils.applyMilkQuality:(Lnet/minecraft/world/item/ItemStack;I)Lnet/minecraft/world/item/ItemStack;
+      90: goto          98
+      93: aload_2
+      94: iload_1
+      95: invokestatic  #113                // Method io/github/chakyl/cobblemonfarmers/utils/RanchingStationUtils.applyQuality:(Lnet/minecraft/world/item/ItemStack;I)Lnet/minecraft/world/item/ItemStack;
+      98: astore_2
+      99: aload_2
+     100: areturn
+
+  public java.lang.String getPokemon();
+    Code:
+       0: aload_0
+       1: getfield      #36                 // Field pokemon:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getForm();
+    Code:
+       0: aload_0
+       1: getfield      #38                 // Field form:Ljava/lang/String;
+       4: areturn
+
+  public boolean getIsBucketConsumed();
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field consumeBucket:Z
+       4: ireturn
+
+  public net.minecraft.world.item.ItemStack getSmallMilk();
+    Code:
+       0: aload_0
+       1: getfield      #42                 // Field smallMilk:Lnet/minecraft/world/item/ItemStack;
+       4: areturn
+
+  public net.minecraft.world.item.ItemStack getLargeMilk();
+    Code:
+       0: aload_0
+       1: getfield      #44                 // Field largeMilk:Lnet/minecraft/world/item/ItemStack;
+       4: areturn
+
+  public net.minecraft.world.item.crafting.RecipeType<?> m_6671_();
+    Code:
+       0: getstatic     #128                // Field io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe$Type;
+       3: areturn
+
+  public net.minecraft.world.item.ItemStack m_5874_(net.minecraft.world.Container, net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #132                // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #134                // Method assemble:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+       9: areturn
+
+  public boolean m_5818_(net.minecraft.world.Container, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #132                // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #138                // Method matches:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/world/level/Level;)Z
+       9: ireturn
+}

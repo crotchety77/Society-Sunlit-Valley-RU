@@ -1,0 +1,211 @@
+Compiled from "CraftStationRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.CraftStationRecipe$Serializer implements net.minecraft.world.item.crafting.RecipeSerializer<io.github.chakyl.cobblemonfarmers.recipe.CraftStationRecipe> {
+  public static final io.github.chakyl.cobblemonfarmers.recipe.CraftStationRecipe$Serializer INSTANCE;
+
+  public static final net.minecraft.resources.ResourceLocation ID;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.CraftStationRecipe$Serializer();
+    Code:
+       0: aload_0
+       1: invokespecial #19                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public io.github.chakyl.cobblemonfarmers.recipe.CraftStationRecipe fromJson(net.minecraft.resources.ResourceLocation, com.google.gson.JsonObject);
+    Code:
+       0: aload_2
+       1: ldc           #24                 // String result
+       3: invokestatic  #30                 // Method net/minecraft/util/GsonHelper.m_13930_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+       6: invokestatic  #36                 // Method net/minecraft/world/item/crafting/ShapedRecipe.m_151274_:(Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/ItemStack;
+       9: astore_3
+      10: aload_2
+      11: ldc           #38                 // String crafting_time
+      13: invokestatic  #42                 // Method net/minecraft/util/GsonHelper.m_13927_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)I
+      16: istore        4
+      18: getstatic     #47                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      21: aload_2
+      22: ldc           #49                 // String elemental_type
+      24: invokestatic  #53                 // Method net/minecraft/util/GsonHelper.m_13906_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+      27: invokevirtual #57                 // Method com/cobblemon/mod/common/api/types/ElementalTypes.get:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/types/ElementalType;
+      30: astore        5
+      32: aload_2
+      33: ldc           #59                 // String speed_stat
+      35: invokestatic  #53                 // Method net/minecraft/util/GsonHelper.m_13906_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+      38: invokestatic  #65                 // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.valueOf:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      41: astore        6
+      43: aconst_null
+      44: astore        7
+      46: aload_2
+      47: ldc           #67                 // String mult_stat
+      49: invokevirtual #73                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+      52: ifeq          66
+      55: aload_2
+      56: ldc           #67                 // String mult_stat
+      58: invokestatic  #53                 // Method net/minecraft/util/GsonHelper.m_13906_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+      61: invokestatic  #65                 // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.valueOf:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      64: astore        7
+      66: aload_2
+      67: ldc           #81                 // String ingredient
+      69: invokestatic  #30                 // Method net/minecraft/util/GsonHelper.m_13930_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+      72: invokestatic  #36                 // Method net/minecraft/world/item/crafting/ShapedRecipe.m_151274_:(Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/ItemStack;
+      75: astore        8
+      77: aload_2
+      78: ldc           #81                 // String ingredient
+      80: invokestatic  #30                 // Method net/minecraft/util/GsonHelper.m_13930_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+      83: invokestatic  #87                 // Method net/minecraft/world/item/crafting/Ingredient.m_43917_:(Lcom/google/gson/JsonElement;)Lnet/minecraft/world/item/crafting/Ingredient;
+      86: astore        9
+      88: new           #10                 // class io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe
+      91: dup
+      92: aload         9
+      94: aload         8
+      96: iload         4
+      98: aload         5
+     100: aload         6
+     102: aload         7
+     104: aload_3
+     105: aload_1
+     106: invokespecial #90                 // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe."<init>":(Lnet/minecraft/world/item/crafting/Ingredient;Lnet/minecraft/world/item/ItemStack;ILcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/resources/ResourceLocation;)V
+     109: areturn
+
+  public io.github.chakyl.cobblemonfarmers.recipe.CraftStationRecipe fromNetwork(net.minecraft.resources.ResourceLocation, net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_2
+       1: invokestatic  #111                // Method net/minecraft/world/item/crafting/Ingredient.m_43940_:(Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Ingredient;
+       4: astore_3
+       5: aload_2
+       6: invokevirtual #117                // Method net/minecraft/network/FriendlyByteBuf.m_130242_:()I
+       9: istore        4
+      11: getstatic     #47                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      14: aload_2
+      15: sipush        128
+      18: invokevirtual #121                // Method net/minecraft/network/FriendlyByteBuf.m_130136_:(I)Ljava/lang/String;
+      21: invokevirtual #57                 // Method com/cobblemon/mod/common/api/types/ElementalTypes.get:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/types/ElementalType;
+      24: astore        5
+      26: aload_2
+      27: ldc           #61                 // class com/cobblemon/mod/common/api/pokemon/stats/Stats
+      29: invokevirtual #125                // Method net/minecraft/network/FriendlyByteBuf.m_130066_:(Ljava/lang/Class;)Ljava/lang/Enum;
+      32: checkcast     #61                 // class com/cobblemon/mod/common/api/pokemon/stats/Stats
+      35: astore        6
+      37: aconst_null
+      38: astore        7
+      40: aload_2
+      41: invokevirtual #129                // Method net/minecraft/network/FriendlyByteBuf.readBoolean:()Z
+      44: ifeq          58
+      47: aload_2
+      48: ldc           #61                 // class com/cobblemon/mod/common/api/pokemon/stats/Stats
+      50: invokevirtual #125                // Method net/minecraft/network/FriendlyByteBuf.m_130066_:(Ljava/lang/Class;)Ljava/lang/Enum;
+      53: checkcast     #61                 // class com/cobblemon/mod/common/api/pokemon/stats/Stats
+      56: astore        7
+      58: aload_2
+      59: invokevirtual #133                // Method net/minecraft/network/FriendlyByteBuf.m_130267_:()Lnet/minecraft/world/item/ItemStack;
+      62: astore        8
+      64: aload_2
+      65: invokevirtual #133                // Method net/minecraft/network/FriendlyByteBuf.m_130267_:()Lnet/minecraft/world/item/ItemStack;
+      68: astore        9
+      70: new           #10                 // class io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe
+      73: dup
+      74: aload_3
+      75: aload         8
+      77: iload         4
+      79: aload         5
+      81: aload         6
+      83: aload         7
+      85: aload         9
+      87: aload_1
+      88: invokespecial #90                 // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe."<init>":(Lnet/minecraft/world/item/crafting/Ingredient;Lnet/minecraft/world/item/ItemStack;ILcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/resources/ResourceLocation;)V
+      91: areturn
+
+  public void toNetwork(net.minecraft.network.FriendlyByteBuf, io.github.chakyl.cobblemonfarmers.recipe.CraftStationRecipe);
+    Code:
+       0: aload_2
+       1: getfield      #141                // Field io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: aload_1
+       5: invokevirtual #145                // Method net/minecraft/world/item/crafting/Ingredient.m_43923_:(Lnet/minecraft/network/FriendlyByteBuf;)V
+       8: aload_1
+       9: aload_2
+      10: invokevirtual #148                // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.getCraftingTime:()I
+      13: invokevirtual #152                // Method net/minecraft/network/FriendlyByteBuf.m_130130_:(I)Lnet/minecraft/network/FriendlyByteBuf;
+      16: pop
+      17: aload_1
+      18: aload_2
+      19: invokevirtual #156                // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.getElementalType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      22: invokevirtual #160                // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+      25: sipush        128
+      28: invokevirtual #164                // Method net/minecraft/network/FriendlyByteBuf.m_130072_:(Ljava/lang/String;I)Lnet/minecraft/network/FriendlyByteBuf;
+      31: pop
+      32: aload_1
+      33: aload_2
+      34: invokevirtual #168                // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.getSpeedStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      37: invokevirtual #172                // Method net/minecraft/network/FriendlyByteBuf.m_130068_:(Ljava/lang/Enum;)Lnet/minecraft/network/FriendlyByteBuf;
+      40: pop
+      41: aload_1
+      42: aload_2
+      43: invokevirtual #175                // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      46: ifnull        53
+      49: iconst_1
+      50: goto          54
+      53: iconst_0
+      54: invokevirtual #179                // Method net/minecraft/network/FriendlyByteBuf.writeBoolean:(Z)Lio/netty/buffer/ByteBuf;
+      57: pop
+      58: aload_2
+      59: invokevirtual #175                // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      62: ifnull        74
+      65: aload_1
+      66: aload_2
+      67: invokevirtual #175                // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      70: invokevirtual #172                // Method net/minecraft/network/FriendlyByteBuf.m_130068_:(Ljava/lang/Enum;)Lnet/minecraft/network/FriendlyByteBuf;
+      73: pop
+      74: aload_1
+      75: aload_2
+      76: aconst_null
+      77: invokevirtual #183                // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.getInputItem:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      80: iconst_0
+      81: invokevirtual #187                // Method net/minecraft/network/FriendlyByteBuf.writeItemStack:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/network/FriendlyByteBuf;
+      84: pop
+      85: aload_1
+      86: aload_2
+      87: aconst_null
+      88: invokevirtual #190                // Method io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe.m_8043_:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      91: iconst_0
+      92: invokevirtual #187                // Method net/minecraft/network/FriendlyByteBuf.writeItemStack:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/network/FriendlyByteBuf;
+      95: pop
+      96: return
+
+  public void m_6178_(net.minecraft.network.FriendlyByteBuf, net.minecraft.world.item.crafting.Recipe);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: checkcast     #10                 // class io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe
+       6: invokevirtual #196                // Method toNetwork:(Lnet/minecraft/network/FriendlyByteBuf;Lio/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe;)V
+       9: return
+
+  public net.minecraft.world.item.crafting.Recipe m_8005_(net.minecraft.resources.ResourceLocation, net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #200                // Method fromNetwork:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lio/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe;
+       6: areturn
+
+  public net.minecraft.world.item.crafting.Recipe m_6729_(net.minecraft.resources.ResourceLocation, com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #204                // Method fromJson:(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lio/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe;
+       6: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe$Serializer
+       3: dup
+       4: invokespecial #206                // Method "<init>":()V
+       7: putstatic     #208                // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe$Serializer;
+      10: new           #75                 // class net/minecraft/resources/ResourceLocation
+      13: dup
+      14: ldc           #210                // String cobblemon_farmers
+      16: ldc           #212                // String craft_station
+      18: invokespecial #215                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      21: putstatic     #217                // Field ID:Lnet/minecraft/resources/ResourceLocation;
+      24: return
+}

@@ -1,0 +1,33 @@
+Compiled from "CobblemonFarmersJEI.java"
+class io.github.chakyl.cobblemonfarmers.JEI.CobblemonFarmersJEI$ModelSubtypes implements mezz.jei.api.ingredients.subtypes.IIngredientSubtypeInterpreter<net.minecraft.world.item.ItemStack> {
+  private io.github.chakyl.cobblemonfarmers.JEI.CobblemonFarmersJEI$ModelSubtypes();
+    Code:
+       0: aload_0
+       1: invokespecial #15                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public java.lang.String apply(net.minecraft.world.item.ItemStack, mezz.jei.api.ingredients.subtypes.UidContext);
+    Code:
+       0: ldc           #21                 // String NULL
+       2: astore_3
+       3: aload_1
+       4: invokevirtual #27                 // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+       7: getstatic     #33                 // Field com/cobblemon/mod/common/CobblemonItems.POKEMON_MODEL:Lcom/cobblemon/mod/common/item/PokemonItem;
+      10: if_acmpne     23
+      13: aload_1
+      14: invokevirtual #37                 // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+      17: ldc           #39                 // String species
+      19: invokevirtual #45                 // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+      22: astore_3
+      23: aload_3
+      24: areturn
+
+  public java.lang.String apply(java.lang.Object, mezz.jei.api.ingredients.subtypes.UidContext);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #23                 // class net/minecraft/world/item/ItemStack
+       5: aload_2
+       6: invokevirtual #56                 // Method apply:(Lnet/minecraft/world/item/ItemStack;Lmezz/jei/api/ingredients/subtypes/UidContext;)Ljava/lang/String;
+       9: areturn
+}

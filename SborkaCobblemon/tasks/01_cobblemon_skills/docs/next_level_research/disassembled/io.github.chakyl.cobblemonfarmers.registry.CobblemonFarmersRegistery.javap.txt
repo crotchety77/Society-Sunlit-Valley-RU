@@ -1,0 +1,73 @@
+Compiled from "CobblemonFarmersRegistery.java"
+public final class io.github.chakyl.cobblemonfarmers.registry.CobblemonFarmersRegistery {
+  private static final java.lang.String MODID = "cobblemon_farmers";
+
+  private static final net.minecraftforge.registries.DeferredRegister<net.minecraft.world.item.CreativeModeTab> CREATIVE_MODE_TABS;
+
+  public static final net.minecraftforge.registries.DeferredRegister<net.minecraft.world.level.block.Block> BLOCKS;
+
+  private static final net.minecraftforge.registries.DeferredRegister<net.minecraft.world.level.block.entity.BlockEntityType<?>> BLOCK_ENTITY_TYPES;
+
+  private static final net.minecraftforge.registries.DeferredRegister<net.minecraft.world.item.Item> ITEMS;
+
+  private static final net.minecraftforge.registries.DeferredRegister<net.minecraft.world.item.crafting.RecipeSerializer<?>> RECIPE_SERIALIZERS;
+
+  private static final net.minecraftforge.registries.DeferredRegister<net.minecraft.world.item.crafting.RecipeType<?>> RECIPE_TYPES;
+
+  private static final net.minecraftforge.registries.DeferredRegister<net.minecraft.world.inventory.MenuType<?>> MENU_TYPES;
+
+  private static final net.minecraftforge.registries.DeferredRegister<net.minecraft.world.entity.ai.attributes.Attribute> ATTRIBUTES;
+
+  public io.github.chakyl.cobblemonfarmers.registry.CobblemonFarmersRegistery();
+    Code:
+       0: aload_0
+       1: invokespecial #63                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void register();
+    Code:
+       0: invokestatic  #68                 // Method io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.register:()V
+       3: invokestatic  #69                 // Method io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockEntityRegistry.register:()V
+       6: invokestatic  #70                 // Method io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.register:()V
+       9: invokestatic  #71                 // Method io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$MenuRegistry.register:()V
+      12: invokestatic  #72                 // Method io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$RecipeRegistry.register:()V
+      15: invokestatic  #73                 // Method io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.register:()V
+      18: invokestatic  #74                 // Method io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$CreativeTabReg.register:()V
+      21: return
+
+  static {};
+    Code:
+       0: getstatic     #81                 // Field net/minecraft/core/registries/Registries.f_279569_:Lnet/minecraft/resources/ResourceKey;
+       3: ldc           #42                 // String cobblemon_farmers
+       5: invokestatic  #87                 // Method net/minecraftforge/registries/DeferredRegister.create:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+       8: putstatic     #89                 // Field CREATIVE_MODE_TABS:Lnet/minecraftforge/registries/DeferredRegister;
+      11: getstatic     #94                 // Field net/minecraftforge/registries/ForgeRegistries.BLOCKS:Lnet/minecraftforge/registries/IForgeRegistry;
+      14: ldc           #42                 // String cobblemon_farmers
+      16: invokestatic  #97                 // Method net/minecraftforge/registries/DeferredRegister.create:(Lnet/minecraftforge/registries/IForgeRegistry;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+      19: putstatic     #99                 // Field BLOCKS:Lnet/minecraftforge/registries/DeferredRegister;
+      22: getstatic     #101                // Field net/minecraftforge/registries/ForgeRegistries.BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/IForgeRegistry;
+      25: ldc           #42                 // String cobblemon_farmers
+      27: invokestatic  #97                 // Method net/minecraftforge/registries/DeferredRegister.create:(Lnet/minecraftforge/registries/IForgeRegistry;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+      30: putstatic     #103                // Field BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+      33: getstatic     #105                // Field net/minecraftforge/registries/ForgeRegistries.ITEMS:Lnet/minecraftforge/registries/IForgeRegistry;
+      36: ldc           #42                 // String cobblemon_farmers
+      38: invokestatic  #97                 // Method net/minecraftforge/registries/DeferredRegister.create:(Lnet/minecraftforge/registries/IForgeRegistry;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+      41: putstatic     #107                // Field ITEMS:Lnet/minecraftforge/registries/DeferredRegister;
+      44: getstatic     #109                // Field net/minecraftforge/registries/ForgeRegistries.RECIPE_SERIALIZERS:Lnet/minecraftforge/registries/IForgeRegistry;
+      47: ldc           #42                 // String cobblemon_farmers
+      49: invokestatic  #97                 // Method net/minecraftforge/registries/DeferredRegister.create:(Lnet/minecraftforge/registries/IForgeRegistry;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+      52: putstatic     #111                // Field RECIPE_SERIALIZERS:Lnet/minecraftforge/registries/DeferredRegister;
+      55: getstatic     #114                // Field net/minecraft/core/registries/Registries.f_256954_:Lnet/minecraft/resources/ResourceKey;
+      58: ldc           #42                 // String cobblemon_farmers
+      60: invokestatic  #87                 // Method net/minecraftforge/registries/DeferredRegister.create:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+      63: putstatic     #116                // Field RECIPE_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+      66: getstatic     #118                // Field net/minecraftforge/registries/ForgeRegistries.MENU_TYPES:Lnet/minecraftforge/registries/IForgeRegistry;
+      69: ldc           #42                 // String cobblemon_farmers
+      71: invokestatic  #97                 // Method net/minecraftforge/registries/DeferredRegister.create:(Lnet/minecraftforge/registries/IForgeRegistry;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+      74: putstatic     #120                // Field MENU_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+      77: getstatic     #122                // Field net/minecraftforge/registries/ForgeRegistries.ATTRIBUTES:Lnet/minecraftforge/registries/IForgeRegistry;
+      80: ldc           #42                 // String cobblemon_farmers
+      82: invokestatic  #97                 // Method net/minecraftforge/registries/DeferredRegister.create:(Lnet/minecraftforge/registries/IForgeRegistry;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;
+      85: putstatic     #124                // Field ATTRIBUTES:Lnet/minecraftforge/registries/DeferredRegister;
+      88: return
+}

@@ -1,0 +1,283 @@
+Compiled from "ElementalTypeUtils.java"
+public class io.github.chakyl.cobblemonfarmers.utils.ElementalTypeUtils {
+  public io.github.chakyl.cobblemonfarmers.utils.ElementalTypeUtils();
+    Code:
+       0: aload_0
+       1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static net.minecraft.world.item.Item getItemFromElementalType(com.cobblemon.mod.common.api.types.ElementalType);
+    Code:
+       0: aload_0
+       1: invokevirtual #24                 // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+       4: astore_1
+       5: iconst_m1
+       6: istore_2
+       7: aload_1
+       8: invokevirtual #30                 // Method java/lang/String.hashCode:()I
+      11: lookupswitch  { // 17
+
+           -1323778541: 170
+
+           -1271344497: 240
+
+           -1237460601: 285
+
+            -982749432: 315
+
+            -874957358: 212
+
+            -271651819: 330
+
+             -17124067: 184
+
+                 97908: 390
+
+                104075: 300
+
+               3075958: 156
+
+               3143222: 226
+
+               3506021: 345
+
+              97193429: 198
+
+              98331279: 255
+
+              98615734: 270
+
+             109760971: 360
+
+             112903447: 375
+               default: 402
+          }
+     156: aload_1
+     157: ldc           #32                 // String dark
+     159: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     162: ifeq          402
+     165: iconst_0
+     166: istore_2
+     167: goto          402
+     170: aload_1
+     171: ldc           #38                 // String dragon
+     173: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     176: ifeq          402
+     179: iconst_1
+     180: istore_2
+     181: goto          402
+     184: aload_1
+     185: ldc           #40                 // String electric
+     187: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     190: ifeq          402
+     193: iconst_2
+     194: istore_2
+     195: goto          402
+     198: aload_1
+     199: ldc           #42                 // String fairy
+     201: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     204: ifeq          402
+     207: iconst_3
+     208: istore_2
+     209: goto          402
+     212: aload_1
+     213: ldc           #44                 // String fighting
+     215: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     218: ifeq          402
+     221: iconst_4
+     222: istore_2
+     223: goto          402
+     226: aload_1
+     227: ldc           #46                 // String fire
+     229: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     232: ifeq          402
+     235: iconst_5
+     236: istore_2
+     237: goto          402
+     240: aload_1
+     241: ldc           #48                 // String flying
+     243: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     246: ifeq          402
+     249: bipush        6
+     251: istore_2
+     252: goto          402
+     255: aload_1
+     256: ldc           #50                 // String ghost
+     258: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     261: ifeq          402
+     264: bipush        7
+     266: istore_2
+     267: goto          402
+     270: aload_1
+     271: ldc           #52                 // String grass
+     273: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     276: ifeq          402
+     279: bipush        8
+     281: istore_2
+     282: goto          402
+     285: aload_1
+     286: ldc           #54                 // String ground
+     288: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     291: ifeq          402
+     294: bipush        9
+     296: istore_2
+     297: goto          402
+     300: aload_1
+     301: ldc           #56                 // String ice
+     303: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     306: ifeq          402
+     309: bipush        10
+     311: istore_2
+     312: goto          402
+     315: aload_1
+     316: ldc           #58                 // String poison
+     318: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     321: ifeq          402
+     324: bipush        11
+     326: istore_2
+     327: goto          402
+     330: aload_1
+     331: ldc           #60                 // String psychic
+     333: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     336: ifeq          402
+     339: bipush        12
+     341: istore_2
+     342: goto          402
+     345: aload_1
+     346: ldc           #62                 // String rock
+     348: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     351: ifeq          402
+     354: bipush        13
+     356: istore_2
+     357: goto          402
+     360: aload_1
+     361: ldc           #64                 // String steel
+     363: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     366: ifeq          402
+     369: bipush        14
+     371: istore_2
+     372: goto          402
+     375: aload_1
+     376: ldc           #66                 // String water
+     378: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     381: ifeq          402
+     384: bipush        15
+     386: istore_2
+     387: goto          402
+     390: aload_1
+     391: ldc           #68                 // String bug
+     393: invokevirtual #36                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     396: ifeq          402
+     399: bipush        16
+     401: istore_2
+     402: iload_2
+     403: tableswitch   { // 0 to 16
+
+                     0: 484
+
+                     1: 496
+
+                     2: 508
+
+                     3: 520
+
+                     4: 532
+
+                     5: 544
+
+                     6: 556
+
+                     7: 568
+
+                     8: 580
+
+                     9: 592
+
+                    10: 604
+
+                    11: 616
+
+                    12: 628
+
+                    13: 640
+
+                    14: 652
+
+                    15: 664
+
+                    16: 676
+               default: 688
+          }
+     484: getstatic     #72                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.DARK_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     487: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     490: checkcast     #80                 // class net/minecraft/world/item/Item
+     493: goto          697
+     496: getstatic     #83                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.DRAGON_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     499: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     502: checkcast     #80                 // class net/minecraft/world/item/Item
+     505: goto          697
+     508: getstatic     #86                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.ELECTRIC_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     511: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     514: checkcast     #80                 // class net/minecraft/world/item/Item
+     517: goto          697
+     520: getstatic     #89                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.FAIRY_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     523: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     526: checkcast     #80                 // class net/minecraft/world/item/Item
+     529: goto          697
+     532: getstatic     #92                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.FIGHTING_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     535: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     538: checkcast     #80                 // class net/minecraft/world/item/Item
+     541: goto          697
+     544: getstatic     #95                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.FIRE_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     547: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     550: checkcast     #80                 // class net/minecraft/world/item/Item
+     553: goto          697
+     556: getstatic     #98                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.FLYING_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     559: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     562: checkcast     #80                 // class net/minecraft/world/item/Item
+     565: goto          697
+     568: getstatic     #101                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.GHOST_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     571: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     574: checkcast     #80                 // class net/minecraft/world/item/Item
+     577: goto          697
+     580: getstatic     #104                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.GRASS_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     583: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     586: checkcast     #80                 // class net/minecraft/world/item/Item
+     589: goto          697
+     592: getstatic     #107                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.GROUND_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     595: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     598: checkcast     #80                 // class net/minecraft/world/item/Item
+     601: goto          697
+     604: getstatic     #110                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.ICE_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     607: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     610: checkcast     #80                 // class net/minecraft/world/item/Item
+     613: goto          697
+     616: getstatic     #113                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.POISON_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     619: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     622: checkcast     #80                 // class net/minecraft/world/item/Item
+     625: goto          697
+     628: getstatic     #116                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.PSYCHIC_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     631: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     634: checkcast     #80                 // class net/minecraft/world/item/Item
+     637: goto          697
+     640: getstatic     #119                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.ROCK_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     643: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     646: checkcast     #80                 // class net/minecraft/world/item/Item
+     649: goto          697
+     652: getstatic     #122                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.STEEL_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     655: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     658: checkcast     #80                 // class net/minecraft/world/item/Item
+     661: goto          697
+     664: getstatic     #125                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.WATER_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     667: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     670: checkcast     #80                 // class net/minecraft/world/item/Item
+     673: goto          697
+     676: getstatic     #128                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.BUG_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     679: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     682: checkcast     #80                 // class net/minecraft/world/item/Item
+     685: goto          697
+     688: getstatic     #131                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.NORMAL_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     691: invokevirtual #78                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     694: checkcast     #80                 // class net/minecraft/world/item/Item
+     697: areturn
+}

@@ -1,0 +1,450 @@
+Compiled from "EMIMysteryMineRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.EMI.EMIMysteryMineRecipe implements dev.emi.emi.api.recipe.EmiRecipe {
+  public static final net.minecraft.resources.ResourceLocation TEXTURE;
+
+  net.minecraft.resources.ResourceLocation id;
+
+  int recipeTime;
+
+  com.cobblemon.mod.common.api.pokemon.stats.Stats speedStat;
+
+  com.cobblemon.mod.common.api.pokemon.stats.Stats multStat;
+
+  float consumeChance;
+
+  com.cobblemon.mod.common.api.types.ElementalType elementalType;
+
+  java.util.List<dev.emi.emi.api.stack.EmiIngredient> input;
+
+  java.util.List<dev.emi.emi.api.stack.EmiStack> output;
+
+  java.util.List<dev.emi.emi.api.stack.EmiStack> allOutput;
+
+  java.util.List<java.lang.Integer> weights;
+
+  private int width;
+
+  private int height;
+
+  public io.github.chakyl.cobblemonfarmers.EMI.EMIMysteryMineRecipe(io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe);
+    Code:
+       0: aload_0
+       1: invokespecial #44                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: sipush        160
+       8: putfield      #46                 // Field width:I
+      11: aload_0
+      12: bipush        94
+      14: putfield      #48                 // Field height:I
+      17: aload_0
+      18: new           #50                 // class java/util/ArrayList
+      21: dup
+      22: invokespecial #51                 // Method java/util/ArrayList."<init>":()V
+      25: putfield      #53                 // Field output:Ljava/util/List;
+      28: aload_0
+      29: aload_1
+      30: invokevirtual #59                 // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.m_6423_:()Lnet/minecraft/resources/ResourceLocation;
+      33: putfield      #61                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+      36: aload_0
+      37: aload_1
+      38: invokevirtual #65                 // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getSpeedStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      41: putfield      #67                 // Field speedStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      44: aload_0
+      45: aload_1
+      46: invokevirtual #70                 // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      49: putfield      #72                 // Field multStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      52: aload_0
+      53: aload_1
+      54: invokevirtual #76                 // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getCraftingTime:()I
+      57: putfield      #78                 // Field recipeTime:I
+      60: aload_0
+      61: aload_1
+      62: invokevirtual #82                 // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getElementalType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      65: putfield      #84                 // Field elementalType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      68: aload_0
+      69: aload_1
+      70: invokevirtual #88                 // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getConsumeChance:()F
+      73: putfield      #90                 // Field consumeChance:F
+      76: aload_0
+      77: new           #50                 // class java/util/ArrayList
+      80: dup
+      81: invokespecial #51                 // Method java/util/ArrayList."<init>":()V
+      84: putfield      #92                 // Field input:Ljava/util/List;
+      87: aload_0
+      88: getfield      #92                 // Field input:Ljava/util/List;
+      91: aload_1
+      92: invokevirtual #96                 // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getIngredient:()Lnet/minecraft/world/item/crafting/Ingredient;
+      95: invokestatic  #102                // InterfaceMethod dev/emi/emi/api/stack/EmiIngredient.of:(Lnet/minecraft/world/item/crafting/Ingredient;)Ldev/emi/emi/api/stack/EmiIngredient;
+      98: invokeinterface #108,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     103: pop
+     104: aload_0
+     105: getfield      #92                 // Field input:Ljava/util/List;
+     108: aload_0
+     109: getfield      #84                 // Field elementalType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+     112: invokestatic  #114                // Method io/github/chakyl/cobblemonfarmers/utils/ElementalTypeUtils.getItemFromElementalType:(Lcom/cobblemon/mod/common/api/types/ElementalType;)Lnet/minecraft/world/item/Item;
+     115: invokevirtual #120                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     118: invokestatic  #125                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/item/ItemStack;)Ldev/emi/emi/api/stack/EmiStack;
+     121: invokeinterface #108,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     126: pop
+     127: aload_0
+     128: new           #50                 // class java/util/ArrayList
+     131: dup
+     132: invokespecial #51                 // Method java/util/ArrayList."<init>":()V
+     135: putfield      #53                 // Field output:Ljava/util/List;
+     138: aload_0
+     139: getfield      #53                 // Field output:Ljava/util/List;
+     142: aload_1
+     143: aconst_null
+     144: invokevirtual #129                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getResults:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/core/NonNullList;
+     147: iconst_0
+     148: invokevirtual #135                // Method net/minecraft/core/NonNullList.get:(I)Ljava/lang/Object;
+     151: checkcast     #137                // class net/minecraft/world/item/ItemStack
+     154: invokestatic  #125                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/item/ItemStack;)Ldev/emi/emi/api/stack/EmiStack;
+     157: invokeinterface #108,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     162: pop
+     163: aload_0
+     164: new           #50                 // class java/util/ArrayList
+     167: dup
+     168: invokespecial #51                 // Method java/util/ArrayList."<init>":()V
+     171: putfield      #139                // Field allOutput:Ljava/util/List;
+     174: aload_0
+     175: aload_1
+     176: aconst_null
+     177: invokevirtual #143                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getWeights:(Lnet/minecraft/core/RegistryAccess;)Ljava/util/List;
+     180: putfield      #145                // Field weights:Ljava/util/List;
+     183: aload_1
+     184: aconst_null
+     185: invokevirtual #129                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getResults:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/core/NonNullList;
+     188: invokevirtual #149                // Method net/minecraft/core/NonNullList.iterator:()Ljava/util/Iterator;
+     191: astore_2
+     192: aload_2
+     193: invokeinterface #155,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     198: ifeq          228
+     201: aload_2
+     202: invokeinterface #159,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     207: checkcast     #137                // class net/minecraft/world/item/ItemStack
+     210: astore_3
+     211: aload_0
+     212: getfield      #139                // Field allOutput:Ljava/util/List;
+     215: aload_3
+     216: invokestatic  #125                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/item/ItemStack;)Ldev/emi/emi/api/stack/EmiStack;
+     219: invokeinterface #108,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     224: pop
+     225: goto          192
+     228: return
+
+  public dev.emi.emi.api.recipe.EmiRecipeCategory getCategory();
+    Code:
+       0: getstatic     #173                // Field io/github/chakyl/cobblemonfarmers/EMI/CobblemonFarmersEMIPlugin.MYSTERY_MINE:Ldev/emi/emi/api/recipe/EmiRecipeCategory;
+       3: areturn
+
+  public net.minecraft.resources.ResourceLocation getId();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+       4: areturn
+
+  public java.util.List<dev.emi.emi.api.stack.EmiIngredient> getInputs();
+    Code:
+       0: aload_0
+       1: getfield      #92                 // Field input:Ljava/util/List;
+       4: areturn
+
+  public java.util.List<dev.emi.emi.api.stack.EmiStack> getOutputs();
+    Code:
+       0: aload_0
+       1: getfield      #139                // Field allOutput:Ljava/util/List;
+       4: areturn
+
+  public int getDisplayWidth();
+    Code:
+       0: aload_0
+       1: getfield      #46                 // Field width:I
+       4: ireturn
+
+  public int getDisplayHeight();
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field height:I
+       4: ireturn
+
+  public java.util.List<dev.emi.emi.api.stack.EmiIngredient> getCatalysts();
+    Code:
+       0: getstatic     #186                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.MYSTERY_MINE:Lnet/minecraftforge/registries/RegistryObject;
+       3: invokevirtual #190                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       6: checkcast     #192                // class net/minecraft/world/level/ItemLike
+       9: invokestatic  #195                // Method dev/emi/emi/api/stack/EmiStack.of:(Lnet/minecraft/world/level/ItemLike;)Ldev/emi/emi/api/stack/EmiStack;
+      12: invokestatic  #198                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      15: areturn
+
+  public void addWidgets(dev.emi.emi.api.widget.WidgetHolder);
+    Code:
+       0: aload_1
+       1: getstatic     #202                // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+       4: iconst_0
+       5: iconst_0
+       6: aload_0
+       7: getfield      #46                 // Field width:I
+      10: aload_0
+      11: getfield      #48                 // Field height:I
+      14: iconst_0
+      15: iconst_0
+      16: invokeinterface #208,  8          // InterfaceMethod dev/emi/emi/api/widget/WidgetHolder.addTexture:(Lnet/minecraft/resources/ResourceLocation;IIIIII)Ldev/emi/emi/api/widget/TextureWidget;
+      21: pop
+      22: aload_1
+      23: aload_0
+      24: getfield      #92                 // Field input:Ljava/util/List;
+      27: iconst_1
+      28: invokeinterface #209,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      33: checkcast     #98                 // class dev/emi/emi/api/stack/EmiIngredient
+      36: bipush        22
+      38: iconst_0
+      39: invokeinterface #213,  4          // InterfaceMethod dev/emi/emi/api/widget/WidgetHolder.addSlot:(Ldev/emi/emi/api/stack/EmiIngredient;II)Ldev/emi/emi/api/widget/SlotWidget;
+      44: iconst_0
+      45: invokevirtual #219                // Method dev/emi/emi/api/widget/SlotWidget.drawBack:(Z)Ldev/emi/emi/api/widget/SlotWidget;
+      48: pop
+      49: aload_1
+      50: aload_0
+      51: getfield      #92                 // Field input:Ljava/util/List;
+      54: iconst_0
+      55: invokeinterface #209,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      60: checkcast     #98                 // class dev/emi/emi/api/stack/EmiIngredient
+      63: iconst_0
+      64: iconst_0
+      65: invokeinterface #213,  4          // InterfaceMethod dev/emi/emi/api/widget/WidgetHolder.addSlot:(Ldev/emi/emi/api/stack/EmiIngredient;II)Ldev/emi/emi/api/widget/SlotWidget;
+      70: iconst_0
+      71: invokevirtual #219                // Method dev/emi/emi/api/widget/SlotWidget.drawBack:(Z)Ldev/emi/emi/api/widget/SlotWidget;
+      74: ldc           #221                // String jei.cobblemon_farmers.mystery_mine.consume_chance
+      76: iconst_1
+      77: anewarray     #4                  // class java/lang/Object
+      80: dup
+      81: iconst_0
+      82: aload_0
+      83: getfield      #90                 // Field consumeChance:F
+      86: ldc           #222                // float 100.0f
+      88: fmul
+      89: invokestatic  #228                // Method java/lang/Math.round:(F)I
+      92: invokedynamic #240,  0            // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+      97: aastore
+      98: invokestatic  #246                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     101: getstatic     #252                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+     104: invokevirtual #258                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     107: invokevirtual #262                // Method dev/emi/emi/api/widget/SlotWidget.appendTooltip:(Lnet/minecraft/network/chat/Component;)Ldev/emi/emi/api/widget/SlotWidget;
+     110: pop
+     111: iconst_0
+     112: istore_2
+     113: bipush        8
+     115: istore_3
+     116: iconst_0
+     117: istore        4
+     119: iload         4
+     121: aload_0
+     122: getfield      #139                // Field allOutput:Ljava/util/List;
+     125: invokeinterface #266,  1          // InterfaceMethod java/util/List.toArray:()[Ljava/lang/Object;
+     130: arraylength
+     131: if_icmpge     327
+     134: iload         4
+     136: iload_3
+     137: irem
+     138: ifne          144
+     141: iinc          2, 1
+     144: aload_1
+     145: aload_0
+     146: getfield      #139                // Field allOutput:Ljava/util/List;
+     149: iload         4
+     151: invokeinterface #209,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     156: checkcast     #98                 // class dev/emi/emi/api/stack/EmiIngredient
+     159: bipush        16
+     161: iload_3
+     162: imul
+     163: bipush        24
+     165: iadd
+     166: iload         4
+     168: iload_2
+     169: iload_3
+     170: imul
+     171: isub
+     172: bipush        18
+     174: imul
+     175: iadd
+     176: bipush        35
+     178: bipush        18
+     180: iload         4
+     182: iload_3
+     183: idiv
+     184: imul
+     185: iadd
+     186: invokeinterface #213,  4          // InterfaceMethod dev/emi/emi/api/widget/WidgetHolder.addSlot:(Ldev/emi/emi/api/stack/EmiIngredient;II)Ldev/emi/emi/api/widget/SlotWidget;
+     191: iconst_0
+     192: invokevirtual #219                // Method dev/emi/emi/api/widget/SlotWidget.drawBack:(Z)Ldev/emi/emi/api/widget/SlotWidget;
+     195: astore        5
+     197: iconst_0
+     198: istore        6
+     200: aload_0
+     201: getfield      #145                // Field weights:Ljava/util/List;
+     204: iload         4
+     206: invokeinterface #209,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     211: checkcast     #268                // class java/lang/Integer
+     214: invokevirtual #271                // Method java/lang/Integer.intValue:()I
+     217: istore        7
+     219: aload_0
+     220: getfield      #145                // Field weights:Ljava/util/List;
+     223: invokeinterface #272,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     228: astore        8
+     230: aload         8
+     232: invokeinterface #155,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     237: ifeq          265
+     240: aload         8
+     242: invokeinterface #159,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     247: checkcast     #268                // class java/lang/Integer
+     250: astore        9
+     252: iload         6
+     254: aload         9
+     256: invokevirtual #271                // Method java/lang/Integer.intValue:()I
+     259: iadd
+     260: istore        6
+     262: goto          230
+     265: aload         5
+     267: ldc_w         #274                // String jei.cobblemon_farmers.mystery_mine.chance
+     270: iconst_1
+     271: anewarray     #4                  // class java/lang/Object
+     274: dup
+     275: iconst_0
+     276: iload         7
+     278: i2d
+     279: iload         6
+     281: i2d
+     282: ddiv
+     283: ldc2_w        #275                // double 1000.0d
+     286: dmul
+     287: invokestatic  #279                // Method java/lang/Math.round:(D)J
+     290: l2d
+     291: ldc2_w        #280                // double 10.0d
+     294: ddiv
+     295: invokedynamic #284,  0            // InvokeDynamic #0:makeConcatWithConstants:(D)Ljava/lang/String;
+     300: aastore
+     301: invokestatic  #246                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     304: getstatic     #252                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+     307: invokevirtual #258                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     310: invokevirtual #262                // Method dev/emi/emi/api/widget/SlotWidget.appendTooltip:(Lnet/minecraft/network/chat/Component;)Ldev/emi/emi/api/widget/SlotWidget;
+     313: pop
+     314: aload         5
+     316: aload_0
+     317: invokevirtual #288                // Method dev/emi/emi/api/widget/SlotWidget.recipeContext:(Ldev/emi/emi/api/recipe/EmiRecipe;)Ldev/emi/emi/api/widget/SlotWidget;
+     320: pop
+     321: iinc          4, 1
+     324: goto          119
+     327: new           #50                 // class java/util/ArrayList
+     330: dup
+     331: aload_0
+     332: getfield      #84                 // Field elementalType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+     335: invokevirtual #294                // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+     338: invokedynamic #299,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     343: iconst_1
+     344: anewarray     #4                  // class java/lang/Object
+     347: dup
+     348: iconst_0
+     349: aload_0
+     350: getfield      #67                 // Field speedStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     353: invokevirtual #305                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getDisplayName:()Lnet/minecraft/network/chat/Component;
+     356: aastore
+     357: invokestatic  #246                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     360: getstatic     #308                // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+     363: invokevirtual #258                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     366: invokevirtual #312                // Method net/minecraft/network/chat/MutableComponent.m_7532_:()Lnet/minecraft/util/FormattedCharSequence;
+     369: invokestatic  #318                // InterfaceMethod net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent.m_169948_:(Lnet/minecraft/util/FormattedCharSequence;)Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;
+     372: ldc_w         #320                // String jei.cobblemon_farmers.mystery_mine.speed_stat
+     375: iconst_1
+     376: anewarray     #4                  // class java/lang/Object
+     379: dup
+     380: iconst_0
+     381: aload_0
+     382: getfield      #67                 // Field speedStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     385: invokevirtual #305                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getDisplayName:()Lnet/minecraft/network/chat/Component;
+     388: aastore
+     389: invokestatic  #246                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     392: getstatic     #323                // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+     395: invokevirtual #258                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     398: invokevirtual #312                // Method net/minecraft/network/chat/MutableComponent.m_7532_:()Lnet/minecraft/util/FormattedCharSequence;
+     401: invokestatic  #318                // InterfaceMethod net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent.m_169948_:(Lnet/minecraft/util/FormattedCharSequence;)Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;
+     404: invokestatic  #326                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+     407: invokespecial #329                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     410: astore        4
+     412: aload_0
+     413: getfield      #72                 // Field multStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     416: ifnull        459
+     419: aload         4
+     421: ldc_w         #331                // String jei.cobblemon_farmers.mystery_mine.mult_stat
+     424: iconst_1
+     425: anewarray     #4                  // class java/lang/Object
+     428: dup
+     429: iconst_0
+     430: aload_0
+     431: getfield      #72                 // Field multStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     434: invokevirtual #305                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getDisplayName:()Lnet/minecraft/network/chat/Component;
+     437: aastore
+     438: invokestatic  #246                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     441: getstatic     #252                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+     444: invokevirtual #258                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     447: invokevirtual #312                // Method net/minecraft/network/chat/MutableComponent.m_7532_:()Lnet/minecraft/util/FormattedCharSequence;
+     450: invokestatic  #318                // InterfaceMethod net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent.m_169948_:(Lnet/minecraft/util/FormattedCharSequence;)Lnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent;
+     453: invokeinterface #108,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     458: pop
+     459: aload_1
+     460: aload         4
+     462: sipush        144
+     465: iconst_0
+     466: bipush        16
+     468: bipush        16
+     470: invokeinterface #335,  6          // InterfaceMethod dev/emi/emi/api/widget/WidgetHolder.addTooltip:(Ljava/util/List;IIII)Ldev/emi/emi/api/widget/TooltipWidget;
+     475: pop
+     476: aload_1
+     477: ldc_w         #337                // String jei.cobblemon_farmers.mystery_mine.elemental_type
+     480: iconst_1
+     481: anewarray     #4                  // class java/lang/Object
+     484: dup
+     485: iconst_0
+     486: aload_0
+     487: getfield      #84                 // Field elementalType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+     490: invokevirtual #340                // Method com/cobblemon/mod/common/api/types/ElementalType.getDisplayName:()Lnet/minecraft/network/chat/MutableComponent;
+     493: aastore
+     494: invokestatic  #246                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     497: bipush        42
+     499: iconst_5
+     500: aload_0
+     501: getfield      #84                 // Field elementalType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+     504: invokevirtual #343                // Method com/cobblemon/mod/common/api/types/ElementalType.getHue:()I
+     507: iconst_1
+     508: invokeinterface #347,  6          // InterfaceMethod dev/emi/emi/api/widget/WidgetHolder.addText:(Lnet/minecraft/network/chat/Component;IIIZ)Ldev/emi/emi/api/widget/TextWidget;
+     513: pop
+     514: aload_1
+     515: ldc_w         #349                // String jei.cobblemon_farmers.mystery_mine.crafting_time
+     518: iconst_1
+     519: anewarray     #4                  // class java/lang/Object
+     522: dup
+     523: iconst_0
+     524: aload_0
+     525: getfield      #78                 // Field recipeTime:I
+     528: bipush        20
+     530: idiv
+     531: invokestatic  #353                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     534: aastore
+     535: invokestatic  #246                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     538: bipush        110
+     540: bipush        22
+     542: ldc_w         #354                // int -11848104
+     545: iconst_0
+     546: invokeinterface #347,  6          // InterfaceMethod dev/emi/emi/api/widget/WidgetHolder.addText:(Lnet/minecraft/network/chat/Component;IIIZ)Ldev/emi/emi/api/widget/TextWidget;
+     551: pop
+     552: return
+
+  static {};
+    Code:
+       0: new           #370                // class net/minecraft/resources/ResourceLocation
+       3: dup
+       4: ldc_w         #372                // String cobblemon_farmers
+       7: ldc_w         #374                // String textures/jei/mystery_mine.png
+      10: invokespecial #377                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      13: putstatic     #202                // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      16: return
+}

@@ -1,0 +1,63 @@
+Compiled from "CommonEvents.java"
+public class io.github.chakyl.cobblemonfarmers.event.CommonEvents$ModBus {
+  public io.github.chakyl.cobblemonfarmers.event.CommonEvents$ModBus();
+    Code:
+       0: aload_0
+       1: invokespecial #36                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void onCommonSetup(net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent);
+    Code:
+       0: aload_0
+       1: invokedynamic #57,  0             // InvokeDynamic #0:run:()Ljava/lang/Runnable;
+       6: invokevirtual #63                 // Method net/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent.enqueueWork:(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;
+       9: pop
+      10: aload_0
+      11: invokedynamic #75,  0             // InvokeDynamic #1:get:()Ljava/util/function/Supplier;
+      16: invokevirtual #78                 // Method net/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent.enqueueWork:(Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;
+      19: pop
+      20: return
+
+  public static void setAttributes(net.minecraftforge.event.entity.EntityAttributeModificationEvent);
+    Code:
+       0: aload_0
+       1: getstatic     #88                 // Field net/minecraft/world/entity/EntityType.f_20532_:Lnet/minecraft/world/entity/EntityType;
+       4: getstatic     #92                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.WORKERS_ASSIGNED:Lnet/minecraftforge/registries/RegistryObject;
+       7: invokevirtual #96                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      10: checkcast     #98                 // class net/minecraft/world/entity/ai/attributes/Attribute
+      13: invokevirtual #104                // Method net/minecraftforge/event/entity/EntityAttributeModificationEvent.add:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/Attribute;)V
+      16: aload_0
+      17: getstatic     #88                 // Field net/minecraft/world/entity/EntityType.f_20532_:Lnet/minecraft/world/entity/EntityType;
+      20: getstatic     #107                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.WORKER_CAP:Lnet/minecraftforge/registries/RegistryObject;
+      23: invokevirtual #96                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      26: checkcast     #98                 // class net/minecraft/world/entity/ai/attributes/Attribute
+      29: invokevirtual #104                // Method net/minecraftforge/event/entity/EntityAttributeModificationEvent.add:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/Attribute;)V
+      32: aload_0
+      33: getstatic     #88                 // Field net/minecraft/world/entity/EntityType.f_20532_:Lnet/minecraft/world/entity/EntityType;
+      36: getstatic     #110                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.WORKER_PERMITS:Lnet/minecraftforge/registries/RegistryObject;
+      39: invokevirtual #96                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      42: checkcast     #98                 // class net/minecraft/world/entity/ai/attributes/Attribute
+      45: invokevirtual #104                // Method net/minecraftforge/event/entity/EntityAttributeModificationEvent.add:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/Attribute;)V
+      48: aload_0
+      49: getstatic     #88                 // Field net/minecraft/world/entity/EntityType.f_20532_:Lnet/minecraft/world/entity/EntityType;
+      52: getstatic     #113                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.PUBLIC_CONTRACTS:Lnet/minecraftforge/registries/RegistryObject;
+      55: invokevirtual #96                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      58: checkcast     #98                 // class net/minecraft/world/entity/ai/attributes/Attribute
+      61: invokevirtual #104                // Method net/minecraftforge/event/entity/EntityAttributeModificationEvent.add:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/Attribute;)V
+      64: return
+
+  private static java.lang.Boolean lambda$onCommonSetup$1();
+    Code:
+       0: invokestatic  #119                // Method net/minecraftforge/fml/ModList.get:()Lnet/minecraftforge/fml/ModList;
+       3: ldc           #121                // String dew_drop_farmland_growth
+       5: invokevirtual #125                // Method net/minecraftforge/fml/ModList.isLoaded:(Ljava/lang/String;)Z
+       8: dup
+       9: putstatic     #131                // Field io/github/chakyl/cobblemonfarmers/CobblemonFarmers.GROWTH_EDITION_INSTALLED:Z
+      12: invokestatic  #137                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      15: areturn
+
+  private static void lambda$onCommonSetup$0();
+    Code:
+       0: invokestatic  #142                // Method io/github/chakyl/cobblemonfarmers/network/PacketHandler.register:()V
+       3: return
+}

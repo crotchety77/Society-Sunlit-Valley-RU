@@ -1,0 +1,126 @@
+Compiled from "EnergyPylonRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.EnergyPylonRecipe implements net.minecraft.world.item.crafting.Recipe<net.minecraftforge.items.wrapper.RecipeWrapper> {
+  private final net.minecraft.world.item.crafting.Ingredient ingredient;
+
+  private final net.minecraft.world.item.ItemStack input;
+
+  private final net.minecraft.world.item.ItemStack result;
+
+  private final float consumeChance;
+
+  private final double bonusSpeed;
+
+  private final net.minecraft.resources.ResourceLocation id;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.EnergyPylonRecipe(net.minecraft.world.item.crafting.Ingredient, net.minecraft.world.item.ItemStack, float, double, net.minecraft.world.item.ItemStack, net.minecraft.resources.ResourceLocation);
+    Code:
+       0: aload_0
+       1: invokespecial #35                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #37                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       9: aload_0
+      10: aload_2
+      11: putfield      #39                 // Field input:Lnet/minecraft/world/item/ItemStack;
+      14: aload_0
+      15: aload         6
+      17: putfield      #41                 // Field result:Lnet/minecraft/world/item/ItemStack;
+      20: aload_0
+      21: fload_3
+      22: putfield      #43                 // Field consumeChance:F
+      25: aload_0
+      26: dload         4
+      28: putfield      #45                 // Field bonusSpeed:D
+      31: aload_0
+      32: aload         7
+      34: putfield      #47                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+      37: return
+
+  public boolean matches(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: getfield      #37                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: aload_1
+       5: iconst_0
+       6: invokevirtual #57                 // Method net/minecraftforge/items/wrapper/RecipeWrapper.m_8020_:(I)Lnet/minecraft/world/item/ItemStack;
+       9: invokevirtual #63                 // Method net/minecraft/world/item/crafting/Ingredient.test:(Lnet/minecraft/world/item/ItemStack;)Z
+      12: ireturn
+
+  public net.minecraft.world.item.ItemStack assemble(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.core.RegistryAccess);
+    Code:
+       0: getstatic     #74                 // Field net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+       3: areturn
+
+  public boolean m_8004_(int, int);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public net.minecraft.world.item.ItemStack m_8043_(net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #41                 // Field result:Lnet/minecraft/world/item/ItemStack;
+       4: invokevirtual #87                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+       7: areturn
+
+  public net.minecraft.world.item.ItemStack getInputItem(net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field input:Lnet/minecraft/world/item/ItemStack;
+       4: invokevirtual #87                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+       7: areturn
+
+  public net.minecraft.world.item.crafting.Ingredient getIngredient();
+    Code:
+       0: aload_0
+       1: getfield      #37                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: areturn
+
+  public float getConsumeChance();
+    Code:
+       0: aload_0
+       1: getfield      #43                 // Field consumeChance:F
+       4: freturn
+
+  public double getBonusSpeed();
+    Code:
+       0: aload_0
+       1: getfield      #45                 // Field bonusSpeed:D
+       4: dreturn
+
+  public net.minecraft.resources.ResourceLocation m_6423_();
+    Code:
+       0: aload_0
+       1: getfield      #47                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+       4: areturn
+
+  public net.minecraft.world.item.crafting.RecipeSerializer<?> m_7707_();
+    Code:
+       0: getstatic     #104                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$RecipeRegistry.ENERGY_PYLON_SERIALIZER:Lnet/minecraftforge/registries/RegistryObject;
+       3: invokevirtual #110                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       6: checkcast     #112                // class net/minecraft/world/item/crafting/RecipeSerializer
+       9: areturn
+
+  public net.minecraft.world.item.crafting.RecipeType<?> m_6671_();
+    Code:
+       0: getstatic     #119                // Field io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe$Type;
+       3: areturn
+
+  public net.minecraft.world.item.ItemStack m_5874_(net.minecraft.world.Container, net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #53                 // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #123                // Method assemble:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+       9: areturn
+
+  public boolean m_5818_(net.minecraft.world.Container, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #53                 // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #127                // Method matches:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/world/level/Level;)Z
+       9: ireturn
+}

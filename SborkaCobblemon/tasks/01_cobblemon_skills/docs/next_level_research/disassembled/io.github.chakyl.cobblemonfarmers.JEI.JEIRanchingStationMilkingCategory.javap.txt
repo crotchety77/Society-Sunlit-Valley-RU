@@ -1,0 +1,307 @@
+Compiled from "JEIRanchingStationMilkingCategory.java"
+public class io.github.chakyl.cobblemonfarmers.JEI.JEIRanchingStationMilkingCategory implements mezz.jei.api.recipe.category.IRecipeCategory<io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe> {
+  public static final mezz.jei.api.recipe.RecipeType<io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe> TYPE;
+
+  public static final net.minecraft.resources.ResourceLocation TEXTURE;
+
+  private final mezz.jei.api.gui.drawable.IDrawable background;
+
+  private final mezz.jei.api.gui.drawable.IDrawable icon;
+
+  private final net.minecraft.network.chat.Component name;
+
+  private int ticks;
+
+  private long lastTickTime;
+
+  private final int displayWidth = 175;
+
+  private final int displayHeight = 42;
+
+  public io.github.chakyl.cobblemonfarmers.JEI.JEIRanchingStationMilkingCategory(mezz.jei.api.helpers.IGuiHelper);
+    Code:
+       0: aload_0
+       1: invokespecial #41                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #43                 // Field ticks:I
+       9: aload_0
+      10: lconst_0
+      11: putfield      #45                 // Field lastTickTime:J
+      14: aload_0
+      15: sipush        175
+      18: putfield      #47                 // Field displayWidth:I
+      21: aload_0
+      22: bipush        42
+      24: putfield      #49                 // Field displayHeight:I
+      27: aload_0
+      28: aload_1
+      29: getstatic     #51                 // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      32: iconst_0
+      33: iconst_0
+      34: sipush        175
+      37: bipush        42
+      39: invokeinterface #57,  6           // InterfaceMethod mezz/jei/api/helpers/IGuiHelper.createDrawable:(Lnet/minecraft/resources/ResourceLocation;IIII)Lmezz/jei/api/gui/drawable/IDrawableStatic;
+      44: putfield      #59                 // Field background:Lmezz/jei/api/gui/drawable/IDrawable;
+      47: aload_0
+      48: aload_1
+      49: getstatic     #65                 // Field mezz/jei/api/constants/VanillaTypes.ITEM_STACK:Lmezz/jei/api/ingredients/IIngredientTypeWithSubtypes;
+      52: new           #67                 // class net/minecraft/world/item/ItemStack
+      55: dup
+      56: getstatic     #71                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.RANCHING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      59: invokevirtual #77                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      62: checkcast     #79                 // class net/minecraft/world/level/ItemLike
+      65: invokespecial #82                 // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      68: invokeinterface #86,  3           // InterfaceMethod mezz/jei/api/helpers/IGuiHelper.createDrawableIngredient:(Lmezz/jei/api/ingredients/IIngredientType;Ljava/lang/Object;)Lmezz/jei/api/gui/drawable/IDrawable;
+      73: putfield      #88                 // Field icon:Lmezz/jei/api/gui/drawable/IDrawable;
+      76: aload_0
+      77: ldc           #90                 // String jei.cobblemon_farmers.ranching_station.category.milking
+      79: invokestatic  #96                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      82: putfield      #98                 // Field name:Lnet/minecraft/network/chat/Component;
+      85: return
+
+  public mezz.jei.api.gui.drawable.IDrawable getBackground();
+    Code:
+       0: aload_0
+       1: getfield      #59                 // Field background:Lmezz/jei/api/gui/drawable/IDrawable;
+       4: areturn
+
+  public mezz.jei.api.gui.drawable.IDrawable getIcon();
+    Code:
+       0: aload_0
+       1: getfield      #88                 // Field icon:Lmezz/jei/api/gui/drawable/IDrawable;
+       4: areturn
+
+  public net.minecraft.network.chat.Component getTitle();
+    Code:
+       0: aload_0
+       1: getfield      #98                 // Field name:Lnet/minecraft/network/chat/Component;
+       4: areturn
+
+  public mezz.jei.api.recipe.RecipeType<io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe> getRecipeType();
+    Code:
+       0: getstatic     #112                // Field TYPE:Lmezz/jei/api/recipe/RecipeType;
+       3: areturn
+
+  public void setRecipe(mezz.jei.api.gui.builder.IRecipeLayoutBuilder, io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe, mezz.jei.api.recipe.IFocusGroup);
+    Code:
+       0: getstatic     #120                // Field com/cobblemon/mod/common/api/pokemon/PokemonSpecies.INSTANCE:Lcom/cobblemon/mod/common/api/pokemon/PokemonSpecies;
+       3: aload_2
+       4: invokevirtual #126                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getPokemon:()Ljava/lang/String;
+       7: invokevirtual #130                // Method com/cobblemon/mod/common/api/pokemon/PokemonSpecies.getByName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokemon/Species;
+      10: invokestatic  #136                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      13: checkcast     #138                // class com/cobblemon/mod/common/pokemon/Species
+      16: astore        4
+      18: aload_1
+      19: getstatic     #144                // Field mezz/jei/api/recipe/RecipeIngredientRole.INPUT:Lmezz/jei/api/recipe/RecipeIngredientRole;
+      22: iconst_2
+      23: iconst_1
+      24: invokeinterface #150,  4          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeLayoutBuilder.addSlot:(Lmezz/jei/api/recipe/RecipeIngredientRole;II)Lmezz/jei/api/gui/builder/IRecipeSlotBuilder;
+      29: aload         4
+      31: iconst_0
+      32: anewarray     #152                // class java/lang/String
+      35: invokestatic  #158                // Method com/cobblemon/mod/common/item/PokemonItem.from:(Lcom/cobblemon/mod/common/pokemon/Species;[Ljava/lang/String;)Lnet/minecraft/world/item/ItemStack;
+      38: invokeinterface #164,  2          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeSlotBuilder.addItemStack:(Lnet/minecraft/world/item/ItemStack;)Lmezz/jei/api/gui/builder/IIngredientAcceptor;
+      43: pop
+      44: aload_2
+      45: invokevirtual #168                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getSmallMilk:()Lnet/minecraft/world/item/ItemStack;
+      48: invokevirtual #172                // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      51: ifne          90
+      54: aload_1
+      55: getstatic     #175                // Field mezz/jei/api/recipe/RecipeIngredientRole.OUTPUT:Lmezz/jei/api/recipe/RecipeIngredientRole;
+      58: iconst_5
+      59: bipush        20
+      61: invokeinterface #150,  4          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeLayoutBuilder.addSlot:(Lmezz/jei/api/recipe/RecipeIngredientRole;II)Lmezz/jei/api/gui/builder/IRecipeSlotBuilder;
+      66: aload_2
+      67: invokevirtual #168                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getSmallMilk:()Lnet/minecraft/world/item/ItemStack;
+      70: invokeinterface #164,  2          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeSlotBuilder.addItemStack:(Lnet/minecraft/world/item/ItemStack;)Lmezz/jei/api/gui/builder/IIngredientAcceptor;
+      75: checkcast     #160                // class mezz/jei/api/gui/builder/IRecipeSlotBuilder
+      78: aload_2
+      79: invokedynamic #193,  0            // InvokeDynamic #0:onRichTooltip:(Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe;)Lmezz/jei/api/gui/ingredient/IRecipeSlotRichTooltipCallback;
+      84: invokeinterface #197,  2          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeSlotBuilder.addRichTooltipCallback:(Lmezz/jei/api/gui/ingredient/IRecipeSlotRichTooltipCallback;)Lmezz/jei/api/gui/builder/IRecipeSlotBuilder;
+      89: pop
+      90: aload_2
+      91: invokevirtual #200                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getLargeMilk:()Lnet/minecraft/world/item/ItemStack;
+      94: invokevirtual #172                // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      97: ifne          150
+     100: aload_1
+     101: getstatic     #175                // Field mezz/jei/api/recipe/RecipeIngredientRole.OUTPUT:Lmezz/jei/api/recipe/RecipeIngredientRole;
+     104: iconst_5
+     105: aload_2
+     106: invokevirtual #203                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.milkIsSized:()Z
+     109: ifeq          117
+     112: bipush        18
+     114: goto          118
+     117: iconst_0
+     118: iadd
+     119: bipush        20
+     121: invokeinterface #150,  4          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeLayoutBuilder.addSlot:(Lmezz/jei/api/recipe/RecipeIngredientRole;II)Lmezz/jei/api/gui/builder/IRecipeSlotBuilder;
+     126: aload_2
+     127: invokevirtual #200                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getLargeMilk:()Lnet/minecraft/world/item/ItemStack;
+     130: invokeinterface #164,  2          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeSlotBuilder.addItemStack:(Lnet/minecraft/world/item/ItemStack;)Lmezz/jei/api/gui/builder/IIngredientAcceptor;
+     135: checkcast     #160                // class mezz/jei/api/gui/builder/IRecipeSlotBuilder
+     138: aload_2
+     139: invokedynamic #210,  0            // InvokeDynamic #1:onRichTooltip:(Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe;)Lmezz/jei/api/gui/ingredient/IRecipeSlotRichTooltipCallback;
+     144: invokeinterface #197,  2          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeSlotBuilder.addRichTooltipCallback:(Lmezz/jei/api/gui/ingredient/IRecipeSlotRichTooltipCallback;)Lmezz/jei/api/gui/builder/IRecipeSlotBuilder;
+     149: pop
+     150: return
+
+  public void draw(io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe, mezz.jei.api.gui.ingredient.IRecipeSlotsView, net.minecraft.client.gui.GuiGraphics, double, double);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: dload         4
+       6: dload         6
+       8: invokespecial #223                // InterfaceMethod mezz/jei/api/recipe/category/IRecipeCategory.draw:(Ljava/lang/Object;Lmezz/jei/api/gui/ingredient/IRecipeSlotsView;Lnet/minecraft/client/gui/GuiGraphics;DD)V
+      11: getstatic     #120                // Field com/cobblemon/mod/common/api/pokemon/PokemonSpecies.INSTANCE:Lcom/cobblemon/mod/common/api/pokemon/PokemonSpecies;
+      14: aload_1
+      15: invokevirtual #126                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getPokemon:()Ljava/lang/String;
+      18: invokevirtual #130                // Method com/cobblemon/mod/common/api/pokemon/PokemonSpecies.getByName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokemon/Species;
+      21: invokestatic  #136                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      24: checkcast     #138                // class com/cobblemon/mod/common/pokemon/Species
+      27: astore        8
+      29: aload_3
+      30: invokestatic  #229                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+      33: getfield      #233                // Field net/minecraft/client/Minecraft.f_91062_:Lnet/minecraft/client/gui/Font;
+      36: invokestatic  #239                // Method net/minecraft/locale/Language.m_128107_:()Lnet/minecraft/locale/Language;
+      39: aload         8
+      41: invokevirtual #242                // Method com/cobblemon/mod/common/pokemon/Species.getName:()Ljava/lang/String;
+      44: invokestatic  #248                // InterfaceMethod net/minecraft/network/chat/FormattedText.m_130775_:(Ljava/lang/String;)Lnet/minecraft/network/chat/FormattedText;
+      47: invokevirtual #252                // Method net/minecraft/locale/Language.m_5536_:(Lnet/minecraft/network/chat/FormattedText;)Lnet/minecraft/util/FormattedCharSequence;
+      50: bipush        24
+      52: iconst_4
+      53: ldc           #253                // int -11848104
+      55: iconst_0
+      56: invokevirtual #259                // Method net/minecraft/client/gui/GuiGraphics.m_280649_:(Lnet/minecraft/client/gui/Font;Lnet/minecraft/util/FormattedCharSequence;IIIZ)I
+      59: pop
+      60: dload         4
+      62: ldc2_w        #260                // double 159.0d
+      65: dcmpl
+      66: iflt          144
+      69: dload         4
+      71: ldc2_w        #262                // double 175.0d
+      74: dcmpg
+      75: ifgt          144
+      78: dload         6
+      80: dconst_0
+      81: dcmpl
+      82: iflt          144
+      85: dload         6
+      87: ldc2_w        #264                // double 16.0d
+      90: dcmpg
+      91: ifgt          144
+      94: new           #267                // class java/util/ArrayList
+      97: dup
+      98: invokespecial #268                // Method java/util/ArrayList."<init>":()V
+     101: astore        9
+     103: aload         9
+     105: ldc_w         #270                // String jei.cobblemon_farmers.ranching_station.more_info
+     108: invokestatic  #96                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     111: getstatic     #276                // Field net/minecraft/ChatFormatting.WHITE:Lnet/minecraft/ChatFormatting;
+     114: invokevirtual #282                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     117: invokeinterface #288,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     122: pop
+     123: aload_3
+     124: invokestatic  #229                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+     127: getfield      #233                // Field net/minecraft/client/Minecraft.f_91062_:Lnet/minecraft/client/gui/Font;
+     130: aload         9
+     132: invokestatic  #294                // Method java/util/Optional.empty:()Ljava/util/Optional;
+     135: dload         4
+     137: d2i
+     138: dload         6
+     140: d2i
+     141: invokevirtual #298                // Method net/minecraft/client/gui/GuiGraphics.m_280677_:(Lnet/minecraft/client/gui/Font;Ljava/util/List;Ljava/util/Optional;II)V
+     144: return
+
+  public void draw(java.lang.Object, mezz.jei.api.gui.ingredient.IRecipeSlotsView, net.minecraft.client.gui.GuiGraphics, double, double);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #122                // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe
+       5: aload_2
+       6: aload_3
+       7: dload         4
+       9: dload         6
+      11: invokevirtual #310                // Method draw:(Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe;Lmezz/jei/api/gui/ingredient/IRecipeSlotsView;Lnet/minecraft/client/gui/GuiGraphics;DD)V
+      14: return
+
+  public void setRecipe(mezz.jei.api.gui.builder.IRecipeLayoutBuilder, java.lang.Object, mezz.jei.api.recipe.IFocusGroup);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: checkcast     #122                // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe
+       6: aload_3
+       7: invokevirtual #313                // Method setRecipe:(Lmezz/jei/api/gui/builder/IRecipeLayoutBuilder;Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe;Lmezz/jei/api/recipe/IFocusGroup;)V
+      10: return
+
+  private static void lambda$setRecipe$1(io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe, mezz.jei.api.gui.ingredient.IRecipeSlotView, mezz.jei.api.gui.builder.ITooltipBuilder);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.milkIsSized:()Z
+       4: ifeq          38
+       7: aload_2
+       8: ldc_w         #315                // String jei.cobblemon_farmers.ranching_station.milk.affection.over
+      11: iconst_1
+      12: anewarray     #5                  // class java/lang/Object
+      15: dup
+      16: iconst_0
+      17: ldc_w         #317                // String 6
+      20: aastore
+      21: invokestatic  #321                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      24: getstatic     #324                // Field net/minecraft/ChatFormatting.LIGHT_PURPLE:Lnet/minecraft/ChatFormatting;
+      27: invokevirtual #282                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      30: invokeinterface #329,  2          // InterfaceMethod mezz/jei/api/gui/builder/ITooltipBuilder.add:(Lnet/minecraft/network/chat/FormattedText;)V
+      35: goto          66
+      38: aload_2
+      39: ldc_w         #331                // String jei.cobblemon_farmers.ranching_station.milk.affection.range
+      42: iconst_1
+      43: anewarray     #5                  // class java/lang/Object
+      46: dup
+      47: iconst_0
+      48: ldc_w         #333                // String 1-10
+      51: aastore
+      52: invokestatic  #321                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      55: getstatic     #324                // Field net/minecraft/ChatFormatting.LIGHT_PURPLE:Lnet/minecraft/ChatFormatting;
+      58: invokevirtual #282                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      61: invokeinterface #329,  2          // InterfaceMethod mezz/jei/api/gui/builder/ITooltipBuilder.add:(Lnet/minecraft/network/chat/FormattedText;)V
+      66: return
+
+  private static void lambda$setRecipe$0(io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe, mezz.jei.api.gui.ingredient.IRecipeSlotView, mezz.jei.api.gui.builder.ITooltipBuilder);
+    Code:
+       0: aload_2
+       1: ldc_w         #331                // String jei.cobblemon_farmers.ranching_station.milk.affection.range
+       4: iconst_1
+       5: anewarray     #5                  // class java/lang/Object
+       8: dup
+       9: iconst_0
+      10: aload_0
+      11: invokevirtual #203                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.milkIsSized:()Z
+      14: ifeq          23
+      17: ldc_w         #338                // String 1-5
+      20: goto          26
+      23: ldc_w         #333                // String 1-10
+      26: aastore
+      27: invokestatic  #321                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      30: getstatic     #324                // Field net/minecraft/ChatFormatting.LIGHT_PURPLE:Lnet/minecraft/ChatFormatting;
+      33: invokevirtual #282                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      36: invokeinterface #329,  2          // InterfaceMethod mezz/jei/api/gui/builder/ITooltipBuilder.add:(Lnet/minecraft/network/chat/FormattedText;)V
+      41: return
+
+  static {};
+    Code:
+       0: ldc_w         #345                // String cobblemon_farmers
+       3: ldc_w         #347                // String ranching_station/milk
+       6: ldc           #122                // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe
+       8: invokestatic  #353                // Method mezz/jei/api/recipe/RecipeType.create:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)Lmezz/jei/api/recipe/RecipeType;
+      11: putstatic     #112                // Field TYPE:Lmezz/jei/api/recipe/RecipeType;
+      14: new           #355                // class net/minecraft/resources/ResourceLocation
+      17: dup
+      18: ldc_w         #345                // String cobblemon_farmers
+      21: ldc_w         #357                // String textures/jei/ranching_station_forage.png
+      24: invokespecial #360                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      27: putstatic     #51                 // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      30: return
+}

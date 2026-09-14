@@ -1,0 +1,172 @@
+Compiled from "MysteryMineRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe implements net.minecraft.world.item.crafting.Recipe<net.minecraftforge.items.wrapper.RecipeWrapper> {
+  private final net.minecraft.world.item.crafting.Ingredient ingredient;
+
+  private final net.minecraft.core.NonNullList<net.minecraft.world.item.ItemStack> results;
+
+  private final java.util.List<java.lang.Integer> weights;
+
+  private final int craftingTime;
+
+  private final com.cobblemon.mod.common.api.types.ElementalType elementalType;
+
+  private final com.cobblemon.mod.common.api.pokemon.stats.Stats speedStat;
+
+  private final com.cobblemon.mod.common.api.pokemon.stats.Stats multStat;
+
+  private final float consumeChance;
+
+  private final net.minecraft.resources.ResourceLocation id;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe(net.minecraft.world.item.crafting.Ingredient, int, com.cobblemon.mod.common.api.types.ElementalType, com.cobblemon.mod.common.api.pokemon.stats.Stats, com.cobblemon.mod.common.api.pokemon.stats.Stats, net.minecraft.core.NonNullList<net.minecraft.world.item.ItemStack>, java.util.List<java.lang.Integer>, float, net.minecraft.resources.ResourceLocation);
+    Code:
+       0: aload_0
+       1: invokespecial #44                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #46                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       9: aload_0
+      10: aload         6
+      12: putfield      #48                 // Field results:Lnet/minecraft/core/NonNullList;
+      15: aload_0
+      16: aload         7
+      18: putfield      #50                 // Field weights:Ljava/util/List;
+      21: aload_0
+      22: iload_2
+      23: putfield      #52                 // Field craftingTime:I
+      26: aload_0
+      27: aload_3
+      28: putfield      #54                 // Field elementalType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+      31: aload_0
+      32: aload         4
+      34: putfield      #56                 // Field speedStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      37: aload_0
+      38: aload         5
+      40: putfield      #58                 // Field multStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      43: aload_0
+      44: fload         8
+      46: putfield      #60                 // Field consumeChance:F
+      49: aload_0
+      50: aload         9
+      52: putfield      #62                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+      55: return
+
+  public boolean matches(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: getfield      #46                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: aload_1
+       5: iconst_0
+       6: invokevirtual #72                 // Method net/minecraftforge/items/wrapper/RecipeWrapper.m_8020_:(I)Lnet/minecraft/world/item/ItemStack;
+       9: invokevirtual #78                 // Method net/minecraft/world/item/crafting/Ingredient.test:(Lnet/minecraft/world/item/ItemStack;)Z
+      12: ireturn
+
+  public net.minecraft.world.item.ItemStack assemble(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field results:Lnet/minecraft/core/NonNullList;
+       4: iconst_0
+       5: invokevirtual #90                 // Method net/minecraft/core/NonNullList.get:(I)Ljava/lang/Object;
+       8: checkcast     #92                 // class net/minecraft/world/item/ItemStack
+      11: invokevirtual #96                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      14: areturn
+
+  public boolean m_8004_(int, int);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public net.minecraft.world.item.ItemStack m_8043_(net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field results:Lnet/minecraft/core/NonNullList;
+       4: iconst_0
+       5: invokevirtual #90                 // Method net/minecraft/core/NonNullList.get:(I)Ljava/lang/Object;
+       8: checkcast     #92                 // class net/minecraft/world/item/ItemStack
+      11: invokevirtual #96                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      14: areturn
+
+  public net.minecraft.world.item.crafting.Ingredient getIngredient();
+    Code:
+       0: aload_0
+       1: getfield      #46                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: areturn
+
+  public int getCraftingTime();
+    Code:
+       0: aload_0
+       1: getfield      #52                 // Field craftingTime:I
+       4: ireturn
+
+  public com.cobblemon.mod.common.api.types.ElementalType getElementalType();
+    Code:
+       0: aload_0
+       1: getfield      #54                 // Field elementalType:Lcom/cobblemon/mod/common/api/types/ElementalType;
+       4: areturn
+
+  public com.cobblemon.mod.common.api.pokemon.stats.Stats getSpeedStat();
+    Code:
+       0: aload_0
+       1: getfield      #56                 // Field speedStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+       4: areturn
+
+  public com.cobblemon.mod.common.api.pokemon.stats.Stats getMultStat();
+    Code:
+       0: aload_0
+       1: getfield      #58                 // Field multStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+       4: areturn
+
+  public float getConsumeChance();
+    Code:
+       0: aload_0
+       1: getfield      #60                 // Field consumeChance:F
+       4: freturn
+
+  public net.minecraft.core.NonNullList<net.minecraft.world.item.ItemStack> getResults(net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field results:Lnet/minecraft/core/NonNullList;
+       4: areturn
+
+  public java.util.List<java.lang.Integer> getWeights(net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #50                 // Field weights:Ljava/util/List;
+       4: areturn
+
+  public net.minecraft.resources.ResourceLocation m_6423_();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+       4: areturn
+
+  public net.minecraft.world.item.crafting.RecipeSerializer<?> m_7707_();
+    Code:
+       0: getstatic     #131                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$RecipeRegistry.MYSTERY_MINE_SERIALIZER:Lnet/minecraftforge/registries/RegistryObject;
+       3: invokevirtual #136                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       6: checkcast     #138                // class net/minecraft/world/item/crafting/RecipeSerializer
+       9: areturn
+
+  public net.minecraft.world.item.crafting.RecipeType<?> m_6671_();
+    Code:
+       0: getstatic     #145                // Field io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type;
+       3: areturn
+
+  public net.minecraft.world.item.ItemStack m_5874_(net.minecraft.world.Container, net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #68                 // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #149                // Method assemble:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+       9: areturn
+
+  public boolean m_5818_(net.minecraft.world.Container, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #68                 // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #153                // Method matches:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/world/level/Level;)Z
+       9: ireturn
+}

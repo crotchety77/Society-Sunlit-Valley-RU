@@ -1,0 +1,135 @@
+Compiled from "BreakEvents.java"
+public class io.github.chakyl.cobblemonfarmers.event.BreakEvents {
+  public io.github.chakyl.cobblemonfarmers.event.BreakEvents();
+    Code:
+       0: aload_0
+       1: invokespecial #32                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void onBlockBreak(net.minecraftforge.event.level.BlockEvent$BreakEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #41                 // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getPlayer:()Lnet/minecraft/world/entity/player/Player;
+       4: astore_1
+       5: aload_0
+       6: invokevirtual #45                 // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getLevel:()Lnet/minecraft/world/level/LevelAccessor;
+       9: checkcast     #47                 // class net/minecraft/world/level/Level
+      12: astore_2
+      13: aload_0
+      14: invokevirtual #51                 // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getState:()Lnet/minecraft/world/level/block/state/BlockState;
+      17: getstatic     #57                 // Field io/github/chakyl/cobblemonfarmers/tag/CobblemonFarmersTags.POKEMON_WORKSTATION_BLOCK:Lnet/minecraft/tags/TagKey;
+      20: invokevirtual #63                 // Method net/minecraft/world/level/block/state/BlockState.m_204336_:(Lnet/minecraft/tags/TagKey;)Z
+      23: ifeq          131
+      26: aload_0
+      27: invokevirtual #45                 // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getLevel:()Lnet/minecraft/world/level/LevelAccessor;
+      30: aload_0
+      31: invokevirtual #67                 // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.getPos:()Lnet/minecraft/core/BlockPos;
+      34: invokeinterface #73,  2           // InterfaceMethod net/minecraft/world/level/LevelAccessor.m_7702_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+      39: astore_3
+      40: aload_3
+      41: instanceof    #75                 // class io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity
+      44: ifeq          131
+      47: aload_3
+      48: checkcast     #75                 // class io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity
+      51: astore        4
+      53: aload         4
+      55: invokevirtual #79                 // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.hasWorker:()Z
+      58: ifeq          94
+      61: aload_0
+      62: iconst_1
+      63: invokevirtual #83                 // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.setCanceled:(Z)V
+      66: aload_1
+      67: ldc           #85                 // String message.cobblemon_farmers.has_pokemon
+      69: invokestatic  #91                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      72: getstatic     #97                 // Field net/minecraft/network/chat/Style.f_131099_:Lnet/minecraft/network/chat/Style;
+      75: getstatic     #103                // Field net/minecraft/ChatFormatting.RED:Lnet/minecraft/ChatFormatting;
+      78: invokestatic  #109                // Method net/minecraft/network/chat/TextColor.m_131270_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/TextColor;
+      81: invokevirtual #113                // Method net/minecraft/network/chat/Style.m_131148_:(Lnet/minecraft/network/chat/TextColor;)Lnet/minecraft/network/chat/Style;
+      84: invokevirtual #119                // Method net/minecraft/network/chat/MutableComponent.m_6270_:(Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/MutableComponent;
+      87: iconst_0
+      88: invokevirtual #125                // Method net/minecraft/world/entity/player/Player.m_5661_:(Lnet/minecraft/network/chat/Component;Z)V
+      91: goto          131
+      94: aload         4
+      96: aload_1
+      97: invokevirtual #131                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.validateOwner:(Lnet/minecraft/world/entity/player/Player;)Z
+     100: ifeq          126
+     103: aload         4
+     105: invokevirtual #134                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getPublicContract:()Z
+     108: ifeq          131
+     111: aload_2
+     112: invokevirtual #137                // Method net/minecraft/world/level/Level.m_5776_:()Z
+     115: ifne          131
+     118: aload_2
+     119: aload_1
+     120: invokestatic  #143                // Method io/github/chakyl/cobblemonfarmers/utils/GeneralUtils.removePublicContract:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;)V
+     123: goto          131
+     126: aload_0
+     127: iconst_1
+     128: invokevirtual #83                 // Method net/minecraftforge/event/level/BlockEvent$BreakEvent.setCanceled:(Z)V
+     131: return
+
+  public static void onPlayerClone(net.minecraftforge.event.entity.player.PlayerEvent$Clone);
+    Code:
+       0: aload_0
+       1: invokevirtual #158                // Method net/minecraftforge/event/entity/player/PlayerEvent$Clone.isWasDeath:()Z
+       4: ifeq          136
+       7: aload_0
+       8: invokevirtual #161                // Method net/minecraftforge/event/entity/player/PlayerEvent$Clone.getOriginal:()Lnet/minecraft/world/entity/player/Player;
+      11: getstatic     #165                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.WORKERS_ASSIGNED:Lnet/minecraftforge/registries/RegistryObject;
+      14: invokevirtual #171                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      17: checkcast     #173                // class net/minecraft/world/entity/ai/attributes/Attribute
+      20: invokevirtual #177                // Method net/minecraft/world/entity/player/Player.m_21051_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+      23: invokevirtual #183                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22135_:()D
+      26: dstore_1
+      27: aload_0
+      28: invokevirtual #161                // Method net/minecraftforge/event/entity/player/PlayerEvent$Clone.getOriginal:()Lnet/minecraft/world/entity/player/Player;
+      31: getstatic     #186                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.WORKER_PERMITS:Lnet/minecraftforge/registries/RegistryObject;
+      34: invokevirtual #171                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      37: checkcast     #173                // class net/minecraft/world/entity/ai/attributes/Attribute
+      40: invokevirtual #177                // Method net/minecraft/world/entity/player/Player.m_21051_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+      43: invokevirtual #183                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22135_:()D
+      46: dstore_3
+      47: aload_0
+      48: invokevirtual #161                // Method net/minecraftforge/event/entity/player/PlayerEvent$Clone.getOriginal:()Lnet/minecraft/world/entity/player/Player;
+      51: getstatic     #189                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.PUBLIC_CONTRACTS:Lnet/minecraftforge/registries/RegistryObject;
+      54: invokevirtual #171                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      57: checkcast     #173                // class net/minecraft/world/entity/ai/attributes/Attribute
+      60: invokevirtual #177                // Method net/minecraft/world/entity/player/Player.m_21051_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+      63: invokevirtual #183                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22135_:()D
+      66: dstore        5
+      68: aload_0
+      69: invokevirtual #192                // Method net/minecraftforge/event/entity/player/PlayerEvent$Clone.getEntity:()Lnet/minecraft/world/entity/player/Player;
+      72: getstatic     #165                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.WORKERS_ASSIGNED:Lnet/minecraftforge/registries/RegistryObject;
+      75: invokevirtual #171                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      78: checkcast     #173                // class net/minecraft/world/entity/ai/attributes/Attribute
+      81: invokevirtual #177                // Method net/minecraft/world/entity/player/Player.m_21051_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+      84: dload_1
+      85: invokevirtual #196                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22100_:(D)V
+      88: aload_0
+      89: invokevirtual #192                // Method net/minecraftforge/event/entity/player/PlayerEvent$Clone.getEntity:()Lnet/minecraft/world/entity/player/Player;
+      92: getstatic     #186                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.WORKER_PERMITS:Lnet/minecraftforge/registries/RegistryObject;
+      95: invokevirtual #171                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      98: checkcast     #173                // class net/minecraft/world/entity/ai/attributes/Attribute
+     101: invokevirtual #177                // Method net/minecraft/world/entity/player/Player.m_21051_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+     104: dload_3
+     105: invokevirtual #196                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22100_:(D)V
+     108: aload_0
+     109: invokevirtual #192                // Method net/minecraftforge/event/entity/player/PlayerEvent$Clone.getEntity:()Lnet/minecraft/world/entity/player/Player;
+     112: getstatic     #189                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.PUBLIC_CONTRACTS:Lnet/minecraftforge/registries/RegistryObject;
+     115: invokevirtual #171                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     118: checkcast     #173                // class net/minecraft/world/entity/ai/attributes/Attribute
+     121: invokevirtual #177                // Method net/minecraft/world/entity/player/Player.m_21051_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+     124: dload         5
+     126: invokevirtual #196                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22100_:(D)V
+     129: aload_0
+     130: invokevirtual #161                // Method net/minecraftforge/event/entity/player/PlayerEvent$Clone.getOriginal:()Lnet/minecraft/world/entity/player/Player;
+     133: invokevirtual #199                // Method net/minecraft/world/entity/player/Player.invalidateCaps:()V
+     136: return
+
+  public static void onRegisterCommands(net.minecraftforge.event.RegisterCommandsEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #212                // Method net/minecraftforge/event/RegisterCommandsEvent.getDispatcher:()Lcom/mojang/brigadier/CommandDispatcher;
+       4: invokestatic  #218                // Method io/github/chakyl/cobblemonfarmers/command/SetOwnerCommand.register:(Lcom/mojang/brigadier/CommandDispatcher;)V
+       7: return
+}

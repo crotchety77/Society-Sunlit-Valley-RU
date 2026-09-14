@@ -1,0 +1,51 @@
+Compiled from "ServerBoundSwapPriorityPacket.java"
+public class io.github.chakyl.cobblemonfarmers.network.ServerBoundSwapPriorityPacket {
+  public io.github.chakyl.cobblemonfarmers.network.ServerBoundSwapPriorityPacket();
+    Code:
+       0: aload_0
+       1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public io.github.chakyl.cobblemonfarmers.network.ServerBoundSwapPriorityPacket(net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_0
+       1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public void encode(net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: return
+
+  public void handle(java.util.function.Supplier<net.minecraftforge.network.NetworkEvent$Context>);
+    Code:
+       0: aload_1
+       1: invokeinterface #29,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+       6: checkcast     #7                  // class net/minecraftforge/network/NetworkEvent$Context
+       9: invokevirtual #33                 // Method net/minecraftforge/network/NetworkEvent$Context.getSender:()Lnet/minecraft/server/level/ServerPlayer;
+      12: astore_2
+      13: aload_2
+      14: ifnull        53
+      17: aload_2
+      18: getfield      #39                 // Field net/minecraft/server/level/ServerPlayer.f_36096_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+      21: astore        4
+      23: aload         4
+      25: instanceof    #41                 // class io/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu
+      28: ifeq          53
+      31: aload         4
+      33: checkcast     #41                 // class io/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu
+      36: astore_3
+      37: aload_3
+      38: aload_2
+      39: invokevirtual #45                 // Method io/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu.m_6875_:(Lnet/minecraft/world/entity/player/Player;)Z
+      42: ifeq          53
+      45: aload_3
+      46: invokevirtual #48                 // Method io/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu.setPrioritySwapped:()V
+      49: aload_3
+      50: invokevirtual #51                 // Method io/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu.m_38946_:()V
+      53: aload_1
+      54: invokeinterface #29,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      59: checkcast     #7                  // class net/minecraftforge/network/NetworkEvent$Context
+      62: iconst_1
+      63: invokevirtual #55                 // Method net/minecraftforge/network/NetworkEvent$Context.setPacketHandled:(Z)V
+      66: return
+}

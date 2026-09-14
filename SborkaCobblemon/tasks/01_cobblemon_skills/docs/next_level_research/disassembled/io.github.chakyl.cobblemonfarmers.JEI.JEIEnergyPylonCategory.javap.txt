@@ -1,0 +1,324 @@
+Compiled from "JEIEnergyPylonCategory.java"
+public class io.github.chakyl.cobblemonfarmers.JEI.JEIEnergyPylonCategory implements mezz.jei.api.recipe.category.IRecipeCategory<io.github.chakyl.cobblemonfarmers.recipe.EnergyPylonRecipe> {
+  public static final mezz.jei.api.recipe.RecipeType<io.github.chakyl.cobblemonfarmers.recipe.EnergyPylonRecipe> TYPE;
+
+  public static final net.minecraft.resources.ResourceLocation TEXTURE;
+
+  private final mezz.jei.api.gui.drawable.IDrawable background;
+
+  private final mezz.jei.api.gui.drawable.IDrawable icon;
+
+  private final net.minecraft.network.chat.Component name;
+
+  private final int displayWidth = 128;
+
+  private final int displayHeight = 85;
+
+  public io.github.chakyl.cobblemonfarmers.JEI.JEIEnergyPylonCategory(mezz.jei.api.helpers.IGuiHelper);
+    Code:
+       0: aload_0
+       1: invokespecial #38                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: sipush        128
+       8: putfield      #40                 // Field displayWidth:I
+      11: aload_0
+      12: bipush        85
+      14: putfield      #42                 // Field displayHeight:I
+      17: aload_0
+      18: aload_1
+      19: getstatic     #44                 // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      22: iconst_0
+      23: iconst_0
+      24: sipush        128
+      27: bipush        85
+      29: invokeinterface #50,  6           // InterfaceMethod mezz/jei/api/helpers/IGuiHelper.createDrawable:(Lnet/minecraft/resources/ResourceLocation;IIII)Lmezz/jei/api/gui/drawable/IDrawableStatic;
+      34: putfield      #52                 // Field background:Lmezz/jei/api/gui/drawable/IDrawable;
+      37: aload_0
+      38: aload_1
+      39: getstatic     #58                 // Field mezz/jei/api/constants/VanillaTypes.ITEM_STACK:Lmezz/jei/api/ingredients/IIngredientTypeWithSubtypes;
+      42: new           #60                 // class net/minecraft/world/item/ItemStack
+      45: dup
+      46: getstatic     #64                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.ENERGY_PYLON:Lnet/minecraftforge/registries/RegistryObject;
+      49: invokevirtual #70                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      52: checkcast     #72                 // class net/minecraft/world/level/ItemLike
+      55: invokespecial #75                 // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      58: invokeinterface #79,  3           // InterfaceMethod mezz/jei/api/helpers/IGuiHelper.createDrawableIngredient:(Lmezz/jei/api/ingredients/IIngredientType;Ljava/lang/Object;)Lmezz/jei/api/gui/drawable/IDrawable;
+      63: putfield      #81                 // Field icon:Lmezz/jei/api/gui/drawable/IDrawable;
+      66: aload_0
+      67: getstatic     #64                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.ENERGY_PYLON:Lnet/minecraftforge/registries/RegistryObject;
+      70: invokevirtual #70                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      73: checkcast     #83                 // class net/minecraft/world/level/block/Block
+      76: invokevirtual #87                 // Method net/minecraft/world/level/block/Block.m_7705_:()Ljava/lang/String;
+      79: invokestatic  #93                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      82: putfield      #95                 // Field name:Lnet/minecraft/network/chat/Component;
+      85: return
+
+  public mezz.jei.api.gui.drawable.IDrawable getBackground();
+    Code:
+       0: aload_0
+       1: getfield      #52                 // Field background:Lmezz/jei/api/gui/drawable/IDrawable;
+       4: areturn
+
+  public mezz.jei.api.gui.drawable.IDrawable getIcon();
+    Code:
+       0: aload_0
+       1: getfield      #81                 // Field icon:Lmezz/jei/api/gui/drawable/IDrawable;
+       4: areturn
+
+  public net.minecraft.network.chat.Component getTitle();
+    Code:
+       0: aload_0
+       1: getfield      #95                 // Field name:Lnet/minecraft/network/chat/Component;
+       4: areturn
+
+  public mezz.jei.api.recipe.RecipeType<io.github.chakyl.cobblemonfarmers.recipe.EnergyPylonRecipe> getRecipeType();
+    Code:
+       0: getstatic     #109                // Field TYPE:Lmezz/jei/api/recipe/RecipeType;
+       3: areturn
+
+  public void setRecipe(mezz.jei.api.gui.builder.IRecipeLayoutBuilder, io.github.chakyl.cobblemonfarmers.recipe.EnergyPylonRecipe, mezz.jei.api.recipe.IFocusGroup);
+    Code:
+       0: aload_1
+       1: getstatic     #117                // Field mezz/jei/api/recipe/RecipeIngredientRole.INPUT:Lmezz/jei/api/recipe/RecipeIngredientRole;
+       4: iconst_0
+       5: iconst_0
+       6: invokeinterface #123,  4          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeLayoutBuilder.addSlot:(Lmezz/jei/api/recipe/RecipeIngredientRole;II)Lmezz/jei/api/gui/builder/IRecipeSlotBuilder;
+      11: getstatic     #129                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      14: invokevirtual #133                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getELECTRIC:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      17: invokestatic  #139                // Method io/github/chakyl/cobblemonfarmers/utils/ElementalTypeUtils.getItemFromElementalType:(Lcom/cobblemon/mod/common/api/types/ElementalType;)Lnet/minecraft/world/item/Item;
+      20: invokevirtual #145                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+      23: invokeinterface #151,  2          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeSlotBuilder.addItemStack:(Lnet/minecraft/world/item/ItemStack;)Lmezz/jei/api/gui/builder/IIngredientAcceptor;
+      28: pop
+      29: aload_1
+      30: getstatic     #117                // Field mezz/jei/api/recipe/RecipeIngredientRole.INPUT:Lmezz/jei/api/recipe/RecipeIngredientRole;
+      33: bipush        25
+      35: bipush        34
+      37: invokeinterface #123,  4          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeLayoutBuilder.addSlot:(Lmezz/jei/api/recipe/RecipeIngredientRole;II)Lmezz/jei/api/gui/builder/IRecipeSlotBuilder;
+      42: aload_2
+      43: aconst_null
+      44: invokevirtual #157                // Method io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe.getInputItem:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      47: invokeinterface #151,  2          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeSlotBuilder.addItemStack:(Lnet/minecraft/world/item/ItemStack;)Lmezz/jei/api/gui/builder/IIngredientAcceptor;
+      52: pop
+      53: aload_1
+      54: getstatic     #160                // Field mezz/jei/api/recipe/RecipeIngredientRole.OUTPUT:Lmezz/jei/api/recipe/RecipeIngredientRole;
+      57: bipush        85
+      59: bipush        34
+      61: invokeinterface #123,  4          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeLayoutBuilder.addSlot:(Lmezz/jei/api/recipe/RecipeIngredientRole;II)Lmezz/jei/api/gui/builder/IRecipeSlotBuilder;
+      66: aload_2
+      67: aconst_null
+      68: invokevirtual #163                // Method io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe.m_8043_:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      71: invokeinterface #151,  2          // InterfaceMethod mezz/jei/api/gui/builder/IRecipeSlotBuilder.addItemStack:(Lnet/minecraft/world/item/ItemStack;)Lmezz/jei/api/gui/builder/IIngredientAcceptor;
+      76: pop
+      77: return
+
+  public void draw(io.github.chakyl.cobblemonfarmers.recipe.EnergyPylonRecipe, mezz.jei.api.gui.ingredient.IRecipeSlotsView, net.minecraft.client.gui.GuiGraphics, double, double);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: dload         4
+       6: dload         6
+       8: invokespecial #174                // InterfaceMethod mezz/jei/api/recipe/category/IRecipeCategory.draw:(Ljava/lang/Object;Lmezz/jei/api/gui/ingredient/IRecipeSlotsView;Lnet/minecraft/client/gui/GuiGraphics;DD)V
+      11: getstatic     #129                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      14: invokevirtual #133                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getELECTRIC:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+      17: astore        8
+      19: aload_3
+      20: invokestatic  #180                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+      23: getfield      #184                // Field net/minecraft/client/Minecraft.f_91062_:Lnet/minecraft/client/gui/Font;
+      26: invokestatic  #190                // Method net/minecraft/locale/Language.m_128107_:()Lnet/minecraft/locale/Language;
+      29: ldc           #192                // String jei.cobblemon_farmers.energy_pylon.elemental_type
+      31: iconst_1
+      32: anewarray     #5                  // class java/lang/Object
+      35: dup
+      36: iconst_0
+      37: aload         8
+      39: invokevirtual #198                // Method com/cobblemon/mod/common/api/types/ElementalType.getDisplayName:()Lnet/minecraft/network/chat/MutableComponent;
+      42: aastore
+      43: invokestatic  #202                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      46: invokevirtual #206                // Method net/minecraft/locale/Language.m_5536_:(Lnet/minecraft/network/chat/FormattedText;)Lnet/minecraft/util/FormattedCharSequence;
+      49: bipush        22
+      51: iconst_4
+      52: aload         8
+      54: invokevirtual #210                // Method com/cobblemon/mod/common/api/types/ElementalType.getHue:()I
+      57: iconst_1
+      58: invokevirtual #216                // Method net/minecraft/client/gui/GuiGraphics.m_280649_:(Lnet/minecraft/client/gui/Font;Lnet/minecraft/util/FormattedCharSequence;IIIZ)I
+      61: pop
+      62: aload_3
+      63: invokestatic  #180                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+      66: getfield      #184                // Field net/minecraft/client/Minecraft.f_91062_:Lnet/minecraft/client/gui/Font;
+      69: invokestatic  #190                // Method net/minecraft/locale/Language.m_128107_:()Lnet/minecraft/locale/Language;
+      72: ldc           #218                // String jei.cobblemon_farmers.energy_pylon.crafting_time
+      74: iconst_1
+      75: anewarray     #5                  // class java/lang/Object
+      78: dup
+      79: iconst_0
+      80: getstatic     #223                // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.CRAFTING_TIME:I
+      83: bipush        20
+      85: idiv
+      86: invokestatic  #229                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      89: aastore
+      90: invokestatic  #202                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      93: invokevirtual #206                // Method net/minecraft/locale/Language.m_5536_:(Lnet/minecraft/network/chat/FormattedText;)Lnet/minecraft/util/FormattedCharSequence;
+      96: bipush        72
+      98: bipush        17
+     100: ldc           #230                // int -11848104
+     102: iconst_0
+     103: invokevirtual #216                // Method net/minecraft/client/gui/GuiGraphics.m_280649_:(Lnet/minecraft/client/gui/Font;Lnet/minecraft/util/FormattedCharSequence;IIIZ)I
+     106: pop
+     107: aload_3
+     108: invokestatic  #180                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+     111: getfield      #184                // Field net/minecraft/client/Minecraft.f_91062_:Lnet/minecraft/client/gui/Font;
+     114: invokestatic  #190                // Method net/minecraft/locale/Language.m_128107_:()Lnet/minecraft/locale/Language;
+     117: ldc           #232                // String jei.cobblemon_farmers.energy_pylon.bonus_speed
+     119: iconst_1
+     120: anewarray     #5                  // class java/lang/Object
+     123: dup
+     124: iconst_0
+     125: aload_1
+     126: invokevirtual #236                // Method io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe.getBonusSpeed:()D
+     129: invokestatic  #241                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     132: aastore
+     133: invokestatic  #202                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     136: invokevirtual #206                // Method net/minecraft/locale/Language.m_5536_:(Lnet/minecraft/network/chat/FormattedText;)Lnet/minecraft/util/FormattedCharSequence;
+     139: bipush        6
+     141: bipush        58
+     143: iconst_m1
+     144: iconst_0
+     145: invokevirtual #216                // Method net/minecraft/client/gui/GuiGraphics.m_280649_:(Lnet/minecraft/client/gui/Font;Lnet/minecraft/util/FormattedCharSequence;IIIZ)I
+     148: pop
+     149: aload_3
+     150: invokestatic  #180                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+     153: getfield      #184                // Field net/minecraft/client/Minecraft.f_91062_:Lnet/minecraft/client/gui/Font;
+     156: invokestatic  #190                // Method net/minecraft/locale/Language.m_128107_:()Lnet/minecraft/locale/Language;
+     159: ldc           #243                // String jei.cobblemon_farmers.energy_pylon.consume_chance
+     161: iconst_1
+     162: anewarray     #5                  // class java/lang/Object
+     165: dup
+     166: iconst_0
+     167: aload_1
+     168: invokevirtual #247                // Method io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe.getConsumeChance:()F
+     171: ldc           #248                // float 100.0f
+     173: fmul
+     174: invokestatic  #254                // Method java/lang/Math.round:(F)I
+     177: invokedynamic #266,  0            // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+     182: aastore
+     183: invokestatic  #202                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     186: invokevirtual #206                // Method net/minecraft/locale/Language.m_5536_:(Lnet/minecraft/network/chat/FormattedText;)Lnet/minecraft/util/FormattedCharSequence;
+     189: bipush        6
+     191: bipush        68
+     193: iconst_m1
+     194: iconst_0
+     195: invokevirtual #216                // Method net/minecraft/client/gui/GuiGraphics.m_280649_:(Lnet/minecraft/client/gui/Font;Lnet/minecraft/util/FormattedCharSequence;IIIZ)I
+     198: pop
+     199: dload         4
+     201: ldc2_w        #267                // double 112.0d
+     204: dcmpl
+     205: iflt          362
+     208: dload         4
+     210: ldc2_w        #269                // double 128.0d
+     213: dcmpg
+     214: ifgt          362
+     217: dload         6
+     219: dconst_0
+     220: dcmpl
+     221: iflt          362
+     224: dload         6
+     226: ldc2_w        #271                // double 16.0d
+     229: dcmpg
+     230: ifgt          362
+     233: new           #274                // class java/util/ArrayList
+     236: dup
+     237: invokespecial #275                // Method java/util/ArrayList."<init>":()V
+     240: astore        9
+     242: aload         9
+     244: ldc_w         #277                // String info.cobblemon_farmers.energy_pylon.type.electric
+     247: iconst_1
+     248: anewarray     #5                  // class java/lang/Object
+     251: dup
+     252: iconst_0
+     253: getstatic     #283                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     256: invokevirtual #285                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getDisplayName:()Lnet/minecraft/network/chat/Component;
+     259: aastore
+     260: invokestatic  #202                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     263: getstatic     #291                // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+     266: invokevirtual #297                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     269: invokeinterface #303,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     274: pop
+     275: aload         9
+     277: ldc_w         #305                // String jei.cobblemon_farmers.energy_pylon.speed_stat
+     280: iconst_1
+     281: anewarray     #5                  // class java/lang/Object
+     284: dup
+     285: iconst_0
+     286: getstatic     #283                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     289: invokevirtual #285                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getDisplayName:()Lnet/minecraft/network/chat/Component;
+     292: aastore
+     293: invokestatic  #202                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     296: getstatic     #308                // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+     299: invokevirtual #297                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     302: invokeinterface #303,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     307: pop
+     308: aload         9
+     310: ldc_w         #310                // String jei.cobblemon_farmers.energy_pylon.aoe_stat
+     313: iconst_1
+     314: anewarray     #5                  // class java/lang/Object
+     317: dup
+     318: iconst_0
+     319: getstatic     #313                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.HP:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     322: invokevirtual #285                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getDisplayName:()Lnet/minecraft/network/chat/Component;
+     325: aastore
+     326: invokestatic  #202                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     329: getstatic     #316                // Field net/minecraft/ChatFormatting.GOLD:Lnet/minecraft/ChatFormatting;
+     332: invokevirtual #297                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     335: invokeinterface #303,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     340: pop
+     341: aload_3
+     342: invokestatic  #180                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+     345: getfield      #184                // Field net/minecraft/client/Minecraft.f_91062_:Lnet/minecraft/client/gui/Font;
+     348: aload         9
+     350: invokestatic  #322                // Method java/util/Optional.empty:()Ljava/util/Optional;
+     353: dload         4
+     355: d2i
+     356: dload         6
+     358: d2i
+     359: invokevirtual #326                // Method net/minecraft/client/gui/GuiGraphics.m_280677_:(Lnet/minecraft/client/gui/Font;Ljava/util/List;Ljava/util/Optional;II)V
+     362: return
+
+  public void draw(java.lang.Object, mezz.jei.api.gui.ingredient.IRecipeSlotsView, net.minecraft.client.gui.GuiGraphics, double, double);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #153                // class io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe
+       5: aload_2
+       6: aload_3
+       7: dload         4
+       9: dload         6
+      11: invokevirtual #340                // Method draw:(Lio/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe;Lmezz/jei/api/gui/ingredient/IRecipeSlotsView;Lnet/minecraft/client/gui/GuiGraphics;DD)V
+      14: return
+
+  public void setRecipe(mezz.jei.api.gui.builder.IRecipeLayoutBuilder, java.lang.Object, mezz.jei.api.recipe.IFocusGroup);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: checkcast     #153                // class io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe
+       6: aload_3
+       7: invokevirtual #343                // Method setRecipe:(Lmezz/jei/api/gui/builder/IRecipeLayoutBuilder;Lio/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe;Lmezz/jei/api/recipe/IFocusGroup;)V
+      10: return
+
+  static {};
+    Code:
+       0: ldc_w         #346                // String cobblemon_farmers
+       3: ldc_w         #348                // String energy_pylon
+       6: ldc           #153                // class io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe
+       8: invokestatic  #354                // Method mezz/jei/api/recipe/RecipeType.create:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)Lmezz/jei/api/recipe/RecipeType;
+      11: putstatic     #109                // Field TYPE:Lmezz/jei/api/recipe/RecipeType;
+      14: new           #356                // class net/minecraft/resources/ResourceLocation
+      17: dup
+      18: ldc_w         #346                // String cobblemon_farmers
+      21: ldc_w         #358                // String textures/jei/energy_pylon.png
+      24: invokespecial #361                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      27: putstatic     #44                 // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      30: return
+}

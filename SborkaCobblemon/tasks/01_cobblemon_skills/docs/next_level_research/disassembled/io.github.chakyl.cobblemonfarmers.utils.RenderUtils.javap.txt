@@ -1,0 +1,167 @@
+Compiled from "RenderUtils.java"
+public class io.github.chakyl.cobblemonfarmers.utils.RenderUtils {
+  private static net.minecraft.client.resources.model.BakedModel cachedModel;
+
+  public io.github.chakyl.cobblemonfarmers.utils.RenderUtils();
+    Code:
+       0: aload_0
+       1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void renderBonusParticles(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.core.particles.SimpleParticleType);
+    Code:
+       0: ldc2_w        #26                 // double 1.05d
+       3: dstore_3
+       4: aload_1
+       5: invokevirtual #33                 // Method net/minecraft/core/BlockPos.m_123341_:()I
+       8: i2d
+       9: dload_3
+      10: dadd
+      11: aload_0
+      12: invokevirtual #39                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      15: invokeinterface #45,  1           // InterfaceMethod net/minecraft/util/RandomSource.m_188500_:()D
+      20: dload_3
+      21: dsub
+      22: dload_3
+      23: dmul
+      24: dadd
+      25: dstore        5
+      27: aload_1
+      28: invokevirtual #48                 // Method net/minecraft/core/BlockPos.m_123342_:()I
+      31: i2d
+      32: ldc2_w        #49                 // double 0.5d
+      35: dadd
+      36: dload_3
+      37: dadd
+      38: aload_0
+      39: invokevirtual #39                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      42: invokeinterface #45,  1           // InterfaceMethod net/minecraft/util/RandomSource.m_188500_:()D
+      47: dload_3
+      48: dsub
+      49: dload_3
+      50: dmul
+      51: dadd
+      52: dstore        7
+      54: aload_1
+      55: invokevirtual #53                 // Method net/minecraft/core/BlockPos.m_123343_:()I
+      58: i2d
+      59: dload_3
+      60: dadd
+      61: aload_0
+      62: invokevirtual #39                 // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+      65: invokeinterface #45,  1           // InterfaceMethod net/minecraft/util/RandomSource.m_188500_:()D
+      70: dload_3
+      71: dsub
+      72: dload_3
+      73: dmul
+      74: dadd
+      75: dstore        9
+      77: aload_0
+      78: aload_2
+      79: dload         5
+      81: dload         7
+      83: dload         9
+      85: ldc2_w        #54                 // double 0.05d
+      88: ldc2_w        #56                 // double 0.01d
+      91: ldc2_w        #56                 // double 0.01d
+      94: invokevirtual #61                 // Method net/minecraft/world/level/Level.m_7106_:(Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
+      97: return
+
+  public static void renderTheyOrb(com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, int, float);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: iload_3
+       4: fload         4
+       6: fconst_0
+       7: invokestatic  #77                 // Method renderTheyOrb:(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IIFF)V
+      10: return
+
+  public static void renderTheyOrb(com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, int, float, float);
+    Code:
+       0: fload         4
+       2: fconst_2
+       3: fmul
+       4: fstore        6
+       6: fload         4
+       8: ldc           #87                 // float 0.1f
+      10: fmul
+      11: invokestatic  #93                 // Method net/minecraft/util/Mth.m_14031_:(F)F
+      14: ldc           #94                 // float 0.05f
+      16: fmul
+      17: fstore        7
+      19: invokestatic  #100                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+      22: astore        8
+      24: aload_0
+      25: invokevirtual #103                // Method com/mojang/blaze3d/vertex/PoseStack.m_85836_:()V
+      28: aload_0
+      29: ldc2_w        #49                 // double 0.5d
+      32: ldc2_w        #104                // double 1.3d
+      35: fload         7
+      37: f2d
+      38: dadd
+      39: fload         5
+      41: f2d
+      42: dadd
+      43: ldc2_w        #49                 // double 0.5d
+      46: invokevirtual #109                // Method com/mojang/blaze3d/vertex/PoseStack.m_85837_:(DDD)V
+      49: getstatic     #111                // Field cachedModel:Lnet/minecraft/client/resources/model/BakedModel;
+      52: ifnonnull     69
+      55: aload         8
+      57: invokevirtual #115                // Method net/minecraft/client/Minecraft.m_91304_:()Lnet/minecraft/client/resources/model/ModelManager;
+      60: getstatic     #119                // Field io/github/chakyl/cobblemonfarmers/event/ClientEvents$ClientModBusEvents.CRYSTAL_BALL_BALL:Lnet/minecraft/resources/ResourceLocation;
+      63: invokevirtual #125                // Method net/minecraft/client/resources/model/ModelManager.getModel:(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/resources/model/BakedModel;
+      66: putstatic     #111                // Field cachedModel:Lnet/minecraft/client/resources/model/BakedModel;
+      69: aload_0
+      70: getstatic     #131                // Field com/mojang/math/Axis.f_252436_:Lcom/mojang/math/Axis;
+      73: fload         6
+      75: invokeinterface #135,  2          // InterfaceMethod com/mojang/math/Axis.m_252977_:(F)Lorg/joml/Quaternionf;
+      80: invokevirtual #139                // Method com/mojang/blaze3d/vertex/PoseStack.m_252781_:(Lorg/joml/Quaternionf;)V
+      83: aload_0
+      84: ldc2_w        #140                // double -0.5d
+      87: ldc2_w        #140                // double -0.5d
+      90: ldc2_w        #140                // double -0.5d
+      93: invokevirtual #109                // Method com/mojang/blaze3d/vertex/PoseStack.m_85837_:(DDD)V
+      96: aload_1
+      97: getstatic     #111                // Field cachedModel:Lnet/minecraft/client/resources/model/BakedModel;
+     100: aconst_null
+     101: aconst_null
+     102: invokestatic  #144                // InterfaceMethod net/minecraft/util/RandomSource.m_216327_:()Lnet/minecraft/util/RandomSource;
+     105: getstatic     #150                // Field net/minecraftforge/client/model/data/ModelData.EMPTY:Lnet/minecraftforge/client/model/data/ModelData;
+     108: aconst_null
+     109: invokeinterface #156,  6          // InterfaceMethod net/minecraft/client/resources/model/BakedModel.getQuads:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/util/RandomSource;Lnet/minecraftforge/client/model/data/ModelData;Lnet/minecraft/client/renderer/RenderType;)Ljava/util/List;
+     114: iconst_0
+     115: invokeinterface #162,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     120: checkcast     #164                // class net/minecraft/client/renderer/block/model/BakedQuad
+     123: invokevirtual #168                // Method net/minecraft/client/renderer/block/model/BakedQuad.m_173410_:()Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;
+     126: invokevirtual #174                // Method net/minecraft/client/renderer/texture/TextureAtlasSprite.m_247685_:()Lnet/minecraft/resources/ResourceLocation;
+     129: invokestatic  #180                // Method net/minecraft/client/renderer/RenderType.m_110470_:(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/RenderType;
+     132: invokeinterface #186,  2          // InterfaceMethod net/minecraft/client/renderer/MultiBufferSource.m_6299_:(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+     137: astore        9
+     139: aload         8
+     141: invokevirtual #190                // Method net/minecraft/client/Minecraft.m_91289_:()Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;
+     144: invokevirtual #196                // Method net/minecraft/client/renderer/block/BlockRenderDispatcher.m_110937_:()Lnet/minecraft/client/renderer/block/ModelBlockRenderer;
+     147: aload_0
+     148: invokevirtual #200                // Method com/mojang/blaze3d/vertex/PoseStack.m_85850_:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+     151: aload         9
+     153: aconst_null
+     154: getstatic     #111                // Field cachedModel:Lnet/minecraft/client/resources/model/BakedModel;
+     157: fconst_1
+     158: fconst_1
+     159: fconst_1
+     160: iload_2
+     161: iload_3
+     162: getstatic     #150                // Field net/minecraftforge/client/model/data/ModelData.EMPTY:Lnet/minecraftforge/client/model/data/ModelData;
+     165: aconst_null
+     166: invokevirtual #206                // Method net/minecraft/client/renderer/block/ModelBlockRenderer.renderModel:(Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/client/resources/model/BakedModel;FFFIILnet/minecraftforge/client/model/data/ModelData;Lnet/minecraft/client/renderer/RenderType;)V
+     169: aload_0
+     170: invokevirtual #209                // Method com/mojang/blaze3d/vertex/PoseStack.m_85849_:()V
+     173: return
+
+  static {};
+    Code:
+       0: aconst_null
+       1: putstatic     #111                // Field cachedModel:Lnet/minecraft/client/resources/model/BakedModel;
+       4: return
+}

@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "io/github/chakyl/cobblemonfarmers/mixin/CWRecipeManagerAccessor": {
+      "byType": "m_44054_(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/Map;"
+    }
+  },
+  "data": {
+    "searge": {
+      "io/github/chakyl/cobblemonfarmers/mixin/CWRecipeManagerAccessor": {
+        "byType": "m_44054_(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/Map;"
+      }
+    }
+  }
+}

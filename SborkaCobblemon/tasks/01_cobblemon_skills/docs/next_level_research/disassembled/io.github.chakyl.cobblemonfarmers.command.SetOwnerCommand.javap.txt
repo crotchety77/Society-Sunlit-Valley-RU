@@ -1,0 +1,103 @@
+Compiled from "SetOwnerCommand.java"
+public class io.github.chakyl.cobblemonfarmers.command.SetOwnerCommand {
+  public io.github.chakyl.cobblemonfarmers.command.SetOwnerCommand();
+    Code:
+       0: aload_0
+       1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void register(com.mojang.brigadier.CommandDispatcher<net.minecraft.commands.CommandSourceStack>);
+    Code:
+       0: aload_0
+       1: ldc           #21                 // String cobblemonfarmerssetowner
+       3: invokestatic  #27                 // Method net/minecraft/commands/Commands.m_82127_:(Ljava/lang/String;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
+       6: invokedynamic #46,  0             // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+      11: invokevirtual #52                 // Method com/mojang/brigadier/builder/LiteralArgumentBuilder.requires:(Ljava/util/function/Predicate;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      14: checkcast     #48                 // class com/mojang/brigadier/builder/LiteralArgumentBuilder
+      17: ldc           #54                 // String pos
+      19: invokestatic  #60                 // Method net/minecraft/commands/arguments/coordinates/BlockPosArgument.m_118239_:()Lnet/minecraft/commands/arguments/coordinates/BlockPosArgument;
+      22: invokestatic  #64                 // Method net/minecraft/commands/Commands.m_82129_:(Ljava/lang/String;Lcom/mojang/brigadier/arguments/ArgumentType;)Lcom/mojang/brigadier/builder/RequiredArgumentBuilder;
+      25: ldc           #66                 // String player
+      27: invokestatic  #72                 // Method net/minecraft/commands/arguments/EntityArgument.m_91466_:()Lnet/minecraft/commands/arguments/EntityArgument;
+      30: invokestatic  #64                 // Method net/minecraft/commands/Commands.m_82129_:(Ljava/lang/String;Lcom/mojang/brigadier/arguments/ArgumentType;)Lcom/mojang/brigadier/builder/RequiredArgumentBuilder;
+      33: invokedynamic #82,  0             // InvokeDynamic #1:run:()Lcom/mojang/brigadier/Command;
+      38: invokevirtual #88                 // Method com/mojang/brigadier/builder/RequiredArgumentBuilder.executes:(Lcom/mojang/brigadier/Command;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      41: invokevirtual #92                 // Method com/mojang/brigadier/builder/RequiredArgumentBuilder.then:(Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      44: invokevirtual #93                 // Method com/mojang/brigadier/builder/LiteralArgumentBuilder.then:(Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      47: checkcast     #48                 // class com/mojang/brigadier/builder/LiteralArgumentBuilder
+      50: invokevirtual #98                 // Method com/mojang/brigadier/CommandDispatcher.register:(Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;)Lcom/mojang/brigadier/tree/LiteralCommandNode;
+      53: pop
+      54: return
+
+  private static int lambda$register$2(com.mojang.brigadier.context.CommandContext) throws com.mojang.brigadier.exceptions.CommandSyntaxException;
+    Code:
+       0: aload_0
+       1: ldc           #54                 // String pos
+       3: invokestatic  #107                // Method net/minecraft/commands/arguments/coordinates/BlockPosArgument.m_118242_:(Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/core/BlockPos;
+       6: astore_1
+       7: aload_0
+       8: ldc           #66                 // String player
+      10: invokestatic  #111                // Method net/minecraft/commands/arguments/EntityArgument.m_91474_:(Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/server/level/ServerPlayer;
+      13: astore_2
+      14: aload_0
+      15: invokevirtual #117                // Method com/mojang/brigadier/context/CommandContext.getSource:()Ljava/lang/Object;
+      18: checkcast     #119                // class net/minecraft/commands/CommandSourceStack
+      21: invokevirtual #123                // Method net/minecraft/commands/CommandSourceStack.m_81372_:()Lnet/minecraft/server/level/ServerLevel;
+      24: aload_1
+      25: invokevirtual #129                // Method net/minecraft/server/level/ServerLevel.m_7702_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+      28: astore        4
+      30: aload         4
+      32: instanceof    #131                // class io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity
+      35: ifeq          72
+      38: aload         4
+      40: checkcast     #131                // class io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity
+      43: astore_3
+      44: aload_3
+      45: aload_2
+      46: invokevirtual #137                // Method net/minecraft/world/entity/player/Player.m_20148_:()Ljava/util/UUID;
+      49: invokevirtual #141                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.setOwner:(Ljava/util/UUID;)V
+      52: aload_0
+      53: invokevirtual #117                // Method com/mojang/brigadier/context/CommandContext.getSource:()Ljava/lang/Object;
+      56: checkcast     #119                // class net/minecraft/commands/CommandSourceStack
+      59: aload_1
+      60: aload_2
+      61: invokedynamic #153,  0            // InvokeDynamic #2:get:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;)Ljava/util/function/Supplier;
+      66: iconst_1
+      67: invokevirtual #157                // Method net/minecraft/commands/CommandSourceStack.m_288197_:(Ljava/util/function/Supplier;Z)V
+      70: iconst_1
+      71: ireturn
+      72: aload_0
+      73: invokevirtual #117                // Method com/mojang/brigadier/context/CommandContext.getSource:()Ljava/lang/Object;
+      76: checkcast     #119                // class net/minecraft/commands/CommandSourceStack
+      79: ldc           #161                // String command.cobblemon_farmers.setowner.failed
+      81: invokestatic  #167                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      84: invokevirtual #171                // Method net/minecraft/commands/CommandSourceStack.m_81352_:(Lnet/minecraft/network/chat/Component;)V
+      87: iconst_0
+      88: ireturn
+
+  private static net.minecraft.network.chat.Component lambda$register$1(net.minecraft.core.BlockPos, net.minecraft.world.entity.player.Player);
+    Code:
+       0: ldc           #181                // String command.cobblemon_farmers.setowner.success
+       2: iconst_2
+       3: anewarray     #4                  // class java/lang/Object
+       6: dup
+       7: iconst_0
+       8: aload_0
+       9: invokevirtual #185                // Method net/minecraft/core/BlockPos.m_123344_:()Ljava/lang/String;
+      12: aastore
+      13: dup
+      14: iconst_1
+      15: aload_1
+      16: invokevirtual #188                // Method net/minecraft/world/entity/player/Player.m_7755_:()Lnet/minecraft/network/chat/Component;
+      19: invokeinterface #191,  1          // InterfaceMethod net/minecraft/network/chat/Component.getString:()Ljava/lang/String;
+      24: aastore
+      25: invokestatic  #195                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      28: areturn
+
+  private static boolean lambda$register$0(net.minecraft.commands.CommandSourceStack);
+    Code:
+       0: aload_0
+       1: iconst_2
+       2: invokevirtual #199                // Method net/minecraft/commands/CommandSourceStack.m_6761_:(I)Z
+       5: ireturn
+}

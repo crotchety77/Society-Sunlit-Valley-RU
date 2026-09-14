@@ -1,0 +1,91 @@
+Compiled from "PublicContractItem.java"
+public class io.github.chakyl.cobblemonfarmers.items.PublicContractItem extends net.minecraft.world.item.Item {
+  public io.github.chakyl.cobblemonfarmers.items.PublicContractItem(net.minecraft.world.item.Item$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #17                 // Method net/minecraft/world/item/Item."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+       5: return
+
+  public boolean useContract(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand, boolean);
+    Code:
+       0: aload_1
+       1: invokevirtual #29                 // Method net/minecraft/world/level/Level.m_5776_:()Z
+       4: ifne          163
+       7: aload_2
+       8: getstatic     #33                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.PUBLIC_CONTRACTS:Lnet/minecraftforge/registries/RegistryObject;
+      11: invokevirtual #39                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      14: checkcast     #41                 // class net/minecraft/world/entity/ai/attributes/Attribute
+      17: invokevirtual #47                 // Method net/minecraft/world/entity/player/Player.m_21051_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+      20: astore        5
+      22: aload_2
+      23: getstatic     #50                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$AttributeRegistry.WORKERS_ASSIGNED:Lnet/minecraftforge/registries/RegistryObject;
+      26: invokevirtual #39                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      29: checkcast     #41                 // class net/minecraft/world/entity/ai/attributes/Attribute
+      32: invokevirtual #47                 // Method net/minecraft/world/entity/player/Player.m_21051_:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+      35: astore        6
+      37: aload_2
+      38: invokestatic  #56                 // Method io/github/chakyl/cobblemonfarmers/utils/GeneralUtils.getWorkerCap:(Lnet/minecraft/world/entity/player/Player;)I
+      41: i2d
+      42: dstore        7
+      44: dload         7
+      46: dconst_0
+      47: dcmpg
+      48: ifle          64
+      51: dload         7
+      53: aload         6
+      55: invokevirtual #62                 // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22135_:()D
+      58: dsub
+      59: dconst_0
+      60: dcmpg
+      61: ifgt          81
+      64: aload_2
+      65: ldc           #64                 // String item.cobblemon_farmers.public_contract.not_enough
+      67: invokestatic  #70                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      70: getstatic     #76                 // Field net/minecraft/ChatFormatting.RED:Lnet/minecraft/ChatFormatting;
+      73: invokevirtual #82                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      76: invokevirtual #86                 // Method net/minecraft/world/entity/player/Player.m_213846_:(Lnet/minecraft/network/chat/Component;)V
+      79: iconst_0
+      80: ireturn
+      81: aload         5
+      83: aload         5
+      85: invokevirtual #89                 // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22115_:()D
+      88: dconst_1
+      89: dadd
+      90: invokevirtual #93                 // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22100_:(D)V
+      93: iload         4
+      95: ifeq          112
+      98: aload         6
+     100: aload         6
+     102: invokevirtual #62                 // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22135_:()D
+     105: ldc2_w        #94                 // double -1.0d
+     108: dadd
+     109: invokevirtual #93                 // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.m_22100_:(D)V
+     112: aload_2
+     113: invokevirtual #98                 // Method net/minecraft/world/entity/player/Player.m_7500_:()Z
+     116: ifne          128
+     119: aload_2
+     120: aload_3
+     121: invokevirtual #102                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     124: iconst_1
+     125: invokevirtual #108                // Method net/minecraft/world/item/ItemStack.m_41774_:(I)V
+     128: aload_1
+     129: aconst_null
+     130: aload_2
+     131: invokevirtual #112                // Method net/minecraft/world/entity/player/Player.m_20097_:()Lnet/minecraft/core/BlockPos;
+     134: getstatic     #118                // Field com/cobblemon/mod/common/CobblemonSounds.FOSSIL_MACHINE_FINISHED:Lnet/minecraft/sounds/SoundEvent;
+     137: getstatic     #124                // Field net/minecraft/sounds/SoundSource.BLOCKS:Lnet/minecraft/sounds/SoundSource;
+     140: fconst_1
+     141: ldc           #125                // float 0.9f
+     143: invokevirtual #129                // Method net/minecraft/world/level/Level.m_5594_:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+     146: aload_2
+     147: ldc           #131                // String item.cobblemon_farmers.public_contract.used
+     149: invokestatic  #70                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     152: getstatic     #134                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+     155: invokevirtual #82                 // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     158: invokevirtual #86                 // Method net/minecraft/world/entity/player/Player.m_213846_:(Lnet/minecraft/network/chat/Component;)V
+     161: iconst_1
+     162: ireturn
+     163: iconst_0
+     164: ireturn
+}

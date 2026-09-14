@@ -1,0 +1,141 @@
+Compiled from "GardeningStationBlockEntity.java"
+class io.github.chakyl.cobblemonfarmers.blockentity.GardeningStationBlockEntity$2 implements net.minecraft.world.inventory.ContainerData {
+  final io.github.chakyl.cobblemonfarmers.blockentity.GardeningStationBlockEntity this$0;
+
+  io.github.chakyl.cobblemonfarmers.blockentity.GardeningStationBlockEntity$2(io.github.chakyl.cobblemonfarmers.blockentity.GardeningStationBlockEntity);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+       5: aload_0
+       6: invokespecial #20                 // Method java/lang/Object."<init>":()V
+       9: return
+
+  public int m_6413_(int);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 5
+
+                     0: 40
+
+                     1: 60
+
+                     2: 80
+
+                     3: 97
+
+                     4: 114
+
+                     5: 124
+               default: 142
+          }
+      40: aload_0
+      41: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      44: aload_0
+      45: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      48: getfield      #28                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.progress:I
+      51: invokevirtual #32                 // Method io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.getDataSendableTime:(I)Ljava/lang/Short;
+      54: invokevirtual #38                 // Method java/lang/Short.shortValue:()S
+      57: goto          143
+      60: aload_0
+      61: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      64: aload_0
+      65: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      68: getfield      #41                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.actionTime:I
+      71: invokevirtual #32                 // Method io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.getDataSendableTime:(I)Ljava/lang/Short;
+      74: invokevirtual #38                 // Method java/lang/Short.shortValue:()S
+      77: goto          143
+      80: aload_0
+      81: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      84: getfield      #45                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.speedModifier:D
+      87: ldc2_w        #46                 // double 100.0d
+      90: dmul
+      91: invokestatic  #53                 // Method net/minecraft/util/Mth.m_14107_:(D)I
+      94: goto          143
+      97: aload_0
+      98: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+     101: getfield      #56                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.bonusSpeed:D
+     104: ldc2_w        #46                 // double 100.0d
+     107: dmul
+     108: invokestatic  #53                 // Method net/minecraft/util/Mth.m_14107_:(D)I
+     111: goto          143
+     114: aload_0
+     115: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+     118: getfield      #59                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.aoeRadius:I
+     121: goto          143
+     124: aload_0
+     125: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+     128: getfield      #63                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.swapPriority:Z
+     131: ifeq          138
+     134: iconst_1
+     135: goto          143
+     138: iconst_0
+     139: goto          143
+     142: iconst_0
+     143: ireturn
+
+  public void m_8050_(int, int);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 5
+
+                     0: 40
+
+                     1: 51
+
+                     2: 62
+
+                     3: 78
+
+                     4: 94
+
+                     5: 105
+               default: 122
+          }
+      40: aload_0
+      41: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      44: iload_2
+      45: putfield      #28                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.progress:I
+      48: goto          122
+      51: aload_0
+      52: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      55: iload_2
+      56: putfield      #41                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.actionTime:I
+      59: goto          122
+      62: aload_0
+      63: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      66: iload_2
+      67: i2d
+      68: ldc2_w        #46                 // double 100.0d
+      71: ddiv
+      72: putfield      #45                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.speedModifier:D
+      75: goto          122
+      78: aload_0
+      79: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      82: iload_2
+      83: i2d
+      84: ldc2_w        #46                 // double 100.0d
+      87: ddiv
+      88: putfield      #56                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.bonusSpeed:D
+      91: goto          122
+      94: aload_0
+      95: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+      98: iload_2
+      99: putfield      #59                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.aoeRadius:I
+     102: goto          122
+     105: aload_0
+     106: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity;
+     109: iload_2
+     110: iconst_1
+     111: if_icmpne     118
+     114: iconst_1
+     115: goto          119
+     118: iconst_0
+     119: putfield      #63                 // Field io/github/chakyl/cobblemonfarmers/blockentity/GardeningStationBlockEntity.swapPriority:Z
+     122: return
+
+  public int m_6499_();
+    Code:
+       0: bipush        6
+       2: ireturn
+}

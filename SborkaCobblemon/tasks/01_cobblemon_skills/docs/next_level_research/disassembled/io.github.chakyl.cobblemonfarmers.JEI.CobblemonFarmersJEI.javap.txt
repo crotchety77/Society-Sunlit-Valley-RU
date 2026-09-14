@@ -1,0 +1,356 @@
+Compiled from "CobblemonFarmersJEI.java"
+public class io.github.chakyl.cobblemonfarmers.JEI.CobblemonFarmersJEI implements mezz.jei.api.IModPlugin {
+  public static final net.minecraft.resources.ResourceLocation UID;
+
+  public io.github.chakyl.cobblemonfarmers.JEI.CobblemonFarmersJEI();
+    Code:
+       0: aload_0
+       1: invokespecial #47                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public void registerItemSubtypes(mezz.jei.api.registration.ISubtypeRegistration);
+    Code:
+       0: aload_1
+       1: getstatic     #57                 // Field com/cobblemon/mod/common/CobblemonItems.POKEMON_MODEL:Lcom/cobblemon/mod/common/item/PokemonItem;
+       4: new           #10                 // class io/github/chakyl/cobblemonfarmers/JEI/CobblemonFarmersJEI$ModelSubtypes
+       7: dup
+       8: invokespecial #58                 // Method io/github/chakyl/cobblemonfarmers/JEI/CobblemonFarmersJEI$ModelSubtypes."<init>":()V
+      11: invokeinterface #64,  3           // InterfaceMethod mezz/jei/api/registration/ISubtypeRegistration.registerSubtypeInterpreter:(Lnet/minecraft/world/item/Item;Lmezz/jei/api/ingredients/subtypes/IIngredientSubtypeInterpreter;)V
+      16: return
+
+  public void registerCategories(mezz.jei.api.registration.IRecipeCategoryRegistration);
+    Code:
+       0: aload_1
+       1: iconst_1
+       2: anewarray     #70                 // class mezz/jei/api/recipe/category/IRecipeCategory
+       5: dup
+       6: iconst_0
+       7: new           #72                 // class io/github/chakyl/cobblemonfarmers/JEI/JEICraftStationCategory
+      10: dup
+      11: aload_1
+      12: invokeinterface #78,  1           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.getJeiHelpers:()Lmezz/jei/api/helpers/IJeiHelpers;
+      17: invokeinterface #84,  1           // InterfaceMethod mezz/jei/api/helpers/IJeiHelpers.getGuiHelper:()Lmezz/jei/api/helpers/IGuiHelper;
+      22: invokespecial #87                 // Method io/github/chakyl/cobblemonfarmers/JEI/JEICraftStationCategory."<init>":(Lmezz/jei/api/helpers/IGuiHelper;)V
+      25: aastore
+      26: invokeinterface #91,  2           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.addRecipeCategories:([Lmezz/jei/api/recipe/category/IRecipeCategory;)V
+      31: aload_1
+      32: iconst_1
+      33: anewarray     #70                 // class mezz/jei/api/recipe/category/IRecipeCategory
+      36: dup
+      37: iconst_0
+      38: new           #93                 // class io/github/chakyl/cobblemonfarmers/JEI/JEIMysteryMineCategory
+      41: dup
+      42: aload_1
+      43: invokeinterface #78,  1           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.getJeiHelpers:()Lmezz/jei/api/helpers/IJeiHelpers;
+      48: invokeinterface #84,  1           // InterfaceMethod mezz/jei/api/helpers/IJeiHelpers.getGuiHelper:()Lmezz/jei/api/helpers/IGuiHelper;
+      53: invokespecial #94                 // Method io/github/chakyl/cobblemonfarmers/JEI/JEIMysteryMineCategory."<init>":(Lmezz/jei/api/helpers/IGuiHelper;)V
+      56: aastore
+      57: invokeinterface #91,  2           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.addRecipeCategories:([Lmezz/jei/api/recipe/category/IRecipeCategory;)V
+      62: aload_1
+      63: iconst_1
+      64: anewarray     #70                 // class mezz/jei/api/recipe/category/IRecipeCategory
+      67: dup
+      68: iconst_0
+      69: new           #96                 // class io/github/chakyl/cobblemonfarmers/JEI/JEIRanchingStationForageCategory
+      72: dup
+      73: aload_1
+      74: invokeinterface #78,  1           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.getJeiHelpers:()Lmezz/jei/api/helpers/IJeiHelpers;
+      79: invokeinterface #84,  1           // InterfaceMethod mezz/jei/api/helpers/IJeiHelpers.getGuiHelper:()Lmezz/jei/api/helpers/IGuiHelper;
+      84: invokespecial #97                 // Method io/github/chakyl/cobblemonfarmers/JEI/JEIRanchingStationForageCategory."<init>":(Lmezz/jei/api/helpers/IGuiHelper;)V
+      87: aastore
+      88: invokeinterface #91,  2           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.addRecipeCategories:([Lmezz/jei/api/recipe/category/IRecipeCategory;)V
+      93: aload_1
+      94: iconst_1
+      95: anewarray     #70                 // class mezz/jei/api/recipe/category/IRecipeCategory
+      98: dup
+      99: iconst_0
+     100: new           #99                 // class io/github/chakyl/cobblemonfarmers/JEI/JEIRanchingStationMilkingCategory
+     103: dup
+     104: aload_1
+     105: invokeinterface #78,  1           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.getJeiHelpers:()Lmezz/jei/api/helpers/IJeiHelpers;
+     110: invokeinterface #84,  1           // InterfaceMethod mezz/jei/api/helpers/IJeiHelpers.getGuiHelper:()Lmezz/jei/api/helpers/IGuiHelper;
+     115: invokespecial #100                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIRanchingStationMilkingCategory."<init>":(Lmezz/jei/api/helpers/IGuiHelper;)V
+     118: aastore
+     119: invokeinterface #91,  2           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.addRecipeCategories:([Lmezz/jei/api/recipe/category/IRecipeCategory;)V
+     124: aload_1
+     125: iconst_1
+     126: anewarray     #70                 // class mezz/jei/api/recipe/category/IRecipeCategory
+     129: dup
+     130: iconst_0
+     131: new           #102                // class io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationCategory
+     134: dup
+     135: aload_1
+     136: invokeinterface #78,  1           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.getJeiHelpers:()Lmezz/jei/api/helpers/IJeiHelpers;
+     141: invokeinterface #84,  1           // InterfaceMethod mezz/jei/api/helpers/IJeiHelpers.getGuiHelper:()Lmezz/jei/api/helpers/IGuiHelper;
+     146: invokespecial #103                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationCategory."<init>":(Lmezz/jei/api/helpers/IGuiHelper;)V
+     149: aastore
+     150: invokeinterface #91,  2           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.addRecipeCategories:([Lmezz/jei/api/recipe/category/IRecipeCategory;)V
+     155: aload_1
+     156: iconst_1
+     157: anewarray     #70                 // class mezz/jei/api/recipe/category/IRecipeCategory
+     160: dup
+     161: iconst_0
+     162: new           #105                // class io/github/chakyl/cobblemonfarmers/JEI/JEICrystalBallCategory
+     165: dup
+     166: aload_1
+     167: invokeinterface #78,  1           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.getJeiHelpers:()Lmezz/jei/api/helpers/IJeiHelpers;
+     172: invokeinterface #84,  1           // InterfaceMethod mezz/jei/api/helpers/IJeiHelpers.getGuiHelper:()Lmezz/jei/api/helpers/IGuiHelper;
+     177: invokespecial #106                // Method io/github/chakyl/cobblemonfarmers/JEI/JEICrystalBallCategory."<init>":(Lmezz/jei/api/helpers/IGuiHelper;)V
+     180: aastore
+     181: invokeinterface #91,  2           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.addRecipeCategories:([Lmezz/jei/api/recipe/category/IRecipeCategory;)V
+     186: aload_1
+     187: iconst_1
+     188: anewarray     #70                 // class mezz/jei/api/recipe/category/IRecipeCategory
+     191: dup
+     192: iconst_0
+     193: new           #108                // class io/github/chakyl/cobblemonfarmers/JEI/JEIEnergyPylonCategory
+     196: dup
+     197: aload_1
+     198: invokeinterface #78,  1           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.getJeiHelpers:()Lmezz/jei/api/helpers/IJeiHelpers;
+     203: invokeinterface #84,  1           // InterfaceMethod mezz/jei/api/helpers/IJeiHelpers.getGuiHelper:()Lmezz/jei/api/helpers/IGuiHelper;
+     208: invokespecial #109                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIEnergyPylonCategory."<init>":(Lmezz/jei/api/helpers/IGuiHelper;)V
+     211: aastore
+     212: invokeinterface #91,  2           // InterfaceMethod mezz/jei/api/registration/IRecipeCategoryRegistration.addRecipeCategories:([Lmezz/jei/api/recipe/category/IRecipeCategory;)V
+     217: return
+
+  public void registerRecipes(mezz.jei.api.registration.IRecipeRegistration);
+    Code:
+       0: invokestatic  #118                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+       3: getfield      #122                // Field net/minecraft/client/Minecraft.f_91073_:Lnet/minecraft/client/multiplayer/ClientLevel;
+       6: invokevirtual #128                // Method net/minecraft/client/multiplayer/ClientLevel.m_7465_:()Lnet/minecraft/world/item/crafting/RecipeManager;
+       9: astore_2
+      10: aload_2
+      11: getstatic     #132                // Field io/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/CraftStationRecipe$Type;
+      14: invokevirtual #138                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+      17: astore_3
+      18: aload_1
+      19: getstatic     #142                // Field io/github/chakyl/cobblemonfarmers/JEI/JEICraftStationCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+      22: aload_3
+      23: invokeinterface #148,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeRegistration.addRecipes:(Lmezz/jei/api/recipe/RecipeType;Ljava/util/List;)V
+      28: aload_2
+      29: getstatic     #151                // Field io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type;
+      32: invokevirtual #138                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+      35: astore        4
+      37: aload_1
+      38: getstatic     #152                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIMysteryMineCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+      41: aload         4
+      43: invokeinterface #148,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeRegistration.addRecipes:(Lmezz/jei/api/recipe/RecipeType;Ljava/util/List;)V
+      48: aload_2
+      49: getstatic     #155                // Field io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe$Type;
+      52: invokevirtual #138                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+      55: astore        5
+      57: aload_1
+      58: getstatic     #156                // Field io/github/chakyl/cobblemonfarmers/JEI/JEICrystalBallCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+      61: aload         5
+      63: invokeinterface #148,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeRegistration.addRecipes:(Lmezz/jei/api/recipe/RecipeType;Ljava/util/List;)V
+      68: aload_2
+      69: getstatic     #159                // Field io/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/EnergyPylonRecipe$Type;
+      72: invokevirtual #138                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+      75: astore        6
+      77: aload_1
+      78: getstatic     #160                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIEnergyPylonCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+      81: aload         6
+      83: invokeinterface #148,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeRegistration.addRecipes:(Lmezz/jei/api/recipe/RecipeType;Ljava/util/List;)V
+      88: aload_2
+      89: getstatic     #163                // Field io/github/chakyl/cobblemonfarmers/recipe/RanchingStationForageRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationForageRecipe$Type;
+      92: invokevirtual #138                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+      95: astore        7
+      97: aload_1
+      98: getstatic     #164                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIRanchingStationForageCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+     101: aload         7
+     103: invokeinterface #148,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeRegistration.addRecipes:(Lmezz/jei/api/recipe/RecipeType;Ljava/util/List;)V
+     108: aload_2
+     109: getstatic     #167                // Field io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe$Type;
+     112: invokevirtual #138                // Method net/minecraft/world/item/crafting/RecipeManager.m_44013_:(Lnet/minecraft/world/item/crafting/RecipeType;)Ljava/util/List;
+     115: astore        8
+     117: aload_1
+     118: getstatic     #168                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIRanchingStationMilkingCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+     121: aload         8
+     123: invokeinterface #148,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeRegistration.addRecipes:(Lmezz/jei/api/recipe/RecipeType;Ljava/util/List;)V
+     128: new           #170                // class java/util/ArrayList
+     131: dup
+     132: invokespecial #171                // Method java/util/ArrayList."<init>":()V
+     135: astore        9
+     137: aload         9
+     139: new           #173                // class io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe
+     142: dup
+     143: getstatic     #178                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     146: invokevirtual #182                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getGRASS:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     149: getstatic     #188                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPEED:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     152: sipush        24000
+     155: invokespecial #191                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     158: invokeinterface #197,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     163: pop
+     164: aload         9
+     166: new           #173                // class io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe
+     169: dup
+     170: getstatic     #178                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     173: invokevirtual #200                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getWATER:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     176: getstatic     #203                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     179: sipush        600
+     182: invokespecial #191                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     185: invokeinterface #197,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     190: pop
+     191: aload         9
+     193: new           #173                // class io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe
+     196: dup
+     197: getstatic     #178                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     200: invokevirtual #206                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getDARK:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     203: getstatic     #209                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.HP:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     206: sipush        20000
+     209: invokespecial #191                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     212: invokeinterface #197,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     217: pop
+     218: aload         9
+     220: new           #173                // class io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe
+     223: dup
+     224: getstatic     #178                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     227: invokevirtual #212                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getNORMAL:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     230: getstatic     #188                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPEED:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     233: sipush        300
+     236: invokespecial #191                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     239: invokeinterface #197,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     244: pop
+     245: aload         9
+     247: new           #173                // class io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe
+     250: dup
+     251: getstatic     #178                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     254: invokevirtual #215                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getFLYING:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     257: getstatic     #218                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_DEFENCE:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     260: sipush        200
+     263: invokespecial #191                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     266: invokeinterface #197,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     271: pop
+     272: aload         9
+     274: new           #173                // class io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe
+     277: dup
+     278: getstatic     #178                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     281: invokevirtual #221                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getFAIRY:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     284: getstatic     #203                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     287: sipush        800
+     290: invokespecial #191                // Method io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationRecipe."<init>":(Lcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;I)V
+     293: invokeinterface #197,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     298: pop
+     299: aload_1
+     300: getstatic     #222                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+     303: aload         9
+     305: invokeinterface #148,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeRegistration.addRecipes:(Lmezz/jei/api/recipe/RecipeType;Ljava/util/List;)V
+     310: return
+
+  public void registerRecipeCatalysts(mezz.jei.api.registration.IRecipeCatalystRegistration);
+    Code:
+       0: aload_1
+       1: new           #245                // class net/minecraft/world/item/ItemStack
+       4: dup
+       5: getstatic     #249                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.CRAFT_STATION:Lnet/minecraftforge/registries/RegistryObject;
+       8: invokevirtual #255                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      11: checkcast     #257                // class net/minecraft/world/level/ItemLike
+      14: invokespecial #260                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      17: iconst_1
+      18: anewarray     #262                // class mezz/jei/api/recipe/RecipeType
+      21: dup
+      22: iconst_0
+      23: getstatic     #142                // Field io/github/chakyl/cobblemonfarmers/JEI/JEICraftStationCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+      26: aastore
+      27: invokeinterface #268,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeCatalystRegistration.addRecipeCatalyst:(Lnet/minecraft/world/item/ItemStack;[Lmezz/jei/api/recipe/RecipeType;)V
+      32: aload_1
+      33: new           #245                // class net/minecraft/world/item/ItemStack
+      36: dup
+      37: getstatic     #271                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.MYSTERY_MINE:Lnet/minecraftforge/registries/RegistryObject;
+      40: invokevirtual #255                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      43: checkcast     #257                // class net/minecraft/world/level/ItemLike
+      46: invokespecial #260                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      49: iconst_1
+      50: anewarray     #262                // class mezz/jei/api/recipe/RecipeType
+      53: dup
+      54: iconst_0
+      55: getstatic     #152                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIMysteryMineCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+      58: aastore
+      59: invokeinterface #268,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeCatalystRegistration.addRecipeCatalyst:(Lnet/minecraft/world/item/ItemStack;[Lmezz/jei/api/recipe/RecipeType;)V
+      64: aload_1
+      65: new           #245                // class net/minecraft/world/item/ItemStack
+      68: dup
+      69: getstatic     #274                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.RANCHING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      72: invokevirtual #255                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      75: checkcast     #257                // class net/minecraft/world/level/ItemLike
+      78: invokespecial #260                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      81: iconst_1
+      82: anewarray     #262                // class mezz/jei/api/recipe/RecipeType
+      85: dup
+      86: iconst_0
+      87: getstatic     #164                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIRanchingStationForageCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+      90: aastore
+      91: invokeinterface #268,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeCatalystRegistration.addRecipeCatalyst:(Lnet/minecraft/world/item/ItemStack;[Lmezz/jei/api/recipe/RecipeType;)V
+      96: aload_1
+      97: new           #245                // class net/minecraft/world/item/ItemStack
+     100: dup
+     101: getstatic     #274                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.RANCHING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+     104: invokevirtual #255                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     107: checkcast     #257                // class net/minecraft/world/level/ItemLike
+     110: invokespecial #260                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     113: iconst_1
+     114: anewarray     #262                // class mezz/jei/api/recipe/RecipeType
+     117: dup
+     118: iconst_0
+     119: getstatic     #168                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIRanchingStationMilkingCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+     122: aastore
+     123: invokeinterface #268,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeCatalystRegistration.addRecipeCatalyst:(Lnet/minecraft/world/item/ItemStack;[Lmezz/jei/api/recipe/RecipeType;)V
+     128: aload_1
+     129: new           #245                // class net/minecraft/world/item/ItemStack
+     132: dup
+     133: getstatic     #277                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.GARDENING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+     136: invokevirtual #255                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     139: checkcast     #257                // class net/minecraft/world/level/ItemLike
+     142: invokespecial #260                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     145: iconst_1
+     146: anewarray     #262                // class mezz/jei/api/recipe/RecipeType
+     149: dup
+     150: iconst_0
+     151: getstatic     #222                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIGardeningStationCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+     154: aastore
+     155: invokeinterface #268,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeCatalystRegistration.addRecipeCatalyst:(Lnet/minecraft/world/item/ItemStack;[Lmezz/jei/api/recipe/RecipeType;)V
+     160: aload_1
+     161: new           #245                // class net/minecraft/world/item/ItemStack
+     164: dup
+     165: getstatic     #280                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.CRYSTAL_BALL:Lnet/minecraftforge/registries/RegistryObject;
+     168: invokevirtual #255                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     171: checkcast     #257                // class net/minecraft/world/level/ItemLike
+     174: invokespecial #260                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     177: iconst_1
+     178: anewarray     #262                // class mezz/jei/api/recipe/RecipeType
+     181: dup
+     182: iconst_0
+     183: getstatic     #156                // Field io/github/chakyl/cobblemonfarmers/JEI/JEICrystalBallCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+     186: aastore
+     187: invokeinterface #268,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeCatalystRegistration.addRecipeCatalyst:(Lnet/minecraft/world/item/ItemStack;[Lmezz/jei/api/recipe/RecipeType;)V
+     192: aload_1
+     193: new           #245                // class net/minecraft/world/item/ItemStack
+     196: dup
+     197: getstatic     #283                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.ENERGY_PYLON:Lnet/minecraftforge/registries/RegistryObject;
+     200: invokevirtual #255                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     203: checkcast     #257                // class net/minecraft/world/level/ItemLike
+     206: invokespecial #260                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     209: iconst_1
+     210: anewarray     #262                // class mezz/jei/api/recipe/RecipeType
+     213: dup
+     214: iconst_0
+     215: getstatic     #160                // Field io/github/chakyl/cobblemonfarmers/JEI/JEIEnergyPylonCategory.TYPE:Lmezz/jei/api/recipe/RecipeType;
+     218: aastore
+     219: invokeinterface #268,  3          // InterfaceMethod mezz/jei/api/registration/IRecipeCatalystRegistration.addRecipeCatalyst:(Lnet/minecraft/world/item/ItemStack;[Lmezz/jei/api/recipe/RecipeType;)V
+     224: return
+
+  public net.minecraft.resources.ResourceLocation getPluginUid();
+    Code:
+       0: getstatic     #288                // Field UID:Lnet/minecraft/resources/ResourceLocation;
+       3: areturn
+
+  static {};
+    Code:
+       0: new           #291                // class net/minecraft/resources/ResourceLocation
+       3: dup
+       4: ldc_w         #293                // String cobblemon_farmers
+       7: ldc_w         #295                // String plugin
+      10: invokespecial #298                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      13: putstatic     #288                // Field UID:Lnet/minecraft/resources/ResourceLocation;
+      16: return
+}

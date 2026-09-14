@@ -1,0 +1,207 @@
+Compiled from "RanchingStationMilkingRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe$Serializer implements net.minecraft.world.item.crafting.RecipeSerializer<io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe> {
+  public static final io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe$Serializer INSTANCE;
+
+  public static final net.minecraft.resources.ResourceLocation ID;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe$Serializer();
+    Code:
+       0: aload_0
+       1: invokespecial #19                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe fromJson(net.minecraft.resources.ResourceLocation, com.google.gson.JsonObject);
+    Code:
+       0: aload_2
+       1: ldc           #24                 // String pokemon
+       3: invokestatic  #30                 // Method net/minecraft/util/GsonHelper.m_13906_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+       6: astore_3
+       7: ldc           #32                 // String
+       9: astore        4
+      11: aload_2
+      12: ldc           #34                 // String form
+      14: invokevirtual #40                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+      17: ifeq          28
+      20: aload_2
+      21: ldc           #34                 // String form
+      23: invokestatic  #30                 // Method net/minecraft/util/GsonHelper.m_13906_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+      26: astore        4
+      28: aload_2
+      29: ldc           #44                 // String consume_bucket
+      31: invokestatic  #48                 // Method net/minecraft/util/GsonHelper.m_13912_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+      34: istore        5
+      36: getstatic     #54                 // Field net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+      39: astore        6
+      41: getstatic     #54                 // Field net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+      44: astore        7
+      46: aload_2
+      47: ldc           #56                 // String milk
+      49: invokevirtual #40                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+      52: ifeq          189
+      55: aload_2
+      56: ldc           #56                 // String milk
+      58: invokestatic  #60                 // Method net/minecraft/util/GsonHelper.m_13930_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+      61: astore        8
+      63: aload         8
+      65: ldc           #62                 // String sm
+      67: invokevirtual #40                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+      70: ifeq          126
+      73: new           #36                 // class com/google/gson/JsonObject
+      76: dup
+      77: invokespecial #63                 // Method com/google/gson/JsonObject."<init>":()V
+      80: astore        9
+      82: aload         8
+      84: ldc           #62                 // String sm
+      86: invokevirtual #67                 // Method com/google/gson/JsonObject.getAsJsonObject:(Ljava/lang/String;)Lcom/google/gson/JsonObject;
+      89: astore        10
+      91: aload         9
+      93: ldc           #69                 // String item
+      95: aload         10
+      97: ldc           #69                 // String item
+      99: invokevirtual #73                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     102: invokevirtual #77                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     105: aload         9
+     107: ldc           #79                 // String count
+     109: aload         10
+     111: ldc           #79                 // String count
+     113: invokevirtual #73                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     116: invokevirtual #77                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     119: aload         9
+     121: invokestatic  #85                 // Method net/minecraft/world/item/crafting/ShapedRecipe.m_151274_:(Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/ItemStack;
+     124: astore        6
+     126: aload         8
+     128: ldc           #89                 // String lg
+     130: invokevirtual #40                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+     133: ifeq          189
+     136: new           #36                 // class com/google/gson/JsonObject
+     139: dup
+     140: invokespecial #63                 // Method com/google/gson/JsonObject."<init>":()V
+     143: astore        9
+     145: aload         8
+     147: ldc           #89                 // String lg
+     149: invokevirtual #67                 // Method com/google/gson/JsonObject.getAsJsonObject:(Ljava/lang/String;)Lcom/google/gson/JsonObject;
+     152: astore        10
+     154: aload         9
+     156: ldc           #69                 // String item
+     158: aload         10
+     160: ldc           #69                 // String item
+     162: invokevirtual #73                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     165: invokevirtual #77                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     168: aload         9
+     170: ldc           #79                 // String count
+     172: aload         10
+     174: ldc           #79                 // String count
+     176: invokevirtual #73                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     179: invokevirtual #77                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     182: aload         9
+     184: invokestatic  #85                 // Method net/minecraft/world/item/crafting/ShapedRecipe.m_151274_:(Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/ItemStack;
+     187: astore        7
+     189: new           #10                 // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe
+     192: dup
+     193: aload_3
+     194: aload         4
+     196: iload         5
+     198: aload         6
+     200: aload         7
+     202: aload_1
+     203: invokespecial #92                 // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe."<init>":(Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/resources/ResourceLocation;)V
+     206: areturn
+
+  public io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe fromNetwork(net.minecraft.resources.ResourceLocation, net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_2
+       1: invokevirtual #113                // Method net/minecraft/network/FriendlyByteBuf.m_130277_:()Ljava/lang/String;
+       4: astore_3
+       5: aload_2
+       6: invokevirtual #113                // Method net/minecraft/network/FriendlyByteBuf.m_130277_:()Ljava/lang/String;
+       9: astore        4
+      11: aload_2
+      12: invokevirtual #117                // Method net/minecraft/network/FriendlyByteBuf.readBoolean:()Z
+      15: istore        5
+      17: aload_2
+      18: invokevirtual #121                // Method net/minecraft/network/FriendlyByteBuf.m_130267_:()Lnet/minecraft/world/item/ItemStack;
+      21: astore        6
+      23: aload_2
+      24: invokevirtual #121                // Method net/minecraft/network/FriendlyByteBuf.m_130267_:()Lnet/minecraft/world/item/ItemStack;
+      27: astore        7
+      29: new           #10                 // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe
+      32: dup
+      33: aload_3
+      34: aload         4
+      36: iload         5
+      38: aload         6
+      40: aload         7
+      42: aload_1
+      43: invokespecial #92                 // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe."<init>":(Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/resources/ResourceLocation;)V
+      46: areturn
+
+  public void toNetwork(net.minecraft.network.FriendlyByteBuf, io.github.chakyl.cobblemonfarmers.recipe.RanchingStationMilkingRecipe);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: invokevirtual #128                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getPokemon:()Ljava/lang/String;
+       5: invokevirtual #132                // Method net/minecraft/network/FriendlyByteBuf.m_130070_:(Ljava/lang/String;)Lnet/minecraft/network/FriendlyByteBuf;
+       8: pop
+       9: aload_1
+      10: aload_2
+      11: invokevirtual #135                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getForm:()Ljava/lang/String;
+      14: invokevirtual #132                // Method net/minecraft/network/FriendlyByteBuf.m_130070_:(Ljava/lang/String;)Lnet/minecraft/network/FriendlyByteBuf;
+      17: pop
+      18: aload_1
+      19: aload_2
+      20: invokevirtual #138                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getIsBucketConsumed:()Z
+      23: invokevirtual #142                // Method net/minecraft/network/FriendlyByteBuf.writeBoolean:(Z)Lio/netty/buffer/ByteBuf;
+      26: pop
+      27: aload_1
+      28: aload_2
+      29: invokevirtual #145                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getSmallMilk:()Lnet/minecraft/world/item/ItemStack;
+      32: iconst_0
+      33: invokevirtual #149                // Method net/minecraft/network/FriendlyByteBuf.writeItemStack:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/network/FriendlyByteBuf;
+      36: pop
+      37: aload_1
+      38: aload_2
+      39: invokevirtual #152                // Method io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe.getLargeMilk:()Lnet/minecraft/world/item/ItemStack;
+      42: iconst_0
+      43: invokevirtual #149                // Method net/minecraft/network/FriendlyByteBuf.writeItemStack:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/network/FriendlyByteBuf;
+      46: pop
+      47: return
+
+  public void m_6178_(net.minecraft.network.FriendlyByteBuf, net.minecraft.world.item.crafting.Recipe);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: checkcast     #10                 // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe
+       6: invokevirtual #158                // Method toNetwork:(Lnet/minecraft/network/FriendlyByteBuf;Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe;)V
+       9: return
+
+  public net.minecraft.world.item.crafting.Recipe m_8005_(net.minecraft.resources.ResourceLocation, net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #162                // Method fromNetwork:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe;
+       6: areturn
+
+  public net.minecraft.world.item.crafting.Recipe m_6729_(net.minecraft.resources.ResourceLocation, com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #166                // Method fromJson:(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe;
+       6: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class io/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe$Serializer
+       3: dup
+       4: invokespecial #168                // Method "<init>":()V
+       7: putstatic     #170                // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationMilkingRecipe$Serializer;
+      10: new           #87                 // class net/minecraft/resources/ResourceLocation
+      13: dup
+      14: ldc           #172                // String cobblemon_farmers
+      16: ldc           #174                // String ranching_station/milk
+      18: invokespecial #177                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      21: putstatic     #179                // Field ID:Lnet/minecraft/resources/ResourceLocation;
+      24: return
+}

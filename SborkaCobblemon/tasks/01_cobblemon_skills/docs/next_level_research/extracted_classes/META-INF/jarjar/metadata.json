@@ -1,0 +1,16 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "curse.maven",
+        "artifact": "libtooltips-1370245"
+      },
+      "version": {
+        "range": "[8332581,)",
+        "artifactVersion": "8332581"
+      },
+      "path": "META-INF/jarjar/libtooltips-1370245-8332581.jar",
+      "isObfuscated": false
+    }
+  ]
+}

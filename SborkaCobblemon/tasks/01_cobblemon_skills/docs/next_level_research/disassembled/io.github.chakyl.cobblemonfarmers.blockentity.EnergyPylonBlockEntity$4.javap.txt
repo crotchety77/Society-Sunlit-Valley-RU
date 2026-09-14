@@ -1,0 +1,115 @@
+Compiled from "EnergyPylonBlockEntity.java"
+class io.github.chakyl.cobblemonfarmers.blockentity.EnergyPylonBlockEntity$4 implements net.minecraft.world.inventory.ContainerData {
+  final io.github.chakyl.cobblemonfarmers.blockentity.EnergyPylonBlockEntity this$0;
+
+  io.github.chakyl.cobblemonfarmers.blockentity.EnergyPylonBlockEntity$4(io.github.chakyl.cobblemonfarmers.blockentity.EnergyPylonBlockEntity);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+       5: aload_0
+       6: invokespecial #20                 // Method java/lang/Object."<init>":()V
+       9: return
+
+  public int m_6413_(int);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 4
+
+                     0: 36
+
+                     1: 56
+
+                     2: 72
+
+                     3: 89
+
+                     4: 106
+               default: 116
+          }
+      36: aload_0
+      37: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      40: aload_0
+      41: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      44: getfield      #28                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.progress:I
+      47: invokevirtual #32                 // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.getDataSendableTime:(I)Ljava/lang/Short;
+      50: invokevirtual #38                 // Method java/lang/Short.shortValue:()S
+      53: goto          117
+      56: aload_0
+      57: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      60: getstatic     #41                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.CRAFTING_TIME:I
+      63: invokevirtual #32                 // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.getDataSendableTime:(I)Ljava/lang/Short;
+      66: invokevirtual #38                 // Method java/lang/Short.shortValue:()S
+      69: goto          117
+      72: aload_0
+      73: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      76: getfield      #45                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.speedModifier:D
+      79: ldc2_w        #46                 // double 100.0d
+      82: dmul
+      83: invokestatic  #53                 // Method net/minecraft/util/Mth.m_14107_:(D)I
+      86: goto          117
+      89: aload_0
+      90: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      93: getfield      #56                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.bonusSpeed:D
+      96: ldc2_w        #46                 // double 100.0d
+      99: dmul
+     100: invokestatic  #53                 // Method net/minecraft/util/Mth.m_14107_:(D)I
+     103: goto          117
+     106: aload_0
+     107: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+     110: getfield      #59                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.aoeRadius:I
+     113: goto          117
+     116: iconst_0
+     117: ireturn
+
+  public void m_8050_(int, int);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 4
+
+                     0: 36
+
+                     1: 47
+
+                     2: 54
+
+                     3: 70
+
+                     4: 86
+               default: 94
+          }
+      36: aload_0
+      37: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      40: iload_2
+      41: putfield      #28                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.progress:I
+      44: goto          94
+      47: iload_2
+      48: putstatic     #41                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.CRAFTING_TIME:I
+      51: goto          94
+      54: aload_0
+      55: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      58: iload_2
+      59: i2d
+      60: ldc2_w        #46                 // double 100.0d
+      63: ddiv
+      64: putfield      #45                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.speedModifier:D
+      67: goto          94
+      70: aload_0
+      71: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      74: iload_2
+      75: i2d
+      76: ldc2_w        #46                 // double 100.0d
+      79: ddiv
+      80: putfield      #56                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.bonusSpeed:D
+      83: goto          94
+      86: aload_0
+      87: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;
+      90: iload_2
+      91: putfield      #59                 // Field io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.aoeRadius:I
+      94: return
+
+  public int m_6499_();
+    Code:
+       0: iconst_5
+       1: ireturn
+}

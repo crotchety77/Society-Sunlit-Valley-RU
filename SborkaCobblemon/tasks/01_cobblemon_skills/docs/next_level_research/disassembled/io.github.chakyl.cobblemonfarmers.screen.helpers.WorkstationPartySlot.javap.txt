@@ -1,0 +1,27 @@
+Compiled from "WorkstationPartySlot.java"
+public class io.github.chakyl.cobblemonfarmers.screen.helpers.WorkstationPartySlot extends net.minecraft.world.inventory.Slot {
+  public io.github.chakyl.cobblemonfarmers.screen.helpers.WorkstationPartySlot(net.minecraft.world.Container, int, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: iload_3
+       4: iload         4
+       6: invokespecial #9                  // Method net/minecraft/world/inventory/Slot."<init>":(Lnet/minecraft/world/Container;III)V
+       9: return
+
+  public boolean m_5857_(net.minecraft.world.item.ItemStack);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public boolean m_150651_(net.minecraft.world.entity.player.Player);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public java.util.Optional<net.minecraft.world.item.ItemStack> m_150641_(int, int, net.minecraft.world.entity.player.Player);
+    Code:
+       0: invokestatic  #34                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+       3: areturn
+}

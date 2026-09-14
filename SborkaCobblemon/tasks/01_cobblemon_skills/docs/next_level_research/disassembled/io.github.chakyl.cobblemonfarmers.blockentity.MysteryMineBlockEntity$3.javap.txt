@@ -1,0 +1,154 @@
+Compiled from "MysteryMineBlockEntity.java"
+class io.github.chakyl.cobblemonfarmers.blockentity.MysteryMineBlockEntity$3 implements net.minecraft.world.inventory.ContainerData {
+  final io.github.chakyl.cobblemonfarmers.blockentity.MysteryMineBlockEntity this$0;
+
+  io.github.chakyl.cobblemonfarmers.blockentity.MysteryMineBlockEntity$3(io.github.chakyl.cobblemonfarmers.blockentity.MysteryMineBlockEntity);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+       5: aload_0
+       6: invokespecial #20                 // Method java/lang/Object."<init>":()V
+       9: return
+
+  public int m_6413_(int);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 6
+
+                     0: 44
+
+                     1: 64
+
+                     2: 84
+
+                     3: 101
+
+                     4: 118
+
+                     5: 128
+
+                     6: 138
+               default: 156
+          }
+      44: aload_0
+      45: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      48: aload_0
+      49: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      52: getfield      #28                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.progress:I
+      55: invokevirtual #32                 // Method io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.getDataSendableTime:(I)Ljava/lang/Short;
+      58: invokevirtual #38                 // Method java/lang/Short.shortValue:()S
+      61: goto          157
+      64: aload_0
+      65: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      68: aload_0
+      69: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      72: getfield      #41                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.craftingTime:I
+      75: invokevirtual #32                 // Method io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.getDataSendableTime:(I)Ljava/lang/Short;
+      78: invokevirtual #38                 // Method java/lang/Short.shortValue:()S
+      81: goto          157
+      84: aload_0
+      85: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      88: getfield      #45                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.speedModifier:D
+      91: ldc2_w        #46                 // double 100.0d
+      94: dmul
+      95: invokestatic  #53                 // Method net/minecraft/util/Mth.m_14107_:(D)I
+      98: goto          157
+     101: aload_0
+     102: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+     105: getfield      #56                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.bonusSpeed:D
+     108: ldc2_w        #46                 // double 100.0d
+     111: dmul
+     112: invokestatic  #53                 // Method net/minecraft/util/Mth.m_14107_:(D)I
+     115: goto          157
+     118: aload_0
+     119: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+     122: getfield      #59                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.multChance:I
+     125: goto          157
+     128: aload_0
+     129: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+     132: getfield      #62                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.bonusMult:I
+     135: goto          157
+     138: aload_0
+     139: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+     142: getfield      #66                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.swapPriority:Z
+     145: ifeq          152
+     148: iconst_1
+     149: goto          157
+     152: iconst_0
+     153: goto          157
+     156: iconst_0
+     157: ireturn
+
+  public void m_8050_(int, int);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 6
+
+                     0: 44
+
+                     1: 55
+
+                     2: 66
+
+                     3: 82
+
+                     4: 98
+
+                     5: 109
+
+                     6: 120
+               default: 137
+          }
+      44: aload_0
+      45: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      48: iload_2
+      49: putfield      #28                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.progress:I
+      52: goto          137
+      55: aload_0
+      56: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      59: iload_2
+      60: putfield      #41                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.craftingTime:I
+      63: goto          137
+      66: aload_0
+      67: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      70: iload_2
+      71: i2d
+      72: ldc2_w        #46                 // double 100.0d
+      75: ddiv
+      76: putfield      #45                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.speedModifier:D
+      79: goto          137
+      82: aload_0
+      83: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+      86: iload_2
+      87: i2d
+      88: ldc2_w        #46                 // double 100.0d
+      91: ddiv
+      92: putfield      #56                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.bonusSpeed:D
+      95: goto          137
+      98: aload_0
+      99: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+     102: iload_2
+     103: putfield      #59                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.multChance:I
+     106: goto          137
+     109: aload_0
+     110: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+     113: iload_2
+     114: putfield      #62                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.bonusMult:I
+     117: goto          137
+     120: aload_0
+     121: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity;
+     124: iload_2
+     125: iconst_1
+     126: if_icmpne     133
+     129: iconst_1
+     130: goto          134
+     133: iconst_0
+     134: putfield      #66                 // Field io/github/chakyl/cobblemonfarmers/blockentity/MysteryMineBlockEntity.swapPriority:Z
+     137: return
+
+  public int m_6499_();
+    Code:
+       0: bipush        7
+       2: ireturn
+}

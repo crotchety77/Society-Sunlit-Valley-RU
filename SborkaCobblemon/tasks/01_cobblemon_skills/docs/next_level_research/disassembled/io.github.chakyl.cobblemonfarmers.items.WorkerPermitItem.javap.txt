@@ -1,0 +1,37 @@
+Compiled from "WorkerPermitItem.java"
+public class io.github.chakyl.cobblemonfarmers.items.WorkerPermitItem extends net.minecraft.world.item.Item {
+  public io.github.chakyl.cobblemonfarmers.items.WorkerPermitItem(net.minecraft.world.item.Item$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #12                 // Method net/minecraft/world/item/Item."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+       5: return
+
+  public net.minecraft.world.InteractionResultHolder<net.minecraft.world.item.ItemStack> m_7203_(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
+    Code:
+       0: aload_1
+       1: invokevirtual #25                 // Method net/minecraft/world/level/Level.m_5776_:()Z
+       4: ifne          37
+       7: aload_1
+       8: aload_2
+       9: invokestatic  #31                 // Method io/github/chakyl/cobblemonfarmers/utils/GeneralUtils.grantWorkerSlot:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;)V
+      12: aload_2
+      13: invokevirtual #36                 // Method net/minecraft/world/entity/player/Player.m_7500_:()Z
+      16: ifne          28
+      19: aload_2
+      20: aload_3
+      21: invokevirtual #40                 // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+      24: iconst_1
+      25: invokevirtual #46                 // Method net/minecraft/world/item/ItemStack.m_41774_:(I)V
+      28: aload_2
+      29: invokevirtual #50                 // Method net/minecraft/world/entity/player/Player.m_36335_:()Lnet/minecraft/world/item/ItemCooldowns;
+      32: aload_0
+      33: iconst_2
+      34: invokevirtual #56                 // Method net/minecraft/world/item/ItemCooldowns.m_41524_:(Lnet/minecraft/world/item/Item;I)V
+      37: aload_0
+      38: aload_1
+      39: aload_2
+      40: aload_3
+      41: invokespecial #58                 // Method net/minecraft/world/item/Item.m_7203_:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;
+      44: areturn
+}

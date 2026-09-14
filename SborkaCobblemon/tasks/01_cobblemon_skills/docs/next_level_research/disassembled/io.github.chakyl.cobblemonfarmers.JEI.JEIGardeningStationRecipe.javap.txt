@@ -1,0 +1,23 @@
+Compiled from "JEIGardeningStationRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.JEI.JEIGardeningStationRecipe {
+  final com.cobblemon.mod.common.api.types.ElementalType type;
+
+  final com.cobblemon.mod.common.api.pokemon.stats.Stats speedStat;
+
+  final int actionTime;
+
+  public io.github.chakyl.cobblemonfarmers.JEI.JEIGardeningStationRecipe(com.cobblemon.mod.common.api.types.ElementalType, com.cobblemon.mod.common.api.pokemon.stats.Stats, int);
+    Code:
+       0: aload_0
+       1: invokespecial #16                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #18                 // Field type:Lcom/cobblemon/mod/common/api/types/ElementalType;
+       9: aload_0
+      10: aload_2
+      11: putfield      #20                 // Field speedStat:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      14: aload_0
+      15: iload_3
+      16: putfield      #22                 // Field actionTime:I
+      19: return
+}

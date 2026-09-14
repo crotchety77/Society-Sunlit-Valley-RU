@@ -1,0 +1,87 @@
+Compiled from "ModItemModelProvider.java"
+public class io.github.chakyl.cobblemonfarmers.datagen.ModItemModelProvider extends net.minecraftforge.client.model.generators.ItemModelProvider {
+  public io.github.chakyl.cobblemonfarmers.datagen.ModItemModelProvider(net.minecraft.data.PackOutput, net.minecraftforge.common.data.ExistingFileHelper);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: ldc           #19                 // String cobblemon_farmers
+       4: aload_2
+       5: invokespecial #22                 // Method net/minecraftforge/client/model/generators/ItemModelProvider."<init>":(Lnet/minecraft/data/PackOutput;Ljava/lang/String;Lnet/minecraftforge/common/data/ExistingFileHelper;)V
+       8: return
+
+  protected void registerModels();
+    Code:
+       0: aload_0
+       1: getstatic     #34                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.NORMAL_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+       4: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+       7: aload_0
+       8: getstatic     #41                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.FIRE_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      11: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      14: aload_0
+      15: getstatic     #44                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.WATER_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      18: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      21: aload_0
+      22: getstatic     #47                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.GRASS_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      25: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      28: aload_0
+      29: getstatic     #50                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.FLYING_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      32: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      35: aload_0
+      36: getstatic     #53                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.FIGHTING_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      39: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      42: aload_0
+      43: getstatic     #56                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.POISON_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      46: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      49: aload_0
+      50: getstatic     #59                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.ELECTRIC_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      53: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      56: aload_0
+      57: getstatic     #62                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.GROUND_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      60: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      63: aload_0
+      64: getstatic     #65                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.ROCK_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      67: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      70: aload_0
+      71: getstatic     #68                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.PSYCHIC_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      74: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      77: aload_0
+      78: getstatic     #71                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.ICE_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      81: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      84: aload_0
+      85: getstatic     #74                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.BUG_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      88: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      91: aload_0
+      92: getstatic     #77                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.GHOST_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+      95: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+      98: aload_0
+      99: getstatic     #80                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.STEEL_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     102: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+     105: aload_0
+     106: getstatic     #83                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.DRAGON_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     109: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+     112: aload_0
+     113: getstatic     #86                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.DARK_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     116: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+     119: aload_0
+     120: getstatic     #89                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$ItemRegistry.FAIRY_TYPE_WORKER:Lnet/minecraftforge/registries/RegistryObject;
+     123: invokevirtual #38                 // Method itemModel:(Lnet/minecraftforge/registries/RegistryObject;)V
+     126: return
+
+  public void itemModel(net.minecraftforge.registries.RegistryObject<net.minecraft.world.item.Item>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #96                 // Method net/minecraftforge/registries/RegistryObject.getId:()Lnet/minecraft/resources/ResourceLocation;
+       5: invokevirtual #102                // Method net/minecraft/resources/ResourceLocation.m_135815_:()Ljava/lang/String;
+       8: ldc           #104                // String item/generated
+      10: invokevirtual #108                // Method withExistingParent:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraftforge/client/model/generators/ModelBuilder;
+      13: checkcast     #110                // class net/minecraftforge/client/model/generators/ItemModelBuilder
+      16: ldc           #112                // String layer0
+      18: aload_1
+      19: invokevirtual #96                 // Method net/minecraftforge/registries/RegistryObject.getId:()Lnet/minecraft/resources/ResourceLocation;
+      22: invokevirtual #102                // Method net/minecraft/resources/ResourceLocation.m_135815_:()Ljava/lang/String;
+      25: invokedynamic #124,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      30: invokevirtual #127                // Method net/minecraftforge/client/model/generators/ItemModelBuilder.texture:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraftforge/client/model/generators/ModelBuilder;
+      33: pop
+      34: return
+}

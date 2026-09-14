@@ -1,0 +1,34 @@
+Compiled from "DataGenerators.java"
+public class io.github.chakyl.cobblemonfarmers.datagen.DataGenerators {
+  public io.github.chakyl.cobblemonfarmers.datagen.DataGenerators();
+    Code:
+       0: aload_0
+       1: invokespecial #28                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void gatherData(net.minecraftforge.data.event.GatherDataEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #39                 // Method net/minecraftforge/data/event/GatherDataEvent.getGenerator:()Lnet/minecraft/data/DataGenerator;
+       4: astore_1
+       5: aload_1
+       6: invokevirtual #45                 // Method net/minecraft/data/DataGenerator.getPackOutput:()Lnet/minecraft/data/PackOutput;
+       9: astore_2
+      10: aload_0
+      11: invokevirtual #49                 // Method net/minecraftforge/data/event/GatherDataEvent.getExistingFileHelper:()Lnet/minecraftforge/common/data/ExistingFileHelper;
+      14: astore_3
+      15: aload_0
+      16: invokevirtual #53                 // Method net/minecraftforge/data/event/GatherDataEvent.getLookupProvider:()Ljava/util/concurrent/CompletableFuture;
+      19: astore        4
+      21: aload_1
+      22: aload_0
+      23: invokevirtual #57                 // Method net/minecraftforge/data/event/GatherDataEvent.includeClient:()Z
+      26: new           #59                 // class io/github/chakyl/cobblemonfarmers/datagen/ModItemModelProvider
+      29: dup
+      30: aload_2
+      31: aload_3
+      32: invokespecial #62                 // Method io/github/chakyl/cobblemonfarmers/datagen/ModItemModelProvider."<init>":(Lnet/minecraft/data/PackOutput;Lnet/minecraftforge/common/data/ExistingFileHelper;)V
+      35: invokevirtual #66                 // Method net/minecraft/data/DataGenerator.addProvider:(ZLnet/minecraft/data/DataProvider;)Lnet/minecraft/data/DataProvider;
+      38: pop
+      39: return
+}

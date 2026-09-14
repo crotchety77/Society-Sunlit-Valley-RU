@@ -1,0 +1,8 @@
+Compiled from "ClientEvents.java"
+public class io.github.chakyl.cobblemonfarmers.event.ClientEvents {
+  public io.github.chakyl.cobblemonfarmers.event.ClientEvents();
+    Code:
+       0: aload_0
+       1: invokespecial #12                 // Method java/lang/Object."<init>":()V
+       4: return
+}

@@ -1,0 +1,65 @@
+Compiled from "MysteryMineScreen.java"
+class io.github.chakyl.cobblemonfarmers.screen.MysteryMineScreen$TogglePriorityButton extends net.minecraft.client.gui.components.StateSwitchingButton {
+  private static final net.minecraft.network.chat.Component PRIORITIZE_PRIMARY_TYPE;
+
+  private static final net.minecraft.network.chat.Component PRIORITIZE_SECONDARY_TYPE;
+
+  final io.github.chakyl.cobblemonfarmers.screen.MysteryMineScreen this$0;
+
+  public io.github.chakyl.cobblemonfarmers.screen.MysteryMineScreen$TogglePriorityButton(io.github.chakyl.cobblemonfarmers.screen.MysteryMineScreen, int, int, int, int, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/screen/MysteryMineScreen;
+       5: aload_0
+       6: iload_2
+       7: iload_3
+       8: iload         4
+      10: iload         5
+      12: iload         6
+      14: invokespecial #20                 // Method net/minecraft/client/gui/components/StateSwitchingButton."<init>":(IIIIZ)V
+      17: aload_0
+      18: invokevirtual #24                 // Method m_257936_:()V
+      21: return
+
+  public void m_5716_(double, double);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #38                 // Field f_94609_:Z
+       5: ifne          12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: putfield      #38                 // Field f_94609_:Z
+      16: new           #40                 // class io/github/chakyl/cobblemonfarmers/network/ServerBoundSwapPriorityPacket
+      19: dup
+      20: invokespecial #42                 // Method io/github/chakyl/cobblemonfarmers/network/ServerBoundSwapPriorityPacket."<init>":()V
+      23: invokestatic  #48                 // Method io/github/chakyl/cobblemonfarmers/network/PacketHandler.sendToServer:(Ljava/lang/Object;)V
+      26: aload_0
+      27: invokevirtual #24                 // Method m_257936_:()V
+      30: return
+
+  private void m_257936_();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #38                 // Field f_94609_:Z
+       5: ifeq          14
+       8: getstatic     #53                 // Field PRIORITIZE_PRIMARY_TYPE:Lnet/minecraft/network/chat/Component;
+      11: goto          17
+      14: getstatic     #55                 // Field PRIORITIZE_SECONDARY_TYPE:Lnet/minecraft/network/chat/Component;
+      17: invokestatic  #63                 // Method net/minecraft/client/gui/components/Tooltip.m_257550_:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/client/gui/components/Tooltip;
+      20: invokevirtual #67                 // Method m_257544_:(Lnet/minecraft/client/gui/components/Tooltip;)V
+      23: return
+
+  static {};
+    Code:
+       0: ldc           #70                 // String gui.cobblemon_farmers.prioritize_primary
+       2: invokestatic  #74                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       5: putstatic     #53                 // Field PRIORITIZE_PRIMARY_TYPE:Lnet/minecraft/network/chat/Component;
+       8: ldc           #76                 // String gui.cobblemon_farmers.prioritize_secondary
+      10: invokestatic  #74                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      13: putstatic     #55                 // Field PRIORITIZE_SECONDARY_TYPE:Lnet/minecraft/network/chat/Component;
+      16: return
+}

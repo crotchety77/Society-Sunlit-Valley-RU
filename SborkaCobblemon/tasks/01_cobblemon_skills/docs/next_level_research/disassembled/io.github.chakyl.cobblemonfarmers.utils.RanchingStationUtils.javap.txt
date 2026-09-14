@@ -1,0 +1,218 @@
+Compiled from "RanchingStationUtils.java"
+public class io.github.chakyl.cobblemonfarmers.utils.RanchingStationUtils {
+  public io.github.chakyl.cobblemonfarmers.utils.RanchingStationUtils();
+    Code:
+       0: aload_0
+       1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static boolean ranchingRecipeMatches(net.minecraftforge.items.wrapper.RecipeWrapper, java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: invokevirtual #24                 // Method net/minecraftforge/items/wrapper/RecipeWrapper.m_8020_:(I)Lnet/minecraft/world/item/ItemStack;
+       5: getstatic     #30                 // Field com/cobblemon/mod/common/CobblemonItems.POKEMON_MODEL:Lcom/cobblemon/mod/common/item/PokemonItem;
+       8: invokevirtual #36                 // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+      11: ifeq          156
+      14: aload_0
+      15: iconst_0
+      16: invokevirtual #24                 // Method net/minecraftforge/items/wrapper/RecipeWrapper.m_8020_:(I)Lnet/minecraft/world/item/ItemStack;
+      19: invokevirtual #40                 // Method net/minecraft/world/item/ItemStack.m_41783_:()Lnet/minecraft/nbt/CompoundTag;
+      22: astore_3
+      23: aload_3
+      24: ifnull        156
+      27: aload_3
+      28: invokevirtual #46                 // Method net/minecraft/nbt/CompoundTag.m_128456_:()Z
+      31: ifne          156
+      34: aload_3
+      35: ldc           #48                 // String species
+      37: invokevirtual #52                 // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+      40: astore        4
+      42: aload_3
+      43: ldc           #54                 // String pokeData
+      45: invokevirtual #58                 // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      48: ldc           #60                 // String FormId
+      50: invokevirtual #52                 // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+      53: astore        5
+      55: aload_1
+      56: ldc           #62                 // String :
+      58: invokevirtual #68                 // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      61: ifeq          73
+      64: aload         4
+      66: aload_1
+      67: invokevirtual #72                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      70: goto          84
+      73: aload         4
+      75: aload_1
+      76: invokedynamic #83,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      81: invokevirtual #72                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      84: istore        6
+      86: aload_2
+      87: invokevirtual #86                 // Method java/lang/String.isEmpty:()Z
+      90: ifeq          106
+      93: aload         5
+      95: ldc           #88                 // String normal
+      97: invokevirtual #72                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     100: ifeq          106
+     103: iload         6
+     105: ireturn
+     106: aload_2
+     107: invokevirtual #86                 // Method java/lang/String.isEmpty:()Z
+     110: ifeq          115
+     113: iconst_0
+     114: ireturn
+     115: aload_3
+     116: ldc           #90                 // String aspects
+     118: invokevirtual #94                 // Method net/minecraft/nbt/CompoundTag.m_128423_:(Ljava/lang/String;)Lnet/minecraft/nbt/Tag;
+     121: checkcast     #96                 // class net/minecraft/nbt/ListTag
+     124: astore        7
+     126: aload         7
+     128: ifnonnull     133
+     131: iconst_0
+     132: ireturn
+     133: iload         6
+     135: ifeq          154
+     138: aload         7
+     140: invokevirtual #100                // Method net/minecraft/nbt/ListTag.toString:()Ljava/lang/String;
+     143: aload_2
+     144: invokevirtual #68                 // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+     147: ifeq          154
+     150: iconst_1
+     151: goto          155
+     154: iconst_0
+     155: ireturn
+     156: iconst_1
+     157: ireturn
+
+  public static net.minecraft.world.item.ItemStack applyQuality(net.minecraft.world.item.ItemStack, int);
+    Code:
+       0: iload_1
+       1: bipush        11
+       3: irem
+       4: iconst_2
+       5: idiv
+       6: iconst_2
+       7: isub
+       8: i2d
+       9: d2i
+      10: istore_2
+      11: iload_2
+      12: ifle          70
+      15: aload_0
+      16: invokevirtual #117                // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      19: astore_3
+      20: aload_3
+      21: invokevirtual #120                // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+      24: astore        4
+      26: new           #42                 // class net/minecraft/nbt/CompoundTag
+      29: dup
+      30: invokespecial #121                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+      33: astore        5
+      35: aload         5
+      37: ldc           #123                // String quality
+      39: iload_2
+      40: invokevirtual #127                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      43: aload         5
+      45: ldc           #129                // String effects
+      47: new           #96                 // class net/minecraft/nbt/ListTag
+      50: dup
+      51: invokespecial #130                // Method net/minecraft/nbt/ListTag."<init>":()V
+      54: invokevirtual #134                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      57: pop
+      58: aload         4
+      60: ldc           #136                // String quality_food
+      62: aload         5
+      64: invokevirtual #134                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      67: pop
+      68: aload_3
+      69: areturn
+      70: aload_0
+      71: areturn
+
+  public static net.minecraft.world.item.ItemStack applyMilkQuality(net.minecraft.world.item.ItemStack, int);
+    Code:
+       0: iconst_0
+       1: istore_2
+       2: iload_1
+       3: bipush        10
+       5: if_icmpge     18
+       8: iload_1
+       9: ifle          23
+      12: iload_1
+      13: iconst_5
+      14: irem
+      15: ifne          23
+      18: iconst_3
+      19: istore_2
+      20: goto          34
+      23: iload_1
+      24: bipush        11
+      26: irem
+      27: iconst_2
+      28: idiv
+      29: iconst_2
+      30: isub
+      31: i2d
+      32: d2i
+      33: istore_2
+      34: iload_2
+      35: ifle          93
+      38: aload_0
+      39: invokevirtual #117                // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      42: astore_3
+      43: aload_3
+      44: invokevirtual #120                // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+      47: astore        4
+      49: new           #42                 // class net/minecraft/nbt/CompoundTag
+      52: dup
+      53: invokespecial #121                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+      56: astore        5
+      58: aload         5
+      60: ldc           #123                // String quality
+      62: iload_2
+      63: invokevirtual #127                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      66: aload         5
+      68: ldc           #129                // String effects
+      70: new           #96                 // class net/minecraft/nbt/ListTag
+      73: dup
+      74: invokespecial #130                // Method net/minecraft/nbt/ListTag."<init>":()V
+      77: invokevirtual #134                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      80: pop
+      81: aload         4
+      83: ldc           #136                // String quality_food
+      85: aload         5
+      87: invokevirtual #134                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      90: pop
+      91: aload_3
+      92: areturn
+      93: aload_0
+      94: areturn
+
+  public static boolean compareDay(int, int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: if_icmplt     12
+       5: iload_0
+       6: iload_1
+       7: isub
+       8: iload_2
+       9: if_icmplt     16
+      12: iconst_1
+      13: goto          17
+      16: iconst_0
+      17: ireturn
+
+  public static int getDay(net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: invokevirtual #157                // Method net/minecraft/world/level/Level.m_8044_:()J
+       4: l2d
+       5: ldc2_w        #158                // double 24000.0d
+       8: ddiv
+       9: invokestatic  #165                // Method java/lang/Math.floor:(D)D
+      12: dconst_1
+      13: dadd
+      14: d2i
+      15: ireturn
+}

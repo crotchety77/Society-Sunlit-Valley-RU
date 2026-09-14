@@ -1,0 +1,174 @@
+Compiled from "EnergyPylonBlockEntityRenderer.java"
+public class io.github.chakyl.cobblemonfarmers.blockentity.renderer.EnergyPylonBlockEntityRenderer implements net.minecraft.client.renderer.blockentity.BlockEntityRenderer<io.github.chakyl.cobblemonfarmers.blockentity.EnergyPylonBlockEntity> {
+  private final java.util.Map<net.minecraft.world.item.Item, java.lang.Float> itemRotations;
+
+  public io.github.chakyl.cobblemonfarmers.blockentity.renderer.EnergyPylonBlockEntityRenderer(net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider$Context);
+    Code:
+       0: aload_0
+       1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #23                 // class java/util/HashMap
+       8: dup
+       9: invokespecial #24                 // Method java/util/HashMap."<init>":()V
+      12: putfield      #26                 // Field itemRotations:Ljava/util/Map;
+      15: return
+
+  public void render(io.github.chakyl.cobblemonfarmers.blockentity.EnergyPylonBlockEntity, float, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, int);
+    Code:
+       0: aload_1
+       1: invokevirtual #38                 // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.getWorkerEntity:()Lcom/cobblemon/mod/common/entity/pokemon/PokemonEntity;
+       4: astore        7
+       6: aload         7
+       8: ifnull        196
+      11: aload_1
+      12: invokevirtual #42                 // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.getWorkerAspects:()Ljava/util/Set;
+      15: astore        8
+      17: aload         8
+      19: ifnull        35
+      22: aload         7
+      24: invokevirtual #48                 // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.m_20088_:()Lnet/minecraft/network/syncher/SynchedEntityData;
+      27: invokestatic  #52                 // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getASPECTS:()Lnet/minecraft/network/syncher/EntityDataAccessor;
+      30: aload         8
+      32: invokevirtual #58                 // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      35: new           #62                 // class java/util/HashSet
+      38: dup
+      39: aload         7
+      41: invokevirtual #65                 // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getAspects:()Ljava/util/Set;
+      44: invokespecial #68                 // Method java/util/HashSet."<init>":(Ljava/util/Collection;)V
+      47: astore        9
+      49: aload         9
+      51: aload         7
+      53: invokevirtual #72                 // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getForm:()Lcom/cobblemon/mod/common/pokemon/FormData;
+      56: invokevirtual #77                 // Method com/cobblemon/mod/common/pokemon/FormData.getAspects:()Ljava/util/List;
+      59: invokeinterface #81,  2           // InterfaceMethod java/util/Set.addAll:(Ljava/util/Collection;)Z
+      64: pop
+      65: aload         7
+      67: invokevirtual #48                 // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.m_20088_:()Lnet/minecraft/network/syncher/SynchedEntityData;
+      70: invokestatic  #52                 // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getASPECTS:()Lnet/minecraft/network/syncher/EntityDataAccessor;
+      73: aload         9
+      75: invokevirtual #58                 // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      78: aload_1
+      79: invokevirtual #85                 // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      82: astore        10
+      84: aload_3
+      85: invokevirtual #90                 // Method com/mojang/blaze3d/vertex/PoseStack.m_85836_:()V
+      88: aload         7
+      90: invokevirtual #94                 // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getPokemon:()Lcom/cobblemon/mod/common/pokemon/Pokemon;
+      93: invokevirtual #100                // Method com/cobblemon/mod/common/pokemon/Pokemon.getSpecies:()Lcom/cobblemon/mod/common/pokemon/Species;
+      96: invokevirtual #106                // Method com/cobblemon/mod/common/pokemon/Species.getHitbox:()Lnet/minecraft/world/entity/EntityDimensions;
+      99: getfield      #112                // Field net/minecraft/world/entity/EntityDimensions.f_20377_:F
+     102: fstore        11
+     104: aload_3
+     105: aload         10
+     107: fload         11
+     109: iconst_1
+     110: invokestatic  #118                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.getPokemonOffset:(Lnet/minecraft/world/level/block/state/BlockState;FZ)F
+     113: f2d
+     114: ldc2_w        #119                // double 0.01d
+     117: aload         10
+     119: fload         11
+     121: iconst_0
+     122: invokestatic  #118                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.getPokemonOffset:(Lnet/minecraft/world/level/block/state/BlockState;FZ)F
+     125: f2d
+     126: invokevirtual #124                // Method com/mojang/blaze3d/vertex/PoseStack.m_85837_:(DDD)V
+     129: aload_3
+     130: getstatic     #130                // Field com/mojang/math/Axis.f_252436_:Lcom/mojang/math/Axis;
+     133: aload         7
+     135: invokevirtual #134                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.m_146908_:()F
+     138: invokeinterface #138,  2          // InterfaceMethod com/mojang/math/Axis.m_252977_:(F)Lorg/joml/Quaternionf;
+     143: invokevirtual #142                // Method com/mojang/blaze3d/vertex/PoseStack.m_252781_:(Lorg/joml/Quaternionf;)V
+     146: invokestatic  #148                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+     149: invokevirtual #152                // Method net/minecraft/client/Minecraft.m_91290_:()Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;
+     152: astore        12
+     154: aload         12
+     156: aload         7
+     158: invokevirtual #158                // Method net/minecraft/client/renderer/entity/EntityRenderDispatcher.m_114382_:(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/client/renderer/entity/EntityRenderer;
+     161: astore        13
+     163: aload         13
+     165: instanceof    #160                // class com/cobblemon/mod/common/client/render/pokemon/PokemonRenderer
+     168: ifeq          192
+     171: aload         13
+     173: checkcast     #160                // class com/cobblemon/mod/common/client/render/pokemon/PokemonRenderer
+     176: astore        14
+     178: aload         14
+     180: aload         7
+     182: fconst_0
+     183: fload_2
+     184: aload_3
+     185: aload         4
+     187: iload         5
+     189: invokevirtual #163                // Method com/cobblemon/mod/common/client/render/pokemon/PokemonRenderer.render:(Lcom/cobblemon/mod/common/entity/pokemon/PokemonEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+     192: aload_3
+     193: invokevirtual #172                // Method com/mojang/blaze3d/vertex/PoseStack.m_85849_:()V
+     196: aload_1
+     197: invokevirtual #176                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58898_:()Z
+     200: ifeq          245
+     203: aload_1
+     204: invokevirtual #179                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.hasBonusMult:()Z
+     207: ifeq          245
+     210: aload_1
+     211: invokevirtual #183                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+     214: invokevirtual #189                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     217: invokeinterface #194,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     222: ldc           #195                // float 0.08f
+     224: fcmpg
+     225: ifge          245
+     228: aload_1
+     229: invokevirtual #183                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+     232: aload_1
+     233: invokevirtual #199                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58899_:()Lnet/minecraft/core/BlockPos;
+     236: invokevirtual #204                // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+     239: getstatic     #210                // Field net/minecraft/core/particles/ParticleTypes.f_123809_:Lnet/minecraft/core/particles/SimpleParticleType;
+     242: invokestatic  #216                // Method io/github/chakyl/cobblemonfarmers/utils/RenderUtils.renderBonusParticles:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/particles/SimpleParticleType;)V
+     245: aload_1
+     246: invokevirtual #176                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58898_:()Z
+     249: ifeq          294
+     252: aload_1
+     253: invokevirtual #219                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.hasBonusSpeed:()Z
+     256: ifeq          294
+     259: aload_1
+     260: invokevirtual #183                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+     263: invokevirtual #189                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     266: invokeinterface #194,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     271: ldc           #220                // float 0.01f
+     273: fcmpg
+     274: ifge          294
+     277: aload_1
+     278: invokevirtual #183                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+     281: aload_1
+     282: invokevirtual #199                // Method io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity.m_58899_:()Lnet/minecraft/core/BlockPos;
+     285: invokevirtual #204                // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+     288: getstatic     #223                // Field net/minecraft/core/particles/ParticleTypes.f_123792_:Lnet/minecraft/core/particles/SimpleParticleType;
+     291: invokestatic  #216                // Method io/github/chakyl/cobblemonfarmers/utils/RenderUtils.renderBonusParticles:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/particles/SimpleParticleType;)V
+     294: return
+
+  private int getLightLevel(net.minecraft.world.level.Level, net.minecraft.core.BlockPos);
+    Code:
+       0: aload_1
+       1: getstatic     #257                // Field net/minecraft/world/level/LightLayer.BLOCK:Lnet/minecraft/world/level/LightLayer;
+       4: aload_2
+       5: invokevirtual #261                // Method net/minecraft/world/level/Level.m_45517_:(Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/BlockPos;)I
+       8: istore_3
+       9: aload_1
+      10: getstatic     #264                // Field net/minecraft/world/level/LightLayer.SKY:Lnet/minecraft/world/level/LightLayer;
+      13: aload_2
+      14: invokevirtual #261                // Method net/minecraft/world/level/Level.m_45517_:(Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/BlockPos;)I
+      17: istore        4
+      19: iload_3
+      20: iload         4
+      22: invokestatic  #270                // Method net/minecraft/client/renderer/LightTexture.m_109885_:(II)I
+      25: ireturn
+
+  public void m_6922_(net.minecraft.world.level.block.entity.BlockEntity, float, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #34                 // class io/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity
+       5: fload_2
+       6: aload_3
+       7: aload         4
+       9: iload         5
+      11: iload         6
+      13: invokevirtual #280                // Method render:(Lio/github/chakyl/cobblemonfarmers/blockentity/EnergyPylonBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V
+      16: return
+}

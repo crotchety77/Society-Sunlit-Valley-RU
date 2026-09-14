@@ -1,0 +1,99 @@
+Compiled from "RanchingStationBlockEntity.java"
+class io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity$3 implements net.minecraft.world.inventory.ContainerData {
+  final io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity this$0;
+
+  io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity$3(io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+       5: aload_0
+       6: invokespecial #20                 // Method java/lang/Object."<init>":()V
+       9: return
+
+  public int m_6413_(int);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 4
+
+                     0: 36
+
+                     1: 46
+
+                     2: 56
+
+                     3: 66
+
+                     4: 76
+               default: 86
+          }
+      36: aload_0
+      37: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      40: getfield      #28                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.dayLastMagicSheared:I
+      43: goto          87
+      46: aload_0
+      47: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      50: getfield      #31                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.dayLastForaged:I
+      53: goto          87
+      56: aload_0
+      57: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      60: getfield      #34                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.dayLastMilked:I
+      63: goto          87
+      66: aload_0
+      67: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      70: getfield      #37                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.dayLastFed:I
+      73: goto          87
+      76: aload_0
+      77: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      80: getfield      #40                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.bonusMult:I
+      83: goto          87
+      86: iconst_0
+      87: ireturn
+
+  public void m_8050_(int, int);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 4
+
+                     0: 36
+
+                     1: 47
+
+                     2: 58
+
+                     3: 69
+
+                     4: 80
+               default: 88
+          }
+      36: aload_0
+      37: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      40: iload_2
+      41: putfield      #28                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.dayLastMagicSheared:I
+      44: goto          88
+      47: aload_0
+      48: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      51: iload_2
+      52: putfield      #31                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.dayLastForaged:I
+      55: goto          88
+      58: aload_0
+      59: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      62: iload_2
+      63: putfield      #34                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.dayLastMilked:I
+      66: goto          88
+      69: aload_0
+      70: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      73: iload_2
+      74: putfield      #37                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.dayLastFed:I
+      77: goto          88
+      80: aload_0
+      81: getfield      #17                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity;
+      84: iload_2
+      85: putfield      #40                 // Field io/github/chakyl/cobblemonfarmers/blockentity/RanchingStationBlockEntity.bonusMult:I
+      88: return
+
+  public int m_6499_();
+    Code:
+       0: iconst_5
+       1: ireturn
+}

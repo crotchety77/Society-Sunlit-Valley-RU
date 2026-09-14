@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "r r",
+    "bbb",
+    "bBb"
+  ],
+  "key": {
+    "r": {
+      "item": "minecraft:lightning_rod"
+    },
+    "B": {
+      "item": "cobblemon:ultra_ball"
+    },
+    "b": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "cobblemon_farmers:energy_pylon"
+  },
+  "show_notification": true
+}

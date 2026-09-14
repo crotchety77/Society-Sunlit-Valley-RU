@@ -1,0 +1,343 @@
+Compiled from "MysteryMineRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe$Serializer implements net.minecraft.world.item.crafting.RecipeSerializer<io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe> {
+  public static final io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe$Serializer INSTANCE;
+
+  public static final net.minecraft.resources.ResourceLocation ID;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe$Serializer();
+    Code:
+       0: aload_0
+       1: invokespecial #19                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe fromJson(net.minecraft.resources.ResourceLocation, com.google.gson.JsonObject);
+    Code:
+       0: aload_2
+       1: ldc           #24                 // String results
+       3: invokestatic  #30                 // Method net/minecraft/util/GsonHelper.m_13933_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonArray;
+       6: astore_3
+       7: aload_3
+       8: invokevirtual #36                 // Method com/google/gson/JsonArray.size:()I
+      11: getstatic     #42                 // Field net/minecraft/world/item/Items.f_41852_:Lnet/minecraft/world/item/Item;
+      14: invokevirtual #48                 // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+      17: invokestatic  #54                 // Method net/minecraft/core/NonNullList.m_122780_:(ILjava/lang/Object;)Lnet/minecraft/core/NonNullList;
+      20: astore        4
+      22: new           #56                 // class java/util/ArrayList
+      25: dup
+      26: invokespecial #57                 // Method java/util/ArrayList."<init>":()V
+      29: astore        5
+      31: iconst_0
+      32: istore        6
+      34: iload         6
+      36: aload_3
+      37: invokevirtual #36                 // Method com/google/gson/JsonArray.size:()I
+      40: if_icmpge     156
+      43: new           #61                 // class com/google/gson/JsonObject
+      46: dup
+      47: invokespecial #64                 // Method com/google/gson/JsonObject."<init>":()V
+      50: astore        7
+      52: aload_3
+      53: iload         6
+      55: invokevirtual #68                 // Method com/google/gson/JsonArray.get:(I)Lcom/google/gson/JsonElement;
+      58: invokevirtual #74                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+      61: astore        8
+      63: aload         7
+      65: ldc           #76                 // String item
+      67: aload         8
+      69: ldc           #76                 // String item
+      71: invokevirtual #79                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      74: invokevirtual #83                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      77: aload         7
+      79: ldc           #85                 // String count
+      81: aload         8
+      83: ldc           #85                 // String count
+      85: invokevirtual #79                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      88: invokevirtual #83                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      91: aload         4
+      93: iload         6
+      95: aload         7
+      97: invokestatic  #91                 // Method net/minecraft/world/item/crafting/ShapedRecipe.m_151274_:(Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/ItemStack;
+     100: invokevirtual #95                 // Method net/minecraft/core/NonNullList.set:(ILjava/lang/Object;)Ljava/lang/Object;
+     103: pop
+     104: aload         8
+     106: ldc           #97                 // String weight
+     108: invokevirtual #101                // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+     111: ifeq          138
+     114: aload         5
+     116: aload         8
+     118: ldc           #97                 // String weight
+     120: invokevirtual #79                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     123: invokevirtual #104                // Method com/google/gson/JsonElement.getAsInt:()I
+     126: invokestatic  #110                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     129: invokeinterface #113,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     134: pop
+     135: goto          150
+     138: aload         5
+     140: iconst_1
+     141: invokestatic  #110                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     144: invokeinterface #113,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     149: pop
+     150: iinc          6, 1
+     153: goto          34
+     156: aload_2
+     157: ldc           #115                // String crafting_time
+     159: invokestatic  #119                // Method net/minecraft/util/GsonHelper.m_13927_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)I
+     162: istore        6
+     164: getstatic     #124                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     167: aload_2
+     168: ldc           #126                // String elemental_type
+     170: invokestatic  #130                // Method net/minecraft/util/GsonHelper.m_13906_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+     173: invokevirtual #133                // Method com/cobblemon/mod/common/api/types/ElementalTypes.get:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/types/ElementalType;
+     176: astore        7
+     178: aload_2
+     179: ldc           #135                // String speed_stat
+     181: invokestatic  #130                // Method net/minecraft/util/GsonHelper.m_13906_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+     184: invokestatic  #140                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.valueOf:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     187: astore        8
+     189: aconst_null
+     190: astore        9
+     192: aload_2
+     193: ldc           #142                // String mult_stat
+     195: invokevirtual #101                // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+     198: ifeq          212
+     201: aload_2
+     202: ldc           #142                // String mult_stat
+     204: invokestatic  #130                // Method net/minecraft/util/GsonHelper.m_13906_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+     207: invokestatic  #140                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.valueOf:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     210: astore        9
+     212: aload_2
+     213: ldc           #146                // String ingredient
+     215: invokestatic  #150                // Method net/minecraft/util/GsonHelper.m_13930_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+     218: invokestatic  #156                // Method net/minecraft/world/item/crafting/Ingredient.m_43917_:(Lcom/google/gson/JsonElement;)Lnet/minecraft/world/item/crafting/Ingredient;
+     221: astore        10
+     223: aload_2
+     224: ldc           #158                // String consume_chance
+     226: invokestatic  #162                // Method net/minecraft/util/GsonHelper.m_13915_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)F
+     229: fstore        11
+     231: new           #10                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+     234: dup
+     235: aload         10
+     237: iload         6
+     239: aload         7
+     241: aload         8
+     243: aload         9
+     245: aload         4
+     247: aload         5
+     249: fload         11
+     251: aload_1
+     252: invokespecial #165                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe."<init>":(Lnet/minecraft/world/item/crafting/Ingredient;ILcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lnet/minecraft/core/NonNullList;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;)V
+     255: areturn
+
+  public io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe fromNetwork(net.minecraft.resources.ResourceLocation, net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_2
+       1: invokestatic  #196                // Method net/minecraft/world/item/crafting/Ingredient.m_43940_:(Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Ingredient;
+       4: astore_3
+       5: aload_2
+       6: invokevirtual #201                // Method net/minecraft/network/FriendlyByteBuf.m_130242_:()I
+       9: getstatic     #42                 // Field net/minecraft/world/item/Items.f_41852_:Lnet/minecraft/world/item/Item;
+      12: invokevirtual #48                 // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+      15: invokestatic  #54                 // Method net/minecraft/core/NonNullList.m_122780_:(ILjava/lang/Object;)Lnet/minecraft/core/NonNullList;
+      18: astore        4
+      20: new           #56                 // class java/util/ArrayList
+      23: dup
+      24: invokespecial #57                 // Method java/util/ArrayList."<init>":()V
+      27: astore        5
+      29: iconst_0
+      30: istore        6
+      32: iload         6
+      34: aload         4
+      36: invokevirtual #202                // Method net/minecraft/core/NonNullList.size:()I
+      39: if_icmpge     60
+      42: aload         4
+      44: iload         6
+      46: aload_2
+      47: invokevirtual #205                // Method net/minecraft/network/FriendlyByteBuf.m_130267_:()Lnet/minecraft/world/item/ItemStack;
+      50: invokevirtual #95                 // Method net/minecraft/core/NonNullList.set:(ILjava/lang/Object;)Ljava/lang/Object;
+      53: pop
+      54: iinc          6, 1
+      57: goto          32
+      60: iconst_0
+      61: istore        6
+      63: iload         6
+      65: aload         4
+      67: invokevirtual #202                // Method net/minecraft/core/NonNullList.size:()I
+      70: if_icmpge     94
+      73: aload         5
+      75: aload_2
+      76: invokevirtual #201                // Method net/minecraft/network/FriendlyByteBuf.m_130242_:()I
+      79: invokestatic  #110                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      82: invokeinterface #113,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      87: pop
+      88: iinc          6, 1
+      91: goto          63
+      94: aload_2
+      95: invokevirtual #201                // Method net/minecraft/network/FriendlyByteBuf.m_130242_:()I
+      98: istore        6
+     100: getstatic     #124                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     103: aload_2
+     104: sipush        128
+     107: invokevirtual #209                // Method net/minecraft/network/FriendlyByteBuf.m_130136_:(I)Ljava/lang/String;
+     110: invokevirtual #133                // Method com/cobblemon/mod/common/api/types/ElementalTypes.get:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/types/ElementalType;
+     113: astore        7
+     115: aload_2
+     116: ldc           #137                // class com/cobblemon/mod/common/api/pokemon/stats/Stats
+     118: invokevirtual #213                // Method net/minecraft/network/FriendlyByteBuf.m_130066_:(Ljava/lang/Class;)Ljava/lang/Enum;
+     121: checkcast     #137                // class com/cobblemon/mod/common/api/pokemon/stats/Stats
+     124: astore        8
+     126: aconst_null
+     127: astore        9
+     129: aload_2
+     130: invokevirtual #217                // Method net/minecraft/network/FriendlyByteBuf.readBoolean:()Z
+     133: ifeq          147
+     136: aload_2
+     137: ldc           #137                // class com/cobblemon/mod/common/api/pokemon/stats/Stats
+     139: invokevirtual #213                // Method net/minecraft/network/FriendlyByteBuf.m_130066_:(Ljava/lang/Class;)Ljava/lang/Enum;
+     142: checkcast     #137                // class com/cobblemon/mod/common/api/pokemon/stats/Stats
+     145: astore        9
+     147: aload_2
+     148: invokevirtual #221                // Method net/minecraft/network/FriendlyByteBuf.readFloat:()F
+     151: fstore        10
+     153: new           #10                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+     156: dup
+     157: aload_3
+     158: iload         6
+     160: aload         7
+     162: aload         8
+     164: aload         9
+     166: aload         4
+     168: aload         5
+     170: fload         10
+     172: aload_1
+     173: invokespecial #165                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe."<init>":(Lnet/minecraft/world/item/crafting/Ingredient;ILcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lnet/minecraft/core/NonNullList;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;)V
+     176: areturn
+
+  public void toNetwork(net.minecraft.network.FriendlyByteBuf, io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe);
+    Code:
+       0: aload_2
+       1: getfield      #228                // Field io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: aload_1
+       5: invokevirtual #232                // Method net/minecraft/world/item/crafting/Ingredient.m_43923_:(Lnet/minecraft/network/FriendlyByteBuf;)V
+       8: aload_1
+       9: aload_2
+      10: aconst_null
+      11: invokevirtual #236                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getResults:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/core/NonNullList;
+      14: invokevirtual #202                // Method net/minecraft/core/NonNullList.size:()I
+      17: invokevirtual #240                // Method net/minecraft/network/FriendlyByteBuf.m_130130_:(I)Lnet/minecraft/network/FriendlyByteBuf;
+      20: pop
+      21: aload_2
+      22: aconst_null
+      23: invokevirtual #236                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getResults:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/core/NonNullList;
+      26: invokevirtual #244                // Method net/minecraft/core/NonNullList.iterator:()Ljava/util/Iterator;
+      29: astore_3
+      30: aload_3
+      31: invokeinterface #249,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      36: ifeq          61
+      39: aload_3
+      40: invokeinterface #253,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      45: checkcast     #255                // class net/minecraft/world/item/ItemStack
+      48: astore        4
+      50: aload_1
+      51: aload         4
+      53: iconst_0
+      54: invokevirtual #259                // Method net/minecraft/network/FriendlyByteBuf.writeItemStack:(Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/network/FriendlyByteBuf;
+      57: pop
+      58: goto          30
+      61: aload_2
+      62: aconst_null
+      63: invokevirtual #263                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getWeights:(Lnet/minecraft/core/RegistryAccess;)Ljava/util/List;
+      66: invokeinterface #264,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      71: astore_3
+      72: aload_3
+      73: invokeinterface #249,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      78: ifeq          105
+      81: aload_3
+      82: invokeinterface #253,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      87: checkcast     #106                // class java/lang/Integer
+      90: astore        4
+      92: aload_1
+      93: aload         4
+      95: invokevirtual #267                // Method java/lang/Integer.intValue:()I
+      98: invokevirtual #240                // Method net/minecraft/network/FriendlyByteBuf.m_130130_:(I)Lnet/minecraft/network/FriendlyByteBuf;
+     101: pop
+     102: goto          72
+     105: aload_1
+     106: aload_2
+     107: invokevirtual #270                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getCraftingTime:()I
+     110: invokevirtual #240                // Method net/minecraft/network/FriendlyByteBuf.m_130130_:(I)Lnet/minecraft/network/FriendlyByteBuf;
+     113: pop
+     114: aload_1
+     115: aload_2
+     116: invokevirtual #274                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getElementalType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     119: invokevirtual #278                // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+     122: sipush        128
+     125: invokevirtual #282                // Method net/minecraft/network/FriendlyByteBuf.m_130072_:(Ljava/lang/String;I)Lnet/minecraft/network/FriendlyByteBuf;
+     128: pop
+     129: aload_1
+     130: aload_2
+     131: invokevirtual #286                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getSpeedStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     134: invokevirtual #290                // Method net/minecraft/network/FriendlyByteBuf.m_130068_:(Ljava/lang/Enum;)Lnet/minecraft/network/FriendlyByteBuf;
+     137: pop
+     138: aload_1
+     139: aload_2
+     140: invokevirtual #293                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     143: ifnull        150
+     146: iconst_1
+     147: goto          151
+     150: iconst_0
+     151: invokevirtual #297                // Method net/minecraft/network/FriendlyByteBuf.writeBoolean:(Z)Lio/netty/buffer/ByteBuf;
+     154: pop
+     155: aload_2
+     156: invokevirtual #293                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     159: ifnull        171
+     162: aload_1
+     163: aload_2
+     164: invokevirtual #293                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getMultStat:()Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     167: invokevirtual #290                // Method net/minecraft/network/FriendlyByteBuf.m_130068_:(Ljava/lang/Enum;)Lnet/minecraft/network/FriendlyByteBuf;
+     170: pop
+     171: aload_1
+     172: aload_2
+     173: invokevirtual #300                // Method io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe.getConsumeChance:()F
+     176: invokevirtual #304                // Method net/minecraft/network/FriendlyByteBuf.writeFloat:(F)Lio/netty/buffer/ByteBuf;
+     179: pop
+     180: return
+
+  public void m_6178_(net.minecraft.network.FriendlyByteBuf, net.minecraft.world.item.crafting.Recipe);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: checkcast     #10                 // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe
+       6: invokevirtual #313                // Method toNetwork:(Lnet/minecraft/network/FriendlyByteBuf;Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe;)V
+       9: return
+
+  public net.minecraft.world.item.crafting.Recipe m_8005_(net.minecraft.resources.ResourceLocation, net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #317                // Method fromNetwork:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe;
+       6: areturn
+
+  public net.minecraft.world.item.crafting.Recipe m_6729_(net.minecraft.resources.ResourceLocation, com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #321                // Method fromJson:(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe;
+       6: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Serializer
+       3: dup
+       4: invokespecial #323                // Method "<init>":()V
+       7: putstatic     #325                // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Serializer;
+      10: new           #59                 // class net/minecraft/resources/ResourceLocation
+      13: dup
+      14: ldc_w         #327                // String cobblemon_farmers
+      17: ldc_w         #329                // String mystery_mine
+      20: invokespecial #332                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      23: putstatic     #334                // Field ID:Lnet/minecraft/resources/ResourceLocation;
+      26: return
+}

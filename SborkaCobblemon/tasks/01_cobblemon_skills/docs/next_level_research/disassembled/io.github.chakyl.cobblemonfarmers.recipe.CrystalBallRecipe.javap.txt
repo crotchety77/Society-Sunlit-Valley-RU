@@ -1,0 +1,134 @@
+Compiled from "CrystalBallRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe implements net.minecraft.world.item.crafting.Recipe<net.minecraftforge.items.wrapper.RecipeWrapper> {
+  private final net.minecraft.world.item.crafting.Ingredient ingredient;
+
+  private final java.util.List<com.cobblemon.mod.common.api.types.ElementalType> affectedTypes;
+
+  private final float consumeChance;
+
+  private final float bonusChance;
+
+  private final net.minecraft.resources.ResourceLocation id;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe(net.minecraft.world.item.crafting.Ingredient, java.util.List<com.cobblemon.mod.common.api.types.ElementalType>, float, float, net.minecraft.resources.ResourceLocation);
+    Code:
+       0: aload_0
+       1: invokespecial #35                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #37                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       9: aload_0
+      10: aload_2
+      11: putfield      #39                 // Field affectedTypes:Ljava/util/List;
+      14: aload_0
+      15: fload_3
+      16: putfield      #41                 // Field consumeChance:F
+      19: aload_0
+      20: fload         4
+      22: putfield      #43                 // Field bonusChance:F
+      25: aload_0
+      26: aload         5
+      28: putfield      #45                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+      31: return
+
+  public boolean matches(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: getfield      #37                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: aload_1
+       5: iconst_0
+       6: invokevirtual #55                 // Method net/minecraftforge/items/wrapper/RecipeWrapper.m_8020_:(I)Lnet/minecraft/world/item/ItemStack;
+       9: invokevirtual #61                 // Method net/minecraft/world/item/crafting/Ingredient.test:(Lnet/minecraft/world/item/ItemStack;)Z
+      12: ireturn
+
+  public net.minecraft.world.item.ItemStack assemble(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.core.RegistryAccess);
+    Code:
+       0: getstatic     #73                 // Field net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+       3: areturn
+
+  public boolean m_8004_(int, int);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public net.minecraft.world.item.ItemStack m_8043_(net.minecraft.core.RegistryAccess);
+    Code:
+       0: getstatic     #73                 // Field net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+       3: areturn
+
+  public net.minecraft.world.item.crafting.Ingredient getIngredient();
+    Code:
+       0: aload_0
+       1: getfield      #37                 // Field ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: areturn
+
+  public java.util.List<com.cobblemon.mod.common.api.types.ElementalType> getAffectedTypes();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field affectedTypes:Ljava/util/List;
+       4: areturn
+
+  public boolean canAffectType(com.cobblemon.mod.common.api.types.ElementalType);
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field affectedTypes:Ljava/util/List;
+       4: invokeinterface #96,  1           // InterfaceMethod java/util/List.isEmpty:()Z
+       9: ifne          25
+      12: aload_0
+      13: getfield      #39                 // Field affectedTypes:Ljava/util/List;
+      16: aload_1
+      17: invokeinterface #100,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      22: ifeq          29
+      25: iconst_1
+      26: goto          30
+      29: iconst_0
+      30: ireturn
+
+  public float getConsumeChance();
+    Code:
+       0: aload_0
+       1: getfield      #41                 // Field consumeChance:F
+       4: freturn
+
+  public float getBonusChance();
+    Code:
+       0: aload_0
+       1: getfield      #43                 // Field bonusChance:F
+       4: freturn
+
+  public net.minecraft.resources.ResourceLocation m_6423_();
+    Code:
+       0: aload_0
+       1: getfield      #45                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+       4: areturn
+
+  public net.minecraft.world.item.crafting.RecipeSerializer<?> m_7707_();
+    Code:
+       0: getstatic     #114                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$RecipeRegistry.CRYSTAL_BALL_SERIALIZER:Lnet/minecraftforge/registries/RegistryObject;
+       3: invokevirtual #120                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       6: checkcast     #122                // class net/minecraft/world/item/crafting/RecipeSerializer
+       9: areturn
+
+  public net.minecraft.world.item.crafting.RecipeType<?> m_6671_();
+    Code:
+       0: getstatic     #129                // Field io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe$Type;
+       3: areturn
+
+  public net.minecraft.world.item.ItemStack m_5874_(net.minecraft.world.Container, net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #51                 // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #133                // Method assemble:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+       9: areturn
+
+  public boolean m_5818_(net.minecraft.world.Container, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #51                 // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #137                // Method matches:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/world/level/Level;)Z
+       9: ireturn
+}

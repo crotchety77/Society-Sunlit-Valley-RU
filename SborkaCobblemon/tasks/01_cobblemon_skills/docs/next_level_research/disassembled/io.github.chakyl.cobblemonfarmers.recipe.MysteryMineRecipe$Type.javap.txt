@@ -1,0 +1,20 @@
+Compiled from "MysteryMineRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe$Type implements net.minecraft.world.item.crafting.RecipeType<io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe> {
+  public static final io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe$Type INSTANCE;
+
+  public static final java.lang.String ID = "mystery_mine";
+
+  public io.github.chakyl.cobblemonfarmers.recipe.MysteryMineRecipe$Type();
+    Code:
+       0: aload_0
+       1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  static {};
+    Code:
+       0: new           #2                  // class io/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type
+       3: dup
+       4: invokespecial #24                 // Method "<init>":()V
+       7: putstatic     #26                 // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/MysteryMineRecipe$Type;
+      10: return
+}

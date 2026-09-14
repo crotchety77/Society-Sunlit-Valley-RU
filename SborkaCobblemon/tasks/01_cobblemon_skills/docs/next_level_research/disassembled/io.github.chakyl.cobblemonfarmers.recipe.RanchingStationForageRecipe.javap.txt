@@ -1,0 +1,185 @@
+Compiled from "RanchingStationForageRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.RanchingStationForageRecipe implements net.minecraft.world.item.crafting.Recipe<net.minecraftforge.items.wrapper.RecipeWrapper> {
+  private final java.lang.String pokemon;
+
+  private final java.lang.String form;
+
+  private final net.minecraft.core.NonNullList<io.github.chakyl.cobblemonfarmers.utils.RanchingForage> forages;
+
+  private final net.minecraft.resources.ResourceLocation id;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.RanchingStationForageRecipe(java.lang.String, java.lang.String, net.minecraft.core.NonNullList<io.github.chakyl.cobblemonfarmers.utils.RanchingForage>, net.minecraft.resources.ResourceLocation);
+    Code:
+       0: aload_0
+       1: invokespecial #33                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #35                 // Field pokemon:Ljava/lang/String;
+       9: aload_0
+      10: aload_2
+      11: putfield      #37                 // Field form:Ljava/lang/String;
+      14: aload_0
+      15: aload_3
+      16: putfield      #39                 // Field forages:Lnet/minecraft/core/NonNullList;
+      19: aload_0
+      20: aload         4
+      22: putfield      #41                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+      25: return
+
+  public boolean matches(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.world.level.Level);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #35                 // Field pokemon:Ljava/lang/String;
+       5: aload_0
+       6: getfield      #37                 // Field form:Ljava/lang/String;
+       9: invokestatic  #51                 // Method io/github/chakyl/cobblemonfarmers/utils/RanchingStationUtils.ranchingRecipeMatches:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Ljava/lang/String;Ljava/lang/String;)Z
+      12: ireturn
+
+  public net.minecraft.world.item.ItemStack assemble(net.minecraftforge.items.wrapper.RecipeWrapper, net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field forages:Lnet/minecraft/core/NonNullList;
+       4: iconst_0
+       5: invokevirtual #63                 // Method net/minecraft/core/NonNullList.get:(I)Ljava/lang/Object;
+       8: checkcast     #65                 // class io/github/chakyl/cobblemonfarmers/utils/RanchingForage
+      11: invokevirtual #69                 // Method io/github/chakyl/cobblemonfarmers/utils/RanchingForage.getItem:()Lnet/minecraft/world/item/ItemStack;
+      14: invokevirtual #74                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      17: areturn
+
+  public boolean m_8004_(int, int);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public net.minecraft.world.item.ItemStack m_8043_(net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field forages:Lnet/minecraft/core/NonNullList;
+       4: iconst_0
+       5: invokevirtual #63                 // Method net/minecraft/core/NonNullList.get:(I)Ljava/lang/Object;
+       8: checkcast     #65                 // class io/github/chakyl/cobblemonfarmers/utils/RanchingForage
+      11: invokevirtual #69                 // Method io/github/chakyl/cobblemonfarmers/utils/RanchingForage.getItem:()Lnet/minecraft/world/item/ItemStack;
+      14: invokevirtual #74                 // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      17: areturn
+
+  public net.minecraft.resources.ResourceLocation m_6423_();
+    Code:
+       0: aload_0
+       1: getfield      #41                 // Field id:Lnet/minecraft/resources/ResourceLocation;
+       4: areturn
+
+  public net.minecraft.world.item.crafting.RecipeSerializer<?> m_7707_();
+    Code:
+       0: getstatic     #92                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$RecipeRegistry.RANCHING_STATION_FORAGE_SERIALIZER:Lnet/minecraftforge/registries/RegistryObject;
+       3: invokevirtual #97                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       6: checkcast     #99                 // class net/minecraft/world/item/crafting/RecipeSerializer
+       9: areturn
+
+  public java.util.List<net.minecraft.world.item.ItemStack> getScaledDrops(int, boolean, double);
+    Code:
+       0: new           #104                // class java/util/ArrayList
+       3: dup
+       4: aload_0
+       5: getfield      #39                 // Field forages:Lnet/minecraft/core/NonNullList;
+       8: invokevirtual #108                // Method net/minecraft/core/NonNullList.size:()I
+      11: invokespecial #111                // Method java/util/ArrayList."<init>":(I)V
+      14: astore        5
+      16: aload_0
+      17: getfield      #39                 // Field forages:Lnet/minecraft/core/NonNullList;
+      20: invokevirtual #115                // Method net/minecraft/core/NonNullList.iterator:()Ljava/util/Iterator;
+      23: astore        6
+      25: aload         6
+      27: invokeinterface #123,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      32: ifeq          133
+      35: aload         6
+      37: invokeinterface #126,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      42: checkcast     #65                 // class io/github/chakyl/cobblemonfarmers/utils/RanchingForage
+      45: astore        7
+      47: aload         7
+      49: invokevirtual #129                // Method io/github/chakyl/cobblemonfarmers/utils/RanchingForage.getMinHearts:()I
+      52: iload_1
+      53: if_icmpgt     130
+      56: invokestatic  #135                // Method java/lang/Math.random:()D
+      59: aload         7
+      61: invokevirtual #138                // Method io/github/chakyl/cobblemonfarmers/utils/RanchingForage.getChance:()D
+      64: iload_2
+      65: ifeq          72
+      68: iconst_2
+      69: goto          73
+      72: iconst_1
+      73: i2d
+      74: dmul
+      75: dload_3
+      76: dconst_0
+      77: dcmpl
+      78: ifle          91
+      81: dconst_1
+      82: dload_3
+      83: ldc2_w        #139                // double 0.01d
+      86: dmul
+      87: dadd
+      88: goto          92
+      91: dconst_1
+      92: dmul
+      93: dcmpg
+      94: ifge          130
+      97: aload         7
+      99: invokevirtual #69                 // Method io/github/chakyl/cobblemonfarmers/utils/RanchingForage.getItem:()Lnet/minecraft/world/item/ItemStack;
+     102: astore        8
+     104: aload         7
+     106: invokevirtual #143                // Method io/github/chakyl/cobblemonfarmers/utils/RanchingForage.hasQuality:()Z
+     109: ifeq          120
+     112: aload         8
+     114: iload_1
+     115: invokestatic  #147                // Method io/github/chakyl/cobblemonfarmers/utils/RanchingStationUtils.applyQuality:(Lnet/minecraft/world/item/ItemStack;I)Lnet/minecraft/world/item/ItemStack;
+     118: astore        8
+     120: aload         5
+     122: aload         8
+     124: invokeinterface #151,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     129: pop
+     130: goto          25
+     133: aload         5
+     135: areturn
+
+  public java.lang.String getPokemon();
+    Code:
+       0: aload_0
+       1: getfield      #35                 // Field pokemon:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getForm();
+    Code:
+       0: aload_0
+       1: getfield      #37                 // Field form:Ljava/lang/String;
+       4: areturn
+
+  public net.minecraft.core.NonNullList<io.github.chakyl.cobblemonfarmers.utils.RanchingForage> getForages(net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field forages:Lnet/minecraft/core/NonNullList;
+       4: areturn
+
+  public net.minecraft.world.item.crafting.RecipeType<?> m_6671_();
+    Code:
+       0: getstatic     #176                // Field io/github/chakyl/cobblemonfarmers/recipe/RanchingStationForageRecipe$Type.INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/RanchingStationForageRecipe$Type;
+       3: areturn
+
+  public net.minecraft.world.item.ItemStack m_5874_(net.minecraft.world.Container, net.minecraft.core.RegistryAccess);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #180                // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #182                // Method assemble:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+       9: areturn
+
+  public boolean m_5818_(net.minecraft.world.Container, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #180                // class net/minecraftforge/items/wrapper/RecipeWrapper
+       5: aload_2
+       6: invokevirtual #186                // Method matches:(Lnet/minecraftforge/items/wrapper/RecipeWrapper;Lnet/minecraft/world/level/Level;)Z
+       9: ireturn
+}

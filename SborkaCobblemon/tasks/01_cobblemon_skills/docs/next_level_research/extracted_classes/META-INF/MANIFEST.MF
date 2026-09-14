@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: cobblemon_farmers
+Specification-Vendor: Chakyl
+Specification-Version: 1
+Implementation-Title: cobble-workers
+Implementation-Version: 2.4
+Implementation-Vendor: Chakyl
+Implementation-Timestamp: 2026-08-23T14:10:05-0400
+MixinConfigs: mixins.cobblemonfarmers.json
+

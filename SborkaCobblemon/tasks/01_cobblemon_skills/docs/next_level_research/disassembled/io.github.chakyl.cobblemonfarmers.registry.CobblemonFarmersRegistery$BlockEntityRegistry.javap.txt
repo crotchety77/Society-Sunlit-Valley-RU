@@ -1,0 +1,158 @@
+Compiled from "CobblemonFarmersRegistery.java"
+public final class io.github.chakyl.cobblemonfarmers.registry.CobblemonFarmersRegistery$BlockEntityRegistry {
+  public static final net.minecraftforge.registries.RegistryObject<net.minecraft.world.level.block.entity.BlockEntityType<io.github.chakyl.cobblemonfarmers.blockentity.CraftStationBlockEntity>> CRAFT_STATION;
+
+  public static final net.minecraftforge.registries.RegistryObject<net.minecraft.world.level.block.entity.BlockEntityType<io.github.chakyl.cobblemonfarmers.blockentity.GardeningStationBlockEntity>> GARDENING_STATION;
+
+  public static final net.minecraftforge.registries.RegistryObject<net.minecraft.world.level.block.entity.BlockEntityType<io.github.chakyl.cobblemonfarmers.blockentity.MysteryMineBlockEntity>> MYSTERY_MINE;
+
+  public static final net.minecraftforge.registries.RegistryObject<net.minecraft.world.level.block.entity.BlockEntityType<io.github.chakyl.cobblemonfarmers.blockentity.RanchingStationBlockEntity>> RANCHING_STATION;
+
+  public static final net.minecraftforge.registries.RegistryObject<net.minecraft.world.level.block.entity.BlockEntityType<io.github.chakyl.cobblemonfarmers.blockentity.CrystalBallBlockEntity>> CRYSTAL_BALL;
+
+  public static final net.minecraftforge.registries.RegistryObject<net.minecraft.world.level.block.entity.BlockEntityType<io.github.chakyl.cobblemonfarmers.blockentity.EnergyPylonBlockEntity>> ENERGY_PYLON;
+
+  public io.github.chakyl.cobblemonfarmers.registry.CobblemonFarmersRegistery$BlockEntityRegistry();
+    Code:
+       0: aload_0
+       1: invokespecial #41                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static void register();
+    Code:
+       0: getstatic     #48                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery.BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+       3: invokestatic  #54                 // Method net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext.get:()Lnet/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext;
+       6: invokevirtual #58                 // Method net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext.getModEventBus:()Lnet/minecraftforge/eventbus/api/IEventBus;
+       9: invokevirtual #63                 // Method net/minecraftforge/registries/DeferredRegister.register:(Lnet/minecraftforge/eventbus/api/IEventBus;)V
+      12: return
+
+  private static net.minecraft.world.level.block.entity.BlockEntityType lambda$static$5();
+    Code:
+       0: invokedynamic #86,  0             // InvokeDynamic #0:m_155267_:()Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;
+       5: iconst_1
+       6: anewarray     #88                 // class net/minecraft/world/level/block/Block
+       9: dup
+      10: iconst_0
+      11: getstatic     #90                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.ENERGY_PYLON:Lnet/minecraftforge/registries/RegistryObject;
+      14: invokevirtual #95                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      17: checkcast     #88                 // class net/minecraft/world/level/block/Block
+      20: aastore
+      21: invokestatic  #99                 // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_155273_:(Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/entity/BlockEntityType$Builder;
+      24: aconst_null
+      25: invokevirtual #103                // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_58966_:(Lcom/mojang/datafixers/types/Type;)Lnet/minecraft/world/level/block/entity/BlockEntityType;
+      28: areturn
+
+  private static net.minecraft.world.level.block.entity.BlockEntityType lambda$static$4();
+    Code:
+       0: invokedynamic #111,  0            // InvokeDynamic #1:m_155267_:()Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;
+       5: iconst_1
+       6: anewarray     #88                 // class net/minecraft/world/level/block/Block
+       9: dup
+      10: iconst_0
+      11: getstatic     #113                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.CRYSTAL_BALL:Lnet/minecraftforge/registries/RegistryObject;
+      14: invokevirtual #95                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      17: checkcast     #88                 // class net/minecraft/world/level/block/Block
+      20: aastore
+      21: invokestatic  #99                 // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_155273_:(Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/entity/BlockEntityType$Builder;
+      24: aconst_null
+      25: invokevirtual #103                // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_58966_:(Lcom/mojang/datafixers/types/Type;)Lnet/minecraft/world/level/block/entity/BlockEntityType;
+      28: areturn
+
+  private static net.minecraft.world.level.block.entity.BlockEntityType lambda$static$3();
+    Code:
+       0: invokedynamic #121,  0            // InvokeDynamic #2:m_155267_:()Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;
+       5: iconst_1
+       6: anewarray     #88                 // class net/minecraft/world/level/block/Block
+       9: dup
+      10: iconst_0
+      11: getstatic     #123                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.RANCHING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      14: invokevirtual #95                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      17: checkcast     #88                 // class net/minecraft/world/level/block/Block
+      20: aastore
+      21: invokestatic  #99                 // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_155273_:(Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/entity/BlockEntityType$Builder;
+      24: aconst_null
+      25: invokevirtual #103                // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_58966_:(Lcom/mojang/datafixers/types/Type;)Lnet/minecraft/world/level/block/entity/BlockEntityType;
+      28: areturn
+
+  private static net.minecraft.world.level.block.entity.BlockEntityType lambda$static$2();
+    Code:
+       0: invokedynamic #131,  0            // InvokeDynamic #3:m_155267_:()Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;
+       5: iconst_1
+       6: anewarray     #88                 // class net/minecraft/world/level/block/Block
+       9: dup
+      10: iconst_0
+      11: getstatic     #133                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.MYSTERY_MINE:Lnet/minecraftforge/registries/RegistryObject;
+      14: invokevirtual #95                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      17: checkcast     #88                 // class net/minecraft/world/level/block/Block
+      20: aastore
+      21: invokestatic  #99                 // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_155273_:(Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/entity/BlockEntityType$Builder;
+      24: aconst_null
+      25: invokevirtual #103                // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_58966_:(Lcom/mojang/datafixers/types/Type;)Lnet/minecraft/world/level/block/entity/BlockEntityType;
+      28: areturn
+
+  private static net.minecraft.world.level.block.entity.BlockEntityType lambda$static$1();
+    Code:
+       0: invokedynamic #141,  0            // InvokeDynamic #4:m_155267_:()Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;
+       5: iconst_1
+       6: anewarray     #88                 // class net/minecraft/world/level/block/Block
+       9: dup
+      10: iconst_0
+      11: getstatic     #143                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.GARDENING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      14: invokevirtual #95                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      17: checkcast     #88                 // class net/minecraft/world/level/block/Block
+      20: aastore
+      21: invokestatic  #99                 // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_155273_:(Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/entity/BlockEntityType$Builder;
+      24: aconst_null
+      25: invokevirtual #103                // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_58966_:(Lcom/mojang/datafixers/types/Type;)Lnet/minecraft/world/level/block/entity/BlockEntityType;
+      28: areturn
+
+  private static net.minecraft.world.level.block.entity.BlockEntityType lambda$static$0();
+    Code:
+       0: invokedynamic #151,  0            // InvokeDynamic #5:m_155267_:()Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;
+       5: iconst_1
+       6: anewarray     #88                 // class net/minecraft/world/level/block/Block
+       9: dup
+      10: iconst_0
+      11: getstatic     #153                // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery$BlockRegistry.CRAFT_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      14: invokevirtual #95                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      17: checkcast     #88                 // class net/minecraft/world/level/block/Block
+      20: aastore
+      21: invokestatic  #99                 // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_155273_:(Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/entity/BlockEntityType$Builder;
+      24: aconst_null
+      25: invokevirtual #103                // Method net/minecraft/world/level/block/entity/BlockEntityType$Builder.m_58966_:(Lcom/mojang/datafixers/types/Type;)Lnet/minecraft/world/level/block/entity/BlockEntityType;
+      28: areturn
+
+  static {};
+    Code:
+       0: getstatic     #48                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery.BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+       3: ldc           #156                // String craft_station
+       5: invokedynamic #164,  0            // InvokeDynamic #6:get:()Ljava/util/function/Supplier;
+      10: invokevirtual #167                // Method net/minecraftforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/registries/RegistryObject;
+      13: putstatic     #168                // Field CRAFT_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      16: getstatic     #48                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery.BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+      19: ldc           #170                // String gardening_station
+      21: invokedynamic #174,  0            // InvokeDynamic #7:get:()Ljava/util/function/Supplier;
+      26: invokevirtual #167                // Method net/minecraftforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/registries/RegistryObject;
+      29: putstatic     #175                // Field GARDENING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      32: getstatic     #48                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery.BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+      35: ldc           #177                // String mystery_mine
+      37: invokedynamic #181,  0            // InvokeDynamic #8:get:()Ljava/util/function/Supplier;
+      42: invokevirtual #167                // Method net/minecraftforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/registries/RegistryObject;
+      45: putstatic     #182                // Field MYSTERY_MINE:Lnet/minecraftforge/registries/RegistryObject;
+      48: getstatic     #48                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery.BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+      51: ldc           #184                // String ranching_station
+      53: invokedynamic #188,  0            // InvokeDynamic #9:get:()Ljava/util/function/Supplier;
+      58: invokevirtual #167                // Method net/minecraftforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/registries/RegistryObject;
+      61: putstatic     #189                // Field RANCHING_STATION:Lnet/minecraftforge/registries/RegistryObject;
+      64: getstatic     #48                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery.BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+      67: ldc           #191                // String crystal_ball
+      69: invokedynamic #195,  0            // InvokeDynamic #10:get:()Ljava/util/function/Supplier;
+      74: invokevirtual #167                // Method net/minecraftforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/registries/RegistryObject;
+      77: putstatic     #196                // Field CRYSTAL_BALL:Lnet/minecraftforge/registries/RegistryObject;
+      80: getstatic     #48                 // Field io/github/chakyl/cobblemonfarmers/registry/CobblemonFarmersRegistery.BLOCK_ENTITY_TYPES:Lnet/minecraftforge/registries/DeferredRegister;
+      83: ldc           #198                // String energy_pylon
+      85: invokedynamic #202,  0            // InvokeDynamic #11:get:()Ljava/util/function/Supplier;
+      90: invokevirtual #167                // Method net/minecraftforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/registries/RegistryObject;
+      93: putstatic     #203                // Field ENERGY_PYLON:Lnet/minecraftforge/registries/RegistryObject;
+      96: return
+}

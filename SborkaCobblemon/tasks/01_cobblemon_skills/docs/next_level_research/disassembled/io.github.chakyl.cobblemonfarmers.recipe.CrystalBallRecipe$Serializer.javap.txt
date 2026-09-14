@@ -1,0 +1,186 @@
+Compiled from "CrystalBallRecipe.java"
+public class io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe$Serializer implements net.minecraft.world.item.crafting.RecipeSerializer<io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe> {
+  public static final io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe$Serializer INSTANCE;
+
+  public static final net.minecraft.resources.ResourceLocation ID;
+
+  public io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe$Serializer();
+    Code:
+       0: aload_0
+       1: invokespecial #19                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe fromJson(net.minecraft.resources.ResourceLocation, com.google.gson.JsonObject);
+    Code:
+       0: aload_2
+       1: ldc           #24                 // String ingredient
+       3: invokestatic  #30                 // Method net/minecraft/util/GsonHelper.m_13930_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+       6: invokestatic  #36                 // Method net/minecraft/world/item/crafting/Ingredient.m_43917_:(Lcom/google/gson/JsonElement;)Lnet/minecraft/world/item/crafting/Ingredient;
+       9: astore_3
+      10: aload_2
+      11: ldc           #38                 // String affected_types
+      13: invokestatic  #42                 // Method net/minecraft/util/GsonHelper.m_13933_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonArray;
+      16: astore        4
+      18: new           #44                 // class java/util/ArrayList
+      21: dup
+      22: invokespecial #45                 // Method java/util/ArrayList."<init>":()V
+      25: astore        5
+      27: iconst_0
+      28: istore        6
+      30: iload         6
+      32: aload         4
+      34: invokevirtual #57                 // Method com/google/gson/JsonArray.size:()I
+      37: if_icmpge     70
+      40: aload         5
+      42: getstatic     #62                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      45: aload         4
+      47: iload         6
+      49: invokevirtual #66                 // Method com/google/gson/JsonArray.get:(I)Lcom/google/gson/JsonElement;
+      52: invokevirtual #72                 // Method com/google/gson/JsonElement.getAsString:()Ljava/lang/String;
+      55: invokevirtual #75                 // Method com/cobblemon/mod/common/api/types/ElementalTypes.get:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/types/ElementalType;
+      58: invokeinterface #79,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      63: pop
+      64: iinc          6, 1
+      67: goto          30
+      70: aload_2
+      71: ldc           #81                 // String consume_chance
+      73: invokestatic  #85                 // Method net/minecraft/util/GsonHelper.m_13915_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)F
+      76: fstore        6
+      78: aload_2
+      79: ldc           #87                 // String bonus_chance
+      81: invokestatic  #85                 // Method net/minecraft/util/GsonHelper.m_13915_:(Lcom/google/gson/JsonObject;Ljava/lang/String;)F
+      84: fstore        7
+      86: new           #10                 // class io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe
+      89: dup
+      90: aload_3
+      91: aload         5
+      93: fload         6
+      95: fload         7
+      97: aload_1
+      98: invokespecial #90                 // Method io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe."<init>":(Lnet/minecraft/world/item/crafting/Ingredient;Ljava/util/List;FFLnet/minecraft/resources/ResourceLocation;)V
+     101: areturn
+
+  public io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe fromNetwork(net.minecraft.resources.ResourceLocation, net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_2
+       1: invokestatic  #112                // Method net/minecraft/world/item/crafting/Ingredient.m_43940_:(Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Ingredient;
+       4: astore_3
+       5: aload_2
+       6: invokevirtual #117                // Method net/minecraft/network/FriendlyByteBuf.m_130242_:()I
+       9: istore        4
+      11: new           #44                 // class java/util/ArrayList
+      14: dup
+      15: invokespecial #45                 // Method java/util/ArrayList."<init>":()V
+      18: astore        5
+      20: iconst_0
+      21: istore        6
+      23: iload         6
+      25: iload         4
+      27: if_icmpge     57
+      30: aload         5
+      32: getstatic     #62                 // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+      35: aload_2
+      36: sipush        128
+      39: invokevirtual #121                // Method net/minecraft/network/FriendlyByteBuf.m_130136_:(I)Ljava/lang/String;
+      42: invokevirtual #75                 // Method com/cobblemon/mod/common/api/types/ElementalTypes.get:(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/types/ElementalType;
+      45: invokeinterface #79,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      50: pop
+      51: iinc          6, 1
+      54: goto          23
+      57: aload_2
+      58: invokevirtual #125                // Method net/minecraft/network/FriendlyByteBuf.readFloat:()F
+      61: fstore        6
+      63: aload_2
+      64: invokevirtual #125                // Method net/minecraft/network/FriendlyByteBuf.readFloat:()F
+      67: fstore        7
+      69: new           #10                 // class io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe
+      72: dup
+      73: aload_3
+      74: aload         5
+      76: fload         6
+      78: fload         7
+      80: aload_1
+      81: invokespecial #90                 // Method io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe."<init>":(Lnet/minecraft/world/item/crafting/Ingredient;Ljava/util/List;FFLnet/minecraft/resources/ResourceLocation;)V
+      84: areturn
+
+  public void toNetwork(net.minecraft.network.FriendlyByteBuf, io.github.chakyl.cobblemonfarmers.recipe.CrystalBallRecipe);
+    Code:
+       0: aload_2
+       1: getfield      #132                // Field io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe.ingredient:Lnet/minecraft/world/item/crafting/Ingredient;
+       4: aload_1
+       5: invokevirtual #136                // Method net/minecraft/world/item/crafting/Ingredient.m_43923_:(Lnet/minecraft/network/FriendlyByteBuf;)V
+       8: aload_1
+       9: aload_2
+      10: invokevirtual #140                // Method io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe.getAffectedTypes:()Ljava/util/List;
+      13: invokeinterface #141,  1          // InterfaceMethod java/util/List.size:()I
+      18: invokevirtual #145                // Method net/minecraft/network/FriendlyByteBuf.m_130130_:(I)Lnet/minecraft/network/FriendlyByteBuf;
+      21: pop
+      22: aload_2
+      23: invokevirtual #140                // Method io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe.getAffectedTypes:()Ljava/util/List;
+      26: invokeinterface #149,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      31: astore_3
+      32: aload_3
+      33: invokeinterface #155,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      38: ifeq          68
+      41: aload_3
+      42: invokeinterface #159,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      47: checkcast     #161                // class com/cobblemon/mod/common/api/types/ElementalType
+      50: astore        4
+      52: aload_1
+      53: aload         4
+      55: invokevirtual #164                // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+      58: sipush        128
+      61: invokevirtual #168                // Method net/minecraft/network/FriendlyByteBuf.m_130072_:(Ljava/lang/String;I)Lnet/minecraft/network/FriendlyByteBuf;
+      64: pop
+      65: goto          32
+      68: aload_1
+      69: aload_2
+      70: invokevirtual #171                // Method io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe.getConsumeChance:()F
+      73: invokevirtual #175                // Method net/minecraft/network/FriendlyByteBuf.writeFloat:(F)Lio/netty/buffer/ByteBuf;
+      76: pop
+      77: aload_1
+      78: aload_2
+      79: invokevirtual #178                // Method io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe.getBonusChance:()F
+      82: invokevirtual #175                // Method net/minecraft/network/FriendlyByteBuf.writeFloat:(F)Lio/netty/buffer/ByteBuf;
+      85: pop
+      86: return
+
+  public void m_6178_(net.minecraft.network.FriendlyByteBuf, net.minecraft.world.item.crafting.Recipe);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: checkcast     #10                 // class io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe
+       6: invokevirtual #186                // Method toNetwork:(Lnet/minecraft/network/FriendlyByteBuf;Lio/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe;)V
+       9: return
+
+  public net.minecraft.world.item.crafting.Recipe m_8005_(net.minecraft.resources.ResourceLocation, net.minecraft.network.FriendlyByteBuf);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #190                // Method fromNetwork:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lio/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe;
+       6: areturn
+
+  public net.minecraft.world.item.crafting.Recipe m_6729_(net.minecraft.resources.ResourceLocation, com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #194                // Method fromJson:(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lio/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe;
+       6: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class io/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe$Serializer
+       3: dup
+       4: invokespecial #196                // Method "<init>":()V
+       7: putstatic     #198                // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/recipe/CrystalBallRecipe$Serializer;
+      10: new           #47                 // class net/minecraft/resources/ResourceLocation
+      13: dup
+      14: ldc           #200                // String cobblemon_farmers
+      16: ldc           #202                // String crystal_ball
+      18: invokespecial #205                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      21: putstatic     #207                // Field ID:Lnet/minecraft/resources/ResourceLocation;
+      24: return
+}

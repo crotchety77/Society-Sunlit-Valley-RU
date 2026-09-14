@@ -1,0 +1,4 @@
+Compiled from "CWRecipeManagerAccessor.java"
+public interface io.github.chakyl.cobblemonfarmers.mixin.CWRecipeManagerAccessor {
+  public abstract <C extends net.minecraft.world.Container, T extends net.minecraft.world.item.crafting.Recipe<C>> java.util.Map<net.minecraft.resources.ResourceLocation, net.minecraft.world.item.crafting.Recipe<C>> getRecipeMap(net.minecraft.world.item.crafting.RecipeType<T>);
+}

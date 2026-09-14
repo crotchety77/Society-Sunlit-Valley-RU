@@ -1,0 +1,735 @@
+Compiled from "CrystalBallScreen.java"
+public class io.github.chakyl.cobblemonfarmers.screen.CrystalBallScreen extends net.minecraft.client.gui.screens.inventory.AbstractContainerScreen<io.github.chakyl.cobblemonfarmers.screen.CrystalBallMenu> {
+  public static final net.minecraft.resources.ResourceLocation TEXTURE;
+
+  public static final net.minecraft.resources.ResourceLocation ELEMENT_TEXTURE;
+
+  public static final net.minecraft.resources.ResourceLocation SWAP_BUTTON;
+
+  private static final net.minecraft.network.chat.Component CONTAINER_LABEL;
+
+  private static final net.minecraft.resources.ResourceLocation COBBLE_FONT;
+
+  private static final int PROGRESS_TEXTURE_X = 0;
+
+  private static final int PROGRESS_TEXTURE_Y = 166;
+
+  private static final int PROGRESS_WIDTH = 24;
+
+  private static final int PROGRESS_HEIGHT = 10;
+
+  private static final int PROGRESS_GUI_X = 114;
+
+  private static final int PROGRESS_GUI_Y = 23;
+
+  private static final int PROGRESS_GUI_HEIGHT = 20;
+
+  public io.github.chakyl.cobblemonfarmers.screen.CrystalBallScreen(io.github.chakyl.cobblemonfarmers.screen.CrystalBallMenu, net.minecraft.world.entity.player.Inventory, net.minecraft.network.chat.Component);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokespecial #38                 // Method net/minecraft/client/gui/screens/inventory/AbstractContainerScreen."<init>":(Lnet/minecraft/world/inventory/AbstractContainerMenu;Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/network/chat/Component;)V
+       7: aload_0
+       8: sipush        245
+      11: putfield      #41                 // Field f_97726_:I
+      14: aload_0
+      15: bipush        26
+      17: putfield      #44                 // Field f_97730_:I
+      20: return
+
+  protected void m_7856_();
+    Code:
+       0: aload_0
+       1: invokespecial #55                 // Method net/minecraft/client/gui/screens/inventory/AbstractContainerScreen.m_7856_:()V
+       4: aload_0
+       5: sipush        10000
+       8: putfield      #58                 // Field f_97731_:I
+      11: aload_0
+      12: sipush        10000
+      15: putfield      #61                 // Field f_97729_:I
+      18: return
+
+  protected void m_280003_(net.minecraft.client.gui.GuiGraphics, int, int);
+    Code:
+       0: bipush        7
+       2: istore        4
+       4: aload_1
+       5: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+       8: aload_0
+       9: getfield      #68                 // Field f_96539_:Lnet/minecraft/network/chat/Component;
+      12: invokeinterface #74,  1           // InterfaceMethod net/minecraft/network/chat/Component.m_214077_:()Lnet/minecraft/network/chat/ComponentContents;
+      17: invokestatic  #80                 // Method net/minecraft/network/chat/MutableComponent.m_237204_:(Lnet/minecraft/network/chat/ComponentContents;)Lnet/minecraft/network/chat/MutableComponent;
+      20: iload         4
+      22: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      25: iconst_4
+      26: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      29: iconst_0
+      30: iconst_m1
+      31: iconst_0
+      32: iconst_0
+      33: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      36: iconst_0
+      37: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      40: invokestatic  #92                 // Method com/cobblemon/mod/common/api/gui/GuiUtilsKt.drawText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;ZIZLjava/lang/Number;Ljava/lang/Number;)Z
+      43: pop
+      44: aload_1
+      45: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+      48: aload_0
+      49: getfield      #95                 // Field f_169604_:Lnet/minecraft/network/chat/Component;
+      52: invokeinterface #74,  1           // InterfaceMethod net/minecraft/network/chat/Component.m_214077_:()Lnet/minecraft/network/chat/ComponentContents;
+      57: invokestatic  #80                 // Method net/minecraft/network/chat/MutableComponent.m_237204_:(Lnet/minecraft/network/chat/ComponentContents;)Lnet/minecraft/network/chat/MutableComponent;
+      60: iload         4
+      62: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      65: bipush        74
+      67: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      70: iconst_0
+      71: ldc           #96                 // int 4210752
+      73: iconst_0
+      74: iconst_0
+      75: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      78: iconst_0
+      79: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      82: invokestatic  #92                 // Method com/cobblemon/mod/common/api/gui/GuiUtilsKt.drawText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;ZIZLjava/lang/Number;Ljava/lang/Number;)Z
+      85: pop
+      86: aload_1
+      87: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+      90: ldc           #98                 // String gui.cobblemon_farmers.party
+      92: invokestatic  #102                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      95: getstatic     #108                // Field net/minecraft/ChatFormatting.BOLD:Lnet/minecraft/ChatFormatting;
+      98: invokevirtual #112                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     101: sipush        205
+     104: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     107: iconst_1
+     108: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     111: iconst_m1
+     112: iconst_1
+     113: invokestatic  #116                // Method com/cobblemon/mod/common/api/gui/GuiUtilsKt.drawCenteredText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/Component;Ljava/lang/Number;Ljava/lang/Number;IZ)V
+     116: aload_1
+     117: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+     120: ldc           #118                // String gui.cobblemon_farmers.workers_assigned
+     122: iconst_1
+     123: anewarray     #120                // class java/lang/Object
+     126: dup
+     127: iconst_0
+     128: aload_0
+     129: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+     132: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+     135: invokevirtual #130                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getWorkersAssigned:()Ljava/lang/String;
+     138: aastore
+     139: invokestatic  #134                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     142: sipush        180
+     145: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     148: bipush        112
+     150: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     153: iconst_0
+     154: iconst_m1
+     155: iconst_1
+     156: iconst_0
+     157: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     160: iconst_0
+     161: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     164: invokestatic  #92                 // Method com/cobblemon/mod/common/api/gui/GuiUtilsKt.drawText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;ZIZLjava/lang/Number;Ljava/lang/Number;)Z
+     167: pop
+     168: aload_0
+     169: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+     172: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+     175: invokevirtual #138                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getSpeedModifier:()D
+     178: dstore        5
+     180: dload         5
+     182: dconst_0
+     183: dcmpl
+     184: ifle          233
+     187: aload_1
+     188: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+     191: ldc           #140                // String gui.cobblemon_farmers.speed
+     193: iconst_1
+     194: anewarray     #120                // class java/lang/Object
+     197: dup
+     198: iconst_0
+     199: dload         5
+     201: invokestatic  #145                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     204: aastore
+     205: invokestatic  #134                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     208: iload         4
+     210: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     213: bipush        46
+     215: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     218: iconst_0
+     219: iconst_m1
+     220: iconst_1
+     221: iconst_0
+     222: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     225: iconst_0
+     226: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     229: invokestatic  #92                 // Method com/cobblemon/mod/common/api/gui/GuiUtilsKt.drawText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;ZIZLjava/lang/Number;Ljava/lang/Number;)Z
+     232: pop
+     233: aload_0
+     234: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+     237: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+     240: invokevirtual #149                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getAoeRadius:()I
+     243: istore        7
+     245: iload         7
+     247: ifle          327
+     250: iload         7
+     252: iconst_2
+     253: imul
+     254: istore        7
+     256: iinc          7, 1
+     259: aload_1
+     260: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+     263: ldc           #151                // String gui.cobblemon_farmers.working_radius
+     265: iconst_3
+     266: anewarray     #120                // class java/lang/Object
+     269: dup
+     270: iconst_0
+     271: iload         7
+     273: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     276: aastore
+     277: dup
+     278: iconst_1
+     279: iconst_5
+     280: iload         7
+     282: iconst_2
+     283: imul
+     284: invokestatic  #157                // Method java/lang/Math.min:(II)I
+     287: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     290: aastore
+     291: dup
+     292: iconst_2
+     293: iload         7
+     295: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     298: aastore
+     299: invokestatic  #134                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     302: iload         4
+     304: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     307: bipush        58
+     309: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     312: iconst_0
+     313: iconst_m1
+     314: iconst_1
+     315: iconst_0
+     316: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     319: iconst_0
+     320: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     323: invokestatic  #92                 // Method com/cobblemon/mod/common/api/gui/GuiUtilsKt.drawText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;ZIZLjava/lang/Number;Ljava/lang/Number;)Z
+     326: pop
+     327: iconst_0
+     328: istore        8
+     330: aload_0
+     331: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+     334: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+     337: invokevirtual #161                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getPartyLevels:()Ljava/util/ArrayList;
+     340: invokevirtual #167                // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+     343: astore        9
+     345: aload         9
+     347: invokeinterface #173,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     352: ifeq          462
+     355: aload         9
+     357: invokeinterface #177,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     362: checkcast     #82                 // class java/lang/Integer
+     365: invokevirtual #180                // Method java/lang/Integer.intValue:()I
+     368: istore        10
+     370: iload         10
+     372: ifle          456
+     375: aload_1
+     376: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+     379: iload         10
+     381: invokedynamic #192,  0            // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+     386: invokestatic  #195                // InterfaceMethod net/minecraft/network/chat/Component.m_237113_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     389: iload         8
+     391: iconst_2
+     392: irem
+     393: ifne          402
+     396: sipush        182
+     399: goto          405
+     402: sipush        213
+     405: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     408: iload         8
+     410: iconst_2
+     411: idiv
+     412: bipush        31
+     414: imul
+     415: iload         8
+     417: iconst_2
+     418: irem
+     419: ifne          427
+     422: bipush        15
+     424: goto          429
+     427: bipush        23
+     429: iadd
+     430: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     433: ldc           #200                // float 0.7f
+     435: iconst_1
+     436: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     439: sipush        200
+     442: iconst_m1
+     443: iconst_0
+     444: iconst_1
+     445: iconst_0
+     446: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     449: iconst_0
+     450: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     453: invokestatic  #206                // Method com/cobblemon/mod/common/client/render/RenderHelperKt.drawScaledText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;FLjava/lang/Number;IIZZLjava/lang/Integer;Ljava/lang/Integer;)V
+     456: iinc          8, 1
+     459: goto          345
+     462: aload_0
+     463: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+     466: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+     469: invokevirtual #210                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getWorkerPokemon:()Lcom/cobblemon/mod/common/pokemon/Pokemon;
+     472: astore        9
+     474: aload         9
+     476: ifnull        683
+     479: aload_1
+     480: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+     483: aload         9
+     485: invokevirtual #215                // Method com/cobblemon/mod/common/pokemon/Pokemon.getLevel:()I
+     488: invokedynamic #192,  0            // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+     493: invokestatic  #195                // InterfaceMethod net/minecraft/network/chat/Component.m_237113_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     496: bipush        8
+     498: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     501: bipush        15
+     503: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     506: ldc           #200                // float 0.7f
+     508: iconst_1
+     509: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     512: sipush        200
+     515: iconst_m1
+     516: iconst_0
+     517: iconst_1
+     518: iconst_0
+     519: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     522: iconst_0
+     523: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     526: invokestatic  #206                // Method com/cobblemon/mod/common/client/render/RenderHelperKt.drawScaledText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;FLjava/lang/Number;IIZZLjava/lang/Integer;Ljava/lang/Integer;)V
+     529: aload_1
+     530: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+     533: aload         9
+     535: invokevirtual #219                // Method com/cobblemon/mod/common/pokemon/Pokemon.getPrimaryType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     538: getstatic     #225                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     541: invokevirtual #228                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getPSYCHIC:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     544: if_acmpeq     555
+     547: ldc           #230                // String info.cobblemon_farmers.crystal_ball.type.other
+     549: invokestatic  #102                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     552: goto          574
+     555: aload         9
+     557: invokevirtual #219                // Method com/cobblemon/mod/common/pokemon/Pokemon.getPrimaryType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     560: invokevirtual #235                // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+     563: invokevirtual #240                // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+     566: invokedynamic #245,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     571: invokestatic  #102                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     574: iload         4
+     576: bipush        90
+     578: iadd
+     579: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     582: bipush        44
+     584: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     587: iconst_0
+     588: iconst_m1
+     589: iconst_0
+     590: iconst_0
+     591: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     594: iconst_0
+     595: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     598: invokestatic  #92                 // Method com/cobblemon/mod/common/api/gui/GuiUtilsKt.drawText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;ZIZLjava/lang/Number;Ljava/lang/Number;)Z
+     601: pop
+     602: aload         9
+     604: invokevirtual #248                // Method com/cobblemon/mod/common/pokemon/Pokemon.getSecondaryType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     607: ifnull        683
+     610: aload_1
+     611: getstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+     614: aload         9
+     616: invokevirtual #248                // Method com/cobblemon/mod/common/pokemon/Pokemon.getSecondaryType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     619: getstatic     #225                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     622: invokevirtual #228                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getPSYCHIC:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     625: if_acmpeq     636
+     628: ldc           #230                // String info.cobblemon_farmers.crystal_ball.type.other
+     630: invokestatic  #102                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     633: goto          655
+     636: aload         9
+     638: invokevirtual #248                // Method com/cobblemon/mod/common/pokemon/Pokemon.getSecondaryType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     641: invokevirtual #235                // Method com/cobblemon/mod/common/api/types/ElementalType.getName:()Ljava/lang/String;
+     644: invokevirtual #240                // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+     647: invokedynamic #245,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     652: invokestatic  #102                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     655: iload         4
+     657: bipush        90
+     659: iadd
+     660: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     663: bipush        58
+     665: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     668: iconst_0
+     669: iconst_m1
+     670: iconst_0
+     671: iconst_0
+     672: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     675: iconst_0
+     676: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     679: invokestatic  #92                 // Method com/cobblemon/mod/common/api/gui/GuiUtilsKt.drawText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;ZIZLjava/lang/Number;Ljava/lang/Number;)Z
+     682: pop
+     683: return
+
+  protected void m_7286_(net.minecraft.client.gui.GuiGraphics, float, int, int);
+    Code:
+       0: invokedynamic #282,  0            // InvokeDynamic #2:get:()Ljava/util/function/Supplier;
+       5: invokestatic  #288                // Method com/mojang/blaze3d/systems/RenderSystem.setShader:(Ljava/util/function/Supplier;)V
+       8: fconst_1
+       9: fconst_1
+      10: fconst_1
+      11: fconst_1
+      12: invokestatic  #292                // Method com/mojang/blaze3d/systems/RenderSystem.setShaderColor:(FFFF)V
+      15: iconst_0
+      16: getstatic     #294                // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      19: invokestatic  #298                // Method com/mojang/blaze3d/systems/RenderSystem.setShaderTexture:(ILnet/minecraft/resources/ResourceLocation;)V
+      22: aload_0
+      23: getfield      #301                // Field f_96543_:I
+      26: aload_0
+      27: getfield      #41                 // Field f_97726_:I
+      30: isub
+      31: iconst_2
+      32: idiv
+      33: istore        5
+      35: aload_0
+      36: getfield      #304                // Field f_96544_:I
+      39: aload_0
+      40: getfield      #307                // Field f_97727_:I
+      43: isub
+      44: iconst_2
+      45: idiv
+      46: istore        6
+      48: aload_1
+      49: getstatic     #294                // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      52: iload         5
+      54: iload         6
+      56: iconst_0
+      57: iconst_0
+      58: aload_0
+      59: getfield      #41                 // Field f_97726_:I
+      62: aload_0
+      63: getfield      #307                // Field f_97727_:I
+      66: invokevirtual #311                // Method net/minecraft/client/gui/GuiGraphics.m_280218_:(Lnet/minecraft/resources/ResourceLocation;IIIIII)V
+      69: aload_0
+      70: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+      73: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+      76: invokevirtual #314                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getPrioritySwapped:()Z
+      79: ifeq          105
+      82: aload_1
+      83: getstatic     #294                // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      86: iload         5
+      88: bipush        36
+      90: iadd
+      91: iload         6
+      93: bipush        34
+      95: iadd
+      96: iconst_0
+      97: sipush        176
+     100: iconst_4
+     101: iconst_4
+     102: invokevirtual #311                // Method net/minecraft/client/gui/GuiGraphics.m_280218_:(Lnet/minecraft/resources/ResourceLocation;IIIIII)V
+     105: aload_0
+     106: aload_1
+     107: iload         5
+     109: iload         6
+     111: invokevirtual #317                // Method renderProgressArrow:(Lnet/minecraft/client/gui/GuiGraphics;II)V
+     114: aload_1
+     115: iload         5
+     117: iload         6
+     119: aload_0
+     120: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+     123: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+     126: invokevirtual #318                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getPrimaryType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     129: aload_0
+     130: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+     133: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+     136: invokevirtual #319                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getSecondaryType:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     139: invokestatic  #325                // Method io/github/chakyl/cobblemonfarmers/utils/GuiUtils.renderPokemon:(Lnet/minecraft/client/gui/GuiGraphics;IILcom/cobblemon/mod/common/api/types/ElementalType;Lcom/cobblemon/mod/common/api/types/ElementalType;)V
+     142: return
+
+  private void renderProgressArrow(net.minecraft.client.gui.GuiGraphics, int, int);
+    Code:
+       0: aload_0
+       1: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+       4: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+       7: invokevirtual #333                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.isCrafting:()Z
+      10: ifeq          44
+      13: aload_1
+      14: getstatic     #294                // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      17: iload_2
+      18: bipush        114
+      20: iadd
+      21: iload_3
+      22: bipush        23
+      24: iadd
+      25: iconst_0
+      26: sipush        166
+      29: aload_0
+      30: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+      33: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+      36: invokevirtual #336                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getScaledProgress:()I
+      39: bipush        10
+      41: invokevirtual #311                // Method net/minecraft/client/gui/GuiGraphics.m_280218_:(Lnet/minecraft/resources/ResourceLocation;IIIIII)V
+      44: return
+
+  public void m_88315_(net.minecraft.client.gui.GuiGraphics, int, int, float);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #342                // Method m_280273_:(Lnet/minecraft/client/gui/GuiGraphics;)V
+       5: aload_0
+       6: aload_1
+       7: iload_2
+       8: iload_3
+       9: fload         4
+      11: invokespecial #344                // Method net/minecraft/client/gui/screens/inventory/AbstractContainerScreen.m_88315_:(Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+      14: aload_0
+      15: aload_1
+      16: iload_2
+      17: iload_3
+      18: invokevirtual #347                // Method m_280072_:(Lnet/minecraft/client/gui/GuiGraphics;II)V
+      21: aload_0
+      22: iload_2
+      23: iload_3
+      24: invokevirtual #351                // Method isMouseOverCraftingTimeArea:(II)Z
+      27: ifeq          48
+      30: aload_0
+      31: invokevirtual #355                // Method getCraftingTimeTooltip:()Lnet/minecraft/network/chat/Component;
+      34: astore        5
+      36: aload_1
+      37: aload_0
+      38: getfield      #359                // Field f_96547_:Lnet/minecraft/client/gui/Font;
+      41: aload         5
+      43: iload_2
+      44: iload_3
+      45: invokevirtual #363                // Method net/minecraft/client/gui/GuiGraphics.m_280557_:(Lnet/minecraft/client/gui/Font;Lnet/minecraft/network/chat/Component;II)V
+      48: aload_0
+      49: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+      52: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+      55: invokevirtual #366                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getCurrentProcessingTime:()I
+      58: ifle          98
+      61: aload_0
+      62: iload_2
+      63: iload_3
+      64: invokevirtual #369                // Method isMouseOverStatArea:(II)Z
+      67: ifeq          98
+      70: aload_0
+      71: invokevirtual #373                // Method getStatImpactTooltip:()Ljava/util/List;
+      74: astore        5
+      76: aload         5
+      78: invokeinterface #378,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      83: ifne          98
+      86: aload_1
+      87: aload_0
+      88: getfield      #359                // Field f_96547_:Lnet/minecraft/client/gui/Font;
+      91: aload         5
+      93: iload_2
+      94: iload_3
+      95: invokevirtual #382                // Method net/minecraft/client/gui/GuiGraphics.m_280666_:(Lnet/minecraft/client/gui/Font;Ljava/util/List;II)V
+      98: return
+
+  private java.util.List<net.minecraft.network.chat.Component> getStatImpactTooltip();
+    Code:
+       0: new           #163                // class java/util/ArrayList
+       3: dup
+       4: ldc_w         #392                // String jei.cobblemon_farmers.crystal_ball.speed_stat
+       7: iconst_1
+       8: anewarray     #120                // class java/lang/Object
+      11: dup
+      12: iconst_0
+      13: getstatic     #398                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      16: invokevirtual #401                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getDisplayName:()Lnet/minecraft/network/chat/Component;
+      19: aastore
+      20: invokestatic  #134                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      23: getstatic     #404                // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+      26: invokevirtual #112                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      29: ldc_w         #406                // String jei.cobblemon_farmers.crystal_ball.aoe_stat
+      32: iconst_1
+      33: anewarray     #120                // class java/lang/Object
+      36: dup
+      37: iconst_0
+      38: getstatic     #409                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.HP:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+      41: invokevirtual #401                // Method com/cobblemon/mod/common/api/pokemon/stats/Stats.getDisplayName:()Lnet/minecraft/network/chat/Component;
+      44: aastore
+      45: invokestatic  #134                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      48: getstatic     #412                // Field net/minecraft/ChatFormatting.GOLD:Lnet/minecraft/ChatFormatting;
+      51: invokevirtual #112                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      54: invokestatic  #416                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+      57: invokespecial #419                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+      60: areturn
+
+  private boolean isMouseOverCraftingTimeArea(int, int);
+    Code:
+       0: aload_0
+       1: getfield      #422                // Field f_97735_:I
+       4: bipush        114
+       6: iadd
+       7: istore_3
+       8: aload_0
+       9: getfield      #425                // Field f_97736_:I
+      12: bipush        23
+      14: iadd
+      15: bipush        10
+      17: isub
+      18: istore        4
+      20: aload_0
+      21: getfield      #422                // Field f_97735_:I
+      24: bipush        114
+      26: iadd
+      27: bipush        24
+      29: iadd
+      30: istore        5
+      32: aload_0
+      33: getfield      #425                // Field f_97736_:I
+      36: bipush        23
+      38: iadd
+      39: bipush        10
+      41: iadd
+      42: istore        6
+      44: iload_1
+      45: iload_3
+      46: if_icmplt     71
+      49: iload_1
+      50: iload         5
+      52: if_icmpgt     71
+      55: iload_2
+      56: iload         4
+      58: if_icmplt     71
+      61: iload_2
+      62: iload         6
+      64: if_icmpgt     71
+      67: iconst_1
+      68: goto          72
+      71: iconst_0
+      72: ireturn
+
+  private boolean isMouseOverStatArea(int, int);
+    Code:
+       0: aload_0
+       1: getfield      #422                // Field f_97735_:I
+       4: iconst_4
+       5: iadd
+       6: istore_3
+       7: aload_0
+       8: getfield      #425                // Field f_97736_:I
+      11: bipush        42
+      13: iadd
+      14: istore        4
+      16: aload_0
+      17: getfield      #422                // Field f_97735_:I
+      20: bipush        80
+      22: iadd
+      23: istore        5
+      25: aload_0
+      26: getfield      #425                // Field f_97736_:I
+      29: bipush        72
+      31: iadd
+      32: istore        6
+      34: iload_1
+      35: iload_3
+      36: if_icmplt     61
+      39: iload_1
+      40: iload         5
+      42: if_icmpgt     61
+      45: iload_2
+      46: iload         4
+      48: if_icmplt     61
+      51: iload_2
+      52: iload         6
+      54: if_icmpgt     61
+      57: iconst_1
+      58: goto          62
+      61: iconst_0
+      62: ireturn
+
+  private net.minecraft.network.chat.Component getCraftingTimeTooltip();
+    Code:
+       0: aload_0
+       1: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+       4: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+       7: invokevirtual #436                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getTotalProcessingTime:()I
+      10: istore_1
+      11: aload_0
+      12: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+      15: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+      18: invokevirtual #366                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getCurrentProcessingTime:()I
+      21: istore_2
+      22: iload_1
+      23: iload_2
+      24: isub
+      25: istore_3
+      26: iload_3
+      27: ifle          97
+      30: aload_0
+      31: getfield      #124                // Field f_97732_:Lnet/minecraft/world/inventory/AbstractContainerMenu;
+      34: checkcast     #126                // class io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu
+      37: invokevirtual #336                // Method io/github/chakyl/cobblemonfarmers/screen/CrystalBallMenu.getScaledProgress:()I
+      40: ifle          97
+      43: iload_3
+      44: bipush        60
+      46: idiv
+      47: istore        4
+      49: iload_3
+      50: bipush        60
+      52: irem
+      53: istore_3
+      54: ldc_w         #438                // String %d:%02d Seconds
+      57: iconst_2
+      58: anewarray     #120                // class java/lang/Object
+      61: dup
+      62: iconst_0
+      63: iload         4
+      65: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      68: aastore
+      69: dup
+      70: iconst_1
+      71: iload_3
+      72: invokestatic  #86                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      75: aastore
+      76: invokestatic  #442                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      79: astore        5
+      81: ldc_w         #444                // String tooltip.cobblemon_farmers.crystal_ball.processing_time
+      84: iconst_1
+      85: anewarray     #120                // class java/lang/Object
+      88: dup
+      89: iconst_0
+      90: aload         5
+      92: aastore
+      93: invokestatic  #134                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      96: areturn
+      97: ldc_w         #444                // String tooltip.cobblemon_farmers.crystal_ball.processing_time
+     100: iconst_1
+     101: anewarray     #120                // class java/lang/Object
+     104: dup
+     105: iconst_0
+     106: ldc_w         #446                // String 0:00 Seconds
+     109: aastore
+     110: invokestatic  #134                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     113: areturn
+
+  static {};
+    Code:
+       0: new           #199                // class net/minecraft/resources/ResourceLocation
+       3: dup
+       4: ldc_w         #455                // String cobblemon_farmers
+       7: ldc_w         #457                // String textures/gui/crystal_ball.png
+      10: invokespecial #460                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      13: putstatic     #294                // Field TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      16: new           #199                // class net/minecraft/resources/ResourceLocation
+      19: dup
+      20: ldc_w         #462                // String cobblemon:textures/gui/types_small.png
+      23: invokespecial #465                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;)V
+      26: putstatic     #467                // Field ELEMENT_TEXTURE:Lnet/minecraft/resources/ResourceLocation;
+      29: new           #199                // class net/minecraft/resources/ResourceLocation
+      32: dup
+      33: ldc_w         #455                // String cobblemon_farmers
+      36: ldc_w         #469                // String textures/gui/swap_button.png
+      39: invokespecial #460                // Method net/minecraft/resources/ResourceLocation."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      42: putstatic     #471                // Field SWAP_BUTTON:Lnet/minecraft/resources/ResourceLocation;
+      45: ldc_w         #473                // String gui.cobblemon_farmers.crystal_ball
+      48: invokestatic  #102                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      51: putstatic     #475                // Field CONTAINER_LABEL:Lnet/minecraft/network/chat/Component;
+      54: getstatic     #480                // Field com/cobblemon/mod/common/client/CobblemonResources.INSTANCE:Lcom/cobblemon/mod/common/client/CobblemonResources;
+      57: invokevirtual #484                // Method com/cobblemon/mod/common/client/CobblemonResources.getDEFAULT_LARGE:()Lnet/minecraft/resources/ResourceLocation;
+      60: putstatic     #65                 // Field COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+      63: return
+}

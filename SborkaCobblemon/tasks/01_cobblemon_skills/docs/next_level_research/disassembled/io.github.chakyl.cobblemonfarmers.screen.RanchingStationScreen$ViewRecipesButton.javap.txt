@@ -1,0 +1,54 @@
+Compiled from "RanchingStationScreen.java"
+public class io.github.chakyl.cobblemonfarmers.screen.RanchingStationScreen$ViewRecipesButton extends net.minecraft.client.gui.components.Button {
+  public io.github.chakyl.cobblemonfarmers.screen.RanchingStationScreen$ViewRecipesButton(int, int, int, int, net.minecraft.network.chat.Component, net.minecraft.client.gui.components.Button$OnPress);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: iload_3
+       4: iload         4
+       6: aload         5
+       8: aload         6
+      10: getstatic     #20                 // Field f_252438_:Lnet/minecraft/client/gui/components/Button$CreateNarration;
+      13: invokespecial #23                 // Method net/minecraft/client/gui/components/Button."<init>":(IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/client/gui/components/Button$CreateNarration;)V
+      16: return
+
+  public void m_87963_(net.minecraft.client.gui.GuiGraphics, int, int, float);
+    Code:
+       0: aload_1
+       1: getstatic     #40                 // Field io/github/chakyl/cobblemonfarmers/screen/RanchingStationScreen.COBBLE_FONT:Lnet/minecraft/resources/ResourceLocation;
+       4: aload_0
+       5: invokevirtual #44                 // Method m_6035_:()Lnet/minecraft/network/chat/Component;
+       8: invokeinterface #50,  1           // InterfaceMethod net/minecraft/network/chat/Component.m_6879_:()Lnet/minecraft/network/chat/MutableComponent;
+      13: aload_0
+      14: invokevirtual #54                 // Method m_252754_:()I
+      17: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      20: aload_0
+      21: invokevirtual #63                 // Method m_252907_:()I
+      24: aload_0
+      25: getfield      #66                 // Field f_93619_:I
+      28: bipush        8
+      30: isub
+      31: iconst_2
+      32: idiv
+      33: iadd
+      34: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      37: fconst_1
+      38: iconst_1
+      39: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      42: sipush        200
+      45: aload_0
+      46: invokevirtual #70                 // Method m_198029_:()Z
+      49: ifeq          57
+      52: ldc           #71                 // int -16711936
+      54: goto          58
+      57: iconst_m1
+      58: iconst_0
+      59: iconst_1
+      60: iconst_0
+      61: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      64: iconst_0
+      65: invokestatic  #60                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      68: invokestatic  #83                 // Method com/cobblemon/mod/common/client/render/RenderHelperKt.drawScaledText:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/MutableComponent;Ljava/lang/Number;Ljava/lang/Number;FLjava/lang/Number;IIZZLjava/lang/Integer;Ljava/lang/Integer;)V
+      71: return
+}

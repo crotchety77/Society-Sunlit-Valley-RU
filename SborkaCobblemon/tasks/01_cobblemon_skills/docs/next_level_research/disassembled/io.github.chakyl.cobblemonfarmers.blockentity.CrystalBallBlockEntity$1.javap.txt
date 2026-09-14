@@ -1,0 +1,28 @@
+Compiled from "CrystalBallBlockEntity.java"
+class io.github.chakyl.cobblemonfarmers.blockentity.CrystalBallBlockEntity$1 extends net.minecraftforge.items.ItemStackHandler {
+  final io.github.chakyl.cobblemonfarmers.blockentity.CrystalBallBlockEntity this$0;
+
+  io.github.chakyl.cobblemonfarmers.blockentity.CrystalBallBlockEntity$1(io.github.chakyl.cobblemonfarmers.blockentity.CrystalBallBlockEntity, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #13                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity;
+       5: aload_0
+       6: iload_2
+       7: invokespecial #16                 // Method net/minecraftforge/items/ItemStackHandler."<init>":(I)V
+      10: return
+
+  protected void onContentsChanged(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokespecial #23                 // Method net/minecraftforge/items/ItemStackHandler.onContentsChanged:(I)V
+       5: aload_0
+       6: getfield      #13                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity;
+       9: iconst_1
+      10: putfield      #27                 // Field io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.checkNewRecipe:Z
+      13: aload_0
+      14: getfield      #13                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity;
+      17: invokevirtual #31                 // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_6596_:()V
+      20: return
+}

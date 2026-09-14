@@ -1,0 +1,423 @@
+Compiled from "WorkstationInfoProvider.java"
+public final class io.github.chakyl.cobblemonfarmers.jade.WorkstationInfoProvider extends java.lang.Enum<io.github.chakyl.cobblemonfarmers.jade.WorkstationInfoProvider> implements snownee.jade.api.IBlockComponentProvider, snownee.jade.api.IServerDataProvider<snownee.jade.api.BlockAccessor> {
+  public static final io.github.chakyl.cobblemonfarmers.jade.WorkstationInfoProvider INSTANCE;
+
+  private static final io.github.chakyl.cobblemonfarmers.jade.WorkstationInfoProvider[] $VALUES;
+
+  public static io.github.chakyl.cobblemonfarmers.jade.WorkstationInfoProvider[] values();
+    Code:
+       0: getstatic     #23                 // Field $VALUES:[Lio/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider;
+       3: invokevirtual #28                 // Method "[Lio/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider;".clone:()Ljava/lang/Object;
+       6: checkcast     #24                 // class "[Lio/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider;"
+       9: areturn
+
+  public static io.github.chakyl.cobblemonfarmers.jade.WorkstationInfoProvider valueOf(java.lang.String);
+    Code:
+       0: ldc           #2                  // class io/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider
+       2: aload_0
+       3: invokestatic  #33                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #2                  // class io/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider
+       9: areturn
+
+  private io.github.chakyl.cobblemonfarmers.jade.WorkstationInfoProvider();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #40                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public void appendTooltip(snownee.jade.api.ITooltip, snownee.jade.api.BlockAccessor, snownee.jade.api.config.IPluginConfig);
+    Code:
+       0: aload_2
+       1: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+       6: ldc           #51                 // String pokemon
+       8: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      11: ifeq          117
+      14: aload_2
+      15: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+      20: ldc           #51                 // String pokemon
+      22: invokevirtual #61                 // Method net/minecraft/nbt/CompoundTag.m_128423_:(Ljava/lang/String;)Lnet/minecraft/nbt/Tag;
+      25: checkcast     #53                 // class net/minecraft/nbt/CompoundTag
+      28: astore        4
+      30: aload         4
+      32: ldc           #63                 // String pokeData
+      34: invokevirtual #61                 // Method net/minecraft/nbt/CompoundTag.m_128423_:(Ljava/lang/String;)Lnet/minecraft/nbt/Tag;
+      37: checkcast     #53                 // class net/minecraft/nbt/CompoundTag
+      40: astore        5
+      42: getstatic     #68                 // Field com/cobblemon/mod/common/api/pokemon/PokemonSpecies.INSTANCE:Lcom/cobblemon/mod/common/api/pokemon/PokemonSpecies;
+      45: aload         4
+      47: invokestatic  #74                 // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.getSpeciesFromCompoundTag:(Lnet/minecraft/nbt/CompoundTag;)Ljava/lang/String;
+      50: invokevirtual #78                 // Method com/cobblemon/mod/common/api/pokemon/PokemonSpecies.getByName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokemon/Species;
+      53: astore        6
+      55: aload         6
+      57: ifnonnull     72
+      60: aload_1
+      61: ldc           #80                 // String jade.cobblemon_farmers.workstation.no_worker
+      63: invokestatic  #86                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      66: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+      71: return
+      72: aload_1
+      73: ldc           #96                 // String jade.cobblemon_farmers.workstation.pokemon.name
+      75: iconst_2
+      76: anewarray     #98                 // class java/lang/Object
+      79: dup
+      80: iconst_0
+      81: aload         6
+      83: invokevirtual #102                // Method com/cobblemon/mod/common/pokemon/Species.getName:()Ljava/lang/String;
+      86: aastore
+      87: dup
+      88: iconst_1
+      89: aload         5
+      91: ldc           #104                // String Level
+      93: invokevirtual #108                // Method net/minecraft/nbt/CompoundTag.m_128448_:(Ljava/lang/String;)S
+      96: invokestatic  #113                // Method java/lang/Short.valueOf:(S)Ljava/lang/Short;
+      99: aastore
+     100: invokestatic  #117                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     103: getstatic     #123                // Field net/minecraft/ChatFormatting.BLUE:Lnet/minecraft/ChatFormatting;
+     106: invokevirtual #129                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     109: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     114: goto          128
+     117: aload_1
+     118: ldc           #80                 // String jade.cobblemon_farmers.workstation.no_worker
+     120: invokestatic  #86                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     123: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     128: aload_2
+     129: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     134: ldc           #131                // String speedModifier
+     136: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     139: ifeq          280
+     142: aload_2
+     143: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     148: ldc           #133                // String boostedSpeedModifier
+     150: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     153: ifeq          280
+     156: aload_2
+     157: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     162: ldc           #131                // String speedModifier
+     164: invokevirtual #137                // Method net/minecraft/nbt/CompoundTag.m_128459_:(Ljava/lang/String;)D
+     167: dstore        4
+     169: dconst_0
+     170: dstore        6
+     172: aload_2
+     173: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     178: ldc           #139                // String bonusSpeed
+     180: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     183: ifeq          199
+     186: aload_2
+     187: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     192: ldc           #139                // String bonusSpeed
+     194: invokevirtual #137                // Method net/minecraft/nbt/CompoundTag.m_128459_:(Ljava/lang/String;)D
+     197: dstore        6
+     199: dload         4
+     201: dconst_0
+     202: dcmpl
+     203: ifle          280
+     206: aload_1
+     207: ldc           #141                // String gui.cobblemon_farmers.speed
+     209: iconst_1
+     210: anewarray     #98                 // class java/lang/Object
+     213: dup
+     214: iconst_0
+     215: aload_2
+     216: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     221: ldc           #133                // String boostedSpeedModifier
+     223: invokevirtual #137                // Method net/minecraft/nbt/CompoundTag.m_128459_:(Ljava/lang/String;)D
+     226: dload         6
+     228: dconst_0
+     229: dcmpl
+     230: ifle          245
+     233: dload         4
+     235: dload         6
+     237: invokedynamic #153,  0            // InvokeDynamic #0:makeConcatWithConstants:(DD)Ljava/lang/String;
+     242: goto          247
+     245: ldc           #161                // String
+     247: invokedynamic #166,  0            // InvokeDynamic #1:makeConcatWithConstants:(DLjava/lang/String;)Ljava/lang/String;
+     252: aastore
+     253: invokestatic  #117                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     256: dload         6
+     258: dconst_0
+     259: dcmpl
+     260: ifle          269
+     263: getstatic     #169                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+     266: goto          272
+     269: getstatic     #172                // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+     272: invokevirtual #129                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     275: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     280: aload_2
+     281: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     286: ldc           #174                // String multChance
+     288: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     291: ifeq          443
+     294: aload_2
+     295: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     300: ldc           #176                // String boostedMultChance
+     302: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     305: ifeq          443
+     308: aload_2
+     309: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     314: ldc           #174                // String multChance
+     316: invokevirtual #180                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     319: istore        4
+     321: iconst_0
+     322: istore        5
+     324: aload_2
+     325: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     330: ldc           #182                // String bonusMult
+     332: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     335: ifeq          368
+     338: aload_2
+     339: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     344: ldc           #182                // String bonusMult
+     346: invokevirtual #180                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     349: ifle          368
+     352: aload_2
+     353: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     358: ldc           #182                // String bonusMult
+     360: invokevirtual #180                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     363: bipush        100
+     365: iadd
+     366: istore        5
+     368: iload         4
+     370: ifle          443
+     373: aload_1
+     374: ldc           #184                // String gui.cobblemon_farmers.mult_chance
+     376: iconst_1
+     377: anewarray     #98                 // class java/lang/Object
+     380: dup
+     381: iconst_0
+     382: aload_2
+     383: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     388: ldc           #176                // String boostedMultChance
+     390: invokevirtual #137                // Method net/minecraft/nbt/CompoundTag.m_128459_:(Ljava/lang/String;)D
+     393: iload         5
+     395: ifle          410
+     398: iload         4
+     400: iload         5
+     402: invokedynamic #189,  0            // InvokeDynamic #2:makeConcatWithConstants:(II)Ljava/lang/String;
+     407: goto          412
+     410: ldc           #161                // String
+     412: invokedynamic #192,  0            // InvokeDynamic #3:makeConcatWithConstants:(DLjava/lang/String;)Ljava/lang/String;
+     417: aastore
+     418: invokestatic  #117                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     421: iload         5
+     423: ifle          432
+     426: getstatic     #169                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+     429: goto          435
+     432: getstatic     #172                // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+     435: invokevirtual #129                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     438: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     443: aload_2
+     444: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     449: ldc           #194                // String aoeRadius
+     451: invokevirtual #57                 // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     454: ifeq          527
+     457: aload_2
+     458: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     463: ldc           #194                // String aoeRadius
+     465: invokevirtual #180                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     468: istore        4
+     470: iload         4
+     472: ifle          527
+     475: iload         4
+     477: iconst_2
+     478: imul
+     479: istore        4
+     481: iinc          4, 1
+     484: aload_1
+     485: ldc           #196                // String gui.cobblemon_farmers.working_radius
+     487: iconst_3
+     488: anewarray     #98                 // class java/lang/Object
+     491: dup
+     492: iconst_0
+     493: iload         4
+     495: invokestatic  #201                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     498: aastore
+     499: dup
+     500: iconst_1
+     501: iconst_5
+     502: iload         4
+     504: invokestatic  #207                // Method java/lang/Math.min:(II)I
+     507: invokestatic  #201                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     510: aastore
+     511: dup
+     512: iconst_2
+     513: iload         4
+     515: invokestatic  #201                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     518: aastore
+     519: invokestatic  #117                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     522: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     527: aload_1
+     528: invokestatic  #211                // InterfaceMethod net/minecraft/network/chat/Component.m_237119_:()Lnet/minecraft/network/chat/MutableComponent;
+     531: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     536: aload_2
+     537: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     542: ldc           #213                // String public
+     544: invokevirtual #216                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+     547: ifeq          567
+     550: aload_1
+     551: ldc           #218                // String jade.cobblemon_farmers.workstation.public
+     553: invokestatic  #86                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     556: getstatic     #169                // Field net/minecraft/ChatFormatting.GREEN:Lnet/minecraft/ChatFormatting;
+     559: invokevirtual #129                // Method net/minecraft/network/chat/MutableComponent.m_130940_:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     562: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     567: aload_2
+     568: invokeinterface #222,  1          // InterfaceMethod snownee/jade/api/BlockAccessor.getPlayer:()Lnet/minecraft/world/entity/player/Player;
+     573: invokevirtual #228                // Method net/minecraft/world/entity/player/Player.m_6047_:()Z
+     576: ifeq          676
+     579: aload_2
+     580: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     585: ldc           #230                // String owner
+     587: invokevirtual #233                // Method net/minecraft/nbt/CompoundTag.m_128403_:(Ljava/lang/String;)Z
+     590: ifeq          676
+     593: invokestatic  #239                // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+     596: invokevirtual #243                // Method net/minecraft/client/Minecraft.m_91403_:()Lnet/minecraft/client/multiplayer/ClientPacketListener;
+     599: aload_2
+     600: invokeinterface #49,  1           // InterfaceMethod snownee/jade/api/BlockAccessor.getServerData:()Lnet/minecraft/nbt/CompoundTag;
+     605: ldc           #230                // String owner
+     607: invokevirtual #247                // Method net/minecraft/nbt/CompoundTag.m_128342_:(Ljava/lang/String;)Ljava/util/UUID;
+     610: invokevirtual #253                // Method net/minecraft/client/multiplayer/ClientPacketListener.m_104949_:(Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;
+     613: astore        4
+     615: aload         4
+     617: ifnull        654
+     620: aload         4
+     622: invokevirtual #259                // Method net/minecraft/client/multiplayer/PlayerInfo.m_105312_:()Lcom/mojang/authlib/GameProfile;
+     625: invokevirtual #262                // Method com/mojang/authlib/GameProfile.getName:()Ljava/lang/String;
+     628: astore        5
+     630: aload_1
+     631: ldc_w         #264                // String jade.cobblemon_farmers.owner
+     634: iconst_1
+     635: anewarray     #98                 // class java/lang/Object
+     638: dup
+     639: iconst_0
+     640: aload         5
+     642: aastore
+     643: invokestatic  #117                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     646: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     651: goto          676
+     654: aload_1
+     655: ldc_w         #264                // String jade.cobblemon_farmers.owner
+     658: iconst_1
+     659: anewarray     #98                 // class java/lang/Object
+     662: dup
+     663: iconst_0
+     664: ldc_w         #266                // String Unknown
+     667: aastore
+     668: invokestatic  #117                // InterfaceMethod net/minecraft/network/chat/Component.m_237110_:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+     671: invokeinterface #92,  2           // InterfaceMethod snownee/jade/api/ITooltip.add:(Lnet/minecraft/network/chat/Component;)V
+     676: return
+
+  public void appendServerData(net.minecraft.nbt.CompoundTag, snownee.jade.api.BlockAccessor);
+    Code:
+       0: aload_2
+       1: invokeinterface #289,  1          // InterfaceMethod snownee/jade/api/BlockAccessor.getBlockEntity:()Lnet/minecraft/world/level/block/entity/BlockEntity;
+       6: checkcast     #291                // class io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity
+       9: astore_3
+      10: aload_3
+      11: invokevirtual #295                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getPokemonItem:()Lnet/minecraft/world/item/ItemStack;
+      14: astore        4
+      16: aload         4
+      18: ifnull        52
+      21: aload         4
+      23: invokevirtual #300                // Method net/minecraft/world/item/ItemStack.m_41783_:()Lnet/minecraft/nbt/CompoundTag;
+      26: ifnull        52
+      29: aload         4
+      31: invokevirtual #300                // Method net/minecraft/world/item/ItemStack.m_41783_:()Lnet/minecraft/nbt/CompoundTag;
+      34: invokevirtual #303                // Method net/minecraft/nbt/CompoundTag.m_128456_:()Z
+      37: ifne          52
+      40: aload_1
+      41: ldc           #51                 // String pokemon
+      43: aload         4
+      45: invokevirtual #300                // Method net/minecraft/world/item/ItemStack.m_41783_:()Lnet/minecraft/nbt/CompoundTag;
+      48: invokevirtual #307                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      51: pop
+      52: aload_1
+      53: ldc           #213                // String public
+      55: aload_3
+      56: invokevirtual #310                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getPublicContract:()Z
+      59: invokevirtual #314                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      62: aload_3
+      63: invokevirtual #318                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getOwner:()Ljava/util/UUID;
+      66: ifnull        85
+      69: aload_1
+      70: ldc           #230                // String owner
+      72: aload_3
+      73: invokevirtual #318                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getOwner:()Ljava/util/UUID;
+      76: invokestatic  #324                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      79: checkcast     #326                // class java/util/UUID
+      82: invokevirtual #330                // Method net/minecraft/nbt/CompoundTag.m_128362_:(Ljava/lang/String;Ljava/util/UUID;)V
+      85: aload_1
+      86: ldc           #133                // String boostedSpeedModifier
+      88: aload_3
+      89: invokevirtual #334                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getBoostedSpeedModifier:()D
+      92: invokevirtual #338                // Method net/minecraft/nbt/CompoundTag.m_128347_:(Ljava/lang/String;D)V
+      95: aload_1
+      96: ldc           #131                // String speedModifier
+      98: aload_3
+      99: invokevirtual #341                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getSpeedModifier:()D
+     102: invokevirtual #338                // Method net/minecraft/nbt/CompoundTag.m_128347_:(Ljava/lang/String;D)V
+     105: aload_1
+     106: ldc           #139                // String bonusSpeed
+     108: aload_3
+     109: invokevirtual #344                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getBonusSpeed:()D
+     112: invokevirtual #338                // Method net/minecraft/nbt/CompoundTag.m_128347_:(Ljava/lang/String;D)V
+     115: aload_1
+     116: ldc           #194                // String aoeRadius
+     118: aload_3
+     119: invokevirtual #348                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getAoeRadius:()I
+     122: i2d
+     123: invokevirtual #338                // Method net/minecraft/nbt/CompoundTag.m_128347_:(Ljava/lang/String;D)V
+     126: aload_1
+     127: ldc           #176                // String boostedMultChance
+     129: aload_3
+     130: invokevirtual #351                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getBoostedMultChance:()I
+     133: i2d
+     134: invokevirtual #338                // Method net/minecraft/nbt/CompoundTag.m_128347_:(Ljava/lang/String;D)V
+     137: aload_1
+     138: ldc           #174                // String multChance
+     140: aload_3
+     141: invokevirtual #354                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getMultChance:()I
+     144: invokevirtual #357                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+     147: aload_1
+     148: ldc           #182                // String bonusMult
+     150: aload_3
+     151: invokevirtual #360                // Method io/github/chakyl/cobblemonfarmers/blockentity/StationBaseBlockEntity.getBonusMult:()I
+     154: invokevirtual #357                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+     157: return
+
+  public net.minecraft.resources.ResourceLocation getUid();
+    Code:
+       0: getstatic     #373                // Field io/github/chakyl/cobblemonfarmers/jade/WorkstationInfoPlugin.UID:Lnet/minecraft/resources/ResourceLocation;
+       3: areturn
+
+  public void appendServerData(net.minecraft.nbt.CompoundTag, snownee.jade.api.Accessor);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: checkcast     #45                 // class snownee/jade/api/BlockAccessor
+       6: invokevirtual #376                // Method appendServerData:(Lnet/minecraft/nbt/CompoundTag;Lsnownee/jade/api/BlockAccessor;)V
+       9: return
+
+  private static io.github.chakyl.cobblemonfarmers.jade.WorkstationInfoProvider[] $values();
+    Code:
+       0: iconst_1
+       1: anewarray     #2                  // class io/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider
+       4: dup
+       5: iconst_0
+       6: getstatic     #379                // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider;
+       9: aastore
+      10: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class io/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider
+       3: dup
+       4: ldc_w         #381                // String INSTANCE
+       7: iconst_0
+       8: invokespecial #382                // Method "<init>":(Ljava/lang/String;I)V
+      11: putstatic     #379                // Field INSTANCE:Lio/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider;
+      14: invokestatic  #384                // Method $values:()[Lio/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider;
+      17: putstatic     #23                 // Field $VALUES:[Lio/github/chakyl/cobblemonfarmers/jade/WorkstationInfoProvider;
+      20: return
+}

@@ -1,0 +1,39 @@
+Compiled from "AbstractWorkerMenu.java"
+class io.github.chakyl.cobblemonfarmers.screen.AbstractWorkerMenu$PartySlot extends net.minecraft.world.inventory.Slot {
+  final io.github.chakyl.cobblemonfarmers.screen.AbstractWorkerMenu this$0;
+
+  public io.github.chakyl.cobblemonfarmers.screen.AbstractWorkerMenu$PartySlot(io.github.chakyl.cobblemonfarmers.screen.AbstractWorkerMenu, net.minecraft.world.Container, int, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #14                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu;
+       5: aload_0
+       6: aload_2
+       7: iload_3
+       8: iload         4
+      10: iload         5
+      12: invokespecial #17                 // Method net/minecraft/world/inventory/Slot."<init>":(Lnet/minecraft/world/Container;III)V
+      15: return
+
+  public boolean m_5857_(net.minecraft.world.item.ItemStack);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public boolean m_150651_(net.minecraft.world.entity.player.Player);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public java.util.Optional<net.minecraft.world.item.ItemStack> m_150641_(int, int, net.minecraft.world.entity.player.Player);
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu;
+       4: aload_0
+       5: getfield      #14                 // Field this$0:Lio/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu;
+       8: getfield      #39                 // Field io/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu.player:Lnet/minecraft/world/entity/player/Player;
+      11: aload_0
+      12: invokevirtual #43                 // Method io/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu.transferFromPartyToWorkerSlot:(Lnet/minecraft/world/entity/player/Player;Lio/github/chakyl/cobblemonfarmers/screen/AbstractWorkerMenu$PartySlot;)V
+      15: invokestatic  #49                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+      18: areturn
+}

@@ -1,0 +1,259 @@
+Compiled from "CrystalBallBlockEntityRenderer.java"
+public class io.github.chakyl.cobblemonfarmers.blockentity.renderer.CrystalBallBlockEntityRenderer implements net.minecraft.client.renderer.blockentity.BlockEntityRenderer<io.github.chakyl.cobblemonfarmers.blockentity.CrystalBallBlockEntity> {
+  public io.github.chakyl.cobblemonfarmers.blockentity.renderer.CrystalBallBlockEntityRenderer(net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider$Context);
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static void renderItem(net.minecraft.world.item.ItemStack, io.github.chakyl.cobblemonfarmers.blockentity.CrystalBallBlockEntity, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, int, float);
+    Code:
+       0: aload_0
+       1: ifnull        11
+       4: aload_0
+       5: invokevirtual #30                 // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+       8: ifeq          12
+      11: return
+      12: invokestatic  #36                 // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+      15: invokevirtual #40                 // Method net/minecraft/client/Minecraft.m_91291_:()Lnet/minecraft/client/renderer/entity/ItemRenderer;
+      18: astore        7
+      20: aload_1
+      21: invokevirtual #46                 // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+      24: invokevirtual #52                 // Method net/minecraft/world/level/Level.m_46467_:()J
+      27: l2f
+      28: fload         6
+      30: fadd
+      31: fstore        8
+      33: fload         8
+      35: ldc           #53                 // float 0.1f
+      37: fmul
+      38: invokestatic  #59                 // Method net/minecraft/util/Mth.m_14031_:(F)F
+      41: fconst_2
+      42: fdiv
+      43: ldc           #60                 // float 0.5f
+      45: fadd
+      46: fstore        9
+      48: fload         9
+      50: fload         9
+      52: fmul
+      53: fload         9
+      55: fadd
+      56: ldc           #53                 // float 0.1f
+      58: fmul
+      59: fstore        9
+      61: fload         8
+      63: ldc           #61                 // float 3.0f
+      65: fmul
+      66: fstore        10
+      68: aload_2
+      69: invokevirtual #66                 // Method com/mojang/blaze3d/vertex/PoseStack.m_85836_:()V
+      72: aload_2
+      73: ldc2_w        #67                 // double 0.5d
+      76: ldc2_w        #69                 // double 1.25d
+      79: fload         9
+      81: f2d
+      82: ldc2_w        #67                 // double 0.5d
+      85: dmul
+      86: dadd
+      87: ldc2_w        #67                 // double 0.5d
+      90: invokevirtual #74                 // Method com/mojang/blaze3d/vertex/PoseStack.m_85837_:(DDD)V
+      93: aload_2
+      94: getstatic     #80                 // Field com/mojang/math/Axis.f_252436_:Lcom/mojang/math/Axis;
+      97: fload         10
+      99: invokeinterface #84,  2           // InterfaceMethod com/mojang/math/Axis.m_252977_:(F)Lorg/joml/Quaternionf;
+     104: invokevirtual #88                 // Method com/mojang/blaze3d/vertex/PoseStack.m_252781_:(Lorg/joml/Quaternionf;)V
+     107: aload_2
+     108: getstatic     #91                 // Field com/mojang/math/Axis.f_252529_:Lcom/mojang/math/Axis;
+     111: fload         10
+     113: ldc           #92                 // float 0.75f
+     115: fmul
+     116: invokeinterface #84,  2           // InterfaceMethod com/mojang/math/Axis.m_252977_:(F)Lorg/joml/Quaternionf;
+     121: invokevirtual #88                 // Method com/mojang/blaze3d/vertex/PoseStack.m_252781_:(Lorg/joml/Quaternionf;)V
+     124: aload_2
+     125: getstatic     #95                 // Field com/mojang/math/Axis.f_252403_:Lcom/mojang/math/Axis;
+     128: fload         10
+     130: ldc           #60                 // float 0.5f
+     132: fmul
+     133: invokeinterface #84,  2           // InterfaceMethod com/mojang/math/Axis.m_252977_:(F)Lorg/joml/Quaternionf;
+     138: invokevirtual #88                 // Method com/mojang/blaze3d/vertex/PoseStack.m_252781_:(Lorg/joml/Quaternionf;)V
+     141: aload_2
+     142: ldc           #96                 // float 0.6f
+     144: ldc           #96                 // float 0.6f
+     146: ldc           #96                 // float 0.6f
+     148: invokevirtual #100                // Method com/mojang/blaze3d/vertex/PoseStack.m_85841_:(FFF)V
+     151: aload         7
+     153: aload_0
+     154: getstatic     #106                // Field net/minecraft/world/item/ItemDisplayContext.GROUND:Lnet/minecraft/world/item/ItemDisplayContext;
+     157: iload         4
+     159: iload         5
+     161: aload_2
+     162: aload_3
+     163: aload_1
+     164: invokevirtual #46                 // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+     167: aload_1
+     168: invokevirtual #110                // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58899_:()Lnet/minecraft/core/BlockPos;
+     171: invokevirtual #115                // Method net/minecraft/core/BlockPos.m_121878_:()J
+     174: l2i
+     175: invokevirtual #121                // Method net/minecraft/client/renderer/entity/ItemRenderer.m_269128_:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;IILcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/world/level/Level;I)V
+     178: aload_2
+     179: invokevirtual #124                // Method com/mojang/blaze3d/vertex/PoseStack.m_85849_:()V
+     182: return
+
+  public void render(io.github.chakyl.cobblemonfarmers.blockentity.CrystalBallBlockEntity, float, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, int);
+    Code:
+       0: aload_1
+       1: invokevirtual #148                // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.getRenderItem:()Lnet/minecraft/world/item/ItemStack;
+       4: aload_1
+       5: aload_3
+       6: aload         4
+       8: iload         5
+      10: iload         6
+      12: fload_2
+      13: invokestatic  #150                // Method renderItem:(Lnet/minecraft/world/item/ItemStack;Lio/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IIF)V
+      16: aload_3
+      17: aload         4
+      19: iload         5
+      21: iload         6
+      23: aload_1
+      24: invokevirtual #46                 // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+      27: invokevirtual #52                 // Method net/minecraft/world/level/Level.m_46467_:()J
+      30: l2f
+      31: fload_2
+      32: fadd
+      33: invokestatic  #156                // Method io/github/chakyl/cobblemonfarmers/utils/RenderUtils.renderTheyOrb:(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IIF)V
+      36: aload_1
+      37: invokevirtual #160                // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.getWorkerEntity:()Lcom/cobblemon/mod/common/entity/pokemon/PokemonEntity;
+      40: astore        7
+      42: aload         7
+      44: ifnull        232
+      47: aload_1
+      48: invokevirtual #164                // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.getWorkerAspects:()Ljava/util/Set;
+      51: astore        8
+      53: aload         8
+      55: ifnull        71
+      58: aload         7
+      60: invokevirtual #170                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.m_20088_:()Lnet/minecraft/network/syncher/SynchedEntityData;
+      63: invokestatic  #174                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getASPECTS:()Lnet/minecraft/network/syncher/EntityDataAccessor;
+      66: aload         8
+      68: invokevirtual #180                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      71: new           #184                // class java/util/HashSet
+      74: dup
+      75: aload         7
+      77: invokevirtual #187                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getAspects:()Ljava/util/Set;
+      80: invokespecial #190                // Method java/util/HashSet."<init>":(Ljava/util/Collection;)V
+      83: astore        9
+      85: aload         9
+      87: aload         7
+      89: invokevirtual #194                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getForm:()Lcom/cobblemon/mod/common/pokemon/FormData;
+      92: invokevirtual #199                // Method com/cobblemon/mod/common/pokemon/FormData.getAspects:()Ljava/util/List;
+      95: invokeinterface #203,  2          // InterfaceMethod java/util/Set.addAll:(Ljava/util/Collection;)Z
+     100: pop
+     101: aload         7
+     103: invokevirtual #170                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.m_20088_:()Lnet/minecraft/network/syncher/SynchedEntityData;
+     106: invokestatic  #174                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getASPECTS:()Lnet/minecraft/network/syncher/EntityDataAccessor;
+     109: aload         9
+     111: invokevirtual #180                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+     114: aload_1
+     115: invokevirtual #207                // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+     118: astore        10
+     120: aload_3
+     121: invokevirtual #66                 // Method com/mojang/blaze3d/vertex/PoseStack.m_85836_:()V
+     124: aload         7
+     126: invokevirtual #211                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.getPokemon:()Lcom/cobblemon/mod/common/pokemon/Pokemon;
+     129: invokevirtual #217                // Method com/cobblemon/mod/common/pokemon/Pokemon.getSpecies:()Lcom/cobblemon/mod/common/pokemon/Species;
+     132: invokevirtual #223                // Method com/cobblemon/mod/common/pokemon/Species.getHitbox:()Lnet/minecraft/world/entity/EntityDimensions;
+     135: getfield      #228                // Field net/minecraft/world/entity/EntityDimensions.f_20377_:F
+     138: fstore        11
+     140: aload_3
+     141: aload         10
+     143: fload         11
+     145: iconst_1
+     146: invokestatic  #234                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.getPokemonOffset:(Lnet/minecraft/world/level/block/state/BlockState;FZ)F
+     149: f2d
+     150: ldc2_w        #235                // double 0.01d
+     153: aload         10
+     155: fload         11
+     157: iconst_0
+     158: invokestatic  #234                // Method io/github/chakyl/cobblemonfarmers/utils/PokeUtils.getPokemonOffset:(Lnet/minecraft/world/level/block/state/BlockState;FZ)F
+     161: f2d
+     162: invokevirtual #74                 // Method com/mojang/blaze3d/vertex/PoseStack.m_85837_:(DDD)V
+     165: aload_3
+     166: getstatic     #80                 // Field com/mojang/math/Axis.f_252436_:Lcom/mojang/math/Axis;
+     169: aload         7
+     171: invokevirtual #240                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.m_146908_:()F
+     174: invokeinterface #84,  2           // InterfaceMethod com/mojang/math/Axis.m_252977_:(F)Lorg/joml/Quaternionf;
+     179: invokevirtual #88                 // Method com/mojang/blaze3d/vertex/PoseStack.m_252781_:(Lorg/joml/Quaternionf;)V
+     182: invokestatic  #36                 // Method net/minecraft/client/Minecraft.m_91087_:()Lnet/minecraft/client/Minecraft;
+     185: invokevirtual #244                // Method net/minecraft/client/Minecraft.m_91290_:()Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;
+     188: astore        12
+     190: aload         12
+     192: aload         7
+     194: invokevirtual #250                // Method net/minecraft/client/renderer/entity/EntityRenderDispatcher.m_114382_:(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/client/renderer/entity/EntityRenderer;
+     197: astore        13
+     199: aload         13
+     201: instanceof    #252                // class com/cobblemon/mod/common/client/render/pokemon/PokemonRenderer
+     204: ifeq          228
+     207: aload         13
+     209: checkcast     #252                // class com/cobblemon/mod/common/client/render/pokemon/PokemonRenderer
+     212: astore        14
+     214: aload         14
+     216: aload         7
+     218: fconst_0
+     219: fload_2
+     220: aload_3
+     221: aload         4
+     223: iload         5
+     225: invokevirtual #255                // Method com/cobblemon/mod/common/client/render/pokemon/PokemonRenderer.render:(Lcom/cobblemon/mod/common/entity/pokemon/PokemonEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+     228: aload_3
+     229: invokevirtual #124                // Method com/mojang/blaze3d/vertex/PoseStack.m_85849_:()V
+     232: aload_1
+     233: invokevirtual #264                // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58898_:()Z
+     236: ifeq          279
+     239: aload_1
+     240: invokevirtual #267                // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.hasBonusSpeed:()Z
+     243: ifeq          279
+     246: aload_1
+     247: invokevirtual #46                 // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+     250: invokevirtual #271                // Method net/minecraft/world/level/Level.m_213780_:()Lnet/minecraft/util/RandomSource;
+     253: invokeinterface #276,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     258: ldc_w         #277                // float 0.01f
+     261: fcmpg
+     262: ifge          279
+     265: aload_1
+     266: invokevirtual #46                 // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58904_:()Lnet/minecraft/world/level/Level;
+     269: aload_1
+     270: invokevirtual #110                // Method io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity.m_58899_:()Lnet/minecraft/core/BlockPos;
+     273: getstatic     #283                // Field net/minecraft/core/particles/ParticleTypes.f_123792_:Lnet/minecraft/core/particles/SimpleParticleType;
+     276: invokestatic  #287                // Method io/github/chakyl/cobblemonfarmers/utils/RenderUtils.renderBonusParticles:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/particles/SimpleParticleType;)V
+     279: return
+
+  private int getLightLevel(net.minecraft.world.level.Level, net.minecraft.core.BlockPos);
+    Code:
+       0: aload_1
+       1: getstatic     #314                // Field net/minecraft/world/level/LightLayer.BLOCK:Lnet/minecraft/world/level/LightLayer;
+       4: aload_2
+       5: invokevirtual #318                // Method net/minecraft/world/level/Level.m_45517_:(Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/BlockPos;)I
+       8: istore_3
+       9: aload_1
+      10: getstatic     #321                // Field net/minecraft/world/level/LightLayer.SKY:Lnet/minecraft/world/level/LightLayer;
+      13: aload_2
+      14: invokevirtual #318                // Method net/minecraft/world/level/Level.m_45517_:(Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/BlockPos;)I
+      17: istore        4
+      19: iload_3
+      20: iload         4
+      22: invokestatic  #327                // Method net/minecraft/client/renderer/LightTexture.m_109885_:(II)I
+      25: ireturn
+
+  public void m_6922_(net.minecraft.world.level.block.entity.BlockEntity, float, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #42                 // class io/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity
+       5: fload_2
+       6: aload_3
+       7: aload         4
+       9: iload         5
+      11: iload         6
+      13: invokevirtual #337                // Method render:(Lio/github/chakyl/cobblemonfarmers/blockentity/CrystalBallBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V
+      16: return
+}

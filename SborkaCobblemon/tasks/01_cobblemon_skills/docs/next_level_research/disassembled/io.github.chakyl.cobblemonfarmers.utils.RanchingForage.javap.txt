@@ -1,0 +1,64 @@
+Compiled from "RanchingForage.java"
+public class io.github.chakyl.cobblemonfarmers.utils.RanchingForage {
+  private final net.minecraft.world.item.ItemStack item;
+
+  private final double chance;
+
+  private final boolean hasQuality;
+
+  private final int minHearts;
+
+  public io.github.chakyl.cobblemonfarmers.utils.RanchingForage(net.minecraft.world.item.ItemStack, double, boolean, int);
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #20                 // Field item:Lnet/minecraft/world/item/ItemStack;
+       9: aload_0
+      10: dload_2
+      11: putfield      #22                 // Field chance:D
+      14: aload_0
+      15: iload         4
+      17: putfield      #24                 // Field hasQuality:Z
+      20: aload_0
+      21: iload         5
+      23: putfield      #26                 // Field minHearts:I
+      26: return
+
+  public static io.github.chakyl.cobblemonfarmers.utils.RanchingForage getDefaultInstance();
+    Code:
+       0: new           #2                  // class io/github/chakyl/cobblemonfarmers/utils/RanchingForage
+       3: dup
+       4: getstatic     #36                 // Field net/minecraft/world/item/Items.f_41852_:Lnet/minecraft/world/item/Item;
+       7: invokevirtual #42                 // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+      10: dconst_0
+      11: iconst_0
+      12: iconst_0
+      13: invokespecial #44                 // Method "<init>":(Lnet/minecraft/world/item/ItemStack;DZI)V
+      16: areturn
+
+  public net.minecraft.world.item.ItemStack getItem();
+    Code:
+       0: aload_0
+       1: getfield      #20                 // Field item:Lnet/minecraft/world/item/ItemStack;
+       4: areturn
+
+  public double getChance();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field chance:D
+       4: dreturn
+
+  public boolean hasQuality();
+    Code:
+       0: aload_0
+       1: getfield      #24                 // Field hasQuality:Z
+       4: ireturn
+
+  public int getMinHearts();
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field minHearts:I
+       4: ireturn
+}

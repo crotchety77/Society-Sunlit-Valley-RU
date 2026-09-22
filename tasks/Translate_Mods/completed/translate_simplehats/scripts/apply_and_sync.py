@@ -12,7 +12,7 @@ if sys.stdout.encoding != 'utf-8':
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", ".."))
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-GAME_LANG_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\simplehats\lang\ru_ru.json"
+GAME_LANG_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\simplehats\lang\ru_ru.json"
 MODS_TRANSLATION_PATH = os.path.join(ROOT_DIR, "translations", "mods", "simplehats.json")
 NEW_TRANSLATE_MD_PATH = os.path.join(TASK_DIR, "new_translate.md")
 EN_US_ALL_PATH = os.path.join(TASK_DIR, "en_us_all.json")

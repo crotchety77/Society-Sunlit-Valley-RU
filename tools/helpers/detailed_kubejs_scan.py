@@ -2,7 +2,7 @@ import os, json, re, sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-kubejs_dir = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs'
+kubejs_dir = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs'
 
 books = [
   'alias_moss', 'animal_fancy', 'banana_karenina', 'brine_and_punishment', 'bluegill_meridian',

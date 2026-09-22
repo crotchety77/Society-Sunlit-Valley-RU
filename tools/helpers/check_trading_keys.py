@@ -5,7 +5,7 @@ import zipfile
 import glob
 
 # 1. Inspect jar
-jar_path = glob.glob(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods\*society_trading*.jar')[0]
+jar_path = glob.glob(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods\*society_trading*.jar')[0]
 with zipfile.ZipFile(jar_path) as z:
     en_jar = json.loads(z.read('assets/society_trading/lang/en_us.json').decode('utf-8'))
 
@@ -14,7 +14,7 @@ for k, v in en_jar.items():
     print(f"{k} => {v}")
 
 # 2. Inspect kubejs/server_scripts/society_trading
-game_dir = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\server_scripts\society_trading'
+game_dir = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\server_scripts\society_trading'
 found_keys = set()
 for root, dirs, files in os.walk(game_dir):
     for f in files:

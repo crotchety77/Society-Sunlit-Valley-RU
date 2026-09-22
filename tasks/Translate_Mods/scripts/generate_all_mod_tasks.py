@@ -27,8 +27,8 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-MODS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods"
-KUBEJS_ASSETS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets"
+MODS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods"
+KUBEJS_ASSETS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets"
 LOCAL_TRANSLATIONS_DIR = os.path.join(ROOT_DIR, "translations", "mods")
 TASKS_ROOT = os.path.join(ROOT_DIR, "tasks", "Translate_Mods")
 
@@ -117,7 +117,7 @@ def generate_apply_sync_script(ns):
 Скрипт применения и синхронизации локализации для мода '{ns}'.
 1. Считывает переводы из new_translate.md.
 2. Сохраняет в translations/mods/{ns}.json.
-3. Записывает напрямую в D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs\\assets\\{ns}\\lang\\ru_ru.json.
+3. Записывает напрямую в G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs\\assets\\{ns}\\lang\\ru_ru.json.
 4. Запускает общий node sync_all_to_game.js.
 5. Физически считывает файл игры и верифицирует ключи.
 \"\"\"
@@ -135,7 +135,7 @@ if sys.platform == 'win32':
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 LOCAL_MOD_JSON = os.path.join(ROOT_DIR, "translations", "mods", "{ns}.json")
-GAME_RU_PATH = r"D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs\\assets\\{ns}\\lang\\ru_ru.json"
+GAME_RU_PATH = r"G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs\\assets\\{ns}\\lang\\ru_ru.json"
 
 def parse_translations():
     target_file = os.path.join(TASK_DIR, "new_translate.md")

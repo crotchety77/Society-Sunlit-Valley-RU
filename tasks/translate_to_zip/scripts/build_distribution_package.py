@@ -10,7 +10,7 @@ import glob
 sys.stdout.reconfigure(encoding='utf-8')
 
 workspace_root = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
-game_root = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley'
+game_root = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley'
 task_dir = os.path.join(workspace_root, 'tasks', 'translate_to_zip')
 scriptora_zip_path = os.path.join(task_dir, 'Scriptora_Society.Sunlit.Valley.4.0.4 (1).zip')
 
@@ -111,40 +111,39 @@ def main():
         if os.path.exists(os.path.join(game_root, js.replace('/', os.sep))):
             files_to_package.append(js)
 
-    # E. server_scripts/ Mechanics & Bugfixes & Tags
+    # E. server_scripts/ Mechanics & Bugfixes
     server_scripts = [
         'kubejs/server_scripts/globalServer.js',
         'kubejs/server_scripts/handleDebt.js',
         'kubejs/server_scripts/entities/slimeTicket.js',
-        'kubejs/server_scripts/entities/slimeInspectorEnhanced.js',
-        'kubejs/server_scripts/tags/handleItemBlockFluidTags.js'
+        'kubejs/server_scripts/entities/slimeInspectorEnhanced.js'
     ]
     for ss in server_scripts:
         if os.path.exists(os.path.join(game_root, ss.replace('/', os.sep))):
             files_to_package.append(ss)
 
-    # F. kubejs/data/ Custom tags for JEI/EMI
-    custom_data_tags = [
-        'kubejs/data/society/tags/items/machine_upgrades.json',
-        'kubejs/data/forge/tags/items/upgrades.json'
-    ]
-    for dt in custom_data_tags:
-        if os.path.exists(os.path.join(game_root, dt.replace('/', os.sep))):
-            files_to_package.append(dt)
-
-    # G. resourcepacks/ (Перевод модов.zip)
-    # Find the translation resourcepack in game profile
-    rp_dir = os.path.join(game_root, 'resourcepacks')
-    translation_rp_source = None
-    if os.path.exists(rp_dir):
-        for item in os.listdir(rp_dir):
-            full_p = os.path.join(rp_dir, item)
-            if item.endswith('.zip') and os.path.isfile(full_p):
-                # check if it's the translation pack (not Better_Cats, Create, etc.)
-                if any(x in item for x in ['Better_', 'CreateSophisticated', 'Fairy', 'Icon', 'Jade', 'longwing_', 'MobCrates', 'Quark', 'Stardew_', 'sunlit_']):
-                    continue
-                translation_rp_source = full_p
-                break
+    # F. Generate fresh resourcepacks/Перевод модов.zip containing all 58 namespaces
+    rp_dest = os.path.join(game_root, 'resourcepacks', 'Перевод модов.zip')
+    os.makedirs(os.path.dirname(rp_dest), exist_ok=True)
+    with zipfile.ZipFile(rp_dest, 'w', zipfile.ZIP_DEFLATED) as z:
+        mcmeta = {
+            'pack': {
+                'pack_format': 15,
+                'description': '§6Полный русский перевод модов для Society: Sunlit Valley\n§7Society Russian Translation'
+            }
+        }
+        z.writestr('pack.mcmeta', json.dumps(mcmeta, ensure_ascii=False, indent=2))
+        for ns in os.listdir(k_assets):
+            ru_file = os.path.join(k_assets, ns, 'lang', 'ru_ru.json')
+            if os.path.exists(ru_file):
+                z.write(ru_file, f'assets/{ns}/lang/ru_ru.json')
+        tex_dir = os.path.join(k_assets, 'society', 'textures', 'gui')
+        if os.path.exists(tex_dir):
+            for f in os.listdir(tex_dir):
+                if f.startswith('community_center_') and f.endswith('.png'):
+                    z.write(os.path.join(tex_dir, f), f'assets/society/textures/gui/{f}')
+    print(f"📦 Сформирован полный ресурспак перевода ({len(os.listdir(k_assets))} namespaces): {rp_dest}")
+    translation_rp_source = rp_dest
 
     # Remove duplicates and sort
     files_to_package = sorted(list(set(files_to_package)))
@@ -307,7 +306,7 @@ def generate_markdown_report(output_path, data, all_files, modified, new_f, unch
     content = f"""# Отчёт по формированию дистрибутива русификатора (Society: Sunlit Valley)
 
 > **Статус дистрибутива:** ✅ Сформирован и верифицирован  
-> **Источник истины:** Установленная сборка `D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley`  
+> **Источник истины:** Установленная сборка `G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley`  
 > **Исходный архив для сравнения:** `Scriptora_Society.Sunlit.Valley.4.0.4 (1).zip`  
 > **Кодировка всех файлов:** UTF-8 (без BOM), валидный JSON и JS  
 

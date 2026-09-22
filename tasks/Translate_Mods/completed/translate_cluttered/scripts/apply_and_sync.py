@@ -5,7 +5,7 @@
 1. Генерирует 1062 качественных русских ключей без машинного мусора и остатков латиницы.
 2. Обновляет new_translate.md (Блок 1 + Блок 2).
 3. Обновляет translations/mods/cluttered.json.
-4. Напрямую записывает в D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\cluttered\lang\ru_ru.json.
+4. Напрямую записывает в G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\cluttered\lang\ru_ru.json.
 5. Запускает node sync_all_to_game.js.
 6. Верифицирует физический файл игры и выводит изменённые ключи.
 """
@@ -21,7 +21,7 @@ if sys.platform == 'win32':
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", ".."))
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-GAME_LANG_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\cluttered\lang\ru_ru.json"
+GAME_LANG_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\cluttered\lang\ru_ru.json"
 TRANSLATIONS_PATH = os.path.join(ROOT_DIR, "translations", "mods", "cluttered.json")
 NEW_TRANSLATE_MD = os.path.join(TASK_DIR, "new_translate.md")
 

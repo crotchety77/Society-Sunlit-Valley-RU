@@ -16,7 +16,7 @@ def sha256_file(path):
     return h.hexdigest()
 
 scriptora_zip = r'tasks/translate_to_zip/Scriptora_Society.Sunlit.Valley.4.0.4 (1).zip'
-game_root = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley'
+game_root = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley'
 workspace_root = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
 
 print("=== 1. AUDITING SCRIPTORA ZIP ===")

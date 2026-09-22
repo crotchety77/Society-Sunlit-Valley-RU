@@ -14,8 +14,8 @@ if sys.platform == "win32":
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-GAME_SNBT = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters\getting_started.snbt"
-GAME_FTB_LANG_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang"
+GAME_SNBT = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters\getting_started.snbt"
+GAME_FTB_LANG_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang"
 PROJ_FTB_DIR = os.path.join(PROJECT_ROOT, "translations", "ftbquests")
 PROJ_BACKUP_SNBT = os.path.join(PROJECT_ROOT, "game_data", "ftbquests", "chapters")
 

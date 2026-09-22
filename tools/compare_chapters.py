@@ -1,7 +1,7 @@
 import os
 
-dir1 = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters"
-dir2 = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\config\ftbquests\quests\chapters"
+dir1 = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters"
+dir2 = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\config\ftbquests\quests\chapters"
 
 for f in sorted(os.listdir(dir1)):
     if not f.endswith('.snbt'):

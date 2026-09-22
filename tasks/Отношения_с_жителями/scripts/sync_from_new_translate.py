@@ -10,7 +10,7 @@ if sys.platform == "win32":
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 NEW_TRANSLATE_PATH = os.path.join(PROJECT_ROOT, "tasks", "Отношения_с_жителями", "new_translate")
 LOCAL_FTB_RU = os.path.join(PROJECT_ROOT, "translations", "ftbquests", "ru_ru.json")
-GAME_FTB_RU = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
+GAME_FTB_RU = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
 
 def main():
     with open(NEW_TRANSLATE_PATH, "r", encoding="utf-8") as f:

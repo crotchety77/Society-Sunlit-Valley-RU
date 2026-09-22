@@ -9,7 +9,7 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
-TOOLTIPS_JS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
+TOOLTIPS_JS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
 NEW_TRANSLATE_MD = os.path.join(ROOT_DIR, "tasks", "Translate_Mods", "translate_splendid_slimes", "new_translate.md")
 
 # 1. Update addTooltips.js

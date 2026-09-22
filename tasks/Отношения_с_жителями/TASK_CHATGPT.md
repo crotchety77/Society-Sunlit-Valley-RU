@@ -355,7 +355,7 @@ FTB Quests;
 
 После синхронизации проверить фактические файлы в:
 
-`D:\ModrinthApp\profiles\Society_ Sunlit Valley\...`
+`G:\curseforge\minecraft\Instances\Society Sunlit Valley\...`
 
 ---
 

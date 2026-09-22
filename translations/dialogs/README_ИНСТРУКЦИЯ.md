@@ -38,4 +38,4 @@
 1. Проверит все строки на ошибки (например, неэкранированные знаки `%`).
 2. Создаст готовый файл **`ru_ru.json`** прямо в этой папке.
 3. Если на вашем компьютере установлен модпак, он автоматически скопирует файл в:  
-   `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\dialog\lang\ru_ru.json`.
+   `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\dialog\lang\ru_ru.json`.

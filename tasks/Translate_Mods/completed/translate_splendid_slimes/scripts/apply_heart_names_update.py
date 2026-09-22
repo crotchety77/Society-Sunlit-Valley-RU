@@ -25,7 +25,7 @@ TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 NEW_TRANSLATE_MD = os.path.join(TASK_DIR, "new_translate.md")
 QUESTS_TRANSLATE_MD = os.path.join(TASK_DIR, "quests_translate.md")
 LOCAL_MOD_JSON = os.path.join(ROOT_DIR, "translations", "mods", "splendid_slimes.json")
-GAME_RU_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\splendid_slimes\lang\ru_ru.json"
+GAME_RU_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\splendid_slimes\lang\ru_ru.json"
 
 def update_new_translate():
     with open(NEW_TRANSLATE_MD, "r", encoding="utf-8") as f:

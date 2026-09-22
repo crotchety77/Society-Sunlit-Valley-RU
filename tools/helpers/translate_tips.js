@@ -126,7 +126,7 @@ fs.writeFileSync(localRuJson, JSON.stringify(tipsRu, null, 2), 'utf8');
 console.log(`Saved locally: ${localRuJson} (${Object.keys(tipsRu).length} keys)`);
 
 // 2. Sync directly to Modrinth profile
-const modpackTipsDir = 'D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs\\assets\\society_tips\\lang';
+const modpackTipsDir = 'G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs\\assets\\society_tips\\lang';
 if (!fs.existsSync(modpackTipsDir)) {
     fs.mkdirSync(modpackTipsDir, { recursive: true });
 }

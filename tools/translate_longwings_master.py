@@ -25,7 +25,7 @@ os.makedirs(DOCS_DIR, exist_ok=True)
 
 from tools.analyze_untranslated_mods import parse_relaxed_json
 
-jar_path = glob.glob(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods\*Longwings*.jar')[0]
+jar_path = glob.glob(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods\*Longwings*.jar')[0]
 with zipfile.ZipFile(jar_path, 'r') as z:
     en_us = parse_relaxed_json(z.read('assets/longwings/lang/en_us.json').decode('utf-8', errors='replace'))
 

@@ -190,4 +190,4 @@ flowchart TD
 По запросу пользователя: **`«Обнови»`**, **`«Синхронизируй»`**, **`«F3+T»`** или **`«Сборка»`**:
 1. Автоматически запускается `validate_qa.py`.
 2. При отсутствии синтаксических ошибок файл `ru_ru.json` копируется напрямую в:  
-   `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society_skills\lang\ru_ru.json`.
+   `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society_skills\lang\ru_ru.json`.

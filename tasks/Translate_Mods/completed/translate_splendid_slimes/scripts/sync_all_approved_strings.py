@@ -12,7 +12,7 @@ if sys.platform == 'win32':
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
 P_JSON = os.path.join(ROOT_DIR, "translations", "mods", "splendid_slimes.json")
 P_MD = os.path.join(ROOT_DIR, "tasks", "Translate_Mods", "translate_splendid_slimes", "new_translate.md")
-GAME_JSON = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\splendid_slimes\lang\ru_ru.json"
+GAME_JSON = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\splendid_slimes\lang\ru_ru.json"
 
 with open(P_JSON, 'r', encoding='utf-8') as f:
     data = json.load(f)

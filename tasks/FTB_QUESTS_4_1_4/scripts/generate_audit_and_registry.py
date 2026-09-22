@@ -294,13 +294,13 @@ def build_quest_block(q, p1_en, p1_ru):
 
 def run():
     base_dir = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\tasks\FTB_QUESTS_4_1_4'
-    p_414 = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests'
-    p_404 = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\config\ftbquests\quests'
+    p_414 = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests'
+    p_404 = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\config\ftbquests\quests'
 
-    p1_ru = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
-    p1_en = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
-    p2_ru = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
-    p2_en = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
+    p1_ru = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
+    p1_en = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
+    p2_ru = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
+    p2_en = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
 
     # Load 4.1.4 chapters
     chap_414_dir = os.path.join(p_414, 'chapters')

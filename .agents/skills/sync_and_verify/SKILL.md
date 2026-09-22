@@ -18,7 +18,7 @@ description: Автоматизирует регламент синхрониз�
      ```powershell
      python tools/verify_keys.py <namespace> <key1> <key2> ...
      ```
-   - Убедиться, что файл `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json` содержит актуальные значения.
+   - Убедиться, что файл `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json` содержит актуальные значения.
 
 3. **Проверка отсутствия дубликатов скриптов KubeJS**:
    - При добавлении или обновлении скриптов в `client_scripts/tooltips/` или `server_scripts/` проверить, что старые копии скриптов в корневых директориях отсутствуют (KubeJS загружает скрипты рекурсивно).

@@ -38,7 +38,7 @@ flowchart TD
 ### Шаг 1. Локализация кода механики и реверс-инжиниринг
 
 #### А. Скрипты KubeJS и конфиги:
-Искать в `D:\ModrinthApp\profiles\Society_ Sunlit Valley\`:
+Искать в `G:\curseforge\minecraft\Instances\Society Sunlit Valley\`:
 * `kubejs/server_scripts/` — логика событий, награды, крафты, тики, дропы (`LootJS`, `ItemEvents`, `LevelEvents`).
 * `kubejs/client_scripts/` — интерфейсы, тултипы (`ItemEvents.tooltip`), кастомный JEI.
 * `kubejs/startup_scripts/` — регистрация блоков, предметов, свойств, конфигов.

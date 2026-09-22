@@ -5,7 +5,7 @@ import argparse
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-GAME_CHAPTERS = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters'
+GAME_CHAPTERS = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters'
 
 def restore_quest_key(chapter_file, quest_id, field_type="title"):
     if not chapter_file.endswith('.snbt'):

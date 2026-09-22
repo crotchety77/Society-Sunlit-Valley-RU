@@ -15,7 +15,7 @@ if sys.platform == 'win32':
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-GAME_ASSETS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets"
+GAME_ASSETS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets"
 
 def main():
     print("🚀 Запуск синхронизации для Библиотекаря (Вероника)...")

@@ -971,5 +971,6 @@
   "society.hospital_receipt.quote.20": "\"We don't know how you do it. But if you die one more time, we're closing the hospital and joining a monastery.\"",
   "society.hospital_receipt.quote.21_plus": "\"Standard recovery procedure completed. Take care and stay safe!\"",
   "jei.society.category.universal_gifts": "Universal Gifts",
-  "tooltip.society.diamond_heart.biomancy": "§7Can be used by §fBiomancers§7 in animal husbandry if they have unlocked the corresponding skill."
+  "tooltip.society.diamond_heart.biomancy": "§7Can be used by §fBiomancers§7 in animal husbandry if they have unlocked the corresponding skill.",
+  "item.society.caterpillar_eggs": "Caterpillar Eggs"
 }

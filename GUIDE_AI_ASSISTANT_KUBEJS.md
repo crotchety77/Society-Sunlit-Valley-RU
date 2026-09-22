@@ -28,7 +28,7 @@
 | `backups/` | Резервные копии и архивы старых версий |
 
 ### 🎮 1.2. Папка игры (Профиль Modrinth):
-`D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\`
+`G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\`
 
 ---
 
@@ -37,7 +37,7 @@
 KubeJS работает как виртуальный ресурспак высшего приоритета. Чтобы перевести предмет, блок, категорию или интерфейс любого мода:
 1. Определяется пространство имён (Namespace мода): например, `moreminecarts`, `shippingbin`, `society`, `portable_blueprints`, `dialog`.
 2. Перевод помещается в JSON-файл по пути:
-   `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json`
+   `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json`
 3. В игре перевод применяется мгновенно по нажатию комбинации **`F3 + T`** (перезагрузка ресурсов клиента без перезапуска игры).
 
 ---

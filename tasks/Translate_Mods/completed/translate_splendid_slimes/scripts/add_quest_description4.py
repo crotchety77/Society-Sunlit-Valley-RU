@@ -12,11 +12,11 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
-SNBT_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters\iii__advanced_farming.snbt"
+SNBT_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters\iii__advanced_farming.snbt"
 LOCAL_RU = os.path.join(ROOT_DIR, "translations", "ftbquests", "ru_ru.json")
 LOCAL_EN = os.path.join(ROOT_DIR, "translations", "ftbquests", "en_us.json")
-GAME_RU = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
-GAME_EN = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json"
+GAME_RU = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
+GAME_EN = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json"
 QUESTS_MD = os.path.join(ROOT_DIR, "tasks", "Translate_Mods", "translate_splendid_slimes", "quests_translate.md")
 
 # 1. Backup SNBT

@@ -6,7 +6,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
-GAME_ASSETS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets"
+GAME_ASSETS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets"
 
 items = [
     "minecraft:coal",

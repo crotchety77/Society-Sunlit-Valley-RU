@@ -5,7 +5,7 @@ r"""
 1. Считывает переводы из new_translate.md.
 2. Сохраняет ключи мода в translations/mods/dew_drop_farmland_growth.json.
 3. Сохраняет тултипы в translations/society/ru_ru.json.
-4. Записывает напрямую в D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\...
+4. Записывает напрямую в G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\...
 5. Запускает общий node sync_all_to_game.js.
 6. Физически считывает файлы игры и верифицирует ключи.
 """
@@ -25,8 +25,8 @@ TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 LOCAL_MOD_JSON = os.path.join(ROOT_DIR, "translations", "mods", "dew_drop_farmland_growth.json")
 LOCAL_SOCIETY_JSON = os.path.join(ROOT_DIR, "translations", "society", "ru_ru.json")
 
-GAME_MOD_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\dew_drop_farmland_growth\lang\ru_ru.json"
-GAME_SOCIETY_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
+GAME_MOD_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\dew_drop_farmland_growth\lang\ru_ru.json"
+GAME_SOCIETY_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
 
 def parse_translations():
     target_file = os.path.join(TASK_DIR, "new_translate.md")

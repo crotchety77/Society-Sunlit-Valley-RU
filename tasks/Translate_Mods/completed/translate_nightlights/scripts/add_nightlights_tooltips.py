@@ -13,8 +13,8 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
-KUBEJS_TOOLTIPS_JS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
-GAME_NL_RU = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\nightlights\lang\ru_ru.json"
+KUBEJS_TOOLTIPS_JS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
+GAME_NL_RU = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\nightlights\lang\ru_ru.json"
 LOCAL_NL_JSON = os.path.join(ROOT_DIR, "translations", "mods", "nightlights.json")
 TASK_NEW_TRANSLATE = os.path.join(ROOT_DIR, "tasks", "Translate_Mods", "translate_nightlights", "new_translate.md")
 

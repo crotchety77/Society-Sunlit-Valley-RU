@@ -132,5 +132,5 @@
 ## 🔍 7. Проверка и верификация
 
 1. Синхронизация проведена через `tasks/Отношения_с_жителями/scripts/apply_and_sync.py` и `sync_all_to_game.js`.
-2. Файл `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\invitationTooltips.js` физически проверен и содержит актуальный код.
+2. Файл `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\invitationTooltips.js` физически проверен и содержит актуальный код.
 3. Ошибок синтаксиса KubeJS не обнаружено.

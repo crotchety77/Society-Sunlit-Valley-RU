@@ -8,7 +8,7 @@
 ## 🚨 Железный регламент изоляции (Правило 15 AGENTS.md)
 
 1. **Полная изоляция от основной сборки:**
-   - Основная сборка **Society: Sunlit Valley** (`D:\ModrinthApp\profiles\Society_ Sunlit Valley`) и её файлы в корневой папке `translations/` являются независимыми.
+   - Основная сборка **Society: Sunlit Valley** (`G:\curseforge\minecraft\Instances\Society Sunlit Valley`) и её файлы в корневой папке `translations/` являются независимыми.
    - **Запрещено** переносить Cobblemon-специфичные файлы, переводы или квесты в корень `translations/` или синхронизировать их в `D:\ModrinthApp\...`.
    - Вся работа над сборкой Cobblemon ведётся **СТРОГО внутри папки `SborkaCobblemon/`**.
 

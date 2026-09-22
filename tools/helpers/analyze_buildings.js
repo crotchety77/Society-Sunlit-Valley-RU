@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const modpackPath = 'D:/ModrinthApp/profiles/Society_ Sunlit Valley/kubejs/assets';
+const modpackPath = 'G:/curseforge/minecraft/Instances/Society Sunlit Valley/kubejs/assets';
 
 // Load original building shop strings
 const pbJsonPath = path.join(modpackPath, 'portable_blueprints/lang/building_shop_generated.json');

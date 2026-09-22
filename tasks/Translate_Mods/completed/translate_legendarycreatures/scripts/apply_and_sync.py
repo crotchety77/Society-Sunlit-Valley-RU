@@ -7,7 +7,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', '..'))
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 TRANSLATIONS_FILE = os.path.join(BASE_DIR, 'translations', 'mods', 'legendarycreatures.json')
-GAME_LANG_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\legendarycreatures\lang"
+GAME_LANG_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\legendarycreatures\lang"
 GAME_LANG_FILE = os.path.join(GAME_LANG_DIR, "ru_ru.json")
 
 TRANSLATIONS = {

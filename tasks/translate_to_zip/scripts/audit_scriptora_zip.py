@@ -8,7 +8,7 @@ if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
 
 ZIP_PATH = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\tasks\translate_to_zip\Scriptora_Society.Sunlit.Valley.4.0.4 (1).zip'
-GAME_DIR = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley'
+GAME_DIR = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley'
 REPO_ROOT = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
 
 print("=== 1. Анализ исходного архива Scriptora ===")

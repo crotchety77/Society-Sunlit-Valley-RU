@@ -11,7 +11,7 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
-GAME_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs"
+GAME_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs"
 
 print("=== 1. Поиск точных двух фраз ===")
 

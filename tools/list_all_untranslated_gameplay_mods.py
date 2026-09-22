@@ -12,8 +12,8 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-MODS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods"
-KUBEJS_ASSETS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets"
+MODS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods"
+KUBEJS_ASSETS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets"
 LOCAL_TRANSLATIONS_DIR = os.path.join(ROOT_DIR, "translations", "mods")
 TASKS_ROOT = os.path.join(ROOT_DIR, "tasks", "Translate_Mods")
 

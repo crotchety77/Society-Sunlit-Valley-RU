@@ -1,6 +1,6 @@
 import re
 
-with open(r"D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\config\ftbquests\quests\chapters\iii__advanced_farming.snbt", 'r', encoding='utf-8') as f:
+with open(r"G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\config\ftbquests\quests\chapters\iii__advanced_farming.snbt", 'r', encoding='utf-8') as f:
     text = f.read()
 
 # Let's find all quests in text

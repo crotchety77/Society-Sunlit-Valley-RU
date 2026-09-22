@@ -64,7 +64,7 @@ python tools/finalize_mod.py <folder_name_or_namespace>
 
 ### 4️⃣ Физическая верификация
 * Прочитать напрямую измененные ключи из файла игры:
-  `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json`.
+  `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json`.
 * Вывести проверенные строки пользователю.
 
 ### 5️⃣ Отчёт и инструкция перезагрузки

@@ -43,7 +43,7 @@ if res.stderr:
     print("STDERR:", res.stderr)
 
 print("\n=== 4. Direct Physical Game Files Verification ===")
-base_game = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'
+base_game = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'
 for ns, kdict in mod_groups.items():
     p = os.path.join(base_game, ns, 'lang', 'ru_ru.json')
     if not os.path.exists(p):

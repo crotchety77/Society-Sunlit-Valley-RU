@@ -4,7 +4,7 @@ r"""
 Скрипт применения и синхронизации локализации для мода 'bakery'.
 1. Считывает переводы из new_translate.md.
 2. Сохраняет в translations/mods/bakery.json.
-3. Записывает напрямую в D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\bakery\lang\ru_ru.json.
+3. Записывает напрямую в G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\bakery\lang\ru_ru.json.
 4. Запускает общий node sync_all_to_game.js.
 5. Физически считывает файл игры и верифицирует ключи.
 """
@@ -22,7 +22,7 @@ if sys.platform == 'win32':
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 LOCAL_MOD_JSON = os.path.join(ROOT_DIR, "translations", "mods", "bakery.json")
-GAME_RU_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\bakery\lang\ru_ru.json"
+GAME_RU_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\bakery\lang\ru_ru.json"
 
 def parse_translations():
     target_file = os.path.join(TASK_DIR, "new_translate.md")

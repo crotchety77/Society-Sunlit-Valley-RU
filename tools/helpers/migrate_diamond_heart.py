@@ -40,13 +40,13 @@ with open(add_tooltips_ws, "w", encoding="utf-8") as f:
 print("Updated addTooltips.js in workspace.")
 
 # 3. Copy to game client_scripts
-game_tooltips = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
+game_tooltips = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
 shutil.copy2(add_tooltips_ws, game_tooltips)
 print("Synced addTooltips.js to game profile.")
 
 # 4. Copy to game assets/society/lang/
-game_ru = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
-game_en = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\en_us.json"
+game_ru = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
+game_en = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\en_us.json"
 shutil.copy2(ru_path, game_ru)
 shutil.copy2(en_path, game_en)
 print("Synced lang files to game profile.")

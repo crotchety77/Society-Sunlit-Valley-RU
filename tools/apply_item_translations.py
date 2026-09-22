@@ -22,7 +22,7 @@ def update_json_file(filepath, updates):
 
 def main():
     base_dir = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
-    game_assets = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'
+    game_assets = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'
     
     # 1. Society items
     society_updates = {

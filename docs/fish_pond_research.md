@@ -2,7 +2,7 @@
 
 ## 📂 Проанализированные файлы и источники
 * **Папка перевода:** `c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\`
-* **Профиль сборки:** `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\`
+* **Профиль сборки:** `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\`
 
 | Файл в сборке | Что реализует |
 |---|---|

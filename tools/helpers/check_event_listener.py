@@ -3,7 +3,7 @@ import zipfile
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
-jar_path = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods\puffish_skills-0.16.1-1.20-forge.jar"
+jar_path = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods\puffish_skills-0.16.1-1.20-forge.jar"
 
 with zipfile.ZipFile(jar_path, 'r') as z:
     for n in z.namelist():

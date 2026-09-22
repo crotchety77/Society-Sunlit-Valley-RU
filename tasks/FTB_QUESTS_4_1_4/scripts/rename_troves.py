@@ -59,11 +59,11 @@ def main():
 
     files_map = [
         (r'translations/society/ru_ru.json', society_replacements),
-        (r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json', society_replacements),
+        (r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json', society_replacements),
         (r'translations/skills/ru_ru.json', skills_replacements),
-        (r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society_skills\lang\ru_ru.json', skills_replacements),
+        (r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society_skills\lang\ru_ru.json', skills_replacements),
         (r'translations/ftbquests/ru_ru.json', quests_replacements),
-        (r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', quests_replacements),
+        (r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', quests_replacements),
     ]
 
     total_updated = 0

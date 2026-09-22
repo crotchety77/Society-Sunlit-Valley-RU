@@ -9,7 +9,7 @@ if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
     sys.stderr.reconfigure(encoding='utf-8')
 
-p = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\data\splendid_slimes\slimes"
+p = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\data\splendid_slimes\slimes"
 for f in sorted(os.listdir(p)):
     if f.endswith('.json'):
         d = json.load(open(os.path.join(p, f), 'r', encoding='utf-8'))

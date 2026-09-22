@@ -1,7 +1,7 @@
 import json
 import re
 
-snbt_path = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\config\ftbquests\quests\chapters\iii__advanced_farming.snbt"
+snbt_path = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\config\ftbquests\quests\chapters\iii__advanced_farming.snbt"
 with open(snbt_path, 'r', encoding='utf-8') as f:
     snbt_content = f.read()
 

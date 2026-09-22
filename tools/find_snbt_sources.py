@@ -10,7 +10,7 @@ for root, dirs, files in os.walk(r"C:\Users\Foxi8\Downloads"):
             print(fp, os.path.getsize(fp))
 
 print("\n=== Checking backups ===")
-backups_dir = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\backups"
+backups_dir = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\backups"
 if os.path.exists(backups_dir):
     for f in os.listdir(backups_dir):
         if f.endswith('.zip'):

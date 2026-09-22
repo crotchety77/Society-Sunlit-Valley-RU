@@ -1,6 +1,6 @@
 # Аудит товаров жителя: Книжная ярмарка / Вероника (Book Fair / Veronica)
 
-* **Файл магазина:** `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\data\society_trading\shops\book_fair.json`
+* **Файл магазина:** `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\data\society_trading\shops\book_fair.json`
 * **Профессия / Роль:** Сезонная ярмарка Вероники (`book_fair`)
 * **Время работы:** 📅 Поздний подсезон (20–30 числа каждого сезона: `late_spring`, `late_summer`, `late_autumn`, `late_winter`).
 * **Всего товаров:** 30 книг навыков

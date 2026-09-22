@@ -17,7 +17,7 @@ if hasattr(sys.stderr, "reconfigure"):
 
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ROOT_DIR = os.path.abspath(os.path.join(TASK_DIR, "..", "..", ".."))
-GAME_PROFILE_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley"
+GAME_PROFILE_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley"
 GAME_ASSETS_DIR = os.path.join(GAME_PROFILE_DIR, "kubejs", "assets")
 
 NEW_TRANSLATE_FILE = os.path.join(TASK_DIR, "new_translate.md")

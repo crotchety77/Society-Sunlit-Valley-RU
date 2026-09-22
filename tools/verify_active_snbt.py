@@ -1,7 +1,7 @@
 import os
 import re
 
-cur = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters\iii__advanced_farming.snbt"
+cur = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters\iii__advanced_farming.snbt"
 with open(cur, 'r', encoding='utf-8') as f:
     cur_text = f.read()
 

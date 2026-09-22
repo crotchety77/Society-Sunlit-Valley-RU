@@ -11,7 +11,7 @@ if sys.stdout.encoding != 'utf-8':
         pass
 
 WORKSPACE = Path(r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода")
-GAME_PROFILE = Path(r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs")
+GAME_PROFILE = Path(r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs")
 
 RU_LANG_FILE = WORKSPACE / "translations" / "society" / "ru_ru.json"
 EN_LANG_FILE = WORKSPACE / "translations" / "society" / "en_us.json"

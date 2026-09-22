@@ -1,31 +1,3 @@
-global.getHospitalQuoteKey = (visits) => {
-  if (visits <= 1) return "society.hospital_receipt.quote.1";
-  if (visits <= 3) return "society.hospital_receipt.quote.2_3";
-  if (visits <= 5) return "society.hospital_receipt.quote.4_5";
-  if (visits <= 7) return "society.hospital_receipt.quote.6_7";
-  if (visits <= 9) return "society.hospital_receipt.quote.8_9";
-  if (visits <= 11) return "society.hospital_receipt.quote.10_11";
-  if (visits <= 15) return "society.hospital_receipt.quote.12_15";
-  if (visits <= 18) return "society.hospital_receipt.quote.16_18";
-  if (visits === 19) return "society.hospital_receipt.quote.19";
-  if (visits === 20) return "society.hospital_receipt.quote.20";
-  return "society.hospital_receipt.quote.21_plus";
-};
-
-global.getHospitalQuote = (visits) => {
-  let key = "society.hospital_receipt.quote.20_plus";
-  if (visits <= 1) key = "society.hospital_receipt.quote.1";
-  else if (visits <= 3) key = "society.hospital_receipt.quote.2_3";
-  else if (visits <= 5) key = "society.hospital_receipt.quote.4_5";
-  else if (visits <= 7) key = "society.hospital_receipt.quote.6_7";
-  else if (visits <= 9) key = "society.hospital_receipt.quote.8_9";
-  else if (visits <= 11) key = "society.hospital_receipt.quote.10_11";
-  else if (visits <= 15) key = "society.hospital_receipt.quote.12_15";
-  else if (visits <= 18) key = "society.hospital_receipt.quote.16_18";
-  else if (visits === 19) key = "society.hospital_receipt.quote.19";
-  return Text.translatable(key).getString();
-};
-
 console.info("[SOCIETY] globalServer.js loaded");
 
 global.mainUiElementIds = [
@@ -280,18 +252,12 @@ global.netherRadar = (e, local, printFunction) => {
 };
 
 global.handleFee = (server, player, reason) => {
-  const UUID = player.getUuid().toString();
+  const UUID = player.getUuid();
   let amountToDeduct = 0;
   let account = global.getPersonalOrCurioAccount(player.level, player);
   let balance = account.getBalance() || 0;
   let maxFee = 0;
   let minimumFee = 512;
-  
-  if (!server.persistentData.hospitalVisits) server.persistentData.hospitalVisits = {};
-  let visits = server.persistentData.hospitalVisits[UUID] || 1;
-  let quoteKey = global.getHospitalQuoteKey(visits);
-  let noteTitle = `Больничная справка #${visits}`;
-  let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Doctor Harvey").getString();
   
   if (reason === "death") {
     maxFee = 4096;
@@ -306,8 +272,6 @@ global.handleFee = (server, player, reason) => {
   }
   if (amountToDeduct < minimumFee) amountToDeduct = minimumFee;
   if (balance < maxFee && player.stages.has("entered_skull_cavern")) amountToDeduct = maxFee;
-  let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
-
   if (balance < amountToDeduct) {
     let currentDebt = null;
     let foundIndex = -1;
@@ -323,43 +287,26 @@ global.handleFee = (server, player, reason) => {
     if (!currentDebt) {
       server.persistentData.debts.push({ uuid: UUID.toString(), amount: amountToDeduct });
     }
-    let previousDebt = currentDebt ? currentDebt : 0;
-    let totalDebt = previousDebt + amountToDeduct;
-    let formattedPreviousDebt = global.formatPrice(previousDebt);
-    let formattedTotalDebt = global.formatPrice(totalDebt);
-
-    let noteText = Text.translatable("society.hospital_receipt.note.debt", `${visits}`, Text.translatable(quoteKey), `${formattedAmountToDeduct}`, `${formattedPreviousDebt}`).toJson();
+    let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
+    let formattedCurrentDebt = global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount);
+    let noteTitle = global.translatableWithFallback("society.hospital_receipt.title", "Hospital Receipt").getString();
+    let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
+    let noteText = Text.translatable("society.hospital_receipt.debt", `${formattedAmountToDeduct}`, `${formattedCurrentDebt}`).toJson();
     player.give(
       global.getNotePaperItem(noteAuthor, noteText, noteTitle)
     );
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-        240,
-        Text.translatable("society.hospital_receipt.hud.debt", `${visits}`, `${formattedAmountToDeduct}`, `${formattedTotalDebt}`).toJson()
-      )
-    );
-    player.tell(Text.translatable("society.hospital_receipt.hud.debt", `${visits}`, `${formattedAmountToDeduct}`, `${formattedTotalDebt}`).red());
-    player.tell(Text.translatable(quoteKey).italic().gray());
   } else {
     account.setBalance(balance - amountToDeduct);
-    let noteText = Text.translatable("society.hospital_receipt.note.paid", `${visits}`, Text.translatable(quoteKey), `${formattedAmountToDeduct}`).toJson();
+    let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
+    let noteTitle = global.translatableWithFallback("society.hospital_receipt.title", "Hospital Receipt").getString();
+    let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
+    let noteText = Text.translatable("society.hospital_receipt.fee_taked", `${formattedAmountToDeduct}`).toJson();
     player.give(
       global.getNotePaperItem(noteAuthor, noteText, noteTitle)
     );
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        `{anchor:"TOP_LEFT",background:1,color:"#FFAA00",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-        200,
-        Text.translatable("society.hospital_receipt.hud.fee_taked", `${visits}`, `${formattedAmountToDeduct}`).toJson()
-      )
-    );
-    player.tell(Text.translatable("society.hospital_receipt.hud.fee_taked", `${visits}`, `${formattedAmountToDeduct}`).gold());
-    player.tell(Text.translatable(quoteKey).italic().gray());
   }
 };
+
 global.teleportHome = (player, server, level) => {
   let respawnPosition = player.getRespawnPosition();
   if (respawnPosition == null) {

@@ -1,7 +1,7 @@
 import re
 
-act = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters\getting_started.snbt"
-ref = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\config\ftbquests\quests\chapters\getting_started.snbt"
+act = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters\getting_started.snbt"
+ref = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\config\ftbquests\quests\chapters\getting_started.snbt"
 
 with open(act, 'r', encoding='utf-8') as f:
     act_ids = set(re.findall(r'id:\s*"([0-9A-Fa-f]+)"', f.read()))

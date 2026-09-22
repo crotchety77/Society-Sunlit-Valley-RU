@@ -8,7 +8,7 @@ import json
 import glob
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-GAME_KUBEJS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs"
+GAME_KUBEJS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs"
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 # 1. Загрузка всех словарей переводов для красивого отображения названий предметов

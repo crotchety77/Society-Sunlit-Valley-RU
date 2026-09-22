@@ -1,6 +1,6 @@
 import zipfile, subprocess, os, tempfile
 
-mods_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods'
+mods_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods'
 jar_file = None
 for f in os.listdir(mods_path):
     if 'splendid_slimes' in f.lower():

@@ -2,8 +2,8 @@ import os
 import json
 import re
 
-shops_dir = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\data\society_trading\shops"
-dialog_dir = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\dialog\lang"
+shops_dir = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\data\society_trading\shops"
+dialog_dir = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\dialog\lang"
 society_lang = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\translations\society\ru_ru.json"
 
 with open(society_lang, "r", encoding="utf-8") as f:

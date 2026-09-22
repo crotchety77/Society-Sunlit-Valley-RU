@@ -10,8 +10,8 @@ if sys.stdout.encoding != 'utf-8':
 
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
 TASK_DIR = os.path.join(ROOT_DIR, "tasks", "task_aquaculture_hooks")
-GAME_LANG_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
-GAME_TOOLTIPS_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
+GAME_LANG_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
+GAME_TOOLTIPS_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
 
 def main():
     print("=== [1/3] Запуск синхронизации sync_all_to_game.js ===")

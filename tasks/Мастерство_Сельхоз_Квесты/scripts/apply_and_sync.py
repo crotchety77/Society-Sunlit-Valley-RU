@@ -14,9 +14,9 @@ SOCIETY_JSON = os.path.join(ROOT_DIR, 'translations', 'society', 'ru_ru.json')
 QUESTS_JSON = os.path.join(ROOT_DIR, 'translations', 'ftbquests', 'ru_ru.json')
 SKILLS_JSON = os.path.join(ROOT_DIR, 'translations', 'skills', 'ru_ru.json')
 
-GAME_SOCIETY = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json'
-GAME_QUESTS = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
-GAME_SKILLS = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society_skills\lang\ru_ru.json'
+GAME_SOCIETY = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json'
+GAME_QUESTS = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
+GAME_SKILLS = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society_skills\lang\ru_ru.json'
 
 SYNC_SCRIPT = os.path.join(ROOT_DIR, 'sync_all_to_game.js')
 

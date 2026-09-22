@@ -7,12 +7,12 @@
 1. **Локальный скрипт применения и синхронизации для каждой задачи**:
    В папке задачи (`tasks/<имя_задачи>/scripts/apply_and_sync.py` или `.js`) ВСЕГДА создавать рабочий скрипт, который:
    - Напрямую обновляет файлы проекта (`translations/`).
-   - Напрямую записывает изменения в папку игры: `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json`.
+   - Напрямую записывает изменения в папку игры: `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json`.
    - Запускает общий `node ./sync_all_to_game.js`.
 
 2. **ОБЯЗАТЕЛЬНАЯ ВЕРИФИКАЦИЯ ФАЙЛА ИГРЫ (ПРЕЖДЕ ЧЕМ ПИСАТЬ «F3 + T»)**:
-   - **ЗАПРЕЩЕНО** писать пользователю «Обновлено, нажмите F3 + T», не проверив физический файл в `D:\ModrinthApp\...`.
-   - ИИ ОБЯЗАН выполнить проверочный скрипт, прочитать изменённые ключи напрямую из `D:\ModrinthApp\...\ru_ru.json` и вывести их реальные значения в ответ.
+   - **ЗАПРЕЩЕНО** писать пользователю «Обновлено, нажмите F3 + T», не проверив физический файл в `G:\curseforge\minecraft\Instances\Society Sunlit Valley\...`.
+   - ИИ ОБЯЗАН выполнить проверочный скрипт, прочитать изменённые ключи напрямую из `G:\curseforge\minecraft\Instances\Society Sunlit Valley\...\ru_ru.json` и вывести их реальные значения в ответ.
 
 3. **Точность пространств имён (Namespaces)**:
    - Тултипы предметов в инвентаре $\rightarrow$ `assets/society/lang/ru_ru.json`.
@@ -38,7 +38,7 @@
      - Удочки сторонних модов (`netherdepthsupgrade:lava_fishing_rod` и др.) **несовместимы с Ящиком для снастей Aquaculture** (крючки/лески/наживка), но поддерживают поплавки Stardew Fishing через верстак/инвентарь — об этом всегда явно информировать игрока в подсказке.
 6. **Правило: проверка перевода после синхронизации**:
    - После выполнения `apply_and_sync.py` агент обязан:
-     1. Считать изменённый ключ напрямую из игрового файла `D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs\\assets\\<namespace>\\lang\\ru_ru.json`.
+     1. Считать изменённый ключ напрямую из игрового файла `G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs\\assets\\<namespace>\\lang\\ru_ru.json`.
      2. Вывести его значение в ответе пользователю.
      3. Только после подтверждения вывести инструкцию «Нажмите F3 + T» или «перезагрузите мир».
 
@@ -100,12 +100,16 @@
     - При добавлении общих тултипов или `tooltip.addAdvanced` изменения ОБЯЗАНЫ вноситься в `game_data/.../addTooltips.js`.
     - Прямое редактирование только файла игры запрещено: при запуске `node sync_all_to_game.js` он будет перезаписан версией из `game_data/`.
 
+14b. **Кастомные серверные скрипты механик (`slimeInspectorEnhanced.js`, `slimeTicket.js`, `globalServer.js`, `handleDebt.js`)**:
+    - Все кастомные скрипты механик хранятся в `kubejs_scripts/server/` и `game_data/server_scripts/`.
+    - Скрипт `sync_all_to_game.js` и сборщик `build_distribution_package.py` ОБЯЗАНЫ включать `slimeInspectorEnhanced.js` и `slimeTicket.js` в игру (`server_scripts/entities/`) и в итоговый `Русификатор.zip`.
+
 15. **Изоляция и правила для сборки Cobblemon (`SborkaCobblemon/`)**:
     - В проекте поддерживаются две независимые сборки:
-      1. 🌲 **Основная сборка (Society: Sunlit Valley)**: `D:\ModrinthApp\profiles\Society_ Sunlit Valley`. Исходники: `translations/`, `tasks/`, `kubejs_scripts/`, `game_data/`. Синхронизация: `node sync_all_to_game.js`.
+      1. 🌲 **Основная сборка (Society: Sunlit Valley)**: `G:\curseforge\minecraft\Instances\Society Sunlit Valley`. Исходники: `translations/`, `tasks/`, `kubejs_scripts/`, `game_data/`. Синхронизация: `node sync_all_to_game.js`.
       2. ⚡ **Сборка Cobblemon (Society Sunlit Cobblemon)**: `G:\curseforge\minecraft\Instances\Society Sunlit Cobblemon`. Исходники, аудиты, квесты и скрипты: **СТРОГО в `SborkaCobblemon/`**.
     - **Железный регламент изоляции:**
-      - **Запрещено** переносить Cobblemon-специфичные файлы в корень `translations/` или синхронизировать их в `D:\ModrinthApp\...`.
+      - **Запрещено** переносить Cobblemon-специфичные файлы в корень `translations/` или синхронизировать их в `G:\curseforge\minecraft\Instances\Society Sunlit Valley\...`.
       - **Запрещено** перезаписывать `ftbquestlocalizer/lang/en_us.json` в Cobblemon базовым файлом Sunlit Valley (в Cobblemon 673+ уникальных квестов тренеров и покемонов).
       - Все задачи по Cobblemon (аудит ветки навыков Puffish Skills, 5 новых книг навыков, квесты рангов, `sunlit_cobblemon`, `cobblemon_farmers` и др.) ведутся изолированно внутри `SborkaCobblemon/tasks/`.
       - Синхронизация Cobblemon выполняется отдельным скриптом `SborkaCobblemon/scripts/sync_cobblemon_to_game.js` (или `.py`).

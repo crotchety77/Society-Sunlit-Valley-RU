@@ -2,7 +2,7 @@ import json, os, shutil
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 RU_SOURCE = os.path.join(BASE_DIR, "translations", "mods", "dramaticdoors.json")
-GAME_TARGET = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\dramaticdoors\lang\ru_ru.json"
+GAME_TARGET = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\dramaticdoors\lang\ru_ru.json"
 
 def main():
     print("--- Применение и синхронизация Dramatic Doors ---")

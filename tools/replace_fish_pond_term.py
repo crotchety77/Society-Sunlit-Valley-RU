@@ -6,7 +6,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 base_dir = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
-game_dir = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'
+game_dir = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'
 
 def update_file(path, replacements):
     if not os.path.exists(path):

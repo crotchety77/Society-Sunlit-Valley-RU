@@ -216,13 +216,13 @@ def extract_quest_keys_from_snbt(chap_name, quest):
     return keys
 
 def main():
-    p_414 = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests'
-    p_404 = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\config\ftbquests\quests'
+    p_414 = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests'
+    p_404 = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\config\ftbquests\quests'
 
-    p1_ru_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
-    p1_en_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json'
-    p2_ru_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
-    p2_en_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\en_us.json'
+    p1_ru_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
+    p1_en_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json'
+    p2_ru_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
+    p2_en_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\en_us.json'
 
     p1_ru = json.load(open(p1_ru_path, encoding='utf-8'))
     p1_en = json.load(open(p1_en_path, encoding='utf-8'))

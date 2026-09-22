@@ -7,7 +7,7 @@ if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
-GAME_DIR = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley'
+GAME_DIR = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley'
 
 print("=== 1. Синхронизация JS-скриптов KubeJS ===")
 

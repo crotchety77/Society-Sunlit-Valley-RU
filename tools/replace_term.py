@@ -8,7 +8,7 @@ import subprocess
 sys.stdout.reconfigure(encoding='utf-8')
 
 PROJECT_TRANSLATIONS = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\translations'
-GAME_ASSETS = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'
+GAME_ASSETS = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'
 SYNC_SCRIPT = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\sync_all_to_game.js'
 
 def search_and_replace_in_json(filepath, old_term, new_term, is_regex=False, case_sensitive=True):

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const modpackPath = 'D:/ModrinthApp/profiles/Society_ Sunlit Valley/kubejs/assets';
+const modpackPath = 'G:/curseforge/minecraft/Instances/Society Sunlit Valley/kubejs/assets';
 const pbEnUsPath = path.join(modpackPath, 'portable_blueprints/lang/en_us.json');
 const pbEnUs = JSON.parse(fs.readFileSync(pbEnUsPath, 'utf8'));
 

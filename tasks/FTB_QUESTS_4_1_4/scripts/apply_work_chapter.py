@@ -95,8 +95,8 @@ def update_snbt_descriptions(snbt_path, qid, num_descriptions, has_pagebreaks=Tr
 def main():
     base_dir = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
     repo_ru_path = os.path.join(base_dir, 'translations', 'ftbquests', 'ru_ru.json')
-    game_ru_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
-    game_snbt_dir = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters'
+    game_ru_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
+    game_snbt_dir = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters'
 
     with open(repo_ru_path, 'r', encoding='utf-8') as f:
         repo_ru = json.load(f)

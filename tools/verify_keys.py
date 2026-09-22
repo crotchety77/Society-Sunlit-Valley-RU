@@ -5,7 +5,7 @@ import argparse
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-GAME_ASSETS = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'
+GAME_ASSETS = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'
 
 NAMESPACES = {
     'society': 'society',

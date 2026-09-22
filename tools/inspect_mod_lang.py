@@ -18,8 +18,8 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 
-MODS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods"
-KUBEJS_ASSETS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets"
+MODS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods"
+KUBEJS_ASSETS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets"
 LOCAL_TRANSLATIONS_DIR = os.path.join(os.path.dirname(__file__), "..", "translations")
 
 def find_jar_for_namespace(namespace):

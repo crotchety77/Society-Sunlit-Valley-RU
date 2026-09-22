@@ -1,6 +1,6 @@
 # 🐟 Справочник квестов и наград рыбных садков (UpgradeFishPond.md)
 
-> **Источник данных:** `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\startup_scripts\fishPondDefinitions.js`
+> **Источник данных:** `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\startup_scripts\fishPondDefinitions.js`
 
 В этом файле собраны **все виды рыб**, их требования по квестам расширения садка (**3→5**, **5→7**, **7→10** мест) и список возможных бонусных наград (**additionalRewards**).
 

@@ -157,7 +157,7 @@ if res.stderr:
     print("STDERR:", res.stderr)
 
 print("\n=== 6. Direct Physical Game Files Verification ===")
-base_game = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'
+base_game = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'
 
 # Check society ru_ru.json
 soc_game_path = os.path.join(base_game, 'society', 'lang', 'ru_ru.json')
@@ -206,7 +206,7 @@ for ns, kdict in mod_keys.items():
             raise ValueError(f"Missing key in game {ns} ru_ru.json: {k}")
 
 # Also verify addTooltips.js in game client_scripts
-game_add_tooltips = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js'
+game_add_tooltips = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js'
 if os.path.exists(game_add_tooltips):
     with open(game_add_tooltips, 'r', encoding='utf-8') as f:
         g_at = f.read()

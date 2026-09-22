@@ -1,6 +1,6 @@
 import os, json
 
-slimes_dir = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\data\splendid_slimes\slimes'
+slimes_dir = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\data\splendid_slimes\slimes'
 if not os.path.exists(slimes_dir):
     slimes_dir = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\game_data\data\splendid_slimes\slimes'
 
@@ -19,7 +19,7 @@ for root, dirs, files in os.walk(r'c:\Users\Foxi8\OneDrive\Рабочий сто
             except:
                 pass
 
-for root, dirs, files in os.walk(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'):
+for root, dirs, files in os.walk(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'):
     for file in files:
         if file == 'ru_ru.json':
             try:

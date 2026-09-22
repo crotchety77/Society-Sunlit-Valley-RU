@@ -9,8 +9,8 @@ if sys.platform == 'win32':
 
 
 jars = [
-    r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods\splendid_slimes-0.20.5.jar',
-    r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods\create_slime-1.0.1.jar'
+    r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods\splendid_slimes-0.20.5.jar',
+    r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods\create_slime-1.0.1.jar'
 ]
 
 all_en = {}

@@ -683,6 +683,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:animal_feed_sack",
     Text.translatable("item.society.animal_feed_sack.description").red()
   );
+  tooltip.add(
+    "paraglider:spirit_orb",
+    Text.translatable("item.paraglider.spirit_orb.description").gray()
+  );
   tooltip.addAdvanced("society:magic_shears", (item, advanced, text) => {
     text.add(Text.translatable("item.society.magic_shears.description").gray());
     text.add(Text.translatable("item.society.magic_shears.description.warn").red());
@@ -1286,36 +1290,10 @@ ItemEvents.tooltip((tooltip) => {
       text.add(Text.translatable("tooltip.society.miracle_potion.shift_2").gray());
       text.add(Text.translatable("tooltip.society.miracle_potion.shift_3").gray());
       text.add(Text.translatable("tooltip.society.miracle_potion.shift_4").gray());
-    }
-  });
-
-
-  tooltip.addAdvanced("society:mood_scanner", (item, advanced, text) => {
-    text.add(Text.translatable("item.society.mood_scanner.description").gray());
-    text.add(Text.translatable("item.society.mood_scanner.description.warn").red());
-    if (tooltip.shift) {
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_header").gold());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_pet").gray());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_quality").gray());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_daily").gray());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_roof").gray());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_cramped").gray());
-    }
-  });
-
-
-  tooltip.addAdvanced("society:miracle_potion", (item, advanced, text) => {
-    text.add(Text.translatable("item.society.miracle_potion.description").gray());
-    if (tooltip.shift) {
-      text.add(Text.translatable("tooltip.society.miracle_potion.shift_1").gold());
-      text.add(Text.translatable("tooltip.society.miracle_potion.shift_2").gray());
-      text.add(Text.translatable("tooltip.society.miracle_potion.shift_3").gray());
-      text.add(Text.translatable("tooltip.society.miracle_potion.shift_4").gray());
     } else {
       text.add(Text.translatable("tooltip.society.press_shift_details"));
     }
   });
-
 
   tooltip.addAdvanced("society:mood_scanner", (item, advanced, text) => {
     text.add(Text.translatable("item.society.mood_scanner.description").gray());
@@ -1331,35 +1309,5 @@ ItemEvents.tooltip((tooltip) => {
       text.add(Text.translatable("tooltip.society.press_shift_details"));
     }
   });
-
-
-  tooltip.addAdvanced("society:miracle_potion", (item, advanced, text) => {
-    text.add(Text.translatable("item.society.miracle_potion.description").gray());
-    if (tooltip.shift) {
-      text.add(Text.translatable("tooltip.society.miracle_potion.shift_1").gold());
-      text.add(Text.translatable("tooltip.society.miracle_potion.shift_2").gray());
-      text.add(Text.translatable("tooltip.society.miracle_potion.shift_3").gray());
-      text.add(Text.translatable("tooltip.society.miracle_potion.shift_4").gray());
-    } else {
-      text.add(Text.translatable("tooltip.society.press_shift_details"));
-    }
-  });
-
-
-  tooltip.addAdvanced("society:mood_scanner", (item, advanced, text) => {
-    text.add(Text.translatable("item.society.mood_scanner.description").gray());
-    text.add(Text.translatable("item.society.mood_scanner.description.warn").red());
-    if (tooltip.shift) {
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_header").gold());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_pet").gray());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_quality").gray());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_daily").gray());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_roof").gray());
-      text.add(Text.translatable("tooltip.society.mood_scanner.shift_cramped").gray());
-    } else {
-      text.add(Text.translatable("tooltip.society.press_shift_details"));
-    }
-  });
-
 });
 

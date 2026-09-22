@@ -3,7 +3,7 @@ import os, json, re, sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 workspace = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
-game_assets = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'
+game_assets = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'
 desc_file = os.path.join(workspace, 'tasks', '25_books_puffish_skills', 'description_books')
 
 # 1. Parse description_books file

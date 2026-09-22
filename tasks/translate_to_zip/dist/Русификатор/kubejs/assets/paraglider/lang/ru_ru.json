@@ -96,5 +96,6 @@
   "bargain.paraglider.stamina_vessel.s": "%s Stamina Vessels",
   "bargain.paraglider.essence": "Essence",
   "bargain.paraglider.essence.s": "%s Essences",
-  "key.paraglider.paragliderSettings": "Paraglider Settings"
+  "key.paraglider.paragliderSettings": "Paraglider Settings",
+  "item.paraglider.spirit_orb.description": "Выпадает при разрушении спавнеров мобов §8(2 шт.)§7, а также с высоким шансом встречается в сундуках сокровищниц и кладов."
 }

@@ -13,9 +13,9 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
-KUBEJS_TOOLTIPS_JS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
-GAME_CHIMES_RU = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\chimes\lang\ru_ru.json"
-GAME_SOCIETY_RU = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
+KUBEJS_TOOLTIPS_JS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
+GAME_CHIMES_RU = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\chimes\lang\ru_ru.json"
+GAME_SOCIETY_RU = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
 LOCAL_CHIMES_JSON = os.path.join(ROOT_DIR, "translations", "mods", "chimes.json")
 LOCAL_SOCIETY_RU = os.path.join(ROOT_DIR, "translations", "society", "ru_ru.json")
 TASK_NEW_TRANSLATE = os.path.join(ROOT_DIR, "tasks", "Translate_Mods", "translate_chimes", "new_translate.md")

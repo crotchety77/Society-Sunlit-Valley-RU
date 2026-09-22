@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = 'D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs\\startup_scripts\\customMachines\\prizeMachine.js';
+const path = 'G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs\\startup_scripts\\customMachines\\prizeMachine.js';
 const content = fs.readFileSync(path, 'utf8');
 const startIndex = content.indexOf('global.prizeMachineRewards = [');
 const endIndex = content.indexOf('StartupEvents.registry("block"', startIndex);

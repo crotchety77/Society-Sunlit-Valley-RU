@@ -28,7 +28,7 @@ for k, v in ru.items():
             print(f"   RU: {v}")
             print()
 
-CHAPTERS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters"
+CHAPTERS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters"
 for p in glob.glob(os.path.join(CHAPTERS_DIR, "*.snbt")):
     chap = os.path.basename(p).replace(".snbt", "")
     content = open(p, 'r', encoding='utf-8', errors='ignore').read()

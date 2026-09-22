@@ -57,7 +57,7 @@ with open(out_ru_path, 'w', encoding='utf-8') as f:
 
 print(f'✅ Итоговый файл успешно сохранён:\n   {out_ru_path}')
 
-modpack_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\dialog\lang\ru_ru.json'
+modpack_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\dialog\lang\ru_ru.json'
 try:
     modpack_dir = os.path.dirname(modpack_path)
     if os.path.exists(modpack_dir):

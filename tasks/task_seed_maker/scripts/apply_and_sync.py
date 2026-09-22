@@ -5,7 +5,7 @@ r"""
 1. Считывает переводы из new_translate.md.
 2. Обновляет translations/society/ru_ru.json.
 3. Добавляет tooltip.addAdvanced("society:seed_maker", ...) в addTooltips.js (в игре и в проекте).
-4. Записывает в D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json.
+4. Записывает в G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json.
 5. Запускает sync_all_to_game.js.
 6. Выполняет физическую верификацию файлов игры.
 """
@@ -23,8 +23,8 @@ if sys.platform == 'win32':
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 LOCAL_SOCIETY_JSON = os.path.join(ROOT_DIR, "translations", "society", "ru_ru.json")
-GAME_SOCIETY_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
-GAME_TOOLTIPS_JS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
+GAME_SOCIETY_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
+GAME_TOOLTIPS_JS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
 
 def parse_translations():
     target_file = os.path.join(TASK_DIR, "new_translate.md")

@@ -13,7 +13,7 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 EN_PATH = os.path.join(TASK_DIR, "en_us_all.json")
 RU_MOD_PATH = os.path.join(ROOT_DIR, "translations", "mods", "refurbished_furniture.json")
-GAME_LANG_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\refurbished_furniture\lang\ru_ru.json"
+GAME_LANG_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\refurbished_furniture\lang\ru_ru.json"
 NEW_TRANSLATE_MD_PATH = os.path.join(TASK_DIR, "new_translate.md")
 
 with open(EN_PATH, "r", encoding="utf-8") as f:

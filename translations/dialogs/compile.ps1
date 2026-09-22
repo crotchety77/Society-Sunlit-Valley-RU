@@ -62,7 +62,7 @@ $jsonString = ConvertTo-Json $ruData -Depth 10
 
 Write-Host "Done! Saved ru_ru.json to:`n  $outRuPath" -ForegroundColor Green
 
-$modpackPath = "D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\dialog\lang\ru_ru.json"
+$modpackPath = "G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\dialog\lang\ru_ru.json"
 try {
     $modpackDir = [System.IO.Path]::GetDirectoryName($modpackPath)
     if ([System.IO.Directory]::Exists($modpackDir)) {

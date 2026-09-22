@@ -1,7 +1,7 @@
 import os
 import json
 
-shops_file = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\data\society_trading\shops\blacksmith.json"
+shops_file = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\data\society_trading\shops\blacksmith.json"
 ru_society = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\translations\society\ru_ru.json"
 en_society = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\translations\society\en_us.json"
 tooltips_js = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\game_data\client_scripts\tooltips\addTooltips.js"

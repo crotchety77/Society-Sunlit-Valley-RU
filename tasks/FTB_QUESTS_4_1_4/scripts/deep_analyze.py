@@ -7,13 +7,13 @@ sys.stdout.reconfigure(encoding='utf-8')
 from audit_ftb_quests import parse_snbt_file, extract_quest_keys_from_snbt, has_cyrillic
 
 def analyze_all():
-    p_414 = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests'
-    p_404 = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\config\ftbquests\quests'
+    p_414 = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests'
+    p_404 = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\config\ftbquests\quests'
 
-    p1_ru = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
-    p1_en = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
-    p2_ru = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
-    p2_en = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
+    p1_ru = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
+    p1_en = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
+    p2_ru = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
+    p2_en = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
 
     # Reward tables diff
     rt_414_dir = os.path.join(p_414, 'reward_tables')

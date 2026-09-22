@@ -34,7 +34,7 @@ TASKS_DIR = os.path.join(PROJECT_ROOT, "tasks", "Translate_Mods")
 COMPLETED_DIR = os.path.join(TASKS_DIR, "completed")
 TRANSLATIONS_DIR = os.path.join(PROJECT_ROOT, "translations", "mods")
 QUEUE_FILE = os.path.join(TASKS_DIR, "QUEUE.md")
-GAME_PROFILE_LANG = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets"
+GAME_PROFILE_LANG = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets"
 
 def find_task_folder(target):
     # 1. Прямой путь

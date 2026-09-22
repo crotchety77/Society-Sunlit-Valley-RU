@@ -82,7 +82,7 @@ for folder_name, ns in MODS:
     os.makedirs(docs_dir, exist_ok=True)
     
     # 1. Поиск JAR и считывание исходного en_us
-    jars = glob.glob(fr'D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods\*{ns}*.jar')
+    jars = glob.glob(fr'G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods\*{ns}*.jar')
     jar_name = os.path.basename(jars[0]) if jars else "unknown.jar"
     en_us = {}
     if jars:

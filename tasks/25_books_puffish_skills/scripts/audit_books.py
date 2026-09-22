@@ -3,7 +3,7 @@ import os, json, sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 workspace = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-kubejs_dir = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs'
+kubejs_dir = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs'
 if not os.path.exists(kubejs_dir):
     kubejs_dir = os.path.join(workspace, 'game_data')
 

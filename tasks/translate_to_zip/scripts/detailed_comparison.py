@@ -8,7 +8,7 @@ import hashlib
 sys.stdout.reconfigure(encoding='utf-8')
 
 scriptora_zip = r'tasks/translate_to_zip/Scriptora_Society.Sunlit.Valley.4.0.4 (1).zip'
-game_root = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley'
+game_root = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley'
 ws_root = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
 
 def sha256_bytes(b):

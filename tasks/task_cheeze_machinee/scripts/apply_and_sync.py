@@ -18,7 +18,7 @@ NEW_TRANSLATE_MD = os.path.join(TASK_DIR, "new_translate.md")
 SOCIETY_LANG_PATH = os.path.join(PROJECT_ROOT, "translations", "society", "ru_ru.json")
 MEADOW_LANG_PATH = os.path.join(PROJECT_ROOT, "translations", "mods", "meadow.json")
 
-GAME_PROFILE = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley"
+GAME_PROFILE = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley"
 GAME_SOCIETY_LANG = os.path.join(GAME_PROFILE, "kubejs", "assets", "society", "lang", "ru_ru.json")
 GAME_MEADOW_LANG = os.path.join(GAME_PROFILE, "kubejs", "assets", "meadow", "lang", "ru_ru.json")
 

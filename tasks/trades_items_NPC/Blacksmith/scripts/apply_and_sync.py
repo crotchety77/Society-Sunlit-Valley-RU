@@ -4,7 +4,7 @@
 Скрипт применения и синхронизации локализации товаров Кузнеца (Blacksmith Trades).
 1. Считывает переводы из tasks/trades_items_NPC/Blacksmith/new_translate.md.
 2. Обновляет translations/society/ru_ru.json, translations/mods/furniture.json, translations/mods/refurbished_furniture.json.
-3. Записывает напрямую в файлы игры в D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\...
+3. Записывает напрямую в файлы игры в G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\...
 4. Запускает общий node sync_all_to_game.js.
 5. Физически считывает и верифицирует ключи из игровых файлов.
 """
@@ -21,7 +21,7 @@ if sys.platform == 'win32':
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 TASK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-GAME_ASSETS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets"
+GAME_ASSETS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets"
 
 def parse_new_translate():
     trans_file = os.path.join(TASK_DIR, "new_translate.md")

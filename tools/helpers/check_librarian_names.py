@@ -5,7 +5,7 @@ import sys
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
 
-GAME_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley"
+GAME_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley"
 KUBEJS_DIR = os.path.join(GAME_DIR, "kubejs")
 SHOP_FILE = os.path.join(KUBEJS_DIR, "data", "society_trading", "shops", "librarian.json")
 

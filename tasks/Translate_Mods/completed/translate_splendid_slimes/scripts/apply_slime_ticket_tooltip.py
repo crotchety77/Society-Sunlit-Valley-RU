@@ -11,9 +11,9 @@ if sys.platform == 'win32':
 
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
 MODS_SLIME_JSON = os.path.join(ROOT_DIR, "translations", "mods", "splendid_slimes.json")
-GAME_SLIME_JSON = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\splendid_slimes\lang\ru_ru.json"
+GAME_SLIME_JSON = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\splendid_slimes\lang\ru_ru.json"
 SOCIETY_JSON = os.path.join(ROOT_DIR, "translations", "society", "ru_ru.json")
-GAME_SOCIETY_JSON = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
+GAME_SOCIETY_JSON = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
 
 # 1. Обновляем имя предмета "Билет слайма"
 for path in [MODS_SLIME_JSON, GAME_SLIME_JSON]:
@@ -33,7 +33,7 @@ for path in [SOCIETY_JSON, GAME_SOCIETY_JSON]:
         print(f"✅ Обновлён: {path}")
 
 # 2. Обновляем тултип в addTooltips.js (в игре)
-GAME_ADD_TOOLTIPS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
+GAME_ADD_TOOLTIPS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
 if os.path.exists(GAME_ADD_TOOLTIPS):
     c = open(GAME_ADD_TOOLTIPS, 'r', encoding='utf-8').read()
     old_target = """  tooltip.add(

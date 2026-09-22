@@ -4,7 +4,7 @@ import sys
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
 
-fp = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\guiclock.json5'
+fp = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\guiclock.json5'
 if os.path.exists(fp):
     with open(fp, 'r', encoding='utf-8') as f:
         content = f.read()

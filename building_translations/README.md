@@ -6,9 +6,9 @@
 
 Файлы автоматически установлены в директорию вашего модпака:
 1. **Категории магазина построек:**  
-   `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society_trading\lang\ru_ru.json`
+   `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society_trading\lang\ru_ru.json`
 2. **Чертежи всех архитектурных стилей и домиков (399 ключей):**  
-   `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\portable_blueprints\lang\ru_ru.json`
+   `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\portable_blueprints\lang\ru_ru.json`
 
 ---
 

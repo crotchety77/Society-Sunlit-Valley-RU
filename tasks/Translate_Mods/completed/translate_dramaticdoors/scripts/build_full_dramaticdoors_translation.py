@@ -4,7 +4,7 @@ TASK_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EN_PATH = os.path.join(TASK_DIR, "en_us_all.json")
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(TASK_DIR))))
 RU_TARGET = os.path.join(BASE_DIR, "translations", "mods", "dramaticdoors.json")
-GAME_TARGET = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\dramaticdoors\lang\ru_ru.json"
+GAME_TARGET = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\dramaticdoors\lang\ru_ru.json"
 
 WORDS_MAP = {
     'Abyssal': 'бездны', 'Acacia': 'акациевая', 'Acorn': 'жёлудевая', 'Aerfin': 'аэрфиновая', 'Aerogel': 'аэрогелевая', 'Aeronos': 'аэроносовая',

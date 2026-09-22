@@ -11,7 +11,7 @@ NEW_TRANSLATE_PATH = os.path.join(TASK_DIR, 'new_translate.md')
 ROOT_DIR = os.path.dirname(os.path.dirname(TASK_DIR))
 
 SOCIETY_TRANSLATION_FILE = os.path.join(ROOT_DIR, 'translations', 'society', 'ru_ru.json')
-GAME_SOCIETY_FILE = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json'
+GAME_SOCIETY_FILE = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json'
 SYNC_SCRIPT = os.path.join(ROOT_DIR, 'sync_all_to_game.js')
 
 def parse_new_translate(filepath):

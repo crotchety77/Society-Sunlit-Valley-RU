@@ -21,7 +21,7 @@ if sys.platform == 'win32':
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TASKS_DIR = os.path.join(ROOT_DIR, "tasks")
 TRANSLATIONS_DIR = os.path.join(ROOT_DIR, "translations")
-GAME_ASSETS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets"
+GAME_ASSETS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets"
 
 def find_task_file(task_name):
     """Ищет файл new_translate.md или new_translate в папке задачи."""

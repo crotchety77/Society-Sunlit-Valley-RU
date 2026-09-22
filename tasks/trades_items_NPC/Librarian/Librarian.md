@@ -1,6 +1,6 @@
 # Аудит товаров жителя: Вероника / Библиотекарь (Veronica / Librarian)
 
-* **Файл магазина:** `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\data\society_trading\shops\librarian.json`
+* **Файл магазина:** `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\data\society_trading\shops\librarian.json`
 * **Профессия / Роль:** Библиотекарь (`librarian`)
 * **Требование для открытия магазина:** 🏠 Приглашение в город (`stage_required: invited_librarian`)
 * **Всего товаров:** 50

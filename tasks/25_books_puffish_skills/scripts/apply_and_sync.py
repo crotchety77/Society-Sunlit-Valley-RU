@@ -3,7 +3,7 @@ import os, json, sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 workspace = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода'
-game_assets = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets'
+game_assets = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets'
 
 books_mapping = [
   ("alias_moss", "Прорастание", "Моховые ягоды можно найти в любой сезон.", "§8Добыча: Рубка деревьев осенью (0.5%%), обмен у Мудрого Дуба или Книжная ярмарка.§r"),

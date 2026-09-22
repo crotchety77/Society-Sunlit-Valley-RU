@@ -1,6 +1,6 @@
 import re
 
-p = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters\iii__advanced_farming.snbt'
+p = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters\iii__advanced_farming.snbt'
 with open(p + '.bak', 'r', encoding='utf-8') as f:
     txt = f.read()
 

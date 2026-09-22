@@ -5,13 +5,13 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-ru_lang_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\longwings\lang\ru_ru.json'
+ru_lang_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\longwings\lang\ru_ru.json'
 ru_lang = {}
 if os.path.exists(ru_lang_path):
     with open(ru_lang_path, 'r', encoding='utf-8') as f:
         ru_lang = json.load(f)
 
-fp = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\startup_scripts\globalRegistry.js'
+fp = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\startup_scripts\globalRegistry.js'
 with open(fp, 'r', encoding='utf-8') as f:
     text = f.read()
 

@@ -13,7 +13,7 @@ if sys.platform == 'win32':
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
 QUESTS_MD = os.path.join(ROOT_DIR, "tasks", "Translate_Mods", "translate_splendid_slimes", "quests_translate.md")
 LOCAL_FTB_RU = os.path.join(ROOT_DIR, "translations", "ftbquests", "ru_ru.json")
-GAME_FTB_RU = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
+GAME_FTB_RU = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
 QUEUE_P3 = os.path.join(ROOT_DIR, "tasks", "FTB_QUESTS_4_1_4", "work_queue", "priority3_partially_translated.md")
 
 clean_desc3 = "Ухаживать за ними проще, чем за скотом, хотя порой они создают куда больше хаоса...\n\nЧтобы определить породу Слайма, воспользуйтесь &6Анализатором слаймов&r!"

@@ -61,7 +61,7 @@ def parse_work_file(filepath):
 def apply_and_sync():
     base_dir = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\tasks\FTB_QUESTS_4_1_4'
     repo_ru_path = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\translations\ftbquests\ru_ru.json'
-    game_ru_path = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
+    game_ru_path = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
 
     repo_ru = json.load(open(repo_ru_path, encoding='utf-8'))
     game_ru = json.load(open(game_ru_path, encoding='utf-8')) if os.path.exists(game_ru_path) else dict(repo_ru)

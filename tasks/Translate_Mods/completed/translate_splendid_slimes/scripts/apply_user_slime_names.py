@@ -14,7 +14,7 @@ if sys.platform == 'win32':
 
 TASKS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 ROOT_DIR = os.path.abspath(os.path.join(TASKS_DIR, ".."))
-GAME_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs"
+GAME_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs"
 GAME_SPLENDID_RU = os.path.join(GAME_DIR, "assets", "splendid_slimes", "lang", "ru_ru.json")
 GAME_SOCIETY_RU = os.path.join(GAME_DIR, "assets", "society", "lang", "ru_ru.json")
 LOCAL_SPLENDID_JSON = os.path.join(ROOT_DIR, "translations", "mods", "splendid_slimes.json")

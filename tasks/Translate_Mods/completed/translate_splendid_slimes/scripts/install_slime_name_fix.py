@@ -12,7 +12,7 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-GAME_SERVER_SCRIPTS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\server_scripts\entities"
+GAME_SERVER_SCRIPTS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\server_scripts\entities"
 TARGET_SCRIPT = os.path.join(GAME_SERVER_SCRIPTS, "slimeBreedName.js")
 
 JS_CODE = """// Priority: 0

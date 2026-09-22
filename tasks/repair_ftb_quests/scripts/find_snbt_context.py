@@ -5,7 +5,7 @@ import re
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
 
-GAME_DIR = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters'
+GAME_DIR = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters'
 
 snbt_files = [f for f in os.listdir(GAME_DIR) if f.endswith('.snbt')]
 

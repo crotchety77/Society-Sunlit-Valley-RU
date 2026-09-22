@@ -9,7 +9,7 @@ import subprocess
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parents[3]
-GAME_DIR = Path(r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets")
+GAME_DIR = Path(r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets")
 
 def load_json(path):
     with open(path, "r", encoding="utf-8") as f:

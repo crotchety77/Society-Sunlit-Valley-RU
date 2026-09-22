@@ -8,7 +8,7 @@ if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
     sys.stderr.reconfigure(encoding='utf-8')
 
-p = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\jadeClient.js"
+p = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\jadeClient.js"
 with open(p, 'r', encoding='utf-8') as f:
     c = f.read()
 

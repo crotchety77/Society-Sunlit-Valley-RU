@@ -14,7 +14,7 @@ TASK_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.dirname(TASK_DIR))
 NEW_TRANSLATE_PATH = os.path.join(TASK_DIR, "new_translate.md")
 SOCIETY_LANG_PATH = os.path.join(PROJECT_ROOT, "translations", "society", "ru_ru.json")
-GAME_SOCIETY_LANG_PATH = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
+GAME_SOCIETY_LANG_PATH = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
 
 def parse_new_translate(file_path):
     with open(file_path, "r", encoding="utf-8") as f:

@@ -11,8 +11,8 @@ if sys.platform == 'win32':
 
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
 SOCIETY_JSON = os.path.join(ROOT_DIR, "translations", "society", "ru_ru.json")
-GAME_SOCIETY_JSON = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
-GAME_ADD_TOOLTIPS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
+GAME_SOCIETY_JSON = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society\lang\ru_ru.json"
+GAME_ADD_TOOLTIPS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\tooltips\addTooltips.js"
 
 # 1. Возвращаем корректную первую строку описания в lang, чтобы убрать пустой пропуск
 for p in [SOCIETY_JSON, GAME_SOCIETY_JSON]:

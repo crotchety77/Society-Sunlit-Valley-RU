@@ -22,7 +22,7 @@ ROOT_DIR = os.path.abspath(os.path.join(TASK_DIR, "..", "..", ".."))
 QUESTS_MD = os.path.join(TASK_DIR, "quests_translate.md")
 
 LOCAL_FTB_RU = os.path.join(ROOT_DIR, "translations", "ftbquests", "ru_ru.json")
-GAME_FTB_RU = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
+GAME_FTB_RU = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
 
 
 

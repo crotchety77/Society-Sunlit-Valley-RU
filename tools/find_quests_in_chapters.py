@@ -1,7 +1,7 @@
 import os
 import re
 
-chapters_dir = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley (1)\config\ftbquests\quests\chapters"
+chapters_dir = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley (1)\config\ftbquests\quests\chapters"
 
 for f in os.listdir(chapters_dir):
     if not f.endswith('.snbt'):

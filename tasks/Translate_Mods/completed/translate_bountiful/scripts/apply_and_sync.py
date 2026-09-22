@@ -4,10 +4,10 @@ import subprocess
 
 MOD_NAME = "bountiful"
 SRC_TRANS = os.path.abspath(f"translations/mods/{MOD_NAME}.json")
-GAME_ASSETS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\bountiful\lang"
+GAME_ASSETS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\bountiful\lang"
 GAME_RU_FILE = os.path.join(GAME_ASSETS_DIR, "ru_ru.json")
 CLIENT_SCRIPTS_SRC = os.path.abspath("kubejs_scripts/client/bountifulTooltips.js")
-CLIENT_SCRIPTS_DST = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\client_scripts\bountifulTooltips.js"
+CLIENT_SCRIPTS_DST = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\client_scripts\bountifulTooltips.js"
 
 def main():
     print(f"--- [1/4] Applying {MOD_NAME} translation ---")

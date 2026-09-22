@@ -13,4 +13,4 @@
 2. **Создание файла согласования `new_translate.md`:**
    * Сформировать Блок 1 (визуальный макет в игре) и Блок 2 (точные строки JSON и подсказок для `addTooltips.js` и `translations/`).
 3. **Скрипт синхронизации и физической верификации `apply_and_sync.py`:**
-   * Автоматическое применение изменений и проверка физических файлов в `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\`.
+   * Автоматическое применение изменений и проверка физических файлов в `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\`.

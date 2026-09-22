@@ -2,7 +2,7 @@ import os, json, sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-kubejs_dir = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs'
+kubejs_dir = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs'
 
 print('=== 1. WANDERER (SHOP) ===')
 w_file = os.path.join(kubejs_dir, 'data/society_trading/shops/wanderer.json')

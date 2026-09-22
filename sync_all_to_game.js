@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const modpackBase = 'D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs\\assets';
-const modpackKubejs = 'D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs';
+const modpackBase = 'G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs\\assets';
+const modpackKubejs = 'G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs';
 const localBase = __dirname;
 
 // 1. Run compile.js for Dialogs
@@ -125,7 +125,7 @@ if (fs.existsSync(ticketScriptSource)) {
     console.log(`✅ Установлен скрипт Билета слайма -> ${ticketScriptTarget}`);
 }
 
-const inspectorScriptSource = path.join(localBase, 'tasks/Translate_Mods/translate_splendid_slimes/kubejs_scripts/server/slimeInspectorEnhanced.js');
+const inspectorScriptSource = path.join(localBase, 'kubejs_scripts/server/slimeInspectorEnhanced.js');
 const inspectorScriptTarget = path.join(modpackKubejs, 'server_scripts/entities/slimeInspectorEnhanced.js');
 if (fs.existsSync(inspectorScriptSource)) {
     fs.copyFileSync(inspectorScriptSource, inspectorScriptTarget);

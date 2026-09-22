@@ -4,8 +4,8 @@ import sys
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
 
-en_p = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society_trading\lang\en_us.json"
-ru_p = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\society_trading\lang\ru_ru.json"
+en_p = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society_trading\lang\en_us.json"
+ru_p = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\society_trading\lang\ru_ru.json"
 
 en = json.load(open(en_p, encoding='utf-8'))
 ru = json.load(open(ru_p, encoding='utf-8'))

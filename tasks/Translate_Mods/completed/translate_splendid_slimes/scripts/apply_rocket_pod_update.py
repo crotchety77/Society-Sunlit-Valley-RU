@@ -10,7 +10,7 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
-GAME_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs"
+GAME_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs"
 TOOLTIPS_JS = os.path.join(GAME_DIR, "client_scripts", "tooltips", "addTooltips.js")
 GAME_SPLENDID_RU = os.path.join(GAME_DIR, "assets", "splendid_slimes", "lang", "ru_ru.json")
 LOCAL_SPLENDID_JSON = os.path.join(ROOT_DIR, "translations", "mods", "splendid_slimes.json")

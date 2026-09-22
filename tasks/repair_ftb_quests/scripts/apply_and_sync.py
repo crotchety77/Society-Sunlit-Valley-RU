@@ -9,7 +9,7 @@ if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
-GAME_DIR = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters'
+GAME_DIR = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters'
 EN_PATH = os.path.join(REPO_ROOT, 'translations', 'ftbquests', 'en_us.json')
 RU_PATH = os.path.join(REPO_ROOT, 'translations', 'ftbquests', 'ru_ru.json')
 
@@ -155,7 +155,7 @@ print("\n=== 3. СИНХРОНИЗАЦИЯ В ИГРУ ===")
 subprocess.run(['node', os.path.join(REPO_ROOT, 'sync_all_to_game.js')], cwd=REPO_ROOT, check=True)
 
 print("\n=== 4. ПРЯМАЯ ФИЗИЧЕСКАЯ ВЕРИФИКАЦИЯ ===")
-GAME_RU_PATH = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
+GAME_RU_PATH = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json'
 with open(GAME_RU_PATH, 'r', encoding='utf-8') as f:
     game_ru = json.load(f)
 

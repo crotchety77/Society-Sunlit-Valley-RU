@@ -9,7 +9,7 @@ if sys.platform == 'win32':
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 EN_PATH = os.path.join(REPO_ROOT, 'translations', 'ftbquests', 'en_us.json')
 RU_PATH = os.path.join(REPO_ROOT, 'translations', 'ftbquests', 'ru_ru.json')
-GAME_DIR = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters'
+GAME_DIR = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters'
 
 with open(EN_PATH, 'r', encoding='utf-8') as f:
     en = json.load(f)

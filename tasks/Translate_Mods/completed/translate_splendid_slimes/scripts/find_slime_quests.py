@@ -11,9 +11,9 @@ if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
     sys.stderr.reconfigure(encoding='utf-8')
 
-CHAPTERS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters"
-RU_LOCALIZER = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
-EN_LOCALIZER = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json"
+CHAPTERS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters"
+RU_LOCALIZER = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json"
+EN_LOCALIZER = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json"
 
 ru_data = json.load(open(RU_LOCALIZER, 'r', encoding='utf-8'))
 en_data = json.load(open(EN_LOCALIZER, 'r', encoding='utf-8'))

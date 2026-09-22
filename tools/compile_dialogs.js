@@ -51,7 +51,7 @@ fs.writeFileSync(outRuPath, JSON.stringify(ruData, null, 2), 'utf8');
 console.log(`Wrote compiled dialog translations to: ${outRuPath}`);
 
 // Target modpack directory sync check
-const modpackPath = 'D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs\\assets\\dialog\\lang\\ru_ru.json';
+const modpackPath = 'G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs\\assets\\dialog\\lang\\ru_ru.json';
 try {
   const modpackDir = path.dirname(modpackPath);
   if (fs.existsSync(modpackDir)) {

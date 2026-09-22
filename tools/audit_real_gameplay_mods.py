@@ -13,8 +13,8 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-MODS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\mods"
-KUBEJS_DIR = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs"
+MODS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\mods"
+KUBEJS_DIR = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs"
 REMOVED_ITEMS_JS = os.path.join(KUBEJS_DIR, "startup_scripts", "globalRemovedItems.js")
 
 sys.path.insert(0, ROOT_DIR)

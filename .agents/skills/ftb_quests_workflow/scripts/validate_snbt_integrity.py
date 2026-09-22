@@ -5,7 +5,7 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-ACTIVE_CHAPTERS = r"D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests\chapters"
+ACTIVE_CHAPTERS = r"G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests\chapters"
 BASE_DIR = r"c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода"
 REFERENCE_DIR = os.path.join(BASE_DIR, "game_data", "ftbquests", "reference_414")
 

@@ -53,6 +53,7 @@
 | **Drum Cornucopia** | **Барабан изобилия** | `society:drum_cornucopia` | Автосбор урожая в 7:00 |
 | **Fish Pond** | **Рыбный пруд** | `society:fish_pond` | Разведение рыбы |
 | **Fish Pond Basket** | **Корзина для рыбного пруда** | `society:fish_pond_basket` | Автосбор продуктов из прудов |
+| **Fish Pond Hatchery** | **Большая корзина для рыбного пруда** | `society:fish_pond_hatchery` | Улучшенный автосбор продуктов из прудов (радиус по высоте 3 блока) |
 | **Fish Pond Manager** | **Менеджер рыбного пруда** | `society:fish_pond_manager` | Автосдача квестов прудов в 7:00 |
 | **&6Caterpillar Box&r** | **&6Инкубатор для гусениц&r** | `society:caterpillar_box` | Выведение бабочек и мотыльков |
 | **&6Caterpillar Eggs&r** | **&6Яйца гусениц&r** | `longwings:*` | Яйца для разведения |

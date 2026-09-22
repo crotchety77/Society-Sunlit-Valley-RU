@@ -110,4 +110,4 @@
 
 * **Декомпилятор Java:** `javap -p -c` для классов `CropHandlerUtils.class`, `CabbageBlock.class`, `PeanutBlock.class`, `CucumberBlock.class`.
 * **JSON-парсеры:** `zipfile` + `json.loads` для разбора `blockstates/*.json` в JAR-файлах модов.
-* **Скриптовый анализ KubeJS:** `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\server_scripts\` и `startup_scripts\`.
+* **Скриптовый анализ KubeJS:** `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\server_scripts\` и `startup_scripts\`.

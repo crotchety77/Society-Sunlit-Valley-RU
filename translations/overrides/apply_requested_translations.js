@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const modpackBase = 'D:\\ModrinthApp\\profiles\\Society_ Sunlit Valley\\kubejs\\assets';
+const modpackBase = 'G:\\curseforge\\minecraft\\Instances\\Society Sunlit Valley\\kubejs\\assets';
 const localBase = path.join(__dirname, '../..');
 
 // Helper function to update and sync namespace lang JSON

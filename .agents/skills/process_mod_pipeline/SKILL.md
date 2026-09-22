@@ -94,7 +94,7 @@ flowchart TD
 > 👉 **ОБЯЗАТЕЛЬНО ПРОЧИТАТЬ:** [`.agents/skills/sync_and_verify/SKILL.md`](file:///c:/Users/Foxi8/OneDrive/Рабочий%20стол/СозданиеПеревода/.agents/skills/sync_and_verify/SKILL.md)
 
 1. Применить изменения: `python tools/apply_task.py <номер_папки>`.
-2. Напрямую прочитать `D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json`.
+2. Напрямую прочитать `G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\<namespace>\lang\ru_ru.json`.
 3. Вывести реальные проверенные строки в ответ пользователю.
 4. Выдать инструкцию перезагрузки (`F3 + T`).
 

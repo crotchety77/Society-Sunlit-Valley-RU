@@ -9,9 +9,9 @@ from audit_ftb_quests import parse_snbt_file
 
 def audit_p1():
     base_dir = r'c:\Users\Foxi8\OneDrive\Рабочий стол\СозданиеПеревода\tasks\FTB_QUESTS_4_1_4'
-    p_414 = r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\config\ftbquests\quests'
-    p1_ru = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
-    p1_en = json.load(open(r'D:\ModrinthApp\profiles\Society_ Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
+    p_414 = r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\config\ftbquests\quests'
+    p1_ru = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\ru_ru.json', encoding='utf-8'))
+    p1_en = json.load(open(r'G:\curseforge\minecraft\Instances\Society Sunlit Valley\kubejs\assets\ftbquestlocalizer\lang\en_us.json', encoding='utf-8'))
 
     with open(os.path.join(base_dir, 'registry_quests.json'), 'r', encoding='utf-8') as f:
         reg = json.load(f)

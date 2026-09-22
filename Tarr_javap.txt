@@ -1,0 +1,204 @@
+Compiled from "Tarr.java"
+public class io.github.chakyl.splendidslimes.entity.Tarr extends io.github.chakyl.splendidslimes.entity.SlimeEntityBase {
+  public static final java.lang.String SLIME = "slime";
+
+  public static final java.lang.String ID = "id";
+
+  public static final java.lang.String DATA = "data";
+
+  private final net.minecraft.world.entity.EntityType<io.github.chakyl.splendidslimes.entity.SlimeEntityBase> entityType;
+
+  public io.github.chakyl.splendidslimes.entity.Tarr(net.minecraft.world.entity.EntityType<io.github.chakyl.splendidslimes.entity.SlimeEntityBase>, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #36                 // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+       6: aload_0
+       7: aload_1
+       8: putfield      #38                 // Field entityType:Lnet/minecraft/world/entity/EntityType;
+      11: return
+
+  protected void m_8099_();
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field f_21346_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+       4: iconst_0
+       5: new           #50                 // class net/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal
+       8: dup
+       9: aload_0
+      10: ldc           #52                 // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      12: iconst_1
+      13: invokespecial #55                 // Method net/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal."<init>":(Lnet/minecraft/world/entity/Mob;Ljava/lang/Class;Z)V
+      16: invokevirtual #61                 // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      19: aload_0
+      20: invokespecial #63                 // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_8099_:()V
+      23: return
+
+  public net.minecraft.world.entity.EntityType<io.github.chakyl.splendidslimes.entity.SlimeEntityBase> getEntityType();
+    Code:
+       0: aload_0
+       1: getfield      #38                 // Field entityType:Lnet/minecraft/world/entity/EntityType;
+       4: areturn
+
+  protected net.minecraft.network.chat.Component m_5677_();
+    Code:
+       0: ldc           #71                 // String entity.splendid_slimes.tarr
+       2: invokestatic  #77                 // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       5: areturn
+
+  public void m_7334_(net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #81                 // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7334_:(Lnet/minecraft/world/entity/Entity;)V
+       5: aload_1
+       6: instanceof    #52                 // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+       9: ifeq          55
+      12: aload_0
+      13: invokevirtual #85                 // Method m_7483_:()Z
+      16: ifeq          55
+      19: aload_0
+      20: aload_1
+      21: checkcast     #87                 // class net/minecraft/world/entity/LivingEntity
+      24: invokevirtual #91                 // Method m_33637_:(Lnet/minecraft/world/entity/LivingEntity;)V
+      27: aload_1
+      28: checkcast     #87                 // class net/minecraft/world/entity/LivingEntity
+      31: invokevirtual #95                 // Method net/minecraft/world/entity/LivingEntity.m_21223_:()F
+      34: fconst_0
+      35: fcmpg
+      36: ifgt          55
+      39: aload_1
+      40: checkcast     #87                 // class net/minecraft/world/entity/LivingEntity
+      43: invokevirtual #99                 // Method net/minecraft/world/entity/LivingEntity.m_21232_:()Lnet/minecraft/world/entity/LivingEntity;
+      46: aload_0
+      47: if_acmpne     55
+      50: aload_0
+      51: aload_1
+      52: invokevirtual #102                // Method tarrReplicate:(Lnet/minecraft/world/entity/Entity;)V
+      55: return
+
+  private void tarrReplicate(net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_0
+       1: invokevirtual #108                // Method m_33632_:()I
+       4: istore_2
+       5: iload_2
+       6: iconst_4
+       7: if_icmpge     21
+      10: aload_0
+      11: aload_0
+      12: invokevirtual #108                // Method m_33632_:()I
+      15: iconst_1
+      16: iadd
+      17: iconst_1
+      18: invokevirtual #112                // Method m_7839_:(IZ)V
+      21: aload_1
+      22: checkcast     #52                 // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      25: invokevirtual #115                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.setTarred:()V
+      28: return
+
+  protected net.minecraft.core.particles.ParticleOptions m_6300_();
+    Code:
+       0: new           #122                // class net/minecraft/core/particles/ItemParticleOption
+       3: dup
+       4: getstatic     #128                // Field net/minecraft/core/particles/ParticleTypes.f_123752_:Lnet/minecraft/core/particles/ParticleType;
+       7: getstatic     #132                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.TARRTAR:Lnet/minecraftforge/registries/RegistryObject;
+      10: invokevirtual #138                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      13: checkcast     #140                // class net/minecraft/world/item/Item
+      16: invokevirtual #144                // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+      19: invokespecial #147                // Method net/minecraft/core/particles/ItemParticleOption."<init>":(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/world/item/ItemStack;)V
+      22: areturn
+
+  public void m_142687_(net.minecraft.world.entity.Entity$RemovalReason);
+    Code:
+       0: aload_0
+       1: invokevirtual #153                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+       4: getfield      #159                // Field net/minecraft/world/level/Level.f_46443_:Z
+       7: ifne          178
+      10: aload_0
+      11: invokevirtual #162                // Method m_21224_:()Z
+      14: ifeq          178
+      17: getstatic     #167                // Field io/github/chakyl/splendidslimes/SlimyConfig.enableForgivingTarrs:Z
+      20: ifeq          178
+      23: aload_0
+      24: invokevirtual #170                // Method m_7770_:()Lnet/minecraft/network/chat/Component;
+      27: astore_2
+      28: aload_0
+      29: invokevirtual #173                // Method m_21525_:()Z
+      32: istore_3
+      33: getstatic     #176                // Field io/github/chakyl/splendidslimes/registry/ModElements$Entities.SPLENDID_SLIME:Lnet/minecraftforge/registries/RegistryObject;
+      36: invokevirtual #138                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      39: checkcast     #178                // class net/minecraft/world/entity/EntityType
+      42: aload_0
+      43: invokevirtual #153                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      46: invokevirtual #182                // Method net/minecraft/world/entity/EntityType.m_20615_:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+      49: checkcast     #4                  // class io/github/chakyl/splendidslimes/entity/SlimeEntityBase
+      52: astore        4
+      54: aload         4
+      56: ifnull        178
+      59: aload_0
+      60: invokevirtual #185                // Method m_21532_:()Z
+      63: ifeq          71
+      66: aload         4
+      68: invokevirtual #188                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_21530_:()V
+      71: aload_0
+      72: invokevirtual #192                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+      75: astore        5
+      77: aload         4
+      79: aload_0
+      80: invokevirtual #195                // Method getSlimeBreed:()Ljava/lang/String;
+      83: invokevirtual #199                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.setSlimeBreed:(Ljava/lang/String;)V
+      86: aload         5
+      88: invokevirtual #204                // Method java/lang/String.isEmpty:()Z
+      91: ifne          101
+      94: aload         4
+      96: aload         5
+      98: invokevirtual #207                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.setSlimeSecondaryBreed:(Ljava/lang/String;)V
+     101: aload         4
+     103: aload_2
+     104: invokevirtual #211                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_6593_:(Lnet/minecraft/network/chat/Component;)V
+     107: aload         4
+     109: iload_3
+     110: invokevirtual #215                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_21557_:(Z)V
+     113: aload         4
+     115: aload_0
+     116: invokevirtual #218                // Method m_20147_:()Z
+     119: invokevirtual #221                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_20331_:(Z)V
+     122: aload         4
+     124: iconst_1
+     125: iconst_1
+     126: invokevirtual #222                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7839_:(IZ)V
+     129: aload         4
+     131: invokevirtual #188                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_21530_:()V
+     134: aload         4
+     136: aload_0
+     137: invokevirtual #226                // Method m_20185_:()D
+     140: aload_0
+     141: invokevirtual #229                // Method m_20186_:()D
+     144: ldc2_w        #230                // double 0.5d
+     147: dadd
+     148: aload_0
+     149: invokevirtual #234                // Method m_20189_:()D
+     152: aload_0
+     153: getfield      #238                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     156: invokeinterface #243,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     161: ldc           #244                // float 360.0f
+     163: fmul
+     164: fconst_0
+     165: invokevirtual #248                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7678_:(DDDFF)V
+     168: aload_0
+     169: invokevirtual #153                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     172: aload         4
+     174: invokevirtual #252                // Method net/minecraft/world/level/Level.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+     177: pop
+     178: aload_0
+     179: aload_1
+     180: invokevirtual #255                // Method m_142467_:(Lnet/minecraft/world/entity/Entity$RemovalReason;)V
+     183: aload_0
+     184: invokevirtual #258                // Method invalidateCaps:()V
+     187: aload_0
+     188: getfield      #262                // Field f_20939_:Lnet/minecraft/world/entity/ai/Brain;
+     191: invokevirtual #267                // Method net/minecraft/world/entity/ai/Brain.m_276084_:()V
+     194: return
+}

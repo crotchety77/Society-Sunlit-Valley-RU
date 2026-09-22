@@ -1,0 +1,20 @@
+{
+  "type": "splendid_slimes:plort_pressing",
+  "ingredient": {
+    "count": 32,
+    "item": "splendid_slimes:plort",
+    "nbt": {
+      "plort": {
+        "id": "splendid_slimes:orby"
+      }
+    }
+  },
+  "result": {
+    "item": "splendid_slimes:slime_heart",
+    "nbt": {
+      "slime": {
+        "id": "splendid_slimes:orby"
+      }
+    }
+  }
+}

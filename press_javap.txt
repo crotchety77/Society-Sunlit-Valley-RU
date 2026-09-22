@@ -1,0 +1,570 @@
+Compiled from "PlortPressBlockEntity.java"
+public class io.github.chakyl.splendidslimes.blockentity.PlortPressBlockEntity extends net.minecraft.world.level.block.entity.BlockEntity implements dev.shadowsoffire.placebo.block_entity.TickingBlockEntity,net.minecraft.world.MenuProvider {
+  protected final net.minecraft.world.inventory.ContainerData data;
+
+  private int progress;
+
+  private int PRESSING_TIME;
+
+  private final net.minecraftforge.items.ItemStackHandler topInventory;
+
+  private final net.minecraftforge.items.ItemStackHandler bottomInventory;
+
+  private final net.minecraftforge.common.util.LazyOptional<net.minecraftforge.items.ItemStackHandler> topOptional;
+
+  private final net.minecraftforge.common.util.LazyOptional<net.minecraftforge.items.ItemStackHandler> bottomOptional;
+
+  public io.github.chakyl.splendidslimes.blockentity.PlortPressBlockEntity(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: aload_0
+       1: getstatic     #48                 // Field io/github/chakyl/splendidslimes/registry/ModElements$BlockEntities.PLORT_PRESS:Lnet/minecraftforge/registries/RegistryObject;
+       4: invokevirtual #54                 // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       7: checkcast     #56                 // class net/minecraft/world/level/block/entity/BlockEntityType
+      10: aload_1
+      11: aload_2
+      12: invokespecial #59                 // Method net/minecraft/world/level/block/entity/BlockEntity."<init>":(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+      15: aload_0
+      16: iconst_0
+      17: putfield      #61                 // Field progress:I
+      20: aload_0
+      21: getstatic     #66                 // Field io/github/chakyl/splendidslimes/SlimyConfig.plortPressingTime:I
+      24: putfield      #68                 // Field PRESSING_TIME:I
+      27: aload_0
+      28: new           #15                 // class io/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity$1
+      31: dup
+      32: aload_0
+      33: iconst_1
+      34: invokespecial #71                 // Method io/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity$1."<init>":(Lio/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity;I)V
+      37: putfield      #73                 // Field topInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      40: aload_0
+      41: new           #13                 // class io/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity$2
+      44: dup
+      45: aload_0
+      46: iconst_1
+      47: invokespecial #74                 // Method io/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity$2."<init>":(Lio/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity;I)V
+      50: putfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      53: aload_0
+      54: aload_0
+      55: invokedynamic #93,  0             // InvokeDynamic #0:get:(Lio/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity;)Lnet/minecraftforge/common/util/NonNullSupplier;
+      60: invokestatic  #99                 // Method net/minecraftforge/common/util/LazyOptional.of:(Lnet/minecraftforge/common/util/NonNullSupplier;)Lnet/minecraftforge/common/util/LazyOptional;
+      63: putfield      #101                // Field topOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      66: aload_0
+      67: aload_0
+      68: invokedynamic #106,  0            // InvokeDynamic #1:get:(Lio/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity;)Lnet/minecraftforge/common/util/NonNullSupplier;
+      73: invokestatic  #99                 // Method net/minecraftforge/common/util/LazyOptional.of:(Lnet/minecraftforge/common/util/NonNullSupplier;)Lnet/minecraftforge/common/util/LazyOptional;
+      76: putfield      #108                // Field bottomOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      79: aload_0
+      80: new           #11                 // class io/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity$3
+      83: dup
+      84: aload_0
+      85: invokespecial #111                // Method io/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity$3."<init>":(Lio/github/chakyl/splendidslimes/blockentity/PlortPressBlockEntity;)V
+      88: putfield      #113                // Field data:Lnet/minecraft/world/inventory/ContainerData;
+      91: return
+
+  public void serverTick(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: invokevirtual #127                // Method net/minecraft/world/level/Level.m_276867_:(Lnet/minecraft/core/BlockPos;)Z
+       5: ifeq          9
+       8: return
+       9: aload_1
+      10: invokevirtual #131                // Method net/minecraft/world/level/Level.m_46467_:()J
+      13: ldc2_w        #132                // long 10l
+      16: lrem
+      17: lconst_0
+      18: lcmp
+      19: ifne          129
+      22: aload_0
+      23: invokevirtual #137                // Method hasRecipe:()Z
+      26: ifeq          124
+      29: aload_0
+      30: getfield      #61                 // Field progress:I
+      33: ifne          60
+      36: aload_3
+      37: getstatic     #143                // Field io/github/chakyl/splendidslimes/block/SlimeIncubatorBlock.WORKING:Lnet/minecraft/world/level/block/state/properties/BooleanProperty;
+      40: iconst_1
+      41: invokestatic  #149                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      44: invokevirtual #155                // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+      47: checkcast     #151                // class net/minecraft/world/level/block/state/BlockState
+      50: astore        4
+      52: aload_1
+      53: aload_2
+      54: aload         4
+      56: invokevirtual #159                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+      59: pop
+      60: aload_0
+      61: aload_0
+      62: getfield      #61                 // Field progress:I
+      65: bipush        10
+      67: iadd
+      68: putfield      #61                 // Field progress:I
+      71: aload_1
+      72: aload_2
+      73: aload_3
+      74: invokestatic  #162                // Method m_155232_:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+      77: aload_0
+      78: getfield      #61                 // Field progress:I
+      81: aload_0
+      82: getfield      #68                 // Field PRESSING_TIME:I
+      85: if_icmplt     129
+      88: aload_0
+      89: invokevirtual #166                // Method craftItem:()V
+      92: aload_3
+      93: getstatic     #143                // Field io/github/chakyl/splendidslimes/block/SlimeIncubatorBlock.WORKING:Lnet/minecraft/world/level/block/state/properties/BooleanProperty;
+      96: iconst_0
+      97: invokestatic  #149                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     100: invokevirtual #155                // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+     103: checkcast     #151                // class net/minecraft/world/level/block/state/BlockState
+     106: astore        4
+     108: aload_1
+     109: aload_2
+     110: aload         4
+     112: invokevirtual #159                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+     115: pop
+     116: aload_0
+     117: iconst_0
+     118: putfield      #61                 // Field progress:I
+     121: goto          129
+     124: aload_0
+     125: iconst_0
+     126: putfield      #61                 // Field progress:I
+     129: return
+
+  public <T> net.minecraftforge.common.util.LazyOptional<T> getCapability(net.minecraftforge.common.capabilities.Capability<T>, net.minecraft.core.Direction);
+    Code:
+       0: aload_1
+       1: getstatic     #178                // Field net/minecraftforge/common/capabilities/ForgeCapabilities.ITEM_HANDLER:Lnet/minecraftforge/common/capabilities/Capability;
+       4: if_acmpne     30
+       7: aload_2
+       8: getstatic     #184                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      11: if_acmpne     22
+      14: aload_0
+      15: getfield      #108                // Field bottomOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      18: invokevirtual #188                // Method net/minecraftforge/common/util/LazyOptional.cast:()Lnet/minecraftforge/common/util/LazyOptional;
+      21: areturn
+      22: aload_0
+      23: getfield      #101                // Field topOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      26: invokevirtual #188                // Method net/minecraftforge/common/util/LazyOptional.cast:()Lnet/minecraftforge/common/util/LazyOptional;
+      29: areturn
+      30: aload_0
+      31: aload_1
+      32: aload_2
+      33: invokespecial #190                // Method net/minecraft/world/level/block/entity/BlockEntity.getCapability:(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/core/Direction;)Lnet/minecraftforge/common/util/LazyOptional;
+      36: areturn
+
+  public void invalidateCaps();
+    Code:
+       0: aload_0
+       1: invokespecial #196                // Method net/minecraft/world/level/block/entity/BlockEntity.invalidateCaps:()V
+       4: aload_0
+       5: getfield      #101                // Field topOptional:Lnet/minecraftforge/common/util/LazyOptional;
+       8: invokevirtual #199                // Method net/minecraftforge/common/util/LazyOptional.invalidate:()V
+      11: aload_0
+      12: getfield      #108                // Field bottomOptional:Lnet/minecraftforge/common/util/LazyOptional;
+      15: invokevirtual #199                // Method net/minecraftforge/common/util/LazyOptional.invalidate:()V
+      18: return
+
+  public void m_6596_();
+    Code:
+       0: aload_0
+       1: invokespecial #202                // Method net/minecraft/world/level/block/entity/BlockEntity.m_6596_:()V
+       4: aload_0
+       5: getfield      #205                // Field f_58857_:Lnet/minecraft/world/level/Level;
+       8: ifnull        41
+      11: aload_0
+      12: getfield      #205                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      15: invokevirtual #208                // Method net/minecraft/world/level/Level.m_5776_:()Z
+      18: ifeq          41
+      21: aload_0
+      22: getfield      #205                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      25: aload_0
+      26: invokevirtual #212                // Method m_58899_:()Lnet/minecraft/core/BlockPos;
+      29: aload_0
+      30: invokevirtual #216                // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      33: aload_0
+      34: invokevirtual #216                // Method m_58900_:()Lnet/minecraft/world/level/block/state/BlockState;
+      37: iconst_3
+      38: invokevirtual #220                // Method net/minecraft/world/level/Level.m_7260_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V
+      41: return
+
+  public net.minecraftforge.common.util.LazyOptional<net.minecraftforge.items.ItemStackHandler> getTopOptional();
+    Code:
+       0: aload_0
+       1: getfield      #101                // Field topOptional:Lnet/minecraftforge/common/util/LazyOptional;
+       4: areturn
+
+  public net.minecraftforge.common.util.LazyOptional<net.minecraftforge.items.ItemStackHandler> getBottomOptional();
+    Code:
+       0: aload_0
+       1: getfield      #108                // Field bottomOptional:Lnet/minecraftforge/common/util/LazyOptional;
+       4: areturn
+
+  public void drops();
+    Code:
+       0: new           #226                // class net/minecraft/world/SimpleContainer
+       3: dup
+       4: iconst_2
+       5: invokespecial #229                // Method net/minecraft/world/SimpleContainer."<init>":(I)V
+       8: astore_1
+       9: aload_1
+      10: iconst_0
+      11: aload_0
+      12: getfield      #73                 // Field topInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      15: iconst_0
+      16: invokevirtual #235                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      19: invokevirtual #239                // Method net/minecraft/world/SimpleContainer.m_6836_:(ILnet/minecraft/world/item/ItemStack;)V
+      22: aload_1
+      23: iconst_1
+      24: aload_0
+      25: getfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      28: iconst_0
+      29: invokevirtual #235                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      32: invokevirtual #239                // Method net/minecraft/world/SimpleContainer.m_6836_:(ILnet/minecraft/world/item/ItemStack;)V
+      35: aload_0
+      36: getfield      #205                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      39: aload_0
+      40: getfield      #242                // Field f_58858_:Lnet/minecraft/core/BlockPos;
+      43: aload_1
+      44: invokestatic  #248                // Method net/minecraft/world/Containers.m_19002_:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/Container;)V
+      47: return
+
+  public net.minecraft.world.inventory.AbstractContainerMenu m_7208_(int, net.minecraft.world.entity.player.Inventory, net.minecraft.world.entity.player.Player);
+    Code:
+       0: new           #255                // class io/github/chakyl/splendidslimes/screen/PlortPressMenu
+       3: dup
+       4: iload_1
+       5: aload_2
+       6: aload_0
+       7: aload_0
+       8: getfield      #113                // Field data:Lnet/minecraft/world/inventory/ContainerData;
+      11: invokespecial #258                // Method io/github/chakyl/splendidslimes/screen/PlortPressMenu."<init>":(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/inventory/ContainerData;)V
+      14: areturn
+
+  private void craftItem();
+    Code:
+       0: aload_0
+       1: invokevirtual #267                // Method getCurrentRecipe:()Ljava/util/Optional;
+       4: astore_1
+       5: aload_1
+       6: invokevirtual #270                // Method java/util/Optional.get:()Ljava/lang/Object;
+       9: checkcast     #24                 // class io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe
+      12: aconst_null
+      13: invokevirtual #274                // Method io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe.m_8043_:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      16: astore_2
+      17: aload_2
+      18: invokevirtual #280                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+      21: istore_3
+      22: aload_0
+      23: getfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      26: iconst_0
+      27: invokevirtual #235                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      30: astore        4
+      32: aload_0
+      33: getfield      #73                 // Field topInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      36: iconst_0
+      37: aload_1
+      38: invokevirtual #270                // Method java/util/Optional.get:()Ljava/lang/Object;
+      41: checkcast     #24                 // class io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe
+      44: aconst_null
+      45: invokevirtual #283                // Method io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe.getInputItem:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      48: invokevirtual #280                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+      51: iconst_0
+      52: invokevirtual #287                // Method net/minecraftforge/items/ItemStackHandler.extractItem:(IIZ)Lnet/minecraft/world/item/ItemStack;
+      55: pop
+      56: aload         4
+      58: invokevirtual #280                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+      61: ifle          99
+      64: aload_0
+      65: aload         4
+      67: aload_2
+      68: invokevirtual #291                // Method canInsertItemIntoOutputSlot:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+      71: ifeq          99
+      74: aload_0
+      75: aload         4
+      77: iload_3
+      78: invokevirtual #295                // Method canInsertAmountIntoOutputSlot:(Lnet/minecraft/world/item/ItemStack;I)Z
+      81: ifeq          99
+      84: aload         4
+      86: aload         4
+      88: invokevirtual #280                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+      91: iload_3
+      92: iadd
+      93: invokevirtual #298                // Method net/minecraft/world/item/ItemStack.m_41764_:(I)V
+      96: goto          111
+      99: aload_0
+     100: getfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+     103: iconst_0
+     104: aload_2
+     105: invokevirtual #302                // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+     108: invokevirtual #305                // Method net/minecraftforge/items/ItemStackHandler.setStackInSlot:(ILnet/minecraft/world/item/ItemStack;)V
+     111: return
+
+  private boolean hasRecipe();
+    Code:
+       0: aload_0
+       1: invokevirtual #267                // Method getCurrentRecipe:()Ljava/util/Optional;
+       4: astore_1
+       5: aload_1
+       6: invokevirtual #315                // Method java/util/Optional.isEmpty:()Z
+       9: ifeq          14
+      12: iconst_0
+      13: ireturn
+      14: aload_1
+      15: invokevirtual #270                // Method java/util/Optional.get:()Ljava/lang/Object;
+      18: checkcast     #24                 // class io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe
+      21: aload_0
+      22: invokevirtual #319                // Method m_58904_:()Lnet/minecraft/world/level/Level;
+      25: invokevirtual #323                // Method net/minecraft/world/level/Level.m_9598_:()Lnet/minecraft/core/RegistryAccess;
+      28: invokevirtual #283                // Method io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe.getInputItem:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      31: astore_2
+      32: aload_1
+      33: invokevirtual #270                // Method java/util/Optional.get:()Ljava/lang/Object;
+      36: checkcast     #24                 // class io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe
+      39: aload_0
+      40: invokevirtual #319                // Method m_58904_:()Lnet/minecraft/world/level/Level;
+      43: invokevirtual #323                // Method net/minecraft/world/level/Level.m_9598_:()Lnet/minecraft/core/RegistryAccess;
+      46: invokevirtual #326                // Method io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe.getOutputItem:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      49: astore_3
+      50: aload_1
+      51: invokevirtual #270                // Method java/util/Optional.get:()Ljava/lang/Object;
+      54: checkcast     #24                 // class io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe
+      57: aload_0
+      58: invokevirtual #319                // Method m_58904_:()Lnet/minecraft/world/level/Level;
+      61: invokevirtual #323                // Method net/minecraft/world/level/Level.m_9598_:()Lnet/minecraft/core/RegistryAccess;
+      64: invokevirtual #274                // Method io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe.m_8043_:(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;
+      67: astore        4
+      69: aload_0
+      70: getfield      #73                 // Field topInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      73: iconst_0
+      74: invokevirtual #235                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      77: astore        5
+      79: aload_0
+      80: getfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      83: iconst_0
+      84: invokevirtual #235                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      87: astore        6
+      89: aload_3
+      90: invokevirtual #329                // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      93: ifeq          132
+      96: aload_0
+      97: aload         6
+      99: aload         4
+     101: invokevirtual #332                // Method slotMatches:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+     104: ifeq          132
+     107: aload_0
+     108: aload         6
+     110: aload         4
+     112: invokevirtual #280                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+     115: invokevirtual #295                // Method canInsertAmountIntoOutputSlot:(Lnet/minecraft/world/item/ItemStack;I)Z
+     118: ifeq          132
+     121: aload_0
+     122: aload         6
+     124: aload         4
+     126: invokevirtual #291                // Method canInsertItemIntoOutputSlot:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+     129: ifne          145
+     132: aload_0
+     133: aload_2
+     134: aload         5
+     136: aload_3
+     137: aload         6
+     139: invokevirtual #336                // Method validateFusion:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+     142: ifeq          147
+     145: iconst_1
+     146: ireturn
+     147: iconst_0
+     148: ireturn
+
+  private boolean slotMatches(net.minecraft.world.item.ItemStack, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: invokevirtual #343                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+       5: invokevirtual #347                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+       8: ifeq          23
+      11: aload_1
+      12: aload_2
+      13: invokevirtual #351                // Method net/minecraft/world/item/ItemStack.areShareTagsEqual:(Lnet/minecraft/world/item/ItemStack;)Z
+      16: ifeq          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  private boolean validateFusion(net.minecraft.world.item.ItemStack, net.minecraft.world.item.ItemStack, net.minecraft.world.item.ItemStack, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: aload_1
+       3: invokevirtual #332                // Method slotMatches:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+       6: ifeq          35
+       9: aload_0
+      10: aload         4
+      12: aload_3
+      13: invokevirtual #332                // Method slotMatches:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
+      16: ifeq          35
+      19: aload         4
+      21: invokevirtual #280                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+      24: aload_3
+      25: invokevirtual #280                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+      28: if_icmpne     35
+      31: iconst_1
+      32: goto          36
+      35: iconst_0
+      36: ireturn
+
+  private boolean canInsertItemIntoOutputSlot(net.minecraft.world.item.ItemStack, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_1
+       1: invokevirtual #329                // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+       4: ifne          26
+       7: aload_1
+       8: aload_2
+       9: invokevirtual #343                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      12: invokevirtual #347                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+      15: ifeq          30
+      18: aload_1
+      19: aload_2
+      20: invokevirtual #351                // Method net/minecraft/world/item/ItemStack.areShareTagsEqual:(Lnet/minecraft/world/item/ItemStack;)Z
+      23: ifeq          30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: ireturn
+
+  private boolean canInsertAmountIntoOutputSlot(net.minecraft.world.item.ItemStack, int);
+    Code:
+       0: aload_1
+       1: invokevirtual #280                // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+       4: iload_2
+       5: iadd
+       6: aload_1
+       7: invokevirtual #355                // Method net/minecraft/world/item/ItemStack.m_41741_:()I
+      10: if_icmpgt     17
+      13: iconst_1
+      14: goto          18
+      17: iconst_0
+      18: ireturn
+
+  private java.util.Optional<io.github.chakyl.splendidslimes.recipe.PlortPressingRecipe> getCurrentRecipe();
+    Code:
+       0: new           #226                // class net/minecraft/world/SimpleContainer
+       3: dup
+       4: iconst_2
+       5: invokespecial #229                // Method net/minecraft/world/SimpleContainer."<init>":(I)V
+       8: astore_1
+       9: aload_1
+      10: iconst_0
+      11: aload_0
+      12: getfield      #73                 // Field topInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      15: iconst_0
+      16: invokevirtual #235                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      19: invokevirtual #239                // Method net/minecraft/world/SimpleContainer.m_6836_:(ILnet/minecraft/world/item/ItemStack;)V
+      22: aload_1
+      23: iconst_1
+      24: aload_0
+      25: getfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      28: iconst_0
+      29: invokevirtual #235                // Method net/minecraftforge/items/ItemStackHandler.getStackInSlot:(I)Lnet/minecraft/world/item/ItemStack;
+      32: invokevirtual #239                // Method net/minecraft/world/SimpleContainer.m_6836_:(ILnet/minecraft/world/item/ItemStack;)V
+      35: aload_0
+      36: getfield      #205                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      39: invokevirtual #361                // Method net/minecraft/world/level/Level.m_7465_:()Lnet/minecraft/world/item/crafting/RecipeManager;
+      42: getstatic     #365                // Field io/github/chakyl/splendidslimes/recipe/PlortPressingRecipe$Type.INSTANCE:Lio/github/chakyl/splendidslimes/recipe/PlortPressingRecipe$Type;
+      45: aload_1
+      46: aload_0
+      47: getfield      #205                // Field f_58857_:Lnet/minecraft/world/level/Level;
+      50: invokevirtual #371                // Method net/minecraft/world/item/crafting/RecipeManager.m_44015_:(Lnet/minecraft/world/item/crafting/RecipeType;Lnet/minecraft/world/Container;Lnet/minecraft/world/level/Level;)Ljava/util/Optional;
+      53: areturn
+
+  public void m_183515_(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #376                // Method net/minecraft/world/level/block/entity/BlockEntity.m_183515_:(Lnet/minecraft/nbt/CompoundTag;)V
+       5: new           #378                // class net/minecraft/nbt/CompoundTag
+       8: dup
+       9: invokespecial #380                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+      12: astore_2
+      13: aload_2
+      14: ldc_w         #382                // String TopInventory
+      17: aload_0
+      18: getfield      #73                 // Field topInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      21: invokevirtual #386                // Method net/minecraftforge/items/ItemStackHandler.serializeNBT:()Lnet/minecraft/nbt/CompoundTag;
+      24: invokevirtual #390                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      27: pop
+      28: aload_2
+      29: ldc_w         #392                // String BottomInventory
+      32: aload_0
+      33: getfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      36: invokevirtual #386                // Method net/minecraftforge/items/ItemStackHandler.serializeNBT:()Lnet/minecraft/nbt/CompoundTag;
+      39: invokevirtual #390                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      42: pop
+      43: aload_2
+      44: ldc_w         #394                // String Progress
+      47: aload_0
+      48: getfield      #61                 // Field progress:I
+      51: invokevirtual #398                // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      54: aload_1
+      55: ldc_w         #400                // String splendid_slimes
+      58: aload_2
+      59: invokevirtual #390                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      62: pop
+      63: return
+
+  public void m_142466_(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #406                // Method net/minecraft/world/level/block/entity/BlockEntity.m_142466_:(Lnet/minecraft/nbt/CompoundTag;)V
+       5: aload_1
+       6: ldc_w         #400                // String splendid_slimes
+       9: invokevirtual #410                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      12: astore_2
+      13: aload_2
+      14: ldc_w         #382                // String TopInventory
+      17: bipush        10
+      19: invokevirtual #414                // Method net/minecraft/nbt/CompoundTag.m_128425_:(Ljava/lang/String;I)Z
+      22: ifeq          39
+      25: aload_0
+      26: getfield      #73                 // Field topInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      29: aload_2
+      30: ldc_w         #382                // String TopInventory
+      33: invokevirtual #410                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      36: invokevirtual #417                // Method net/minecraftforge/items/ItemStackHandler.deserializeNBT:(Lnet/minecraft/nbt/CompoundTag;)V
+      39: aload_2
+      40: ldc_w         #392                // String BottomInventory
+      43: bipush        10
+      45: invokevirtual #414                // Method net/minecraft/nbt/CompoundTag.m_128425_:(Ljava/lang/String;I)Z
+      48: ifeq          65
+      51: aload_0
+      52: getfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+      55: aload_2
+      56: ldc_w         #392                // String BottomInventory
+      59: invokevirtual #410                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      62: invokevirtual #417                // Method net/minecraftforge/items/ItemStackHandler.deserializeNBT:(Lnet/minecraft/nbt/CompoundTag;)V
+      65: aload_0
+      66: aload_2
+      67: ldc_w         #394                // String Progress
+      70: invokevirtual #421                // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      73: putfield      #61                 // Field progress:I
+      76: return
+
+  public net.minecraft.network.chat.Component m_5446_();
+    Code:
+       0: ldc_w         #426                // String block.splendid_slimes.plort_press
+       3: invokestatic  #432                // InterfaceMethod net/minecraft/network/chat/Component.m_237115_:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+       6: areturn
+
+  private net.minecraftforge.items.ItemStackHandler lambda$new$1();
+    Code:
+       0: aload_0
+       1: getfield      #76                 // Field bottomInventory:Lnet/minecraftforge/items/ItemStackHandler;
+       4: areturn
+
+  private net.minecraftforge.items.ItemStackHandler lambda$new$0();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field topInventory:Lnet/minecraftforge/items/ItemStackHandler;
+       4: areturn
+}

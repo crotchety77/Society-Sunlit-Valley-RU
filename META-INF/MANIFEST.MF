@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: splendid_slimes
+Specification-Vendor: Chakyl,Nitbe
+Specification-Version: 1
+Implementation-Title: splendid-slimes
+Implementation-Version: 0.20.5
+Implementation-Vendor: Chakyl,Nitbe
+Implementation-Timestamp: 2026-08-08T10:48:13-0400
+

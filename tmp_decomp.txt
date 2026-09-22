@@ -1,0 +1,26 @@
+Compiled from "CobblemonRider.java"
+public class dev.zanckor.cobblemonrider.CobblemonRider {
+  public static final java.lang.String MODID = "cobblemonrider";
+
+  public static final org.slf4j.Logger LOGGER;
+
+  public static java.io.File PokemonRideConfigFile;
+
+  public static dev.zanckor.cobblemonrider.config.PokemonJsonObject pokemonJsonObject;
+
+  public dev.zanckor.cobblemonrider.CobblemonRider();
+    Code:
+       0: aload_0
+       1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+       4: getstatic     #33                 // Field net/minecraftforge/common/MinecraftForge.EVENT_BUS:Lnet/minecraftforge/eventbus/api/IEventBus;
+       7: aload_0
+       8: invokeinterface #39,  2           // InterfaceMethod net/minecraftforge/eventbus/api/IEventBus.register:(Ljava/lang/Object;)V
+      13: invokestatic  #43                 // Method dev/zanckor/cobblemonrider/network/NetworkHandler.register:()V
+      16: return
+
+  static {};
+    Code:
+       0: invokestatic  #52                 // Method com/mojang/logging/LogUtils.getLogger:()Lorg/slf4j/Logger;
+       3: putstatic     #54                 // Field LOGGER:Lorg/slf4j/Logger;
+       6: return
+}

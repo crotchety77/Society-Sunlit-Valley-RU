@@ -1,0 +1,8612 @@
+{
+	"scan_date": "2026-09-20T23:27:56.725Z",
+	"party_pokemon_count": 5,
+	"pc_pokemon_count": 194,
+	"total_pokemon_count": 199,
+	"pokemon": [
+		{
+			"uuid": "046f41f6-77e8-4562-81d9-7cca4c697048",
+			"location": "Команда (Слот 2)",
+			"species": "Breloom",
+			"display_name": "Брелум",
+			"level": 87,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass",
+				"fighting"
+			],
+			"nature": "gentle",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "DEFENCE",
+			"ability": "poisonheal",
+			"friendship": 167,
+			"held_item": "cobblemon:black_belt",
+			"ivs": {
+				"hp": 31,
+				"attack": 21,
+				"defence": 23,
+				"special_attack": 30,
+				"special_defence": 31,
+				"speed": 24,
+				"total": 160,
+				"percentage": 86
+			},
+			"evs": {
+				"hp": 4,
+				"attack": 252,
+				"defence": 13,
+				"special_attack": 7,
+				"special_defence": 5,
+				"speed": 229,
+				"total": 510
+			},
+			"moves": [
+				"gigadrain",
+				"forcepalm",
+				"falseswipe",
+				"spore"
+			]
+		},
+		{
+			"uuid": "34d192b6-f2e7-4e6d-a5a1-29f3b89c6ece",
+			"location": "Коробка 7 (Слот 16)",
+			"species": "Corviknight",
+			"display_name": "Корвинайт",
+			"level": 38,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"flying",
+				"steel"
+			],
+			"nature": "impish",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "unnerve",
+			"friendship": 95,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 20,
+				"defence": 24,
+				"special_attack": 30,
+				"special_defence": 12,
+				"speed": 26,
+				"total": 137,
+				"percentage": 73.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"taunt",
+				"pluck",
+				"furyattack",
+				"honeclaws"
+			]
+		},
+		{
+			"uuid": "c9134cff-c676-4991-aabd-fe3d52bb822d",
+			"location": "Команда (Слот 1)",
+			"species": "Typhlosion",
+			"display_name": "Тайфлоужн",
+			"level": 96,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire",
+				"ghost"
+			],
+			"nature": "gentle",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "DEFENCE",
+			"ability": "blaze",
+			"friendship": 201,
+			"held_item": "cobblemon:charcoal_stick",
+			"ivs": {
+				"hp": 16,
+				"attack": 0,
+				"defence": 18,
+				"special_attack": 25,
+				"special_defence": 31,
+				"speed": 3,
+				"total": 93,
+				"percentage": 50
+			},
+			"evs": {
+				"hp": 34,
+				"attack": 96,
+				"defence": 66,
+				"special_attack": 42,
+				"special_defence": 20,
+				"speed": 252,
+				"total": 510
+			},
+			"moves": [
+				"infernalparade",
+				"flamethrower",
+				"quickattack",
+				"eruption"
+			]
+		},
+		{
+			"uuid": "e411a346-9ec2-4da0-9286-4baf4031eee5",
+			"location": "Команда (Слот 5)",
+			"species": "Veluza",
+			"display_name": "Велуза",
+			"level": 55,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"water",
+				"psychic"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "moldbreaker",
+			"friendship": 127,
+			"held_item": "None",
+			"ivs": {
+				"hp": 31,
+				"attack": 20,
+				"defence": 31,
+				"special_attack": 14,
+				"special_defence": 23,
+				"speed": 23,
+				"total": 142,
+				"percentage": 76.3
+			},
+			"evs": {
+				"hp": 4,
+				"attack": 1,
+				"defence": 0,
+				"special_attack": 12,
+				"special_defence": 7,
+				"speed": 11,
+				"total": 35
+			},
+			"moves": [
+				"aquacutter",
+				"slash",
+				"focusenergy",
+				"waterpulse"
+			]
+		},
+		{
+			"uuid": "c6708abb-2d10-4a84-8e70-115a4bbd94f9",
+			"location": "Команда (Слот 3)",
+			"species": "Garchomp",
+			"display_name": "Гарчомп",
+			"level": 50,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dragon",
+				"ground"
+			],
+			"nature": "rash",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "sandveil",
+			"friendship": 151,
+			"held_item": "None",
+			"ivs": {
+				"hp": 3,
+				"attack": 19,
+				"defence": 26,
+				"special_attack": 23,
+				"special_defence": 22,
+				"speed": 19,
+				"total": 112,
+				"percentage": 60.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 1,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"dragonbreath",
+				"sandattack",
+				"sandtomb",
+				"dragonrage"
+			]
+		},
+		{
+			"uuid": "343ed09d-045a-488c-bfd8-e39afeeef179",
+			"location": "Команда (Слот 6)",
+			"species": "Gyarados",
+			"display_name": "Гьярадос",
+			"level": 50,
+			"shiny": true,
+			"gender": "FEMALE",
+			"types": [
+				"water",
+				"flying"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "intimidate",
+			"friendship": 163,
+			"held_item": "cobblemon:exp_share",
+			"ivs": {
+				"hp": 14,
+				"attack": 26,
+				"defence": 6,
+				"special_attack": 25,
+				"special_defence": 31,
+				"speed": 26,
+				"total": 128,
+				"percentage": 68.8
+			},
+			"evs": {
+				"hp": 4,
+				"attack": 1,
+				"defence": 0,
+				"special_attack": 12,
+				"special_defence": 7,
+				"speed": 11,
+				"total": 35
+			},
+			"moves": [
+				"tackle",
+				"splash",
+				"flail",
+				"bite"
+			]
+		},
+		{
+			"uuid": "f1fd9db1-3c37-4988-921e-657974e73a65",
+			"location": "Коробка 1 (Слот 1)",
+			"species": "Elekid",
+			"display_name": "Элекид",
+			"level": 21,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"electric"
+			],
+			"nature": "quiet",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "static",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 5,
+				"attack": 5,
+				"defence": 6,
+				"special_attack": 5,
+				"special_defence": 10,
+				"speed": 6,
+				"total": 37,
+				"percentage": 19.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"thunderwave",
+				"shockwave",
+				"swift",
+				"charge"
+			]
+		},
+		{
+			"uuid": "60b11340-0e36-4a23-886a-06f227c745a2",
+			"location": "Коробка 1 (Слот 2)",
+			"species": "Pawmi",
+			"display_name": "Павми",
+			"level": 17,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"electric"
+			],
+			"nature": "hardy",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "static",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 0,
+				"attack": 3,
+				"defence": 19,
+				"special_attack": 3,
+				"special_defence": 11,
+				"speed": 2,
+				"total": 38,
+				"percentage": 20.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"dig",
+				"nuzzle",
+				"charge",
+				"quickattack"
+			]
+		},
+		{
+			"uuid": "858d2e10-9a08-49fe-8347-6c1ac24bab56",
+			"location": "Коробка 1 (Слот 3)",
+			"species": "Sneasel",
+			"display_name": "Снизл",
+			"level": 42,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dark",
+				"ice"
+			],
+			"nature": "impish",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "innerfocus",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 16,
+				"attack": 0,
+				"defence": 5,
+				"special_attack": 8,
+				"special_defence": 2,
+				"speed": 8,
+				"total": 39,
+				"percentage": 21
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"beatup",
+				"honeclaws",
+				"furyswipes",
+				"icywind"
+			]
+		},
+		{
+			"uuid": "7e0812de-c7d0-498d-9c59-0e2a183ba3ef",
+			"location": "Коробка 1 (Слот 4)",
+			"species": "Lunatone",
+			"display_name": "Лунатон",
+			"level": 32,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"rock",
+				"psychic"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "levitate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 18,
+				"attack": 1,
+				"defence": 9,
+				"special_attack": 4,
+				"special_defence": 11,
+				"speed": 1,
+				"total": 44,
+				"percentage": 23.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"moonlight",
+				"moonblast",
+				"healblock",
+				"psywave"
+			]
+		},
+		{
+			"uuid": "7fcf22e5-6cb9-4843-bc8e-9671c7a4b24a",
+			"location": "Коробка 1 (Слот 5)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 29,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 0,
+				"attack": 22,
+				"defence": 5,
+				"special_attack": 2,
+				"special_defence": 12,
+				"speed": 4,
+				"total": 45,
+				"percentage": 24.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"magnitude",
+				"mudsport",
+				"defensecurl",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "890c050d-2b80-4ee5-bdb1-797c15870d1a",
+			"location": "Коробка 1 (Слот 6)",
+			"species": "Mienfoo",
+			"display_name": "Мьенфу",
+			"level": 31,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fighting"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "innerfocus",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 3,
+				"attack": 6,
+				"defence": 25,
+				"special_attack": 1,
+				"special_defence": 5,
+				"speed": 5,
+				"total": 45,
+				"percentage": 24.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"uturn",
+				"forcepalm",
+				"quickguard",
+				"furyswipes"
+			]
+		},
+		{
+			"uuid": "89e0ae2e-6b35-4a54-abd9-33d08aa84184",
+			"location": "Коробка 1 (Слот 7)",
+			"species": "Cleffa",
+			"display_name": "Клеффа",
+			"level": 16,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"fairy"
+			],
+			"nature": "docile",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "cutecharm",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 3,
+				"attack": 16,
+				"defence": 4,
+				"special_attack": 8,
+				"special_defence": 6,
+				"speed": 10,
+				"total": 47,
+				"percentage": 25.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"encore",
+				"disarmingvoice",
+				"sweetkiss",
+				"sing"
+			]
+		},
+		{
+			"uuid": "644af809-2d1d-43fe-963e-45710caad22b",
+			"location": "Коробка 1 (Слот 8)",
+			"species": "Pineco",
+			"display_name": "Пайнеко",
+			"level": 28,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"bug"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 0,
+				"attack": 17,
+				"defence": 15,
+				"special_attack": 10,
+				"special_defence": 0,
+				"speed": 5,
+				"total": 47,
+				"percentage": 25.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"spikes",
+				"naturalgift",
+				"bide",
+				"rapidspin"
+			]
+		},
+		{
+			"uuid": "a2e423be-ae45-4516-8755-f044a916303c",
+			"location": "Коробка 1 (Слот 9)",
+			"species": "Gimmighoul",
+			"display_name": "Гиммигул",
+			"level": 13,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"ghost"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "rattled",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 4,
+				"attack": 15,
+				"defence": 6,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 23,
+				"total": 48,
+				"percentage": 25.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tackle",
+				"astonish"
+			]
+		},
+		{
+			"uuid": "b70e2eee-f8c6-46a2-890d-8effbce93497",
+			"location": "Коробка 1 (Слот 10)",
+			"species": "Tinkatink",
+			"display_name": "Тинкатинк",
+			"level": 24,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"fairy",
+				"steel"
+			],
+			"nature": "docile",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "owntempo",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 1,
+				"attack": 1,
+				"defence": 7,
+				"special_attack": 15,
+				"special_defence": 0,
+				"speed": 24,
+				"total": 48,
+				"percentage": 25.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"brutalswing",
+				"sweetkiss",
+				"drainingkiss",
+				"rocksmash"
+			]
+		},
+		{
+			"uuid": "9e03442f-7fa4-4fc1-a156-cd6d0d48553f",
+			"location": "Коробка 1 (Слот 11)",
+			"species": "Wyrdeer",
+			"display_name": "Вирдир",
+			"level": 50,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal",
+				"psychic"
+			],
+			"nature": "quiet",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "frisk",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 2,
+				"defence": 7,
+				"special_attack": 7,
+				"special_defence": 0,
+				"speed": 15,
+				"total": 48,
+				"percentage": 25.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"imprison",
+				"zenheadbutt",
+				"roleplay",
+				"calmmind"
+			]
+		},
+		{
+			"uuid": "e6a41d64-c4c7-438d-9326-770ac8f36472",
+			"location": "Коробка 1 (Слот 12)",
+			"species": "Butterfree",
+			"display_name": "Баттерфри",
+			"level": 19,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"flying"
+			],
+			"nature": "hasty",
+			"nature_increased": "SPEED",
+			"nature_decreased": "DEFENCE",
+			"ability": "compoundeyes",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 4,
+				"defence": 16,
+				"special_attack": 1,
+				"special_defence": 2,
+				"speed": 6,
+				"total": 50,
+				"percentage": 26.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"bugbite",
+				"stringshot",
+				"tackle",
+				"harden"
+			]
+		},
+		{
+			"uuid": "1673c4a2-58e8-43b5-8053-5f3dff0762c6",
+			"location": "Коробка 1 (Слот 13)",
+			"species": "Nickit",
+			"display_name": "Никит",
+			"level": 21,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"dark"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "runaway",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 4,
+				"attack": 7,
+				"defence": 3,
+				"special_attack": 15,
+				"special_defence": 15,
+				"speed": 11,
+				"total": 55,
+				"percentage": 29.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"nastyplot",
+				"assurance",
+				"snarl",
+				"honeclaws"
+			]
+		},
+		{
+			"uuid": "65654aa9-f1b3-4ae5-930d-528c39a6f56d",
+			"location": "Коробка 1 (Слот 14)",
+			"species": "Breloom",
+			"display_name": "Брелум",
+			"level": 27,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass",
+				"fighting"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "poisonheal",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 13,
+				"attack": 4,
+				"defence": 5,
+				"special_attack": 3,
+				"special_defence": 10,
+				"speed": 21,
+				"total": 56,
+				"percentage": 30.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"gigadrain",
+				"poisonpowder",
+				"headbutt",
+				"megadrain"
+			]
+		},
+		{
+			"uuid": "74785f87-7ae5-49fe-83cf-00b713c3974b",
+			"location": "Коробка 1 (Слот 15)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 30,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 31,
+				"attack": 4,
+				"defence": 1,
+				"special_attack": 4,
+				"special_defence": 6,
+				"speed": 10,
+				"total": 56,
+				"percentage": 30.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"rockblast",
+				"stealthrock",
+				"selfdestruct",
+				"smackdown"
+			]
+		},
+		{
+			"uuid": "741a880d-eac2-4167-86df-a85b0bc95af6",
+			"location": "Коробка 1 (Слот 16)",
+			"species": "Zigzagoon",
+			"display_name": "Зигзагун",
+			"level": 17,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "gluttony",
+			"friendship": 61,
+			"held_item": "None",
+			"ivs": {
+				"hp": 20,
+				"attack": 10,
+				"defence": 5,
+				"special_attack": 5,
+				"special_defence": 14,
+				"speed": 3,
+				"total": 57,
+				"percentage": 30.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 2,
+				"total": 2
+			},
+			"moves": [
+				"headbutt",
+				"covet",
+				"tailwhip",
+				"sandattack"
+			]
+		},
+		{
+			"uuid": "b6eb3baf-0c92-4941-a3c5-d101ecb3d804",
+			"location": "Коробка 1 (Слот 17)",
+			"species": "Girafarig",
+			"display_name": "Жирафариг",
+			"level": 40,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal",
+				"psychic"
+			],
+			"nature": "lax",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "innerfocus",
+			"friendship": 70,
+			"held_item": "None",
+			"ivs": {
+				"hp": 3,
+				"attack": 10,
+				"defence": 10,
+				"special_attack": 0,
+				"special_defence": 10,
+				"speed": 24,
+				"total": 57,
+				"percentage": 30.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"crunch",
+				"twinbeam",
+				"doublehit",
+				"agility"
+			]
+		},
+		{
+			"uuid": "b8072565-610a-4673-9458-f7dedbad5eb0",
+			"location": "Коробка 1 (Слот 18)",
+			"species": "Gible",
+			"display_name": "Гибл",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dragon",
+				"ground"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "sandveil",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 2,
+				"attack": 6,
+				"defence": 22,
+				"special_attack": 13,
+				"special_defence": 1,
+				"speed": 16,
+				"total": 60,
+				"percentage": 32.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"dragonbreath",
+				"sandattack",
+				"sandtomb",
+				"dragonrage"
+			]
+		},
+		{
+			"uuid": "30987538-64e4-4101-a7bf-404eb7948989",
+			"location": "Коробка 1 (Слот 19)",
+			"species": "Zigzagoon",
+			"display_name": "Зигзагун",
+			"level": 18,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dark",
+				"normal"
+			],
+			"nature": "naughty",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "pickup",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 10,
+				"defence": 3,
+				"special_attack": 31,
+				"special_defence": 0,
+				"speed": 5,
+				"total": 61,
+				"percentage": 32.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"pinmissile",
+				"babydolleyes",
+				"headbutt",
+				"snarl"
+			]
+		},
+		{
+			"uuid": "72bc087c-a5b7-4908-9498-7b6b1674e681",
+			"location": "Коробка 1 (Слот 20)",
+			"species": "Combee",
+			"display_name": "Комби",
+			"level": 23,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"flying"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "honeygather",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 18,
+				"defence": 2,
+				"special_attack": 11,
+				"special_defence": 0,
+				"speed": 2,
+				"total": 62,
+				"percentage": 33.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"strugglebug",
+				"bugbite",
+				"gust",
+				"sweetscent"
+			]
+		},
+		{
+			"uuid": "42200b8f-3ed0-462f-b1db-abeb994b6dfb",
+			"location": "Коробка 1 (Слот 21)",
+			"species": "Corvisquire",
+			"display_name": "Корвисквайр",
+			"level": 23,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"flying"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "unnerve",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 24,
+				"attack": 0,
+				"defence": 5,
+				"special_attack": 25,
+				"special_defence": 4,
+				"speed": 6,
+				"total": 64,
+				"percentage": 34.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"taunt",
+				"pluck",
+				"furyattack",
+				"honeclaws"
+			]
+		},
+		{
+			"uuid": "d4b7abcf-0a91-470d-80fe-40fae06a4a97",
+			"location": "Коробка 1 (Слот 22)",
+			"species": "Munchlax",
+			"display_name": "Манчлакс",
+			"level": 34,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "pickup",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 2,
+				"defence": 29,
+				"special_attack": 10,
+				"special_defence": 0,
+				"speed": 12,
+				"total": 64,
+				"percentage": 34.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"fling",
+				"bodyslam",
+				"screech",
+				"swallow"
+			]
+		},
+		{
+			"uuid": "fadcf5ed-fb50-4f8f-bf8f-6e84225f8ef6",
+			"location": "Коробка 1 (Слот 23)",
+			"species": "Ninetales",
+			"display_name": "Найнтейлс",
+			"level": 35,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"fire"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "flashfire",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 6,
+				"attack": 5,
+				"defence": 26,
+				"special_attack": 8,
+				"special_defence": 4,
+				"speed": 15,
+				"total": 64,
+				"percentage": 34.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"flameburst",
+				"disable",
+				"tailwhip",
+				"grudge"
+			]
+		},
+		{
+			"uuid": "19d238fe-91c3-45ef-b629-7278d2243948",
+			"location": "Коробка 1 (Слот 24)",
+			"species": "Klink",
+			"display_name": "Клинк",
+			"level": 24,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"steel"
+			],
+			"nature": "hasty",
+			"nature_increased": "SPEED",
+			"nature_decreased": "DEFENCE",
+			"ability": "minus",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 10,
+				"attack": 15,
+				"defence": 1,
+				"special_attack": 16,
+				"special_defence": 19,
+				"speed": 4,
+				"total": 65,
+				"percentage": 34.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"discharge",
+				"autotomize",
+				"metalsound",
+				"chargebeam"
+			]
+		},
+		{
+			"uuid": "bb8a621c-ae2f-4f59-b9e2-96e8e0190bb5",
+			"location": "Коробка 1 (Слот 25)",
+			"species": "Timburr",
+			"display_name": "Тимбурр",
+			"level": 4,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fighting"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "sheerforce",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 10,
+				"attack": 29,
+				"defence": 4,
+				"special_attack": 23,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 66,
+				"percentage": 35.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"lowkick",
+				"bide",
+				"leer",
+				"pound"
+			]
+		},
+		{
+			"uuid": "ebd548de-1494-44e8-81fb-b53ae240bcd2",
+			"location": "Коробка 1 (Слот 26)",
+			"species": "Wiglett",
+			"display_name": "Виглетт",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "gooey",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 9,
+				"attack": 24,
+				"defence": 11,
+				"special_attack": 5,
+				"special_defence": 7,
+				"speed": 11,
+				"total": 67,
+				"percentage": 36
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"aquajet",
+				"wrap",
+				"mudslap",
+				"watergun"
+			]
+		},
+		{
+			"uuid": "5d95ea11-b8d6-47e8-8c15-23109940a1ce",
+			"location": "Коробка 1 (Слот 27)",
+			"species": "Victreebel",
+			"display_name": "Виктрибелл",
+			"level": 68,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass",
+				"poison"
+			],
+			"nature": "impish",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "chlorophyll",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 0,
+				"attack": 8,
+				"defence": 30,
+				"special_attack": 22,
+				"special_defence": 0,
+				"speed": 7,
+				"total": 67,
+				"percentage": 36
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"wringout",
+				"slam",
+				"acid",
+				"stunspore"
+			]
+		},
+		{
+			"uuid": "b54044a7-9a92-416c-9435-05179b357b26",
+			"location": "Коробка 1 (Слот 28)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 25,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 16,
+				"defence": 7,
+				"special_attack": 22,
+				"special_defence": 2,
+				"speed": 10,
+				"total": 68,
+				"percentage": 36.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"selfdestruct",
+				"smackdown",
+				"rockthrow",
+				"bulldoze"
+			]
+		},
+		{
+			"uuid": "91edca82-95a0-4af9-befd-5d12a7ea3619",
+			"location": "Коробка 1 (Слот 29)",
+			"species": "Zorua",
+			"display_name": "Зоруа",
+			"level": 29,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dark"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "illusion",
+			"friendship": 48,
+			"held_item": "None",
+			"ivs": {
+				"hp": 7,
+				"attack": 19,
+				"defence": 8,
+				"special_attack": 1,
+				"special_defence": 17,
+				"speed": 16,
+				"total": 68,
+				"percentage": 36.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"faketears",
+				"knockoff",
+				"taunt",
+				"scaryface"
+			]
+		},
+		{
+			"uuid": "105fbb8b-6dfa-4ce2-8ee4-4f36fae4b231",
+			"location": "Коробка 1 (Слот 30)",
+			"species": "Karrablast",
+			"display_name": "Каррабласт",
+			"level": 32,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "swarm",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 31,
+				"defence": 6,
+				"special_attack": 11,
+				"special_defence": 0,
+				"speed": 9,
+				"total": 68,
+				"percentage": 36.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"slash",
+				"scaryface",
+				"flail",
+				"headbutt"
+			]
+		},
+		{
+			"uuid": "b007afa4-96af-48e3-b09a-05629df3e8be",
+			"location": "Коробка 2 (Слот 1)",
+			"species": "Cryogonal",
+			"display_name": "Крайогонал",
+			"level": 37,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"ice"
+			],
+			"nature": "quiet",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "levitate",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 4,
+				"attack": 0,
+				"defence": 30,
+				"special_attack": 16,
+				"special_defence": 14,
+				"speed": 4,
+				"total": 68,
+				"percentage": 36.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"freezedry",
+				"nightslash",
+				"slash",
+				"aurorabeam"
+			]
+		},
+		{
+			"uuid": "e3a9ab44-e656-4b72-b0c6-e1563cc69f8b",
+			"location": "Коробка 2 (Слот 2)",
+			"species": "Caterpie",
+			"display_name": "Катерпи",
+			"level": 18,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug"
+			],
+			"nature": "naive",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "shielddust",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 4,
+				"attack": 15,
+				"defence": 20,
+				"special_attack": 6,
+				"special_defence": 8,
+				"speed": 17,
+				"total": 70,
+				"percentage": 37.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"bugbite",
+				"stringshot",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "73300764-4eda-415f-823e-03fc6e058c00",
+			"location": "Коробка 2 (Слот 3)",
+			"species": "Vulpix",
+			"display_name": "Вульпикс",
+			"level": 28,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"fire"
+			],
+			"nature": "modest",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "ATTACK",
+			"ability": "flashfire",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 0,
+				"attack": 28,
+				"defence": 2,
+				"special_attack": 7,
+				"special_defence": 22,
+				"speed": 11,
+				"total": 70,
+				"percentage": 37.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"flameburst",
+				"willowisp",
+				"confuseray",
+				"incinerate"
+			]
+		},
+		{
+			"uuid": "00ecb536-c32a-4428-82b2-850d6b07727b",
+			"location": "Коробка 2 (Слот 4)",
+			"species": "Diggersby",
+			"display_name": "Диггерсби",
+			"level": 39,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal",
+				"ground"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "cheekpouch",
+			"friendship": 46,
+			"held_item": "None",
+			"ivs": {
+				"hp": 10,
+				"attack": 1,
+				"defence": 13,
+				"special_attack": 12,
+				"special_defence": 25,
+				"speed": 9,
+				"total": 70,
+				"percentage": 37.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 1,
+				"total": 1
+			},
+			"moves": [
+				"takedown",
+				"mudshot",
+				"laserfocus",
+				"bulldoze"
+			]
+		},
+		{
+			"uuid": "c23f980b-2bd1-4aad-ab94-2f46d79a1406",
+			"location": "Коробка 2 (Слот 5)",
+			"species": "Wooper",
+			"display_name": "Вупер",
+			"level": 2,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"water",
+				"ground"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "damp",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 24,
+				"attack": 5,
+				"defence": 10,
+				"special_attack": 17,
+				"special_defence": 12,
+				"speed": 3,
+				"total": 71,
+				"percentage": 38.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"mudsport",
+				"tailwhip",
+				"watergun"
+			]
+		},
+		{
+			"uuid": "5e1992c9-e917-42ab-a9a5-73f395e8a6df",
+			"location": "Коробка 2 (Слот 6)",
+			"species": "Vulpix",
+			"display_name": "Вульпикс",
+			"level": 24,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "flashfire",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 8,
+				"defence": 13,
+				"special_attack": 5,
+				"special_defence": 15,
+				"speed": 1,
+				"total": 71,
+				"percentage": 38.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"willowisp",
+				"confuseray",
+				"incinerate",
+				"spite"
+			]
+		},
+		{
+			"uuid": "1a5fe4d6-b933-45d2-a08f-90674568f9f3",
+			"location": "Коробка 2 (Слот 7)",
+			"species": "Blitzle",
+			"display_name": "Блитзл",
+			"level": 27,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"electric"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "motordrive",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 6,
+				"attack": 13,
+				"defence": 14,
+				"special_attack": 11,
+				"special_defence": 6,
+				"speed": 21,
+				"total": 71,
+				"percentage": 38.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"stomp",
+				"pursuit",
+				"flamecharge",
+				"thunderwave"
+			]
+		},
+		{
+			"uuid": "24942c90-f05a-4697-9074-877bcbef63b9",
+			"location": "Коробка 2 (Слот 8)",
+			"species": "Growlithe",
+			"display_name": "Гроулит",
+			"level": 63,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire",
+				"rock"
+			],
+			"nature": "relaxed",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "flashfire",
+			"friendship": 55,
+			"held_item": "None",
+			"ivs": {
+				"hp": 9,
+				"attack": 0,
+				"defence": 8,
+				"special_attack": 25,
+				"special_defence": 26,
+				"speed": 4,
+				"total": 72,
+				"percentage": 38.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 2,
+				"defence": 0,
+				"special_attack": 2,
+				"special_defence": 3,
+				"speed": 0,
+				"total": 7
+			},
+			"moves": [
+				"flareblitz",
+				"rockslide",
+				"bite",
+				"crunch"
+			]
+		},
+		{
+			"uuid": "2db51160-dcf5-4095-844f-9c52e9ee67a2",
+			"location": "Коробка 2 (Слот 9)",
+			"species": "Squawkabilly",
+			"display_name": "Сквокабилли",
+			"level": 24,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal",
+				"flying"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "hustle",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 7,
+				"defence": 1,
+				"special_attack": 26,
+				"special_defence": 5,
+				"speed": 11,
+				"total": 73,
+				"percentage": 39.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"uproar",
+				"taunt",
+				"furyattack",
+				"aerialace"
+			]
+		},
+		{
+			"uuid": "85dcc216-cecc-4c01-b985-99b3fcc44121",
+			"location": "Коробка 2 (Слот 10)",
+			"species": "Perrserker",
+			"display_name": "Перрсеркер",
+			"level": 28,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"steel"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "battlearmor",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 10,
+				"attack": 22,
+				"defence": 0,
+				"special_attack": 29,
+				"special_defence": 8,
+				"speed": 5,
+				"total": 74,
+				"percentage": 39.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"swagger",
+				"taunt",
+				"metalclaw",
+				"payday"
+			]
+		},
+		{
+			"uuid": "a781122b-b641-4822-9a8e-e86be62b447b",
+			"location": "Коробка 2 (Слот 11)",
+			"species": "Slowpoke",
+			"display_name": "Слоупок",
+			"level": 30,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water",
+				"psychic"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "oblivious",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 3,
+				"attack": 5,
+				"defence": 7,
+				"special_attack": 15,
+				"special_defence": 17,
+				"speed": 27,
+				"total": 74,
+				"percentage": 39.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"surf",
+				"amnesia",
+				"zenheadbutt",
+				"headbutt"
+			]
+		},
+		{
+			"uuid": "a9664863-a909-4dc7-bdef-51e1bbfdfe23",
+			"location": "Коробка 2 (Слот 12)",
+			"species": "Growlithe",
+			"display_name": "Гроулит",
+			"level": 53,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire",
+				"rock"
+			],
+			"nature": "rash",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "intimidate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 26,
+				"attack": 0,
+				"defence": 28,
+				"special_attack": 5,
+				"special_defence": 11,
+				"speed": 4,
+				"total": 74,
+				"percentage": 39.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"ember",
+				"leer"
+			]
+		},
+		{
+			"uuid": "e2c069c7-cd80-4a58-b76d-9d9b234cbc92",
+			"location": "Коробка 2 (Слот 13)",
+			"species": "Combee",
+			"display_name": "Комби",
+			"level": 14,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"flying"
+			],
+			"nature": "impish",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "honeygather",
+			"friendship": 49,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 12,
+				"defence": 15,
+				"special_attack": 6,
+				"special_defence": 27,
+				"speed": 5,
+				"total": 76,
+				"percentage": 40.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"strugglebug",
+				"bugbite",
+				"gust",
+				"sweetscent"
+			]
+		},
+		{
+			"uuid": "19c030f4-018c-485d-8d12-f7ff52c4f002",
+			"location": "Коробка 2 (Слот 14)",
+			"species": "Gyarados",
+			"display_name": "Гьярадос",
+			"level": 20,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water",
+				"flying"
+			],
+			"nature": "rash",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "intimidate",
+			"friendship": 65,
+			"held_item": "None",
+			"ivs": {
+				"hp": 9,
+				"attack": 7,
+				"defence": 17,
+				"special_attack": 21,
+				"special_defence": 0,
+				"speed": 22,
+				"total": 76,
+				"percentage": 40.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tackle",
+				"splash",
+				"bite"
+			]
+		},
+		{
+			"uuid": "7d2e82c9-8322-4af2-af2e-9dcf6b645889",
+			"location": "Коробка 2 (Слот 15)",
+			"species": "Petilil",
+			"display_name": "Петилил",
+			"level": 67,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "chlorophyll",
+			"friendship": 147,
+			"held_item": "None",
+			"ivs": {
+				"hp": 28,
+				"attack": 6,
+				"defence": 10,
+				"special_attack": 21,
+				"special_defence": 10,
+				"speed": 1,
+				"total": 76,
+				"percentage": 40.9
+			},
+			"evs": {
+				"hp": 42,
+				"attack": 79,
+				"defence": 46,
+				"special_attack": 25,
+				"special_defence": 25,
+				"speed": 65,
+				"total": 282
+			},
+			"moves": [
+				"gigadrain",
+				"sleeppowder",
+				"magicalleaf",
+				"energyball"
+			]
+		},
+		{
+			"uuid": "533107a9-98af-4a90-8117-b9434aa4c675",
+			"location": "Коробка 2 (Слот 16)",
+			"species": "Rolycoly",
+			"display_name": "Роликоли",
+			"level": 1,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "steamengine",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 9,
+				"attack": 0,
+				"defence": 26,
+				"special_attack": 13,
+				"special_defence": 4,
+				"speed": 25,
+				"total": 77,
+				"percentage": 41.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"smokescreen",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "efc4dc91-baf1-4002-890e-b739892bdae9",
+			"location": "Коробка 2 (Слот 17)",
+			"species": "Riolu",
+			"display_name": "Риолу",
+			"level": 14,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fighting"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "prankster",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 3,
+				"defence": 20,
+				"special_attack": 0,
+				"special_defence": 24,
+				"speed": 1,
+				"total": 77,
+				"percentage": 41.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"counter",
+				"metalclaw",
+				"feint",
+				"endure"
+			]
+		},
+		{
+			"uuid": "96292632-2a2e-4592-8f33-4fcc5a746868",
+			"location": "Коробка 2 (Слот 18)",
+			"species": "Vulpix",
+			"display_name": "Вульпикс",
+			"level": 17,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"ice"
+			],
+			"nature": "hasty",
+			"nature_increased": "SPEED",
+			"nature_decreased": "DEFENCE",
+			"ability": "snowcloak",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 26,
+				"attack": 1,
+				"defence": 24,
+				"special_attack": 5,
+				"special_defence": 3,
+				"speed": 18,
+				"total": 77,
+				"percentage": 41.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tailwhip",
+				"powdersnow"
+			]
+		},
+		{
+			"uuid": "65a6eb27-e7cb-47b9-a1c0-bd1cc752a2ba",
+			"location": "Коробка 2 (Слот 19)",
+			"species": "Sandshrew",
+			"display_name": "Сэндшрю",
+			"level": 25,
+			"shiny": true,
+			"gender": "FEMALE",
+			"types": [
+				"ground"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "sandveil",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 16,
+				"defence": 4,
+				"special_attack": 3,
+				"special_defence": 20,
+				"speed": 9,
+				"total": 77,
+				"percentage": 41.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"magnitude",
+				"defensecurl",
+				"scratch"
+			]
+		},
+		{
+			"uuid": "f1d3a38d-da11-47ad-ab5b-8a0e6cc90152",
+			"location": "Коробка 2 (Слот 20)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 26,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "rash",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "sturdy",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 30,
+				"attack": 27,
+				"defence": 10,
+				"special_attack": 0,
+				"special_defence": 8,
+				"speed": 2,
+				"total": 77,
+				"percentage": 41.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"selfdestruct",
+				"smackdown",
+				"rockthrow",
+				"bulldoze"
+			]
+		},
+		{
+			"uuid": "64e6cbb3-4d70-43b2-a55c-3012a4723b25",
+			"location": "Коробка 2 (Слот 21)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 28,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "hardy",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "rockhead",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 6,
+				"attack": 15,
+				"defence": 13,
+				"special_attack": 13,
+				"special_defence": 8,
+				"speed": 22,
+				"total": 77,
+				"percentage": 41.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"magnitude",
+				"mudsport",
+				"defensecurl",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "71fee6a7-7191-4ddc-b5c5-9b762cfcb271",
+			"location": "Коробка 2 (Слот 22)",
+			"species": "Deerling",
+			"display_name": "Дирлинг",
+			"level": 31,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal",
+				"grass"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "sapsipper",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 2,
+				"attack": 13,
+				"defence": 15,
+				"special_attack": 29,
+				"special_defence": 3,
+				"speed": 15,
+				"total": 77,
+				"percentage": 41.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 1,
+				"total": 2
+			},
+			"moves": [
+				"aromatherapy",
+				"jumpkick",
+				"takedown",
+				"feintattack"
+			]
+		},
+		{
+			"uuid": "39d76919-1df7-499f-84b7-90480e2febcc",
+			"location": "Коробка 2 (Слот 23)",
+			"species": "Breloom",
+			"display_name": "Брелум",
+			"level": 45,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass",
+				"fighting"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "effectspore",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 22,
+				"attack": 5,
+				"defence": 13,
+				"special_attack": 15,
+				"special_defence": 7,
+				"speed": 15,
+				"total": 77,
+				"percentage": 41.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"seedbomb",
+				"brickbreak",
+				"worryseed",
+				"forcepalm"
+			]
+		},
+		{
+			"uuid": "27903e09-ced7-46ef-81d6-1569c2e75783",
+			"location": "Коробка 2 (Слот 24)",
+			"species": "Honedge",
+			"display_name": "Хонедж",
+			"level": 31,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"steel",
+				"ghost"
+			],
+			"nature": "gentle",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "DEFENCE",
+			"ability": "noguard",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 6,
+				"attack": 30,
+				"defence": 25,
+				"special_attack": 16,
+				"special_defence": 0,
+				"speed": 3,
+				"total": 80,
+				"percentage": 43
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"retaliate",
+				"nightslash",
+				"slash",
+				"metalsound"
+			]
+		},
+		{
+			"uuid": "a890d14b-08ba-43b4-945a-536dde1e4ab6",
+			"location": "Коробка 8 (Слот 26)",
+			"species": "Turtonator",
+			"display_name": "Туртонатор",
+			"level": 47,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire",
+				"dragon"
+			],
+			"nature": "modest",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "ATTACK",
+			"ability": "shellarmor",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 10,
+				"attack": 19,
+				"defence": 12,
+				"special_attack": 20,
+				"special_defence": 2,
+				"speed": 17,
+				"total": 80,
+				"percentage": 43
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 2,
+				"total": 3
+			},
+			"moves": [
+				"shellsmash",
+				"shelltrap",
+				"flamethrower",
+				"bodyslam"
+			]
+		},
+		{
+			"uuid": "acb4de0c-1bbf-4534-8312-115dc2737cf0",
+			"location": "Коробка 2 (Слот 26)",
+			"species": "Pichu",
+			"display_name": "Пичу",
+			"level": 21,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"electric"
+			],
+			"nature": "rash",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "static",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 30,
+				"attack": 0,
+				"defence": 12,
+				"special_attack": 21,
+				"special_defence": 17,
+				"speed": 1,
+				"total": 81,
+				"percentage": 43.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"charm",
+				"nastyplot",
+				"nuzzle",
+				"sweetkiss"
+			]
+		},
+		{
+			"uuid": "fd637b33-14ef-4aae-a691-7bf6c800540b",
+			"location": "Коробка 2 (Слот 27)",
+			"species": "Mime Jr.",
+			"display_name": "Майм Младший",
+			"level": 8,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"psychic",
+				"fairy"
+			],
+			"nature": "timid",
+			"nature_increased": "SPEED",
+			"nature_decreased": "ATTACK",
+			"ability": "filter",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 2,
+				"defence": 30,
+				"special_attack": 29,
+				"special_defence": 8,
+				"speed": 3,
+				"total": 83,
+				"percentage": 44.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"encore",
+				"batonpass",
+				"pound",
+				"doubleslap"
+			]
+		},
+		{
+			"uuid": "5581f616-5a97-4471-8f4b-df851812fc8c",
+			"location": "Коробка 2 (Слот 28)",
+			"species": "Wiglett",
+			"display_name": "Виглетт",
+			"level": 15,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"water"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "rattled",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 22,
+				"defence": 8,
+				"special_attack": 1,
+				"special_defence": 1,
+				"speed": 30,
+				"total": 83,
+				"percentage": 44.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"aquajet",
+				"wrap",
+				"mudslap",
+				"watergun"
+			]
+		},
+		{
+			"uuid": "d3fc1206-515e-4f57-9113-76fbee61e7f8",
+			"location": "Коробка 2 (Слот 29)",
+			"species": "Heracross",
+			"display_name": "Геракросс",
+			"level": 35,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"bug",
+				"fighting"
+			],
+			"nature": "naughty",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "swarm",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 24,
+				"attack": 10,
+				"defence": 8,
+				"special_attack": 25,
+				"special_defence": 6,
+				"speed": 10,
+				"total": 83,
+				"percentage": 44.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"pinmissile",
+				"brickbreak",
+				"counter",
+				"hornattack"
+			]
+		},
+		{
+			"uuid": "adab1730-2521-49e8-8b67-9e9f5d237130",
+			"location": "Коробка 2 (Слот 30)",
+			"species": "Bronzong",
+			"display_name": "Бронзонг",
+			"level": 50,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"steel",
+				"psychic"
+			],
+			"nature": "relaxed",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "levitate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 8,
+				"attack": 14,
+				"defence": 13,
+				"special_attack": 11,
+				"special_defence": 21,
+				"speed": 16,
+				"total": 83,
+				"percentage": 44.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"futuresight",
+				"metalsound",
+				"irondefense",
+				"heavyslam"
+			]
+		},
+		{
+			"uuid": "db971164-f718-4312-a39d-e4cccf423982",
+			"location": "Коробка 3 (Слот 1)",
+			"species": "Eevee",
+			"display_name": "Иви",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "docile",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "runaway",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 7,
+				"attack": 7,
+				"defence": 12,
+				"special_attack": 7,
+				"special_defence": 29,
+				"speed": 22,
+				"total": 84,
+				"percentage": 45.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"babydolleyes",
+				"quickattack",
+				"sandattack",
+				"covet"
+			]
+		},
+		{
+			"uuid": "5037119b-0b9e-49bb-91f7-cd914dfc3086",
+			"location": "Коробка 3 (Слот 2)",
+			"species": "Tyrunt",
+			"display_name": "Тайрант",
+			"level": 1,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"dragon"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "strongjaw",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 9,
+				"attack": 7,
+				"defence": 19,
+				"special_attack": 24,
+				"special_defence": 19,
+				"speed": 7,
+				"total": 85,
+				"percentage": 45.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"bide",
+				"tackle",
+				"tailwhip"
+			]
+		},
+		{
+			"uuid": "6db6d22f-7e9b-459c-9d7d-e1a29898272c",
+			"location": "Коробка 3 (Слот 3)",
+			"species": "Gyarados",
+			"display_name": "Гьярадос",
+			"level": 20,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"water",
+				"flying"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "intimidate",
+			"friendship": 56,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 26,
+				"defence": 10,
+				"special_attack": 10,
+				"special_defence": 1,
+				"speed": 22,
+				"total": 86,
+				"percentage": 46.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tackle",
+				"splash",
+				"bite"
+			]
+		},
+		{
+			"uuid": "5da77fd5-4710-427a-aa4f-0cbdbecbcae3",
+			"location": "Коробка 3 (Слот 4)",
+			"species": "Geodude",
+			"display_name": "Геодуд",
+			"level": 28,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 26,
+				"defence": 25,
+				"special_attack": 4,
+				"special_defence": 1,
+				"speed": 18,
+				"total": 86,
+				"percentage": 46.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"magnitude",
+				"mudsport",
+				"defensecurl",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "b272112f-d927-4c48-81a7-67dc194dc0a4",
+			"location": "Коробка 3 (Слот 5)",
+			"species": "Kingler",
+			"display_name": "Кинглер",
+			"level": 33,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water"
+			],
+			"nature": "timid",
+			"nature_increased": "SPEED",
+			"nature_decreased": "ATTACK",
+			"ability": "shellarmor",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 0,
+				"defence": 31,
+				"special_attack": 27,
+				"special_defence": 3,
+				"speed": 4,
+				"total": 86,
+				"percentage": 46.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"razorshell",
+				"flail",
+				"stomp",
+				"bubblebeam"
+			]
+		},
+		{
+			"uuid": "fc8471fb-2794-4afc-92ee-fcdb2d8f48bc",
+			"location": "Коробка 3 (Слот 6)",
+			"species": "Surskit",
+			"display_name": "Сёрскит",
+			"level": 12,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"water"
+			],
+			"nature": "naive",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "swiftswim",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 14,
+				"defence": 2,
+				"special_attack": 22,
+				"special_defence": 14,
+				"speed": 13,
+				"total": 86,
+				"percentage": 46.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"sweetscent",
+				"quickattack",
+				"watergun",
+				"watersport"
+			]
+		},
+		{
+			"uuid": "8374d616-67a3-4c10-8e37-067cb2cacb8e",
+			"location": "Коробка 3 (Слот 7)",
+			"species": "Torchic",
+			"display_name": "Торчик",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "blaze",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 1,
+				"defence": 3,
+				"special_attack": 15,
+				"special_defence": 8,
+				"speed": 31,
+				"total": 87,
+				"percentage": 46.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"sandattack",
+				"detect",
+				"flamecharge",
+				"quickattack"
+			]
+		},
+		{
+			"uuid": "816cb5c1-7383-4ac2-95a6-696cb4e5926b",
+			"location": "Коробка 3 (Слот 8)",
+			"species": "Illumise",
+			"display_name": "Иллюмайз",
+			"level": 25,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"bug"
+			],
+			"nature": "timid",
+			"nature_increased": "SPEED",
+			"nature_decreased": "ATTACK",
+			"ability": "tintedlens",
+			"friendship": 48,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 29,
+				"defence": 5,
+				"special_attack": 0,
+				"special_defence": 14,
+				"speed": 22,
+				"total": 87,
+				"percentage": 46.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"wish",
+				"moonlight",
+				"strugglebug",
+				"quickattack"
+			]
+		},
+		{
+			"uuid": "ca85d430-c61b-43ed-bde0-5af60017dbe4",
+			"location": "Коробка 3 (Слот 9)",
+			"species": "Comfey",
+			"display_name": "Комфей",
+			"level": 34,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"fairy"
+			],
+			"nature": "hardy",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "flowerveil",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 9,
+				"defence": 8,
+				"special_attack": 15,
+				"special_defence": 15,
+				"speed": 23,
+				"total": 87,
+				"percentage": 46.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"petalblizzard",
+				"floralhealing",
+				"sweetkiss",
+				"grassknot"
+			]
+		},
+		{
+			"uuid": "e9669515-eff3-4cf9-b193-2b1bb54f3760",
+			"location": "Коробка 3 (Слот 10)",
+			"species": "Cyndaquil",
+			"display_name": "Синдаквил",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "flashfire",
+			"friendship": 100,
+			"held_item": "None",
+			"ivs": {
+				"hp": 14,
+				"attack": 19,
+				"defence": 7,
+				"special_attack": 16,
+				"special_defence": 4,
+				"speed": 28,
+				"total": 88,
+				"percentage": 47.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"quickattack",
+				"ember",
+				"smokescreen",
+				"leer"
+			]
+		},
+		{
+			"uuid": "47907575-0dd9-4230-ac87-2468efa7990c",
+			"location": "Коробка 3 (Слот 11)",
+			"species": "Hoppip",
+			"display_name": "Хоппип",
+			"level": 21,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass",
+				"flying"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "leafguard",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 27,
+				"attack": 3,
+				"defence": 2,
+				"special_attack": 28,
+				"special_defence": 2,
+				"speed": 26,
+				"total": 88,
+				"percentage": 47.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"leechseed",
+				"synthesis",
+				"bulletseed",
+				"sleeppowder"
+			]
+		},
+		{
+			"uuid": "1a7fefa4-6cda-4cf3-ae3d-0c0a5dfacbef",
+			"location": "Коробка 3 (Слот 12)",
+			"species": "Drednaw",
+			"display_name": "Дредноу",
+			"level": 46,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water",
+				"rock"
+			],
+			"nature": "modest",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "ATTACK",
+			"ability": "strongjaw",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 25,
+				"defence": 10,
+				"special_attack": 28,
+				"special_defence": 2,
+				"speed": 0,
+				"total": 88,
+				"percentage": 47.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"jawlock",
+				"counter",
+				"headbutt",
+				"protect"
+			]
+		},
+		{
+			"uuid": "cc34fc20-ac21-47b3-ac65-0e14e3fa8400",
+			"location": "Коробка 3 (Слот 13)",
+			"species": "Parasect",
+			"display_name": "Парасект",
+			"level": 29,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"bug",
+				"grass"
+			],
+			"nature": "impish",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "effectspore",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 6,
+				"attack": 5,
+				"defence": 30,
+				"special_attack": 22,
+				"special_defence": 7,
+				"speed": 19,
+				"total": 89,
+				"percentage": 47.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"slash",
+				"spore",
+				"furycutter",
+				"absorb"
+			]
+		},
+		{
+			"uuid": "f20644b4-2241-4296-835a-992a7a3cf0d4",
+			"location": "Коробка 3 (Слот 14)",
+			"species": "Dodrio",
+			"display_name": "Додрио",
+			"level": 41,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal",
+				"flying"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "runaway",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 24,
+				"attack": 12,
+				"defence": 24,
+				"special_attack": 2,
+				"special_defence": 20,
+				"speed": 7,
+				"total": 89,
+				"percentage": 47.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"drillpeck",
+				"swordsdance",
+				"acupressure",
+				"uproar"
+			]
+		},
+		{
+			"uuid": "30bda1e9-cb84-49ac-aba0-41c4a5bd691d",
+			"location": "Коробка 3 (Слот 15)",
+			"species": "Minior",
+			"display_name": "Миниор",
+			"level": 47,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"rock",
+				"flying"
+			],
+			"nature": "quiet",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "shieldsdown",
+			"friendship": 49,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 12,
+				"defence": 11,
+				"special_attack": 9,
+				"special_defence": 7,
+				"speed": 25,
+				"total": 89,
+				"percentage": 47.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"autotomize",
+				"powergem",
+				"confuseray",
+				"cosmicpower"
+			]
+		},
+		{
+			"uuid": "d187c81a-b590-4cba-926c-96d11b8e9502",
+			"location": "Коробка 3 (Слот 16)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 27,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "timid",
+			"nature_increased": "SPEED",
+			"nature_decreased": "ATTACK",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 8,
+				"attack": 22,
+				"defence": 13,
+				"special_attack": 15,
+				"special_defence": 1,
+				"speed": 31,
+				"total": 90,
+				"percentage": 48.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"selfdestruct",
+				"smackdown",
+				"rockthrow",
+				"bulldoze"
+			]
+		},
+		{
+			"uuid": "a7dab3de-7089-4def-9559-9d89f8b84672",
+			"location": "Коробка 3 (Слот 17)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 28,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "hardy",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "sturdy",
+			"friendship": 66,
+			"held_item": "None",
+			"ivs": {
+				"hp": 8,
+				"attack": 31,
+				"defence": 7,
+				"special_attack": 11,
+				"special_defence": 8,
+				"speed": 25,
+				"total": 90,
+				"percentage": 48.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"smackdown",
+				"rockthrow",
+				"bulldoze",
+				"rollout"
+			]
+		},
+		{
+			"uuid": "183d4a2b-4b43-42cc-bc80-c097e032ff91",
+			"location": "Коробка 3 (Слот 18)",
+			"species": "Ditto",
+			"display_name": "Дитто",
+			"level": 53,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"normal"
+			],
+			"nature": "gentle",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "DEFENCE",
+			"ability": "limber",
+			"friendship": 127,
+			"held_item": "None",
+			"ivs": {
+				"hp": 18,
+				"attack": 1,
+				"defence": 20,
+				"special_attack": 14,
+				"special_defence": 16,
+				"speed": 21,
+				"total": 90,
+				"percentage": 48.4
+			},
+			"evs": {
+				"hp": 14,
+				"attack": 45,
+				"defence": 30,
+				"special_attack": 13,
+				"special_defence": 6,
+				"speed": 34,
+				"total": 142
+			},
+			"moves": [
+				"transform"
+			]
+		},
+		{
+			"uuid": "11c80b2e-da99-4423-bc2c-59c8bc4dc6f3",
+			"location": "Коробка 3 (Слот 19)",
+			"species": "Glameow",
+			"display_name": "Глэмяу",
+			"level": 5,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "owntempo",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 0,
+				"attack": 23,
+				"defence": 19,
+				"special_attack": 24,
+				"special_defence": 18,
+				"speed": 7,
+				"total": 91,
+				"percentage": 48.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"scratch",
+				"fakeout"
+			]
+		},
+		{
+			"uuid": "0363e42f-dcf7-42c1-81b7-6b931d931edd",
+			"location": "Коробка 3 (Слот 20)",
+			"species": "Inkay",
+			"display_name": "Инкей",
+			"level": 14,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dark",
+				"psychic"
+			],
+			"nature": "hasty",
+			"nature_increased": "SPEED",
+			"nature_decreased": "DEFENCE",
+			"ability": "contrary",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 1,
+				"attack": 31,
+				"defence": 30,
+				"special_attack": 20,
+				"special_defence": 8,
+				"speed": 1,
+				"total": 91,
+				"percentage": 48.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"pluck",
+				"payback",
+				"wrap",
+				"hypnosis"
+			]
+		},
+		{
+			"uuid": "f7333a5b-aeef-449a-9729-b7a1d333c4b7",
+			"location": "Коробка 8 (Слот 27)",
+			"species": "Dreepy",
+			"display_name": "Дрипи",
+			"level": 38,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dragon",
+				"ghost"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "cursedbody",
+			"friendship": 78,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 21,
+				"defence": 4,
+				"special_attack": 22,
+				"special_defence": 16,
+				"speed": 12,
+				"total": 92,
+				"percentage": 49.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"bite",
+				"quickattack",
+				"infestation",
+				"astonish"
+			]
+		},
+		{
+			"uuid": "da7f166c-b919-4856-a998-a8970fa2d46e",
+			"location": "Коробка 8 (Слот 28)",
+			"species": "Cyclizar",
+			"display_name": "Сайклизар",
+			"level": 43,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dragon",
+				"normal"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "shedskin",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 3,
+				"attack": 29,
+				"defence": 27,
+				"special_attack": 1,
+				"special_defence": 14,
+				"speed": 18,
+				"total": 92,
+				"percentage": 49.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 4,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 4
+			},
+			"moves": [
+				"shiftgear",
+				"dragonclaw",
+				"shedtail",
+				"uturn"
+			]
+		},
+		{
+			"uuid": "54985498-b14d-462c-8919-f454aa64c340",
+			"location": "Коробка 3 (Слот 23)",
+			"species": "Ditto",
+			"display_name": "Дитто",
+			"level": 22,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"normal"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "limber",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 26,
+				"attack": 3,
+				"defence": 5,
+				"special_attack": 28,
+				"special_defence": 20,
+				"speed": 11,
+				"total": 93,
+				"percentage": 50
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"transform"
+			]
+		},
+		{
+			"uuid": "912de83b-7544-4ee6-b341-9eac5cf702f7",
+			"location": "Коробка 3 (Слот 24)",
+			"species": "Diglett",
+			"display_name": "Диглетт",
+			"level": 5,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"ground"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "sandveil",
+			"friendship": 150,
+			"held_item": "None",
+			"ivs": {
+				"hp": 5,
+				"attack": 18,
+				"defence": 21,
+				"special_attack": 0,
+				"special_defence": 26,
+				"speed": 23,
+				"total": 93,
+				"percentage": 50
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"growl",
+				"magnitude",
+				"sandattack",
+				"scratch"
+			]
+		},
+		{
+			"uuid": "122d75f1-ed48-4db3-afc2-ee06b68a2dd9",
+			"location": "Коробка 3 (Слот 25)",
+			"species": "Mime Jr.",
+			"display_name": "Майм Младший",
+			"level": 8,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"psychic",
+				"fairy"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "soundproof",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 31,
+				"defence": 4,
+				"special_attack": 22,
+				"special_defence": 4,
+				"speed": 16,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"encore",
+				"batonpass",
+				"pound",
+				"doubleslap"
+			]
+		},
+		{
+			"uuid": "c9514b27-f42a-4f6c-b290-93a439459817",
+			"location": "Коробка 3 (Слот 26)",
+			"species": "Vulpix",
+			"display_name": "Вульпикс",
+			"level": 11,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"ice"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "snowcloak",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 19,
+				"defence": 13,
+				"special_attack": 2,
+				"special_defence": 22,
+				"speed": 26,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tailwhip",
+				"powdersnow"
+			]
+		},
+		{
+			"uuid": "a5b6e58e-db39-4619-bc6c-2a4c41731811",
+			"location": "Коробка 3 (Слот 27)",
+			"species": "Drifblim",
+			"display_name": "Дрифблим",
+			"level": 33,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"ghost",
+				"flying"
+			],
+			"nature": "naughty",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "unburden",
+			"friendship": 94,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 12,
+				"defence": 0,
+				"special_attack": 18,
+				"special_defence": 29,
+				"speed": 6,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"shadowball",
+				"hex",
+				"payback",
+				"focusenergy"
+			]
+		},
+		{
+			"uuid": "ab893e46-62cf-4a15-a557-efbec514efe9",
+			"location": "Коробка 3 (Слот 28)",
+			"species": "Lokix",
+			"display_name": "Локикс",
+			"level": 45,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"dark"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "swarm",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 14,
+				"attack": 29,
+				"defence": 6,
+				"special_attack": 19,
+				"special_defence": 14,
+				"speed": 12,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 2,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 3
+			},
+			"moves": [
+				"firstimpression",
+				"suckerpunch",
+				"throatchop",
+				"agility"
+			]
+		},
+		{
+			"uuid": "427b5d48-74a3-4984-9388-0eb654251708",
+			"location": "Коробка 3 (Слот 29)",
+			"species": "Pidgeot",
+			"display_name": "Пиджеот",
+			"level": 46,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal",
+				"flying"
+			],
+			"nature": "careful",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "tangledfeet",
+			"friendship": 54,
+			"held_item": "None",
+			"ivs": {
+				"hp": 2,
+				"attack": 24,
+				"defence": 9,
+				"special_attack": 31,
+				"special_defence": 26,
+				"speed": 2,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"roost",
+				"wingattack",
+				"agility",
+				"featherdance"
+			]
+		},
+		{
+			"uuid": "5620636d-6624-4d0c-9b00-8c8c6d468f46",
+			"location": "Коробка 3 (Слот 30)",
+			"species": "Skitty",
+			"display_name": "Скитти",
+			"level": 12,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "cutecharm",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 28,
+				"attack": 22,
+				"defence": 8,
+				"special_attack": 14,
+				"special_defence": 22,
+				"speed": 0,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"attract",
+				"sing",
+				"foresight",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "01fedc0d-e1e9-4d39-a352-97b1a6c03fc2",
+			"location": "Коробка 4 (Слот 1)",
+			"species": "Magnemite",
+			"display_name": "Магнемайт",
+			"level": 5,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"electric",
+				"steel"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "magnetpull",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 15,
+				"defence": 16,
+				"special_attack": 14,
+				"special_defence": 14,
+				"speed": 14,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"supersonic",
+				"magnetbomb",
+				"thundershock",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "eefcb88d-320f-4de8-a3f4-1c97a8b75954",
+			"location": "Коробка 4 (Слот 2)",
+			"species": "Poliwag",
+			"display_name": "Поливаг",
+			"level": 10,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"water"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "waterabsorb",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 4,
+				"defence": 28,
+				"special_attack": 8,
+				"special_defence": 7,
+				"speed": 27,
+				"total": 95,
+				"percentage": 51.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"watergun",
+				"hypnosis",
+				"bubble",
+				"watersport"
+			]
+		},
+		{
+			"uuid": "4f3022a5-dfbf-403c-b77c-d23f51e20e8a",
+			"location": "Коробка 4 (Слот 3)",
+			"species": "Quagsire",
+			"display_name": "Квагсайр",
+			"level": 22,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water",
+				"ground"
+			],
+			"nature": "careful",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "waterabsorb",
+			"friendship": 33,
+			"held_item": "None",
+			"ivs": {
+				"hp": 7,
+				"attack": 30,
+				"defence": 17,
+				"special_attack": 12,
+				"special_defence": 5,
+				"speed": 24,
+				"total": 95,
+				"percentage": 51.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"mudsport",
+				"tailwhip",
+				"watergun",
+				"mist"
+			]
+		},
+		{
+			"uuid": "3f4b774a-7c42-40ab-a8ac-902673d5a6f4",
+			"location": "Коробка 4 (Слот 4)",
+			"species": "Geodude",
+			"display_name": "Геодуд",
+			"level": 23,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "rockhead",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 16,
+				"attack": 27,
+				"defence": 20,
+				"special_attack": 21,
+				"special_defence": 11,
+				"speed": 0,
+				"total": 95,
+				"percentage": 51.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"smackdown",
+				"rockthrow",
+				"bulldoze",
+				"rollout"
+			]
+		},
+		{
+			"uuid": "f4f87d03-2534-455b-902f-759fda0f1963",
+			"location": "Коробка 4 (Слот 5)",
+			"species": "Jolteon",
+			"display_name": "Джолтеон",
+			"level": 38,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"electric"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "voltabsorb",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 16,
+				"defence": 24,
+				"special_attack": 19,
+				"special_defence": 6,
+				"speed": 1,
+				"total": 95,
+				"percentage": 51.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"pinmissile",
+				"thunderfang",
+				"doublekick",
+				"thunderwave"
+			]
+		},
+		{
+			"uuid": "04c43cf4-459b-43e3-9cb1-83d85e66d3cf",
+			"location": "Коробка 4 (Слот 6)",
+			"species": "Golem",
+			"display_name": "Голем",
+			"level": 59,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 9,
+				"defence": 29,
+				"special_attack": 19,
+				"special_defence": 3,
+				"speed": 10,
+				"total": 95,
+				"percentage": 51.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"stoneedge",
+				"doubleedge",
+				"explosion",
+				"earthquake"
+			]
+		},
+		{
+			"uuid": "1764195c-3b1e-42fe-b2a1-8ce00258d5e2",
+			"location": "Коробка 4 (Слот 7)",
+			"species": "Wiglett",
+			"display_name": "Виглетт",
+			"level": 16,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "rattled",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 28,
+				"defence": 11,
+				"special_attack": 8,
+				"special_defence": 30,
+				"speed": 8,
+				"total": 96,
+				"percentage": 51.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"aquajet",
+				"wrap",
+				"mudslap",
+				"watergun"
+			]
+		},
+		{
+			"uuid": "49974c06-c664-45e7-9440-3e29e4c51b8b",
+			"location": "Коробка 4 (Слот 8)",
+			"species": "Breloom",
+			"display_name": "Брелум",
+			"level": 41,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"grass",
+				"fighting"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "poisonheal",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 7,
+				"attack": 10,
+				"defence": 27,
+				"special_attack": 20,
+				"special_defence": 17,
+				"speed": 15,
+				"total": 96,
+				"percentage": 51.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"brickbreak",
+				"worryseed",
+				"forcepalm",
+				"counter"
+			]
+		},
+		{
+			"uuid": "7f1f1331-74c0-4a9c-994b-f7be34189228",
+			"location": "Коробка 4 (Слот 9)",
+			"species": "Ditto",
+			"display_name": "Дитто",
+			"level": 28,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"normal"
+			],
+			"nature": "modest",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "ATTACK",
+			"ability": "limber",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 20,
+				"attack": 6,
+				"defence": 15,
+				"special_attack": 30,
+				"special_defence": 19,
+				"speed": 7,
+				"total": 97,
+				"percentage": 52.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"transform"
+			]
+		},
+		{
+			"uuid": "bb8ad50a-23cf-4581-9cb3-1cfaff160418",
+			"location": "Коробка 4 (Слот 10)",
+			"species": "Geodude",
+			"display_name": "Геодуд",
+			"level": 27,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"electric"
+			],
+			"nature": "careful",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 16,
+				"defence": 23,
+				"special_attack": 4,
+				"special_defence": 7,
+				"speed": 23,
+				"total": 98,
+				"percentage": 52.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"selfdestruct",
+				"thunderpunch",
+				"smackdown",
+				"rockthrow"
+			]
+		},
+		{
+			"uuid": "f25159c5-64e9-499c-b00a-fdd01fb7d146",
+			"location": "Коробка 4 (Слот 11)",
+			"species": "Phanpy",
+			"display_name": "Фанпи",
+			"level": 29,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"ground"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "pickup",
+			"friendship": 140,
+			"held_item": "None",
+			"ivs": {
+				"hp": 4,
+				"attack": 27,
+				"defence": 13,
+				"special_attack": 25,
+				"special_defence": 22,
+				"speed": 8,
+				"total": 99,
+				"percentage": 53.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"takedown",
+				"slam",
+				"endure",
+				"naturalgift"
+			]
+		},
+		{
+			"uuid": "caefbb5e-e167-43e4-84db-6b5cc9985f9f",
+			"location": "Коробка 4 (Слот 12)",
+			"species": "Growlithe",
+			"display_name": "Гроулит",
+			"level": 23,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"fire"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "intimidate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 30,
+				"attack": 9,
+				"defence": 18,
+				"special_attack": 19,
+				"special_defence": 4,
+				"speed": 20,
+				"total": 100,
+				"percentage": 53.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"agility",
+				"helpinghand",
+				"flamewheel",
+				"bite"
+			]
+		},
+		{
+			"uuid": "d1a11512-a9c2-4bc4-9273-8e7e82c80bd9",
+			"location": "Коробка 4 (Слот 13)",
+			"species": "Growlithe",
+			"display_name": "Гроулит",
+			"level": 23,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "intimidate",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 16,
+				"attack": 18,
+				"defence": 12,
+				"special_attack": 19,
+				"special_defence": 8,
+				"speed": 27,
+				"total": 100,
+				"percentage": 53.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"agility",
+				"helpinghand",
+				"flamewheel",
+				"bite"
+			]
+		},
+		{
+			"uuid": "7a77e212-1e6e-4a9b-b0ff-cd8fc95eebe9",
+			"location": "Коробка 4 (Слот 14)",
+			"species": "Forretress",
+			"display_name": "Форретресс",
+			"level": 39,
+			"shiny": true,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"steel"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "sturdy",
+			"friendship": 215,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 30,
+				"defence": 15,
+				"special_attack": 8,
+				"special_defence": 25,
+				"speed": 10,
+				"total": 100,
+				"percentage": 53.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"naturalgift",
+				"bide",
+				"rapidspin",
+				"takedown"
+			]
+		},
+		{
+			"uuid": "056531df-1d31-47a2-95aa-32ae5a890b0f",
+			"location": "Коробка 4 (Слот 15)",
+			"species": "Phantump",
+			"display_name": "Фантамп",
+			"level": 29,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"ghost",
+				"grass"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "frisk",
+			"friendship": 48,
+			"held_item": "None",
+			"ivs": {
+				"hp": 28,
+				"attack": 1,
+				"defence": 29,
+				"special_attack": 14,
+				"special_defence": 3,
+				"speed": 26,
+				"total": 101,
+				"percentage": 54.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"hornleech",
+				"growth",
+				"hex",
+				"willowisp"
+			]
+		},
+		{
+			"uuid": "91043ac0-36a7-4681-b779-fe335e39de7d",
+			"location": "Коробка 4 (Слот 16)",
+			"species": "Espathra",
+			"display_name": "Эспатра",
+			"level": 36,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"psychic"
+			],
+			"nature": "gentle",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "DEFENCE",
+			"ability": "opportunist",
+			"friendship": 117,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 28,
+				"defence": 13,
+				"special_attack": 24,
+				"special_defence": 3,
+				"speed": 12,
+				"total": 101,
+				"percentage": 54.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"disarmingvoice",
+				"babydolleyes",
+				"confusion",
+				"peck"
+			]
+		},
+		{
+			"uuid": "8c81d279-59bc-4a5b-bde9-0315855860a2",
+			"location": "Коробка 4 (Слот 17)",
+			"species": "Pelipper",
+			"display_name": "Пелиппер",
+			"level": 39,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water",
+				"flying"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "keeneye",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 28,
+				"defence": 7,
+				"special_attack": 4,
+				"special_defence": 11,
+				"speed": 28,
+				"total": 101,
+				"percentage": 54.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"fling",
+				"spitup",
+				"swallow",
+				"stockpile"
+			]
+		},
+		{
+			"uuid": "df290c56-028a-477b-9c5c-88b1b26e2ecc",
+			"location": "Коробка 4 (Слот 18)",
+			"species": "Carkol",
+			"display_name": "Каркол",
+			"level": 24,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"fire"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "flamebody",
+			"friendship": 101,
+			"held_item": "None",
+			"ivs": {
+				"hp": 22,
+				"attack": 27,
+				"defence": 13,
+				"special_attack": 4,
+				"special_defence": 30,
+				"speed": 6,
+				"total": 102,
+				"percentage": 54.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"smokescreen",
+				"tackle",
+				"smackdown",
+				"rockpolish"
+			]
+		},
+		{
+			"uuid": "e2ed9861-4aec-4ad0-be36-c45255e42ab0",
+			"location": "Коробка 4 (Слот 19)",
+			"species": "Klink",
+			"display_name": "Клинк",
+			"level": 27,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"steel"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "plus",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 15,
+				"defence": 4,
+				"special_attack": 19,
+				"special_defence": 30,
+				"speed": 11,
+				"total": 102,
+				"percentage": 54.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"discharge",
+				"autotomize",
+				"metalsound",
+				"chargebeam"
+			]
+		},
+		{
+			"uuid": "e491cfc8-7feb-4f22-b706-4502028f3ce7",
+			"location": "Коробка 4 (Слот 20)",
+			"species": "Tirtouga",
+			"display_name": "Тиртуга",
+			"level": 1,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water",
+				"rock"
+			],
+			"nature": "naive",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 31,
+				"defence": 25,
+				"special_attack": 4,
+				"special_defence": 7,
+				"speed": 7,
+				"total": 103,
+				"percentage": 55.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"watergun",
+				"withdraw",
+				"bide"
+			]
+		},
+		{
+			"uuid": "fff61d6c-83d2-4889-a2f3-8fe4806c691b",
+			"location": "Коробка 4 (Слот 21)",
+			"species": "Beedrill",
+			"display_name": "Бидрилл",
+			"level": 16,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"poison"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "swarm",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 8,
+				"attack": 1,
+				"defence": 22,
+				"special_attack": 18,
+				"special_defence": 29,
+				"speed": 25,
+				"total": 103,
+				"percentage": 55.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"bugbite",
+				"stringshot",
+				"poisonsting",
+				"harden"
+			]
+		},
+		{
+			"uuid": "1f21f676-29e3-4b5a-baa1-56c9f1477eb1",
+			"location": "Коробка 4 (Слот 22)",
+			"species": "Amaura",
+			"display_name": "Амаура",
+			"level": 1,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ice"
+			],
+			"nature": "relaxed",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "refrigerate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 20,
+				"defence": 17,
+				"special_attack": 1,
+				"special_defence": 24,
+				"speed": 19,
+				"total": 104,
+				"percentage": 55.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"rockthrow",
+				"powdersnow",
+				"growl"
+			]
+		},
+		{
+			"uuid": "db059d88-ea05-4379-9b59-a985913a0fd2",
+			"location": "Коробка 4 (Слот 23)",
+			"species": "Mareep",
+			"display_name": "Марип",
+			"level": 22,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"electric"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "static",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 28,
+				"defence": 23,
+				"special_attack": 10,
+				"special_defence": 27,
+				"speed": 5,
+				"total": 104,
+				"percentage": 55.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"electroball",
+				"takedown",
+				"charge",
+				"cottonspore"
+			]
+		},
+		{
+			"uuid": "42c0f03d-02ed-4451-ac69-cd33d4d02b39",
+			"location": "Коробка 4 (Слот 24)",
+			"species": "Rolycoly",
+			"display_name": "Роликоли",
+			"level": 18,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "steamengine",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 14,
+				"attack": 18,
+				"defence": 16,
+				"special_attack": 23,
+				"special_defence": 5,
+				"speed": 29,
+				"total": 105,
+				"percentage": 56.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"smokescreen",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "7b55a88e-30a1-467f-8e88-0821058858e4",
+			"location": "Коробка 4 (Слот 25)",
+			"species": "Shuppet",
+			"display_name": "Шаппет",
+			"level": 25,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"ghost"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "insomnia",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 16,
+				"attack": 18,
+				"defence": 7,
+				"special_attack": 14,
+				"special_defence": 28,
+				"speed": 22,
+				"total": 105,
+				"percentage": 56.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"hex",
+				"feintattack",
+				"willowisp",
+				"spite"
+			]
+		},
+		{
+			"uuid": "5837248a-2f0f-4177-8cb7-1bc8f0afca8a",
+			"location": "Коробка 4 (Слот 26)",
+			"species": "Greedent",
+			"display_name": "Гридент",
+			"level": 32,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "cheekpouch",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 8,
+				"attack": 13,
+				"defence": 14,
+				"special_attack": 31,
+				"special_defence": 20,
+				"speed": 19,
+				"total": 105,
+				"percentage": 56.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"rest",
+				"bodyslam",
+				"spitup",
+				"swallow"
+			]
+		},
+		{
+			"uuid": "e6bd1ecb-876e-461a-aca5-f60f190203cd",
+			"location": "Коробка 4 (Слот 27)",
+			"species": "Trevenant",
+			"display_name": "Травенант",
+			"level": 47,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"ghost",
+				"grass"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "naturalcure",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 21,
+				"defence": 29,
+				"special_attack": 24,
+				"special_defence": 4,
+				"speed": 15,
+				"total": 105,
+				"percentage": 56.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"woodhammer",
+				"ingrain",
+				"phantomforce",
+				"curse"
+			]
+		},
+		{
+			"uuid": "f599962e-109f-4aaa-b5b0-ed4934940d52",
+			"location": "Коробка 4 (Слот 28)",
+			"species": "Gimmighoul",
+			"display_name": "Гиммигул",
+			"level": 7,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"ghost"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "rattled",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 27,
+				"attack": 29,
+				"defence": 8,
+				"special_attack": 29,
+				"special_defence": 0,
+				"speed": 13,
+				"total": 106,
+				"percentage": 57
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tackle",
+				"astonish"
+			]
+		},
+		{
+			"uuid": "3e17c09e-5b4b-47bb-b442-008cbdb628af",
+			"location": "Коробка 4 (Слот 29)",
+			"species": "Skitty",
+			"display_name": "Скитти",
+			"level": 12,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "normalize",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 16,
+				"attack": 1,
+				"defence": 21,
+				"special_attack": 19,
+				"special_defence": 25,
+				"speed": 24,
+				"total": 106,
+				"percentage": 57
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"attract",
+				"sing",
+				"foresight",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "e5e55b63-d9d9-4195-aefd-11aa04c378c4",
+			"location": "Коробка 4 (Слот 30)",
+			"species": "Gimmighoul",
+			"display_name": "Гиммигул",
+			"level": 18,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"ghost"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "rattled",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 0,
+				"defence": 26,
+				"special_attack": 16,
+				"special_defence": 24,
+				"speed": 28,
+				"total": 106,
+				"percentage": 57
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tackle",
+				"astonish"
+			]
+		},
+		{
+			"uuid": "386719e2-9165-4899-a6f5-e4da54e0852d",
+			"location": "Коробка 8 (Слот 30)",
+			"species": "Noibat",
+			"display_name": "Нойбат",
+			"level": 24,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"flying",
+				"dragon"
+			],
+			"nature": "careful",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "frisk",
+			"friendship": 100,
+			"held_item": "None",
+			"ivs": {
+				"hp": 28,
+				"attack": 5,
+				"defence": 16,
+				"special_attack": 16,
+				"special_defence": 26,
+				"speed": 15,
+				"total": 106,
+				"percentage": 57
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"absorb",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "23760235-06aa-4218-8c28-772e52fba79a",
+			"location": "Коробка 5 (Слот 2)",
+			"species": "Gyarados",
+			"display_name": "Гьярадос",
+			"level": 30,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water",
+				"flying"
+			],
+			"nature": "naughty",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "intimidate",
+			"friendship": 89,
+			"held_item": "None",
+			"ivs": {
+				"hp": 22,
+				"attack": 30,
+				"defence": 12,
+				"special_attack": 21,
+				"special_defence": 19,
+				"speed": 2,
+				"total": 106,
+				"percentage": 57
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tackle",
+				"splash",
+				"flail",
+				"bite"
+			]
+		},
+		{
+			"uuid": "faf0ed20-5b31-4ea6-9a07-a94e91654f23",
+			"location": "Коробка 5 (Слот 3)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 31,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "hardy",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 14,
+				"attack": 31,
+				"defence": 16,
+				"special_attack": 23,
+				"special_defence": 5,
+				"speed": 18,
+				"total": 107,
+				"percentage": 57.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"magnitude",
+				"mudsport",
+				"defensecurl",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "82dc872c-5871-4c57-8cc7-15d64b4d0163",
+			"location": "Коробка 5 (Слот 4)",
+			"species": "Cursola",
+			"display_name": "Кёрсола",
+			"level": 38,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"ghost"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "weakarmor",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 15,
+				"attack": 21,
+				"defence": 4,
+				"special_attack": 11,
+				"special_defence": 31,
+				"speed": 25,
+				"total": 107,
+				"percentage": 57.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"strengthsap",
+				"curse",
+				"hex",
+				"ancientpower"
+			]
+		},
+		{
+			"uuid": "207c0b31-5c2f-486c-8af6-98a3c6ae69e4",
+			"location": "Коробка 5 (Слот 5)",
+			"species": "Kilowattrel",
+			"display_name": "Киловаттрел",
+			"level": 47,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"electric",
+				"flying"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "voltabsorb",
+			"friendship": 160,
+			"held_item": "None",
+			"ivs": {
+				"hp": 18,
+				"attack": 30,
+				"defence": 16,
+				"special_attack": 25,
+				"special_defence": 7,
+				"speed": 11,
+				"total": 107,
+				"percentage": 57.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 3,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 3
+			},
+			"moves": [
+				"voltswitch",
+				"agility",
+				"dualwingbeat",
+				"roost"
+			]
+		},
+		{
+			"uuid": "ff0ae33a-63c2-4212-88de-1015d2027d1d",
+			"location": "Коробка 5 (Слот 6)",
+			"species": "Gyarados",
+			"display_name": "Гьярадос",
+			"level": 20,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"water",
+				"flying"
+			],
+			"nature": "adamant",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "intimidate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 4,
+				"defence": 30,
+				"special_attack": 24,
+				"special_defence": 15,
+				"speed": 18,
+				"total": 108,
+				"percentage": 58.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tackle",
+				"splash",
+				"bite"
+			]
+		},
+		{
+			"uuid": "cab0ca92-262c-41cf-841c-f69e0361cabd",
+			"location": "Коробка 5 (Слот 7)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 29,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "gentle",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "DEFENCE",
+			"ability": "rockhead",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 10,
+				"defence": 27,
+				"special_attack": 23,
+				"special_defence": 14,
+				"speed": 11,
+				"total": 108,
+				"percentage": 58.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"stealthrock",
+				"selfdestruct",
+				"smackdown",
+				"rockthrow"
+			]
+		},
+		{
+			"uuid": "8eff668c-cfe1-408d-a0fe-1067f1d5672f",
+			"location": "Коробка 8 (Слот 23)",
+			"species": "Druddigon",
+			"display_name": "Драддигон",
+			"level": 35,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dragon"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "sheerforce",
+			"friendship": 51,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 17,
+				"defence": 14,
+				"special_attack": 26,
+				"special_defence": 14,
+				"speed": 16,
+				"total": 108,
+				"percentage": 58.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 1,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"chipaway",
+				"dragonrage",
+				"scratch",
+				"leer"
+			]
+		},
+		{
+			"uuid": "c2e2fbde-2a06-4efa-98a9-1961d8e32159",
+			"location": "Коробка 5 (Слот 9)",
+			"species": "Salandit",
+			"display_name": "Саландит",
+			"level": 30,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"poison",
+				"fire"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "corrosion",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 23,
+				"defence": 12,
+				"special_attack": 31,
+				"special_defence": 1,
+				"speed": 26,
+				"total": 110,
+				"percentage": 59.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"incinerate",
+				"nastyplot",
+				"sweetscent",
+				"poisonfang"
+			]
+		},
+		{
+			"uuid": "014379c3-51eb-4bd8-9b29-0bc97c621e6a",
+			"location": "Коробка 8 (Слот 29)",
+			"species": "Druddigon",
+			"display_name": "Драддигон",
+			"level": 34,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"dragon"
+			],
+			"nature": "rash",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "moldbreaker",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 30,
+				"attack": 4,
+				"defence": 15,
+				"special_attack": 31,
+				"special_defence": 19,
+				"speed": 12,
+				"total": 111,
+				"percentage": 59.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"dragonclaw",
+				"slash",
+				"scaryface",
+				"metalclaw"
+			]
+		},
+		{
+			"uuid": "29b128dc-aa6f-4704-a147-9e8fc20142cc",
+			"location": "Коробка 5 (Слот 11)",
+			"species": "Pancham",
+			"display_name": "Панчам",
+			"level": 25,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fighting"
+			],
+			"nature": "careful",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "ironfist",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 14,
+				"attack": 30,
+				"defence": 20,
+				"special_attack": 18,
+				"special_defence": 29,
+				"speed": 0,
+				"total": 111,
+				"percentage": 59.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 1,
+				"total": 1
+			},
+			"moves": [
+				"slash",
+				"workup",
+				"lowsweep",
+				"circlethrow"
+			]
+		},
+		{
+			"uuid": "0e944a73-6190-4558-b0d0-57fc96d6a205",
+			"location": "Коробка 5 (Слот 12)",
+			"species": "Geodude",
+			"display_name": "Геодуд",
+			"level": 25,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"electric"
+			],
+			"nature": "lax",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 22,
+				"defence": 11,
+				"special_attack": 17,
+				"special_defence": 13,
+				"speed": 28,
+				"total": 112,
+				"percentage": 60.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"selfdestruct",
+				"thunderpunch",
+				"smackdown",
+				"rockthrow"
+			]
+		},
+		{
+			"uuid": "c3d8a9bb-f8f9-4913-9a8c-4fe103bd4fd4",
+			"location": "Коробка 5 (Слот 13)",
+			"species": "Starly",
+			"display_name": "Старли",
+			"level": 25,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal",
+				"flying"
+			],
+			"nature": "naughty",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "keeneye",
+			"friendship": 36,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 29,
+				"defence": 3,
+				"special_attack": 20,
+				"special_defence": 22,
+				"speed": 26,
+				"total": 112,
+				"percentage": 60.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"aerialace",
+				"whirlwind",
+				"endeavor",
+				"doubleteam"
+			]
+		},
+		{
+			"uuid": "3ce39944-e1e0-428f-a377-3d18a7ec8620",
+			"location": "Коробка 5 (Слот 14)",
+			"species": "Ferroseed",
+			"display_name": "Ферросид",
+			"level": 31,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"grass",
+				"steel"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "ironbarbs",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 9,
+				"attack": 25,
+				"defence": 13,
+				"special_attack": 13,
+				"special_defence": 29,
+				"speed": 24,
+				"total": 113,
+				"percentage": 60.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"harden",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "c0b0ce3b-d35c-4310-961a-4b4ee7bb3275",
+			"location": "Коробка 5 (Слот 15)",
+			"species": "Slowpoke",
+			"display_name": "Слоупок",
+			"level": 32,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"water",
+				"psychic"
+			],
+			"nature": "relaxed",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "oblivious",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 24,
+				"attack": 19,
+				"defence": 10,
+				"special_attack": 31,
+				"special_defence": 0,
+				"speed": 29,
+				"total": 113,
+				"percentage": 60.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"surf",
+				"amnesia",
+				"zenheadbutt",
+				"headbutt"
+			]
+		},
+		{
+			"uuid": "ae9f7d29-9191-490e-9f0f-6b99acd957cd",
+			"location": "Коробка 5 (Слот 16)",
+			"species": "Orbeetle",
+			"display_name": "Орбитл",
+			"level": 33,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"psychic"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "frisk",
+			"friendship": 92,
+			"held_item": "None",
+			"ivs": {
+				"hp": 31,
+				"attack": 30,
+				"defence": 22,
+				"special_attack": 14,
+				"special_defence": 15,
+				"speed": 1,
+				"total": 113,
+				"percentage": 60.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"strugglebug",
+				"confusion",
+				"lightscreen",
+				"reflect"
+			]
+		},
+		{
+			"uuid": "8bca30e8-d7e3-45ca-b822-b495cf1af53b",
+			"location": "Коробка 5 (Слот 17)",
+			"species": "Kangaskhan",
+			"display_name": "Кангаскан",
+			"level": 34,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal"
+			],
+			"nature": "calm",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "scrappy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 28,
+				"defence": 14,
+				"special_attack": 11,
+				"special_defence": 18,
+				"speed": 19,
+				"total": 113,
+				"percentage": 60.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"doublehit",
+				"suckerpunch",
+				"headbutt",
+				"focusenergy"
+			]
+		},
+		{
+			"uuid": "41211733-ec6e-4436-b248-0b6cfed748e2",
+			"location": "Коробка 5 (Слот 18)",
+			"species": "Tauros",
+			"display_name": "Таурос",
+			"level": 56,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "intimidate",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 26,
+				"attack": 19,
+				"defence": 22,
+				"special_attack": 2,
+				"special_defence": 29,
+				"speed": 15,
+				"total": 113,
+				"percentage": 60.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"pursuit",
+				"rage",
+				"tailwhip",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "06208d32-97d6-4621-a57f-604129f58ee1",
+			"location": "Коробка 5 (Слот 19)",
+			"species": "Spritzee",
+			"display_name": "Спритзи",
+			"level": 19,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fairy"
+			],
+			"nature": "rash",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "healer",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 13,
+				"attack": 7,
+				"defence": 30,
+				"special_attack": 28,
+				"special_defence": 13,
+				"speed": 23,
+				"total": 114,
+				"percentage": 61.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"attract",
+				"aromatherapy",
+				"drainingkiss",
+				"echoedvoice"
+			]
+		},
+		{
+			"uuid": "80375312-5410-44c3-9ecf-20092bb4ed4d",
+			"location": "Коробка 5 (Слот 20)",
+			"species": "Quagsire",
+			"display_name": "Квагсайр",
+			"level": 22,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water",
+				"ground"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "waterabsorb",
+			"friendship": 90,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 5,
+				"defence": 7,
+				"special_attack": 25,
+				"special_defence": 21,
+				"speed": 27,
+				"total": 114,
+				"percentage": 61.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"mudsport",
+				"tailwhip",
+				"watergun",
+				"mist"
+			]
+		},
+		{
+			"uuid": "861e4671-7ea3-4fa8-b2d2-2b4eaa2ff34c",
+			"location": "Коробка 5 (Слот 21)",
+			"species": "Carkol",
+			"display_name": "Каркол",
+			"level": 24,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"fire"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "steamengine",
+			"friendship": 89,
+			"held_item": "None",
+			"ivs": {
+				"hp": 14,
+				"attack": 12,
+				"defence": 30,
+				"special_attack": 14,
+				"special_defence": 27,
+				"speed": 17,
+				"total": 114,
+				"percentage": 61.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"smokescreen",
+				"tackle",
+				"rockpolish",
+				"ancientpower"
+			]
+		},
+		{
+			"uuid": "57dbcef9-d3d9-46f5-8b82-790f86bb01d5",
+			"location": "Коробка 5 (Слот 22)",
+			"species": "Wiglett",
+			"display_name": "Виглетт",
+			"level": 15,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"water"
+			],
+			"nature": "hasty",
+			"nature_increased": "SPEED",
+			"nature_decreased": "DEFENCE",
+			"ability": "gooey",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 18,
+				"defence": 29,
+				"special_attack": 15,
+				"special_defence": 19,
+				"speed": 22,
+				"total": 115,
+				"percentage": 61.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"aquajet",
+				"wrap",
+				"mudslap",
+				"watergun"
+			]
+		},
+		{
+			"uuid": "8283bcb6-6770-43bf-bc5e-308c3e0c97bf",
+			"location": "Коробка 5 (Слот 23)",
+			"species": "Breloom",
+			"display_name": "Брелум",
+			"level": 28,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass",
+				"fighting"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "poisonheal",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 30,
+				"attack": 29,
+				"defence": 3,
+				"special_attack": 22,
+				"special_defence": 19,
+				"speed": 12,
+				"total": 115,
+				"percentage": 61.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"gigadrain",
+				"poisonpowder",
+				"headbutt",
+				"megadrain"
+			]
+		},
+		{
+			"uuid": "4edbe060-c601-4bef-83d5-fad281cc17d8",
+			"location": "Коробка 5 (Слот 24)",
+			"species": "Cursola",
+			"display_name": "Кёрсола",
+			"level": 38,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"ghost"
+			],
+			"nature": "naive",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "weakarmor",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 15,
+				"attack": 13,
+				"defence": 5,
+				"special_attack": 25,
+				"special_defence": 31,
+				"speed": 26,
+				"total": 115,
+				"percentage": 61.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"strengthsap",
+				"curse",
+				"hex",
+				"ancientpower"
+			]
+		},
+		{
+			"uuid": "f11f4d7e-59fc-4ec3-a40b-ea52322e4fe9",
+			"location": "Коробка 5 (Слот 25)",
+			"species": "Tarountula",
+			"display_name": "Тарунтула",
+			"level": 21,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "insomnia",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 22,
+				"attack": 26,
+				"defence": 17,
+				"special_attack": 26,
+				"special_defence": 1,
+				"speed": 24,
+				"total": 116,
+				"percentage": 62.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"block",
+				"bugbite",
+				"feint",
+				"assurance"
+			]
+		},
+		{
+			"uuid": "e74fa30a-98c7-40a6-bef2-81fa10435984",
+			"location": "Коробка 5 (Слот 26)",
+			"species": "Plusle",
+			"display_name": "Пласл",
+			"level": 26,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"electric"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "plus",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 28,
+				"attack": 26,
+				"defence": 30,
+				"special_attack": 3,
+				"special_defence": 20,
+				"speed": 9,
+				"total": 116,
+				"percentage": 62.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"charge",
+				"copycat",
+				"electroball",
+				"swift"
+			]
+		},
+		{
+			"uuid": "0b5a8ccb-514b-4b8a-b0ba-5bb6daff0d66",
+			"location": "Коробка 5 (Слот 27)",
+			"species": "Eevee",
+			"display_name": "Иви",
+			"level": 31,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "adaptability",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 14,
+				"attack": 17,
+				"defence": 16,
+				"special_attack": 30,
+				"special_defence": 13,
+				"speed": 26,
+				"total": 116,
+				"percentage": 62.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"copycat",
+				"bite",
+				"refresh",
+				"babydolleyes"
+			]
+		},
+		{
+			"uuid": "c7229266-38a7-40c4-97ac-eea49991e66d",
+			"location": "Коробка 5 (Слот 28)",
+			"species": "Wugtrio",
+			"display_name": "Вагтрио",
+			"level": 36,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"water"
+			],
+			"nature": "hasty",
+			"nature_increased": "SPEED",
+			"nature_decreased": "DEFENCE",
+			"ability": "rattled",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 7,
+				"attack": 29,
+				"defence": 20,
+				"special_attack": 23,
+				"special_defence": 20,
+				"speed": 17,
+				"total": 116,
+				"percentage": 62.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"dig",
+				"tripledive",
+				"headbutt",
+				"waterpulse"
+			]
+		},
+		{
+			"uuid": "3bea3224-36b3-48f9-a9b7-ebd8dd2dcc5a",
+			"location": "Коробка 5 (Слот 29)",
+			"species": "Lickitung",
+			"display_name": "Ликитанг",
+			"level": 24,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "cloudnine",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 6,
+				"attack": 13,
+				"defence": 23,
+				"special_attack": 30,
+				"special_defence": 19,
+				"speed": 26,
+				"total": 117,
+				"percentage": 62.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"disable",
+				"wrap",
+				"supersonic",
+				"rollout"
+			]
+		},
+		{
+			"uuid": "369e1b1d-551e-4ab6-8031-811c549f8ce1",
+			"location": "Коробка 5 (Слот 30)",
+			"species": "Tinkatink",
+			"display_name": "Тинкатинк",
+			"level": 28,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"fairy",
+				"steel"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "owntempo",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 31,
+				"attack": 30,
+				"defence": 28,
+				"special_attack": 1,
+				"special_defence": 22,
+				"speed": 5,
+				"total": 117,
+				"percentage": 62.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"slam",
+				"brutalswing",
+				"sweetkiss",
+				"drainingkiss"
+			]
+		},
+		{
+			"uuid": "c17296bb-6b77-4ec7-b1a7-1dc6158e19d8",
+			"location": "Коробка 6 (Слот 1)",
+			"species": "Perrserker",
+			"display_name": "Перрсеркер",
+			"level": 28,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"steel"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "toughclaws",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 22,
+				"attack": 29,
+				"defence": 31,
+				"special_attack": 25,
+				"special_defence": 8,
+				"speed": 3,
+				"total": 118,
+				"percentage": 63.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"swagger",
+				"taunt",
+				"metalclaw",
+				"payday"
+			]
+		},
+		{
+			"uuid": "6ff9874a-41d8-405c-92b4-a02532b86e4a",
+			"location": "Коробка 6 (Слот 2)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 30,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"rock",
+				"ground"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "sturdy",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 7,
+				"attack": 25,
+				"defence": 24,
+				"special_attack": 18,
+				"special_defence": 23,
+				"speed": 21,
+				"total": 118,
+				"percentage": 63.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"magnitude",
+				"mudsport",
+				"defensecurl",
+				"tackle"
+			]
+		},
+		{
+			"uuid": "adbfce2d-f721-4237-b82b-0cc48ba5c306",
+			"location": "Коробка 6 (Слот 3)",
+			"species": "Abra",
+			"display_name": "Абра",
+			"level": 16,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"psychic"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "magicguard",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 29,
+				"defence": 12,
+				"special_attack": 27,
+				"special_defence": 15,
+				"speed": 11,
+				"total": 119,
+				"percentage": 64
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"teleport"
+			]
+		},
+		{
+			"uuid": "30dd664d-9d65-49f9-b644-bc346ead79dd",
+			"location": "Коробка 6 (Слот 4)",
+			"species": "Wooper",
+			"display_name": "Вупер",
+			"level": 11,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"poison",
+				"ground"
+			],
+			"nature": "gentle",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "DEFENCE",
+			"ability": "poisonpoint",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 1,
+				"attack": 31,
+				"defence": 30,
+				"special_attack": 21,
+				"special_defence": 20,
+				"speed": 19,
+				"total": 122,
+				"percentage": 65.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"poisontail",
+				"tackle",
+				"mudshot",
+				"tailwhip"
+			]
+		},
+		{
+			"uuid": "688d3dc6-8eee-43c9-9682-31cee98937e9",
+			"location": "Коробка 6 (Слот 5)",
+			"species": "Squawkabilly",
+			"display_name": "Сквокабилли",
+			"level": 24,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal",
+				"flying"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "intimidate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 17,
+				"attack": 24,
+				"defence": 14,
+				"special_attack": 22,
+				"special_defence": 18,
+				"speed": 27,
+				"total": 122,
+				"percentage": 65.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"uproar",
+				"taunt",
+				"furyattack",
+				"aerialace"
+			]
+		},
+		{
+			"uuid": "40b2f707-f6a8-43a7-95cf-937c48284c49",
+			"location": "Коробка 6 (Слот 6)",
+			"species": "Sprigatito",
+			"display_name": "Спригатито",
+			"level": 1,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"grass"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "overgrow",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 27,
+				"defence": 28,
+				"special_attack": 14,
+				"special_defence": 27,
+				"speed": 6,
+				"total": 125,
+				"percentage": 67.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"leafage",
+				"tailwhip",
+				"scratch"
+			]
+		},
+		{
+			"uuid": "13b25fb4-bd82-4242-b7cb-807984c45465",
+			"location": "Коробка 6 (Слот 7)",
+			"species": "Maschiff",
+			"display_name": "Масчифф",
+			"level": 25,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dark"
+			],
+			"nature": "hardy",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "runaway",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 18,
+				"attack": 27,
+				"defence": 21,
+				"special_attack": 28,
+				"special_defence": 25,
+				"speed": 6,
+				"total": 125,
+				"percentage": 67.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"headbutt",
+				"roar",
+				"bite",
+				"honeclaws"
+			]
+		},
+		{
+			"uuid": "ef8d360c-c8a8-4fa3-8dd9-ec7fd8a13edf",
+			"location": "Коробка 6 (Слот 8)",
+			"species": "Voltorb",
+			"display_name": "Волторб",
+			"level": 30,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"electric"
+			],
+			"nature": "serious",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "static",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 28,
+				"attack": 5,
+				"defence": 25,
+				"special_attack": 30,
+				"special_defence": 26,
+				"speed": 11,
+				"total": 125,
+				"percentage": 67.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"lightscreen",
+				"selfdestruct",
+				"electroball",
+				"swift"
+			]
+		},
+		{
+			"uuid": "4f49fd2a-6ada-4be8-9a05-1c91dd29a376",
+			"location": "Коробка 6 (Слот 9)",
+			"species": "Voltorb",
+			"display_name": "Волторб",
+			"level": 30,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"electric"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "static",
+			"friendship": 20,
+			"held_item": "None",
+			"ivs": {
+				"hp": 30,
+				"attack": 16,
+				"defence": 25,
+				"special_attack": 18,
+				"special_defence": 18,
+				"speed": 18,
+				"total": 125,
+				"percentage": 67.2
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"lightscreen",
+				"selfdestruct",
+				"electroball",
+				"swift"
+			]
+		},
+		{
+			"uuid": "0da1f6fd-56e4-4563-aee9-49537ab8b4ef",
+			"location": "Коробка 6 (Слот 10)",
+			"species": "Mareep",
+			"display_name": "Марип",
+			"level": 25,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"electric"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "static",
+			"friendship": 54,
+			"held_item": "None",
+			"ivs": {
+				"hp": 9,
+				"attack": 23,
+				"defence": 30,
+				"special_attack": 29,
+				"special_defence": 31,
+				"speed": 4,
+				"total": 126,
+				"percentage": 67.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"confuseray",
+				"electroball",
+				"takedown",
+				"charge"
+			]
+		},
+		{
+			"uuid": "b091c227-ae89-48c4-b577-db1fb6492ef3",
+			"location": "Коробка 6 (Слот 11)",
+			"species": "Magby",
+			"display_name": "Магби",
+			"level": 29,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire"
+			],
+			"nature": "bashful",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "flamebody",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 19,
+				"attack": 29,
+				"defence": 31,
+				"special_attack": 12,
+				"special_defence": 12,
+				"speed": 23,
+				"total": 126,
+				"percentage": 67.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"firepunch",
+				"scaryface",
+				"confuseray",
+				"flamewheel"
+			]
+		},
+		{
+			"uuid": "7dcdab2a-f92d-4d56-99e2-3c6cb267a265",
+			"location": "Коробка 6 (Слот 12)",
+			"species": "Breloom",
+			"display_name": "Брелум",
+			"level": 24,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass",
+				"fighting"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "effectspore",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 16,
+				"defence": 4,
+				"special_attack": 29,
+				"special_defence": 24,
+				"speed": 26,
+				"total": 128,
+				"percentage": 68.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"poisonpowder",
+				"headbutt",
+				"megadrain",
+				"leechseed"
+			]
+		},
+		{
+			"uuid": "0232ea6d-3dde-4a8b-8407-5eb9e4eab265",
+			"location": "Коробка 6 (Слот 13)",
+			"species": "Volbeat",
+			"display_name": "Волбит",
+			"level": 25,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "illuminate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 12,
+				"attack": 21,
+				"defence": 29,
+				"special_attack": 29,
+				"special_defence": 12,
+				"speed": 25,
+				"total": 128,
+				"percentage": 68.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"tailglow",
+				"moonlight",
+				"strugglebug",
+				"quickattack"
+			]
+		},
+		{
+			"uuid": "a6eaaad2-41b1-45d1-bced-5cb389215ff4",
+			"location": "Коробка 6 (Слот 14)",
+			"species": "Charjabug",
+			"display_name": "Чарджабаг",
+			"level": 27,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"electric"
+			],
+			"nature": "mild",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "battery",
+			"friendship": 51,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 18,
+				"defence": 25,
+				"special_attack": 23,
+				"special_defence": 6,
+				"speed": 27,
+				"total": 128,
+				"percentage": 68.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"spark",
+				"bite",
+				"bugbite",
+				"mudslap"
+			]
+		},
+		{
+			"uuid": "63416485-07f8-4026-beac-906b9e801eb4",
+			"location": "Коробка 6 (Слот 15)",
+			"species": "Vivillon",
+			"display_name": "Вивийон",
+			"level": 18,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"bug",
+				"flying"
+			],
+			"nature": "timid",
+			"nature_increased": "SPEED",
+			"nature_decreased": "ATTACK",
+			"ability": "compoundeyes",
+			"friendship": 63,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 12,
+				"defence": 30,
+				"special_attack": 29,
+				"special_defence": 31,
+				"speed": 16,
+				"total": 129,
+				"percentage": 69.4
+			},
+			"evs": {
+				"hp": 1,
+				"attack": 3,
+				"defence": 3,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 5,
+				"total": 12
+			},
+			"moves": [
+				"lightscreen",
+				"harden",
+				"tackle",
+				"aromatherapy"
+			]
+		},
+		{
+			"uuid": "c10127a7-e285-414f-9ccf-8fb4411c3eb9",
+			"location": "Коробка 6 (Слот 16)",
+			"species": "Manectric",
+			"display_name": "Манектрик",
+			"level": 30,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"electric"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "lightningrod",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 20,
+				"attack": 31,
+				"defence": 4,
+				"special_attack": 29,
+				"special_defence": 31,
+				"speed": 14,
+				"total": 129,
+				"percentage": 69.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"roar",
+				"thunderfang",
+				"bite",
+				"odorsleuth"
+			]
+		},
+		{
+			"uuid": "1aed1da8-987e-4609-a2a0-48d084434af6",
+			"location": "Коробка 6 (Слот 17)",
+			"species": "Graveler",
+			"display_name": "Гравелер",
+			"level": 30,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock",
+				"electric"
+			],
+			"nature": "docile",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "magnetpull",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 31,
+				"defence": 30,
+				"special_attack": 5,
+				"special_defence": 23,
+				"speed": 19,
+				"total": 129,
+				"percentage": 69.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"stealthrock",
+				"selfdestruct",
+				"thunderpunch",
+				"smackdown"
+			]
+		},
+		{
+			"uuid": "810d160a-795f-4652-b975-f5995d996c75",
+			"location": "Коробка 6 (Слот 18)",
+			"species": "Torchic",
+			"display_name": "Торчик",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire"
+			],
+			"nature": "gentle",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "DEFENCE",
+			"ability": "blaze",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 16,
+				"attack": 28,
+				"defence": 10,
+				"special_attack": 25,
+				"special_defence": 28,
+				"speed": 23,
+				"total": 130,
+				"percentage": 69.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"sandattack",
+				"detect",
+				"flamecharge",
+				"quickattack"
+			]
+		},
+		{
+			"uuid": "87bfc557-7520-475b-a88a-953471f0acea",
+			"location": "Коробка 6 (Слот 19)",
+			"species": "Snom",
+			"display_name": "Сном",
+			"level": 65,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"ice",
+				"bug"
+			],
+			"nature": "careful",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "shielddust",
+			"friendship": 51,
+			"held_item": "None",
+			"ivs": {
+				"hp": 28,
+				"attack": 29,
+				"defence": 26,
+				"special_attack": 2,
+				"special_defence": 30,
+				"speed": 15,
+				"total": 130,
+				"percentage": 69.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 1,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 1
+			},
+			"moves": [
+				"strugglebug",
+				"powdersnow"
+			]
+		},
+		{
+			"uuid": "ba80eb64-091c-471d-b6fa-bbb596927a37",
+			"location": "Коробка 6 (Слот 20)",
+			"species": "Abra",
+			"display_name": "Абра",
+			"level": 16,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"psychic"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "innerfocus",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 4,
+				"defence": 29,
+				"special_attack": 27,
+				"special_defence": 24,
+				"speed": 18,
+				"total": 131,
+				"percentage": 70.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"teleport"
+			]
+		},
+		{
+			"uuid": "ec0859f6-3f36-444c-a35b-f54a6b58bec7",
+			"location": "Коробка 6 (Слот 21)",
+			"species": "Electrike",
+			"display_name": "Электрайк",
+			"level": 25,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"electric"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "static",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 27,
+				"attack": 18,
+				"defence": 4,
+				"special_attack": 29,
+				"special_defence": 30,
+				"speed": 23,
+				"total": 131,
+				"percentage": 70.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"thunderfang",
+				"bite",
+				"odorsleuth",
+				"quickattack"
+			]
+		},
+		{
+			"uuid": "2d3717ef-7aeb-45c5-906a-84eac1ee1499",
+			"location": "Коробка 6 (Слот 22)",
+			"species": "Eevee",
+			"display_name": "Иви",
+			"level": 33,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal"
+			],
+			"nature": "timid",
+			"nature_increased": "SPEED",
+			"nature_decreased": "ATTACK",
+			"ability": "adaptability",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 30,
+				"attack": 6,
+				"defence": 22,
+				"special_attack": 24,
+				"special_defence": 21,
+				"speed": 28,
+				"total": 131,
+				"percentage": 70.4
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"copycat",
+				"bite",
+				"refresh",
+				"babydolleyes"
+			]
+		},
+		{
+			"uuid": "2cf5e2b1-0584-43bd-b31a-167a64f533bb",
+			"location": "Коробка 6 (Слот 23)",
+			"species": "Snom",
+			"display_name": "Сном",
+			"level": 14,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"ice",
+				"bug"
+			],
+			"nature": "impish",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "shielddust",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 15,
+				"attack": 19,
+				"defence": 13,
+				"special_attack": 28,
+				"special_defence": 27,
+				"speed": 30,
+				"total": 132,
+				"percentage": 71
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"strugglebug",
+				"powdersnow"
+			]
+		},
+		{
+			"uuid": "dd91125b-6f9e-4c51-9679-adbb79388ee0",
+			"location": "Коробка 6 (Слот 24)",
+			"species": "Ditto",
+			"display_name": "Дитто",
+			"level": 28,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"normal"
+			],
+			"nature": "relaxed",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "limber",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 29,
+				"attack": 17,
+				"defence": 25,
+				"special_attack": 29,
+				"special_defence": 28,
+				"speed": 6,
+				"total": 134,
+				"percentage": 72
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"transform"
+			]
+		},
+		{
+			"uuid": "bb31054a-2adf-4a00-b198-e272adbbf94c",
+			"location": "Коробка 6 (Слот 25)",
+			"species": "Pidgeotto",
+			"display_name": "Пиджеотто",
+			"level": 19,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal",
+				"flying"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "keeneye",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 18,
+				"defence": 28,
+				"special_attack": 16,
+				"special_defence": 23,
+				"speed": 29,
+				"total": 135,
+				"percentage": 72.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"whirlwind",
+				"quickattack",
+				"gust",
+				"sandattack"
+			]
+		},
+		{
+			"uuid": "7cafbbd0-00c2-431a-a9a3-169b7bd2539b",
+			"location": "Коробка 6 (Слот 26)",
+			"species": "Maschiff",
+			"display_name": "Масчифф",
+			"level": 25,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"dark"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "intimidate",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 28,
+				"defence": 28,
+				"special_attack": 29,
+				"special_defence": 31,
+				"speed": 8,
+				"total": 135,
+				"percentage": 72.6
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"headbutt",
+				"roar",
+				"bite",
+				"honeclaws"
+			]
+		},
+		{
+			"uuid": "3232f445-a4fa-4aaf-a553-6b06395743da",
+			"location": "Коробка 6 (Слот 27)",
+			"species": "Timburr",
+			"display_name": "Тимбурр",
+			"level": 4,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fighting"
+			],
+			"nature": "lax",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "sheerforce",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 21,
+				"attack": 22,
+				"defence": 24,
+				"special_attack": 17,
+				"special_defence": 31,
+				"speed": 21,
+				"total": 136,
+				"percentage": 73.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"lowkick",
+				"bide",
+				"leer",
+				"pound"
+			]
+		},
+		{
+			"uuid": "191f4112-caa0-41ca-99c4-4761b18fd3ef",
+			"location": "Коробка 6 (Слот 28)",
+			"species": "Gloom",
+			"display_name": "Глум",
+			"level": 37,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"grass",
+				"poison"
+			],
+			"nature": "brave",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "chlorophyll",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 11,
+				"attack": 25,
+				"defence": 22,
+				"special_attack": 20,
+				"special_defence": 28,
+				"speed": 30,
+				"total": 136,
+				"percentage": 73.1
+			},
+			"evs": {
+				"hp": 1,
+				"attack": 0,
+				"defence": 2,
+				"special_attack": 2,
+				"special_defence": 0,
+				"speed": 1,
+				"total": 6
+			},
+			"moves": [
+				"moonblast",
+				"toxic",
+				"gigadrain",
+				"sleeppowder"
+			]
+		},
+		{
+			"uuid": "832b476e-bece-41f7-878b-34c4457e102c",
+			"location": "Коробка 6 (Слот 29)",
+			"species": "Eevee",
+			"display_name": "Иви",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "quirky",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "adaptability",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 23,
+				"defence": 3,
+				"special_attack": 13,
+				"special_defence": 11,
+				"speed": 27,
+				"total": 102,
+				"percentage": 54.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"babydolleyes",
+				"quickattack",
+				"sandattack",
+				"covet"
+			]
+		},
+		{
+			"uuid": "e833b8f6-f779-425b-9c8e-e375f5f08715",
+			"location": "Коробка 6 (Слот 30)",
+			"species": "Shelmet",
+			"display_name": "Шелмет",
+			"level": 24,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"bug"
+			],
+			"nature": "naughty",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "hydration",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 27,
+				"attack": 14,
+				"defence": 18,
+				"special_attack": 31,
+				"special_defence": 21,
+				"speed": 28,
+				"total": 139,
+				"percentage": 74.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"acidarmor",
+				"yawn",
+				"strugglebug",
+				"megadrain"
+			]
+		},
+		{
+			"uuid": "eb0a4729-7ca4-4476-b33c-162334309337",
+			"location": "Коробка 7 (Слот 1)",
+			"species": "Komala",
+			"display_name": "Комала",
+			"level": 45,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "lonely",
+			"nature_increased": "ATTACK",
+			"nature_decreased": "DEFENCE",
+			"ability": "comatose",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 6,
+				"attack": 24,
+				"defence": 6,
+				"special_attack": 24,
+				"special_defence": 5,
+				"speed": 7,
+				"total": 72,
+				"percentage": 38.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"woodhammer",
+				"psychup",
+				"suckerpunch",
+				"flail"
+			]
+		},
+		{
+			"uuid": "688b03e8-761f-41cc-b1b0-0ecb1c1bbe7b",
+			"location": "Коробка 7 (Слот 2)",
+			"species": "Fletchling",
+			"display_name": "Флетчлинг",
+			"level": 27,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"normal",
+				"flying"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "bigpecks",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 26,
+				"attack": 28,
+				"defence": 22,
+				"special_attack": 12,
+				"special_defence": 27,
+				"speed": 28,
+				"total": 143,
+				"percentage": 76.9
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"razorwind",
+				"acrobatics",
+				"flail",
+				"ember"
+			]
+		},
+		{
+			"uuid": "5bb54b13-deaf-46c6-b2c1-0823adc5ebf1",
+			"location": "Коробка 8 (Слот 19)",
+			"species": "Gible",
+			"display_name": "Гибл",
+			"level": 15,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"dragon",
+				"ground"
+			],
+			"nature": "jolly",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_ATTACK",
+			"ability": "sandveil",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 7,
+				"defence": 6,
+				"special_attack": 31,
+				"special_defence": 11,
+				"speed": 14,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"dragonbreath",
+				"sandattack",
+				"sandtomb",
+				"dragonrage"
+			]
+		},
+		{
+			"uuid": "dd79d0c9-d8f7-42a7-bdfd-0df8b2ed97be",
+			"location": "Коробка 7 (Слот 4)",
+			"species": "Golett",
+			"display_name": "Голем",
+			"level": 4,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"ground",
+				"ghost"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "klutz",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 20,
+				"attack": 17,
+				"defence": 15,
+				"special_attack": 30,
+				"special_defence": 23,
+				"speed": 15,
+				"total": 120,
+				"percentage": 64.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"defensecurl",
+				"mudslap",
+				"astonish"
+			]
+		},
+		{
+			"uuid": "d3f3b60b-a1eb-4977-b710-3b5a76ead00b",
+			"location": "Коробка 7 (Слот 5)",
+			"species": "Golett",
+			"display_name": "Голем",
+			"level": 4,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"ground",
+				"ghost"
+			],
+			"nature": "modest",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "ATTACK",
+			"ability": "ironfist",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 25,
+				"attack": 5,
+				"defence": 24,
+				"special_attack": 1,
+				"special_defence": 20,
+				"speed": 19,
+				"total": 94,
+				"percentage": 50.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"defensecurl",
+				"mudslap",
+				"astonish"
+			]
+		},
+		{
+			"uuid": "f71aa024-4de5-4f94-98a6-5e8ce822fcb2",
+			"location": "Коробка 7 (Слот 6)",
+			"species": "Makuhita",
+			"display_name": "Макухита",
+			"level": 19,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"fighting"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "thickfat",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 23,
+				"attack": 12,
+				"defence": 14,
+				"special_attack": 5,
+				"special_defence": 19,
+				"speed": 19,
+				"total": 92,
+				"percentage": 49.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"knockoff",
+				"whirlwind",
+				"forcepalm",
+				"fakeout"
+			]
+		},
+		{
+			"uuid": "facd2428-d057-4f19-a70a-ac76e5ad0e96",
+			"location": "Коробка 7 (Слот 28)",
+			"species": "Breloom",
+			"display_name": "Брелум",
+			"level": 30,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"grass",
+				"fighting"
+			],
+			"nature": "sassy",
+			"nature_increased": "SPECIAL_DEFENCE",
+			"nature_decreased": "SPEED",
+			"ability": "effectspore",
+			"friendship": 0,
+			"held_item": "None",
+			"ivs": {
+				"hp": 22,
+				"attack": 24,
+				"defence": 17,
+				"special_attack": 28,
+				"special_defence": 10,
+				"speed": 14,
+				"total": 115,
+				"percentage": 61.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"growth",
+				"gigadrain",
+				"poisonpowder",
+				"headbutt"
+			]
+		},
+		{
+			"uuid": "8f93d362-3035-41f5-9a5d-5d30b84f1be8",
+			"location": "Коробка 7 (Слот 29)",
+			"species": "Cyndaquil",
+			"display_name": "Синдаквил",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"fire"
+			],
+			"nature": "quiet",
+			"nature_increased": "SPECIAL_ATTACK",
+			"nature_decreased": "SPEED",
+			"ability": "blaze",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 14,
+				"attack": 26,
+				"defence": 16,
+				"special_attack": 23,
+				"special_defence": 26,
+				"speed": 21,
+				"total": 126,
+				"percentage": 67.7
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"quickattack",
+				"ember",
+				"smokescreen",
+				"leer"
+			]
+		},
+		{
+			"uuid": "50bc4e09-4975-4b9e-b2bc-0cd4fd415482",
+			"location": "Коробка 7 (Слот 30)",
+			"species": "Breloom",
+			"display_name": "Брелум",
+			"level": 29,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"grass",
+				"fighting"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "effectspore",
+			"friendship": 35,
+			"held_item": "None",
+			"ivs": {
+				"hp": 2,
+				"attack": 7,
+				"defence": 6,
+				"special_attack": 29,
+				"special_defence": 3,
+				"speed": 13,
+				"total": 60,
+				"percentage": 32.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"growth",
+				"gigadrain",
+				"poisonpowder",
+				"headbutt"
+			]
+		},
+		{
+			"uuid": "8ce0a987-3966-4941-a5da-39c5ed2e6894",
+			"location": "Коробка 7 (Слот 7)",
+			"species": "Stonjourner",
+			"display_name": "Стонджоурнер",
+			"level": 45,
+			"shiny": false,
+			"gender": "FEMALE",
+			"types": [
+				"rock"
+			],
+			"nature": "hardy",
+			"nature_increased": null,
+			"nature_decreased": null,
+			"ability": "powerspot",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 7,
+				"attack": 7,
+				"defence": 26,
+				"special_attack": 3,
+				"special_defence": 11,
+				"speed": 15,
+				"total": 69,
+				"percentage": 37.1
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"bodyslam",
+				"rockslide",
+				"stealthrock",
+				"stomp"
+			]
+		},
+		{
+			"uuid": "3174bd6a-9923-423f-8fcf-c4af8e9f2bac",
+			"location": "Коробка 7 (Слот 8)",
+			"species": "Tandemaus",
+			"display_name": "Тандемаус",
+			"level": 16,
+			"shiny": false,
+			"gender": "GENDERLESS",
+			"types": [
+				"normal"
+			],
+			"nature": "bold",
+			"nature_increased": "DEFENCE",
+			"nature_decreased": "ATTACK",
+			"ability": "pickup",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 20,
+				"attack": 28,
+				"defence": 6,
+				"special_attack": 12,
+				"special_defence": 8,
+				"speed": 28,
+				"total": 102,
+				"percentage": 54.8
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"doublehit",
+				"superfang",
+				"helpinghand",
+				"echoedvoice"
+			]
+		},
+		{
+			"uuid": "5f903959-f9b5-4cf4-a9de-d3ef801f907b",
+			"location": "Коробка 7 (Слот 9)",
+			"species": "Eevee",
+			"display_name": "Иви",
+			"level": 15,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"normal"
+			],
+			"nature": "naive",
+			"nature_increased": "SPEED",
+			"nature_decreased": "SPECIAL_DEFENCE",
+			"ability": "adaptability",
+			"friendship": 50,
+			"held_item": "None",
+			"ivs": {
+				"hp": 30,
+				"attack": 1,
+				"defence": 16,
+				"special_attack": 16,
+				"special_defence": 21,
+				"speed": 21,
+				"total": 105,
+				"percentage": 56.5
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 0,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 0
+			},
+			"moves": [
+				"babydolleyes",
+				"quickattack",
+				"sandattack",
+				"covet"
+			]
+		},
+		{
+			"uuid": "4b04408a-53ab-4cc6-9372-c9961c71f9ff",
+			"location": "Коробка 8 (Слот 22)",
+			"species": "Cyclizar",
+			"display_name": "Сайклизар",
+			"level": 46,
+			"shiny": false,
+			"gender": "MALE",
+			"types": [
+				"dragon",
+				"normal"
+			],
+			"nature": "hasty",
+			"nature_increased": "SPEED",
+			"nature_decreased": "DEFENCE",
+			"ability": "shedskin",
+			"friendship": 20,
+			"held_item": "None",
+			"ivs": {
+				"hp": 3,
+				"attack": 26,
+				"defence": 18,
+				"special_attack": 28,
+				"special_defence": 5,
+				"speed": 21,
+				"total": 101,
+				"percentage": 54.3
+			},
+			"evs": {
+				"hp": 0,
+				"attack": 0,
+				"defence": 0,
+				"special_attack": 3,
+				"special_defence": 0,
+				"speed": 0,
+				"total": 3
+			},
+			"moves": [
+				"dragonpulse",
+				"shiftgear",
+				"dragonclaw",
+				"shedtail"
+			]
+		}
+	]
+}

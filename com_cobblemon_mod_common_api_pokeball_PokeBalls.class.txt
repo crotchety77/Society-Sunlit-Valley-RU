@@ -1,0 +1,1552 @@
+Compiled from "PokeBalls.java"
+public final class com.cobblemon.mod.common.api.pokeball.PokeBalls implements com.cobblemon.mod.common.api.data.JsonDataRegistry<com.cobblemon.mod.common.pokeball.PokeBall> {
+  public static final com.cobblemon.mod.common.api.pokeball.PokeBalls INSTANCE;
+
+  private static final net.minecraft.resources.ResourceLocation id;
+
+  private static final net.minecraft.server.packs.PackType type;
+
+  private static final com.cobblemon.mod.common.api.reactive.SimpleObservable<com.cobblemon.mod.common.api.pokeball.PokeBalls> observable;
+
+  private static final com.google.gson.Gson gson;
+
+  private static final com.google.gson.reflect.TypeToken<com.cobblemon.mod.common.pokeball.PokeBall> typeToken;
+
+  private static final java.lang.String resourcePath;
+
+  private static final java.util.HashMap<net.minecraft.resources.ResourceLocation, com.cobblemon.mod.common.pokeball.PokeBall> defaults;
+
+  private static final java.util.HashMap<net.minecraft.resources.ResourceLocation, com.cobblemon.mod.common.pokeball.PokeBall> custom;
+
+  private com.cobblemon.mod.common.api.pokeball.PokeBalls();
+    Code:
+       0: aload_0
+       1: invokespecial #211                // Method java/lang/Object."<init>":()V
+       4: return
+
+  public net.minecraft.resources.ResourceLocation getId();
+    Code:
+       0: getstatic     #214                // Field id:Lnet/minecraft/resources/ResourceLocation;
+       3: areturn
+
+  public net.minecraft.server.packs.PackType getType();
+    Code:
+       0: getstatic     #216                // Field type:Lnet/minecraft/server/packs/PackType;
+       3: areturn
+
+  public com.cobblemon.mod.common.api.reactive.SimpleObservable<com.cobblemon.mod.common.api.pokeball.PokeBalls> getObservable();
+    Code:
+       0: getstatic     #219                // Field observable:Lcom/cobblemon/mod/common/api/reactive/SimpleObservable;
+       3: areturn
+
+  public com.google.gson.Gson getGson();
+    Code:
+       0: getstatic     #221                // Field gson:Lcom/google/gson/Gson;
+       3: areturn
+
+  public com.google.gson.reflect.TypeToken<com.cobblemon.mod.common.pokeball.PokeBall> getTypeToken();
+    Code:
+       0: getstatic     #224                // Field typeToken:Lcom/google/gson/reflect/TypeToken;
+       3: areturn
+
+  public java.lang.String getResourcePath();
+    Code:
+       0: getstatic     #226                // Field resourcePath:Ljava/lang/String;
+       3: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getPOKE_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #228                // String poke_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getSLATE_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #232                // String slate_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getAZURE_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #234                // String azure_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getVERDANT_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #236                // String verdant_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getROSEATE_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #238                // String roseate_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getCITRINE_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #240                // String citrine_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getGREAT_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #242                // String great_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getULTRA_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #244                // String ultra_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getMASTER_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #246                // String master_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getSAFARI_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #248                // String safari_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getFAST_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #250                // String fast_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getLEVEL_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #252                // String level_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getLURE_BALL();
+    Code:
+       0: aload_0
+       1: ldc           #254                // String lure_ball
+       3: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       6: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getHEAVY_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #256                // String heavy_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getLOVE_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #258                // String love_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getFRIEND_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #260                // String friend_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getMOON_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #262                // String moon_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getSPORT_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #264                // String sport_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getNET_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #266                // String net_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getDIVE_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #268                // String dive_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getNEST_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #270                // String nest_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getREPEAT_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #272                // String repeat_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getTIMER_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #274                // String timer_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getLUXURY_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #276                // String luxury_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getPREMIER_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #278                // String premier_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getDUSK_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #280                // String dusk_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getHEAL_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #282                // String heal_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getQUICK_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #284                // String quick_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getCHERISH_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #286                // String cherish_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getPARK_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #288                // String park_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getDREAM_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #290                // String dream_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getBEAST_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #292                // String beast_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getSWORD_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #294                // String sword_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getSHIELD_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #296                // String shield_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getSKULL_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #298                // String skull_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getMANA_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #300                // String mana_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getBLOSSOM_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #302                // String blossom_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getPRISMATIC_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #304                // String prismatic_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_POKE_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #306                // String ancient_poke_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_CITRINE_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #308                // String ancient_citrine_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_VERDANT_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #310                // String ancient_verdant_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_AZURE_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #312                // String ancient_azure_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_ROSEATE_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #314                // String ancient_roseate_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_SLATE_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #316                // String ancient_slate_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_IVORY_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #318                // String ancient_ivory_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_GREAT_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #320                // String ancient_great_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_ULTRA_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #322                // String ancient_ultra_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_HEAVY_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #324                // String ancient_heavy_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_LEADEN_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #326                // String ancient_leaden_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_GIGATON_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #328                // String ancient_gigaton_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_FEATHER_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #330                // String ancient_feather_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_WING_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #332                // String ancient_wing_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_JET_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #334                // String ancient_jet_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getANCIENT_ORIGIN_BALL();
+    Code:
+       0: aload_0
+       1: ldc_w         #336                // String ancient_origin_ball
+       4: invokespecial #230                // Method byName:(Ljava/lang/String;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+       7: areturn
+
+  public void reload(java.util.Map<net.minecraft.resources.ResourceLocation, ? extends com.cobblemon.mod.common.pokeball.PokeBall>);
+    Code:
+       0: aload_1
+       1: ldc_w         #338                // String data
+       4: invokestatic  #344                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       7: getstatic     #346                // Field custom:Ljava/util/HashMap;
+      10: invokevirtual #351                // Method java/util/HashMap.clear:()V
+      13: return
+
+  public void sync(net.minecraft.server.level.ServerPlayer);
+    Code:
+       0: aload_1
+       1: ldc_w         #353                // String player
+       4: invokestatic  #344                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       7: return
+
+  public final com.cobblemon.mod.common.pokeball.PokeBall getPokeBall(net.minecraft.resources.ResourceLocation);
+    Code:
+       0: aload_1
+       1: ldc_w         #355                // String name
+       4: invokestatic  #344                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       7: getstatic     #346                // Field custom:Ljava/util/HashMap;
+      10: aload_1
+      11: invokevirtual #359                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      14: checkcast     #361                // class com/cobblemon/mod/common/pokeball/PokeBall
+      17: dup
+      18: ifnonnull     32
+      21: pop
+      22: getstatic     #363                // Field defaults:Ljava/util/HashMap;
+      25: aload_1
+      26: invokevirtual #359                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      29: checkcast     #361                // class com/cobblemon/mod/common/pokeball/PokeBall
+      32: areturn
+
+  public final java.util.List<com.cobblemon.mod.common.pokeball.PokeBall> all();
+    Code:
+       0: getstatic     #363                // Field defaults:Ljava/util/HashMap;
+       3: checkcast     #366                // class java/util/Map
+       6: astore_1
+       7: iconst_0
+       8: istore_2
+       9: new           #368                // class java/util/LinkedHashMap
+      12: dup
+      13: invokespecial #369                // Method java/util/LinkedHashMap."<init>":()V
+      16: astore_3
+      17: aload_1
+      18: invokeinterface #373,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+      23: invokeinterface #379,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      28: astore        4
+      30: aload         4
+      32: invokeinterface #385,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      37: ifeq          108
+      40: aload         4
+      42: invokeinterface #389,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      47: checkcast     #391                // class java/util/Map$Entry
+      50: astore        5
+      52: aload         5
+      54: invokeinterface #394,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      59: checkcast     #396                // class net/minecraft/resources/ResourceLocation
+      62: astore        6
+      64: iconst_0
+      65: istore        7
+      67: getstatic     #346                // Field custom:Ljava/util/HashMap;
+      70: aload         6
+      72: invokevirtual #400                // Method java/util/HashMap.containsKey:(Ljava/lang/Object;)Z
+      75: ifne          82
+      78: iconst_1
+      79: goto          83
+      82: iconst_0
+      83: ifeq          30
+      86: aload_3
+      87: aload         5
+      89: invokeinterface #394,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      94: aload         5
+      96: invokeinterface #403,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     101: invokevirtual #407                // Method java/util/LinkedHashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     104: pop
+     105: goto          30
+     108: aload_3
+     109: checkcast     #366                // class java/util/Map
+     112: invokeinterface #411,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+     117: getstatic     #346                // Field custom:Ljava/util/HashMap;
+     120: invokevirtual #412                // Method java/util/HashMap.values:()Ljava/util/Collection;
+     123: dup
+     124: ldc_w         #414                // String custom.values
+     127: invokestatic  #417                // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     130: checkcast     #419                // class java/lang/Iterable
+     133: invokestatic  #425                // Method kotlin/collections/CollectionsKt.plus:(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+     136: areturn
+
+  private final com.cobblemon.mod.common.pokeball.PokeBall createDefault(java.lang.String, com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier, java.util.List<? extends com.cobblemon.mod.common.api.pokeball.catching.CaptureEffect>, float, net.minecraft.resources.ResourceLocation, net.minecraft.resources.ResourceLocation, float, boolean);
+    Code:
+       0: aload_1
+       1: invokestatic  #441                // Method com/cobblemon/mod/common/util/MiscUtilsKt.cobblemonResource:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+       4: astore        9
+       6: new           #361                // class com/cobblemon/mod/common/pokeball/PokeBall
+       9: dup
+      10: aload         9
+      12: aload_2
+      13: aload_3
+      14: fload         4
+      16: aload         5
+      18: aload         6
+      20: fload         7
+      22: iload         8
+      24: invokespecial #444                // Method com/cobblemon/mod/common/pokeball/PokeBall."<init>":(Lnet/minecraft/resources/ResourceLocation;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZ)V
+      27: astore        10
+      29: getstatic     #363                // Field defaults:Ljava/util/HashMap;
+      32: checkcast     #366                // class java/util/Map
+      35: aload         9
+      37: aload         10
+      39: invokeinterface #445,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      44: pop
+      45: aload         10
+      47: areturn
+
+  static com.cobblemon.mod.common.pokeball.PokeBall createDefault$default(com.cobblemon.mod.common.api.pokeball.PokeBalls, java.lang.String, com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier, java.util.List, float, net.minecraft.resources.ResourceLocation, net.minecraft.resources.ResourceLocation, float, boolean, int, java.lang.Object);
+    Code:
+       0: iload         9
+       2: iconst_2
+       3: iand
+       4: ifeq          25
+       7: new           #454                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+      10: dup
+      11: fconst_1
+      12: getstatic     #457                // Field com/cobblemon/mod/common/api/pokeball/PokeBalls$createDefault$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls$createDefault$1;
+      15: checkcast     #459                // class kotlin/jvm/functions/Function2
+      18: invokespecial #462                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;)V
+      21: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+      24: astore_2
+      25: iload         9
+      27: iconst_4
+      28: iand
+      29: ifeq          36
+      32: invokestatic  #467                // Method kotlin/collections/CollectionsKt.emptyList:()Ljava/util/List;
+      35: astore_3
+      36: iload         9
+      38: bipush        8
+      40: iand
+      41: ifeq          49
+      44: ldc_w         #468                // float 0.8f
+      47: fstore        4
+      49: iload         9
+      51: bipush        16
+      53: iand
+      54: ifeq          63
+      57: aload_1
+      58: invokestatic  #441                // Method com/cobblemon/mod/common/util/MiscUtilsKt.cobblemonResource:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      61: astore        5
+      63: iload         9
+      65: bipush        32
+      67: iand
+      68: ifeq          82
+      71: aload_1
+      72: invokedynamic #480,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      77: invokestatic  #441                // Method com/cobblemon/mod/common/util/MiscUtilsKt.cobblemonResource:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      80: astore        6
+      82: iload         9
+      84: bipush        64
+      86: iand
+      87: ifeq          95
+      90: ldc_w         #481                // float 1.25f
+      93: fstore        7
+      95: iload         9
+      97: sipush        128
+     100: iand
+     101: ifeq          107
+     104: iconst_0
+     105: istore        8
+     107: aload_0
+     108: aload_1
+     109: aload_2
+     110: aload_3
+     111: fload         4
+     113: aload         5
+     115: aload         6
+     117: fload         7
+     119: iload         8
+     121: invokespecial #483                // Method createDefault:(Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZ)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     124: areturn
+
+  private final com.cobblemon.mod.common.pokeball.PokeBall byName(java.lang.String);
+    Code:
+       0: aload_1
+       1: invokestatic  #441                // Method com/cobblemon/mod/common/util/MiscUtilsKt.cobblemonResource:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+       4: astore_2
+       5: getstatic     #346                // Field custom:Ljava/util/HashMap;
+       8: aload_2
+       9: invokevirtual #359                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      12: checkcast     #361                // class com/cobblemon/mod/common/pokeball/PokeBall
+      15: dup
+      16: ifnonnull     34
+      19: pop
+      20: getstatic     #363                // Field defaults:Ljava/util/HashMap;
+      23: aload_2
+      24: invokevirtual #359                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      27: dup
+      28: invokestatic  #487                // Method kotlin/jvm/internal/Intrinsics.checkNotNull:(Ljava/lang/Object;)V
+      31: checkcast     #361                // class com/cobblemon/mod/common/pokeball/PokeBall
+      34: areturn
+
+  public void reload(net.minecraft.server.packs.resources.ResourceManager);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #494                // Method com/cobblemon/mod/common/api/data/JsonDataRegistry$DefaultImpls.reload:(Lcom/cobblemon/mod/common/api/data/JsonDataRegistry;Lnet/minecraft/server/packs/resources/ResourceManager;)V
+       5: return
+
+  static {};
+    Code:
+       0: new           #2                  // class com/cobblemon/mod/common/api/pokeball/PokeBalls
+       3: dup
+       4: invokespecial #497                // Method "<init>":()V
+       7: putstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+      10: ldc_w         #501                // String pokeballs
+      13: invokestatic  #441                // Method com/cobblemon/mod/common/util/MiscUtilsKt.cobblemonResource:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      16: putstatic     #214                // Field id:Lnet/minecraft/resources/ResourceLocation;
+      19: getstatic     #506                // Field net/minecraft/server/packs/PackType.SERVER_DATA:Lnet/minecraft/server/packs/PackType;
+      22: putstatic     #216                // Field type:Lnet/minecraft/server/packs/PackType;
+      25: new           #508                // class com/cobblemon/mod/common/api/reactive/SimpleObservable
+      28: dup
+      29: invokespecial #509                // Method com/cobblemon/mod/common/api/reactive/SimpleObservable."<init>":()V
+      32: putstatic     #219                // Field observable:Lcom/cobblemon/mod/common/api/reactive/SimpleObservable;
+      35: new           #511                // class com/google/gson/GsonBuilder
+      38: dup
+      39: invokespecial #512                // Method com/google/gson/GsonBuilder."<init>":()V
+      42: invokevirtual #516                // Method com/google/gson/GsonBuilder.disableHtmlEscaping:()Lcom/google/gson/GsonBuilder;
+      45: invokevirtual #519                // Method com/google/gson/GsonBuilder.setPrettyPrinting:()Lcom/google/gson/GsonBuilder;
+      48: invokevirtual #522                // Method com/google/gson/GsonBuilder.create:()Lcom/google/gson/Gson;
+      51: dup
+      52: ldc_w         #524                // String GsonBuilder()\n        .d…nting()\n        .create()
+      55: invokestatic  #417                // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+      58: putstatic     #221                // Field gson:Lcom/google/gson/Gson;
+      61: ldc_w         #361                // class com/cobblemon/mod/common/pokeball/PokeBall
+      64: invokestatic  #529                // Method com/google/gson/reflect/TypeToken.get:(Ljava/lang/Class;)Lcom/google/gson/reflect/TypeToken;
+      67: dup
+      68: ldc_w         #531                // String get(PokeBall::class.java)
+      71: invokestatic  #417                // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+      74: putstatic     #224                // Field typeToken:Lcom/google/gson/reflect/TypeToken;
+      77: ldc_w         #501                // String pokeballs
+      80: putstatic     #226                // Field resourcePath:Ljava/lang/String;
+      83: new           #348                // class java/util/HashMap
+      86: dup
+      87: invokespecial #532                // Method java/util/HashMap."<init>":()V
+      90: putstatic     #363                // Field defaults:Ljava/util/HashMap;
+      93: new           #348                // class java/util/HashMap
+      96: dup
+      97: invokespecial #532                // Method java/util/HashMap."<init>":()V
+     100: putstatic     #346                // Field custom:Ljava/util/HashMap;
+     103: nop
+     104: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     107: ldc           #228                // String poke_ball
+     109: aconst_null
+     110: aconst_null
+     111: fconst_0
+     112: aconst_null
+     113: aconst_null
+     114: fconst_0
+     115: iconst_0
+     116: sipush        254
+     119: aconst_null
+     120: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     123: pop
+     124: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     127: ldc           #232                // String slate_ball
+     129: aconst_null
+     130: aconst_null
+     131: fconst_0
+     132: aconst_null
+     133: aconst_null
+     134: fconst_0
+     135: iconst_0
+     136: sipush        254
+     139: aconst_null
+     140: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     143: pop
+     144: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     147: ldc           #234                // String azure_ball
+     149: aconst_null
+     150: aconst_null
+     151: fconst_0
+     152: aconst_null
+     153: aconst_null
+     154: fconst_0
+     155: iconst_0
+     156: sipush        254
+     159: aconst_null
+     160: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     163: pop
+     164: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     167: ldc           #236                // String verdant_ball
+     169: aconst_null
+     170: aconst_null
+     171: fconst_0
+     172: aconst_null
+     173: aconst_null
+     174: fconst_0
+     175: iconst_0
+     176: sipush        254
+     179: aconst_null
+     180: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     183: pop
+     184: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     187: ldc           #238                // String roseate_ball
+     189: aconst_null
+     190: aconst_null
+     191: fconst_0
+     192: aconst_null
+     193: aconst_null
+     194: fconst_0
+     195: iconst_0
+     196: sipush        254
+     199: aconst_null
+     200: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     203: pop
+     204: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     207: ldc           #240                // String citrine_ball
+     209: aconst_null
+     210: aconst_null
+     211: fconst_0
+     212: aconst_null
+     213: aconst_null
+     214: fconst_0
+     215: iconst_0
+     216: sipush        254
+     219: aconst_null
+     220: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     223: pop
+     224: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     227: ldc           #242                // String great_ball
+     229: new           #454                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+     232: dup
+     233: ldc_w         #535                // float 1.5f
+     236: aconst_null
+     237: iconst_2
+     238: aconst_null
+     239: invokespecial #538                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+     242: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     245: aconst_null
+     246: fconst_0
+     247: aconst_null
+     248: aconst_null
+     249: fconst_0
+     250: iconst_0
+     251: sipush        252
+     254: aconst_null
+     255: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     258: pop
+     259: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     262: ldc           #244                // String ultra_ball
+     264: new           #454                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+     267: dup
+     268: fconst_2
+     269: aconst_null
+     270: iconst_2
+     271: aconst_null
+     272: invokespecial #538                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+     275: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     278: aconst_null
+     279: fconst_0
+     280: aconst_null
+     281: aconst_null
+     282: fconst_0
+     283: iconst_0
+     284: sipush        252
+     287: aconst_null
+     288: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     291: pop
+     292: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     295: ldc           #246                // String master_ball
+     297: new           #540                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/GuaranteedModifier
+     300: dup
+     301: invokespecial #541                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/GuaranteedModifier."<init>":()V
+     304: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     307: aconst_null
+     308: fconst_0
+     309: aconst_null
+     310: aconst_null
+     311: fconst_0
+     312: iconst_0
+     313: sipush        252
+     316: aconst_null
+     317: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     320: pop
+     321: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     324: ldc           #248                // String safari_ball
+     326: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     329: invokevirtual #550                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getSAFARI:()Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     332: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     335: aconst_null
+     336: fconst_0
+     337: aconst_null
+     338: aconst_null
+     339: fconst_0
+     340: iconst_0
+     341: sipush        252
+     344: aconst_null
+     345: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     348: pop
+     349: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     352: ldc           #250                // String fast_ball
+     354: new           #552                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/BaseStatModifier
+     357: dup
+     358: getstatic     #558                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPEED:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+     361: checkcast     #560                // class com/cobblemon/mod/common/api/pokemon/stats/Stat
+     364: getstatic     #563                // Field com/cobblemon/mod/common/api/pokeball/PokeBalls$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls$1;
+     367: checkcast     #565                // class kotlin/jvm/functions/Function1
+     370: ldc_w         #566                // float 4.0f
+     373: invokespecial #569                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/BaseStatModifier."<init>":(Lcom/cobblemon/mod/common/api/pokemon/stats/Stat;Lkotlin/jvm/functions/Function1;F)V
+     376: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     379: aconst_null
+     380: fconst_0
+     381: aconst_null
+     382: aconst_null
+     383: fconst_0
+     384: iconst_0
+     385: sipush        252
+     388: aconst_null
+     389: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     392: pop
+     393: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     396: ldc           #252                // String level_ball
+     398: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     401: invokevirtual #573                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getLEVEL:()Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier;
+     404: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     407: aconst_null
+     408: fconst_0
+     409: aconst_null
+     410: aconst_null
+     411: fconst_0
+     412: iconst_0
+     413: sipush        252
+     416: aconst_null
+     417: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     420: pop
+     421: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     424: ldc           #254                // String lure_ball
+     426: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     429: fconst_2
+     430: iconst_1
+     431: anewarray     #575                // class com/cobblemon/mod/common/api/types/ElementalType
+     434: astore_0
+     435: aload_0
+     436: iconst_0
+     437: getstatic     #580                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     440: invokevirtual #584                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getWATER:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     443: aastore
+     444: aload_0
+     445: invokevirtual #588                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.typeBoosting:(F[Lcom/cobblemon/mod/common/api/types/ElementalType;)Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+     448: aconst_null
+     449: fconst_0
+     450: aconst_null
+     451: aconst_null
+     452: fconst_0
+     453: iconst_0
+     454: sipush        252
+     457: aconst_null
+     458: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     461: pop
+     462: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     465: ldc_w         #256                // String heavy_ball
+     468: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     471: invokevirtual #592                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getWEIGHT_BASED:()Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+     474: aconst_null
+     475: fconst_0
+     476: aconst_null
+     477: aconst_null
+     478: fconst_0
+     479: iconst_0
+     480: sipush        252
+     483: aconst_null
+     484: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     487: pop
+     488: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     491: ldc_w         #258                // String love_ball
+     494: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     497: invokevirtual #595                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getLOVE:()Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier;
+     500: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     503: aconst_null
+     504: fconst_0
+     505: aconst_null
+     506: aconst_null
+     507: fconst_0
+     508: iconst_0
+     509: sipush        252
+     512: aconst_null
+     513: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     516: pop
+     517: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     520: ldc_w         #260                // String friend_ball
+     523: aconst_null
+     524: getstatic     #600                // Field com/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects;
+     527: sipush        150
+     530: invokevirtual #604                // Method com/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects.friendshipSetter:(I)Lcom/cobblemon/mod/common/api/pokeball/catching/CaptureEffect;
+     533: invokestatic  #608                // Method kotlin/collections/CollectionsKt.listOf:(Ljava/lang/Object;)Ljava/util/List;
+     536: fconst_0
+     537: aconst_null
+     538: aconst_null
+     539: fconst_0
+     540: iconst_0
+     541: sipush        250
+     544: aconst_null
+     545: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     548: pop
+     549: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     552: ldc_w         #262                // String moon_ball
+     555: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     558: invokevirtual #611                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getMOON_PHASES:()Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+     561: aconst_null
+     562: fconst_0
+     563: aconst_null
+     564: aconst_null
+     565: fconst_0
+     566: iconst_0
+     567: sipush        252
+     570: aconst_null
+     571: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     574: pop
+     575: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     578: ldc_w         #264                // String sport_ball
+     581: new           #454                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+     584: dup
+     585: ldc_w         #535                // float 1.5f
+     588: aconst_null
+     589: iconst_2
+     590: aconst_null
+     591: invokespecial #538                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+     594: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     597: aconst_null
+     598: fconst_0
+     599: aconst_null
+     600: aconst_null
+     601: fconst_0
+     602: iconst_0
+     603: sipush        252
+     606: aconst_null
+     607: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     610: pop
+     611: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     614: ldc_w         #266                // String net_ball
+     617: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     620: ldc_w         #612                // float 3.0f
+     623: iconst_2
+     624: anewarray     #575                // class com/cobblemon/mod/common/api/types/ElementalType
+     627: astore_0
+     628: aload_0
+     629: iconst_0
+     630: getstatic     #580                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     633: invokevirtual #615                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getBUG:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     636: aastore
+     637: aload_0
+     638: iconst_1
+     639: getstatic     #580                // Field com/cobblemon/mod/common/api/types/ElementalTypes.INSTANCE:Lcom/cobblemon/mod/common/api/types/ElementalTypes;
+     642: invokevirtual #584                // Method com/cobblemon/mod/common/api/types/ElementalTypes.getWATER:()Lcom/cobblemon/mod/common/api/types/ElementalType;
+     645: aastore
+     646: aload_0
+     647: invokevirtual #588                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.typeBoosting:(F[Lcom/cobblemon/mod/common/api/types/ElementalType;)Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+     650: aconst_null
+     651: fconst_0
+     652: aconst_null
+     653: aconst_null
+     654: fconst_0
+     655: iconst_0
+     656: sipush        252
+     659: aconst_null
+     660: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     663: pop
+     664: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     667: ldc_w         #268                // String dive_ball
+     670: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     673: invokevirtual #618                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getSUBMERGED_IN_WATER:()Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     676: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     679: aconst_null
+     680: ldc_w         #619                // float 0.99f
+     683: aconst_null
+     684: aconst_null
+     685: fconst_0
+     686: iconst_0
+     687: sipush        244
+     690: aconst_null
+     691: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     694: pop
+     695: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     698: ldc_w         #270                // String nest_ball
+     701: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     704: invokevirtual #622                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getNEST:()Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+     707: aconst_null
+     708: fconst_0
+     709: aconst_null
+     710: aconst_null
+     711: fconst_0
+     712: iconst_0
+     713: sipush        252
+     716: aconst_null
+     717: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     720: pop
+     721: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     724: ldc_w         #272                // String repeat_ball
+     727: aconst_null
+     728: aconst_null
+     729: fconst_0
+     730: aconst_null
+     731: aconst_null
+     732: fconst_0
+     733: iconst_0
+     734: sipush        254
+     737: aconst_null
+     738: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     741: pop
+     742: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     745: ldc_w         #274                // String timer_ball
+     748: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     751: getstatic     #625                // Field com/cobblemon/mod/common/api/pokeball/PokeBalls$2.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls$2;
+     754: checkcast     #565                // class kotlin/jvm/functions/Function1
+     757: invokevirtual #629                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.turnBased:(Lkotlin/jvm/functions/Function1;)Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier;
+     760: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     763: aconst_null
+     764: fconst_0
+     765: aconst_null
+     766: aconst_null
+     767: fconst_0
+     768: iconst_0
+     769: sipush        252
+     772: aconst_null
+     773: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     776: pop
+     777: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     780: ldc_w         #276                // String luxury_ball
+     783: aconst_null
+     784: new           #631                // class com/cobblemon/mod/common/api/pokeball/catching/effects/FriendshipEarningBoostEffect
+     787: dup
+     788: fconst_2
+     789: invokespecial #634                // Method com/cobblemon/mod/common/api/pokeball/catching/effects/FriendshipEarningBoostEffect."<init>":(F)V
+     792: invokestatic  #608                // Method kotlin/collections/CollectionsKt.listOf:(Ljava/lang/Object;)Ljava/util/List;
+     795: fconst_0
+     796: aconst_null
+     797: aconst_null
+     798: fconst_0
+     799: iconst_0
+     800: sipush        250
+     803: aconst_null
+     804: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     807: pop
+     808: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     811: ldc_w         #278                // String premier_ball
+     814: aconst_null
+     815: aconst_null
+     816: fconst_0
+     817: aconst_null
+     818: aconst_null
+     819: fconst_0
+     820: iconst_0
+     821: sipush        254
+     824: aconst_null
+     825: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     828: pop
+     829: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     832: ldc_w         #280                // String dusk_ball
+     835: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     838: invokevirtual #637                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getLIGHT_LEVEL:()Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     841: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     844: aconst_null
+     845: fconst_0
+     846: aconst_null
+     847: aconst_null
+     848: fconst_0
+     849: iconst_0
+     850: sipush        252
+     853: aconst_null
+     854: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     857: pop
+     858: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     861: ldc_w         #282                // String heal_ball
+     864: aconst_null
+     865: getstatic     #600                // Field com/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects;
+     868: invokevirtual #641                // Method com/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects.getFULL_RESTORE:()Lcom/cobblemon/mod/common/api/pokeball/catching/CaptureEffect;
+     871: invokestatic  #608                // Method kotlin/collections/CollectionsKt.listOf:(Ljava/lang/Object;)Ljava/util/List;
+     874: fconst_0
+     875: aconst_null
+     876: aconst_null
+     877: fconst_0
+     878: iconst_0
+     879: sipush        250
+     882: aconst_null
+     883: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     886: pop
+     887: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     890: ldc_w         #284                // String quick_ball
+     893: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     896: getstatic     #644                // Field com/cobblemon/mod/common/api/pokeball/PokeBalls$3.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls$3;
+     899: checkcast     #565                // class kotlin/jvm/functions/Function1
+     902: invokevirtual #629                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.turnBased:(Lkotlin/jvm/functions/Function1;)Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier;
+     905: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     908: aconst_null
+     909: fconst_0
+     910: aconst_null
+     911: aconst_null
+     912: fconst_0
+     913: iconst_0
+     914: sipush        252
+     917: aconst_null
+     918: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     921: pop
+     922: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     925: ldc_w         #286                // String cherish_ball
+     928: aconst_null
+     929: aconst_null
+     930: fconst_0
+     931: aconst_null
+     932: aconst_null
+     933: fconst_0
+     934: iconst_0
+     935: sipush        254
+     938: aconst_null
+     939: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     942: pop
+     943: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     946: ldc_w         #288                // String park_ball
+     949: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     952: invokevirtual #647                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getPARK:()Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     955: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     958: aconst_null
+     959: fconst_0
+     960: aconst_null
+     961: aconst_null
+     962: fconst_0
+     963: iconst_0
+     964: sipush        252
+     967: aconst_null
+     968: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+     971: pop
+     972: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+     975: ldc_w         #290                // String dream_ball
+     978: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+     981: ldc_w         #566                // float 4.0f
+     984: iconst_1
+     985: anewarray     #649                // class com/cobblemon/mod/common/api/pokemon/status/Status
+     988: astore_0
+     989: aload_0
+     990: iconst_0
+     991: getstatic     #654                // Field com/cobblemon/mod/common/api/pokemon/status/Statuses.INSTANCE:Lcom/cobblemon/mod/common/api/pokemon/status/Statuses;
+     994: invokevirtual #658                // Method com/cobblemon/mod/common/api/pokemon/status/Statuses.getSLEEP:()Lcom/cobblemon/mod/common/pokemon/status/statuses/persistent/SleepStatus;
+     997: aastore
+     998: aload_0
+     999: invokevirtual #662                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.statusBoosting:(F[Lcom/cobblemon/mod/common/api/pokemon/status/Status;)Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+    1002: aconst_null
+    1003: fconst_0
+    1004: aconst_null
+    1005: aconst_null
+    1006: fconst_0
+    1007: iconst_0
+    1008: sipush        252
+    1011: aconst_null
+    1012: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1015: pop
+    1016: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1019: ldc_w         #292                // String beast_ball
+    1022: new           #664                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/LabelModifier
+    1025: dup
+    1026: ldc_w         #665                // float 5.0f
+    1029: iconst_1
+    1030: iconst_1
+    1031: anewarray     #489                // class java/lang/String
+    1034: astore_0
+    1035: aload_0
+    1036: iconst_0
+    1037: ldc_w         #667                // String ultra_beast
+    1040: aastore
+    1041: aload_0
+    1042: invokespecial #670                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/LabelModifier."<init>":(FZ[Ljava/lang/String;)V
+    1045: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+    1048: aconst_null
+    1049: fconst_0
+    1050: aconst_null
+    1051: aconst_null
+    1052: fconst_0
+    1053: iconst_0
+    1054: sipush        252
+    1057: aconst_null
+    1058: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1061: pop
+    1062: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1065: ldc_w         #294                // String sword_ball
+    1068: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+    1071: getstatic     #673                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+    1074: getstatic     #676                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_ATTACK:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+    1077: invokevirtual #680                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.statBased:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;)Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+    1080: aconst_null
+    1081: fconst_0
+    1082: aconst_null
+    1083: aconst_null
+    1084: fconst_0
+    1085: iconst_0
+    1086: sipush        252
+    1089: aconst_null
+    1090: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1093: pop
+    1094: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1097: ldc_w         #296                // String shield_ball
+    1100: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+    1103: getstatic     #683                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.DEFENCE:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+    1106: getstatic     #686                // Field com/cobblemon/mod/common/api/pokemon/stats/Stats.SPECIAL_DEFENCE:Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;
+    1109: invokevirtual #680                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.statBased:(Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;)Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+    1112: aconst_null
+    1113: fconst_0
+    1114: aconst_null
+    1115: aconst_null
+    1116: fconst_0
+    1117: iconst_0
+    1118: sipush        252
+    1121: aconst_null
+    1122: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1125: pop
+    1126: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1129: ldc_w         #298                // String skull_ball
+    1132: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+    1135: invokevirtual #688                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getSKULL_BALL:()Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+    1138: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+    1141: aconst_null
+    1142: fconst_0
+    1143: aconst_null
+    1144: aconst_null
+    1145: fconst_0
+    1146: iconst_0
+    1147: sipush        252
+    1150: aconst_null
+    1151: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1154: pop
+    1155: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1158: ldc_w         #300                // String mana_ball
+    1161: new           #454                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+    1164: dup
+    1165: ldc_w         #689                // float 3.5f
+    1168: aconst_null
+    1169: iconst_2
+    1170: aconst_null
+    1171: invokespecial #538                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    1174: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+    1177: aconst_null
+    1178: fconst_0
+    1179: aconst_null
+    1180: aconst_null
+    1181: fconst_0
+    1182: iconst_0
+    1183: sipush        252
+    1186: aconst_null
+    1187: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1190: pop
+    1191: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1194: ldc_w         #302                // String blossom_ball
+    1197: new           #454                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+    1200: dup
+    1201: ldc_w         #690                // float 0.5f
+    1204: aconst_null
+    1205: iconst_2
+    1206: aconst_null
+    1207: invokespecial #538                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    1210: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+    1213: getstatic     #600                // Field com/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects;
+    1216: invokevirtual #693                // Method com/cobblemon/mod/common/api/pokeball/catching/effects/CaptureEffects.shinySetter:()Lcom/cobblemon/mod/common/api/pokeball/catching/CaptureEffect;
+    1219: invokestatic  #608                // Method kotlin/collections/CollectionsKt.listOf:(Ljava/lang/Object;)Ljava/util/List;
+    1222: fconst_0
+    1223: aconst_null
+    1224: aconst_null
+    1225: fconst_0
+    1226: iconst_0
+    1227: sipush        248
+    1230: aconst_null
+    1231: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1234: pop
+    1235: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1238: ldc_w         #304                // String prismatic_ball
+    1241: getstatic     #546                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+    1244: invokevirtual #696                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.getPRISMATIC_BALL:()Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier;
+    1247: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+    1250: aconst_null
+    1251: fconst_0
+    1252: aconst_null
+    1253: aconst_null
+    1254: fconst_0
+    1255: iconst_0
+    1256: sipush        252
+    1259: aconst_null
+    1260: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1263: pop
+    1264: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1267: ldc_w         #306                // String ancient_poke_ball
+    1270: aconst_null
+    1271: aconst_null
+    1272: fconst_0
+    1273: aconst_null
+    1274: aconst_null
+    1275: fconst_0
+    1276: iconst_1
+    1277: bipush        126
+    1279: aconst_null
+    1280: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1283: pop
+    1284: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1287: ldc_w         #308                // String ancient_citrine_ball
+    1290: aconst_null
+    1291: aconst_null
+    1292: fconst_0
+    1293: aconst_null
+    1294: aconst_null
+    1295: fconst_0
+    1296: iconst_1
+    1297: bipush        126
+    1299: aconst_null
+    1300: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1303: pop
+    1304: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1307: ldc_w         #310                // String ancient_verdant_ball
+    1310: aconst_null
+    1311: aconst_null
+    1312: fconst_0
+    1313: aconst_null
+    1314: aconst_null
+    1315: fconst_0
+    1316: iconst_1
+    1317: bipush        126
+    1319: aconst_null
+    1320: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1323: pop
+    1324: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1327: ldc_w         #312                // String ancient_azure_ball
+    1330: aconst_null
+    1331: aconst_null
+    1332: fconst_0
+    1333: aconst_null
+    1334: aconst_null
+    1335: fconst_0
+    1336: iconst_1
+    1337: bipush        126
+    1339: aconst_null
+    1340: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1343: pop
+    1344: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1347: ldc_w         #314                // String ancient_roseate_ball
+    1350: aconst_null
+    1351: aconst_null
+    1352: fconst_0
+    1353: aconst_null
+    1354: aconst_null
+    1355: fconst_0
+    1356: iconst_1
+    1357: bipush        126
+    1359: aconst_null
+    1360: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1363: pop
+    1364: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1367: ldc_w         #316                // String ancient_slate_ball
+    1370: aconst_null
+    1371: aconst_null
+    1372: fconst_0
+    1373: aconst_null
+    1374: aconst_null
+    1375: fconst_0
+    1376: iconst_1
+    1377: bipush        126
+    1379: aconst_null
+    1380: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1383: pop
+    1384: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1387: ldc_w         #318                // String ancient_ivory_ball
+    1390: aconst_null
+    1391: aconst_null
+    1392: fconst_0
+    1393: aconst_null
+    1394: aconst_null
+    1395: fconst_0
+    1396: iconst_1
+    1397: bipush        126
+    1399: aconst_null
+    1400: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1403: pop
+    1404: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1407: ldc_w         #320                // String ancient_great_ball
+    1410: new           #454                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+    1413: dup
+    1414: ldc_w         #535                // float 1.5f
+    1417: aconst_null
+    1418: iconst_2
+    1419: aconst_null
+    1420: invokespecial #538                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    1423: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+    1426: aconst_null
+    1427: fconst_0
+    1428: aconst_null
+    1429: aconst_null
+    1430: fconst_0
+    1431: iconst_1
+    1432: bipush        124
+    1434: aconst_null
+    1435: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1438: pop
+    1439: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1442: ldc_w         #322                // String ancient_ultra_ball
+    1445: new           #454                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+    1448: dup
+    1449: fconst_2
+    1450: aconst_null
+    1451: iconst_2
+    1452: aconst_null
+    1453: invokespecial #538                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    1456: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+    1459: aconst_null
+    1460: fconst_0
+    1461: aconst_null
+    1462: aconst_null
+    1463: fconst_0
+    1464: iconst_1
+    1465: bipush        124
+    1467: aconst_null
+    1468: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1471: pop
+    1472: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1475: ldc_w         #324                // String ancient_heavy_ball
+    1478: aconst_null
+    1479: aconst_null
+    1480: fconst_0
+    1481: aconst_null
+    1482: aconst_null
+    1483: ldc_w         #697                // float 0.75f
+    1486: iconst_1
+    1487: bipush        62
+    1489: aconst_null
+    1490: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1493: pop
+    1494: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1497: ldc_w         #326                // String ancient_leaden_ball
+    1500: aconst_null
+    1501: aconst_null
+    1502: fconst_0
+    1503: aconst_null
+    1504: aconst_null
+    1505: ldc_w         #697                // float 0.75f
+    1508: iconst_1
+    1509: bipush        62
+    1511: aconst_null
+    1512: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1515: pop
+    1516: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1519: ldc_w         #328                // String ancient_gigaton_ball
+    1522: aconst_null
+    1523: aconst_null
+    1524: fconst_0
+    1525: aconst_null
+    1526: aconst_null
+    1527: ldc_w         #697                // float 0.75f
+    1530: iconst_1
+    1531: bipush        62
+    1533: aconst_null
+    1534: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1537: pop
+    1538: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1541: ldc_w         #330                // String ancient_feather_ball
+    1544: aconst_null
+    1545: aconst_null
+    1546: fconst_0
+    1547: aconst_null
+    1548: aconst_null
+    1549: ldc_w         #698                // float 2.5f
+    1552: iconst_1
+    1553: bipush        62
+    1555: aconst_null
+    1556: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1559: pop
+    1560: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1563: ldc_w         #332                // String ancient_wing_ball
+    1566: aconst_null
+    1567: aconst_null
+    1568: fconst_0
+    1569: aconst_null
+    1570: aconst_null
+    1571: ldc_w         #698                // float 2.5f
+    1574: iconst_1
+    1575: bipush        62
+    1577: aconst_null
+    1578: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1581: pop
+    1582: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1585: ldc_w         #334                // String ancient_jet_ball
+    1588: aconst_null
+    1589: aconst_null
+    1590: fconst_0
+    1591: aconst_null
+    1592: aconst_null
+    1593: ldc_w         #698                // float 2.5f
+    1596: iconst_1
+    1597: bipush        62
+    1599: aconst_null
+    1600: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1603: pop
+    1604: getstatic     #499                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;
+    1607: ldc_w         #336                // String ancient_origin_ball
+    1610: new           #540                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/GuaranteedModifier
+    1613: dup
+    1614: invokespecial #541                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/GuaranteedModifier."<init>":()V
+    1617: checkcast     #464                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+    1620: aconst_null
+    1621: fconst_0
+    1622: aconst_null
+    1623: aconst_null
+    1624: fconst_0
+    1625: iconst_1
+    1626: bipush        124
+    1628: aconst_null
+    1629: invokestatic  #534                // Method createDefault$default:(Lcom/cobblemon/mod/common/api/pokeball/PokeBalls;Ljava/lang/String;Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;Ljava/util/List;FLnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;FZILjava/lang/Object;)Lcom/cobblemon/mod/common/pokeball/PokeBall;
+    1632: pop
+    1633: getstatic     #704                // Field com/cobblemon/mod/common/api/events/CobblemonEvents.FRIENDSHIP_UPDATED:Lcom/cobblemon/mod/common/api/reactive/EventObservable;
+    1636: getstatic     #710                // Field com/cobblemon/mod/common/api/Priority.LOW:Lcom/cobblemon/mod/common/api/Priority;
+    1639: getstatic     #713                // Field com/cobblemon/mod/common/api/pokeball/PokeBalls$4.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/PokeBalls$4;
+    1642: checkcast     #565                // class kotlin/jvm/functions/Function1
+    1645: invokevirtual #719                // Method com/cobblemon/mod/common/api/reactive/EventObservable.subscribe:(Lcom/cobblemon/mod/common/api/Priority;Lkotlin/jvm/functions/Function1;)Lcom/cobblemon/mod/common/api/reactive/ObservableSubscription;
+    1648: pop
+    1649: return
+}

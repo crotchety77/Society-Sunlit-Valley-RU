@@ -1,0 +1,2968 @@
+Compiled from "SplendidSlime.java"
+public class io.github.chakyl.splendidslimes.entity.SplendidSlime extends io.github.chakyl.splendidslimes.entity.SlimeEntityBase {
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> HAPPINESS;
+
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> HUNGER;
+
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> DAY_LAST_ATE;
+
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> DAY_LAST_DIGESTED;
+
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> PICKY_LAST_ATE;
+
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.String> TARGET_ENTITY;
+
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> PARTICLE_ANIMATION_TICK;
+
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Boolean> TAMED;
+
+  public static final net.minecraft.network.syncher.EntityDataAccessor<java.util.Optional<java.util.UUID>> OWNER_UUID;
+
+  public static final java.lang.String SLIME = "slime";
+
+  public static final java.lang.String ID = "id";
+
+  public static final java.lang.String DATA = "data";
+
+  public static final int SLIME_EFFECT_COOLDOWN;
+
+  public static final int SLIME_MAX_HUNGER;
+
+  public static final int SLIME_HUNGRY_THRESHOLD;
+
+  public static final int MAX_HAPPINESS;
+
+  public static final int FURIOUS_THRESHOLD;
+
+  public static final int UNHAPPY_THRESHOLD;
+
+  public static final int HAPPY_THRESHOLD;
+
+  public net.minecraft.world.entity.item.ItemEntity itemTarget;
+
+  boolean tarred;
+
+  private final net.minecraft.world.entity.EntityType<io.github.chakyl.splendidslimes.entity.SlimeEntityBase> entityType;
+
+  private final int effectRadius = 6;
+
+  private final int particleAnimationTime = 2;
+
+  public io.github.chakyl.splendidslimes.entity.SplendidSlime(net.minecraft.world.entity.EntityType<io.github.chakyl.splendidslimes.entity.SlimeEntityBase>, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #92                 // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+       6: aload_0
+       7: aconst_null
+       8: putfield      #94                 // Field itemTarget:Lnet/minecraft/world/entity/item/ItemEntity;
+      11: aload_0
+      12: bipush        6
+      14: putfield      #96                 // Field effectRadius:I
+      17: aload_0
+      18: iconst_2
+      19: putfield      #98                 // Field particleAnimationTime:I
+      22: aload_0
+      23: aload_1
+      24: putfield      #100                // Field entityType:Lnet/minecraft/world/entity/EntityType;
+      27: aload_0
+      28: iconst_0
+      29: putfield      #102                // Field tarred:Z
+      32: aload_0
+      33: new           #9                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeMoveControl
+      36: dup
+      37: aload_0
+      38: invokespecial #105                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeMoveControl."<init>":(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)V
+      41: putfield      #109                // Field f_21342_:Lnet/minecraft/world/entity/ai/control/MoveControl;
+      44: return
+
+  protected void m_8099_();
+    Code:
+       0: aload_0
+       1: getfield      #119                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+       4: iconst_1
+       5: new           #13                 // class io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeFloatGoal
+       8: dup
+       9: aload_0
+      10: invokespecial #120                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeFloatGoal."<init>":(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)V
+      13: invokevirtual #126                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      16: aload_0
+      17: getfield      #119                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      20: iconst_2
+      21: new           #19                 // class io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeTargetItemGoal
+      24: dup
+      25: aload_0
+      26: bipush        60
+      28: invokespecial #129                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeTargetItemGoal."<init>":(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;I)V
+      31: invokevirtual #126                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      34: aload_0
+      35: getfield      #119                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      38: iconst_2
+      39: new           #17                 // class io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeAttackEntities
+      42: dup
+      43: aload_0
+      44: aload_0
+      45: iconst_1
+      46: bipush        60
+      48: aconst_null
+      49: invokespecial #132                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeAttackEntities."<init>":(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/Mob;ZILjava/util/function/Predicate;)V
+      52: invokevirtual #126                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      55: aload_0
+      56: getfield      #119                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      59: iconst_2
+      60: new           #15                 // class io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeAttackGoal
+      63: dup
+      64: aload_0
+      65: invokespecial #133                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeAttackGoal."<init>":(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)V
+      68: invokevirtual #126                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      71: aload_0
+      72: getfield      #119                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      75: iconst_3
+      76: new           #7                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeRandomDirectionGoal
+      79: dup
+      80: aload_0
+      81: invokespecial #134                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeRandomDirectionGoal."<init>":(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)V
+      84: invokevirtual #126                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+      87: aload_0
+      88: getfield      #119                // Field f_21345_:Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+      91: iconst_5
+      92: new           #11                 // class io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeKeepOnJumpingGoal
+      95: dup
+      96: aload_0
+      97: invokespecial #135                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime$SlimeKeepOnJumpingGoal."<init>":(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)V
+     100: invokevirtual #126                // Method net/minecraft/world/entity/ai/goal/GoalSelector.m_25352_:(ILnet/minecraft/world/entity/ai/goal/Goal;)V
+     103: return
+
+  public void m_8119_();
+    Code:
+       0: aload_0
+       1: invokespecial #138                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_8119_:()V
+       4: aload_0
+       5: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+       8: getfield      #145                // Field net/minecraft/world/level/Level.f_46443_:Z
+      11: ifne          732
+      14: aload_0
+      15: invokevirtual #149                // Method getHappiness:()I
+      18: istore_1
+      19: aload_0
+      20: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      23: invokestatic  #155                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.getDay:(Lnet/minecraft/world/level/Level;)I
+      26: istore_2
+      27: aload_0
+      28: getfield      #158                // Field f_19797_:I
+      31: bipush        20
+      33: irem
+      34: ifne          84
+      37: aload_0
+      38: invokevirtual #162                // Method isOwnerOnline:()Z
+      41: ifeq          84
+      44: iload_2
+      45: aload_0
+      46: invokevirtual #165                // Method getDayLastDigested:()I
+      49: iconst_1
+      50: invokestatic  #169                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.compareDay:(III)Z
+      53: ifeq          84
+      56: iload_2
+      57: aload_0
+      58: invokevirtual #172                // Method getDayLastAte:()I
+      61: invokestatic  #176                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.getDayOffset:(II)I
+      64: istore_3
+      65: aload_0
+      66: iload_2
+      67: invokevirtual #180                // Method setDayLastDigested:(I)V
+      70: aload_0
+      71: aload_0
+      72: invokevirtual #183                // Method getHunger:()I
+      75: getstatic     #185                // Field SLIME_HUNGRY_THRESHOLD:I
+      78: iload_3
+      79: imul
+      80: isub
+      81: invokevirtual #188                // Method setHunger:(I)V
+      84: aload_0
+      85: getfield      #158                // Field f_19797_:I
+      88: iconst_2
+      89: if_icmpne     151
+      92: aload_0
+      93: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+      96: astore_3
+      97: aload_0
+      98: invokevirtual #195                // Method getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+     101: astore        4
+     103: aload_3
+     104: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+     107: ifeq          126
+     110: aload_0
+     111: aload_0
+     112: aload_3
+     113: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+     116: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+     119: invokevirtual #210                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.innateEffects:()Ljava/util/List;
+     122: iconst_0
+     123: invokestatic  #214                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.applyEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/List;Z)V
+     126: aload         4
+     128: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+     131: ifeq          151
+     134: aload_0
+     135: aload_0
+     136: aload         4
+     138: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+     141: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+     144: invokevirtual #210                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.innateEffects:()Ljava/util/List;
+     147: iconst_0
+     148: invokestatic  #214                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.applyEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/List;Z)V
+     151: aload_0
+     152: getfield      #158                // Field f_19797_:I
+     155: getstatic     #216                // Field SLIME_EFFECT_COOLDOWN:I
+     158: irem
+     159: ifne          428
+     162: aload_0
+     163: invokevirtual #162                // Method isOwnerOnline:()Z
+     166: ifeq          428
+     169: aload_0
+     170: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+     173: astore_3
+     174: aload_3
+     175: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+     178: ifeq          428
+     181: iload_1
+     182: getstatic     #218                // Field UNHAPPY_THRESHOLD:I
+     185: if_icmple     204
+     188: aload_0
+     189: ldc           #220                // String inverse
+     191: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     194: ifeq          304
+     197: iload_1
+     198: getstatic     #226                // Field HAPPY_THRESHOLD:I
+     201: if_icmplt     304
+     204: dconst_1
+     205: iload_1
+     206: i2d
+     207: dconst_1
+     208: dadd
+     209: getstatic     #218                // Field UNHAPPY_THRESHOLD:I
+     212: i2d
+     213: ddiv
+     214: dsub
+     215: dstore        4
+     217: aload_0
+     218: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     221: invokeinterface #236,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     226: f2d
+     227: dload         4
+     229: dcmpg
+     230: ifgt          301
+     233: aload_0
+     234: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     237: ldc           #238                // class net/minecraft/world/entity/LivingEntity
+     239: aload_0
+     240: invokevirtual #242                // Method m_20191_:()Lnet/minecraft/world/phys/AABB;
+     243: ldc2_w        #243                // double 6.0d
+     246: invokevirtual #250                // Method net/minecraft/world/phys/AABB.m_82400_:(D)Lnet/minecraft/world/phys/AABB;
+     249: invokevirtual #254                // Method net/minecraft/world/level/Level.m_45976_:(Ljava/lang/Class;Lnet/minecraft/world/phys/AABB;)Ljava/util/List;
+     252: astore        6
+     254: aload         6
+     256: invokeinterface #260,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     261: astore        7
+     263: aload         7
+     265: invokeinterface #265,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     270: ifeq          295
+     273: aload         7
+     275: invokeinterface #268,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     280: checkcast     #238                // class net/minecraft/world/entity/LivingEntity
+     283: astore        8
+     285: aload_0
+     286: aload         8
+     288: iconst_1
+     289: invokestatic  #272                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.applyNegativeEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Z)V
+     292: goto          263
+     295: aload_0
+     296: iconst_1
+     297: iconst_0
+     298: invokestatic  #276                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.executeSlimeCommands:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;ZZ)V
+     301: goto          417
+     304: iload_1
+     305: getstatic     #226                // Field HAPPY_THRESHOLD:I
+     308: if_icmpge     320
+     311: aload_0
+     312: ldc           #220                // String inverse
+     314: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     317: ifeq          417
+     320: dconst_1
+     321: iload_1
+     322: i2d
+     323: dconst_1
+     324: dadd
+     325: getstatic     #226                // Field HAPPY_THRESHOLD:I
+     328: i2d
+     329: ddiv
+     330: dsub
+     331: dstore        4
+     333: aload_0
+     334: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     337: invokeinterface #236,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     342: f2d
+     343: dload         4
+     345: dcmpg
+     346: ifgt          417
+     349: aload_0
+     350: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     353: ldc           #238                // class net/minecraft/world/entity/LivingEntity
+     355: aload_0
+     356: invokevirtual #242                // Method m_20191_:()Lnet/minecraft/world/phys/AABB;
+     359: ldc2_w        #243                // double 6.0d
+     362: invokevirtual #250                // Method net/minecraft/world/phys/AABB.m_82400_:(D)Lnet/minecraft/world/phys/AABB;
+     365: invokevirtual #254                // Method net/minecraft/world/level/Level.m_45976_:(Ljava/lang/Class;Lnet/minecraft/world/phys/AABB;)Ljava/util/List;
+     368: astore        6
+     370: aload         6
+     372: invokeinterface #260,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     377: astore        7
+     379: aload         7
+     381: invokeinterface #265,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     386: ifeq          411
+     389: aload         7
+     391: invokeinterface #268,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     396: checkcast     #238                // class net/minecraft/world/entity/LivingEntity
+     399: astore        8
+     401: aload_0
+     402: aload         8
+     404: iconst_1
+     405: invokestatic  #279                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.applyPositiveEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Z)V
+     408: goto          379
+     411: aload_0
+     412: iconst_0
+     413: iconst_0
+     414: invokestatic  #276                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.executeSlimeCommands:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;ZZ)V
+     417: aload_0
+     418: invokevirtual #282                // Method isHungry:()Z
+     421: ifeq          428
+     424: aload_0
+     425: invokestatic  #285                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.handleHungryTraits:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)V
+     428: aload_0
+     429: getfield      #158                // Field f_19797_:I
+     432: getstatic     #216                // Field SLIME_EFFECT_COOLDOWN:I
+     435: iconst_4
+     436: imul
+     437: irem
+     438: ifne          468
+     441: aload_0
+     442: ldc_w         #287                // String weeping
+     445: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     448: ifeq          468
+     451: aload_0
+     452: aload_0
+     453: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     456: invokestatic  #291                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.cry:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/level/Level;)Z
+     459: ifne          468
+     462: aload_0
+     463: bipush        -50
+     465: invokevirtual #294                // Method addHappiness:(I)V
+     468: aload_0
+     469: getfield      #158                // Field f_19797_:I
+     472: sipush        600
+     475: irem
+     476: ifne          673
+     479: aload_0
+     480: invokevirtual #162                // Method isOwnerOnline:()Z
+     483: ifeq          673
+     486: iload_1
+     487: getstatic     #296                // Field FURIOUS_THRESHOLD:I
+     490: if_icmpgt     557
+     493: aload_0
+     494: ldc_w         #298                // String nuclear
+     497: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     500: ifeq          557
+     503: aload_0
+     504: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     507: aload_0
+     508: aload_0
+     509: invokevirtual #302                // Method m_20185_:()D
+     512: aload_0
+     513: invokevirtual #305                // Method m_20186_:()D
+     516: aload_0
+     517: invokevirtual #308                // Method m_20189_:()D
+     520: aload_0
+     521: ldc_w         #310                // String flaming
+     524: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     527: ifeq          536
+     530: ldc_w         #311                // float 12.0f
+     533: goto          539
+     536: ldc_w         #312                // float 16.0f
+     539: aload_0
+     540: ldc_w         #310                // String flaming
+     543: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     546: getstatic     #316                // Field net/minecraft/world/level/Level$ExplosionInteraction.MOB:Lnet/minecraft/world/level/Level$ExplosionInteraction;
+     549: invokevirtual #320                // Method net/minecraft/world/level/Level.m_255391_:(Lnet/minecraft/world/entity/Entity;DDDFZLnet/minecraft/world/level/Level$ExplosionInteraction;)Lnet/minecraft/world/level/Explosion;
+     552: pop
+     553: aload_0
+     554: invokevirtual #323                // Method m_6074_:()V
+     557: aload_0
+     558: ldc_w         #325                // String floating
+     561: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     564: ifeq          616
+     567: aload_0
+     568: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     571: invokeinterface #236,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     576: f2d
+     577: ldc2_w        #326                // double 0.65d
+     580: dcmpg
+     581: ifgt          616
+     584: aload_0
+     585: new           #329                // class net/minecraft/world/effect/MobEffectInstance
+     588: dup
+     589: getstatic     #335                // Field net/minecraft/world/effect/MobEffects.f_19620_:Lnet/minecraft/world/effect/MobEffect;
+     592: aload_0
+     593: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     596: bipush        10
+     598: sipush        300
+     601: invokeinterface #338,  3          // InterfaceMethod net/minecraft/util/RandomSource.m_216332_:(II)I
+     606: iconst_0
+     607: iconst_1
+     608: iconst_0
+     609: invokespecial #341                // Method net/minecraft/world/effect/MobEffectInstance."<init>":(Lnet/minecraft/world/effect/MobEffect;IIZZ)V
+     612: invokevirtual #345                // Method m_7292_:(Lnet/minecraft/world/effect/MobEffectInstance;)Z
+     615: pop
+     616: iload_1
+     617: getstatic     #347                // Field MAX_HAPPINESS:I
+     620: if_icmple     635
+     623: aload_0
+     624: getstatic     #347                // Field MAX_HAPPINESS:I
+     627: iconst_1
+     628: isub
+     629: invokevirtual #350                // Method setHappiness:(I)V
+     632: goto          673
+     635: iload_1
+     636: ifle          668
+     639: aload_0
+     640: invokestatic  #356                // Method io/github/chakyl/splendidslimes/util/SlimeComfortUtils.aquaticTraitCheck:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)Z
+     643: ifeq          652
+     646: aload_0
+     647: bipush        -10
+     649: invokevirtual #294                // Method addHappiness:(I)V
+     652: aload_0
+     653: invokevirtual #183                // Method getHunger:()I
+     656: ifne          673
+     659: aload_0
+     660: bipush        -5
+     662: invokevirtual #294                // Method addHappiness:(I)V
+     665: goto          673
+     668: aload_0
+     669: iconst_0
+     670: invokevirtual #350                // Method setHappiness:(I)V
+     673: aload_0
+     674: invokevirtual #359                // Method getParticleAnimationTick:()I
+     677: istore_3
+     678: bipush        12
+     680: istore        4
+     682: aload_0
+     683: invokevirtual #362                // Method m_21224_:()Z
+     686: ifne          732
+     689: iload_3
+     690: iconst_m1
+     691: if_icmple     732
+     694: iload_3
+     695: iload         4
+     697: if_icmpge     732
+     700: aload_0
+     701: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     704: aload_0
+     705: iconst_5
+     706: invokevirtual #366                // Method net/minecraft/world/level/Level.m_7605_:(Lnet/minecraft/world/entity/Entity;B)V
+     709: iload_3
+     710: iconst_1
+     711: iadd
+     712: iload         4
+     714: if_icmplt     725
+     717: aload_0
+     718: iconst_m1
+     719: invokevirtual #369                // Method setParticleAnimationTick:(I)V
+     722: goto          732
+     725: aload_0
+     726: iload_3
+     727: iconst_1
+     728: iadd
+     729: invokevirtual #369                // Method setParticleAnimationTick:(I)V
+     732: return
+
+  public void m_7822_(byte);
+    Code:
+       0: iload_1
+       1: iconst_5
+       2: if_icmpne     128
+       5: aload_0
+       6: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       9: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      12: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      15: invokevirtual #390                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.emitEffectParticle:()Lnet/minecraft/core/particles/SimpleParticleType;
+      18: astore_2
+      19: bipush        32
+      21: istore_3
+      22: aload_0
+      23: invokevirtual #359                // Method getParticleAnimationTick:()I
+      26: istore        4
+      28: iconst_0
+      29: istore        5
+      31: iload         5
+      33: iload_3
+      34: if_icmpge     128
+      37: ldc2_w        #393                // double 0.5d
+      40: iload         4
+      42: i2d
+      43: dmul
+      44: dstore        6
+      46: ldc2_w        #395                // double 6.283185307179586d
+      49: iload         5
+      51: i2d
+      52: dmul
+      53: iload_3
+      54: i2d
+      55: ddiv
+      56: dstore        8
+      58: aload_0
+      59: ldc2_w        #397                // double 0.8d
+      62: invokevirtual #402                // Method m_20208_:(D)D
+      65: dload         6
+      67: dload         8
+      69: invokestatic  #407                // Method java/lang/Math.cos:(D)D
+      72: dmul
+      73: dadd
+      74: dstore        10
+      76: aload_0
+      77: invokevirtual #410                // Method m_20187_:()D
+      80: ldc2_w        #393                // double 0.5d
+      83: dadd
+      84: dstore        12
+      86: aload_0
+      87: ldc2_w        #397                // double 0.8d
+      90: invokevirtual #413                // Method m_20262_:(D)D
+      93: dload         6
+      95: dload         8
+      97: invokestatic  #416                // Method java/lang/Math.sin:(D)D
+     100: dmul
+     101: dadd
+     102: dstore        14
+     104: aload_0
+     105: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     108: aload_2
+     109: iconst_1
+     110: dload         10
+     112: dload         12
+     114: dload         14
+     116: dconst_0
+     117: dconst_0
+     118: dconst_0
+     119: invokevirtual #420                // Method net/minecraft/world/level/Level.m_6493_:(Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V
+     122: iinc          5, 1
+     125: goto          31
+     128: iload_1
+     129: iconst_4
+     130: if_icmpne     228
+     133: iconst_0
+     134: istore_2
+     135: iload_2
+     136: bipush        32
+     138: if_icmpge     225
+     141: aload_0
+     142: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     145: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     150: ldc2_w        #424                // double 0.2d
+     153: dmul
+     154: dstore_3
+     155: aload_0
+     156: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     159: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     164: ldc2_w        #424                // double 0.2d
+     167: dmul
+     168: dstore        5
+     170: aload_0
+     171: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     174: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     179: ldc2_w        #424                // double 0.2d
+     182: dmul
+     183: dstore        7
+     185: aload_0
+     186: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     189: getstatic     #431                // Field net/minecraft/core/particles/ParticleTypes.f_123767_:Lnet/minecraft/core/particles/SimpleParticleType;
+     192: iconst_1
+     193: aload_0
+     194: dconst_1
+     195: invokevirtual #402                // Method m_20208_:(D)D
+     198: aload_0
+     199: invokevirtual #410                // Method m_20187_:()D
+     202: ldc2_w        #393                // double 0.5d
+     205: dadd
+     206: aload_0
+     207: dconst_1
+     208: invokevirtual #413                // Method m_20262_:(D)D
+     211: dload_3
+     212: dload         5
+     214: dload         7
+     216: invokevirtual #420                // Method net/minecraft/world/level/Level.m_6493_:(Lnet/minecraft/core/particles/ParticleOptions;ZDDDDDD)V
+     219: iinc          2, 1
+     222: goto          135
+     225: goto          233
+     228: aload_0
+     229: iload_1
+     230: invokespecial #433                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7822_:(B)V
+     233: return
+
+  public net.minecraft.world.InteractionResult pickupSlime(net.minecraft.world.entity.player.Player, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #452                // Method revive:()V
+       4: aload_0
+       5: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+       8: getfield      #145                // Field net/minecraft/world/level/Level.f_46443_:Z
+      11: ifeq          29
+      14: aload_0
+      15: getstatic     #458                // Field net/minecraft/sounds/SoundEvents.f_11752_:Lnet/minecraft/sounds/SoundEvent;
+      18: fconst_1
+      19: ldc_w         #459                // float 0.9f
+      22: invokevirtual #463                // Method m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+      25: getstatic     #469                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+      28: areturn
+      29: new           #471                // class net/minecraft/nbt/CompoundTag
+      32: dup
+      33: invokespecial #473                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+      36: astore_3
+      37: new           #471                // class net/minecraft/nbt/CompoundTag
+      40: dup
+      41: invokespecial #473                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+      44: astore        4
+      46: aload_0
+      47: aload         4
+      49: invokevirtual #477                // Method m_20223_:(Lnet/minecraft/nbt/CompoundTag;)Z
+      52: pop
+      53: aload_3
+      54: ldc_w         #478                // String entity
+      57: aload         4
+      59: invokevirtual #482                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      62: pop
+      63: new           #471                // class net/minecraft/nbt/CompoundTag
+      66: dup
+      67: invokespecial #473                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+      70: astore        5
+      72: aload         5
+      74: ldc           #65                 // String id
+      76: aload_0
+      77: invokevirtual #486                // Method getSlimeBreed:()Ljava/lang/String;
+      80: invokevirtual #490                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+      83: aload_3
+      84: ldc           #62                 // String slime
+      86: aload         5
+      88: invokevirtual #482                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+      91: pop
+      92: iload_2
+      93: ifeq          184
+      96: aload_1
+      97: getstatic     #496                // Field net/minecraft/world/InteractionHand.MAIN_HAND:Lnet/minecraft/world/InteractionHand;
+     100: invokevirtual #502                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     103: astore        6
+     105: aload         6
+     107: getstatic     #506                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.SLIME_VAC:Lnet/minecraftforge/registries/RegistryObject;
+     110: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     113: checkcast     #511                // class net/minecraft/world/item/Item
+     116: invokevirtual #517                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+     119: ifne          131
+     122: aload_1
+     123: getstatic     #520                // Field net/minecraft/world/InteractionHand.OFF_HAND:Lnet/minecraft/world/InteractionHand;
+     126: invokevirtual #502                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+     129: astore        6
+     131: new           #471                // class net/minecraft/nbt/CompoundTag
+     134: dup
+     135: invokespecial #473                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+     138: astore        7
+     140: aload         7
+     142: ldc_w         #478                // String entity
+     145: aload_3
+     146: ldc_w         #478                // String entity
+     149: invokevirtual #524                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+     152: invokevirtual #482                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+     155: pop
+     156: aload         7
+     158: ldc           #62                 // String slime
+     160: aload_3
+     161: ldc           #62                 // String slime
+     163: invokevirtual #524                // Method net/minecraft/nbt/CompoundTag.m_128469_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+     166: invokevirtual #482                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+     169: pop
+     170: aload         6
+     172: invokevirtual #528                // Method net/minecraft/world/item/ItemStack.m_41784_:()Lnet/minecraft/nbt/CompoundTag;
+     175: ldc_w         #530                // String largo
+     178: aload         7
+     180: invokevirtual #482                // Method net/minecraft/nbt/CompoundTag.m_128365_:(Ljava/lang/String;Lnet/minecraft/nbt/Tag;)Lnet/minecraft/nbt/Tag;
+     183: pop
+     184: new           #513                // class net/minecraft/world/item/ItemStack
+     187: dup
+     188: getstatic     #533                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.SLIME_ITEM:Lnet/minecraftforge/registries/RegistryObject;
+     191: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     194: checkcast     #535                // class net/minecraft/world/level/ItemLike
+     197: invokespecial #538                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     200: astore        6
+     202: aload         6
+     204: aload_3
+     205: invokevirtual #542                // Method net/minecraft/world/item/ItemStack.m_41751_:(Lnet/minecraft/nbt/CompoundTag;)V
+     208: aload_0
+     209: getstatic     #458                // Field net/minecraft/sounds/SoundEvents.f_11752_:Lnet/minecraft/sounds/SoundEvent;
+     212: fconst_1
+     213: ldc_w         #459                // float 0.9f
+     216: invokevirtual #463                // Method m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     219: aload_0
+     220: invokevirtual #545                // Method m_146870_:()V
+     223: iload_2
+     224: ifne          302
+     227: aload_1
+     228: invokevirtual #549                // Method net/minecraft/world/entity/player/Player.m_150109_:()Lnet/minecraft/world/entity/player/Inventory;
+     231: aload         6
+     233: invokevirtual #555                // Method net/minecraft/world/entity/player/Inventory.m_36054_:(Lnet/minecraft/world/item/ItemStack;)Z
+     236: ifne          302
+     239: new           #557                // class net/minecraft/world/entity/item/ItemEntity
+     242: dup
+     243: aload_0
+     244: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     247: aload_0
+     248: invokevirtual #302                // Method m_20185_:()D
+     251: aload_0
+     252: invokevirtual #305                // Method m_20186_:()D
+     255: ldc2_w        #393                // double 0.5d
+     258: dadd
+     259: aload_0
+     260: invokevirtual #308                // Method m_20189_:()D
+     263: aload         6
+     265: invokespecial #560                // Method net/minecraft/world/entity/item/ItemEntity."<init>":(Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V
+     268: astore        7
+     270: aload         7
+     272: iconst_0
+     273: invokevirtual #563                // Method net/minecraft/world/entity/item/ItemEntity.m_32010_:(I)V
+     276: aload         7
+     278: aload         7
+     280: invokevirtual #567                // Method net/minecraft/world/entity/item/ItemEntity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     283: dconst_0
+     284: dconst_1
+     285: dconst_0
+     286: invokevirtual #573                // Method net/minecraft/world/phys/Vec3.m_82542_:(DDD)Lnet/minecraft/world/phys/Vec3;
+     289: invokevirtual #577                // Method net/minecraft/world/entity/item/ItemEntity.m_20256_:(Lnet/minecraft/world/phys/Vec3;)V
+     292: aload_0
+     293: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     296: aload         7
+     298: invokevirtual #581                // Method net/minecraft/world/level/Level.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+     301: pop
+     302: getstatic     #584                // Field net/minecraft/world/InteractionResult.CONSUME:Lnet/minecraft/world/InteractionResult;
+     305: areturn
+
+  public net.minecraft.world.entity.EntityType<io.github.chakyl.splendidslimes.entity.SlimeEntityBase> getEntityType();
+    Code:
+       0: aload_0
+       1: getfield      #100                // Field entityType:Lnet/minecraft/world/entity/EntityType;
+       4: areturn
+
+  public boolean m_21531_();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  private boolean isHungry();
+    Code:
+       0: aload_0
+       1: ldc_w         #601                // String ravenous
+       4: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+       7: ifeq          26
+      10: aload_0
+      11: invokevirtual #183                // Method getHunger:()I
+      14: getstatic     #603                // Field SLIME_MAX_HUNGER:I
+      17: if_icmpeq     24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+      26: aload_0
+      27: invokevirtual #183                // Method getHunger:()I
+      30: getstatic     #185                // Field SLIME_HUNGRY_THRESHOLD:I
+      33: if_icmpgt     40
+      36: iconst_1
+      37: goto          41
+      40: iconst_0
+      41: ireturn
+
+  public boolean checkFoods(net.minecraft.world.item.ItemStack, java.util.List<java.lang.Object>);
+    Code:
+       0: aload_1
+       1: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+       4: astore_3
+       5: aload_2
+       6: invokeinterface #260,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      11: astore        4
+      13: aload         4
+      15: invokeinterface #265,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      20: ifeq          85
+      23: aload         4
+      25: invokeinterface #268,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      30: astore        5
+      32: aload         5
+      34: invokevirtual #616                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      37: ldc_w         #513                // class net/minecraft/world/item/ItemStack
+      40: if_acmpne     57
+      43: aload         5
+      45: checkcast     #513                // class net/minecraft/world/item/ItemStack
+      48: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      51: aload_3
+      52: if_acmpne     57
+      55: iconst_1
+      56: ireturn
+      57: aload         5
+      59: invokevirtual #616                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      62: ldc_w         #618                // class net/minecraft/tags/TagKey
+      65: if_acmpne     82
+      68: aload_1
+      69: aload         5
+      71: checkcast     #618                // class net/minecraft/tags/TagKey
+      74: invokevirtual #622                // Method net/minecraft/world/item/ItemStack.m_204117_:(Lnet/minecraft/tags/TagKey;)Z
+      77: ifeq          82
+      80: iconst_1
+      81: ireturn
+      82: goto          13
+      85: iconst_0
+      86: ireturn
+
+  public boolean isPrimaryFood(net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_0
+       1: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+       7: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      10: astore_2
+      11: aload_0
+      12: aload_1
+      13: aload_2
+      14: invokevirtual #632                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.foods:()Ljava/util/List;
+      17: invokevirtual #634                // Method checkFoods:(Lnet/minecraft/world/item/ItemStack;Ljava/util/List;)Z
+      20: ireturn
+
+  public java.util.List<java.lang.Object> getSlimeFoods(io.github.chakyl.splendidslimes.data.SlimeBreed);
+    Code:
+       0: aload_0
+       1: invokevirtual #640                // Method isLargo:()Z
+       4: ifeq          22
+       7: aload_1
+       8: invokevirtual #643                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.traits:()Ljava/util/List;
+      11: ldc_w         #645                // String dominant
+      14: invokeinterface #649,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      19: ifeq          27
+      22: aload_1
+      23: invokevirtual #632                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.foods:()Ljava/util/List;
+      26: areturn
+      27: aload_0
+      28: invokevirtual #195                // Method getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+      31: astore_2
+      32: aload_2
+      33: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      36: ifeq          143
+      39: aload_2
+      40: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      43: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      46: invokevirtual #643                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.traits:()Ljava/util/List;
+      49: ldc_w         #651                // String recessive
+      52: invokeinterface #649,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      57: ifeq          65
+      60: aload_1
+      61: invokevirtual #632                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.foods:()Ljava/util/List;
+      64: areturn
+      65: aload_1
+      66: invokevirtual #643                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.traits:()Ljava/util/List;
+      69: ldc_w         #651                // String recessive
+      72: invokeinterface #649,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      77: ifne          101
+      80: aload_2
+      81: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      84: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      87: invokevirtual #643                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.traits:()Ljava/util/List;
+      90: ldc_w         #645                // String dominant
+      93: invokeinterface #649,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      98: ifeq          112
+     101: aload_2
+     102: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+     105: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+     108: invokevirtual #632                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.foods:()Ljava/util/List;
+     111: areturn
+     112: new           #653                // class java/util/ArrayList
+     115: dup
+     116: aload_1
+     117: invokevirtual #632                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.foods:()Ljava/util/List;
+     120: invokespecial #656                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     123: astore_3
+     124: aload_3
+     125: aload_2
+     126: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+     129: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+     132: invokevirtual #632                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.foods:()Ljava/util/List;
+     135: invokeinterface #660,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     140: pop
+     141: aload_3
+     142: areturn
+     143: aload_1
+     144: invokevirtual #632                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.foods:()Ljava/util/List;
+     147: areturn
+
+  public boolean m_7243_(net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_1
+       1: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+       4: astore_2
+       5: aload_0
+       6: invokevirtual #282                // Method isHungry:()Z
+       9: ifne          24
+      12: aload_2
+      13: getstatic     #666                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.PLORT:Lnet/minecraftforge/registries/RegistryObject;
+      16: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      19: if_acmpeq     24
+      22: iconst_0
+      23: ireturn
+      24: aload_2
+      25: getstatic     #669                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.SLIME_CANDY:Lnet/minecraftforge/registries/RegistryObject;
+      28: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      31: if_acmpne     36
+      34: iconst_1
+      35: ireturn
+      36: aload_0
+      37: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+      40: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      43: ifne          48
+      46: iconst_0
+      47: ireturn
+      48: aload_2
+      49: instanceof    #671                // class net/minecraft/world/item/SpawnEggItem
+      52: ifeq          57
+      55: iconst_0
+      56: ireturn
+      57: aload_0
+      58: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+      61: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      64: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      67: astore_3
+      68: aload_2
+      69: getstatic     #666                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.PLORT:Lnet/minecraftforge/registries/RegistryObject;
+      72: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      75: if_acmpne     183
+      78: aload_1
+      79: invokevirtual #674                // Method net/minecraft/world/item/ItemStack.m_41782_:()Z
+      82: ifeq          183
+      85: aload_0
+      86: ldc_w         #676                // String largoless
+      89: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+      92: ifne          183
+      95: aload_1
+      96: ldc_w         #678                // String plort
+      99: invokevirtual #681                // Method net/minecraft/world/item/ItemStack.m_41737_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+     102: astore        4
+     104: aload         4
+     106: ifnull        183
+     109: aload         4
+     111: ldc           #65                 // String id
+     113: invokevirtual #684                // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+     116: ifeq          183
+     119: aload         4
+     121: ldc           #65                 // String id
+     123: invokevirtual #688                // Method net/minecraft/nbt/CompoundTag.m_128423_:(Ljava/lang/String;)Lnet/minecraft/nbt/Tag;
+     126: invokeinterface #693,  1          // InterfaceMethod net/minecraft/nbt/Tag.toString:()Ljava/lang/String;
+     131: astore        5
+     133: aload         5
+     135: invokestatic  #698                // Method io/github/chakyl/splendidslimes/util/SlimeData.plortIsFromLargoless:(Ljava/lang/String;)Z
+     138: ifeq          143
+     141: iconst_0
+     142: ireturn
+     143: aload         5
+     145: aload_0
+     146: invokevirtual #486                // Method getSlimeBreed:()Ljava/lang/String;
+     149: invokevirtual #703                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+     152: ifne          181
+     155: aload_0
+     156: invokevirtual #706                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+     159: invokevirtual #709                // Method java/lang/String.isEmpty:()Z
+     162: ifne          177
+     165: aload         5
+     167: aload_0
+     168: invokevirtual #706                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+     171: invokevirtual #703                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+     174: ifne          181
+     177: iconst_1
+     178: goto          182
+     181: iconst_0
+     182: ireturn
+     183: aload_0
+     184: aload_1
+     185: aload_0
+     186: aload_3
+     187: invokevirtual #711                // Method getSlimeFoods:(Lio/github/chakyl/splendidslimes/data/SlimeBreed;)Ljava/util/List;
+     190: invokevirtual #634                // Method checkFoods:(Lnet/minecraft/world/item/ItemStack;Ljava/util/List;)Z
+     193: ireturn
+
+  public boolean isOwnerOnline();
+    Code:
+       0: aload_0
+       1: invokevirtual #715                // Method getTamed:()Z
+       4: ifne          9
+       7: iconst_1
+       8: ireturn
+       9: aload_0
+      10: invokevirtual #719                // Method m_20194_:()Lnet/minecraft/server/MinecraftServer;
+      13: invokevirtual #725                // Method net/minecraft/server/MinecraftServer.m_6846_:()Lnet/minecraft/server/players/PlayerList;
+      16: aload_0
+      17: invokevirtual #729                // Method getOwnerUUID:()Ljava/util/UUID;
+      20: invokevirtual #735                // Method net/minecraft/server/players/PlayerList.m_11259_:(Ljava/util/UUID;)Lnet/minecraft/server/level/ServerPlayer;
+      23: ifnull        30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: ireturn
+
+  public net.minecraft.world.item.ItemStack getSlimePlort();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: invokestatic  #743                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       5: invokevirtual #746                // Method getSlimePlort:(Ljava/lang/Boolean;)Lnet/minecraft/world/item/ItemStack;
+       8: areturn
+
+  public net.minecraft.world.item.ItemStack getSlimePlort(java.lang.Boolean);
+    Code:
+       0: new           #513                // class net/minecraft/world/item/ItemStack
+       3: dup
+       4: getstatic     #666                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.PLORT:Lnet/minecraftforge/registries/RegistryObject;
+       7: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      10: checkcast     #535                // class net/minecraft/world/level/ItemLike
+      13: invokespecial #538                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      16: astore_2
+      17: aload_1
+      18: invokevirtual #749                // Method java/lang/Boolean.booleanValue:()Z
+      21: ifeq          43
+      24: aload_2
+      25: ldc_w         #678                // String plort
+      28: invokevirtual #752                // Method net/minecraft/world/item/ItemStack.m_41698_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      31: ldc           #65                 // String id
+      33: aload_0
+      34: invokevirtual #706                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+      37: invokevirtual #490                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+      40: goto          59
+      43: aload_2
+      44: ldc_w         #678                // String plort
+      47: invokevirtual #752                // Method net/minecraft/world/item/ItemStack.m_41698_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      50: ldc           #65                 // String id
+      52: aload_0
+      53: invokevirtual #486                // Method getSlimeBreed:()Ljava/lang/String;
+      56: invokevirtual #490                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+      59: aload_2
+      60: areturn
+
+  public java.util.List<net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>> getEdibleMobs();
+    Code:
+       0: aload_0
+       1: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: astore_1
+       5: aload_1
+       6: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+       9: ifne          14
+      12: aconst_null
+      13: areturn
+      14: aload_0
+      15: invokevirtual #195                // Method getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+      18: astore_2
+      19: aload_2
+      20: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      23: ifeq          70
+      26: new           #653                // class java/util/ArrayList
+      29: dup
+      30: invokespecial #757                // Method java/util/ArrayList."<init>":()V
+      33: astore_3
+      34: aload_3
+      35: aload_1
+      36: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      39: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      42: invokevirtual #760                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.entities:()Ljava/util/List;
+      45: invokeinterface #660,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      50: pop
+      51: aload_3
+      52: aload_2
+      53: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      56: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      59: invokevirtual #760                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.entities:()Ljava/util/List;
+      62: invokeinterface #660,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      67: pop
+      68: aload_3
+      69: areturn
+      70: aload_1
+      71: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      74: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      77: invokevirtual #760                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.entities:()Ljava/util/List;
+      80: areturn
+
+  public java.util.List<net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>> getHostileToMobs();
+    Code:
+       0: aload_0
+       1: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: astore_1
+       5: aload_1
+       6: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+       9: ifne          14
+      12: aconst_null
+      13: areturn
+      14: aload_0
+      15: invokevirtual #195                // Method getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+      18: astore_2
+      19: aload_2
+      20: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      23: ifeq          70
+      26: new           #653                // class java/util/ArrayList
+      29: dup
+      30: invokespecial #757                // Method java/util/ArrayList."<init>":()V
+      33: astore_3
+      34: aload_3
+      35: aload_1
+      36: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      39: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      42: invokevirtual #766                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.hostileToEntities:()Ljava/util/List;
+      45: invokeinterface #660,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      50: pop
+      51: aload_3
+      52: aload_2
+      53: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      56: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      59: invokevirtual #766                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.hostileToEntities:()Ljava/util/List;
+      62: invokeinterface #660,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      67: pop
+      68: aload_3
+      69: areturn
+      70: aload_1
+      71: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      74: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      77: invokevirtual #766                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.hostileToEntities:()Ljava/util/List;
+      80: areturn
+
+  public java.lang.Boolean hasSameBreed(net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: aload_1
+       1: invokevirtual #772                // Method net/minecraft/world/entity/LivingEntity.m_6095_:()Lnet/minecraft/world/entity/EntityType;
+       4: aload_0
+       5: invokevirtual #773                // Method m_6095_:()Lnet/minecraft/world/entity/EntityType;
+       8: if_acmpne     62
+      11: aload_1
+      12: invokevirtual #777                // Method net/minecraft/world/entity/LivingEntity.m_20088_:()Lnet/minecraft/network/syncher/SynchedEntityData;
+      15: astore_2
+      16: aload_2
+      17: getstatic     #780                // Field BREED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      20: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      23: checkcast     #700                // class java/lang/String
+      26: aload_0
+      27: invokevirtual #486                // Method getSlimeBreed:()Ljava/lang/String;
+      30: invokevirtual #789                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      33: ifeq          41
+      36: iconst_1
+      37: invokestatic  #743                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      40: areturn
+      41: aload_2
+      42: getstatic     #792                // Field SECONDARY_BREED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      45: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      48: checkcast     #700                // class java/lang/String
+      51: aload_0
+      52: invokevirtual #486                // Method getSlimeBreed:()Ljava/lang/String;
+      55: invokevirtual #789                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      58: invokestatic  #743                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      61: areturn
+      62: iconst_0
+      63: invokestatic  #743                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      66: areturn
+
+  public boolean isFavoriteFood(net.minecraft.world.item.Item);
+    Code:
+       0: aload_0
+       1: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: astore_3
+       5: aload_3
+       6: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+       9: ifne          14
+      12: iconst_0
+      13: ireturn
+      14: aload_1
+      15: aload_3
+      16: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      19: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      22: invokevirtual #799                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.favoriteFood:()Lnet/minecraft/world/item/ItemStack;
+      25: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      28: if_acmpne     35
+      31: iconst_1
+      32: goto          36
+      35: iconst_0
+      36: istore_2
+      37: aload_0
+      38: invokevirtual #195                // Method getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+      41: astore        4
+      43: iload_2
+      44: ifne          79
+      47: aload         4
+      49: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      52: ifeq          79
+      55: aload_1
+      56: aload         4
+      58: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      61: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      64: invokevirtual #799                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.favoriteFood:()Lnet/minecraft/world/item/ItemStack;
+      67: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      70: if_acmpne     77
+      73: iconst_1
+      74: goto          78
+      77: iconst_0
+      78: istore_2
+      79: iload_2
+      80: ireturn
+
+  public boolean getFavoriteEntity(net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>);
+    Code:
+       0: aload_0
+       1: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: astore_3
+       5: aload_3
+       6: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+       9: ifne          14
+      12: iconst_0
+      13: ireturn
+      14: aload_1
+      15: aload_3
+      16: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      19: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      22: invokevirtual #807                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.favoriteEntity:()Lnet/minecraft/world/entity/EntityType;
+      25: if_acmpne     32
+      28: iconst_1
+      29: goto          33
+      32: iconst_0
+      33: istore_2
+      34: aload_0
+      35: invokevirtual #195                // Method getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+      38: astore        4
+      40: iload_2
+      41: ifne          73
+      44: aload         4
+      46: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      49: ifeq          73
+      52: aload_1
+      53: aload         4
+      55: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      58: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      61: invokevirtual #807                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.favoriteEntity:()Lnet/minecraft/world/entity/EntityType;
+      64: if_acmpne     71
+      67: iconst_1
+      68: goto          72
+      71: iconst_0
+      72: istore_2
+      73: iload_2
+      74: ireturn
+
+  public void setTarred();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: putfield      #102                // Field tarred:Z
+       5: return
+
+  public boolean getTarred();
+    Code:
+       0: aload_0
+       1: getfield      #102                // Field tarred:Z
+       4: ireturn
+
+  public void setItemTarget(net.minecraft.world.entity.item.ItemEntity);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #94                 // Field itemTarget:Lnet/minecraft/world/entity/item/ItemEntity;
+       5: return
+
+  public net.minecraft.world.entity.item.ItemEntity getItemTarget();
+    Code:
+       0: aload_0
+       1: getfield      #94                 // Field itemTarget:Lnet/minecraft/world/entity/item/ItemEntity;
+       4: areturn
+
+  public int getHappiness();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #821                // Field HAPPINESS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #823                // class java/lang/Integer
+      13: invokevirtual #826                // Method java/lang/Integer.intValue:()I
+      16: ireturn
+
+  public void addHappiness(int);
+    Code:
+       0: aload_0
+       1: ldc_w         #828                // String moody
+       4: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+       7: ifeq          25
+      10: aload_0
+      11: aload_0
+      12: invokevirtual #149                // Method getHappiness:()I
+      15: iload_1
+      16: iconst_2
+      17: imul
+      18: iadd
+      19: invokevirtual #350                // Method setHappiness:(I)V
+      22: goto          35
+      25: aload_0
+      26: aload_0
+      27: invokevirtual #149                // Method getHappiness:()I
+      30: iload_1
+      31: iadd
+      32: invokevirtual #350                // Method setHappiness:(I)V
+      35: return
+
+  public void setHappiness(int);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #821                // Field HAPPINESS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: iload_1
+       8: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      11: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      14: return
+
+  public java.lang.String getTargetEntity();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #838                // Field TARGET_ENTITY:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #700                // class java/lang/String
+      13: areturn
+
+  public void setTargetEntity(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #838                // Field TARGET_ENTITY:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: aload_1
+       8: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      11: return
+
+  public int getHunger();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #842                // Field HUNGER:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #823                // class java/lang/Integer
+      13: invokevirtual #826                // Method java/lang/Integer.intValue:()I
+      16: ireturn
+
+  public void setHunger(int);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #842                // Field HUNGER:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: getstatic     #603                // Field SLIME_MAX_HUNGER:I
+      10: iload_1
+      11: invokestatic  #845                // Method java/lang/Math.min:(II)I
+      14: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      17: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      20: return
+
+  public int getParticleAnimationTick();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #847                // Field PARTICLE_ANIMATION_TICK:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #823                // class java/lang/Integer
+      13: invokevirtual #826                // Method java/lang/Integer.intValue:()I
+      16: ireturn
+
+  public int getPickyLastAte();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #850                // Field PICKY_LAST_ATE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #823                // class java/lang/Integer
+      13: invokevirtual #826                // Method java/lang/Integer.intValue:()I
+      16: ireturn
+
+  public void setPickyLastAte(int);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #850                // Field PICKY_LAST_ATE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: iload_1
+       8: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      11: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      14: return
+
+  public int getDayLastAte();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #853                // Field DAY_LAST_ATE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #823                // class java/lang/Integer
+      13: invokevirtual #826                // Method java/lang/Integer.intValue:()I
+      16: ireturn
+
+  public void setDayLastAte(int);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #853                // Field DAY_LAST_ATE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: iload_1
+       8: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      11: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      14: return
+
+  public int getDayLastDigested();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #856                // Field DAY_LAST_DIGESTED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #823                // class java/lang/Integer
+      13: invokevirtual #826                // Method java/lang/Integer.intValue:()I
+      16: ireturn
+
+  public void setDayLastDigested(int);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #856                // Field DAY_LAST_DIGESTED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: iload_1
+       8: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      11: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      14: return
+
+  public void setParticleAnimationTick(int);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #847                // Field PARTICLE_ANIMATION_TICK:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: iload_1
+       8: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      11: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      14: return
+
+  public java.util.UUID getOwnerUUID();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #858                // Field OWNER_UUID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #860                // class java/util/Optional
+      13: aconst_null
+      14: checkcast     #862                // class java/util/UUID
+      17: invokevirtual #866                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      20: checkcast     #862                // class java/util/UUID
+      23: areturn
+
+  public void setOwnerUUID(java.util.UUID);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #858                // Field OWNER_UUID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: aload_1
+       8: invokestatic  #873                // Method java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;
+      11: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      14: return
+
+  public boolean getTamed();
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #877                // Field TAMED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #786                // Method net/minecraft/network/syncher/SynchedEntityData.m_135370_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #739                // class java/lang/Boolean
+      13: invokevirtual #749                // Method java/lang/Boolean.booleanValue:()Z
+      16: ireturn
+
+  public void setTamed(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #877                // Field TAMED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: iload_1
+       8: invokestatic  #743                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      11: invokevirtual #835                // Method net/minecraft/network/syncher/SynchedEntityData.m_135381_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      14: return
+
+  public boolean m_6673_(net.minecraft.world.damagesource.DamageSource);
+    Code:
+       0: aload_1
+       1: getstatic     #888                // Field net/minecraft/world/damagesource/DamageTypes.f_268565_:Lnet/minecraft/resources/ResourceKey;
+       4: invokevirtual #894                // Method net/minecraft/world/damagesource/DamageSource.m_276093_:(Lnet/minecraft/resources/ResourceKey;)Z
+       7: ifne          20
+      10: aload_1
+      11: getstatic     #897                // Field net/minecraft/world/damagesource/DamageTypes.f_268448_:Lnet/minecraft/resources/ResourceKey;
+      14: invokevirtual #894                // Method net/minecraft/world/damagesource/DamageSource.m_276093_:(Lnet/minecraft/resources/ResourceKey;)Z
+      17: ifeq          22
+      20: iconst_1
+      21: ireturn
+      22: aload_1
+      23: getstatic     #900                // Field net/minecraft/world/damagesource/DamageTypes.f_268468_:Lnet/minecraft/resources/ResourceKey;
+      26: invokevirtual #894                // Method net/minecraft/world/damagesource/DamageSource.m_276093_:(Lnet/minecraft/resources/ResourceKey;)Z
+      29: ifne          42
+      32: aload_1
+      33: getstatic     #903                // Field net/minecraft/world/damagesource/DamageTypes.f_268631_:Lnet/minecraft/resources/ResourceKey;
+      36: invokevirtual #894                // Method net/minecraft/world/damagesource/DamageSource.m_276093_:(Lnet/minecraft/resources/ResourceKey;)Z
+      39: ifeq          64
+      42: aload_0
+      43: ldc_w         #310                // String flaming
+      46: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+      49: ifne          62
+      52: aload_0
+      53: ldc_w         #905                // String aquatic
+      56: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+      59: ifeq          64
+      62: iconst_1
+      63: ireturn
+      64: aload_0
+      65: aload_1
+      66: invokespecial #907                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_6673_:(Lnet/minecraft/world/damagesource/DamageSource;)Z
+      69: ireturn
+
+  public boolean hasTrait(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: astore_2
+       5: aload_0
+       6: invokevirtual #195                // Method getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       9: astore_3
+      10: aload_2
+      11: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      14: ifeq          70
+      17: aload_2
+      18: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      21: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      24: invokevirtual #643                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.traits:()Ljava/util/List;
+      27: astore        4
+      29: aload         4
+      31: aload_1
+      32: invokeinterface #649,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      37: ifeq          42
+      40: iconst_1
+      41: ireturn
+      42: aload_3
+      43: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      46: ifeq          70
+      49: aload_3
+      50: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      53: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      56: invokevirtual #643                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.traits:()Ljava/util/List;
+      59: astore        5
+      61: aload         5
+      63: aload_1
+      64: invokeinterface #649,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      69: ireturn
+      70: iconst_0
+      71: ireturn
+
+  public void m_7334_(net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #916                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7334_:(Lnet/minecraft/world/entity/Entity;)V
+       5: aload_0
+       6: ldc_w         #310                // String flaming
+       9: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+      12: ifeq          40
+      15: aload_1
+      16: instanceof    #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      19: ifeq          35
+      22: aload_1
+      23: checkcast     #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      26: ldc_w         #310                // String flaming
+      29: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+      32: ifne          40
+      35: aload_1
+      36: iconst_3
+      37: invokevirtual #919                // Method net/minecraft/world/entity/Entity.m_20254_:(I)V
+      40: aload_0
+      41: invokevirtual #282                // Method isHungry:()Z
+      44: ifne          48
+      47: return
+      48: aload_0
+      49: invokevirtual #921                // Method getEdibleMobs:()Ljava/util/List;
+      52: astore_2
+      53: aload_2
+      54: ifnonnull     58
+      57: return
+      58: aload_2
+      59: invokeinterface #260,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      64: astore_3
+      65: aload_3
+      66: invokeinterface #265,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      71: ifeq          114
+      74: aload_3
+      75: invokeinterface #268,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      80: checkcast     #809                // class net/minecraft/world/entity/EntityType
+      83: astore        4
+      85: aload_1
+      86: invokevirtual #922                // Method net/minecraft/world/entity/Entity.m_6095_:()Lnet/minecraft/world/entity/EntityType;
+      89: aload         4
+      91: if_acmpne     111
+      94: aload_0
+      95: aload_1
+      96: checkcast     #238                // class net/minecraft/world/entity/LivingEntity
+      99: invokevirtual #926                // Method m_33637_:(Lnet/minecraft/world/entity/LivingEntity;)V
+     102: aload_0
+     103: aload_1
+     104: checkcast     #238                // class net/minecraft/world/entity/LivingEntity
+     107: iconst_0
+     108: invokestatic  #272                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.applyNegativeEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Z)V
+     111: goto          65
+     114: return
+
+  public boolean m_214076_(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: aload_0
+       1: invokevirtual #282                // Method isHungry:()Z
+       4: ifne          9
+       7: iconst_1
+       8: ireturn
+       9: aload_0
+      10: invokevirtual #921                // Method getEdibleMobs:()Ljava/util/List;
+      13: astore_3
+      14: aload_3
+      15: ifnonnull     20
+      18: iconst_1
+      19: ireturn
+      20: aload_3
+      21: invokeinterface #260,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      26: astore        4
+      28: aload         4
+      30: invokeinterface #265,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      35: ifeq          75
+      38: aload         4
+      40: invokeinterface #268,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      45: checkcast     #809                // class net/minecraft/world/entity/EntityType
+      48: astore        5
+      50: aload_2
+      51: invokevirtual #772                // Method net/minecraft/world/entity/LivingEntity.m_6095_:()Lnet/minecraft/world/entity/EntityType;
+      54: aload         5
+      56: if_acmpne     72
+      59: aload_0
+      60: aload_0
+      61: aload_2
+      62: invokevirtual #772                // Method net/minecraft/world/entity/LivingEntity.m_6095_:()Lnet/minecraft/world/entity/EntityType;
+      65: invokevirtual #933                // Method getFavoriteEntity:(Lnet/minecraft/world/entity/EntityType;)Z
+      68: aconst_null
+      69: invokevirtual #937                // Method handleFeed:(ZLnet/minecraft/world/item/ItemStack;)V
+      72: goto          28
+      75: iconst_1
+      76: ireturn
+
+  public void m_6123_(net.minecraft.world.entity.player.Player);
+    Code:
+       0: aload_1
+       1: getstatic     #506                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.SLIME_VAC:Lnet/minecraftforge/registries/RegistryObject;
+       4: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       7: checkcast     #511                // class net/minecraft/world/item/Item
+      10: invokevirtual #944                // Method net/minecraft/world/entity/player/Player.m_21055_:(Lnet/minecraft/world/item/Item;)Z
+      13: ifeq          78
+      16: aload_1
+      17: invokevirtual #947                // Method net/minecraft/world/entity/player/Player.m_6047_:()Z
+      20: ifeq          78
+      23: aload_1
+      24: invokestatic  #953                // Method io/github/chakyl/splendidslimes/item/SlimeVac.playerCanPickupSlime:(Lnet/minecraft/world/entity/player/Player;)Z
+      27: ifeq          78
+      30: aload_0
+      31: invokevirtual #706                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+      34: invokevirtual #709                // Method java/lang/String.isEmpty:()Z
+      37: ifne          44
+      40: iconst_1
+      41: goto          45
+      44: iconst_0
+      45: istore_2
+      46: iload_2
+      47: ifeq          67
+      50: aload_1
+      51: invokestatic  #956                // Method io/github/chakyl/splendidslimes/item/SlimeVac.hasLargo:(Lnet/minecraft/world/entity/player/Player;)Z
+      54: ifne          67
+      57: aload_0
+      58: aload_1
+      59: iconst_1
+      60: invokevirtual #958                // Method pickupSlime:(Lnet/minecraft/world/entity/player/Player;Z)Lnet/minecraft/world/InteractionResult;
+      63: pop
+      64: goto          78
+      67: iload_2
+      68: ifne          78
+      71: aload_0
+      72: aload_1
+      73: iconst_0
+      74: invokevirtual #958                // Method pickupSlime:(Lnet/minecraft/world/entity/player/Player;Z)Lnet/minecraft/world/InteractionResult;
+      77: pop
+      78: aload_0
+      79: invokevirtual #961                // Method m_7483_:()Z
+      82: ifeq          126
+      85: aload_0
+      86: invokevirtual #149                // Method getHappiness:()I
+      89: getstatic     #296                // Field FURIOUS_THRESHOLD:I
+      92: if_icmple     115
+      95: aload_0
+      96: ldc_w         #963                // String spiky
+      99: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     102: ifne          115
+     105: aload_0
+     106: ldc_w         #965                // String feral
+     109: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     112: ifeq          126
+     115: aload_0
+     116: aload_1
+     117: iconst_0
+     118: invokestatic  #272                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.applyNegativeEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Z)V
+     121: aload_0
+     122: aload_1
+     123: invokespecial #967                // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_6123_:(Lnet/minecraft/world/entity/player/Player;)V
+     126: aload_0
+     127: invokevirtual #961                // Method m_7483_:()Z
+     130: ifeq          148
+     133: aload_0
+     134: ldc_w         #310                // String flaming
+     137: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     140: ifeq          148
+     143: aload_1
+     144: iconst_3
+     145: invokevirtual #968                // Method net/minecraft/world/entity/player/Player.m_20254_:(I)V
+     148: return
+
+  private void handleSlimeCandy();
+    Code:
+       0: aload_0
+       1: invokevirtual #149                // Method getHappiness:()I
+       4: istore_1
+       5: iload_1
+       6: getstatic     #296                // Field FURIOUS_THRESHOLD:I
+       9: if_icmpge     19
+      12: getstatic     #218                // Field UNHAPPY_THRESHOLD:I
+      15: istore_2
+      16: goto          37
+      19: iload_1
+      20: getstatic     #218                // Field UNHAPPY_THRESHOLD:I
+      23: if_icmpge     33
+      26: getstatic     #226                // Field HAPPY_THRESHOLD:I
+      29: istore_2
+      30: goto          37
+      33: getstatic     #347                // Field MAX_HAPPINESS:I
+      36: istore_2
+      37: aload_0
+      38: iload_2
+      39: invokevirtual #350                // Method setHappiness:(I)V
+      42: return
+
+  public void handleFeed(boolean, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_0
+       1: invokevirtual #149                // Method getHappiness:()I
+       4: istore_3
+       5: iload_1
+       6: ifeq          14
+       9: bipush        50
+      11: goto          16
+      14: bipush        25
+      16: istore        4
+      18: iconst_0
+      19: istore        5
+      21: aload_2
+      22: ifnull        155
+      25: aload_2
+      26: getstatic     #669                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.SLIME_CANDY:Lnet/minecraftforge/registries/RegistryObject;
+      29: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      32: checkcast     #511                // class net/minecraft/world/item/Item
+      35: invokevirtual #517                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+      38: ifeq          155
+      41: aload_0
+      42: invokevirtual #972                // Method handleSlimeCandy:()V
+      45: iconst_0
+      46: istore        6
+      48: iload         6
+      50: bipush        8
+      52: if_icmpge     155
+      55: aload_0
+      56: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+      59: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+      64: ldc2_w        #973                // double 0.04d
+      67: dmul
+      68: dstore        7
+      70: aload_0
+      71: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+      74: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+      79: ldc2_w        #973                // double 0.04d
+      82: dmul
+      83: dstore        9
+      85: aload_0
+      86: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+      89: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+      94: ldc2_w        #973                // double 0.04d
+      97: dmul
+      98: dstore        11
+     100: aload_0
+     101: invokevirtual #719                // Method m_20194_:()Lnet/minecraft/server/MinecraftServer;
+     104: aload_0
+     105: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     108: invokevirtual #978                // Method net/minecraft/world/level/Level.m_46472_:()Lnet/minecraft/resources/ResourceKey;
+     111: invokevirtual #982                // Method net/minecraft/server/MinecraftServer.m_129880_:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/server/level/ServerLevel;
+     114: getstatic     #985                // Field net/minecraft/core/particles/ParticleTypes.f_123758_:Lnet/minecraft/core/particles/SimpleParticleType;
+     117: aload_0
+     118: dconst_1
+     119: invokevirtual #402                // Method m_20208_:(D)D
+     122: aload_0
+     123: invokevirtual #410                // Method m_20187_:()D
+     126: ldc2_w        #393                // double 0.5d
+     129: dadd
+     130: aload_0
+     131: dconst_1
+     132: invokevirtual #413                // Method m_20262_:(D)D
+     135: iconst_1
+     136: dload         7
+     138: dload         9
+     140: dload         11
+     142: ldc2_w        #424                // double 0.2d
+     145: invokevirtual #991                // Method net/minecraft/server/level/ServerLevel.m_8767_:(Lnet/minecraft/core/particles/ParticleOptions;DDDIDDDD)I
+     148: pop
+     149: iinc          6, 1
+     152: goto          48
+     155: aload_0
+     156: invokevirtual #715                // Method getTamed:()Z
+     159: ifne          281
+     162: aconst_null
+     163: astore        6
+     165: aload_0
+     166: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     169: ldc_w         #498                // class net/minecraft/world/entity/player/Player
+     172: aload_0
+     173: invokevirtual #242                // Method m_20191_:()Lnet/minecraft/world/phys/AABB;
+     176: ldc2_w        #992                // double 18.0d
+     179: invokevirtual #250                // Method net/minecraft/world/phys/AABB.m_82400_:(D)Lnet/minecraft/world/phys/AABB;
+     182: invokevirtual #254                // Method net/minecraft/world/level/Level.m_45976_:(Ljava/lang/Class;Lnet/minecraft/world/phys/AABB;)Ljava/util/List;
+     185: astore        7
+     187: aload         7
+     189: invokeinterface #994,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     194: ifne          281
+     197: aload         7
+     199: invokeinterface #260,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     204: astore        8
+     206: aload         8
+     208: invokeinterface #265,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     213: ifeq          263
+     216: aload         8
+     218: invokeinterface #268,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     223: checkcast     #498                // class net/minecraft/world/entity/player/Player
+     226: astore        9
+     228: aload         6
+     230: ifnonnull     240
+     233: aload         9
+     235: astore        6
+     237: goto          260
+     240: aload         9
+     242: aload_0
+     243: invokevirtual #998                // Method net/minecraft/world/entity/player/Player.m_20270_:(Lnet/minecraft/world/entity/Entity;)F
+     246: aload         6
+     248: aload_0
+     249: invokevirtual #998                // Method net/minecraft/world/entity/player/Player.m_20270_:(Lnet/minecraft/world/entity/Entity;)F
+     252: fcmpg
+     253: ifge          260
+     256: aload         9
+     258: astore        6
+     260: goto          206
+     263: aload_0
+     264: aload         6
+     266: invokevirtual #1001               // Method net/minecraft/world/entity/player/Player.m_20148_:()Ljava/util/UUID;
+     269: invokevirtual #1003               // Method setOwnerUUID:(Ljava/util/UUID;)V
+     272: aload_0
+     273: iconst_1
+     274: invokevirtual #1005               // Method setTamed:(Z)V
+     277: aload_0
+     278: invokevirtual #1008               // Method m_21530_:()V
+     281: iload_1
+     282: ifeq          394
+     285: iconst_0
+     286: istore        6
+     288: iload         6
+     290: iconst_4
+     291: if_icmpge     394
+     294: aload_0
+     295: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     298: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     303: ldc2_w        #1009               // double 0.02d
+     306: dmul
+     307: dstore        7
+     309: aload_0
+     310: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     313: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     318: ldc2_w        #1009               // double 0.02d
+     321: dmul
+     322: dstore        9
+     324: aload_0
+     325: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     328: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     333: ldc2_w        #1009               // double 0.02d
+     336: dmul
+     337: dstore        11
+     339: aload_0
+     340: invokevirtual #719                // Method m_20194_:()Lnet/minecraft/server/MinecraftServer;
+     343: aload_0
+     344: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     347: invokevirtual #978                // Method net/minecraft/world/level/Level.m_46472_:()Lnet/minecraft/resources/ResourceKey;
+     350: invokevirtual #982                // Method net/minecraft/server/MinecraftServer.m_129880_:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/server/level/ServerLevel;
+     353: getstatic     #985                // Field net/minecraft/core/particles/ParticleTypes.f_123758_:Lnet/minecraft/core/particles/SimpleParticleType;
+     356: aload_0
+     357: dconst_1
+     358: invokevirtual #402                // Method m_20208_:(D)D
+     361: aload_0
+     362: invokevirtual #410                // Method m_20187_:()D
+     365: ldc2_w        #393                // double 0.5d
+     368: dadd
+     369: aload_0
+     370: dconst_1
+     371: invokevirtual #413                // Method m_20262_:(D)D
+     374: iconst_1
+     375: dload         7
+     377: dload         9
+     379: dload         11
+     381: ldc2_w        #424                // double 0.2d
+     384: invokevirtual #991                // Method net/minecraft/server/level/ServerLevel.m_8767_:(Lnet/minecraft/core/particles/ParticleOptions;DDDIDDDD)I
+     387: pop
+     388: iinc          6, 1
+     391: goto          288
+     394: aload_0
+     395: invokestatic  #1014               // Method io/github/chakyl/splendidslimes/util/SlimeComfortUtils.getNearbyFriends:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)Ljava/util/List;
+     398: invokeinterface #1017,  1         // InterfaceMethod java/util/List.size:()I
+     403: istore        6
+     405: iload         6
+     407: iconst_3
+     408: if_icmplt     414
+     411: iinc          4, 15
+     414: iload         6
+     416: iconst_5
+     417: if_icmple     423
+     420: iinc          4, 15
+     423: aload_0
+     424: invokestatic  #1020               // Method io/github/chakyl/splendidslimes/util/SlimeComfortUtils.slimeIsSuffocated:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)Z
+     427: ifne          437
+     430: iload         6
+     432: bipush        8
+     434: if_icmple     443
+     437: iconst_1
+     438: istore        5
+     440: iinc          4, -120
+     443: aload_0
+     444: invokestatic  #1023               // Method io/github/chakyl/splendidslimes/util/SlimeComfortUtils.diverseTraitCheck:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)Z
+     447: ifeq          459
+     450: iconst_1
+     451: istore        5
+     453: aload_0
+     454: bipush        -40
+     456: invokevirtual #294                // Method addHappiness:(I)V
+     459: aload_0
+     460: invokestatic  #1026               // Method io/github/chakyl/splendidslimes/util/SlimeComfortUtils.photosynthesizingTraitCheck:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)Z
+     463: ifeq          475
+     466: iconst_1
+     467: istore        5
+     469: aload_0
+     470: bipush        -40
+     472: invokevirtual #294                // Method addHappiness:(I)V
+     475: aload_0
+     476: ldc_w         #1028               // String picky
+     479: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     482: ifeq          559
+     485: aload_0
+     486: invokevirtual #640                // Method isLargo:()Z
+     489: ifeq          559
+     492: aload_2
+     493: ifnull        559
+     496: aload_0
+     497: aload_2
+     498: invokevirtual #1030               // Method isPrimaryFood:(Lnet/minecraft/world/item/ItemStack;)Z
+     501: istore        7
+     503: aload_0
+     504: invokevirtual #1032               // Method getPickyLastAte:()I
+     507: ifne          515
+     510: iload         7
+     512: ifne          528
+     515: aload_0
+     516: invokevirtual #1032               // Method getPickyLastAte:()I
+     519: iconst_1
+     520: if_icmpne     538
+     523: iload         7
+     525: ifne          538
+     528: iconst_1
+     529: istore        5
+     531: bipush        -60
+     533: istore        4
+     535: goto          559
+     538: aload_0
+     539: invokevirtual #1032               // Method getPickyLastAte:()I
+     542: iconst_1
+     543: if_icmpne     554
+     546: aload_0
+     547: iconst_0
+     548: invokevirtual #1034               // Method setPickyLastAte:(I)V
+     551: goto          559
+     554: aload_0
+     555: iconst_1
+     556: invokevirtual #1034               // Method setPickyLastAte:(I)V
+     559: iload         5
+     561: ifeq          673
+     564: iconst_0
+     565: istore        7
+     567: iload         7
+     569: iconst_4
+     570: if_icmpge     673
+     573: aload_0
+     574: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     577: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     582: ldc2_w        #1009               // double 0.02d
+     585: dmul
+     586: dstore        8
+     588: aload_0
+     589: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     592: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     597: ldc2_w        #1009               // double 0.02d
+     600: dmul
+     601: dstore        10
+     603: aload_0
+     604: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     607: invokeinterface #423,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188583_:()D
+     612: ldc2_w        #1009               // double 0.02d
+     615: dmul
+     616: dstore        12
+     618: aload_0
+     619: invokevirtual #719                // Method m_20194_:()Lnet/minecraft/server/MinecraftServer;
+     622: aload_0
+     623: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     626: invokevirtual #978                // Method net/minecraft/world/level/Level.m_46472_:()Lnet/minecraft/resources/ResourceKey;
+     629: invokevirtual #982                // Method net/minecraft/server/MinecraftServer.m_129880_:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/server/level/ServerLevel;
+     632: getstatic     #1037               // Field net/minecraft/core/particles/ParticleTypes.f_123792_:Lnet/minecraft/core/particles/SimpleParticleType;
+     635: aload_0
+     636: dconst_1
+     637: invokevirtual #402                // Method m_20208_:(D)D
+     640: aload_0
+     641: invokevirtual #410                // Method m_20187_:()D
+     644: ldc2_w        #393                // double 0.5d
+     647: dadd
+     648: aload_0
+     649: dconst_1
+     650: invokevirtual #413                // Method m_20262_:(D)D
+     653: iconst_1
+     654: dload         8
+     656: dload         10
+     658: dload         12
+     660: ldc2_w        #424                // double 0.2d
+     663: invokevirtual #991                // Method net/minecraft/server/level/ServerLevel.m_8767_:(Lnet/minecraft/core/particles/ParticleOptions;DDDIDDDD)I
+     666: pop
+     667: iinc          7, 1
+     670: goto          567
+     673: aload_0
+     674: fconst_2
+     675: invokevirtual #1041               // Method m_5634_:(F)V
+     678: aload_0
+     679: getstatic     #458                // Field net/minecraft/sounds/SoundEvents.f_11752_:Lnet/minecraft/sounds/SoundEvent;
+     682: fconst_1
+     683: ldc_w         #459                // float 0.9f
+     686: invokevirtual #463                // Method m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     689: aload_0
+     690: iload         4
+     692: invokevirtual #294                // Method addHappiness:(I)V
+     695: aload_0
+     696: ldc_w         #601                // String ravenous
+     699: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+     702: ifeq          842
+     705: iconst_0
+     706: istore        7
+     708: aload_0
+     709: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+     712: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+     715: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+     718: invokevirtual #1045               // Method io/github/chakyl/splendidslimes/data/SlimeBreed.ravenousFoods:()Lio/github/chakyl/splendidslimes/data/RavenousFoods;
+     721: invokevirtual #1048               // Method io/github/chakyl/splendidslimes/data/RavenousFoods.iterator:()Ljava/util/Iterator;
+     724: astore        8
+     726: aload         8
+     728: invokeinterface #265,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     733: ifeq          803
+     736: aload         8
+     738: invokeinterface #268,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     743: checkcast     #1050               // class io/github/chakyl/splendidslimes/data/RavenousFood
+     746: astore        9
+     748: aload_2
+     749: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+     752: invokevirtual #1053               // Method net/minecraft/world/item/Item.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+     755: aload         9
+     757: invokevirtual #1056               // Method io/github/chakyl/splendidslimes/data/RavenousFood.getFood:()Lnet/minecraft/world/item/ItemStack;
+     760: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+     763: invokevirtual #517                // Method net/minecraft/world/item/ItemStack.m_150930_:(Lnet/minecraft/world/item/Item;)Z
+     766: ifeq          800
+     769: aload_0
+     770: aload_0
+     771: invokevirtual #183                // Method getHunger:()I
+     774: aload         9
+     776: invokevirtual #1059               // Method io/github/chakyl/splendidslimes/data/RavenousFood.getHungerAmount:()I
+     779: iadd
+     780: invokevirtual #188                // Method setHunger:(I)V
+     783: aload_0
+     784: aload_0
+     785: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     788: invokestatic  #155                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.getDay:(Lnet/minecraft/world/level/Level;)I
+     791: invokevirtual #1061               // Method setDayLastAte:(I)V
+     794: iconst_1
+     795: istore        7
+     797: goto          803
+     800: goto          726
+     803: iload         7
+     805: ifne          839
+     808: aload_0
+     809: aload_0
+     810: invokevirtual #183                // Method getHunger:()I
+     813: getstatic     #1066               // Field io/github/chakyl/splendidslimes/SlimyConfig.slimeHungerAmount:I
+     816: i2f
+     817: ldc_w         #1067               // float 4.0f
+     820: fdiv
+     821: invokestatic  #1073               // Method net/minecraft/util/Mth.m_14143_:(F)I
+     824: iadd
+     825: invokevirtual #188                // Method setHunger:(I)V
+     828: aload_0
+     829: aload_0
+     830: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     833: invokestatic  #155                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.getDay:(Lnet/minecraft/world/level/Level;)I
+     836: invokevirtual #1061               // Method setDayLastAte:(I)V
+     839: goto          860
+     842: aload_0
+     843: aload_0
+     844: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     847: invokestatic  #155                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.getDay:(Lnet/minecraft/world/level/Level;)I
+     850: invokevirtual #1061               // Method setDayLastAte:(I)V
+     853: aload_0
+     854: getstatic     #603                // Field SLIME_MAX_HUNGER:I
+     857: invokevirtual #188                // Method setHunger:(I)V
+     860: aload_0
+     861: invokevirtual #183                // Method getHunger:()I
+     864: getstatic     #603                // Field SLIME_MAX_HUNGER:I
+     867: if_icmpne     882
+     870: iload_3
+     871: getstatic     #296                // Field FURIOUS_THRESHOLD:I
+     874: if_icmple     882
+     877: aload_0
+     878: iload_1
+     879: invokevirtual #1076               // Method dropPlort:(Z)V
+     882: return
+
+  public void dropPlort(boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #1089               // Method getSlimePlort:()Lnet/minecraft/world/item/ItemStack;
+       4: astore_2
+       5: aload_0
+       6: invokevirtual #1092               // Method m_33632_:()I
+       9: istore_3
+      10: iload_3
+      11: iconst_2
+      12: if_icmplt     125
+      15: iload_1
+      16: ifeq          33
+      19: aload_0
+      20: ldc_w         #1094               // String pompous
+      23: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+      26: ifne          33
+      29: iconst_1
+      30: goto          34
+      33: iconst_0
+      34: istore        4
+      36: iload         4
+      38: ifeq          46
+      41: aload_2
+      42: iconst_2
+      43: invokevirtual #1097               // Method net/minecraft/world/item/ItemStack.m_41764_:(I)V
+      46: aload_0
+      47: aload_2
+      48: invokevirtual #1101               // Method m_19983_:(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity;
+      51: pop
+      52: aload_0
+      53: invokevirtual #706                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+      56: invokevirtual #709                // Method java/lang/String.isEmpty:()Z
+      59: ifne          122
+      62: aload_0
+      63: iconst_1
+      64: invokestatic  #743                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      67: invokevirtual #746                // Method getSlimePlort:(Ljava/lang/Boolean;)Lnet/minecraft/world/item/ItemStack;
+      70: astore        5
+      72: iload         4
+      74: ifeq          83
+      77: aload         5
+      79: iconst_2
+      80: invokevirtual #1097               // Method net/minecraft/world/item/ItemStack.m_41764_:(I)V
+      83: aload_0
+      84: aload         5
+      86: invokevirtual #1101               // Method m_19983_:(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity;
+      89: pop
+      90: iload_3
+      91: iconst_2
+      92: if_icmpne     122
+      95: aload_0
+      96: aload_0
+      97: invokevirtual #1105               // Method m_20097_:()Lnet/minecraft/core/BlockPos;
+     100: invokevirtual #1110               // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+     103: invokevirtual #1113               // Method net/minecraft/core/BlockPos.m_252807_:()Lnet/minecraft/world/phys/Vec3;
+     106: invokevirtual #1116               // Method m_20219_:(Lnet/minecraft/world/phys/Vec3;)V
+     109: aload_0
+     110: iconst_0
+     111: invokevirtual #1119               // Method m_6862_:(Z)V
+     114: aload_0
+     115: iload_3
+     116: iconst_1
+     117: iadd
+     118: iconst_1
+     119: invokevirtual #1123               // Method m_7839_:(IZ)V
+     122: goto          152
+     125: aload_0
+     126: aload_0
+     127: invokevirtual #1105               // Method m_20097_:()Lnet/minecraft/core/BlockPos;
+     130: invokevirtual #1110               // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+     133: invokevirtual #1113               // Method net/minecraft/core/BlockPos.m_252807_:()Lnet/minecraft/world/phys/Vec3;
+     136: invokevirtual #1116               // Method m_20219_:(Lnet/minecraft/world/phys/Vec3;)V
+     139: aload_0
+     140: iconst_0
+     141: invokevirtual #1119               // Method m_6862_:(Z)V
+     144: aload_0
+     145: iload_3
+     146: iconst_1
+     147: iadd
+     148: iconst_1
+     149: invokevirtual #1123               // Method m_7839_:(IZ)V
+     152: return
+
+  public net.minecraft.world.item.ItemStack m_142340_();
+    Code:
+       0: getstatic     #1130               // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.SPLENDID_SLIME_SPAWN_EGG:Lnet/minecraftforge/registries/RegistryObject;
+       3: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+       6: checkcast     #1132               // class io/github/chakyl/splendidslimes/item/SlimeSpawnEggItem
+       9: invokevirtual #1133               // Method io/github/chakyl/splendidslimes/item/SlimeSpawnEggItem.m_7968_:()Lnet/minecraft/world/item/ItemStack;
+      12: astore_1
+      13: aload_1
+      14: ldc_w         #1135               // String EntityTag
+      17: invokevirtual #752                // Method net/minecraft/world/item/ItemStack.m_41698_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      20: ldc_w         #1137               // String Breed
+      23: aload_0
+      24: invokevirtual #486                // Method getSlimeBreed:()Ljava/lang/String;
+      27: invokevirtual #490                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+      30: aload_1
+      31: areturn
+
+  protected net.minecraft.core.particles.ParticleOptions m_6300_();
+    Code:
+       0: aload_0
+       1: invokevirtual #1089               // Method getSlimePlort:()Lnet/minecraft/world/item/ItemStack;
+       4: astore_1
+       5: aload_0
+       6: invokevirtual #192                // Method getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       9: astore_2
+      10: aload_2
+      11: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      14: ifeq          47
+      17: aload_2
+      18: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      21: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      24: invokevirtual #1142               // Method io/github/chakyl/splendidslimes/data/SlimeBreed.particle:()Lnet/minecraft/world/item/ItemStack;
+      27: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      30: getstatic     #1147               // Field net/minecraft/world/item/Items.f_41852_:Lnet/minecraft/world/item/Item;
+      33: if_acmpeq     47
+      36: aload_2
+      37: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      40: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      43: invokevirtual #1142               // Method io/github/chakyl/splendidslimes/data/SlimeBreed.particle:()Lnet/minecraft/world/item/ItemStack;
+      46: astore_1
+      47: new           #1149               // class net/minecraft/core/particles/ItemParticleOption
+      50: dup
+      51: getstatic     #1153               // Field net/minecraft/core/particles/ParticleTypes.f_123752_:Lnet/minecraft/core/particles/ParticleType;
+      54: aload_1
+      55: invokespecial #1156               // Method net/minecraft/core/particles/ItemParticleOption."<init>":(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/world/item/ItemStack;)V
+      58: areturn
+
+  public void handlePickup(net.minecraft.world.item.ItemStack, net.minecraft.world.entity.item.ItemEntity);
+    Code:
+       0: iconst_0
+       1: istore_3
+       2: aload_0
+       3: invokevirtual #149                // Method getHappiness:()I
+       6: getstatic     #296                // Field FURIOUS_THRESHOLD:I
+       9: if_icmple     180
+      12: aload_1
+      13: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      16: getstatic     #666                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.PLORT:Lnet/minecraftforge/registries/RegistryObject;
+      19: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      22: if_acmpne     180
+      25: aload_1
+      26: invokevirtual #674                // Method net/minecraft/world/item/ItemStack.m_41782_:()Z
+      29: ifeq          180
+      32: aload_1
+      33: ldc_w         #678                // String plort
+      36: invokevirtual #681                // Method net/minecraft/world/item/ItemStack.m_41737_:(Ljava/lang/String;)Lnet/minecraft/nbt/CompoundTag;
+      39: astore        4
+      41: aload         4
+      43: ifnull        180
+      46: aload         4
+      48: ldc           #65                 // String id
+      50: invokevirtual #684                // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      53: ifeq          180
+      56: iconst_1
+      57: istore_3
+      58: aload_0
+      59: invokevirtual #706                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+      62: invokevirtual #709                // Method java/lang/String.isEmpty:()Z
+      65: ifeq          176
+      68: aload_0
+      69: invokevirtual #1092               // Method m_33632_:()I
+      72: iconst_4
+      73: if_icmpge     106
+      76: aload_0
+      77: aload_0
+      78: invokevirtual #1105               // Method m_20097_:()Lnet/minecraft/core/BlockPos;
+      81: invokevirtual #1110               // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+      84: invokevirtual #1113               // Method net/minecraft/core/BlockPos.m_252807_:()Lnet/minecraft/world/phys/Vec3;
+      87: invokevirtual #1116               // Method m_20219_:(Lnet/minecraft/world/phys/Vec3;)V
+      90: aload_0
+      91: iconst_0
+      92: invokevirtual #1119               // Method m_6862_:(Z)V
+      95: aload_0
+      96: aload_0
+      97: invokevirtual #1092               // Method m_33632_:()I
+     100: iconst_1
+     101: iadd
+     102: iconst_0
+     103: invokevirtual #1123               // Method m_7839_:(IZ)V
+     106: aload_0
+     107: getstatic     #1162               // Field net/minecraft/sounds/SoundEvents.f_144049_:Lnet/minecraft/sounds/SoundEvent;
+     110: fconst_1
+     111: ldc_w         #459                // float 0.9f
+     114: invokevirtual #463                // Method m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     117: aload_0
+     118: aload         4
+     120: ldc           #65                 // String id
+     122: invokevirtual #688                // Method net/minecraft/nbt/CompoundTag.m_128423_:(Ljava/lang/String;)Lnet/minecraft/nbt/Tag;
+     125: invokeinterface #693,  1          // InterfaceMethod net/minecraft/nbt/Tag.toString:()Ljava/lang/String;
+     130: ldc_w         #1164               // String \"
+     133: ldc_w         #1166               // String
+     136: invokevirtual #1170               // Method java/lang/String.replace:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+     139: invokevirtual #1173               // Method setSlimeSecondaryBreed:(Ljava/lang/String;)V
+     142: aload_0
+     143: invokevirtual #195                // Method getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+     146: astore        5
+     148: aload         5
+     150: invokevirtual #200                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+     153: ifeq          173
+     156: aload_0
+     157: aload_0
+     158: aload         5
+     160: invokevirtual #204                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+     163: checkcast     #206                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+     166: invokevirtual #210                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.innateEffects:()Ljava/util/List;
+     169: iconst_0
+     170: invokestatic  #214                // Method io/github/chakyl/splendidslimes/util/SlimeUtils.applyEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/List;Z)V
+     173: goto          180
+     176: aload_0
+     177: invokevirtual #1176               // Method causeChaos:()V
+     180: iload_3
+     181: ifne          197
+     184: aload_0
+     185: aload_0
+     186: aload_1
+     187: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+     190: invokevirtual #1178               // Method isFavoriteFood:(Lnet/minecraft/world/item/Item;)Z
+     193: aload_1
+     194: invokevirtual #937                // Method handleFeed:(ZLnet/minecraft/world/item/ItemStack;)V
+     197: aload_1
+     198: aload_1
+     199: invokevirtual #1181               // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+     202: iconst_1
+     203: isub
+     204: invokevirtual #1097               // Method net/minecraft/world/item/ItemStack.m_41764_:(I)V
+     207: aload_2
+     208: ifnull        216
+     211: aload_2
+     212: aload_1
+     213: invokevirtual #1185               // Method net/minecraft/world/entity/item/ItemEntity.m_32045_:(Lnet/minecraft/world/item/ItemStack;)V
+     216: return
+
+  protected void m_7581_(net.minecraft.world.entity.item.ItemEntity);
+    Code:
+       0: aload_1
+       1: invokevirtual #1190               // Method net/minecraft/world/entity/item/ItemEntity.m_32055_:()Lnet/minecraft/world/item/ItemStack;
+       4: astore_2
+       5: aload_0
+       6: aload_2
+       7: invokevirtual #1192               // Method m_7243_:(Lnet/minecraft/world/item/ItemStack;)Z
+      10: ifeq          19
+      13: aload_0
+      14: aload_2
+      15: aload_1
+      16: invokevirtual #1194               // Method handlePickup:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/item/ItemEntity;)V
+      19: return
+
+  public void causeChaos();
+    Code:
+       0: aload_0
+       1: invokevirtual #1196               // Method setTarred:()V
+       4: aload_0
+       5: invokevirtual #323                // Method m_6074_:()V
+       8: return
+
+  public boolean m_6469_(net.minecraft.world.damagesource.DamageSource, float);
+    Code:
+       0: aload_0
+       1: ldc_w         #1200               // String defiant
+       4: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+       7: ifeq          94
+      10: aload_1
+      11: getstatic     #1203               // Field net/minecraft/world/damagesource/DamageTypes.f_286979_:Lnet/minecraft/resources/ResourceKey;
+      14: invokevirtual #894                // Method net/minecraft/world/damagesource/DamageSource.m_276093_:(Lnet/minecraft/resources/ResourceKey;)Z
+      17: ifeq          27
+      20: aload_0
+      21: aload_1
+      22: fload_2
+      23: invokespecial #1205               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_6469_:(Lnet/minecraft/world/damagesource/DamageSource;F)Z
+      26: ireturn
+      27: fload_2
+      28: fconst_1
+      29: fcmpg
+      30: ifgt          40
+      33: aload_0
+      34: aload_1
+      35: fload_2
+      36: invokespecial #1205               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_6469_:(Lnet/minecraft/world/damagesource/DamageSource;F)Z
+      39: ireturn
+      40: fconst_1
+      41: aload_0
+      42: invokevirtual #1208               // Method m_21223_:()F
+      45: fload_2
+      46: fdiv
+      47: fsub
+      48: f2d
+      49: dstore_3
+      50: aload_0
+      51: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+      54: invokeinterface #236,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      59: f2d
+      60: dload_3
+      61: dcmpg
+      62: ifge          94
+      65: aload_0
+      66: getstatic     #1211               // Field net/minecraft/sounds/SoundEvents.f_12513_:Lnet/minecraft/sounds/SoundEvent;
+      69: ldc_w         #1212               // float 0.4f
+      72: ldc_w         #1213               // float 1.1f
+      75: invokevirtual #463                // Method m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+      78: aload_0
+      79: fload_2
+      80: invokevirtual #1041               // Method m_5634_:(F)V
+      83: aload_0
+      84: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      87: aload_0
+      88: iconst_4
+      89: invokevirtual #366                // Method net/minecraft/world/level/Level.m_7605_:(Lnet/minecraft/world/entity/Entity;B)V
+      92: iconst_0
+      93: ireturn
+      94: aload_0
+      95: aload_1
+      96: fload_2
+      97: invokespecial #1205               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_6469_:(Lnet/minecraft/world/damagesource/DamageSource;F)Z
+     100: ireturn
+
+  protected net.minecraft.world.InteractionResult m_6071_(net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
+    Code:
+       0: aload_1
+       1: invokevirtual #1220               // Method net/minecraft/world/entity/player/Player.m_21205_:()Lnet/minecraft/world/item/ItemStack;
+       4: astore_3
+       5: aload_3
+       6: invokevirtual #1223               // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+       9: ifne          85
+      12: aload_3
+      13: invokevirtual #610                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      16: astore        5
+      18: aload         5
+      20: instanceof    #1225               // class io/github/chakyl/splendidslimes/item/SlimeInspector
+      23: ifeq          44
+      26: aload         5
+      28: checkcast     #1225               // class io/github/chakyl/splendidslimes/item/SlimeInspector
+      31: astore        4
+      33: aload         4
+      35: aload_1
+      36: aload_0
+      37: invokevirtual #1229               // Method io/github/chakyl/splendidslimes/item/SlimeInspector.runInspection:(Lnet/minecraft/world/entity/player/Player;Lio/github/chakyl/splendidslimes/entity/SplendidSlime;)V
+      40: getstatic     #469                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+      43: areturn
+      44: aload_0
+      45: ldc_w         #1231               // String handy
+      48: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+      51: ifeq          85
+      54: aload_0
+      55: aload_3
+      56: invokevirtual #1234               // Method net/minecraft/world/item/ItemStack.m_41777_:()Lnet/minecraft/world/item/ItemStack;
+      59: invokevirtual #1238               // Method m_255207_:(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
+      62: astore        5
+      64: aload         5
+      66: invokevirtual #1223               // Method net/minecraft/world/item/ItemStack.m_41619_:()Z
+      69: ifne          85
+      72: aload_3
+      73: aload         5
+      75: invokevirtual #1181               // Method net/minecraft/world/item/ItemStack.m_41613_:()I
+      78: invokevirtual #1241               // Method net/minecraft/world/item/ItemStack.m_41774_:(I)V
+      81: getstatic     #469                // Field net/minecraft/world/InteractionResult.SUCCESS:Lnet/minecraft/world/InteractionResult;
+      84: areturn
+      85: getstatic     #1244               // Field net/minecraft/world/InteractionResult.FAIL:Lnet/minecraft/world/InteractionResult;
+      88: areturn
+
+  public void m_142687_(net.minecraft.world.entity.Entity$RemovalReason);
+    Code:
+       0: aload_0
+       1: invokevirtual #1092               // Method m_33632_:()I
+       4: istore_2
+       5: aload_0
+       6: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+       9: getfield      #145                // Field net/minecraft/world/level/Level.f_46443_:Z
+      12: ifne          389
+      15: aload_0
+      16: invokevirtual #362                // Method m_21224_:()Z
+      19: ifeq          389
+      22: getstatic     #1255               // Field io/github/chakyl/splendidslimes/SlimyConfig.enableTarrs:Z
+      25: ifeq          35
+      28: aload_0
+      29: invokevirtual #1257               // Method getTarred:()Z
+      32: ifne          250
+      35: iload_2
+      36: iconst_1
+      37: if_icmple     389
+      40: aload_0
+      41: invokevirtual #1261               // Method m_7770_:()Lnet/minecraft/network/chat/Component;
+      44: astore_3
+      45: aload_0
+      46: invokevirtual #1264               // Method m_21525_:()Z
+      49: istore        4
+      51: aload_0
+      52: invokevirtual #773                // Method m_6095_:()Lnet/minecraft/world/entity/EntityType;
+      55: aload_0
+      56: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+      59: invokevirtual #1268               // Method net/minecraft/world/entity/EntityType.m_20615_:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+      62: checkcast     #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      65: astore        5
+      67: aload         5
+      69: ifnull        247
+      72: aload_0
+      73: invokevirtual #1271               // Method m_21532_:()Z
+      76: ifeq          84
+      79: aload         5
+      81: invokevirtual #1008               // Method m_21530_:()V
+      84: aload_0
+      85: invokevirtual #706                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+      88: astore        6
+      90: aload         5
+      92: aload_0
+      93: invokevirtual #486                // Method getSlimeBreed:()Ljava/lang/String;
+      96: invokevirtual #1276               // Method setSlimeBreed:(Ljava/lang/String;)V
+      99: aload         6
+     101: invokevirtual #709                // Method java/lang/String.isEmpty:()Z
+     104: ifne          114
+     107: aload         5
+     109: aload         6
+     111: invokevirtual #1173               // Method setSlimeSecondaryBreed:(Ljava/lang/String;)V
+     114: aload         5
+     116: aload_3
+     117: invokevirtual #1280               // Method m_6593_:(Lnet/minecraft/network/chat/Component;)V
+     120: aload         5
+     122: iload         4
+     124: invokevirtual #1283               // Method m_21557_:(Z)V
+     127: aload         5
+     129: aload_0
+     130: invokevirtual #1286               // Method m_20147_:()Z
+     133: invokevirtual #1289               // Method m_20331_:(Z)V
+     136: aload         5
+     138: iload_2
+     139: iconst_1
+     140: isub
+     141: iconst_1
+     142: invokevirtual #1123               // Method m_7839_:(IZ)V
+     145: aload         5
+     147: aload_0
+     148: invokevirtual #729                // Method getOwnerUUID:()Ljava/util/UUID;
+     151: invokevirtual #1003               // Method setOwnerUUID:(Ljava/util/UUID;)V
+     154: aload         5
+     156: aload_0
+     157: invokevirtual #715                // Method getTamed:()Z
+     160: invokevirtual #1005               // Method setTamed:(Z)V
+     163: aload         5
+     165: aload_0
+     166: invokevirtual #149                // Method getHappiness:()I
+     169: bipush        100
+     171: isub
+     172: invokevirtual #350                // Method setHappiness:(I)V
+     175: aload         5
+     177: aload_0
+     178: invokevirtual #183                // Method getHunger:()I
+     181: invokevirtual #188                // Method setHunger:(I)V
+     184: aload         5
+     186: aload_0
+     187: invokevirtual #172                // Method getDayLastAte:()I
+     190: invokevirtual #1061               // Method setDayLastAte:(I)V
+     193: aload         5
+     195: aload_0
+     196: invokevirtual #165                // Method getDayLastDigested:()I
+     199: invokevirtual #180                // Method setDayLastDigested:(I)V
+     202: aload         5
+     204: aload_0
+     205: invokevirtual #302                // Method m_20185_:()D
+     208: aload_0
+     209: invokevirtual #305                // Method m_20186_:()D
+     212: ldc2_w        #393                // double 0.5d
+     215: dadd
+     216: aload_0
+     217: invokevirtual #308                // Method m_20189_:()D
+     220: aload_0
+     221: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     224: invokeinterface #236,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     229: ldc_w         #1290               // float 360.0f
+     232: fmul
+     233: fconst_0
+     234: invokevirtual #1294               // Method m_7678_:(DDDFF)V
+     237: aload_0
+     238: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     241: aload         5
+     243: invokevirtual #581                // Method net/minecraft/world/level/Level.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+     246: pop
+     247: goto          389
+     250: aload_0
+     251: invokevirtual #1261               // Method m_7770_:()Lnet/minecraft/network/chat/Component;
+     254: astore_3
+     255: aload_0
+     256: invokevirtual #1092               // Method m_33632_:()I
+     259: istore        4
+     261: iload         4
+     263: ifle          269
+     266: iinc          4, -1
+     269: getstatic     #1297               // Field io/github/chakyl/splendidslimes/registry/ModElements$Entities.TARR:Lnet/minecraftforge/registries/RegistryObject;
+     272: invokevirtual #509                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+     275: checkcast     #809                // class net/minecraft/world/entity/EntityType
+     278: aload_0
+     279: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     282: invokevirtual #1268               // Method net/minecraft/world/entity/EntityType.m_20615_:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+     285: checkcast     #4                  // class io/github/chakyl/splendidslimes/entity/SlimeEntityBase
+     288: astore        5
+     290: aload         5
+     292: aload_3
+     293: invokevirtual #1298               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_6593_:(Lnet/minecraft/network/chat/Component;)V
+     296: aload         5
+     298: aload_0
+     299: invokevirtual #486                // Method getSlimeBreed:()Ljava/lang/String;
+     302: invokevirtual #1299               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.setSlimeBreed:(Ljava/lang/String;)V
+     305: aload         5
+     307: aload_0
+     308: invokevirtual #706                // Method getSlimeSecondaryBreed:()Ljava/lang/String;
+     311: invokevirtual #1300               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.setSlimeSecondaryBreed:(Ljava/lang/String;)V
+     314: aload         5
+     316: aload_0
+     317: invokevirtual #1286               // Method m_20147_:()Z
+     320: invokevirtual #1301               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_20331_:(Z)V
+     323: aload         5
+     325: iload         4
+     327: iconst_1
+     328: iadd
+     329: iconst_1
+     330: invokevirtual #1302               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7839_:(IZ)V
+     333: getstatic     #1305               // Field io/github/chakyl/splendidslimes/SlimyConfig.enableForgivingTarrs:Z
+     336: ifeq          344
+     339: aload         5
+     341: invokevirtual #1306               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_21530_:()V
+     344: aload         5
+     346: aload_0
+     347: invokevirtual #302                // Method m_20185_:()D
+     350: aload_0
+     351: invokevirtual #305                // Method m_20186_:()D
+     354: ldc2_w        #393                // double 0.5d
+     357: dadd
+     358: aload_0
+     359: invokevirtual #308                // Method m_20189_:()D
+     362: aload_0
+     363: getfield      #230                // Field f_19796_:Lnet/minecraft/util/RandomSource;
+     366: invokeinterface #236,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+     371: ldc_w         #1290               // float 360.0f
+     374: fmul
+     375: fconst_0
+     376: invokevirtual #1307               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7678_:(DDDFF)V
+     379: aload_0
+     380: invokevirtual #142                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+     383: aload         5
+     385: invokevirtual #581                // Method net/minecraft/world/level/Level.m_7967_:(Lnet/minecraft/world/entity/Entity;)Z
+     388: pop
+     389: aload_0
+     390: aload_1
+     391: invokevirtual #1310               // Method m_142467_:(Lnet/minecraft/world/entity/Entity$RemovalReason;)V
+     394: aload_0
+     395: invokevirtual #1313               // Method invalidateCaps:()V
+     398: aload_0
+     399: getfield      #1317               // Field f_20939_:Lnet/minecraft/world/entity/ai/Brain;
+     402: invokevirtual #1322               // Method net/minecraft/world/entity/ai/Brain.m_276084_:()V
+     405: return
+
+  protected void m_8097_();
+    Code:
+       0: aload_0
+       1: invokespecial #1333               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_8097_:()V
+       4: aload_0
+       5: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+       8: getstatic     #821                // Field HAPPINESS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      11: sipush        500
+      14: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      17: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      20: aload_0
+      21: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      24: getstatic     #850                // Field PICKY_LAST_ATE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      27: iconst_0
+      28: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      31: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      34: aload_0
+      35: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      38: getstatic     #853                // Field DAY_LAST_ATE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      41: iconst_m1
+      42: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      45: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      48: aload_0
+      49: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      52: getstatic     #856                // Field DAY_LAST_DIGESTED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      55: iconst_m1
+      56: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      59: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      62: aload_0
+      63: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      66: getstatic     #842                // Field HUNGER:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      69: iconst_0
+      70: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      73: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      76: aload_0
+      77: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      80: getstatic     #838                // Field TARGET_ENTITY:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      83: ldc_w         #1166               // String
+      86: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      89: aload_0
+      90: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+      93: getstatic     #847                // Field PARTICLE_ANIMATION_TICK:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      96: iconst_m1
+      97: invokestatic  #831                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     100: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+     103: aload_0
+     104: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+     107: getstatic     #877                // Field TAMED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+     110: iconst_0
+     111: invokestatic  #743                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     114: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+     117: aload_0
+     118: getfield      #819                // Field f_19804_:Lnet/minecraft/network/syncher/SynchedEntityData;
+     121: getstatic     #858                // Field OWNER_UUID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+     124: invokestatic  #1340               // Method java/util/Optional.empty:()Ljava/util/Optional;
+     127: invokevirtual #1336               // Method net/minecraft/network/syncher/SynchedEntityData.m_135372_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+     130: return
+
+  public void m_7378_(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_1
+       1: ldc_w         #1346               // String SecondaryBreed
+       4: invokevirtual #1350               // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+       7: astore_2
+       8: aload_0
+       9: ldc_w         #676                // String largoless
+      12: invokevirtual #224                // Method hasTrait:(Ljava/lang/String;)Z
+      15: ifeq          25
+      18: aload_0
+      19: ldc_w         #1166               // String
+      22: invokevirtual #1173               // Method setSlimeSecondaryBreed:(Ljava/lang/String;)V
+      25: aload_2
+      26: invokevirtual #709                // Method java/lang/String.isEmpty:()Z
+      29: ifne          46
+      32: aload_2
+      33: invokestatic  #698                // Method io/github/chakyl/splendidslimes/util/SlimeData.plortIsFromLargoless:(Ljava/lang/String;)Z
+      36: ifeq          46
+      39: aload_0
+      40: ldc_w         #1166               // String
+      43: invokevirtual #1173               // Method setSlimeSecondaryBreed:(Ljava/lang/String;)V
+      46: aload_0
+      47: aload_1
+      48: ldc_w         #1352               // String Hunger
+      51: invokevirtual #1356               // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      54: invokevirtual #188                // Method setHunger:(I)V
+      57: aload_0
+      58: aload_1
+      59: ldc_w         #1358               // String LastAte
+      62: invokevirtual #1356               // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      65: invokevirtual #1034               // Method setPickyLastAte:(I)V
+      68: aload_0
+      69: aload_1
+      70: ldc_w         #1360               // String DayLastAte
+      73: invokevirtual #1356               // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      76: invokevirtual #1061               // Method setDayLastAte:(I)V
+      79: aload_0
+      80: aload_1
+      81: ldc_w         #1362               // String DayLastDigested
+      84: invokevirtual #1356               // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      87: invokevirtual #180                // Method setDayLastDigested:(I)V
+      90: aload_0
+      91: aload_1
+      92: ldc_w         #1364               // String Happiness
+      95: invokevirtual #1356               // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+      98: invokevirtual #350                // Method setHappiness:(I)V
+     101: aload_0
+     102: aload_1
+     103: ldc_w         #1366               // String TargetEntity
+     106: invokevirtual #1350               // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     109: invokevirtual #1368               // Method setTargetEntity:(Ljava/lang/String;)V
+     112: aload_0
+     113: aload_1
+     114: ldc_w         #1370               // String ParticleAnimationTick
+     117: invokevirtual #1356               // Method net/minecraft/nbt/CompoundTag.m_128451_:(Ljava/lang/String;)I
+     120: invokevirtual #369                // Method setParticleAnimationTick:(I)V
+     123: aload_1
+     124: ldc_w         #1372               // String Owner
+     127: invokevirtual #1375               // Method net/minecraft/nbt/CompoundTag.m_128403_:(Ljava/lang/String;)Z
+     130: ifeq          144
+     133: aload_1
+     134: ldc_w         #1372               // String Owner
+     137: invokevirtual #1379               // Method net/minecraft/nbt/CompoundTag.m_128342_:(Ljava/lang/String;)Ljava/util/UUID;
+     140: astore_3
+     141: goto          163
+     144: aload_1
+     145: ldc_w         #1372               // String Owner
+     148: invokevirtual #1350               // Method net/minecraft/nbt/CompoundTag.m_128461_:(Ljava/lang/String;)Ljava/lang/String;
+     151: astore        4
+     153: aload_0
+     154: invokevirtual #719                // Method m_20194_:()Lnet/minecraft/server/MinecraftServer;
+     157: aload         4
+     159: invokestatic  #1385               // Method net/minecraft/server/players/OldUsersConverter.m_11083_:(Lnet/minecraft/server/MinecraftServer;Ljava/lang/String;)Ljava/util/UUID;
+     162: astore_3
+     163: aload_3
+     164: ifnull        187
+     167: aload_0
+     168: aload_3
+     169: invokevirtual #1003               // Method setOwnerUUID:(Ljava/util/UUID;)V
+     172: aload_0
+     173: iconst_1
+     174: invokevirtual #1005               // Method setTamed:(Z)V
+     177: goto          187
+     180: astore        4
+     182: aload_0
+     183: iconst_0
+     184: invokevirtual #1005               // Method setTamed:(Z)V
+     187: aload_0
+     188: aload_1
+     189: invokespecial #1387               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7378_:(Lnet/minecraft/nbt/CompoundTag;)V
+     192: return
+    Exception table:
+       from    to  target type
+         167   177   180   Class java/lang/Throwable
+
+  public void m_7380_(net.minecraft.nbt.CompoundTag);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #1395               // Method io/github/chakyl/splendidslimes/entity/SlimeEntityBase.m_7380_:(Lnet/minecraft/nbt/CompoundTag;)V
+       5: aload_1
+       6: ldc_w         #1352               // String Hunger
+       9: aload_0
+      10: invokevirtual #183                // Method getHunger:()I
+      13: invokevirtual #1399               // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      16: aload_1
+      17: ldc_w         #1358               // String LastAte
+      20: aload_0
+      21: invokevirtual #1032               // Method getPickyLastAte:()I
+      24: invokevirtual #1399               // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      27: aload_1
+      28: ldc_w         #1360               // String DayLastAte
+      31: aload_0
+      32: invokevirtual #172                // Method getDayLastAte:()I
+      35: invokevirtual #1399               // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      38: aload_1
+      39: ldc_w         #1362               // String DayLastDigested
+      42: aload_0
+      43: invokevirtual #165                // Method getDayLastDigested:()I
+      46: invokevirtual #1399               // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      49: aload_1
+      50: ldc_w         #1364               // String Happiness
+      53: aload_0
+      54: invokevirtual #149                // Method getHappiness:()I
+      57: invokevirtual #1399               // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      60: aload_1
+      61: ldc_w         #1366               // String TargetEntity
+      64: aload_0
+      65: invokevirtual #1401               // Method getTargetEntity:()Ljava/lang/String;
+      68: invokevirtual #490                // Method net/minecraft/nbt/CompoundTag.m_128359_:(Ljava/lang/String;Ljava/lang/String;)V
+      71: aload_1
+      72: ldc_w         #1370               // String ParticleAnimationTick
+      75: aload_0
+      76: invokevirtual #359                // Method getParticleAnimationTick:()I
+      79: invokevirtual #1399               // Method net/minecraft/nbt/CompoundTag.m_128405_:(Ljava/lang/String;I)V
+      82: aload_0
+      83: invokevirtual #729                // Method getOwnerUUID:()Ljava/util/UUID;
+      86: ifnull        100
+      89: aload_1
+      90: ldc_w         #1372               // String Owner
+      93: aload_0
+      94: invokevirtual #729                // Method getOwnerUUID:()Ljava/util/UUID;
+      97: invokevirtual #1405               // Method net/minecraft/nbt/CompoundTag.m_128362_:(Ljava/lang/String;Ljava/util/UUID;)V
+     100: aload_1
+     101: ldc_w         #1407               // String Tamed
+     104: aload_0
+     105: invokevirtual #715                // Method getTamed:()Z
+     108: invokevirtual #1411               // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+     111: return
+
+  static {};
+    Code:
+       0: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+       2: getstatic     #1418               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+       5: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+       8: putstatic     #821                // Field HAPPINESS:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      11: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      13: getstatic     #1418               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      16: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      19: putstatic     #842                // Field HUNGER:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      22: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      24: getstatic     #1418               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      27: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      30: putstatic     #853                // Field DAY_LAST_ATE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      33: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      35: getstatic     #1418               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      38: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      41: putstatic     #856                // Field DAY_LAST_DIGESTED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      44: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      46: getstatic     #1418               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      49: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      52: putstatic     #850                // Field PICKY_LAST_ATE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      55: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      57: getstatic     #1425               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135030_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      60: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      63: putstatic     #838                // Field TARGET_ENTITY:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      66: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      68: getstatic     #1418               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      71: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      74: putstatic     #847                // Field PARTICLE_ANIMATION_TICK:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      77: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      79: getstatic     #1428               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135035_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      82: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      85: putstatic     #877                // Field TAMED:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      88: ldc           #2                  // class io/github/chakyl/splendidslimes/entity/SplendidSlime
+      90: getstatic     #1431               // Field net/minecraft/network/syncher/EntityDataSerializers.f_135041_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      93: invokestatic  #1422               // Method net/minecraft/network/syncher/SynchedEntityData.m_135353_:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+      96: putstatic     #858                // Field OWNER_UUID:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      99: getstatic     #1434               // Field io/github/chakyl/splendidslimes/SlimyConfig.slimeEffectCooldown:I
+     102: putstatic     #216                // Field SLIME_EFFECT_COOLDOWN:I
+     105: getstatic     #1066               // Field io/github/chakyl/splendidslimes/SlimyConfig.slimeHungerAmount:I
+     108: putstatic     #603                // Field SLIME_MAX_HUNGER:I
+     111: getstatic     #603                // Field SLIME_MAX_HUNGER:I
+     114: iconst_2
+     115: idiv
+     116: putstatic     #185                // Field SLIME_HUNGRY_THRESHOLD:I
+     119: getstatic     #1437               // Field io/github/chakyl/splendidslimes/SlimyConfig.slimeMaxHappiness:I
+     122: putstatic     #347                // Field MAX_HAPPINESS:I
+     125: getstatic     #1440               // Field io/github/chakyl/splendidslimes/SlimyConfig.slimeFuriousThreshold:I
+     128: putstatic     #296                // Field FURIOUS_THRESHOLD:I
+     131: getstatic     #1443               // Field io/github/chakyl/splendidslimes/SlimyConfig.slimeUnhappyThreshold:I
+     134: putstatic     #218                // Field UNHAPPY_THRESHOLD:I
+     137: getstatic     #1446               // Field io/github/chakyl/splendidslimes/SlimyConfig.slimeHappyThreshold:I
+     140: putstatic     #226                // Field HAPPY_THRESHOLD:I
+     143: return
+}

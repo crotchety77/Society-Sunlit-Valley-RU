@@ -1,0 +1,1634 @@
+Compiled from "CobblemonRider.java"
+public class dev.zanckor.cobblemonrider.CobblemonRider$FolderManager {
+  public dev.zanckor.cobblemonrider.CobblemonRider$FolderManager();
+    Code:
+       0: aload_0
+       1: invokespecial #39                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void serverFolderManager(net.minecraftforge.event.server.ServerAboutToStartEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #54                 // Method net/minecraftforge/event/server/ServerAboutToStartEvent.getServer:()Lnet/minecraft/server/MinecraftServer;
+       4: getstatic     #60                 // Field net/minecraft/world/level/storage/LevelResource.f_78182_:Lnet/minecraft/world/level/storage/LevelResource;
+       7: invokevirtual #66                 // Method net/minecraft/server/MinecraftServer.m_129843_:(Lnet/minecraft/world/level/storage/LevelResource;)Ljava/nio/file/Path;
+      10: invokeinterface #72,  1           // InterfaceMethod java/nio/file/Path.toAbsolutePath:()Ljava/nio/file/Path;
+      15: astore_1
+      16: aload_1
+      17: invokeinterface #76,  1           // InterfaceMethod java/nio/file/Path.toString:()Ljava/lang/String;
+      22: iconst_1
+      23: anewarray     #78                 // class java/lang/String
+      26: dup
+      27: iconst_0
+      28: invokestatic  #84                 // Method java/nio/file/FileSystems.getDefault:()Ljava/nio/file/FileSystem;
+      31: invokevirtual #89                 // Method java/nio/file/FileSystem.getSeparator:()Ljava/lang/String;
+      34: invokedynamic #101,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      39: aastore
+      40: invokestatic  #107                // Method java/nio/file/Paths.get:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      43: invokeinterface #111,  1          // InterfaceMethod java/nio/file/Path.toFile:()Ljava/io/File;
+      48: astore_2
+      49: aload_2
+      50: putstatic     #115                // Field dev/zanckor/cobblemonrider/CobblemonRider.PokemonRideConfigFile:Ljava/io/File;
+      53: new           #17                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject
+      56: dup
+      57: invokespecial #116                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject."<init>":()V
+      60: astore_3
+      61: aload_3
+      62: ldc           #118                // String Charizard
+      64: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+      67: dup
+      68: new           #120                // class java/util/ArrayList
+      71: dup
+      72: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      75: getstatic     #127                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      78: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+      81: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+      84: new           #120                // class java/util/ArrayList
+      87: dup
+      88: iconst_3
+      89: anewarray     #138                // class java/lang/Float
+      92: dup
+      93: iconst_0
+      94: fconst_0
+      95: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      98: aastore
+      99: dup
+     100: iconst_1
+     101: fconst_1
+     102: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     105: aastore
+     106: dup
+     107: iconst_2
+     108: fconst_0
+     109: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     112: aastore
+     113: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     116: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     119: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     122: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     125: aload_3
+     126: ldc           #157                // String Blastoise
+     128: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     131: dup
+     132: new           #120                // class java/util/ArrayList
+     135: dup
+     136: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     139: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     142: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+     145: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     148: new           #120                // class java/util/ArrayList
+     151: dup
+     152: iconst_3
+     153: anewarray     #138                // class java/lang/Float
+     156: dup
+     157: iconst_0
+     158: fconst_0
+     159: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     162: aastore
+     163: dup
+     164: iconst_1
+     165: fconst_1
+     166: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     169: aastore
+     170: dup
+     171: iconst_2
+     172: fconst_0
+     173: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     176: aastore
+     177: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     180: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     183: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     186: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     189: aload_3
+     190: ldc           #162                // String Pidgeot
+     192: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     195: dup
+     196: new           #120                // class java/util/ArrayList
+     199: dup
+     200: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     203: getstatic     #127                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     206: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+     209: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     212: new           #120                // class java/util/ArrayList
+     215: dup
+     216: iconst_3
+     217: anewarray     #138                // class java/lang/Float
+     220: dup
+     221: iconst_0
+     222: fconst_0
+     223: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     226: aastore
+     227: dup
+     228: iconst_1
+     229: ldc           #163                // float 0.7f
+     231: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     234: aastore
+     235: dup
+     236: iconst_2
+     237: fconst_0
+     238: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     241: aastore
+     242: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     245: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     248: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     251: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     254: aload_3
+     255: ldc           #165                // String Fearow
+     257: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     260: dup
+     261: new           #120                // class java/util/ArrayList
+     264: dup
+     265: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     268: getstatic     #127                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     271: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+     274: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     277: new           #120                // class java/util/ArrayList
+     280: dup
+     281: iconst_3
+     282: anewarray     #138                // class java/lang/Float
+     285: dup
+     286: iconst_0
+     287: fconst_0
+     288: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     291: aastore
+     292: dup
+     293: iconst_1
+     294: fconst_1
+     295: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     298: aastore
+     299: dup
+     300: iconst_2
+     301: fconst_0
+     302: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     305: aastore
+     306: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     309: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     312: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     315: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     318: aload_3
+     319: ldc           #167                // String Nidoking
+     321: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     324: dup
+     325: new           #120                // class java/util/ArrayList
+     328: dup
+     329: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     332: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     335: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     338: new           #120                // class java/util/ArrayList
+     341: dup
+     342: iconst_3
+     343: anewarray     #138                // class java/lang/Float
+     346: dup
+     347: iconst_0
+     348: fconst_0
+     349: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     352: aastore
+     353: dup
+     354: iconst_1
+     355: fconst_1
+     356: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     359: aastore
+     360: dup
+     361: iconst_2
+     362: fconst_0
+     363: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     366: aastore
+     367: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     370: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     373: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     376: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     379: aload_3
+     380: ldc           #172                // String Ninetales
+     382: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     385: dup
+     386: new           #120                // class java/util/ArrayList
+     389: dup
+     390: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     393: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     396: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     399: new           #120                // class java/util/ArrayList
+     402: dup
+     403: iconst_3
+     404: anewarray     #138                // class java/lang/Float
+     407: dup
+     408: iconst_0
+     409: fconst_0
+     410: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     413: aastore
+     414: dup
+     415: iconst_1
+     416: fconst_0
+     417: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     420: aastore
+     421: dup
+     422: iconst_2
+     423: fconst_0
+     424: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     427: aastore
+     428: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     431: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     434: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     437: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     440: aload_3
+     441: ldc           #174                // String Arcanine
+     443: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     446: dup
+     447: new           #120                // class java/util/ArrayList
+     450: dup
+     451: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     454: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     457: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     460: new           #120                // class java/util/ArrayList
+     463: dup
+     464: iconst_3
+     465: anewarray     #138                // class java/lang/Float
+     468: dup
+     469: iconst_0
+     470: fconst_0
+     471: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     474: aastore
+     475: dup
+     476: iconst_1
+     477: fconst_1
+     478: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     481: aastore
+     482: dup
+     483: iconst_2
+     484: fconst_0
+     485: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     488: aastore
+     489: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     492: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     495: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     498: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     501: aload_3
+     502: ldc           #176                // String Tentacruel
+     504: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     507: dup
+     508: new           #120                // class java/util/ArrayList
+     511: dup
+     512: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     515: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     518: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+     521: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     524: new           #120                // class java/util/ArrayList
+     527: dup
+     528: iconst_3
+     529: anewarray     #138                // class java/lang/Float
+     532: dup
+     533: iconst_0
+     534: fconst_0
+     535: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     538: aastore
+     539: dup
+     540: iconst_1
+     541: ldc           #177                // float 1.5f
+     543: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     546: aastore
+     547: dup
+     548: iconst_2
+     549: fconst_0
+     550: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     553: aastore
+     554: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     557: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     560: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     563: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     566: aload_3
+     567: ldc           #179                // String Rapidash
+     569: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     572: dup
+     573: new           #120                // class java/util/ArrayList
+     576: dup
+     577: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     580: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     583: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     586: new           #120                // class java/util/ArrayList
+     589: dup
+     590: iconst_3
+     591: anewarray     #138                // class java/lang/Float
+     594: dup
+     595: iconst_0
+     596: fconst_0
+     597: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     600: aastore
+     601: dup
+     602: iconst_1
+     603: ldc           #180                // float 0.8f
+     605: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     608: aastore
+     609: dup
+     610: iconst_2
+     611: fconst_0
+     612: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     615: aastore
+     616: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     619: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     622: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     625: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     628: aload_3
+     629: ldc           #182                // String Magnezone
+     631: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     634: dup
+     635: new           #120                // class java/util/ArrayList
+     638: dup
+     639: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     642: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     645: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     648: new           #120                // class java/util/ArrayList
+     651: dup
+     652: iconst_3
+     653: anewarray     #138                // class java/lang/Float
+     656: dup
+     657: iconst_0
+     658: fconst_0
+     659: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     662: aastore
+     663: dup
+     664: iconst_1
+     665: fconst_1
+     666: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     669: aastore
+     670: dup
+     671: iconst_2
+     672: fconst_0
+     673: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     676: aastore
+     677: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     680: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     683: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     686: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     689: aload_3
+     690: ldc           #184                // String Dodrio
+     692: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     695: dup
+     696: new           #120                // class java/util/ArrayList
+     699: dup
+     700: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     703: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     706: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     709: new           #120                // class java/util/ArrayList
+     712: dup
+     713: iconst_3
+     714: anewarray     #138                // class java/lang/Float
+     717: dup
+     718: iconst_0
+     719: fconst_0
+     720: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     723: aastore
+     724: dup
+     725: iconst_1
+     726: ldc           #185                // float 1.2f
+     728: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     731: aastore
+     732: dup
+     733: iconst_2
+     734: fconst_0
+     735: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     738: aastore
+     739: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     742: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     745: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     748: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     751: aload_3
+     752: ldc           #187                // String Dewgong
+     754: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     757: dup
+     758: new           #120                // class java/util/ArrayList
+     761: dup
+     762: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     765: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     768: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+     771: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     774: new           #120                // class java/util/ArrayList
+     777: dup
+     778: iconst_3
+     779: anewarray     #138                // class java/lang/Float
+     782: dup
+     783: iconst_0
+     784: fconst_0
+     785: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     788: aastore
+     789: dup
+     790: iconst_1
+     791: fconst_0
+     792: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     795: aastore
+     796: dup
+     797: iconst_2
+     798: fconst_0
+     799: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     802: aastore
+     803: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     806: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     809: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     812: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     815: aload_3
+     816: ldc           #189                // String Exeggutor
+     818: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     821: dup
+     822: new           #120                // class java/util/ArrayList
+     825: dup
+     826: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     829: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     832: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     835: new           #120                // class java/util/ArrayList
+     838: dup
+     839: iconst_3
+     840: anewarray     #138                // class java/lang/Float
+     843: dup
+     844: iconst_0
+     845: fconst_0
+     846: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     849: aastore
+     850: dup
+     851: iconst_1
+     852: ldc           #190                // float 3.0f
+     854: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     857: aastore
+     858: dup
+     859: iconst_2
+     860: fconst_0
+     861: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     864: aastore
+     865: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     868: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     871: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     874: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     877: aload_3
+     878: ldc           #192                // String Tauros
+     880: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     883: dup
+     884: new           #120                // class java/util/ArrayList
+     887: dup
+     888: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     891: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     894: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     897: new           #120                // class java/util/ArrayList
+     900: dup
+     901: iconst_3
+     902: anewarray     #138                // class java/lang/Float
+     905: dup
+     906: iconst_0
+     907: fconst_0
+     908: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     911: aastore
+     912: dup
+     913: iconst_1
+     914: fconst_2
+     915: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     918: aastore
+     919: dup
+     920: iconst_2
+     921: fconst_0
+     922: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     925: aastore
+     926: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     929: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     932: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     935: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     938: aload_3
+     939: ldc           #194                // String Gyarados
+     941: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+     944: dup
+     945: new           #120                // class java/util/ArrayList
+     948: dup
+     949: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     952: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     955: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     958: new           #120                // class java/util/ArrayList
+     961: dup
+     962: iconst_3
+     963: anewarray     #138                // class java/lang/Float
+     966: dup
+     967: iconst_0
+     968: fconst_0
+     969: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     972: aastore
+     973: dup
+     974: iconst_1
+     975: fconst_0
+     976: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     979: aastore
+     980: dup
+     981: iconst_2
+     982: fconst_0
+     983: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+     986: aastore
+     987: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     990: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     993: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+     996: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+     999: aload_3
+    1000: ldc           #196                // String Lapras
+    1002: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1005: dup
+    1006: new           #120                // class java/util/ArrayList
+    1009: dup
+    1010: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1013: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1016: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1019: new           #120                // class java/util/ArrayList
+    1022: dup
+    1023: iconst_3
+    1024: anewarray     #138                // class java/lang/Float
+    1027: dup
+    1028: iconst_0
+    1029: fconst_0
+    1030: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1033: aastore
+    1034: dup
+    1035: iconst_1
+    1036: fconst_0
+    1037: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1040: aastore
+    1041: dup
+    1042: iconst_2
+    1043: fconst_0
+    1044: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1047: aastore
+    1048: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1051: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1054: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1057: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1060: aload_3
+    1061: ldc           #198                // String Aerodactyl
+    1063: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1066: dup
+    1067: new           #120                // class java/util/ArrayList
+    1070: dup
+    1071: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1074: getstatic     #127                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1077: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    1080: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1083: new           #120                // class java/util/ArrayList
+    1086: dup
+    1087: iconst_3
+    1088: anewarray     #138                // class java/lang/Float
+    1091: dup
+    1092: iconst_0
+    1093: fconst_0
+    1094: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1097: aastore
+    1098: dup
+    1099: iconst_1
+    1100: fconst_1
+    1101: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1104: aastore
+    1105: dup
+    1106: iconst_2
+    1107: fconst_0
+    1108: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1111: aastore
+    1112: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1115: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1118: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1121: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1124: aload_3
+    1125: ldc           #200                // String Dragonite
+    1127: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1130: dup
+    1131: new           #120                // class java/util/ArrayList
+    1134: dup
+    1135: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1138: getstatic     #127                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1141: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    1144: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1147: new           #120                // class java/util/ArrayList
+    1150: dup
+    1151: iconst_3
+    1152: anewarray     #138                // class java/lang/Float
+    1155: dup
+    1156: iconst_0
+    1157: fconst_0
+    1158: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1161: aastore
+    1162: dup
+    1163: iconst_1
+    1164: fconst_2
+    1165: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1168: aastore
+    1169: dup
+    1170: iconst_2
+    1171: fconst_0
+    1172: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1175: aastore
+    1176: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1179: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1182: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1185: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1188: aload_3
+    1189: ldc           #202                // String Meganium
+    1191: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1194: dup
+    1195: new           #120                // class java/util/ArrayList
+    1198: dup
+    1199: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1202: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1205: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1208: new           #120                // class java/util/ArrayList
+    1211: dup
+    1212: iconst_3
+    1213: anewarray     #138                // class java/lang/Float
+    1216: dup
+    1217: iconst_0
+    1218: fconst_0
+    1219: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1222: aastore
+    1223: dup
+    1224: iconst_1
+    1225: fconst_2
+    1226: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1229: aastore
+    1230: dup
+    1231: iconst_2
+    1232: fconst_0
+    1233: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1236: aastore
+    1237: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1240: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1243: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1246: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1249: aload_3
+    1250: ldc           #204                // String Feraligatr
+    1252: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1255: dup
+    1256: new           #120                // class java/util/ArrayList
+    1259: dup
+    1260: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1263: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1266: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    1269: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1272: new           #120                // class java/util/ArrayList
+    1275: dup
+    1276: iconst_3
+    1277: anewarray     #138                // class java/lang/Float
+    1280: dup
+    1281: iconst_0
+    1282: fconst_0
+    1283: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1286: aastore
+    1287: dup
+    1288: iconst_1
+    1289: fconst_2
+    1290: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1293: aastore
+    1294: dup
+    1295: iconst_2
+    1296: fconst_0
+    1297: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1300: aastore
+    1301: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1304: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1307: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1310: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1313: aload_3
+    1314: ldc           #206                // String Steelix
+    1316: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1319: dup
+    1320: new           #120                // class java/util/ArrayList
+    1323: dup
+    1324: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1327: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1330: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1333: new           #120                // class java/util/ArrayList
+    1336: dup
+    1337: iconst_3
+    1338: anewarray     #138                // class java/lang/Float
+    1341: dup
+    1342: iconst_0
+    1343: fconst_0
+    1344: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1347: aastore
+    1348: dup
+    1349: iconst_1
+    1350: ldc           #207                // float 6.0f
+    1352: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1355: aastore
+    1356: dup
+    1357: iconst_2
+    1358: fconst_0
+    1359: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1362: aastore
+    1363: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1366: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1369: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1372: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1375: aload_3
+    1376: ldc           #209                // String Stantler
+    1378: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1381: dup
+    1382: new           #120                // class java/util/ArrayList
+    1385: dup
+    1386: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1389: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1392: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1395: new           #120                // class java/util/ArrayList
+    1398: dup
+    1399: iconst_3
+    1400: anewarray     #138                // class java/lang/Float
+    1403: dup
+    1404: iconst_0
+    1405: fconst_0
+    1406: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1409: aastore
+    1410: dup
+    1411: iconst_1
+    1412: fconst_1
+    1413: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1416: aastore
+    1417: dup
+    1418: iconst_2
+    1419: fconst_0
+    1420: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1423: aastore
+    1424: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1427: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1430: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1433: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1436: aload_3
+    1437: ldc           #211                // String Swampert
+    1439: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1442: dup
+    1443: new           #120                // class java/util/ArrayList
+    1446: dup
+    1447: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1450: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1453: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    1456: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1459: new           #120                // class java/util/ArrayList
+    1462: dup
+    1463: iconst_3
+    1464: anewarray     #138                // class java/lang/Float
+    1467: dup
+    1468: iconst_0
+    1469: fconst_0
+    1470: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1473: aastore
+    1474: dup
+    1475: iconst_1
+    1476: fconst_1
+    1477: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1480: aastore
+    1481: dup
+    1482: iconst_2
+    1483: fconst_0
+    1484: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1487: aastore
+    1488: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1491: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1494: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1497: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1500: aload_3
+    1501: ldc           #213                // String Mightyena
+    1503: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1506: dup
+    1507: new           #120                // class java/util/ArrayList
+    1510: dup
+    1511: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1514: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1517: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1520: new           #120                // class java/util/ArrayList
+    1523: dup
+    1524: iconst_3
+    1525: anewarray     #138                // class java/lang/Float
+    1528: dup
+    1529: iconst_0
+    1530: fconst_0
+    1531: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1534: aastore
+    1535: dup
+    1536: iconst_1
+    1537: fconst_1
+    1538: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1541: aastore
+    1542: dup
+    1543: iconst_2
+    1544: fconst_0
+    1545: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1548: aastore
+    1549: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1552: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1555: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1558: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1561: aload_3
+    1562: ldc           #215                // String Sharpedo
+    1564: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1567: dup
+    1568: new           #120                // class java/util/ArrayList
+    1571: dup
+    1572: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1575: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1578: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1581: new           #120                // class java/util/ArrayList
+    1584: dup
+    1585: iconst_3
+    1586: anewarray     #138                // class java/lang/Float
+    1589: dup
+    1590: iconst_0
+    1591: fconst_0
+    1592: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1595: aastore
+    1596: dup
+    1597: iconst_1
+    1598: fconst_1
+    1599: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1602: aastore
+    1603: dup
+    1604: iconst_2
+    1605: fconst_0
+    1606: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1609: aastore
+    1610: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1613: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1616: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1619: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1622: aload_3
+    1623: ldc           #217                // String Wailmer
+    1625: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1628: dup
+    1629: new           #120                // class java/util/ArrayList
+    1632: dup
+    1633: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1636: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1639: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1642: new           #120                // class java/util/ArrayList
+    1645: dup
+    1646: iconst_3
+    1647: anewarray     #138                // class java/lang/Float
+    1650: dup
+    1651: iconst_0
+    1652: fconst_0
+    1653: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1656: aastore
+    1657: dup
+    1658: iconst_1
+    1659: fconst_2
+    1660: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1663: aastore
+    1664: dup
+    1665: iconst_2
+    1666: fconst_0
+    1667: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1670: aastore
+    1671: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1674: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1677: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1680: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1683: aload_3
+    1684: ldc           #219                // String Camerupt
+    1686: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1689: dup
+    1690: new           #120                // class java/util/ArrayList
+    1693: dup
+    1694: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1697: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1700: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1703: new           #120                // class java/util/ArrayList
+    1706: dup
+    1707: iconst_3
+    1708: anewarray     #138                // class java/lang/Float
+    1711: dup
+    1712: iconst_0
+    1713: fconst_0
+    1714: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1717: aastore
+    1718: dup
+    1719: iconst_1
+    1720: fconst_2
+    1721: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1724: aastore
+    1725: dup
+    1726: iconst_2
+    1727: fconst_0
+    1728: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1731: aastore
+    1732: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1735: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1738: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1741: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1744: aload_3
+    1745: ldc           #221                // String Relicanth
+    1747: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1750: dup
+    1751: new           #120                // class java/util/ArrayList
+    1754: dup
+    1755: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1758: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1761: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1764: new           #120                // class java/util/ArrayList
+    1767: dup
+    1768: iconst_3
+    1769: anewarray     #138                // class java/lang/Float
+    1772: dup
+    1773: iconst_0
+    1774: fconst_0
+    1775: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1778: aastore
+    1779: dup
+    1780: iconst_1
+    1781: fconst_1
+    1782: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1785: aastore
+    1786: dup
+    1787: iconst_2
+    1788: fconst_0
+    1789: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1792: aastore
+    1793: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1796: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1799: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1802: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1805: aload_3
+    1806: ldc           #223                // String Metagross
+    1808: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1811: dup
+    1812: new           #120                // class java/util/ArrayList
+    1815: dup
+    1816: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1819: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1822: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1825: new           #120                // class java/util/ArrayList
+    1828: dup
+    1829: iconst_3
+    1830: anewarray     #138                // class java/lang/Float
+    1833: dup
+    1834: iconst_0
+    1835: fconst_0
+    1836: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1839: aastore
+    1840: dup
+    1841: iconst_1
+    1842: fconst_2
+    1843: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1846: aastore
+    1847: dup
+    1848: iconst_2
+    1849: fconst_0
+    1850: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1853: aastore
+    1854: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1857: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1860: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1863: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1866: aload_3
+    1867: ldc           #225                // String Staraptor
+    1869: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1872: dup
+    1873: new           #120                // class java/util/ArrayList
+    1876: dup
+    1877: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1880: getstatic     #127                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1883: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    1886: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1889: new           #120                // class java/util/ArrayList
+    1892: dup
+    1893: iconst_3
+    1894: anewarray     #138                // class java/lang/Float
+    1897: dup
+    1898: iconst_0
+    1899: fconst_0
+    1900: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1903: aastore
+    1904: dup
+    1905: iconst_1
+    1906: fconst_1
+    1907: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1910: aastore
+    1911: dup
+    1912: iconst_2
+    1913: fconst_0
+    1914: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1917: aastore
+    1918: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1921: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1924: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1927: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1930: aload_3
+    1931: ldc           #227                // String Luxray
+    1933: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1936: dup
+    1937: new           #120                // class java/util/ArrayList
+    1940: dup
+    1941: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    1944: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    1947: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1950: new           #120                // class java/util/ArrayList
+    1953: dup
+    1954: iconst_3
+    1955: anewarray     #138                // class java/lang/Float
+    1958: dup
+    1959: iconst_0
+    1960: fconst_0
+    1961: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1964: aastore
+    1965: dup
+    1966: iconst_1
+    1967: fconst_1
+    1968: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1971: aastore
+    1972: dup
+    1973: iconst_2
+    1974: fconst_0
+    1975: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    1978: aastore
+    1979: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    1982: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    1985: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    1988: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    1991: aload_3
+    1992: ldc           #229                // String Garchomp
+    1994: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    1997: dup
+    1998: new           #120                // class java/util/ArrayList
+    2001: dup
+    2002: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2005: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2008: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2011: new           #120                // class java/util/ArrayList
+    2014: dup
+    2015: iconst_3
+    2016: anewarray     #138                // class java/lang/Float
+    2019: dup
+    2020: iconst_0
+    2021: fconst_0
+    2022: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2025: aastore
+    2026: dup
+    2027: iconst_1
+    2028: fconst_2
+    2029: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2032: aastore
+    2033: dup
+    2034: iconst_2
+    2035: fconst_0
+    2036: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2039: aastore
+    2040: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2043: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2046: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2049: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2052: aload_3
+    2053: ldc           #231                // String Yanmega
+    2055: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2058: dup
+    2059: new           #120                // class java/util/ArrayList
+    2062: dup
+    2063: getstatic     #127                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2066: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2069: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2072: new           #120                // class java/util/ArrayList
+    2075: dup
+    2076: iconst_3
+    2077: anewarray     #138                // class java/lang/Float
+    2080: dup
+    2081: iconst_0
+    2082: fconst_0
+    2083: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2086: aastore
+    2087: dup
+    2088: iconst_1
+    2089: fconst_1
+    2090: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2093: aastore
+    2094: dup
+    2095: iconst_2
+    2096: fconst_0
+    2097: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2100: aastore
+    2101: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2104: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2107: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2110: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2113: aload_3
+    2114: ldc           #233                // String Mamoswine
+    2116: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2119: dup
+    2120: new           #120                // class java/util/ArrayList
+    2123: dup
+    2124: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2127: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2130: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2133: new           #120                // class java/util/ArrayList
+    2136: dup
+    2137: iconst_3
+    2138: anewarray     #138                // class java/lang/Float
+    2141: dup
+    2142: iconst_0
+    2143: fconst_0
+    2144: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2147: aastore
+    2148: dup
+    2149: iconst_1
+    2150: ldc           #234                // float 5.0f
+    2152: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2155: aastore
+    2156: dup
+    2157: iconst_2
+    2158: fconst_0
+    2159: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2162: aastore
+    2163: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2166: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2169: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2172: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2175: aload_3
+    2176: ldc           #236                // String Samurott
+    2178: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2181: dup
+    2182: new           #120                // class java/util/ArrayList
+    2185: dup
+    2186: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2189: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2192: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    2195: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2198: new           #120                // class java/util/ArrayList
+    2201: dup
+    2202: iconst_3
+    2203: anewarray     #138                // class java/lang/Float
+    2206: dup
+    2207: iconst_0
+    2208: fconst_0
+    2209: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2212: aastore
+    2213: dup
+    2214: iconst_1
+    2215: fconst_2
+    2216: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2219: aastore
+    2220: dup
+    2221: iconst_2
+    2222: fconst_0
+    2223: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2226: aastore
+    2227: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2230: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2233: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2236: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2239: aload_3
+    2240: ldc           #238                // String Stoutland
+    2242: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2245: dup
+    2246: new           #120                // class java/util/ArrayList
+    2249: dup
+    2250: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2253: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2256: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2259: new           #120                // class java/util/ArrayList
+    2262: dup
+    2263: iconst_3
+    2264: anewarray     #138                // class java/lang/Float
+    2267: dup
+    2268: iconst_0
+    2269: fconst_0
+    2270: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2273: aastore
+    2274: dup
+    2275: iconst_1
+    2276: fconst_1
+    2277: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2280: aastore
+    2281: dup
+    2282: iconst_2
+    2283: fconst_0
+    2284: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2287: aastore
+    2288: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2291: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2294: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2297: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2300: aload_3
+    2301: ldc           #240                // String Scolipede
+    2303: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2306: dup
+    2307: new           #120                // class java/util/ArrayList
+    2310: dup
+    2311: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2314: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2317: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2320: new           #120                // class java/util/ArrayList
+    2323: dup
+    2324: iconst_3
+    2325: anewarray     #138                // class java/lang/Float
+    2328: dup
+    2329: iconst_0
+    2330: fconst_0
+    2331: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2334: aastore
+    2335: dup
+    2336: iconst_1
+    2337: fconst_1
+    2338: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2341: aastore
+    2342: dup
+    2343: iconst_2
+    2344: fconst_0
+    2345: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2348: aastore
+    2349: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2352: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2355: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2358: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2361: aload_3
+    2362: ldc           #242                // String Sawsbuck
+    2364: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2367: dup
+    2368: new           #120                // class java/util/ArrayList
+    2371: dup
+    2372: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2375: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2378: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2381: new           #120                // class java/util/ArrayList
+    2384: dup
+    2385: iconst_3
+    2386: anewarray     #138                // class java/lang/Float
+    2389: dup
+    2390: iconst_0
+    2391: fconst_0
+    2392: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2395: aastore
+    2396: dup
+    2397: iconst_1
+    2398: fconst_1
+    2399: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2402: aastore
+    2403: dup
+    2404: iconst_2
+    2405: fconst_0
+    2406: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2409: aastore
+    2410: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2413: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2416: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2419: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2422: aload_3
+    2423: ldc           #244                // String Golurk
+    2425: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2428: dup
+    2429: new           #120                // class java/util/ArrayList
+    2432: dup
+    2433: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2436: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2439: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2442: new           #120                // class java/util/ArrayList
+    2445: dup
+    2446: iconst_3
+    2447: anewarray     #138                // class java/lang/Float
+    2450: dup
+    2451: iconst_0
+    2452: fconst_0
+    2453: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2456: aastore
+    2457: dup
+    2458: iconst_1
+    2459: ldc           #234                // float 5.0f
+    2461: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2464: aastore
+    2465: dup
+    2466: iconst_2
+    2467: fconst_0
+    2468: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2471: aastore
+    2472: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2475: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2478: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2481: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2484: aload_3
+    2485: ldc           #246                // String Bouffalant
+    2487: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2490: dup
+    2491: new           #120                // class java/util/ArrayList
+    2494: dup
+    2495: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2498: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2501: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2504: new           #120                // class java/util/ArrayList
+    2507: dup
+    2508: iconst_3
+    2509: anewarray     #138                // class java/lang/Float
+    2512: dup
+    2513: iconst_0
+    2514: fconst_0
+    2515: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2518: aastore
+    2519: dup
+    2520: iconst_1
+    2521: fconst_2
+    2522: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2525: aastore
+    2526: dup
+    2527: iconst_2
+    2528: fconst_0
+    2529: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2532: aastore
+    2533: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2536: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2539: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2542: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2545: aload_3
+    2546: ldc           #248                // String Avalugg
+    2548: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2551: dup
+    2552: new           #120                // class java/util/ArrayList
+    2555: dup
+    2556: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2559: getstatic     #160                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2562: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    2565: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2568: new           #120                // class java/util/ArrayList
+    2571: dup
+    2572: iconst_3
+    2573: anewarray     #138                // class java/lang/Float
+    2576: dup
+    2577: iconst_0
+    2578: fconst_0
+    2579: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2582: aastore
+    2583: dup
+    2584: iconst_1
+    2585: ldc           #190                // float 3.0f
+    2587: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2590: aastore
+    2591: dup
+    2592: iconst_2
+    2593: fconst_0
+    2594: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2597: aastore
+    2598: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2601: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2604: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2607: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2610: aload_3
+    2611: ldc           #250                // String Mudsdale
+    2613: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2616: dup
+    2617: new           #120                // class java/util/ArrayList
+    2620: dup
+    2621: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2624: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2627: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2630: new           #120                // class java/util/ArrayList
+    2633: dup
+    2634: iconst_3
+    2635: anewarray     #138                // class java/lang/Float
+    2638: dup
+    2639: iconst_0
+    2640: fconst_0
+    2641: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2644: aastore
+    2645: dup
+    2646: iconst_1
+    2647: fconst_2
+    2648: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2651: aastore
+    2652: dup
+    2653: iconst_2
+    2654: fconst_0
+    2655: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2658: aastore
+    2659: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2662: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2665: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2668: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2671: aload_3
+    2672: ldc           #252                // String Corviknight
+    2674: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2677: dup
+    2678: new           #120                // class java/util/ArrayList
+    2681: dup
+    2682: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2685: getstatic     #127                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2688: invokestatic  #133                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    2691: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2694: new           #120                // class java/util/ArrayList
+    2697: dup
+    2698: iconst_3
+    2699: anewarray     #138                // class java/lang/Float
+    2702: dup
+    2703: iconst_0
+    2704: fconst_0
+    2705: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2708: aastore
+    2709: dup
+    2710: iconst_1
+    2711: ldc           #190                // float 3.0f
+    2713: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2716: aastore
+    2717: dup
+    2718: iconst_2
+    2719: fconst_0
+    2720: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2723: aastore
+    2724: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2727: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2730: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2733: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2736: aload_3
+    2737: ldc           #254                // String Wyrdeer
+    2739: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2742: dup
+    2743: new           #120                // class java/util/ArrayList
+    2746: dup
+    2747: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2750: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2753: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2756: new           #120                // class java/util/ArrayList
+    2759: dup
+    2760: iconst_3
+    2761: anewarray     #138                // class java/lang/Float
+    2764: dup
+    2765: iconst_0
+    2766: fconst_0
+    2767: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2770: aastore
+    2771: dup
+    2772: iconst_1
+    2773: fconst_1
+    2774: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2777: aastore
+    2778: dup
+    2779: iconst_2
+    2780: fconst_0
+    2781: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2784: aastore
+    2785: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2788: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2791: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2794: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2797: aload_3
+    2798: ldc_w         #256                // String Ursaluna
+    2801: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2804: dup
+    2805: new           #120                // class java/util/ArrayList
+    2808: dup
+    2809: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2812: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2815: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2818: new           #120                // class java/util/ArrayList
+    2821: dup
+    2822: iconst_3
+    2823: anewarray     #138                // class java/lang/Float
+    2826: dup
+    2827: iconst_0
+    2828: fconst_0
+    2829: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2832: aastore
+    2833: dup
+    2834: iconst_1
+    2835: fconst_1
+    2836: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2839: aastore
+    2840: dup
+    2841: iconst_2
+    2842: fconst_0
+    2843: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2846: aastore
+    2847: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2850: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2853: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2856: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2859: aload_3
+    2860: ldc_w         #258                // String Skeledirge
+    2863: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2866: dup
+    2867: new           #120                // class java/util/ArrayList
+    2870: dup
+    2871: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2874: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2877: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2880: new           #120                // class java/util/ArrayList
+    2883: dup
+    2884: iconst_3
+    2885: anewarray     #138                // class java/lang/Float
+    2888: dup
+    2889: iconst_0
+    2890: fconst_0
+    2891: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2894: aastore
+    2895: dup
+    2896: iconst_1
+    2897: fconst_1
+    2898: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2901: aastore
+    2902: dup
+    2903: iconst_2
+    2904: fconst_0
+    2905: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2908: aastore
+    2909: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2912: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2915: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2918: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2921: aload_3
+    2922: ldc_w         #260                // String Espahtla
+    2925: new           #15                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData
+    2928: dup
+    2929: new           #120                // class java/util/ArrayList
+    2932: dup
+    2933: getstatic     #124                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+    2936: invokestatic  #170                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+    2939: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2942: new           #120                // class java/util/ArrayList
+    2945: dup
+    2946: iconst_3
+    2947: anewarray     #138                // class java/lang/Float
+    2950: dup
+    2951: iconst_0
+    2952: fconst_0
+    2953: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2956: aastore
+    2957: dup
+    2958: iconst_1
+    2959: fconst_1
+    2960: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2963: aastore
+    2964: dup
+    2965: iconst_2
+    2966: fconst_0
+    2967: invokestatic  #142                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+    2970: aastore
+    2971: invokestatic  #148                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+    2974: invokespecial #136                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+    2977: invokespecial #151                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData."<init>":(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    2980: invokevirtual #155                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.add:(Ljava/lang/String;Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;)V
+    2983: aload_2
+    2984: invokevirtual #266                // Method java/io/File.exists:()Z
+    2987: ifeq          3007
+    2990: getstatic     #270                // Field dev/zanckor/cobblemonrider/CobblemonRider.LOGGER:Lorg/slf4j/Logger;
+    2993: aload_2
+    2994: invokedynamic #275,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/io/File;)Ljava/lang/String;
+    2999: invokeinterface #281,  2          // InterfaceMethod org/slf4j/Logger.info:(Ljava/lang/String;)V
+    3004: goto          3124
+    3007: new           #283                // class java/io/FileWriter
+    3010: dup
+    3011: aload_2
+    3012: invokespecial #286                // Method java/io/FileWriter."<init>":(Ljava/io/File;)V
+    3015: astore        4
+    3017: aload         4
+    3019: new           #288                // class com/google/gson/GsonBuilder
+    3022: dup
+    3023: invokespecial #289                // Method com/google/gson/GsonBuilder."<init>":()V
+    3026: invokevirtual #293                // Method com/google/gson/GsonBuilder.setPrettyPrinting:()Lcom/google/gson/GsonBuilder;
+    3029: invokevirtual #297                // Method com/google/gson/GsonBuilder.create:()Lcom/google/gson/Gson;
+    3032: aload_3
+    3033: invokevirtual #303                // Method com/google/gson/Gson.toJson:(Ljava/lang/Object;)Ljava/lang/String;
+    3036: invokevirtual #306                // Method java/io/FileWriter.write:(Ljava/lang/String;)V
+    3039: getstatic     #270                // Field dev/zanckor/cobblemonrider/CobblemonRider.LOGGER:Lorg/slf4j/Logger;
+    3042: aload_2
+    3043: invokevirtual #309                // Method java/io/File.getName:()Ljava/lang/String;
+    3046: invokedynamic #312,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+    3051: invokeinterface #281,  2          // InterfaceMethod org/slf4j/Logger.info:(Ljava/lang/String;)V
+    3056: getstatic     #270                // Field dev/zanckor/cobblemonrider/CobblemonRider.LOGGER:Lorg/slf4j/Logger;
+    3059: aload_2
+    3060: invokedynamic #315,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/io/File;)Ljava/lang/String;
+    3065: invokeinterface #281,  2          // InterfaceMethod org/slf4j/Logger.info:(Ljava/lang/String;)V
+    3070: aload         4
+    3072: invokevirtual #318                // Method java/io/FileWriter.close:()V
+    3075: goto          3100
+    3078: astore        5
+    3080: aload         4
+    3082: invokevirtual #318                // Method java/io/FileWriter.close:()V
+    3085: goto          3097
+    3088: astore        6
+    3090: aload         5
+    3092: aload         6
+    3094: invokevirtual #322                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+    3097: aload         5
+    3099: athrow
+    3100: goto          3124
+    3103: astore        4
+    3105: aload         4
+    3107: invokevirtual #325                // Method java/io/IOException.printStackTrace:()V
+    3110: getstatic     #270                // Field dev/zanckor/cobblemonrider/CobblemonRider.LOGGER:Lorg/slf4j/Logger;
+    3113: aload_2
+    3114: invokedynamic #328,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/io/File;)Ljava/lang/String;
+    3119: invokeinterface #281,  2          // InterfaceMethod org/slf4j/Logger.info:(Ljava/lang/String;)V
+    3124: new           #78                 // class java/lang/String
+    3127: dup
+    3128: aload_2
+    3129: invokevirtual #331                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+    3132: invokestatic  #337                // Method java/nio/file/Files.readAllBytes:(Ljava/nio/file/Path;)[B
+    3135: invokespecial #340                // Method java/lang/String."<init>":([B)V
+    3138: astore        4
+    3140: new           #299                // class com/google/gson/Gson
+    3143: dup
+    3144: invokespecial #341                // Method com/google/gson/Gson."<init>":()V
+    3147: aload         4
+    3149: ldc           #17                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject
+    3151: invokevirtual #345                // Method com/google/gson/Gson.fromJson:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    3154: checkcast     #17                 // class dev/zanckor/cobblemonrider/config/PokemonJsonObject
+    3157: putstatic     #349                // Field dev/zanckor/cobblemonrider/CobblemonRider.pokemonJsonObject:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject;
+    3160: goto          3179
+    3163: astore        5
+    3165: getstatic     #270                // Field dev/zanckor/cobblemonrider/CobblemonRider.LOGGER:Lorg/slf4j/Logger;
+    3168: aload_2
+    3169: invokedynamic #352,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/io/File;)Ljava/lang/String;
+    3174: invokeinterface #281,  2          // InterfaceMethod org/slf4j/Logger.info:(Ljava/lang/String;)V
+    3179: return
+    Exception table:
+       from    to  target type
+        3017  3070  3078   Class java/lang/Throwable
+        3080  3085  3088   Class java/lang/Throwable
+        3007  3100  3103   Class java/io/IOException
+        3124  3160  3163   Class java/io/IOException
+}

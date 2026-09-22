@@ -1,0 +1,548 @@
+Compiled from "SlimeBreed.java"
+public final class io.github.chakyl.splendidslimes.data.SlimeBreed extends java.lang.Record implements dev.shadowsoffire.placebo.codec.CodecProvider<io.github.chakyl.splendidslimes.data.SlimeBreed> {
+  private final java.lang.String breed;
+
+  private final net.minecraft.network.chat.MutableComponent name;
+
+  private final net.minecraft.world.item.ItemStack hat;
+
+  private final float hatScale;
+
+  private final float hatXOffset;
+
+  private final float hatYOffset;
+
+  private final float hatZOffset;
+
+  private final net.minecraft.world.item.ItemStack particle;
+
+  private final net.minecraft.network.chat.MutableComponent diet;
+
+  private final java.util.List<java.lang.Object> foods;
+
+  private final net.minecraft.world.item.ItemStack favoriteFood;
+
+  private final java.util.List<net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>> entities;
+
+  private final net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity> favoriteEntity;
+
+  private final java.util.List<net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>> hostileToEntities;
+
+  private final java.util.List<java.lang.String> traits;
+
+  private final java.util.List<net.minecraft.world.effect.MobEffectInstance> innateEffects;
+
+  private final net.minecraft.core.particles.SimpleParticleType emitEffectParticle;
+
+  private final java.util.List<net.minecraft.world.effect.MobEffectInstance> positiveEmitEffects;
+
+  private final java.util.List<net.minecraft.world.effect.MobEffectInstance> negativeEmitEffects;
+
+  private final java.util.List<java.lang.String> positiveCommands;
+
+  private final java.util.List<java.lang.String> negativeCommands;
+
+  private final java.util.List<java.lang.String> attackCommands;
+
+  private final io.github.chakyl.splendidslimes.data.RavenousFoods ravenousFoods;
+
+  public static final com.mojang.serialization.Codec<io.github.chakyl.splendidslimes.data.SlimeBreed> CODEC;
+
+  public static final java.util.List<java.lang.String> POSSIBLE_TRAITS;
+
+  public io.github.chakyl.splendidslimes.data.SlimeBreed(io.github.chakyl.splendidslimes.data.SlimeBreed);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getfield      #65                 // Field breed:Ljava/lang/String;
+       5: aload_1
+       6: getfield      #67                 // Field name:Lnet/minecraft/network/chat/MutableComponent;
+       9: aload_1
+      10: getfield      #69                 // Field hat:Lnet/minecraft/world/item/ItemStack;
+      13: aload_1
+      14: getfield      #71                 // Field hatScale:F
+      17: aload_1
+      18: getfield      #73                 // Field hatXOffset:F
+      21: aload_1
+      22: getfield      #75                 // Field hatYOffset:F
+      25: aload_1
+      26: getfield      #77                 // Field hatZOffset:F
+      29: aload_1
+      30: getfield      #79                 // Field particle:Lnet/minecraft/world/item/ItemStack;
+      33: aload_1
+      34: getfield      #81                 // Field diet:Lnet/minecraft/network/chat/MutableComponent;
+      37: aload_1
+      38: getfield      #83                 // Field foods:Ljava/util/List;
+      41: aload_1
+      42: getfield      #85                 // Field favoriteFood:Lnet/minecraft/world/item/ItemStack;
+      45: aload_1
+      46: getfield      #87                 // Field entities:Ljava/util/List;
+      49: aload_1
+      50: getfield      #89                 // Field favoriteEntity:Lnet/minecraft/world/entity/EntityType;
+      53: aload_1
+      54: getfield      #91                 // Field hostileToEntities:Ljava/util/List;
+      57: aload_1
+      58: getfield      #93                 // Field traits:Ljava/util/List;
+      61: aload_1
+      62: getfield      #95                 // Field innateEffects:Ljava/util/List;
+      65: aload_1
+      66: getfield      #97                 // Field emitEffectParticle:Lnet/minecraft/core/particles/SimpleParticleType;
+      69: aload_1
+      70: getfield      #99                 // Field positiveEmitEffects:Ljava/util/List;
+      73: aload_1
+      74: getfield      #101                // Field negativeEmitEffects:Ljava/util/List;
+      77: aload_1
+      78: getfield      #103                // Field positiveCommands:Ljava/util/List;
+      81: aload_1
+      82: getfield      #105                // Field negativeCommands:Ljava/util/List;
+      85: aload_1
+      86: getfield      #107                // Field attackCommands:Ljava/util/List;
+      89: aload_1
+      90: getfield      #109                // Field ravenousFoods:Lio/github/chakyl/splendidslimes/data/RavenousFoods;
+      93: invokespecial #112                // Method "<init>":(Ljava/lang/String;Lnet/minecraft/network/chat/MutableComponent;Lnet/minecraft/world/item/ItemStack;FFFFLnet/minecraft/world/item/ItemStack;Lnet/minecraft/network/chat/MutableComponent;Ljava/util/List;Lnet/minecraft/world/item/ItemStack;Ljava/util/List;Lnet/minecraft/world/entity/EntityType;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lnet/minecraft/core/particles/SimpleParticleType;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lio/github/chakyl/splendidslimes/data/RavenousFoods;)V
+      96: return
+
+  public io.github.chakyl.splendidslimes.data.SlimeBreed(java.lang.String, net.minecraft.network.chat.MutableComponent, net.minecraft.world.item.ItemStack, float, float, float, float, net.minecraft.world.item.ItemStack, net.minecraft.network.chat.MutableComponent, java.util.List<java.lang.Object>, net.minecraft.world.item.ItemStack, java.util.List<net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>>, net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>, java.util.List<net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>>, java.util.List<java.lang.String>, java.util.List<net.minecraft.world.effect.MobEffectInstance>, net.minecraft.core.particles.SimpleParticleType, java.util.List<net.minecraft.world.effect.MobEffectInstance>, java.util.List<net.minecraft.world.effect.MobEffectInstance>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, io.github.chakyl.splendidslimes.data.RavenousFoods);
+    Code:
+       0: aload_0
+       1: invokespecial #119                // Method java/lang/Record."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #65                 // Field breed:Ljava/lang/String;
+       9: aload_0
+      10: aload_2
+      11: putfield      #67                 // Field name:Lnet/minecraft/network/chat/MutableComponent;
+      14: aload_0
+      15: aload_3
+      16: putfield      #69                 // Field hat:Lnet/minecraft/world/item/ItemStack;
+      19: aload_0
+      20: fload         4
+      22: putfield      #71                 // Field hatScale:F
+      25: aload_0
+      26: fload         5
+      28: putfield      #73                 // Field hatXOffset:F
+      31: aload_0
+      32: fload         6
+      34: putfield      #75                 // Field hatYOffset:F
+      37: aload_0
+      38: fload         7
+      40: putfield      #77                 // Field hatZOffset:F
+      43: aload_0
+      44: aload         8
+      46: putfield      #79                 // Field particle:Lnet/minecraft/world/item/ItemStack;
+      49: aload_0
+      50: aload         9
+      52: putfield      #81                 // Field diet:Lnet/minecraft/network/chat/MutableComponent;
+      55: aload_0
+      56: aload         10
+      58: putfield      #83                 // Field foods:Ljava/util/List;
+      61: aload_0
+      62: aload         11
+      64: putfield      #85                 // Field favoriteFood:Lnet/minecraft/world/item/ItemStack;
+      67: aload_0
+      68: aload         12
+      70: putfield      #87                 // Field entities:Ljava/util/List;
+      73: aload_0
+      74: aload         13
+      76: putfield      #89                 // Field favoriteEntity:Lnet/minecraft/world/entity/EntityType;
+      79: aload_0
+      80: aload         14
+      82: putfield      #91                 // Field hostileToEntities:Ljava/util/List;
+      85: aload_0
+      86: aload         15
+      88: putfield      #93                 // Field traits:Ljava/util/List;
+      91: aload_0
+      92: aload         16
+      94: putfield      #95                 // Field innateEffects:Ljava/util/List;
+      97: aload_0
+      98: aload         17
+     100: putfield      #97                 // Field emitEffectParticle:Lnet/minecraft/core/particles/SimpleParticleType;
+     103: aload_0
+     104: aload         18
+     106: putfield      #99                 // Field positiveEmitEffects:Ljava/util/List;
+     109: aload_0
+     110: aload         19
+     112: putfield      #101                // Field negativeEmitEffects:Ljava/util/List;
+     115: aload_0
+     116: aload         20
+     118: putfield      #103                // Field positiveCommands:Ljava/util/List;
+     121: aload_0
+     122: aload         21
+     124: putfield      #105                // Field negativeCommands:Ljava/util/List;
+     127: aload_0
+     128: aload         22
+     130: putfield      #107                // Field attackCommands:Ljava/util/List;
+     133: aload_0
+     134: aload         23
+     136: putfield      #109                // Field ravenousFoods:Lio/github/chakyl/splendidslimes/data/RavenousFoods;
+     139: return
+
+  public int getColor();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field name:Lnet/minecraft/network/chat/MutableComponent;
+       4: invokevirtual #127                // Method net/minecraft/network/chat/MutableComponent.m_7383_:()Lnet/minecraft/network/chat/Style;
+       7: invokevirtual #133                // Method net/minecraft/network/chat/Style.m_131135_:()Lnet/minecraft/network/chat/TextColor;
+      10: invokevirtual #138                // Method net/minecraft/network/chat/TextColor.m_131265_:()I
+      13: ireturn
+
+  public net.minecraft.world.item.ItemStack getSlimeItem();
+    Code:
+       0: new           #142                // class net/minecraft/world/item/ItemStack
+       3: dup
+       4: getstatic     #146                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.SLIME_ITEM:Lnet/minecraftforge/registries/RegistryObject;
+       7: invokevirtual #152                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      10: checkcast     #154                // class net/minecraft/world/level/ItemLike
+      13: invokespecial #157                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      16: astore_1
+      17: aload_1
+      18: aload_0
+      19: invokestatic  #163                // Method io/github/chakyl/splendidslimes/item/SlimeInventoryItem.setStoredSlime:(Lnet/minecraft/world/item/ItemStack;Lio/github/chakyl/splendidslimes/data/SlimeBreed;)V
+      22: aload_1
+      23: areturn
+
+  public net.minecraft.world.item.ItemStack getHeart();
+    Code:
+       0: new           #142                // class net/minecraft/world/item/ItemStack
+       3: dup
+       4: getstatic     #168                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.SLIME_HEART:Lnet/minecraftforge/registries/RegistryObject;
+       7: invokevirtual #152                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      10: checkcast     #154                // class net/minecraft/world/level/ItemLike
+      13: invokespecial #157                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      16: astore_1
+      17: aload_1
+      18: aload_0
+      19: invokestatic  #173                // Method io/github/chakyl/splendidslimes/item/SlimeHeartItem.setStoredPlort:(Lnet/minecraft/world/item/ItemStack;Lio/github/chakyl/splendidslimes/data/SlimeBreed;)V
+      22: aload_1
+      23: areturn
+
+  public net.minecraft.world.item.ItemStack getPlort();
+    Code:
+       0: new           #142                // class net/minecraft/world/item/ItemStack
+       3: dup
+       4: getstatic     #177                // Field io/github/chakyl/splendidslimes/registry/ModElements$Items.PLORT:Lnet/minecraftforge/registries/RegistryObject;
+       7: invokevirtual #152                // Method net/minecraftforge/registries/RegistryObject.get:()Ljava/lang/Object;
+      10: checkcast     #154                // class net/minecraft/world/level/ItemLike
+      13: invokespecial #157                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      16: astore_1
+      17: aload_1
+      18: aload_0
+      19: invokestatic  #180                // Method io/github/chakyl/splendidslimes/item/PlortItem.setStoredPlort:(Lnet/minecraft/world/item/ItemStack;Lio/github/chakyl/splendidslimes/data/SlimeBreed;)V
+      22: aload_1
+      23: areturn
+
+  public io.github.chakyl.splendidslimes.data.SlimeBreed validate(net.minecraft.resources.ResourceLocation);
+    Code:
+       0: aload_0
+       1: getfield      #65                 // Field breed:Ljava/lang/String;
+       4: ldc           #184                // String Invalid slime breed id!
+       6: invokestatic  #190                // Method com/google/common/base/Preconditions.checkNotNull:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       9: pop
+      10: aload_0
+      11: getfield      #67                 // Field name:Lnet/minecraft/network/chat/MutableComponent;
+      14: ldc           #192                // String Invalid slime name!
+      16: invokestatic  #190                // Method com/google/common/base/Preconditions.checkNotNull:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      19: pop
+      20: aload_0
+      21: getfield      #81                 // Field diet:Lnet/minecraft/network/chat/MutableComponent;
+      24: ldc           #194                // String Invalid slime diet!
+      26: invokestatic  #190                // Method com/google/common/base/Preconditions.checkNotNull:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      29: pop
+      30: aload_0
+      31: getfield      #67                 // Field name:Lnet/minecraft/network/chat/MutableComponent;
+      34: invokevirtual #127                // Method net/minecraft/network/chat/MutableComponent.m_7383_:()Lnet/minecraft/network/chat/Style;
+      37: invokevirtual #133                // Method net/minecraft/network/chat/Style.m_131135_:()Lnet/minecraft/network/chat/TextColor;
+      40: ldc           #196                // String Invalid entity name color!
+      42: invokestatic  #190                // Method com/google/common/base/Preconditions.checkNotNull:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      45: pop
+      46: aload_0
+      47: getfield      #93                 // Field traits:Ljava/util/List;
+      50: ifnull        67
+      53: aload_0
+      54: getfield      #93                 // Field traits:Ljava/util/List;
+      57: invokedynamic #215,  0            // InvokeDynamic #0:accept:()Ljava/util/function/Consumer;
+      62: invokeinterface #221,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+      67: aload_0
+      68: areturn
+
+  public com.mojang.serialization.Codec<? extends io.github.chakyl.splendidslimes.data.SlimeBreed> getCodec();
+    Code:
+       0: getstatic     #228                // Field CODEC:Lcom/mojang/serialization/Codec;
+       3: areturn
+
+  public final java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokedynamic #265,  0            // InvokeDynamic #1:toString:(Lio/github/chakyl/splendidslimes/data/SlimeBreed;)Ljava/lang/String;
+       6: areturn
+
+  public final int hashCode();
+    Code:
+       0: aload_0
+       1: invokedynamic #269,  0            // InvokeDynamic #1:hashCode:(Lio/github/chakyl/splendidslimes/data/SlimeBreed;)I
+       6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #274,  0            // InvokeDynamic #1:equals:(Lio/github/chakyl/splendidslimes/data/SlimeBreed;Ljava/lang/Object;)Z
+       7: ireturn
+
+  public java.lang.String breed();
+    Code:
+       0: aload_0
+       1: getfield      #65                 // Field breed:Ljava/lang/String;
+       4: areturn
+
+  public net.minecraft.network.chat.MutableComponent name();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field name:Lnet/minecraft/network/chat/MutableComponent;
+       4: areturn
+
+  public net.minecraft.world.item.ItemStack hat();
+    Code:
+       0: aload_0
+       1: getfield      #69                 // Field hat:Lnet/minecraft/world/item/ItemStack;
+       4: areturn
+
+  public float hatScale();
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field hatScale:F
+       4: freturn
+
+  public float hatXOffset();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field hatXOffset:F
+       4: freturn
+
+  public float hatYOffset();
+    Code:
+       0: aload_0
+       1: getfield      #75                 // Field hatYOffset:F
+       4: freturn
+
+  public float hatZOffset();
+    Code:
+       0: aload_0
+       1: getfield      #77                 // Field hatZOffset:F
+       4: freturn
+
+  public net.minecraft.world.item.ItemStack particle();
+    Code:
+       0: aload_0
+       1: getfield      #79                 // Field particle:Lnet/minecraft/world/item/ItemStack;
+       4: areturn
+
+  public net.minecraft.network.chat.MutableComponent diet();
+    Code:
+       0: aload_0
+       1: getfield      #81                 // Field diet:Lnet/minecraft/network/chat/MutableComponent;
+       4: areturn
+
+  public java.util.List<java.lang.Object> foods();
+    Code:
+       0: aload_0
+       1: getfield      #83                 // Field foods:Ljava/util/List;
+       4: areturn
+
+  public net.minecraft.world.item.ItemStack favoriteFood();
+    Code:
+       0: aload_0
+       1: getfield      #85                 // Field favoriteFood:Lnet/minecraft/world/item/ItemStack;
+       4: areturn
+
+  public java.util.List<net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>> entities();
+    Code:
+       0: aload_0
+       1: getfield      #87                 // Field entities:Ljava/util/List;
+       4: areturn
+
+  public net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity> favoriteEntity();
+    Code:
+       0: aload_0
+       1: getfield      #89                 // Field favoriteEntity:Lnet/minecraft/world/entity/EntityType;
+       4: areturn
+
+  public java.util.List<net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>> hostileToEntities();
+    Code:
+       0: aload_0
+       1: getfield      #91                 // Field hostileToEntities:Ljava/util/List;
+       4: areturn
+
+  public java.util.List<java.lang.String> traits();
+    Code:
+       0: aload_0
+       1: getfield      #93                 // Field traits:Ljava/util/List;
+       4: areturn
+
+  public java.util.List<net.minecraft.world.effect.MobEffectInstance> innateEffects();
+    Code:
+       0: aload_0
+       1: getfield      #95                 // Field innateEffects:Ljava/util/List;
+       4: areturn
+
+  public net.minecraft.core.particles.SimpleParticleType emitEffectParticle();
+    Code:
+       0: aload_0
+       1: getfield      #97                 // Field emitEffectParticle:Lnet/minecraft/core/particles/SimpleParticleType;
+       4: areturn
+
+  public java.util.List<net.minecraft.world.effect.MobEffectInstance> positiveEmitEffects();
+    Code:
+       0: aload_0
+       1: getfield      #99                 // Field positiveEmitEffects:Ljava/util/List;
+       4: areturn
+
+  public java.util.List<net.minecraft.world.effect.MobEffectInstance> negativeEmitEffects();
+    Code:
+       0: aload_0
+       1: getfield      #101                // Field negativeEmitEffects:Ljava/util/List;
+       4: areturn
+
+  public java.util.List<java.lang.String> positiveCommands();
+    Code:
+       0: aload_0
+       1: getfield      #103                // Field positiveCommands:Ljava/util/List;
+       4: areturn
+
+  public java.util.List<java.lang.String> negativeCommands();
+    Code:
+       0: aload_0
+       1: getfield      #105                // Field negativeCommands:Ljava/util/List;
+       4: areturn
+
+  public java.util.List<java.lang.String> attackCommands();
+    Code:
+       0: aload_0
+       1: getfield      #107                // Field attackCommands:Ljava/util/List;
+       4: areturn
+
+  public io.github.chakyl.splendidslimes.data.RavenousFoods ravenousFoods();
+    Code:
+       0: aload_0
+       1: getfield      #109                // Field ravenousFoods:Lio/github/chakyl/splendidslimes/data/RavenousFoods;
+       4: areturn
+
+  private static void lambda$validate$0(java.lang.String);
+    Code:
+       0: getstatic     #289                // Field POSSIBLE_TRAITS:Ljava/util/List;
+       3: aload_0
+       4: ldc_w         #291                // String \"
+       7: ldc_w         #293                // String
+      10: invokevirtual #299                // Method java/lang/String.replace:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      13: invokeinterface #302,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      18: ifne          35
+      21: getstatic     #308                // Field io/github/chakyl/splendidslimes/SplendidSlimes.LOGGER:Lorg/apache/logging/log4j/Logger;
+      24: aload_0
+      25: invokedynamic #320,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      30: invokeinterface #325,  2          // InterfaceMethod org/apache/logging/log4j/Logger.info:(Ljava/lang/String;)V
+      35: return
+
+  static {};
+    Code:
+       0: new           #10                 // class io/github/chakyl/splendidslimes/data/SlimeBreed$SlimeBreedCodec
+       3: dup
+       4: invokespecial #328                // Method io/github/chakyl/splendidslimes/data/SlimeBreed$SlimeBreedCodec."<init>":()V
+       7: putstatic     #228                // Field CODEC:Lcom/mojang/serialization/Codec;
+      10: bipush        23
+      12: anewarray     #295                // class java/lang/String
+      15: dup
+      16: iconst_0
+      17: ldc_w         #330                // String aquatic
+      20: aastore
+      21: dup
+      22: iconst_1
+      23: ldc_w         #332                // String defiant
+      26: aastore
+      27: dup
+      28: iconst_2
+      29: ldc_w         #334                // String dominant
+      32: aastore
+      33: dup
+      34: iconst_3
+      35: ldc_w         #336                // String recessive
+      38: aastore
+      39: dup
+      40: iconst_4
+      41: ldc_w         #338                // String explosive
+      44: aastore
+      45: dup
+      46: iconst_5
+      47: ldc_w         #340                // String feral
+      50: aastore
+      51: dup
+      52: bipush        6
+      54: ldc_w         #342                // String flaming
+      57: aastore
+      58: dup
+      59: bipush        7
+      61: ldc_w         #344                // String floating
+      64: aastore
+      65: dup
+      66: bipush        8
+      68: ldc_w         #346                // String foodporting
+      71: aastore
+      72: dup
+      73: bipush        9
+      75: ldc_w         #348                // String friendly
+      78: aastore
+      79: dup
+      80: bipush        10
+      82: ldc_w         #350                // String diverse
+      85: aastore
+      86: dup
+      87: bipush        11
+      89: ldc_w         #352                // String handy
+      92: aastore
+      93: dup
+      94: bipush        12
+      96: ldc_w         #354                // String inverse
+      99: aastore
+     100: dup
+     101: bipush        13
+     103: ldc_w         #356                // String largoless
+     106: aastore
+     107: dup
+     108: bipush        14
+     110: ldc_w         #358                // String moody
+     113: aastore
+     114: dup
+     115: bipush        15
+     117: ldc_w         #360                // String nuclear
+     120: aastore
+     121: dup
+     122: bipush        16
+     124: ldc_w         #362                // String picky
+     127: aastore
+     128: dup
+     129: bipush        17
+     131: ldc_w         #364                // String pompous
+     134: aastore
+     135: dup
+     136: bipush        18
+     138: ldc_w         #366                // String photosynthesizing
+     141: aastore
+     142: dup
+     143: bipush        19
+     145: ldc_w         #368                // String putrid
+     148: aastore
+     149: dup
+     150: bipush        20
+     152: ldc_w         #370                // String ravenous
+     155: aastore
+     156: dup
+     157: bipush        21
+     159: ldc_w         #372                // String spiky
+     162: aastore
+     163: dup
+     164: bipush        22
+     166: ldc_w         #374                // String weeping
+     169: aastore
+     170: invokestatic  #380                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+     173: putstatic     #289                // Field POSSIBLE_TRAITS:Ljava/util/List;
+     176: return
+}

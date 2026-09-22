@@ -1,0 +1,4759 @@
+{
+	"scanned_barrels_count": 18,
+	"total_unique_tms": 792,
+	"total_items_count": 1704,
+	"tms": [
+		{
+			"id": "simpletms:tr_blank",
+			"name": "Blank TR",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_mimic",
+			"name": "TM-102: Mimic",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_screech",
+			"name": "TM-103: Screech",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_doubleteam",
+			"name": "TM-104: Double Team",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_harden",
+			"name": "TM-106: Harden",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_smokescreen",
+			"name": "TM-108: Smokescreen",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_confuseray",
+			"name": "TM-109: Confuse Ray",
+			"type": "ghost",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_withdraw",
+			"name": "TM-110: Withdraw",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_defensecurl",
+			"name": "TM-111: Defense Curl",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_barrier",
+			"name": "TM-112: Barrier",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_lightscreen",
+			"name": "TM-113: Light Screen",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_haze",
+			"name": "TM-114: Haze",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_bide",
+			"name": "TM-117: Bide",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_eggbomb",
+			"name": "TM-121: Egg Bomb",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_waterfall",
+			"name": "TM-127: Waterfall",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_swift",
+			"name": "TM-129: Swift",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_razorwind",
+			"name": "TM-13: Razor Wind",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_dreameater",
+			"name": "TM-138: Dream Eater",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_transform",
+			"name": "TM-144: Transform",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_bubble",
+			"name": "TM-145: Bubble",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_psywave",
+			"name": "TM-149: Psywave",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_furyswipes",
+			"name": "TM-154: Fury Swipes",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_sharpen",
+			"name": "TM-159: Sharpen",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_struggle",
+			"name": "TM-165: Struggle",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_thief",
+			"name": "TM-168: Thief",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_mindreader",
+			"name": "TM-170: Mind Reader",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_curse",
+			"name": "TM-174: Curse",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_reversal",
+			"name": "TM-179: Reversal",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_whirlwind",
+			"name": "TM-18: Whirlwind",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_scaryface",
+			"name": "TM-184: Scary Face",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_bellydrum",
+			"name": "TM-187: Belly Drum",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_sludgebomb",
+			"name": "TM-188: Sludge Bomb",
+			"type": "poison",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_mudslap",
+			"name": "TM-189: Mud-Slap",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_octazooka",
+			"name": "TM-190: Octazooka",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_outrage",
+			"name": "TM-200: Outrage",
+			"type": "dragon",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_gigadrain",
+			"name": "TM-202: Giga Drain",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_endure",
+			"name": "TM-203: Endure",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_falseswipe",
+			"name": "TM-206: False Swipe",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_swagger",
+			"name": "TM-207: Swagger",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_spark",
+			"name": "TM-209: Spark",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_slam",
+			"name": "TM-21: Slam",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_steelwing",
+			"name": "TM-211: Steel Wing",
+			"type": "steel",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_meanlook",
+			"name": "TM-212: Mean Look",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_return",
+			"name": "TM-216: Return",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_vinewhip",
+			"name": "TM-22: Vine Whip",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_magnitude",
+			"name": "TM-222: Magnitude",
+			"type": "ground",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_megahorn",
+			"name": "TM-224: Megahorn",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_dragonbreath",
+			"name": "TM-225: Dragon Breath",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_batonpass",
+			"name": "TM-226: Baton Pass",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_metalclaw",
+			"name": "TM-232: Metal Claw",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_moonlight",
+			"name": "TM-236: Moonlight",
+			"type": "fairy",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_crosschop",
+			"name": "TM-238: Cross Chop",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_raindance",
+			"name": "TM-240: Rain Dance",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_crunch",
+			"name": "TM-242: Crunch",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_psychup",
+			"name": "TM-244: Psych Up",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_ancientpower",
+			"name": "TM-246: Ancient Power",
+			"type": "rock",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_shadowball",
+			"name": "TM-247: Shadow Ball",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_rocksmash",
+			"name": "TM-249: Rock Smash",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_megakick",
+			"name": "TM-25: Mega Kick",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_heatwave",
+			"name": "TM-257: Heat Wave",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_willowisp",
+			"name": "TM-261: Will-O-Wisp",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_memento",
+			"name": "TM-262: Memento",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_facade",
+			"name": "TM-263: Facade",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_smellingsalts",
+			"name": "TM-265: Smelling Salts",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_followme",
+			"name": "TM-266: Follow Me",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_charge",
+			"name": "TM-268: Charge",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_helpinghand",
+			"name": "TM-270: Helping Hand",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_trick",
+			"name": "TM-271: Trick",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_ingrain",
+			"name": "TM-275: Ingrain",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_superpower",
+			"name": "TM-276: Superpower",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_magiccoat",
+			"name": "TM-277: Magic Coat",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_sandattack",
+			"name": "TM-28: Sand Attack",
+			"type": "ground",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_brickbreak",
+			"name": "TM-280: Brick Break",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_yawn",
+			"name": "TM-281: Yawn",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_endeavor",
+			"name": "TM-283: Endeavor",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_eruption",
+			"name": "TM-284: Eruption",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_grudge",
+			"name": "TM-288: Grudge",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_secretpower",
+			"name": "TM-290: Secret Power",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_featherdance",
+			"name": "TM-297: Feather Dance",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_teeterdance",
+			"name": "TM-298: Teeter Dance",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_mudsport",
+			"name": "TM-300: Mud Sport",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_iceball",
+			"name": "TM-301: Ice Ball",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_crushclaw",
+			"name": "TM-306: Crush Claw",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_hydrocannon",
+			"name": "TM-308: Hydro Cannon",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_meteormash",
+			"name": "TM-309: Meteor Mash",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_furyattack",
+			"name": "TM-31: Fury Attack",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_weatherball",
+			"name": "TM-311: Weather Ball",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_faketears",
+			"name": "TM-313: Fake Tears",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_aircutter",
+			"name": "TM-314: Air Cutter",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_rocktomb",
+			"name": "TM-317: Rock Tomb",
+			"type": "rock",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_tickle",
+			"name": "TM-321: Tickle",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_waterspout",
+			"name": "TM-323: Water Spout",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_signalbeam",
+			"name": "TM-324: Signal Beam",
+			"type": "bug",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_extrasensory",
+			"name": "TM-326: Extrasensory",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_tackle",
+			"name": "TM-33: Tackle",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_aerialace",
+			"name": "TM-332: Aerial Ace",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_block",
+			"name": "TM-335: Block",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_howl",
+			"name": "TM-336: Howl",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_dragonclaw",
+			"name": "TM-337: Dragon Claw",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_frenzyplant",
+			"name": "TM-338: Frenzy Plant",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_bulkup",
+			"name": "TM-339: Bulk Up",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_bounce",
+			"name": "TM-340: Bounce",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_mudshot",
+			"name": "TM-341: Mud Shot",
+			"type": "ground",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_poisontail",
+			"name": "TM-342: Poison Tail",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_covet",
+			"name": "TM-343: Covet",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_watersport",
+			"name": "TM-346: Water Sport",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_dragondance",
+			"name": "TM-349: Dragon Dance",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_wrap",
+			"name": "TM-35: Wrap",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_miracleeye",
+			"name": "TM-357: Miracle Eye",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_wakeupslap",
+			"name": "TM-358: Wake-Up Slap",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_hammerarm",
+			"name": "TM-359: Hammer Arm",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_gyroball",
+			"name": "TM-360: Gyro Ball",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_naturalgift",
+			"name": "TM-363: Natural Gift",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_feint",
+			"name": "TM-364: Feint",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_pluck",
+			"name": "TM-365: Pluck",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_tailwind",
+			"name": "TM-366: Tailwind",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_acupressure",
+			"name": "TM-367: Acupressure",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_metalburst",
+			"name": "TM-368: Metal Burst",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_closecombat",
+			"name": "TM-370: Close Combat",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_payback",
+			"name": "TM-371: Payback",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_gastroacid",
+			"name": "TM-380: Gastro Acid",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_luckychant",
+			"name": "TM-381: Lucky Chant",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_guardswap",
+			"name": "TM-385: Guard Swap",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_worryseed",
+			"name": "TM-388: Worry Seed",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_tailwhip",
+			"name": "TM-39: Tail Whip",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_toxicspikes",
+			"name": "TM-390: Toxic Spikes",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_heartswap",
+			"name": "TM-391: Heart Swap",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_magnetrise",
+			"name": "TM-393: Magnet Rise",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_forcepalm",
+			"name": "TM-395: Force Palm",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_aurasphere",
+			"name": "TM-396: Aura Sphere",
+			"type": "fighting",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_poisonjab",
+			"name": "TM-398: Poison Jab",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_poisonsting",
+			"name": "TM-40: Poison Sting",
+			"type": "poison",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_seedbomb",
+			"name": "TM-402: Seed Bomb",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_bugbuzz",
+			"name": "TM-405: Bug Buzz",
+			"type": "bug",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_dragonrush",
+			"name": "TM-407: Dragon Rush",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_vacuumwave",
+			"name": "TM-410: Vacuum Wave",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_focusblast",
+			"name": "TM-411: Focus Blast",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_energyball",
+			"name": "TM-412: Energy Ball",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_nastyplot",
+			"name": "TM-417: Nasty Plot",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_iceshard",
+			"name": "TM-420: Ice Shard",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_thunderfang",
+			"name": "TM-422: Thunder Fang",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_icefang",
+			"name": "TM-423: Ice Fang",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_shadowsneak",
+			"name": "TM-425: Shadow Sneak",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_mudbomb",
+			"name": "TM-426: Mud Bomb",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_psychocut",
+			"name": "TM-427: Psycho Cut",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_zenheadbutt",
+			"name": "TM-428: Zen Headbutt",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_flashcannon",
+			"name": "TM-430: Flash Cannon",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_defog",
+			"name": "TM-432: Defog",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_lavaplume",
+			"name": "TM-436: Lava Plume",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_crosspoison",
+			"name": "TM-440: Cross Poison",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_gunkshot",
+			"name": "TM-441: Gunk Shot",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_stoneedge",
+			"name": "TM-444: Stone Edge",
+			"type": "rock",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_grassknot",
+			"name": "TM-447: Grass Knot",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_chargebeam",
+			"name": "TM-451: Charge Beam",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_woodhammer",
+			"name": "TM-452: Wood Hammer",
+			"type": "grass",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_aquajet",
+			"name": "TM-453: Aqua Jet",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_roar",
+			"name": "TM-46: Roar",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_ominouswind",
+			"name": "TM-466: Ominous Wind",
+			"type": "ghost",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_sing",
+			"name": "TM-47: Sing",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_powersplit",
+			"name": "TM-471: Power Split",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_wonderroom",
+			"name": "TM-472: Wonder Room",
+			"type": "psychic",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tm_psyshock",
+			"name": "TM-473: Psyshock",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_ragepowder",
+			"name": "TM-476: Rage Powder",
+			"type": "bug",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_stormthrow",
+			"name": "TM-480: Storm Throw",
+			"type": "fighting",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_flameburst",
+			"name": "TM-481: Flame Burst",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_sludgewave",
+			"name": "TM-482: Sludge Wave",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_heavyslam",
+			"name": "TM-484: Heavy Slam",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_synchronoise",
+			"name": "TM-485: Synchronoise",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_electroball",
+			"name": "TM-486: Electro Ball",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_soak",
+			"name": "TM-487: Soak",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_sonicboom",
+			"name": "TM-49: Sonic Boom",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_lowsweep",
+			"name": "TM-490: Low Sweep",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_acidspray",
+			"name": "TM-491: Acid Spray",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_simplebeam",
+			"name": "TM-493: Simple Beam",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_entrainment",
+			"name": "TM-494: Entrainment",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_quickguard",
+			"name": "TM-501: Quick Guard",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_allyswitch",
+			"name": "TM-502: Ally Switch",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_scald",
+			"name": "TM-503: Scald",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_shellsmash",
+			"name": "TM-504: Shell Smash",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_skydrop",
+			"name": "TM-507: Sky Drop",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_circlethrow",
+			"name": "TM-509: Circle Throw",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_incinerate",
+			"name": "TM-510: Incinerate",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_retaliate",
+			"name": "TM-514: Retaliate",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_grasspledge",
+			"name": "TM-520: Grass Pledge",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_voltswitch",
+			"name": "TM-521: Volt Switch",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_bulldoze",
+			"name": "TM-523: Bulldoze",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_frostbreath",
+			"name": "TM-524: Frost Breath",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_dragontail",
+			"name": "TM-525: Dragon Tail",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_workup",
+			"name": "TM-526: Work Up",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_wildcharge",
+			"name": "TM-528: Wild Charge",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_drillrun",
+			"name": "TM-529: Drill Run",
+			"type": "ground",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_flamethrower",
+			"name": "TM-53: Flamethrower",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_dualchop",
+			"name": "TM-530: Dual Chop",
+			"type": "dragon",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_heartstamp",
+			"name": "TM-531: Heart Stamp",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_razorshell",
+			"name": "TM-534: Razor Shell",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_heatcrash",
+			"name": "TM-535: Heat Crash",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_watergun",
+			"name": "TM-55: Water Gun",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_iceburn",
+			"name": "TM-554: Ice Burn",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_snarl",
+			"name": "TM-555: Snarl",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_iciclecrash",
+			"name": "TM-556: Icicle Crash",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_hydropump",
+			"name": "TM-56: Hydro Pump",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_belch",
+			"name": "TM-562: Belch",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_rototiller",
+			"name": "TM-563: Rototiller",
+			"type": "ground",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_stickyweb",
+			"name": "TM-564: Sticky Web",
+			"type": "bug",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_freezedry",
+			"name": "TM-573: Freeze-Dry",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_drainingkiss",
+			"name": "TM-577: Draining Kiss",
+			"type": "fairy",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_flowershield",
+			"name": "TM-579: Flower Shield",
+			"type": "fairy",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_grassyterrain",
+			"name": "TM-580: Grassy Terrain",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_fairywind",
+			"name": "TM-584: Fairy Wind",
+			"type": "fairy",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_boomburst",
+			"name": "TM-586: Boomburst",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_playnice",
+			"name": "TM-589: Play Nice",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_mysticalfire",
+			"name": "TM-595: Mystical Fire",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_spikyshield",
+			"name": "TM-596: Spiky Shield",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_eerieimpulse",
+			"name": "TM-598: Eerie Impulse",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_venomdrench",
+			"name": "TM-599: Venom Drench",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_nuzzle",
+			"name": "TM-609: Nuzzle",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_bubblebeam",
+			"name": "TM-61: Bubble Beam",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_holdback",
+			"name": "TM-610: Hold Back",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_infestation",
+			"name": "TM-611: Infestation",
+			"type": "bug",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_aurorabeam",
+			"name": "TM-62: Aurora Beam",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_hyperbeam",
+			"name": "TM-63: Hyper Beam",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_peck",
+			"name": "TM-64: Peck",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_submission",
+			"name": "TM-66: Submission",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_icehammer",
+			"name": "TM-665: Ice Hammer",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_lowkick",
+			"name": "TM-67: Low Kick",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_spotlight",
+			"name": "TM-671: Spotlight",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_throatchop",
+			"name": "TM-675: Throat Chop",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_lunge",
+			"name": "TM-679: Lunge",
+			"type": "bug",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_powertrip",
+			"name": "TM-681: Power Trip",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_burnup",
+			"name": "TM-682: Burn Up",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_seismictoss",
+			"name": "TM-69: Seismic Toss",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_auroraveil",
+			"name": "TM-694: Aurora Veil",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_strength",
+			"name": "TM-70: Strength",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_tearfullook",
+			"name": "TM-715: Tearful Look",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_leechseed",
+			"name": "TM-73: Leech Seed",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_razorleaf",
+			"name": "TM-75: Razor Leaf",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_boltbeak",
+			"name": "TM-754: Bolt Beak",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_poisonpowder",
+			"name": "TM-77: Poison Powder",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_lifedew",
+			"name": "TM-791: Life Dew",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_scaleshot",
+			"name": "TM-799: Scale Shot",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_lashout",
+			"name": "TM-808: Lash Out",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_poltergeist",
+			"name": "TM-809: Poltergeist",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_coaching",
+			"name": "TM-811: Coaching",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_tripleaxel",
+			"name": "TM-813: Triple Axel",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_dragonrage",
+			"name": "TM-82: Dragon Rage",
+			"type": "dragon",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_powershift",
+			"name": "TM-829: Power Shift",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_firespin",
+			"name": "TM-83: Fire Spin",
+			"type": "fire",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tm_headlongrush",
+			"name": "TM-838: Headlong Rush",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_lunarblessing",
+			"name": "TM-849: Lunar Blessing",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_thunderwave",
+			"name": "TM-86: Thunder Wave",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_thunder",
+			"name": "TM-87: Thunder",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_snowscape",
+			"name": "TM-883: Snowscape",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tm_pounce",
+			"name": "TM-884: Pounce",
+			"type": "bug",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_chillingwater",
+			"name": "TM-886: Chilling Water",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_dig",
+			"name": "TM-91: Dig",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_toxic",
+			"name": "TM-92: Toxic",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_confusion",
+			"name": "TM-93: Confusion",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tm_quickattack",
+			"name": "TM-98: Quick Attack",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_shadowstrike",
+			"name": "TR-0: Shadow Strike",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_pound",
+			"name": "TR-1: Pound",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_scratch",
+			"name": "TR-10: Scratch",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_teleport",
+			"name": "TR-100: Teleport",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_nightshade",
+			"name": "TR-101: Night Shade",
+			"type": "ghost",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_mimic",
+			"name": "TR-102: Mimic",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_screech",
+			"name": "TR-103: Screech",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_doubleteam",
+			"name": "TR-104: Double Team",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_harden",
+			"name": "TR-106: Harden",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_minimize",
+			"name": "TR-107: Minimize",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_smokescreen",
+			"name": "TR-108: Smokescreen",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_confuseray",
+			"name": "TR-109: Confuse Ray",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_visegrip",
+			"name": "TR-11: Vise Grip",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_withdraw",
+			"name": "TR-110: Withdraw",
+			"type": "water",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_defensecurl",
+			"name": "TR-111: Defense Curl",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_barrier",
+			"name": "TR-112: Barrier",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_lightscreen",
+			"name": "TR-113: Light Screen",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_haze",
+			"name": "TR-114: Haze",
+			"type": "ice",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_reflect",
+			"name": "TR-115: Reflect",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_focusenergy",
+			"name": "TR-116: Focus Energy",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_bide",
+			"name": "TR-117: Bide",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_mirrormove",
+			"name": "TR-119: Mirror Move",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_guillotine",
+			"name": "TR-12: Guillotine",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_eggbomb",
+			"name": "TR-121: Egg Bomb",
+			"type": "normal",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_lick",
+			"name": "TR-122: Lick",
+			"type": "ghost",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_smog",
+			"name": "TR-123: Smog",
+			"type": "poison",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_sludge",
+			"name": "TR-124: Sludge",
+			"type": "poison",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_boneclub",
+			"name": "TR-125: Bone Club",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_fireblast",
+			"name": "TR-126: Fire Blast",
+			"type": "fire",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_swift",
+			"name": "TR-129: Swift",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_razorwind",
+			"name": "TR-13: Razor Wind",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_skullbash",
+			"name": "TR-130: Skull Bash",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_spikecannon",
+			"name": "TR-131: Spike Cannon",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_constrict",
+			"name": "TR-132: Constrict",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_amnesia",
+			"name": "TR-133: Amnesia",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_dreameater",
+			"name": "TR-138: Dream Eater",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_poisongas",
+			"name": "TR-139: Poison Gas",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_swordsdance",
+			"name": "TR-14: Swords Dance",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_leechlife",
+			"name": "TR-141: Leech Life",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_skyattack",
+			"name": "TR-143: Sky Attack",
+			"type": "flying",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_bubble",
+			"name": "TR-145: Bubble",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_flash",
+			"name": "TR-148: Flash",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_psywave",
+			"name": "TR-149: Psywave",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_cut",
+			"name": "TR-15: Cut",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_acidarmor",
+			"name": "TR-151: Acid Armor",
+			"type": "poison",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_explosion",
+			"name": "TR-153: Explosion",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_furyswipes",
+			"name": "TR-154: Fury Swipes",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_rest",
+			"name": "TR-156: Rest",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_rockslide",
+			"name": "TR-157: Rock Slide",
+			"type": "rock",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_sharpen",
+			"name": "TR-159: Sharpen",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_triattack",
+			"name": "TR-161: Tri Attack",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_superfang",
+			"name": "TR-162: Super Fang",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_slash",
+			"name": "TR-163: Slash",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_substitute",
+			"name": "TR-164: Substitute",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_struggle",
+			"name": "TR-165: Struggle",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_thief",
+			"name": "TR-168: Thief",
+			"type": "dark",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_spiderweb",
+			"name": "TR-169: Spider Web",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_wingattack",
+			"name": "TR-17: Wing Attack",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_mindreader",
+			"name": "TR-170: Mind Reader",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_nightmare",
+			"name": "TR-171: Nightmare",
+			"type": "ghost",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_flamewheel",
+			"name": "TR-172: Flame Wheel",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_snore",
+			"name": "TR-173: Snore",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_curse",
+			"name": "TR-174: Curse",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_reversal",
+			"name": "TR-179: Reversal",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_whirlwind",
+			"name": "TR-18: Whirlwind",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_powdersnow",
+			"name": "TR-181: Powder Snow",
+			"type": "ice",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_protect",
+			"name": "TR-182: Protect",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_scaryface",
+			"name": "TR-184: Scary Face",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_sweetkiss",
+			"name": "TR-186: Sweet Kiss",
+			"type": "fairy",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_bellydrum",
+			"name": "TR-187: Belly Drum",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_sludgebomb",
+			"name": "TR-188: Sludge Bomb",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_mudslap",
+			"name": "TR-189: Mud-Slap",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_fly",
+			"name": "TR-19: Fly",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_octazooka",
+			"name": "TR-190: Octazooka",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_spikes",
+			"name": "TR-191: Spikes",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_zapcannon",
+			"name": "TR-192: Zap Cannon",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_foresight",
+			"name": "TR-193: Foresight",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_destinybond",
+			"name": "TR-194: Destiny Bond",
+			"type": "ghost",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_icywind",
+			"name": "TR-196: Icy Wind",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_detect",
+			"name": "TR-197: Detect",
+			"type": "fighting",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_bonerush",
+			"name": "TR-198: Bone Rush",
+			"type": "ground",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_lockon",
+			"name": "TR-199: Lock-On",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_karatechop",
+			"name": "TR-2: Karate Chop",
+			"type": "fighting",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_bind",
+			"name": "TR-20: Bind",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_outrage",
+			"name": "TR-200: Outrage",
+			"type": "dragon",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_sandstorm",
+			"name": "TR-201: Sandstorm",
+			"type": "rock",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_gigadrain",
+			"name": "TR-202: Giga Drain",
+			"type": "grass",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_endure",
+			"name": "TR-203: Endure",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_charm",
+			"name": "TR-204: Charm",
+			"type": "fairy",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_rollout",
+			"name": "TR-205: Rollout",
+			"type": "rock",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_swagger",
+			"name": "TR-207: Swagger",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_spark",
+			"name": "TR-209: Spark",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_slam",
+			"name": "TR-21: Slam",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_furycutter",
+			"name": "TR-210: Fury Cutter",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_steelwing",
+			"name": "TR-211: Steel Wing",
+			"type": "steel",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_meanlook",
+			"name": "TR-212: Mean Look",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_attract",
+			"name": "TR-213: Attract",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_sleeptalk",
+			"name": "TR-214: Sleep Talk",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_healbell",
+			"name": "TR-215: Heal Bell",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_return",
+			"name": "TR-216: Return",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_present",
+			"name": "TR-217: Present",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_frustration",
+			"name": "TR-218: Frustration",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_safeguard",
+			"name": "TR-219: Safeguard",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_vinewhip",
+			"name": "TR-22: Vine Whip",
+			"type": "grass",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_painsplit",
+			"name": "TR-220: Pain Split",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_magnitude",
+			"name": "TR-222: Magnitude",
+			"type": "ground",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_dynamicpunch",
+			"name": "TR-223: Dynamic Punch",
+			"type": "fighting",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_megahorn",
+			"name": "TR-224: Megahorn",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_encore",
+			"name": "TR-227: Encore",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_pursuit",
+			"name": "TR-228: Pursuit",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_rapidspin",
+			"name": "TR-229: Rapid Spin",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_stomp",
+			"name": "TR-23: Stomp",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_sweetscent",
+			"name": "TR-230: Sweet Scent",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_irontail",
+			"name": "TR-231: Iron Tail",
+			"type": "steel",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_metalclaw",
+			"name": "TR-232: Metal Claw",
+			"type": "steel",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_moonlight",
+			"name": "TR-236: Moonlight",
+			"type": "fairy",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_crosschop",
+			"name": "TR-238: Cross Chop",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_twister",
+			"name": "TR-239: Twister",
+			"type": "dragon",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_doublekick",
+			"name": "TR-24: Double Kick",
+			"type": "fighting",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_raindance",
+			"name": "TR-240: Rain Dance",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_sunnyday",
+			"name": "TR-241: Sunny Day",
+			"type": "fire",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_crunch",
+			"name": "TR-242: Crunch",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_mirrorcoat",
+			"name": "TR-243: Mirror Coat",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_psychup",
+			"name": "TR-244: Psych Up",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_extremespeed",
+			"name": "TR-245: Extreme Speed",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_ancientpower",
+			"name": "TR-246: Ancient Power",
+			"type": "rock",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_shadowball",
+			"name": "TR-247: Shadow Ball",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_futuresight",
+			"name": "TR-248: Future Sight",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_rocksmash",
+			"name": "TR-249: Rock Smash",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_megakick",
+			"name": "TR-25: Mega Kick",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_beatup",
+			"name": "TR-251: Beat Up",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_fakeout",
+			"name": "TR-252: Fake Out",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_uproar",
+			"name": "TR-253: Uproar",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_stockpile",
+			"name": "TR-254: Stockpile",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_spitup",
+			"name": "TR-255: Spit Up",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_swallow",
+			"name": "TR-256: Swallow",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_heatwave",
+			"name": "TR-257: Heat Wave",
+			"type": "fire",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_hail",
+			"name": "TR-258: Hail",
+			"type": "ice",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_torment",
+			"name": "TR-259: Torment",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_jumpkick",
+			"name": "TR-26: Jump Kick",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_flatter",
+			"name": "TR-260: Flatter",
+			"type": "dark",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_willowisp",
+			"name": "TR-261: Will-O-Wisp",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_memento",
+			"name": "TR-262: Memento",
+			"type": "dark",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_facade",
+			"name": "TR-263: Facade",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_focuspunch",
+			"name": "TR-264: Focus Punch",
+			"type": "fighting",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_smellingsalts",
+			"name": "TR-265: Smelling Salts",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_followme",
+			"name": "TR-266: Follow Me",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_naturepower",
+			"name": "TR-267: Nature Power",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_charge",
+			"name": "TR-268: Charge",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_taunt",
+			"name": "TR-269: Taunt",
+			"type": "dark",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_helpinghand",
+			"name": "TR-270: Helping Hand",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_trick",
+			"name": "TR-271: Trick",
+			"type": "psychic",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_roleplay",
+			"name": "TR-272: Role Play",
+			"type": "psychic",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_wish",
+			"name": "TR-273: Wish",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_assist",
+			"name": "TR-274: Assist",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_ingrain",
+			"name": "TR-275: Ingrain",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_superpower",
+			"name": "TR-276: Superpower",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_recycle",
+			"name": "TR-278: Recycle",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_revenge",
+			"name": "TR-279: Revenge",
+			"type": "fighting",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_brickbreak",
+			"name": "TR-280: Brick Break",
+			"type": "fighting",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_yawn",
+			"name": "TR-281: Yawn",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_knockoff",
+			"name": "TR-282: Knock Off",
+			"type": "dark",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_endeavor",
+			"name": "TR-283: Endeavor",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_eruption",
+			"name": "TR-284: Eruption",
+			"type": "fire",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_skillswap",
+			"name": "TR-285: Skill Swap",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_imprison",
+			"name": "TR-286: Imprison",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_refresh",
+			"name": "TR-287: Refresh",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_grudge",
+			"name": "TR-288: Grudge",
+			"type": "ghost",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_snatch",
+			"name": "TR-289: Snatch",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_headbutt",
+			"name": "TR-29: Headbutt",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_secretpower",
+			"name": "TR-290: Secret Power",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_featherdance",
+			"name": "TR-297: Feather Dance",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_teeterdance",
+			"name": "TR-298: Teeter Dance",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_blazekick",
+			"name": "TR-299: Blaze Kick",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_doubleslap",
+			"name": "TR-3: Double Slap",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_hornattack",
+			"name": "TR-30: Horn Attack",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_mudsport",
+			"name": "TR-300: Mud Sport",
+			"type": "ground",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_iceball",
+			"name": "TR-301: Ice Ball",
+			"type": "ice",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_hypervoice",
+			"name": "TR-304: Hyper Voice",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_poisonfang",
+			"name": "TR-305: Poison Fang",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_crushclaw",
+			"name": "TR-306: Crush Claw",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_blastburn",
+			"name": "TR-307: Blast Burn",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_hydrocannon",
+			"name": "TR-308: Hydro Cannon",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_meteormash",
+			"name": "TR-309: Meteor Mash",
+			"type": "steel",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_furyattack",
+			"name": "TR-31: Fury Attack",
+			"type": "normal",
+			"count": 7
+		},
+		{
+			"id": "simpletms:tr_astonish",
+			"name": "TR-310: Astonish",
+			"type": "ghost",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_weatherball",
+			"name": "TR-311: Weather Ball",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_aromatherapy",
+			"name": "TR-312: Aromatherapy",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_faketears",
+			"name": "TR-313: Fake Tears",
+			"type": "dark",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_aircutter",
+			"name": "TR-314: Air Cutter",
+			"type": "flying",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_overheat",
+			"name": "TR-315: Overheat",
+			"type": "fire",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_odorsleuth",
+			"name": "TR-316: Odor Sleuth",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_metalsound",
+			"name": "TR-319: Metal Sound",
+			"type": "steel",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_horndrill",
+			"name": "TR-32: Horn Drill",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_tickle",
+			"name": "TR-321: Tickle",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_cosmicpower",
+			"name": "TR-322: Cosmic Power",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_waterspout",
+			"name": "TR-323: Water Spout",
+			"type": "water",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_signalbeam",
+			"name": "TR-324: Signal Beam",
+			"type": "bug",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_shadowpunch",
+			"name": "TR-325: Shadow Punch",
+			"type": "ghost",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_extrasensory",
+			"name": "TR-326: Extrasensory",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_sandtomb",
+			"name": "TR-328: Sand Tomb",
+			"type": "ground",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_sheercold",
+			"name": "TR-329: Sheer Cold",
+			"type": "ice",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_tackle",
+			"name": "TR-33: Tackle",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_muddywater",
+			"name": "TR-330: Muddy Water",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_bulletseed",
+			"name": "TR-331: Bullet Seed",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_iciclespear",
+			"name": "TR-333: Icicle Spear",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_irondefense",
+			"name": "TR-334: Iron Defense",
+			"type": "steel",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_block",
+			"name": "TR-335: Block",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_howl",
+			"name": "TR-336: Howl",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_dragonclaw",
+			"name": "TR-337: Dragon Claw",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_frenzyplant",
+			"name": "TR-338: Frenzy Plant",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_bulkup",
+			"name": "TR-339: Bulk Up",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_bodyslam",
+			"name": "TR-34: Body Slam",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_bounce",
+			"name": "TR-340: Bounce",
+			"type": "flying",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_mudshot",
+			"name": "TR-341: Mud Shot",
+			"type": "ground",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_poisontail",
+			"name": "TR-342: Poison Tail",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_covet",
+			"name": "TR-343: Covet",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_magicalleaf",
+			"name": "TR-345: Magical Leaf",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_calmmind",
+			"name": "TR-347: Calm Mind",
+			"type": "psychic",
+			"count": 7
+		},
+		{
+			"id": "simpletms:tr_leafblade",
+			"name": "TR-348: Leaf Blade",
+			"type": "grass",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_dragondance",
+			"name": "TR-349: Dragon Dance",
+			"type": "dragon",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_rockblast",
+			"name": "TR-350: Rock Blast",
+			"type": "rock",
+			"count": 8
+		},
+		{
+			"id": "simpletms:tr_shockwave",
+			"name": "TR-351: Shock Wave",
+			"type": "electric",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_waterpulse",
+			"name": "TR-352: Water Pulse",
+			"type": "water",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_gravity",
+			"name": "TR-356: Gravity",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_miracleeye",
+			"name": "TR-357: Miracle Eye",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_hammerarm",
+			"name": "TR-359: Hammer Arm",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_takedown",
+			"name": "TR-36: Take Down",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_gyroball",
+			"name": "TR-360: Gyro Ball",
+			"type": "steel",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_healingwish",
+			"name": "TR-361: Healing Wish",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_brine",
+			"name": "TR-362: Brine",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_naturalgift",
+			"name": "TR-363: Natural Gift",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_feint",
+			"name": "TR-364: Feint",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_pluck",
+			"name": "TR-365: Pluck",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_tailwind",
+			"name": "TR-366: Tailwind",
+			"type": "flying",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_acupressure",
+			"name": "TR-367: Acupressure",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_metalburst",
+			"name": "TR-368: Metal Burst",
+			"type": "steel",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_uturn",
+			"name": "TR-369: U-turn",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_thrash",
+			"name": "TR-37: Thrash",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_closecombat",
+			"name": "TR-370: Close Combat",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_payback",
+			"name": "TR-371: Payback",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_assurance",
+			"name": "TR-372: Assurance",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_embargo",
+			"name": "TR-373: Embargo",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_psychoshift",
+			"name": "TR-375: Psycho Shift",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_trumpcard",
+			"name": "TR-376: Trump Card",
+			"type": "normal",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_healblock",
+			"name": "TR-377: Heal Block",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_wringout",
+			"name": "TR-378: Wring Out",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_powertrick",
+			"name": "TR-379: Power Trick",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_doubleedge",
+			"name": "TR-38: Double-Edge",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_gastroacid",
+			"name": "TR-380: Gastro Acid",
+			"type": "poison",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_luckychant",
+			"name": "TR-381: Lucky Chant",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_copycat",
+			"name": "TR-383: Copycat",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_powerswap",
+			"name": "TR-384: Power Swap",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_guardswap",
+			"name": "TR-385: Guard Swap",
+			"type": "psychic",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_punishment",
+			"name": "TR-386: Punishment",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_lastresort",
+			"name": "TR-387: Last Resort",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_worryseed",
+			"name": "TR-388: Worry Seed",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_suckerpunch",
+			"name": "TR-389: Sucker Punch",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_tailwhip",
+			"name": "TR-39: Tail Whip",
+			"type": "normal",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_toxicspikes",
+			"name": "TR-390: Toxic Spikes",
+			"type": "poison",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_heartswap",
+			"name": "TR-391: Heart Swap",
+			"type": "psychic",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_aquaring",
+			"name": "TR-392: Aqua Ring",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_flareblitz",
+			"name": "TR-394: Flare Blitz",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_forcepalm",
+			"name": "TR-395: Force Palm",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_rockpolish",
+			"name": "TR-397: Rock Polish",
+			"type": "rock",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_poisonjab",
+			"name": "TR-398: Poison Jab",
+			"type": "poison",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_darkpulse",
+			"name": "TR-399: Dark Pulse",
+			"type": "dark",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_poisonsting",
+			"name": "TR-40: Poison Sting",
+			"type": "poison",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_nightslash",
+			"name": "TR-400: Night Slash",
+			"type": "dark",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_aquatail",
+			"name": "TR-401: Aqua Tail",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_seedbomb",
+			"name": "TR-402: Seed Bomb",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_airslash",
+			"name": "TR-403: Air Slash",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_xscissor",
+			"name": "TR-404: X-Scissor",
+			"type": "bug",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_bugbuzz",
+			"name": "TR-405: Bug Buzz",
+			"type": "bug",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_dragonpulse",
+			"name": "TR-406: Dragon Pulse",
+			"type": "dragon",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_dragonrush",
+			"name": "TR-407: Dragon Rush",
+			"type": "dragon",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_powergem",
+			"name": "TR-408: Power Gem",
+			"type": "rock",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_drainpunch",
+			"name": "TR-409: Drain Punch",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_vacuumwave",
+			"name": "TR-410: Vacuum Wave",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_energyball",
+			"name": "TR-412: Energy Ball",
+			"type": "grass",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_bravebird",
+			"name": "TR-413: Brave Bird",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_earthpower",
+			"name": "TR-414: Earth Power",
+			"type": "ground",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_switcheroo",
+			"name": "TR-415: Switcheroo",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_gigaimpact",
+			"name": "TR-416: Giga Impact",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_nastyplot",
+			"name": "TR-417: Nasty Plot",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_avalanche",
+			"name": "TR-419: Avalanche",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_iceshard",
+			"name": "TR-420: Ice Shard",
+			"type": "ice",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_shadowclaw",
+			"name": "TR-421: Shadow Claw",
+			"type": "ghost",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_thunderfang",
+			"name": "TR-422: Thunder Fang",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_icefang",
+			"name": "TR-423: Ice Fang",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_firefang",
+			"name": "TR-424: Fire Fang",
+			"type": "fire",
+			"count": 7
+		},
+		{
+			"id": "simpletms:tr_shadowsneak",
+			"name": "TR-425: Shadow Sneak",
+			"type": "ghost",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_mudbomb",
+			"name": "TR-426: Mud Bomb",
+			"type": "ground",
+			"count": 8
+		},
+		{
+			"id": "simpletms:tr_psychocut",
+			"name": "TR-427: Psycho Cut",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_zenheadbutt",
+			"name": "TR-428: Zen Headbutt",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_mirrorshot",
+			"name": "TR-429: Mirror Shot",
+			"type": "steel",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_leer",
+			"name": "TR-43: Leer",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_flashcannon",
+			"name": "TR-430: Flash Cannon",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_rockclimb",
+			"name": "TR-431: Rock Climb",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_defog",
+			"name": "TR-432: Defog",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_trickroom",
+			"name": "TR-433: Trick Room",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_dracometeor",
+			"name": "TR-434: Draco Meteor",
+			"type": "dragon",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_discharge",
+			"name": "TR-435: Discharge",
+			"type": "electric",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_lavaplume",
+			"name": "TR-436: Lava Plume",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_leafstorm",
+			"name": "TR-437: Leaf Storm",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_bite",
+			"name": "TR-44: Bite",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_crosspoison",
+			"name": "TR-440: Cross Poison",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_gunkshot",
+			"name": "TR-441: Gunk Shot",
+			"type": "poison",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_ironhead",
+			"name": "TR-442: Iron Head",
+			"type": "steel",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_magnetbomb",
+			"name": "TR-443: Magnet Bomb",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_stoneedge",
+			"name": "TR-444: Stone Edge",
+			"type": "rock",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_captivate",
+			"name": "TR-445: Captivate",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_stealthrock",
+			"name": "TR-446: Stealth Rock",
+			"type": "rock",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_grassknot",
+			"name": "TR-447: Grass Knot",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_judgment",
+			"name": "TR-449: Judgment",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_growl",
+			"name": "TR-45: Growl",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_bugbite",
+			"name": "TR-450: Bug Bite",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_woodhammer",
+			"name": "TR-452: Wood Hammer",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_aquajet",
+			"name": "TR-453: Aqua Jet",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_headsmash",
+			"name": "TR-457: Head Smash",
+			"type": "rock",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_ominouswind",
+			"name": "TR-466: Ominous Wind",
+			"type": "ghost",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_honeclaws",
+			"name": "TR-468: Hone Claws",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_wideguard",
+			"name": "TR-469: Wide Guard",
+			"type": "rock",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_sing",
+			"name": "TR-47: Sing",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_guardsplit",
+			"name": "TR-470: Guard Split",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_powersplit",
+			"name": "TR-471: Power Split",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_wonderroom",
+			"name": "TR-472: Wonder Room",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_psyshock",
+			"name": "TR-473: Psyshock",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_venoshock",
+			"name": "TR-474: Venoshock",
+			"type": "poison",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_autotomize",
+			"name": "TR-475: Autotomize",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_ragepowder",
+			"name": "TR-476: Rage Powder",
+			"type": "bug",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_magicroom",
+			"name": "TR-478: Magic Room",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_smackdown",
+			"name": "TR-479: Smack Down",
+			"type": "rock",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_supersonic",
+			"name": "TR-48: Supersonic",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_stormthrow",
+			"name": "TR-480: Storm Throw",
+			"type": "fighting",
+			"count": 9
+		},
+		{
+			"id": "simpletms:tr_flameburst",
+			"name": "TR-481: Flame Burst",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_sludgewave",
+			"name": "TR-482: Sludge Wave",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_quiverdance",
+			"name": "TR-483: Quiver Dance",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_heavyslam",
+			"name": "TR-484: Heavy Slam",
+			"type": "steel",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_synchronoise",
+			"name": "TR-485: Synchronoise",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_electroball",
+			"name": "TR-486: Electro Ball",
+			"type": "electric",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_soak",
+			"name": "TR-487: Soak",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_flamecharge",
+			"name": "TR-488: Flame Charge",
+			"type": "fire",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_coil",
+			"name": "TR-489: Coil",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_sonicboom",
+			"name": "TR-49: Sonic Boom",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_lowsweep",
+			"name": "TR-490: Low Sweep",
+			"type": "fighting",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_acidspray",
+			"name": "TR-491: Acid Spray",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_foulplay",
+			"name": "TR-492: Foul Play",
+			"type": "dark",
+			"count": 9
+		},
+		{
+			"id": "simpletms:tr_simplebeam",
+			"name": "TR-493: Simple Beam",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_entrainment",
+			"name": "TR-494: Entrainment",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_round",
+			"name": "TR-496: Round",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_echoedvoice",
+			"name": "TR-497: Echoed Voice",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_chipaway",
+			"name": "TR-498: Chip Away",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_clearsmog",
+			"name": "TR-499: Clear Smog",
+			"type": "poison",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_megapunch",
+			"name": "TR-5: Mega Punch",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_disable",
+			"name": "TR-50: Disable",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_storedpower",
+			"name": "TR-500: Stored Power",
+			"type": "psychic",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_quickguard",
+			"name": "TR-501: Quick Guard",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_allyswitch",
+			"name": "TR-502: Ally Switch",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_scald",
+			"name": "TR-503: Scald",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_shellsmash",
+			"name": "TR-504: Shell Smash",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_healpulse",
+			"name": "TR-505: Heal Pulse",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_hex",
+			"name": "TR-506: Hex",
+			"type": "ghost",
+			"count": 7
+		},
+		{
+			"id": "simpletms:tr_skydrop",
+			"name": "TR-507: Sky Drop",
+			"type": "flying",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_circlethrow",
+			"name": "TR-509: Circle Throw",
+			"type": "fighting",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_acid",
+			"name": "TR-51: Acid",
+			"type": "poison",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_incinerate",
+			"name": "TR-510: Incinerate",
+			"type": "fire",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_quash",
+			"name": "TR-511: Quash",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_acrobatics",
+			"name": "TR-512: Acrobatics",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_reflecttype",
+			"name": "TR-513: Reflect Type",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_retaliate",
+			"name": "TR-514: Retaliate",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_finalgambit",
+			"name": "TR-515: Final Gambit",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_bestow",
+			"name": "TR-516: Bestow",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_inferno",
+			"name": "TR-517: Inferno",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_waterpledge",
+			"name": "TR-518: Water Pledge",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_firepledge",
+			"name": "TR-519: Fire Pledge",
+			"type": "fire",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_ember",
+			"name": "TR-52: Ember",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_grasspledge",
+			"name": "TR-520: Grass Pledge",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_voltswitch",
+			"name": "TR-521: Volt Switch",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_strugglebug",
+			"name": "TR-522: Struggle Bug",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_bulldoze",
+			"name": "TR-523: Bulldoze",
+			"type": "ground",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_frostbreath",
+			"name": "TR-524: Frost Breath",
+			"type": "ice",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_dragontail",
+			"name": "TR-525: Dragon Tail",
+			"type": "dragon",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_workup",
+			"name": "TR-526: Work Up",
+			"type": "normal",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_electroweb",
+			"name": "TR-527: Electroweb",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_wildcharge",
+			"name": "TR-528: Wild Charge",
+			"type": "electric",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_drillrun",
+			"name": "TR-529: Drill Run",
+			"type": "ground",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_flamethrower",
+			"name": "TR-53: Flamethrower",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_dualchop",
+			"name": "TR-530: Dual Chop",
+			"type": "dragon",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_heartstamp",
+			"name": "TR-531: Heart Stamp",
+			"type": "psychic",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_razorshell",
+			"name": "TR-534: Razor Shell",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_leaftornado",
+			"name": "TR-536: Leaf Tornado",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_steamroller",
+			"name": "TR-537: Steamroller",
+			"type": "bug",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_cottonguard",
+			"name": "TR-538: Cotton Guard",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_mist",
+			"name": "TR-54: Mist",
+			"type": "ice",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_tailslap",
+			"name": "TR-541: Tail Slap",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_watergun",
+			"name": "TR-55: Water Gun",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_iceburn",
+			"name": "TR-554: Ice Burn",
+			"type": "ice",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_snarl",
+			"name": "TR-555: Snarl",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_iciclecrash",
+			"name": "TR-556: Icicle Crash",
+			"type": "ice",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_belch",
+			"name": "TR-562: Belch",
+			"type": "poison",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_rototiller",
+			"name": "TR-563: Rototiller",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_stickyweb",
+			"name": "TR-564: Sticky Web",
+			"type": "bug",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_fellstinger",
+			"name": "TR-565: Fell Stinger",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_phantomforce",
+			"name": "TR-566: Phantom Force",
+			"type": "ghost",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_iondeluge",
+			"name": "TR-569: Ion Deluge",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_surf",
+			"name": "TR-57: Surf",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_petalblizzard",
+			"name": "TR-572: Petal Blizzard",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_freezedry",
+			"name": "TR-573: Freeze-Dry",
+			"type": "ice",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_disarmingvoice",
+			"name": "TR-574: Disarming Voice",
+			"type": "fairy",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_drainingkiss",
+			"name": "TR-577: Draining Kiss",
+			"type": "fairy",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_flowershield",
+			"name": "TR-579: Flower Shield",
+			"type": "fairy",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_icebeam",
+			"name": "TR-58: Ice Beam",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_grassyterrain",
+			"name": "TR-580: Grassy Terrain",
+			"type": "grass",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_mistyterrain",
+			"name": "TR-581: Misty Terrain",
+			"type": "fairy",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_playrough",
+			"name": "TR-583: Play Rough",
+			"type": "fairy",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_fairywind",
+			"name": "TR-584: Fairy Wind",
+			"type": "fairy",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_moonblast",
+			"name": "TR-585: Moonblast",
+			"type": "fairy",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_boomburst",
+			"name": "TR-586: Boomburst",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_blizzard",
+			"name": "TR-59: Blizzard",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_mysticalfire",
+			"name": "TR-595: Mystical Fire",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_spikyshield",
+			"name": "TR-596: Spiky Shield",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_aromaticmist",
+			"name": "TR-597: Aromatic Mist",
+			"type": "fairy",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_eerieimpulse",
+			"name": "TR-598: Eerie Impulse",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_venomdrench",
+			"name": "TR-599: Venom Drench",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_payday",
+			"name": "TR-6: Pay Day",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_psybeam",
+			"name": "TR-60: Psybeam",
+			"type": "psychic",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_magneticflux",
+			"name": "TR-602: Magnetic Flux",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_happyhour",
+			"name": "TR-603: Happy Hour",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_electricterrain",
+			"name": "TR-604: Electric Terrain",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_dazzlinggleam",
+			"name": "TR-605: Dazzling Gleam",
+			"type": "fairy",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_celebrate",
+			"name": "TR-606: Celebrate",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_holdhands",
+			"name": "TR-607: Hold Hands",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_babydolleyes",
+			"name": "TR-608: Baby-Doll Eyes",
+			"type": "fairy",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_nuzzle",
+			"name": "TR-609: Nuzzle",
+			"type": "electric",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_bubblebeam",
+			"name": "TR-61: Bubble Beam",
+			"type": "water",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_holdback",
+			"name": "TR-610: Hold Back",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_infestation",
+			"name": "TR-611: Infestation",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_poweruppunch",
+			"name": "TR-612: Power-Up Punch",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_aurorabeam",
+			"name": "TR-62: Aurora Beam",
+			"type": "ice",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_peck",
+			"name": "TR-64: Peck",
+			"type": "flying",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_submission",
+			"name": "TR-66: Submission",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_firstimpression",
+			"name": "TR-660: First Impression",
+			"type": "bug",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_icehammer",
+			"name": "TR-665: Ice Hammer",
+			"type": "ice",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_highhorsepower",
+			"name": "TR-667: High Horsepower",
+			"type": "ground",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_strengthsap",
+			"name": "TR-668: Strength Sap",
+			"type": "grass",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_solarblade",
+			"name": "TR-669: Solar Blade",
+			"type": "grass",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_lowkick",
+			"name": "TR-67: Low Kick",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_leafage",
+			"name": "TR-670: Leafage",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_spotlight",
+			"name": "TR-671: Spotlight",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_laserfocus",
+			"name": "TR-673: Laser Focus",
+			"type": "normal",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_throatchop",
+			"name": "TR-675: Throat Chop",
+			"type": "dark",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_psychicterrain",
+			"name": "TR-678: Psychic Terrain",
+			"type": "psychic",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_counter",
+			"name": "TR-68: Counter",
+			"type": "fighting",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_powertrip",
+			"name": "TR-681: Power Trip",
+			"type": "dark",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_burnup",
+			"name": "TR-682: Burn Up",
+			"type": "fire",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_smartstrike",
+			"name": "TR-684: Smart Strike",
+			"type": "steel",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_instruct",
+			"name": "TR-689: Instruct",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_seismictoss",
+			"name": "TR-69: Seismic Toss",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_beakblast",
+			"name": "TR-690: Beak Blast",
+			"type": "flying",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_dragonhammer",
+			"name": "TR-692: Dragon Hammer",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_brutalswing",
+			"name": "TR-693: Brutal Swing",
+			"type": "dark",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_auroraveil",
+			"name": "TR-694: Aurora Veil",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_firepunch",
+			"name": "TR-7: Fire Punch",
+			"type": "fire",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_strength",
+			"name": "TR-70: Strength",
+			"type": "normal",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_psychicfangs",
+			"name": "TR-706: Psychic Fangs",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_stompingtantrum",
+			"name": "TR-707: Stomping Tantrum",
+			"type": "ground",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_absorb",
+			"name": "TR-71: Absorb",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_liquidation",
+			"name": "TR-710: Liquidation",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_tearfullook",
+			"name": "TR-715: Tearful Look",
+			"type": "normal",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_megadrain",
+			"name": "TR-72: Mega Drain",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_leechseed",
+			"name": "TR-73: Leech Seed",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_buzzybuzz",
+			"name": "TR-734: Buzzy Buzz",
+			"type": "electric",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_growth",
+			"name": "TR-74: Growth",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_razorleaf",
+			"name": "TR-75: Razor Leaf",
+			"type": "grass",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_boltbeak",
+			"name": "TR-754: Bolt Beak",
+			"type": "electric",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_fishiousrend",
+			"name": "TR-755: Fishious Rend",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_solarbeam",
+			"name": "TR-76: Solar Beam",
+			"type": "grass",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_poisonpowder",
+			"name": "TR-77: Poison Powder",
+			"type": "poison",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_bodypress",
+			"name": "TR-776: Body Press",
+			"type": "fighting",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_stunspore",
+			"name": "TR-78: Stun Spore",
+			"type": "grass",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_breakingswipe",
+			"name": "TR-784: Breaking Swipe",
+			"type": "dragon",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_spiritbreak",
+			"name": "TR-789: Spirit Break",
+			"type": "fairy",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_sleeppowder",
+			"name": "TR-79: Sleep Powder",
+			"type": "grass",
+			"count": 5
+		},
+		{
+			"id": "simpletms:tr_lifedew",
+			"name": "TR-791: Life Dew",
+			"type": "water",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_meteorassault",
+			"name": "TR-794: Meteor Assault",
+			"type": "fighting",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_steelbeam",
+			"name": "TR-796: Steel Beam",
+			"type": "steel",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_scaleshot",
+			"name": "TR-799: Scale Shot",
+			"type": "dragon",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_icepunch",
+			"name": "TR-8: Ice Punch",
+			"type": "ice",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_meteorbeam",
+			"name": "TR-800: Meteor Beam",
+			"type": "rock",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_mistyexplosion",
+			"name": "TR-802: Misty Explosion",
+			"type": "fairy",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_grassyglide",
+			"name": "TR-803: Grassy Glide",
+			"type": "grass",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_skittersmack",
+			"name": "TR-806: Skitter Smack",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_burningjealousy",
+			"name": "TR-807: Burning Jealousy",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_lashout",
+			"name": "TR-808: Lash Out",
+			"type": "dark",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_poltergeist",
+			"name": "TR-809: Poltergeist",
+			"type": "ghost",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_stringshot",
+			"name": "TR-81: String Shot",
+			"type": "bug",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_corrosivegas",
+			"name": "TR-810: Corrosive Gas",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_coaching",
+			"name": "TR-811: Coaching",
+			"type": "fighting",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_flipturn",
+			"name": "TR-812: Flip Turn",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_tripleaxel",
+			"name": "TR-813: Triple Axel",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_dualwingbeat",
+			"name": "TR-814: Dual Wingbeat",
+			"type": "flying",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_scorchingsands",
+			"name": "TR-815: Scorching Sands",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_firespin",
+			"name": "TR-83: Fire Spin",
+			"type": "fire",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_ragingfury",
+			"name": "TR-833: Raging Fury",
+			"type": "fire",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_wavecrash",
+			"name": "TR-834: Wave Crash",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_headlongrush",
+			"name": "TR-838: Headlong Rush",
+			"type": "ground",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_thundershock",
+			"name": "TR-84: Thunder Shock",
+			"type": "electric",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_lunarblessing",
+			"name": "TR-849: Lunar Blessing",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_thunderbolt",
+			"name": "TR-85: Thunderbolt",
+			"type": "electric",
+			"count": 6
+		},
+		{
+			"id": "simpletms:tr_axekick",
+			"name": "TR-853: Axe Kick",
+			"type": "fighting",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_thunderwave",
+			"name": "TR-86: Thunder Wave",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_icespinner",
+			"name": "TR-861: Ice Spinner",
+			"type": "ice",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_revivalblessing",
+			"name": "TR-863: Revival Blessing",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_thunder",
+			"name": "TR-87: Thunder",
+			"type": "electric",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_rockthrow",
+			"name": "TR-88: Rock Throw",
+			"type": "rock",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_shedtail",
+			"name": "TR-880: Shed Tail",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_tidyup",
+			"name": "TR-882: Tidy Up",
+			"type": "normal",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_snowscape",
+			"name": "TR-883: Snowscape",
+			"type": "ice",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_pounce",
+			"name": "TR-884: Pounce",
+			"type": "bug",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_trailblaze",
+			"name": "TR-885: Trailblaze",
+			"type": "grass",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_chillingwater",
+			"name": "TR-886: Chilling Water",
+			"type": "water",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_earthquake",
+			"name": "TR-89: Earthquake",
+			"type": "ground",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_comeuppance",
+			"name": "TR-894: Comeuppance",
+			"type": "dark",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_thunderpunch",
+			"name": "TR-9: Thunder Punch",
+			"type": "electric",
+			"count": 3
+		},
+		{
+			"id": "simpletms:tr_dig",
+			"name": "TR-91: Dig",
+			"type": "ground",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_toxic",
+			"name": "TR-92: Toxic",
+			"type": "poison",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_confusion",
+			"name": "TR-93: Confusion",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_psychic",
+			"name": "TR-94: Psychic",
+			"type": "psychic",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_hypnosis",
+			"name": "TR-95: Hypnosis",
+			"type": "psychic",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_meditate",
+			"name": "TR-96: Meditate",
+			"type": "psychic",
+			"count": 1
+		},
+		{
+			"id": "simpletms:tr_agility",
+			"name": "TR-97: Agility",
+			"type": "psychic",
+			"count": 2
+		},
+		{
+			"id": "simpletms:tr_quickattack",
+			"name": "TR-98: Quick Attack",
+			"type": "normal",
+			"count": 4
+		},
+		{
+			"id": "simpletms:tr_rage",
+			"name": "TR-99: Rage",
+			"type": "normal",
+			"count": 3
+		}
+	]
+}

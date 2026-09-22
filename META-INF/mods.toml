@@ -1,0 +1,31 @@
+modLoader="javafml" #mandatory
+
+loaderVersion="[32,)" #mandatory
+
+authors="Chakyl,Nitbe" #optional
+
+license="LGPL"#mandatory
+
+[[mods]] #mandatory
+
+modId="splendid_slimes" #mandatory
+
+version="0.20.5" #mandatory
+
+displayName="Splendid Slimes" #mandatory
+
+description='''A Slime expansion'''
+
+[[dependencies.splendid_slimes]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.splendid_slimes]]
+modId="placebo"
+mandatory=true
+versionRange="[8.5.5,)"
+ordering="NONE"
+side="BOTH"

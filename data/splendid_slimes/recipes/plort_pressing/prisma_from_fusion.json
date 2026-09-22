@@ -1,0 +1,27 @@
+{
+  "type": "splendid_slimes:plort_pressing",
+  "ingredient": {
+    "item": "splendid_slimes:slime_heart",
+    "nbt": {
+      "slime": {
+        "id": "splendid_slimes:luminous"
+      }
+    }
+  },
+  "output": {
+    "item": "splendid_slimes:slime_heart",
+    "nbt": {
+      "slime": {
+        "id": "splendid_slimes:puddle"
+      }
+    }
+  },
+  "result": {
+    "item": "splendid_slimes:slime_heart",
+    "nbt": {
+      "slime": {
+        "id": "splendid_slimes:prisma"
+      }
+    }
+  }
+}

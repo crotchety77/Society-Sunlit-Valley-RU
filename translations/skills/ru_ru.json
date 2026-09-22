@@ -67,7 +67,7 @@
   "society.skills.fishing.hot_hands": "Горячие руки",
   "society.skills.fishing.hot_hands.description": "Рыба, добытая из прудов, автоматически коптится §a(стоит в 4 раза дороже)§7.\n\n§c25%% шанс, что рыба пригорит и превратится в уголёк.",
   "society.skills.fishing.wooden_pollution": "Древесное загрязнение",
-  "society.skills.fishing.wooden_pollution.description": "Двойной шанс на получение §6Желе§7(Океаническое и Речное) при рыбалке (§a10%% + §a10%%). Шанс (§a10%%) выловить §6Мебельный ящик§7 при рыбалке в любом водоёме.",
+  "society.skills.fishing.wooden_pollution.description": "Двойной шанс на получение §6Желе§7 (Океаническое, Речное и Адское) при рыбалке (§a10%% + §a10%%). Шанс (§a10%%) выловить §6Мебельный ящик§7 при рыбалке в любом водоёме.",
   "society.skills.fishing.frozen_treasure": "Ледяное сокровище",
   "society.skills.fishing.frozen_treasure.description": "Высокий шанс найти §6Сундуки с сокровищами§7 при рыбалке §bзимой§7.\n\n§a45%% шанс поймать Сундук с сокровищами (aquaculture:treasure_chest) зимой.",
   "society.skills.fishing.school_fisher": "Ловец косяков",

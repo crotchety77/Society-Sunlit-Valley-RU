@@ -1,0 +1,1234 @@
+Compiled from "PokemonMixin.java"
+public abstract class dev.zanckor.cobblemonrider.mixin.PokemonMixin extends net.minecraft.world.entity.PathfinderMob implements com.cobblemon.mod.common.entity.Poseable,com.cobblemon.mod.common.api.scheduling.Schedulable,dev.zanckor.cobblemonrider.mixininterface.IPokemonStamina {
+  private dev.zanckor.cobblemonrider.config.PokemonJsonObject$PokemonConfigData cobblemonRiding$passengerObject;
+
+  private int cobblemonRiding$stamina;
+
+  private int cobblemonRiding$maxPassengers;
+
+  private static final int TIME_BETWEEN_SWITCH_SPRINTS = 10;
+
+  private int cobblemonRiding$timeUntilNextSwitchSprint;
+
+  private boolean cobblemonRiding$isSprinting;
+
+  private boolean cobblemonRiding$prevSprintPressed;
+
+  private float cobblemonRiding$speedMultiplier;
+
+  private net.minecraft.world.phys.Vec3 cobblemonRiding$prevMovementInput;
+
+  private int cobblemonRiding$timeUntilNextJump;
+
+  public abstract com.cobblemon.mod.common.pokemon.Pokemon getPokemon();
+
+  public abstract void m_6043_();
+
+  public abstract com.cobblemon.mod.common.api.entity.PokemonSideDelegate getDelegate();
+
+  public abstract void m_7023_(net.minecraft.world.phys.Vec3);
+
+  public abstract boolean isFalling();
+
+  protected dev.zanckor.cobblemonrider.mixin.PokemonMixin(net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.animal.ShoulderRidingEntity>, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #71                 // Method net/minecraft/world/entity/PathfinderMob."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+       6: aload_0
+       7: ldc           #72                 // int 2147483647
+       9: putfield      #74                 // Field cobblemonRiding$stamina:I
+      12: aload_0
+      13: iconst_m1
+      14: putfield      #76                 // Field cobblemonRiding$maxPassengers:I
+      17: aload_0
+      18: iconst_0
+      19: putfield      #78                 // Field cobblemonRiding$timeUntilNextSwitchSprint:I
+      22: return
+
+  private void init(net.minecraft.world.level.Level, com.cobblemon.mod.common.pokemon.Pokemon, net.minecraft.world.entity.EntityType<? extends com.cobblemon.mod.common.entity.pokemon.PokemonEntity>, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: fconst_1
+       2: invokevirtual #98                 // Method m_274367_:(F)V
+       5: aload_0
+       6: getstatic     #103                // Field net/minecraft/world/phys/Vec3.f_82478_:Lnet/minecraft/world/phys/Vec3;
+       9: putfield      #105                // Field cobblemonRiding$prevMovementInput:Lnet/minecraft/world/phys/Vec3;
+      12: return
+
+  public void tick(org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        41
+       7: aload_0
+       8: invokevirtual #120                // Method cobblemonRiding$mayMountOtherEntities:()Z
+      11: ifeq          29
+      14: aload_0
+      15: aload_0
+      16: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      19: invokevirtual #124                // Method m_7310_:(Lnet/minecraft/world/entity/Entity;)Z
+      22: ifeq          29
+      25: aload_0
+      26: invokevirtual #127                // Method cobblemonRiding$mountEntity:()V
+      29: aload_0
+      30: invokevirtual #130                // Method cobblemonRiding$dismountHandler:()V
+      33: aload_0
+      34: invokevirtual #133                // Method cobblemonRiding$movementHandler:()V
+      37: aload_0
+      38: invokevirtual #136                // Method cobblemonRiding$rotateBody:()V
+      41: return
+
+  private void cobblemonRiding$mountEntity();
+    Code:
+       0: aload_0
+       1: invokevirtual #140                // Method m_9236_:()Lnet/minecraft/world/level/Level;
+       4: ldc           #142                // class net/minecraft/world/entity/LivingEntity
+       6: aload_0
+       7: invokevirtual #146                // Method m_20191_:()Lnet/minecraft/world/phys/AABB;
+      10: aload_0
+      11: invokedynamic #165,  0            // InvokeDynamic #0:test:(Ldev/zanckor/cobblemonrider/mixin/PokemonMixin;)Ljava/util/function/Predicate;
+      16: invokevirtual #171                // Method net/minecraft/world/level/Level.m_6443_:(Ljava/lang/Class;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;)Ljava/util/List;
+      19: astore_1
+      20: aload_1
+      21: invokeinterface #177,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      26: astore_2
+      27: aload_2
+      28: invokeinterface #182,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      33: ifeq          63
+      36: aload_2
+      37: invokeinterface #186,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      42: checkcast     #142                // class net/minecraft/world/entity/LivingEntity
+      45: astore_3
+      46: aload_0
+      47: aload_3
+      48: invokevirtual #124                // Method m_7310_:(Lnet/minecraft/world/entity/Entity;)Z
+      51: ifeq          60
+      54: aload_3
+      55: aload_0
+      56: invokevirtual #189                // Method net/minecraft/world/entity/LivingEntity.m_20329_:(Lnet/minecraft/world/entity/Entity;)Z
+      59: pop
+      60: goto          27
+      63: return
+
+  protected void m_19956_(net.minecraft.world.entity.Entity, net.minecraft.world.entity.Entity$MoveFunction);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #199                // Method m_20363_:(Lnet/minecraft/world/entity/Entity;)Z
+       5: ifeq          198
+       8: aload_0
+       9: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      12: ifnull        198
+      15: aload_0
+      16: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      19: ifnull        198
+      22: aload_0
+      23: invokevirtual #207                // Method m_20197_:()Ljava/util/List;
+      26: aload_1
+      27: invokeinterface #211,  2          // InterfaceMethod java/util/List.indexOf:(Ljava/lang/Object;)I
+      32: iconst_1
+      33: isub
+      34: istore_3
+      35: aload_0
+      36: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      39: aload_1
+      40: invokevirtual #214                // Method net/minecraft/world/entity/LivingEntity.equals:(Ljava/lang/Object;)Z
+      43: istore        4
+      45: iload         4
+      47: ifeq          60
+      50: aload_0
+      51: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      54: invokevirtual #218                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getRidingOffSet:()Ljava/util/ArrayList;
+      57: goto          74
+      60: aload_0
+      61: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      64: invokevirtual #221                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getPassengersOffSet:()Ljava/util/ArrayList;
+      67: iload_3
+      68: invokevirtual #227                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+      71: checkcast     #223                // class java/util/ArrayList
+      74: astore        5
+      76: aload_0
+      77: aload_0
+      78: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      81: invokevirtual #231                // Method net/minecraft/world/entity/LivingEntity.m_146908_:()F
+      84: invokevirtual #234                // Method m_5618_:(F)V
+      87: aload         5
+      89: iconst_2
+      90: invokevirtual #227                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+      93: checkcast     #236                // class java/lang/Float
+      96: invokevirtual #239                // Method java/lang/Float.floatValue:()F
+      99: fstore        6
+     101: aload         5
+     103: iconst_1
+     104: invokevirtual #227                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     107: checkcast     #236                // class java/lang/Float
+     110: invokevirtual #239                // Method java/lang/Float.floatValue:()F
+     113: fstore        7
+     115: aload         5
+     117: iconst_0
+     118: invokevirtual #227                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     121: checkcast     #236                // class java/lang/Float
+     124: invokevirtual #239                // Method java/lang/Float.floatValue:()F
+     127: fstore        8
+     129: new           #100                // class net/minecraft/world/phys/Vec3
+     132: dup
+     133: fload         6
+     135: f2d
+     136: fload         7
+     138: f2d
+     139: fload         8
+     141: f2d
+     142: invokespecial #242                // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+     145: aload_0
+     146: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+     149: invokevirtual #231                // Method net/minecraft/world/entity/LivingEntity.m_146908_:()F
+     152: fneg
+     153: ldc           #243                // float 0.017453292f
+     155: fmul
+     156: invokevirtual #247                // Method net/minecraft/world/phys/Vec3.m_82524_:(F)Lnet/minecraft/world/phys/Vec3;
+     159: astore        9
+     161: aload_2
+     162: aload_1
+     163: aload_0
+     164: invokevirtual #251                // Method m_20185_:()D
+     167: aload         9
+     169: getfield      #255                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+     172: dadd
+     173: aload_0
+     174: invokevirtual #258                // Method m_20186_:()D
+     177: aload         9
+     179: getfield      #261                // Field net/minecraft/world/phys/Vec3.f_82480_:D
+     182: dadd
+     183: aload_0
+     184: invokevirtual #264                // Method m_20189_:()D
+     187: aload         9
+     189: getfield      #267                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+     192: dadd
+     193: invokeinterface #271,  8          // InterfaceMethod net/minecraft/world/entity/Entity$MoveFunction.m_20372_:(Lnet/minecraft/world/entity/Entity;DDD)V
+     198: return
+
+  private void cobblemonRiding$movementHandler();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: astore_2
+       5: aload_2
+       6: instanceof    #286                // class net/minecraft/world/entity/player/Player
+       9: ifeq          121
+      12: aload_2
+      13: checkcast     #286                // class net/minecraft/world/entity/player/Player
+      16: astore_1
+      17: aload_0
+      18: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      21: ifnull        121
+      24: aload_0
+      25: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      28: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+      31: getstatic     #293                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      34: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      37: ifne          48
+      40: aload_0
+      41: getfield      #299                // Field f_19798_:Z
+      44: ifeq          48
+      47: return
+      48: aload_0
+      49: invokevirtual #302                // Method cobblemonRiding$sprintHandler:()V
+      52: aload_0
+      53: invokevirtual #305                // Method cobblemonRiding$travelHandler:()V
+      56: aload_0
+      57: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      60: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+      63: getstatic     #293                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      66: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      69: ifeq          76
+      72: aload_0
+      73: invokevirtual #308                // Method cobblemonRiding$swimmingHandler:()V
+      76: aload_0
+      77: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      80: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+      83: getstatic     #311                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.LAVA_SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      86: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      89: ifeq          96
+      92: aload_0
+      93: invokevirtual #314                // Method cobblemonRiding$lavaSwimmingHandler:()V
+      96: aload_0
+      97: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+     100: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+     103: getstatic     #317                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+     106: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+     109: ifeq          116
+     112: aload_0
+     113: invokevirtual #320                // Method cobblemonRiding$flyingHandler:()V
+     116: aload_0
+     117: aload_1
+     118: invokevirtual #324                // Method cobblemonRiding$resetKeyData:(Lnet/minecraft/world/entity/player/Player;)V
+     121: return
+
+  private void cobblemonRiding$travelHandler();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        168
+       7: aload_0
+       8: invokevirtual #329                // Method cobblemonRiding$canMove:()Z
+      11: ifeq          168
+      14: aload_0
+      15: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      18: invokevirtual #332                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getSpeedModifier:()F
+      21: fstore_1
+      22: aload_0
+      23: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      26: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+      29: astore_3
+      30: aload_3
+      31: getstatic     #317                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      34: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      37: ifne          57
+      40: aload_3
+      41: getstatic     #293                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      44: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      47: ifeq          61
+      50: aload_0
+      51: getfield      #299                // Field f_19798_:Z
+      54: ifeq          61
+      57: iconst_1
+      58: goto          62
+      61: iconst_0
+      62: istore        4
+      64: aload_0
+      65: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      68: invokevirtual #336                // Method net/minecraft/world/entity/LivingEntity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      71: aload_0
+      72: getfield      #338                // Field cobblemonRiding$speedMultiplier:F
+      75: f2d
+      76: invokevirtual #342                // Method net/minecraft/world/phys/Vec3.m_82490_:(D)Lnet/minecraft/world/phys/Vec3;
+      79: aload_0
+      80: getfield      #105                // Field cobblemonRiding$prevMovementInput:Lnet/minecraft/world/phys/Vec3;
+      83: invokevirtual #346                // Method net/minecraft/world/phys/Vec3.m_82549_:(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+      86: ldc2_w        #347                // double 0.86d
+      89: invokevirtual #342                // Method net/minecraft/world/phys/Vec3.m_82490_:(D)Lnet/minecraft/world/phys/Vec3;
+      92: dconst_1
+      93: iload         4
+      95: ifeq          102
+      98: dconst_0
+      99: goto          103
+     102: dconst_1
+     103: dconst_1
+     104: invokevirtual #352                // Method net/minecraft/world/phys/Vec3.m_82542_:(DDD)Lnet/minecraft/world/phys/Vec3;
+     107: astore_2
+     108: aload_0
+     109: getstatic     #358                // Field net/minecraft/world/entity/MoverType.SELF:Lnet/minecraft/world/entity/MoverType;
+     112: aload_2
+     113: invokevirtual #362                // Method m_6478_:(Lnet/minecraft/world/entity/MoverType;Lnet/minecraft/world/phys/Vec3;)V
+     116: aload_0
+     117: aload_2
+     118: invokevirtual #365                // Method m_20256_:(Lnet/minecraft/world/phys/Vec3;)V
+     121: aload_0
+     122: invokevirtual #368                // Method cobblemonRiding$jumpHandler:()V
+     125: aload_0
+     126: aload_0
+     127: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     130: putfield      #105                // Field cobblemonRiding$prevMovementInput:Lnet/minecraft/world/phys/Vec3;
+     133: aload_0
+     134: getstatic     #358                // Field net/minecraft/world/entity/MoverType.SELF:Lnet/minecraft/world/entity/MoverType;
+     137: aload_0
+     138: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     141: fload_1
+     142: f2d
+     143: dconst_1
+     144: fload_1
+     145: f2d
+     146: invokevirtual #352                // Method net/minecraft/world/phys/Vec3.m_82542_:(DDD)Lnet/minecraft/world/phys/Vec3;
+     149: invokevirtual #362                // Method m_6478_:(Lnet/minecraft/world/entity/MoverType;Lnet/minecraft/world/phys/Vec3;)V
+     152: aload_0
+     153: aload_0
+     154: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+     157: fload_1
+     158: f2d
+     159: dconst_1
+     160: fload_1
+     161: f2d
+     162: invokevirtual #352                // Method net/minecraft/world/phys/Vec3.m_82542_:(DDD)Lnet/minecraft/world/phys/Vec3;
+     165: invokevirtual #365                // Method m_20256_:(Lnet/minecraft/world/phys/Vec3;)V
+     168: return
+
+  private void cobblemonRiding$jumpHandler();
+    Code:
+       0: aload_0
+       1: dup
+       2: getfield      #376                // Field cobblemonRiding$timeUntilNextJump:I
+       5: iconst_1
+       6: iadd
+       7: putfield      #376                // Field cobblemonRiding$timeUntilNextJump:I
+      10: aload_0
+      11: invokevirtual #379                // Method cobblemonRiding$isSpacePressed:()Z
+      14: ifeq          42
+      17: aload_0
+      18: invokevirtual #382                // Method m_20096_:()Z
+      21: ifeq          42
+      24: aload_0
+      25: getfield      #376                // Field cobblemonRiding$timeUntilNextJump:I
+      28: bipush        20
+      30: if_icmple     42
+      33: aload_0
+      34: invokevirtual #385                // Method m_6135_:()V
+      37: aload_0
+      38: iconst_0
+      39: putfield      #376                // Field cobblemonRiding$timeUntilNextJump:I
+      42: return
+
+  public boolean m_20096_();
+    Code:
+       0: aload_0
+       1: invokespecial #386                // Method net/minecraft/world/entity/PathfinderMob.m_20096_:()Z
+       4: ireturn
+
+  private void cobblemonRiding$rotateBody();
+    Code:
+       0: aload_0
+       1: invokevirtual #390                // Method m_146895_:()Lnet/minecraft/world/entity/Entity;
+       4: ifnull        19
+       7: aload_0
+       8: aload_0
+       9: invokevirtual #390                // Method m_146895_:()Lnet/minecraft/world/entity/Entity;
+      12: invokevirtual #391                // Method net/minecraft/world/entity/Entity.m_146908_:()F
+      15: fconst_0
+      16: invokevirtual #395                // Method m_19915_:(FF)V
+      19: return
+
+  private void cobblemonRiding$sprintHandler();
+    Code:
+       0: aload_0
+       1: invokevirtual #398                // Method cobblemonRiding$isMoving:()Z
+       4: ifne          23
+       7: aload_0
+       8: iconst_0
+       9: putfield      #400                // Field cobblemonRiding$isSprinting:Z
+      12: aload_0
+      13: iconst_1
+      14: invokevirtual #404                // Method cobblemonRiding$increaseStamina:(I)V
+      17: aload_0
+      18: fconst_1
+      19: putfield      #338                // Field cobblemonRiding$speedMultiplier:F
+      22: return
+      23: aload_0
+      24: getfield      #400                // Field cobblemonRiding$isSprinting:Z
+      27: ifne          66
+      30: aload_0
+      31: invokevirtual #407                // Method cobblemonRiding$isSprintPressed:()Z
+      34: ifeq          66
+      37: aload_0
+      38: invokevirtual #410                // Method m_264410_:()Z
+      41: ifeq          66
+      44: aload_0
+      45: getfield      #78                 // Field cobblemonRiding$timeUntilNextSwitchSprint:I
+      48: bipush        10
+      50: if_icmplt     66
+      53: aload_0
+      54: iconst_1
+      55: putfield      #400                // Field cobblemonRiding$isSprinting:Z
+      58: aload_0
+      59: iconst_0
+      60: putfield      #78                 // Field cobblemonRiding$timeUntilNextSwitchSprint:I
+      63: goto          111
+      66: aload_0
+      67: getfield      #400                // Field cobblemonRiding$isSprinting:Z
+      70: ifeq          111
+      73: aload_0
+      74: getfield      #412                // Field cobblemonRiding$prevSprintPressed:Z
+      77: ifne          111
+      80: aload_0
+      81: invokevirtual #407                // Method cobblemonRiding$isSprintPressed:()Z
+      84: ifeq          111
+      87: aload_0
+      88: getfield      #78                 // Field cobblemonRiding$timeUntilNextSwitchSprint:I
+      91: bipush        10
+      93: if_icmplt     111
+      96: aload_0
+      97: iconst_0
+      98: invokevirtual #416                // Method m_6858_:(Z)V
+     101: aload_0
+     102: iconst_0
+     103: putfield      #400                // Field cobblemonRiding$isSprinting:Z
+     106: aload_0
+     107: iconst_0
+     108: putfield      #78                 // Field cobblemonRiding$timeUntilNextSwitchSprint:I
+     111: aload_0
+     112: getfield      #400                // Field cobblemonRiding$isSprinting:Z
+     115: ifeq          145
+     118: aload_0
+     119: invokevirtual #410                // Method m_264410_:()Z
+     122: ifeq          145
+     125: aload_0
+     126: iconst_1
+     127: invokevirtual #419                // Method cobblemonRiding$decreaseStamina:(I)V
+     130: aload_0
+     131: iconst_1
+     132: putfield      #400                // Field cobblemonRiding$isSprinting:Z
+     135: aload_0
+     136: ldc_w         #420                // float 1.5f
+     139: putfield      #338                // Field cobblemonRiding$speedMultiplier:F
+     142: goto          160
+     145: aload_0
+     146: iconst_0
+     147: putfield      #400                // Field cobblemonRiding$isSprinting:Z
+     150: aload_0
+     151: iconst_1
+     152: invokevirtual #404                // Method cobblemonRiding$increaseStamina:(I)V
+     155: aload_0
+     156: fconst_1
+     157: putfield      #338                // Field cobblemonRiding$speedMultiplier:F
+     160: aload_0
+     161: dup
+     162: getfield      #78                 // Field cobblemonRiding$timeUntilNextSwitchSprint:I
+     165: iconst_1
+     166: iadd
+     167: putfield      #78                 // Field cobblemonRiding$timeUntilNextSwitchSprint:I
+     170: aload_0
+     171: aload_0
+     172: invokevirtual #407                // Method cobblemonRiding$isSprintPressed:()Z
+     175: putfield      #412                // Field cobblemonRiding$prevSprintPressed:Z
+     178: return
+
+  private void cobblemonRiding$swimmingHandler();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        163
+       7: aload_0
+       8: invokevirtual #423                // Method m_20069_:()Z
+      11: ifeq          163
+      14: aload_0
+      15: invokevirtual #379                // Method cobblemonRiding$isSpacePressed:()Z
+      18: ifeq          27
+      21: ldc2_w        #424                // double 0.5d
+      24: goto          54
+      27: aload_0
+      28: invokevirtual #428                // Method cobblemonRiding$isShiftPressed:()Z
+      31: ifeq          40
+      34: ldc2_w        #429                // double -0.25d
+      37: goto          54
+      40: aload_0
+      41: invokevirtual #382                // Method m_20096_:()Z
+      44: ifeq          51
+      47: dconst_0
+      48: goto          54
+      51: ldc2_w        #431                // double 0.00309d
+      54: dstore_1
+      55: aload_0
+      56: aload_0
+      57: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      60: getfield      #255                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      63: dload_1
+      64: aload_0
+      65: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      68: getfield      #267                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      71: invokevirtual #435                // Method m_20334_:(DDD)V
+      74: aload_0
+      75: aload_0
+      76: invokevirtual #439                // Method cobblemonRiding$getDistanceToSurface:(Lnet/minecraft/world/entity/Entity;)F
+      79: f2d
+      80: ldc2_w        #424                // double 0.5d
+      83: dcmpg
+      84: ifgt          112
+      87: aload_0
+      88: invokevirtual #428                // Method cobblemonRiding$isShiftPressed:()Z
+      91: ifeq          112
+      94: aload_0
+      95: aload_0
+      96: invokevirtual #251                // Method m_20185_:()D
+      99: aload_0
+     100: invokevirtual #258                // Method m_20186_:()D
+     103: dload_1
+     104: dadd
+     105: aload_0
+     106: invokevirtual #264                // Method m_20189_:()D
+     109: invokevirtual #442                // Method m_6027_:(DDD)V
+     112: aload_0
+     113: invokevirtual #207                // Method m_20197_:()Ljava/util/List;
+     116: invokeinterface #177,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     121: astore_3
+     122: aload_3
+     123: invokeinterface #182,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     128: ifeq          163
+     131: aload_3
+     132: invokeinterface #186,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     137: checkcast     #23                 // class net/minecraft/world/entity/Entity
+     140: astore        4
+     142: aload_0
+     143: aload_0
+     144: invokevirtual #446                // Method m_6062_:()I
+     147: invokevirtual #449                // Method m_20301_:(I)V
+     150: aload         4
+     152: aload         4
+     154: invokevirtual #450                // Method net/minecraft/world/entity/Entity.m_6062_:()I
+     157: invokevirtual #451                // Method net/minecraft/world/entity/Entity.m_20301_:(I)V
+     160: goto          122
+     163: return
+
+  private void cobblemonRiding$lavaSwimmingHandler();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        48
+       7: aload_0
+       8: invokevirtual #455                // Method m_20077_:()Z
+      11: ifeq          48
+      14: aload_0
+      15: invokevirtual #379                // Method cobblemonRiding$isSpacePressed:()Z
+      18: ifeq          25
+      21: dconst_0
+      22: goto          28
+      25: ldc2_w        #456                // double 0.203d
+      28: dstore_1
+      29: aload_0
+      30: aload_0
+      31: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      34: getfield      #255                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      37: dload_1
+      38: aload_0
+      39: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      42: getfield      #267                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      45: invokevirtual #435                // Method m_20334_:(DDD)V
+      48: return
+
+  private void cobblemonRiding$flyingHandler();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnonnull     8
+       7: return
+       8: aload_0
+       9: invokevirtual #379                // Method cobblemonRiding$isSpacePressed:()Z
+      12: istore_1
+      13: aload_0
+      14: invokevirtual #428                // Method cobblemonRiding$isShiftPressed:()Z
+      17: istore_2
+      18: iload_1
+      19: ifeq          28
+      22: ldc2_w        #459                // double 0.3d
+      25: goto          39
+      28: iload_2
+      29: ifeq          38
+      32: ldc2_w        #461                // double -0.3d
+      35: goto          39
+      38: dconst_0
+      39: dstore_3
+      40: aload_0
+      41: aload_0
+      42: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      45: getfield      #255                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      48: dload_3
+      49: aload_0
+      50: invokevirtual #369                // Method m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      53: getfield      #267                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      56: invokevirtual #435                // Method m_20334_:(DDD)V
+      59: aload_0
+      60: invokevirtual #464                // Method getPokemon:()Lcom/cobblemon/mod/common/pokemon/Pokemon;
+      63: invokevirtual #470                // Method com/cobblemon/mod/common/pokemon/Pokemon.getEntity:()Lcom/cobblemon/mod/common/entity/pokemon/PokemonEntity;
+      66: ifnull        94
+      69: aload_0
+      70: invokevirtual #464                // Method getPokemon:()Lcom/cobblemon/mod/common/pokemon/Pokemon;
+      73: invokevirtual #470                // Method com/cobblemon/mod/common/pokemon/Pokemon.getEntity:()Lcom/cobblemon/mod/common/entity/pokemon/PokemonEntity;
+      76: getstatic     #476                // Field com/cobblemon/mod/common/entity/pokemon/PokemonBehaviourFlag.FLYING:Lcom/cobblemon/mod/common/entity/pokemon/PokemonBehaviourFlag;
+      79: aload_0
+      80: invokevirtual #382                // Method m_20096_:()Z
+      83: ifne          90
+      86: iconst_1
+      87: goto          91
+      90: iconst_0
+      91: invokevirtual #482                // Method com/cobblemon/mod/common/entity/pokemon/PokemonEntity.setBehaviourFlag:(Lcom/cobblemon/mod/common/entity/pokemon/PokemonBehaviourFlag;Z)V
+      94: return
+
+  private float cobblemonRiding$getDistanceToSurface(net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_1
+       1: invokevirtual #486                // Method net/minecraft/world/entity/Entity.m_20186_:()D
+       4: dstore_2
+       5: aload_1
+       6: invokevirtual #487                // Method net/minecraft/world/entity/Entity.m_9236_:()Lnet/minecraft/world/level/Level;
+       9: getstatic     #491                // Field net/minecraft/world/level/levelgen/Heightmap$Types.WORLD_SURFACE:Lnet/minecraft/world/level/levelgen/Heightmap$Types;
+      12: aload_1
+      13: invokevirtual #492                // Method net/minecraft/world/entity/Entity.m_20185_:()D
+      16: aload_1
+      17: invokevirtual #495                // Method net/minecraft/world/entity/Entity.m_20192_:()F
+      20: f2d
+      21: dsub
+      22: d2i
+      23: aload_1
+      24: invokevirtual #496                // Method net/minecraft/world/entity/Entity.m_20189_:()D
+      27: d2i
+      28: invokevirtual #500                // Method net/minecraft/world/level/Level.m_6924_:(Lnet/minecraft/world/level/levelgen/Heightmap$Types;II)I
+      31: i2d
+      32: dstore        4
+      34: dload         4
+      36: dload_2
+      37: dsub
+      38: d2f
+      39: freturn
+
+  private void cobblemonRiding$dismountHandler();
+    Code:
+       0: aload_0
+       1: invokevirtual #505                // Method m_6084_:()Z
+       4: ifeq          31
+       7: aload_0
+       8: invokevirtual #508                // Method isAddedToWorld:()Z
+      11: ifeq          31
+      14: aload_0
+      15: invokevirtual #511                // Method m_213877_:()Z
+      18: ifne          31
+      21: aload_0
+      22: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      25: instanceof    #286                // class net/minecraft/world/entity/player/Player
+      28: ifne          35
+      31: aload_0
+      32: invokevirtual #514                // Method m_20153_:()V
+      35: aload_0
+      36: invokevirtual #517                // Method cobblemonRiding$checkShouldDismount:()Z
+      39: ifeq          79
+      42: aload_0
+      43: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      46: ifnull        79
+      49: aload_0
+      50: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      53: astore_2
+      54: aload_2
+      55: instanceof    #286                // class net/minecraft/world/entity/player/Player
+      58: ifeq          79
+      61: aload_2
+      62: checkcast     #286                // class net/minecraft/world/entity/player/Player
+      65: astore_1
+      66: aload_0
+      67: aload_1
+      68: invokevirtual #324                // Method cobblemonRiding$resetKeyData:(Lnet/minecraft/world/entity/player/Player;)V
+      71: aload_1
+      72: invokevirtual #520                // Method net/minecraft/world/entity/player/Player.m_8127_:()V
+      75: aload_0
+      76: invokevirtual #514                // Method m_20153_:()V
+      79: return
+
+  public void causeFallDamage(float, float, net.minecraft.world.damagesource.DamageSource, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        16
+       7: aload         4
+       9: iconst_0
+      10: invokestatic  #532                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      13: invokevirtual #538                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      16: return
+
+  public void hurt(net.minecraft.world.damagesource.DamageSource, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        38
+       7: aload_0
+       8: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      11: ifnull        38
+      14: aload_0
+      15: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      18: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+      21: getstatic     #311                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.LAVA_SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      24: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      27: ifeq          38
+      30: aload_3
+      31: iconst_0
+      32: invokestatic  #532                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      35: invokevirtual #538                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      38: return
+
+  public void mobInteractRiding(net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<net.minecraft.world.InteractionResult>);
+    Code:
+       0: ldc_w         #556                // String item.megamons.mega_cuff
+       3: astore        4
+       5: aload_1
+       6: aload_0
+       7: invokevirtual #560                // Method m_7655_:()Lnet/minecraft/world/InteractionHand;
+      10: invokevirtual #564                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+      13: invokevirtual #570                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      16: invokevirtual #576                // Method net/minecraft/world/item/Item.m_5524_:()Ljava/lang/String;
+      19: aload         4
+      21: invokevirtual #579                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      24: ifne          66
+      27: aload_0
+      28: invokevirtual #464                // Method getPokemon:()Lcom/cobblemon/mod/common/pokemon/Pokemon;
+      31: invokevirtual #583                // Method com/cobblemon/mod/common/pokemon/Pokemon.getOwnerPlayer:()Lnet/minecraft/server/level/ServerPlayer;
+      34: aload_1
+      35: invokestatic  #588                // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      38: ifne          48
+      41: aload_0
+      42: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      45: ifnull        66
+      48: aload_1
+      49: aload_0
+      50: invokevirtual #589                // Method net/minecraft/world/entity/player/Player.m_20329_:(Lnet/minecraft/world/entity/Entity;)Z
+      53: pop
+      54: aload_0
+      55: ldc_w         #590                // float 2.5f
+      58: invokevirtual #98                 // Method m_274367_:(F)V
+      61: aload_0
+      62: aload_1
+      63: invokevirtual #324                // Method cobblemonRiding$resetKeyData:(Lnet/minecraft/world/entity/player/Player;)V
+      66: return
+
+  public void mobInteractRemoveMegamonsMegaCuff(net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<net.minecraft.world.InteractionResult>);
+    Code:
+       0: ldc_w         #556                // String item.megamons.mega_cuff
+       3: astore        4
+       5: aload_1
+       6: aload_0
+       7: invokevirtual #560                // Method m_7655_:()Lnet/minecraft/world/InteractionHand;
+      10: invokevirtual #564                // Method net/minecraft/world/entity/player/Player.m_21120_:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+      13: invokevirtual #570                // Method net/minecraft/world/item/ItemStack.m_41720_:()Lnet/minecraft/world/item/Item;
+      16: invokevirtual #576                // Method net/minecraft/world/item/Item.m_5524_:()Ljava/lang/String;
+      19: aload         4
+      21: invokevirtual #579                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      24: ifeq          47
+      27: aload_0
+      28: invokevirtual #207                // Method m_20197_:()Ljava/util/List;
+      31: aload_1
+      32: invokeinterface #598,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      37: ifeq          47
+      40: aload_3
+      41: getstatic     #604                // Field net/minecraft/world/InteractionResult.FAIL:Lnet/minecraft/world/InteractionResult;
+      44: invokevirtual #538                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      47: return
+
+  public boolean m_6051_();
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+       4: ifnull        25
+       7: aload_0
+       8: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      11: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+      14: getstatic     #311                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.LAVA_SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      17: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      20: ifeq          25
+      23: iconst_0
+      24: ireturn
+      25: aload_0
+      26: invokespecial #607                // Method net/minecraft/world/entity/PathfinderMob.m_6051_:()Z
+      29: ireturn
+
+  protected boolean m_7310_(net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_0
+       1: getfield      #76                 // Field cobblemonRiding$maxPassengers:I
+       4: iconst_m1
+       5: if_icmpne     35
+       8: aload_0
+       9: aload_0
+      10: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      13: ifnull        31
+      16: aload_0
+      17: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      20: invokevirtual #221                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getPassengersOffSet:()Ljava/util/ArrayList;
+      23: invokevirtual #610                // Method java/util/ArrayList.size:()I
+      26: iconst_1
+      27: iadd
+      28: goto          32
+      31: iconst_0
+      32: putfield      #76                 // Field cobblemonRiding$maxPassengers:I
+      35: aload_0
+      36: invokevirtual #207                // Method m_20197_:()Ljava/util/List;
+      39: invokeinterface #611,  1          // InterfaceMethod java/util/List.size:()I
+      44: aload_0
+      45: getfield      #76                 // Field cobblemonRiding$maxPassengers:I
+      48: if_icmpge     55
+      51: iconst_1
+      52: goto          56
+      55: iconst_0
+      56: ireturn
+
+  private dev.zanckor.cobblemonrider.config.PokemonJsonObject$PokemonConfigData cobblemonRiding$getPassengerObject();
+    Code:
+       0: aload_0
+       1: getfield      #613                // Field cobblemonRiding$passengerObject:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+       4: ifnonnull     34
+       7: aload_0
+       8: aload_0
+       9: invokevirtual #464                // Method getPokemon:()Lcom/cobblemon/mod/common/pokemon/Pokemon;
+      12: invokevirtual #617                // Method com/cobblemon/mod/common/pokemon/Pokemon.getSpecies:()Lcom/cobblemon/mod/common/pokemon/Species;
+      15: invokevirtual #622                // Method com/cobblemon/mod/common/pokemon/Species.getName:()Ljava/lang/String;
+      18: aload_0
+      19: invokevirtual #464                // Method getPokemon:()Lcom/cobblemon/mod/common/pokemon/Pokemon;
+      22: invokevirtual #626                // Method com/cobblemon/mod/common/pokemon/Pokemon.getForm:()Lcom/cobblemon/mod/common/pokemon/FormData;
+      25: invokevirtual #629                // Method com/cobblemon/mod/common/pokemon/FormData.getName:()Ljava/lang/String;
+      28: invokestatic  #635                // Method dev/zanckor/cobblemonrider/MCUtil.getPassengerObject:(Ljava/lang/String;Ljava/lang/String;)Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      31: putfield      #613                // Field cobblemonRiding$passengerObject:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      34: aload_0
+      35: getfield      #613                // Field cobblemonRiding$passengerObject:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      38: areturn
+
+  private boolean cobblemonRiding$canMove();
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+       4: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+       7: getstatic     #293                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.SWIM:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      10: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      13: ifeq          23
+      16: aload_0
+      17: invokevirtual #423                // Method m_20069_:()Z
+      20: ifne          62
+      23: aload_0
+      24: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      27: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+      30: getstatic     #317                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.FLY:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      33: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      36: ifeq          46
+      39: aload_0
+      40: invokevirtual #382                // Method m_20096_:()Z
+      43: ifeq          62
+      46: aload_0
+      47: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+      50: invokevirtual #289                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMountTypes:()Ljava/util/ArrayList;
+      53: getstatic     #638                // Field dev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType.WALK:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$MountType;
+      56: invokevirtual #296                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      59: ifeq          66
+      62: iconst_1
+      63: goto          67
+      66: iconst_0
+      67: ireturn
+
+  private void cobblemonRiding$resetKeyData(net.minecraft.world.entity.player.Player);
+    Code:
+       0: aload_1
+       1: invokevirtual #642                // Method net/minecraft/world/entity/player/Player.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+       4: ldc_w         #644                // String press_space
+       7: iconst_0
+       8: invokevirtual #650                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      11: aload_1
+      12: invokevirtual #642                // Method net/minecraft/world/entity/player/Player.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      15: ldc_w         #652                // String press_sprint
+      18: iconst_0
+      19: invokevirtual #650                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      22: aload_1
+      23: invokevirtual #642                // Method net/minecraft/world/entity/player/Player.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      26: ldc_w         #654                // String pokemon_dismount
+      29: iconst_0
+      30: invokevirtual #650                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      33: aload_1
+      34: invokevirtual #642                // Method net/minecraft/world/entity/player/Player.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      37: ldc_w         #656                // String press_shift
+      40: iconst_0
+      41: invokevirtual #650                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      44: aload_1
+      45: invokevirtual #642                // Method net/minecraft/world/entity/player/Player.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      48: ldc_w         #658                // String pokemon_mount_entities
+      51: iconst_0
+      52: invokevirtual #650                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      55: aload_1
+      56: iconst_0
+      57: invokevirtual #661                // Method net/minecraft/world/entity/player/Player.m_20260_:(Z)V
+      60: return
+
+  public net.minecraft.world.entity.LivingEntity m_6688_();
+    Code:
+       0: aload_0
+       1: invokevirtual #207                // Method m_20197_:()Ljava/util/List;
+       4: invokeinterface #665,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+       9: ifeq          16
+      12: aconst_null
+      13: goto          29
+      16: aload_0
+      17: invokevirtual #207                // Method m_20197_:()Ljava/util/List;
+      20: iconst_0
+      21: invokeinterface #666,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      26: checkcast     #142                // class net/minecraft/world/entity/LivingEntity
+      29: areturn
+
+  protected float m_6118_();
+    Code:
+       0: ldc_w         #668                // float 0.6f
+       3: aload_0
+       4: invokevirtual #671                // Method m_20098_:()F
+       7: fmul
+       8: aload_0
+       9: invokevirtual #674                // Method m_285755_:()F
+      12: fadd
+      13: freturn
+
+  public int cobblemonRiding$getStamina();
+    Code:
+       0: aload_0
+       1: getfield      #74                 // Field cobblemonRiding$stamina:I
+       4: aload_0
+       5: invokevirtual #678                // Method cobblemonRiding$getMaxStamina:()I
+       8: invokestatic  #684                // Method java/lang/Math.min:(II)I
+      11: ireturn
+
+  public int cobblemonRiding$getMaxStamina();
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method cobblemonRiding$getPassengerObject:()Ldev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData;
+       4: invokevirtual #687                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject$PokemonConfigData.getMaxStamina:()I
+       7: ireturn
+
+  public void cobblemonRiding$setStamina(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #74                 // Field cobblemonRiding$stamina:I
+       5: return
+
+  public void cobblemonRiding$increaseStamina(int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #691                // Method cobblemonRiding$getStamina:()I
+       5: iload_1
+       6: iadd
+       7: aload_0
+       8: invokevirtual #678                // Method cobblemonRiding$getMaxStamina:()I
+      11: invokestatic  #684                // Method java/lang/Math.min:(II)I
+      14: invokevirtual #693                // Method cobblemonRiding$setStamina:(I)V
+      17: return
+
+  public void cobblemonRiding$decreaseStamina(int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #691                // Method cobblemonRiding$getStamina:()I
+       5: iload_1
+       6: isub
+       7: iconst_0
+       8: invokestatic  #697                // Method java/lang/Math.max:(II)I
+      11: invokevirtual #693                // Method cobblemonRiding$setStamina:(I)V
+      14: return
+
+  public boolean cobblemonRiding$checkShouldDismount();
+    Code:
+       0: aload_0
+       1: invokevirtual #700                // Method cobblemonRiding$isPokemonDismountPressed:()Z
+       4: ifne          19
+       7: aload_0
+       8: invokevirtual #207                // Method m_20197_:()Ljava/util/List;
+      11: invokeinterface #665,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      16: ifeq          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  private boolean cobblemonRiding$isSpacePressed();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        43
+       7: aload_0
+       8: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      11: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      14: ldc_w         #644                // String press_space
+      17: invokevirtual #705                // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      20: ifeq          43
+      23: aload_0
+      24: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      27: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      30: ldc_w         #644                // String press_space
+      33: invokevirtual #708                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+      36: ifeq          43
+      39: iconst_1
+      40: goto          44
+      43: iconst_0
+      44: ireturn
+
+  public boolean m_264410_();
+    Code:
+       0: aload_0
+       1: invokevirtual #407                // Method cobblemonRiding$isSprintPressed:()Z
+       4: ifne          14
+       7: aload_0
+       8: getfield      #400                // Field cobblemonRiding$isSprinting:Z
+      11: ifeq          57
+      14: aload_0
+      15: getfield      #400                // Field cobblemonRiding$isSprinting:Z
+      18: ifeq          28
+      21: aload_0
+      22: invokevirtual #691                // Method cobblemonRiding$getStamina:()I
+      25: ifgt          53
+      28: aload_0
+      29: getfield      #400                // Field cobblemonRiding$isSprinting:Z
+      32: ifne          57
+      35: aload_0
+      36: invokevirtual #691                // Method cobblemonRiding$getStamina:()I
+      39: i2f
+      40: aload_0
+      41: invokevirtual #678                // Method cobblemonRiding$getMaxStamina:()I
+      44: i2f
+      45: ldc_w         #709                // float 0.3f
+      48: fmul
+      49: fcmpl
+      50: ifle          57
+      53: iconst_1
+      54: goto          58
+      57: iconst_0
+      58: ireturn
+
+  public void m_6858_(boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        21
+       7: aload_0
+       8: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      11: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      14: ldc_w         #652                // String press_sprint
+      17: iload_1
+      18: invokevirtual #650                // Method net/minecraft/nbt/CompoundTag.m_128379_:(Ljava/lang/String;Z)V
+      21: return
+
+  private boolean cobblemonRiding$isSprintPressed();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        43
+       7: aload_0
+       8: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      11: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      14: ldc_w         #652                // String press_sprint
+      17: invokevirtual #705                // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      20: ifeq          43
+      23: aload_0
+      24: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      27: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      30: ldc_w         #652                // String press_sprint
+      33: invokevirtual #708                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+      36: ifeq          43
+      39: iconst_1
+      40: goto          44
+      43: iconst_0
+      44: ireturn
+
+  private boolean cobblemonRiding$isShiftPressed();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        43
+       7: aload_0
+       8: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      11: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      14: ldc_w         #656                // String press_shift
+      17: invokevirtual #705                // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      20: ifeq          43
+      23: aload_0
+      24: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      27: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      30: ldc_w         #656                // String press_shift
+      33: invokevirtual #708                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+      36: ifeq          43
+      39: iconst_1
+      40: goto          44
+      43: iconst_0
+      44: ireturn
+
+  private boolean cobblemonRiding$isPokemonDismountPressed();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        43
+       7: aload_0
+       8: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      11: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      14: ldc_w         #654                // String pokemon_dismount
+      17: invokevirtual #705                // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      20: ifeq          43
+      23: aload_0
+      24: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      27: invokevirtual #701                // Method net/minecraft/world/entity/LivingEntity.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      30: ldc_w         #654                // String pokemon_dismount
+      33: invokevirtual #708                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+      36: ifeq          43
+      39: iconst_1
+      40: goto          44
+      43: iconst_0
+      44: ireturn
+
+  private boolean cobblemonRiding$mayMountOtherEntities();
+    Code:
+       0: getstatic     #716                // Field dev/zanckor/cobblemonrider/CobblemonRider.pokemonJsonObject:Ldev/zanckor/cobblemonrider/config/PokemonJsonObject;
+       3: invokevirtual #719                // Method dev/zanckor/cobblemonrider/config/PokemonJsonObject.mustAllowEntityRiding:()Z
+       6: ifeq          63
+       9: aload_0
+      10: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      13: ifnull        63
+      16: aload_0
+      17: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      20: astore_2
+      21: aload_2
+      22: instanceof    #286                // class net/minecraft/world/entity/player/Player
+      25: ifeq          63
+      28: aload_2
+      29: checkcast     #286                // class net/minecraft/world/entity/player/Player
+      32: astore_1
+      33: aload_1
+      34: invokevirtual #642                // Method net/minecraft/world/entity/player/Player.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      37: ldc_w         #658                // String pokemon_mount_entities
+      40: invokevirtual #705                // Method net/minecraft/nbt/CompoundTag.m_128441_:(Ljava/lang/String;)Z
+      43: ifeq          63
+      46: aload_1
+      47: invokevirtual #642                // Method net/minecraft/world/entity/player/Player.getPersistentData:()Lnet/minecraft/nbt/CompoundTag;
+      50: ldc_w         #658                // String pokemon_mount_entities
+      53: invokevirtual #708                // Method net/minecraft/nbt/CompoundTag.m_128471_:(Ljava/lang/String;)Z
+      56: ifeq          63
+      59: iconst_1
+      60: goto          64
+      63: iconst_0
+      64: ireturn
+
+  private boolean cobblemonRiding$isMoving();
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+       4: ifnull        41
+       7: aload_0
+       8: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      11: invokevirtual #336                // Method net/minecraft/world/entity/LivingEntity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      14: getfield      #255                // Field net/minecraft/world/phys/Vec3.f_82479_:D
+      17: dconst_0
+      18: dcmpl
+      19: ifne          37
+      22: aload_0
+      23: invokevirtual #117                // Method m_6688_:()Lnet/minecraft/world/entity/LivingEntity;
+      26: invokevirtual #336                // Method net/minecraft/world/entity/LivingEntity.m_20184_:()Lnet/minecraft/world/phys/Vec3;
+      29: getfield      #267                // Field net/minecraft/world/phys/Vec3.f_82481_:D
+      32: dconst_0
+      33: dcmpl
+      34: ifeq          41
+      37: iconst_1
+      38: goto          42
+      41: iconst_0
+      42: ireturn
+
+  public com.cobblemon.mod.common.api.entity.EntitySideDelegate getDelegate();
+    Code:
+       0: aload_0
+       1: invokevirtual #722                // Method getDelegate:()Lcom/cobblemon/mod/common/api/entity/PokemonSideDelegate;
+       4: areturn
+
+  private boolean lambda$cobblemonRiding$mountEntity$0(net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: aload_1
+       1: instanceof    #724                // class net/minecraft/world/entity/monster/Monster
+       4: ifne          38
+       7: aload_1
+       8: instanceof    #286                // class net/minecraft/world/entity/player/Player
+      11: ifne          38
+      14: aload_0
+      15: invokevirtual #207                // Method m_20197_:()Ljava/util/List;
+      18: aload_1
+      19: invokeinterface #598,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      24: ifne          38
+      27: aload_1
+      28: invokevirtual #727                // Method net/minecraft/world/entity/LivingEntity.m_217005_:()Z
+      31: ifne          38
+      34: iconst_1
+      35: goto          39
+      38: iconst_0
+      39: ireturn
+}

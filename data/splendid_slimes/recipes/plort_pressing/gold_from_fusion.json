@@ -1,0 +1,27 @@
+{
+  "type": "splendid_slimes:plort_pressing",
+  "ingredient": {
+    "item": "splendid_slimes:slime_heart",
+    "nbt": {
+      "slime": {
+        "id": "splendid_slimes:boomcat"
+      }
+    }
+  },
+  "output": {
+    "item": "splendid_slimes:slime_heart",
+    "nbt": {
+      "slime": {
+        "id": "splendid_slimes:blazing"
+      }
+    }
+  },
+  "result": {
+    "item": "splendid_slimes:slime_heart",
+    "nbt": {
+      "slime": {
+        "id": "splendid_slimes:gold"
+      }
+    }
+  }
+}

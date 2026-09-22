@@ -1,0 +1,510 @@
+Compiled from "SlimeUtils.java"
+public class io.github.chakyl.splendidslimes.util.SlimeUtils {
+  public io.github.chakyl.splendidslimes.util.SlimeUtils();
+    Code:
+       0: aload_0
+       1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static net.minecraft.world.effect.MobEffectInstance copyEffect(io.github.chakyl.splendidslimes.entity.SplendidSlime, net.minecraft.world.effect.MobEffectInstance);
+    Code:
+       0: aload_0
+       1: ldc           #20                 // String putrid
+       3: invokevirtual #26                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.hasTrait:(Ljava/lang/String;)Z
+       6: istore_2
+       7: new           #28                 // class net/minecraft/world/effect/MobEffectInstance
+      10: dup
+      11: aload_1
+      12: invokevirtual #32                 // Method net/minecraft/world/effect/MobEffectInstance.m_19544_:()Lnet/minecraft/world/effect/MobEffect;
+      15: aload_1
+      16: invokevirtual #36                 // Method net/minecraft/world/effect/MobEffectInstance.m_19557_:()I
+      19: iload_2
+      20: ifeq          30
+      23: aload_1
+      24: invokevirtual #36                 // Method net/minecraft/world/effect/MobEffectInstance.m_19557_:()I
+      27: goto          31
+      30: iconst_1
+      31: imul
+      32: aload_1
+      33: invokevirtual #41                 // Method net/minecraft/world/effect/MobEffectInstance.m_19564_:()I
+      36: iload_2
+      37: ifeq          44
+      40: iconst_1
+      41: goto          45
+      44: iconst_0
+      45: iadd
+      46: aload_1
+      47: invokevirtual #45                 // Method net/minecraft/world/effect/MobEffectInstance.m_19571_:()Z
+      50: aload_1
+      51: invokevirtual #48                 // Method net/minecraft/world/effect/MobEffectInstance.m_19572_:()Z
+      54: invokespecial #51                 // Method net/minecraft/world/effect/MobEffectInstance."<init>":(Lnet/minecraft/world/effect/MobEffect;IIZZ)V
+      57: areturn
+
+  public static void applyEffects(io.github.chakyl.splendidslimes.entity.SplendidSlime, net.minecraft.world.entity.LivingEntity, java.util.List<net.minecraft.world.effect.MobEffectInstance>, boolean);
+    Code:
+       0: iload_3
+       1: ifeq          9
+       4: aload_0
+       5: iconst_0
+       6: invokevirtual #63                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.setParticleAnimationTick:(I)V
+       9: aload_2
+      10: invokeinterface #69,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      15: astore        4
+      17: aload         4
+      19: invokeinterface #74,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      24: ifeq          62
+      27: aload         4
+      29: invokeinterface #78,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      34: checkcast     #28                 // class net/minecraft/world/effect/MobEffectInstance
+      37: astore        5
+      39: aload         5
+      41: ifnull        59
+      44: aload_1
+      45: ifnull        59
+      48: aload_1
+      49: aload_0
+      50: aload         5
+      52: invokestatic  #80                 // Method copyEffect:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/effect/MobEffectInstance;)Lnet/minecraft/world/effect/MobEffectInstance;
+      55: invokevirtual #86                 // Method net/minecraft/world/entity/LivingEntity.m_7292_:(Lnet/minecraft/world/effect/MobEffectInstance;)Z
+      58: pop
+      59: goto          17
+      62: return
+
+  public static void applyNegativeEffects(io.github.chakyl.splendidslimes.entity.SplendidSlime, net.minecraft.world.entity.LivingEntity, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #98                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: astore_3
+       5: aload_0
+       6: invokevirtual #101                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       9: astore        4
+      11: aload_3
+      12: invokevirtual #106                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      15: ifne          19
+      18: return
+      19: aload_0
+      20: aload_1
+      21: invokevirtual #110                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.hasSameBreed:(Lnet/minecraft/world/entity/LivingEntity;)Ljava/lang/Boolean;
+      24: invokevirtual #115                // Method java/lang/Boolean.booleanValue:()Z
+      27: ifne          99
+      30: aload_3
+      31: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      34: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      37: invokevirtual #124                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.negativeEmitEffects:()Ljava/util/List;
+      40: astore        5
+      42: aload         4
+      44: invokevirtual #106                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      47: ifeq          81
+      50: aload         4
+      52: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      55: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      58: invokevirtual #124                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.negativeEmitEffects:()Ljava/util/List;
+      61: astore        6
+      63: aload         6
+      65: invokeinterface #127,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      70: ifne          81
+      73: aload_0
+      74: aload_1
+      75: aload         6
+      77: iload_2
+      78: invokestatic  #129                // Method applyEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/List;Z)V
+      81: aload         5
+      83: invokeinterface #127,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      88: ifne          99
+      91: aload_0
+      92: aload_1
+      93: aload         5
+      95: iload_2
+      96: invokestatic  #129                // Method applyEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/List;Z)V
+      99: return
+
+  public static void applyPositiveEffects(io.github.chakyl.splendidslimes.entity.SplendidSlime, net.minecraft.world.entity.LivingEntity, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #98                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: astore_3
+       5: aload_0
+       6: invokevirtual #101                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       9: astore        4
+      11: aload_3
+      12: invokevirtual #106                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      15: ifne          19
+      18: return
+      19: aload_3
+      20: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      23: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      26: invokevirtual #138                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.positiveEmitEffects:()Ljava/util/List;
+      29: astore        5
+      31: aload         4
+      33: invokevirtual #106                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      36: ifeq          70
+      39: aload         4
+      41: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      44: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      47: invokevirtual #138                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.positiveEmitEffects:()Ljava/util/List;
+      50: astore        6
+      52: aload         6
+      54: invokeinterface #127,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      59: ifne          70
+      62: aload_0
+      63: aload_1
+      64: aload         6
+      66: iload_2
+      67: invokestatic  #129                // Method applyEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/List;Z)V
+      70: aload         5
+      72: invokeinterface #127,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      77: ifne          88
+      80: aload_0
+      81: aload_1
+      82: aload         5
+      84: iload_2
+      85: invokestatic  #129                // Method applyEffects:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/List;Z)V
+      88: return
+
+  private static net.minecraft.commands.CommandSourceStack createCommandSourceStack(net.minecraft.world.entity.player.Player, net.minecraft.world.entity.Entity, net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.network.chat.Component);
+    Code:
+       0: aload_0
+       1: ifnonnull     9
+       4: ldc           #143                // String Splendid Slime
+       6: goto          18
+       9: aload_0
+      10: invokevirtual #149                // Method net/minecraft/world/entity/player/Player.m_7755_:()Lnet/minecraft/network/chat/Component;
+      13: invokeinterface #155,  1          // InterfaceMethod net/minecraft/network/chat/Component.getString:()Ljava/lang/String;
+      18: astore        5
+      20: aload_0
+      21: ifnonnull     29
+      24: aload         4
+      26: goto          33
+      29: aload_0
+      30: invokevirtual #160                // Method net/minecraft/world/entity/player/Player.m_5446_:()Lnet/minecraft/network/chat/Component;
+      33: astore        6
+      35: new           #162                // class net/minecraft/commands/CommandSourceStack
+      38: dup
+      39: getstatic     #168                // Field net/minecraft/commands/CommandSource.f_80164_:Lnet/minecraft/commands/CommandSource;
+      42: aload_3
+      43: invokestatic  #174                // Method net/minecraft/world/phys/Vec3.m_82512_:(Lnet/minecraft/core/Vec3i;)Lnet/minecraft/world/phys/Vec3;
+      46: getstatic     #180                // Field net/minecraft/world/phys/Vec2.f_82462_:Lnet/minecraft/world/phys/Vec2;
+      49: aload_2
+      50: checkcast     #182                // class net/minecraft/server/level/ServerLevel
+      53: iconst_2
+      54: aload         5
+      56: aload         6
+      58: aload_2
+      59: invokevirtual #186                // Method net/minecraft/world/level/Level.m_7654_:()Lnet/minecraft/server/MinecraftServer;
+      62: aload_1
+      63: invokespecial #189                // Method net/minecraft/commands/CommandSourceStack."<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;)V
+      66: areturn
+
+  public static void runCommands(io.github.chakyl.splendidslimes.entity.SplendidSlime, java.util.List<java.lang.String>);
+    Code:
+       0: aconst_null
+       1: aload_0
+       2: aload_0
+       3: invokevirtual #209                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_9236_:()Lnet/minecraft/world/level/Level;
+       6: aload_0
+       7: invokevirtual #213                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20097_:()Lnet/minecraft/core/BlockPos;
+      10: aload_0
+      11: invokevirtual #214                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_5446_:()Lnet/minecraft/network/chat/Component;
+      14: invokestatic  #216                // Method createCommandSourceStack:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/commands/CommandSourceStack;
+      17: astore_2
+      18: aload_2
+      19: aload_0
+      20: invokevirtual #220                // Method net/minecraft/commands/CommandSourceStack.m_81329_:(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/commands/CommandSourceStack;
+      23: pop
+      24: aload_2
+      25: invokevirtual #224                // Method net/minecraft/commands/CommandSourceStack.m_81324_:()Lnet/minecraft/commands/CommandSourceStack;
+      28: pop
+      29: aload_1
+      30: invokeinterface #69,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      35: astore_3
+      36: aload_3
+      37: invokeinterface #74,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      42: ifeq          73
+      45: aload_3
+      46: invokeinterface #78,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      51: checkcast     #157                // class java/lang/String
+      54: astore        4
+      56: aload_0
+      57: invokevirtual #227                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20194_:()Lnet/minecraft/server/MinecraftServer;
+      60: invokevirtual #233                // Method net/minecraft/server/MinecraftServer.m_129892_:()Lnet/minecraft/commands/Commands;
+      63: aload_2
+      64: aload         4
+      66: invokevirtual #239                // Method net/minecraft/commands/Commands.m_230957_:(Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;)I
+      69: pop
+      70: goto          36
+      73: return
+
+  public static void executeSlimeCommands(io.github.chakyl.splendidslimes.entity.SplendidSlime, boolean, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #98                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.getSlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       4: astore_3
+       5: aload_0
+       6: invokevirtual #101                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.getSecondarySlime:()Ldev/shadowsoffire/placebo/reload/DynamicHolder;
+       9: astore        4
+      11: aload_3
+      12: invokevirtual #106                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      15: ifne          19
+      18: return
+      19: iload_2
+      20: ifeq          63
+      23: aload_0
+      24: aload_3
+      25: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      28: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      31: invokevirtual #249                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.attackCommands:()Ljava/util/List;
+      34: invokestatic  #251                // Method runCommands:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Ljava/util/List;)V
+      37: aload         4
+      39: invokevirtual #106                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      42: ifeq          144
+      45: aload_0
+      46: aload         4
+      48: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      51: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      54: invokevirtual #249                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.attackCommands:()Ljava/util/List;
+      57: invokestatic  #251                // Method runCommands:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Ljava/util/List;)V
+      60: goto          144
+      63: iload_1
+      64: ifeq          107
+      67: aload_0
+      68: aload_3
+      69: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      72: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      75: invokevirtual #254                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.positiveCommands:()Ljava/util/List;
+      78: invokestatic  #251                // Method runCommands:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Ljava/util/List;)V
+      81: aload         4
+      83: invokevirtual #106                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+      86: ifeq          144
+      89: aload_0
+      90: aload         4
+      92: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+      95: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+      98: invokevirtual #254                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.positiveCommands:()Ljava/util/List;
+     101: invokestatic  #251                // Method runCommands:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Ljava/util/List;)V
+     104: goto          144
+     107: aload_0
+     108: aload_3
+     109: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+     112: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+     115: invokevirtual #257                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.negativeCommands:()Ljava/util/List;
+     118: invokestatic  #251                // Method runCommands:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Ljava/util/List;)V
+     121: aload         4
+     123: invokevirtual #106                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.isBound:()Z
+     126: ifeq          144
+     129: aload_0
+     130: aload         4
+     132: invokevirtual #118                // Method dev/shadowsoffire/placebo/reload/DynamicHolder.get:()Ljava/lang/Object;
+     135: checkcast     #120                // class io/github/chakyl/splendidslimes/data/SlimeBreed
+     138: invokevirtual #257                // Method io/github/chakyl/splendidslimes/data/SlimeBreed.negativeCommands:()Ljava/util/List;
+     141: invokestatic  #251                // Method runCommands:(Lio/github/chakyl/splendidslimes/entity/SplendidSlime;Ljava/util/List;)V
+     144: return
+
+  public static void handleHungryTraits(io.github.chakyl.splendidslimes.entity.SplendidSlime);
+    Code:
+       0: dconst_1
+       1: aload_0
+       2: invokevirtual #264                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.getHunger:()I
+       5: i2d
+       6: dconst_1
+       7: dadd
+       8: getstatic     #268                // Field io/github/chakyl/splendidslimes/entity/SplendidSlime.SLIME_HUNGRY_THRESHOLD:I
+      11: i2d
+      12: ddiv
+      13: dsub
+      14: dstore_1
+      15: aload_0
+      16: invokevirtual #272                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_217043_:()Lnet/minecraft/util/RandomSource;
+      19: invokeinterface #278,  1          // InterfaceMethod net/minecraft/util/RandomSource.m_188501_:()F
+      24: f2d
+      25: dload_1
+      26: dcmpg
+      27: ifgt          133
+      30: aload_0
+      31: ldc_w         #280                // String explosive
+      34: invokevirtual #26                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.hasTrait:(Ljava/lang/String;)Z
+      37: ifeq          90
+      40: aload_0
+      41: invokevirtual #209                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_9236_:()Lnet/minecraft/world/level/Level;
+      44: aload_0
+      45: aload_0
+      46: invokevirtual #284                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20185_:()D
+      49: aload_0
+      50: invokevirtual #287                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20186_:()D
+      53: aload_0
+      54: invokevirtual #290                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20189_:()D
+      57: aload_0
+      58: ldc_w         #292                // String flaming
+      61: invokevirtual #26                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.hasTrait:(Ljava/lang/String;)Z
+      64: ifeq          73
+      67: ldc_w         #293                // float 3.0f
+      70: goto          76
+      73: ldc_w         #294                // float 4.0f
+      76: aload_0
+      77: ldc_w         #292                // String flaming
+      80: invokevirtual #26                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.hasTrait:(Ljava/lang/String;)Z
+      83: getstatic     #298                // Field net/minecraft/world/level/Level$ExplosionInteraction.NONE:Lnet/minecraft/world/level/Level$ExplosionInteraction;
+      86: invokevirtual #302                // Method net/minecraft/world/level/Level.m_255391_:(Lnet/minecraft/world/entity/Entity;DDDFZLnet/minecraft/world/level/Level$ExplosionInteraction;)Lnet/minecraft/world/level/Explosion;
+      89: pop
+      90: aload_0
+      91: ldc_w         #292                // String flaming
+      94: invokevirtual #26                 // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.hasTrait:(Ljava/lang/String;)Z
+      97: ifeq          133
+     100: aload_0
+     101: invokevirtual #213                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20097_:()Lnet/minecraft/core/BlockPos;
+     104: astore_3
+     105: aload_0
+     106: invokevirtual #209                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_9236_:()Lnet/minecraft/world/level/Level;
+     109: aload_3
+     110: invokevirtual #306                // Method net/minecraft/world/level/Level.m_46859_:(Lnet/minecraft/core/BlockPos;)Z
+     113: ifeq          133
+     116: aload_0
+     117: invokevirtual #209                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_9236_:()Lnet/minecraft/world/level/Level;
+     120: aload_3
+     121: aload_0
+     122: invokevirtual #209                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_9236_:()Lnet/minecraft/world/level/Level;
+     125: aload_3
+     126: invokestatic  #312                // Method net/minecraft/world/level/block/BaseFireBlock.m_49245_:(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     129: invokevirtual #316                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+     132: pop
+     133: return
+
+  public static boolean cry(io.github.chakyl.splendidslimes.entity.SplendidSlime, net.minecraft.world.level.Level);
+    Code:
+       0: aload_1
+       1: invokevirtual #325                // Method net/minecraft/world/level/Level.m_6042_:()Lnet/minecraft/world/level/dimension/DimensionType;
+       4: invokevirtual #330                // Method net/minecraft/world/level/dimension/DimensionType.f_63857_:()Z
+       7: ifeq          12
+      10: iconst_1
+      11: ireturn
+      12: aload_0
+      13: invokevirtual #284                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20185_:()D
+      16: invokestatic  #336                // Method net/minecraft/util/Mth.m_14107_:(D)I
+      19: istore_2
+      20: aload_0
+      21: invokevirtual #287                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20186_:()D
+      24: invokestatic  #336                // Method net/minecraft/util/Mth.m_14107_:(D)I
+      27: istore_3
+      28: aload_0
+      29: invokevirtual #290                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_20189_:()D
+      32: invokestatic  #336                // Method net/minecraft/util/Mth.m_14107_:(D)I
+      35: istore        4
+      37: iconst_2
+      38: istore        6
+      40: iconst_0
+      41: istore        7
+      43: iload         7
+      45: iload         6
+      47: if_icmpge     193
+      50: new           #338                // class net/minecraft/core/BlockPos
+      53: dup
+      54: iload_2
+      55: iload         6
+      57: isub
+      58: iload_3
+      59: iload         7
+      61: isub
+      62: iload         4
+      64: iload         6
+      66: isub
+      67: invokespecial #341                // Method net/minecraft/core/BlockPos."<init>":(III)V
+      70: new           #338                // class net/minecraft/core/BlockPos
+      73: dup
+      74: iload_2
+      75: iload         6
+      77: iadd
+      78: iload_3
+      79: iload         7
+      81: iadd
+      82: iload         4
+      84: iload         6
+      86: iadd
+      87: invokespecial #341                // Method net/minecraft/core/BlockPos."<init>":(III)V
+      90: invokestatic  #345                // Method net/minecraft/core/BlockPos.m_121940_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Ljava/lang/Iterable;
+      93: invokeinterface #348,  1          // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+      98: astore        8
+     100: aload         8
+     102: invokeinterface #74,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     107: ifeq          187
+     110: aload         8
+     112: invokeinterface #78,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     117: checkcast     #338                // class net/minecraft/core/BlockPos
+     120: astore        9
+     122: aload_1
+     123: aload         9
+     125: invokevirtual #352                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     128: astore        5
+     130: aload         5
+     132: invokevirtual #358                // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+     135: getstatic     #364                // Field net/minecraft/world/level/block/Blocks.f_50016_:Lnet/minecraft/world/level/block/Block;
+     138: if_acmpeq     155
+     141: aload         5
+     143: invokevirtual #368                // Method net/minecraft/world/level/block/state/BlockState.m_60819_:()Lnet/minecraft/world/level/material/FluidState;
+     146: getstatic     #374                // Field net/minecraft/world/level/material/Fluids.f_76192_:Lnet/minecraft/world/level/material/FlowingFluid;
+     149: invokevirtual #379                // Method net/minecraft/world/level/material/FlowingFluid.m_76145_:()Lnet/minecraft/world/level/material/FluidState;
+     152: if_acmpne     184
+     155: aload_1
+     156: aload         9
+     158: getstatic     #382                // Field net/minecraft/world/level/block/Blocks.f_49990_:Lnet/minecraft/world/level/block/Block;
+     161: invokevirtual #388                // Method net/minecraft/world/level/block/Block.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+     164: iconst_3
+     165: invokevirtual #392                // Method net/minecraft/world/level/Level.m_7731_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+     168: pop
+     169: aload_0
+     170: getstatic     #398                // Field net/minecraft/sounds/SoundEvents.f_11919_:Lnet/minecraft/sounds/SoundEvent;
+     173: ldc_w         #399                // float 0.4f
+     176: ldc_w         #400                // float 0.2f
+     179: invokevirtual #404                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     182: iconst_1
+     183: ireturn
+     184: goto          100
+     187: iinc          7, 1
+     190: goto          43
+     193: aload_0
+     194: getstatic     #407                // Field net/minecraft/sounds/SoundEvents.f_11922_:Lnet/minecraft/sounds/SoundEvent;
+     197: ldc_w         #408                // float 0.6f
+     200: invokestatic  #413                // Method java/lang/Math.random:()D
+     203: d2f
+     204: invokevirtual #404                // Method io/github/chakyl/splendidslimes/entity/SplendidSlime.m_5496_:(Lnet/minecraft/sounds/SoundEvent;FF)V
+     207: iconst_0
+     208: ireturn
+
+  public static boolean compareDay(int, int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: if_icmplt     12
+       5: iload_0
+       6: iload_1
+       7: isub
+       8: iload_2
+       9: if_icmplt     16
+      12: iconst_1
+      13: goto          17
+      16: iconst_0
+      17: ireturn
+
+  public static int getDayOffset(int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: if_icmpge     7
+       5: iconst_1
+       6: ireturn
+       7: iload_0
+       8: iload_1
+       9: isub
+      10: ireturn
+
+  public static int getDay(net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: invokevirtual #435                // Method net/minecraft/world/level/Level.m_8044_:()J
+       4: l2d
+       5: ldc2_w        #436                // double 24000.0d
+       8: ddiv
+       9: invokestatic  #441                // Method java/lang/Math.floor:(D)D
+      12: dconst_1
+      13: dadd
+      14: d2i
+      15: ireturn
+}

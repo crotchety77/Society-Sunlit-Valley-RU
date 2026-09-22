@@ -1,0 +1,259 @@
+com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers.class
+Compiled from "CatchRateModifiers.java"
+public final class com.cobblemon.mod.common.api.pokeball.catching.modifiers.CatchRateModifiers {
+  public static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.CatchRateModifiers INSTANCE;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.BattleModifier LEVEL;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier SUBMERGED_IN_WATER;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier NEST;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.BattleModifier LOVE;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier MOON_PHASES;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier LIGHT_LEVEL;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier SAFARI;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier PARK;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier SKULL_BALL;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier WEIGHT_BASED;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.DynamicMultiplierModifier PRISMATIC_BALL;
+
+  private static final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier DIMENSIONAL;
+
+  private com.cobblemon.mod.common.api.pokeball.catching.modifiers.CatchRateModifiers();
+    Code:
+       0: aload_0
+       1: invokespecial #118                // Method java/lang/Object."<init>":()V
+       4: return
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.BattleModifier getLEVEL();
+    Code:
+       0: getstatic     #121                // Field LEVEL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier getSUBMERGED_IN_WATER();
+    Code:
+       0: getstatic     #123                // Field SUBMERGED_IN_WATER:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier getNEST();
+    Code:
+       0: getstatic     #125                // Field NEST:Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.BattleModifier getLOVE();
+    Code:
+       0: getstatic     #127                // Field LOVE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier getMOON_PHASES();
+    Code:
+       0: getstatic     #129                // Field MOON_PHASES:Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier getLIGHT_LEVEL();
+    Code:
+       0: getstatic     #131                // Field LIGHT_LEVEL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier getSAFARI();
+    Code:
+       0: getstatic     #133                // Field SAFARI:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier getPARK();
+    Code:
+       0: getstatic     #135                // Field PARK:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier getSKULL_BALL();
+    Code:
+       0: getstatic     #137                // Field SKULL_BALL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier getWEIGHT_BASED();
+    Code:
+       0: getstatic     #139                // Field WEIGHT_BASED:Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier typeBoosting(float, com.cobblemon.mod.common.api.types.ElementalType...);
+    Code:
+       0: aload_2
+       1: ldc           #140                // String types
+       3: invokestatic  #146                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: new           #148                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+       9: dup
+      10: fload_1
+      11: new           #114                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$typeBoosting$1
+      14: dup
+      15: aload_2
+      16: invokespecial #151                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$typeBoosting$1."<init>":([Lcom/cobblemon/mod/common/api/types/ElementalType;)V
+      19: checkcast     #153                // class kotlin/jvm/functions/Function2
+      22: invokespecial #156                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;)V
+      25: checkcast     #158                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+      28: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier statusBoosting(float, com.cobblemon.mod.common.api.pokemon.status.Status...);
+    Code:
+       0: aload_2
+       1: ldc           #161                // String status
+       3: invokestatic  #146                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: new           #148                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier
+       9: dup
+      10: fload_1
+      11: new           #110                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$statusBoosting$1
+      14: dup
+      15: aload_2
+      16: invokespecial #164                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$statusBoosting$1."<init>":([Lcom/cobblemon/mod/common/api/pokemon/status/Status;)V
+      19: checkcast     #153                // class kotlin/jvm/functions/Function2
+      22: invokespecial #156                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/MultiplierModifier."<init>":(FLkotlin/jvm/functions/Function2;)V
+      25: checkcast     #158                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+      28: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.BattleModifier turnBased(kotlin.jvm.functions.Function1<? super java.lang.Integer, java.lang.Float>);
+    Code:
+       0: aload_1
+       1: ldc           #167                // String multiplierCalculator
+       3: invokestatic  #146                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: new           #169                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier
+       9: dup
+      10: new           #112                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$turnBased$1
+      13: dup
+      14: aload_1
+      15: invokespecial #172                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$turnBased$1."<init>":(Lkotlin/jvm/functions/Function1;)V
+      18: checkcast     #174                // class kotlin/jvm/functions/Function3
+      21: invokespecial #177                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier."<init>":(Lkotlin/jvm/functions/Function3;)V
+      24: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.CatchRateModifier statBased(com.cobblemon.mod.common.api.pokemon.stats.Stats, com.cobblemon.mod.common.api.pokemon.stats.Stats);
+    Code:
+       0: aload_1
+       1: ldc           #179                // String stat1
+       3: invokestatic  #146                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #180                // String stat2
+       9: invokestatic  #146                // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: new           #182                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier
+      15: dup
+      16: new           #106                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$statBased$1
+      19: dup
+      20: aload_1
+      21: aload_2
+      22: invokespecial #185                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$statBased$1."<init>":(Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;)V
+      25: checkcast     #153                // class kotlin/jvm/functions/Function2
+      28: new           #108                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$statBased$2
+      31: dup
+      32: aload_1
+      33: aload_2
+      34: invokespecial #186                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$statBased$2."<init>":(Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;Lcom/cobblemon/mod/common/api/pokemon/stats/Stats;)V
+      37: checkcast     #153                // class kotlin/jvm/functions/Function2
+      40: invokespecial #189                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier."<init>":(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
+      43: checkcast     #158                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+      46: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.DynamicMultiplierModifier getPRISMATIC_BALL();
+    Code:
+       0: getstatic     #191                // Field PRISMATIC_BALL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier;
+       3: areturn
+
+  public final com.cobblemon.mod.common.api.pokeball.catching.modifiers.WorldStateModifier getDIMENSIONAL();
+    Code:
+       0: getstatic     #193                // Field DIMENSIONAL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+       3: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers
+       3: dup
+       4: invokespecial #195                // Method "<init>":()V
+       7: putstatic     #197                // Field INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers;
+      10: new           #169                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier
+      13: dup
+      14: getstatic     #200                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$LEVEL$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$LEVEL$1;
+      17: checkcast     #174                // class kotlin/jvm/functions/Function3
+      20: invokespecial #177                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier."<init>":(Lkotlin/jvm/functions/Function3;)V
+      23: putstatic     #121                // Field LEVEL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier;
+      26: new           #202                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier
+      29: dup
+      30: getstatic     #205                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$SUBMERGED_IN_WATER$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$SUBMERGED_IN_WATER$1;
+      33: checkcast     #153                // class kotlin/jvm/functions/Function2
+      36: invokespecial #208                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier."<init>":(Lkotlin/jvm/functions/Function2;)V
+      39: putstatic     #123                // Field SUBMERGED_IN_WATER:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+      42: new           #182                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier
+      45: dup
+      46: getstatic     #211                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$NEST$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$NEST$1;
+      49: checkcast     #153                // class kotlin/jvm/functions/Function2
+      52: getstatic     #214                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$NEST$2.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$NEST$2;
+      55: checkcast     #153                // class kotlin/jvm/functions/Function2
+      58: invokespecial #189                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier."<init>":(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
+      61: checkcast     #158                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+      64: putstatic     #125                // Field NEST:Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+      67: new           #169                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier
+      70: dup
+      71: getstatic     #217                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$LOVE$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$LOVE$1;
+      74: checkcast     #174                // class kotlin/jvm/functions/Function3
+      77: invokespecial #177                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier."<init>":(Lkotlin/jvm/functions/Function3;)V
+      80: putstatic     #127                // Field LOVE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/BattleModifier;
+      83: new           #202                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier
+      86: dup
+      87: getstatic     #220                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$MOON_PHASES$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$MOON_PHASES$1;
+      90: checkcast     #153                // class kotlin/jvm/functions/Function2
+      93: invokespecial #208                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier."<init>":(Lkotlin/jvm/functions/Function2;)V
+      96: checkcast     #158                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+      99: putstatic     #129                // Field MOON_PHASES:Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+     102: new           #202                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier
+     105: dup
+     106: getstatic     #223                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$LIGHT_LEVEL$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$LIGHT_LEVEL$1;
+     109: checkcast     #153                // class kotlin/jvm/functions/Function2
+     112: invokespecial #208                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier."<init>":(Lkotlin/jvm/functions/Function2;)V
+     115: putstatic     #131                // Field LIGHT_LEVEL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     118: new           #202                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier
+     121: dup
+     122: getstatic     #226                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$SAFARI$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$SAFARI$1;
+     125: checkcast     #153                // class kotlin/jvm/functions/Function2
+     128: invokespecial #208                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier."<init>":(Lkotlin/jvm/functions/Function2;)V
+     131: putstatic     #133                // Field SAFARI:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     134: new           #202                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier
+     137: dup
+     138: getstatic     #229                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$PARK$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$PARK$1;
+     141: checkcast     #153                // class kotlin/jvm/functions/Function2
+     144: invokespecial #208                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier."<init>":(Lkotlin/jvm/functions/Function2;)V
+     147: putstatic     #135                // Field PARK:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     150: new           #202                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier
+     153: dup
+     154: getstatic     #232                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$SKULL_BALL$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$SKULL_BALL$1;
+     157: checkcast     #153                // class kotlin/jvm/functions/Function2
+     160: invokespecial #208                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier."<init>":(Lkotlin/jvm/functions/Function2;)V
+     163: putstatic     #137                // Field SKULL_BALL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     166: new           #182                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier
+     169: dup
+     170: getstatic     #235                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$WEIGHT_BASED$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$WEIGHT_BASED$1;
+     173: checkcast     #153                // class kotlin/jvm/functions/Function2
+     176: getstatic     #238                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$WEIGHT_BASED$2.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$WEIGHT_BASED$2;
+     179: checkcast     #153                // class kotlin/jvm/functions/Function2
+     182: invokespecial #189                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier."<init>":(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
+     185: checkcast     #158                // class com/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier
+     188: putstatic     #139                // Field WEIGHT_BASED:Lcom/cobblemon/mod/common/api/pokeball/catching/CatchRateModifier;
+     191: new           #182                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier
+     194: dup
+     195: getstatic     #241                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$PRISMATIC_BALL$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$PRISMATIC_BALL$1;
+     198: checkcast     #153                // class kotlin/jvm/functions/Function2
+     201: getstatic     #244                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$PRISMATIC_BALL$2.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$PRISMATIC_BALL$2;
+     204: checkcast     #153                // class kotlin/jvm/functions/Function2
+     207: invokespecial #189                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier."<init>":(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
+     210: putstatic     #191                // Field PRISMATIC_BALL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/DynamicMultiplierModifier;
+     213: new           #202                // class com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier
+     216: dup
+     217: getstatic     #247                // Field com/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$DIMENSIONAL$1.INSTANCE:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/CatchRateModifiers$DIMENSIONAL$1;
+     220: checkcast     #153                // class kotlin/jvm/functions/Function2
+     223: invokespecial #208                // Method com/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier."<init>":(Lkotlin/jvm/functions/Function2;)V
+     226: putstatic     #193                // Field DIMENSIONAL:Lcom/cobblemon/mod/common/api/pokeball/catching/modifiers/WorldStateModifier;
+     229: return
+}

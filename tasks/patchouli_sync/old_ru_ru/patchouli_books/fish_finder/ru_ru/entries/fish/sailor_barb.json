@@ -1,0 +1,18 @@
+{
+  "name": "Матросский барбус",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_sailor_barb",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 112$(li)§0🍂 §4Осень§0$(li)Вода: Океан$(li)Погода: Любая$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:sailor_barb",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Э-э, я в расцвете сил, Оптимус."
+    }
+  ]
+}

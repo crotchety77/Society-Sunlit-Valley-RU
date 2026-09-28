@@ -1,0 +1,30 @@
+{
+  "name": "Древний плод",
+  "category": "patchouli:crops",
+  "icon": "society:ancient_fruit",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 128$(li)🌼 §2Spring§r 🔥 §6Лето§r 🍂 §4Осень$(li)Урожайность: 1$(li)Время созревания: 10 дн.$(br2)$(l)Notes$()$(br)Семена are incredibly rare. An Ancient Cog will likely be the easiest route."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Ancient Fruit 🌼🔥🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:ancient_fruit[age=10]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

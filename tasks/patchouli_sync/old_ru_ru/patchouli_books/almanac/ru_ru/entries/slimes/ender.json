@@ -1,0 +1,17 @@
+{
+    "name": "Эндер-слайм",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Места обитания:$()$(li)Структура: Рассадники слизней в Теневых пустошах (Пещера Черепа)$(br2)$(l)Опасности:$()$(br)Телепортирует к себе существ и телепортируется к источникам пищи."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Эндер-слайм",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:ender\"}",
+            "scale": 0.9
+        }
+    ]
+}

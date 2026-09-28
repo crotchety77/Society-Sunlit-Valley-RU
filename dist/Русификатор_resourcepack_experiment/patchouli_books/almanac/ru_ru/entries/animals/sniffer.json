@@ -1,0 +1,17 @@
+{
+  "name": "Нюхач",
+  "category": "patchouli:animals",
+  "icon": "minecraft:sniffer_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Яйцо: Sniffer Яйцо$(li)Forage: Artifact Shards$(br2)$(l)Notes$()$(br)Foraging requires 5+ hearts."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sniffer",
+      "scale": 0.8,
+      "text": "Они любят копаться в земле в поисках старых вещей."
+    }
+  ]
+}

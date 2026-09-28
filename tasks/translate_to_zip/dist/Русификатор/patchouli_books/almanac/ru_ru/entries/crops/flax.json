@@ -1,0 +1,34 @@
+{
+  "name": "Лён",
+  "category": "patchouli:crops",
+  "icon": "supplementaries:flax",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 68$(li)🌼 §2Spring$(li)Цена семян: :coin: 48$(li)Урожайность: 1$(li)Время созревания: 7 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Лён 🌼",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "1"
+          ],
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "1": "supplementaries:flax[age=7,half=upper]",
+          "0": "supplementaries:flax[age=7,half=lower]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

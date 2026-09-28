@@ -1,0 +1,17 @@
+{
+    "name": "Сова",
+    "category": "patchouli:pets",
+    "icon": "tanukidecor:owl_clock",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Часы с совой$(br)$(l)Предмет для приручения:$()$(br)Гнилая плоть$(br2)$(l)Примечания$()$(br)Можно найти в лесах."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wildernature:owl",
+            "scale": 0.7,
+            "text": "Держите её подальше от мелких животных..."
+        }
+    ]
+}

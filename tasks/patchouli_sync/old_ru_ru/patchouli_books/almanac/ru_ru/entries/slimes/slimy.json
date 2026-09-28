@@ -1,0 +1,17 @@
+{
+    "name": "Слизистый",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местоположение:$()$(li)Структура: Рассадники слизней$(li)Места для раскопок: Верхний мир$(br2)$(l)Риски:$()$(br)Превратившись в ларго, он расстроится, если не будет питаться из обоих рационов (один за другим)."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Слизистый слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:slimy\"}",
+            "scale": 0.9
+        }
+    ]
+}

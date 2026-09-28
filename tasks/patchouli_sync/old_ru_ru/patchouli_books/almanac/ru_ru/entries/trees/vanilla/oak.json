@@ -1,0 +1,67 @@
+{
+  "name": "Дуб 🌐",
+  "category": "patchouli:trees",
+  "icon": "minecraft:oak_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)🌐 §5Круглый год$(li)Цена саженца: :coin: 8$(li)Размер: 1x1$(br2)$(l)Примечания$()$(li)Имеет редкий большой вариант."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Дуб",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "  L  ",
+            " L0L ",
+            "  L  ",
+            "     "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            " LLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLL "
+          ],
+          [
+            "LLLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "L": "minecraft:oak_leaves",
+          "W": "minecraft:oak_log[axis=y]"
+        }
+      }
+    }
+  ]
+}

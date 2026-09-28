@@ -1,0 +1,17 @@
+{
+  "name": "Шерстистая овца",
+  "category": "patchouli:animals",
+  "icon": "meadow:rocky_wool",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Молоко: Sheep Молоко$(li)Перезарядка молока: 2 дн.$(li)Shear drops: Шерсть, Fine Шерсть (50% chance) $(li)Добыча: Сырая баранина, Шерсть$(br2)$(l)Notes$()$(br)Fine Шерсть only drops at 5+ hearts of affection"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "meadow:wooly_sheep",
+      "scale": 0.8,
+      "text": "Овца с 4 вариантами, с которой выпадает узорчатая шерсть."
+    }
+  ]
+}

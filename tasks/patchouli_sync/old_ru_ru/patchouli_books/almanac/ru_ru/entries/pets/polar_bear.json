@@ -1,0 +1,17 @@
+{
+    "name": "Белый медведь",
+    "category": "patchouli:pets",
+    "icon": "minecraft:snowball",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Шапка плюшевого мишки"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:polar_bear",
+            "scale": 0.7,
+            "text": "Будьте очень осторожны, чтобы вас не растерзали"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Белка",
+  "category": "patchouli:animals",
+  "icon": "pamhc2trees:hazelnutitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Forage: Berries, Hazelnut (25% chance)$(li)Добыча: Hazelnut$(br2)$(l)Notes$()$(br)Foraging requires 2+ hearts. Can be found in Plains and Forest biomes."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:squirrel",
+      "scale": 0.7,
+      "text": "Умение лазать по деревьям делает их особенно сложным животным для разведения."
+    }
+  ]
+}

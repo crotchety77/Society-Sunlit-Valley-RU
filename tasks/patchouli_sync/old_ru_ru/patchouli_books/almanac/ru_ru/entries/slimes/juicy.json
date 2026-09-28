@@ -1,0 +1,17 @@
+{
+    "name": "Сочный",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:juicy\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местоположения:$()$(li)Биом: Пышные пещеры (Пещера Черепа)$(li)Структура: Ульи (Пещера Черепа)$(li)Слияние сердец$(br2)$(l)Опасности:$()$(br)Лазает по стенам! Вызывает эффект опьянения, когда несчастен."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Сочный слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:juicy\"}",
+            "scale": 0.9
+        }
+    ]
+}

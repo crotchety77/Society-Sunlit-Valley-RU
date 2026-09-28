@@ -1,0 +1,6 @@
+{
+  "name": "Слаймы",
+  "description": "Разведение слаймов, их типы, плорты и механики скрещивания.",
+  "icon": "splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
+  "category": "patchouli:slimes"
+}

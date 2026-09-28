@@ -1,0 +1,17 @@
+{
+    "name": "Кошениль",
+    "category": "patchouli:animals",
+    "icon": "atmospheric:carmine_husk",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: не продаётся$(li)Сбор: карминовая шелуха, питахайя (шанс 50%)$(li)Добыча: карминовая шелуха$(br2)$(l)Примечания$()$(br)Для сбора требуется 1+ сердец."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "atmospheric:cochineal",
+            "scale": 0.5,
+            "text": "Сущий кошмар. Надеюсь, ваши красивые блоки того стоят."
+        }
+    ]
+}

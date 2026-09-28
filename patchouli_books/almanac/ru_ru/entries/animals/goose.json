@@ -1,0 +1,17 @@
+{
+  "name": "Гусь",
+  "category": "patchouli:animals",
+  "icon": "untitledduckmod:goose_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Яйцо: Goose Яйцо$(li)Добыча: Raw Goose, Goose Foot$(br2)$(l)Notes$()$(br)Hungry Geese don't lay eggs, and unhappy ones lay them a lot less.. Can be tamed with Seagrass"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "untitledduckmod:goose",
+      "scale": 0.8,
+      "text": "Вредные существа, которые крадут ваши предметы и защищаются при нападении."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Кукуруза",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:corn",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 28$(li)🔥 §6Лето§r 🍂 §4Осень$(li)Цена семян: :coin: 4$(li)Урожайность: 1$(li)Время созревания: 4 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Кукуруза 🔥🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:corn_crop[age=4]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

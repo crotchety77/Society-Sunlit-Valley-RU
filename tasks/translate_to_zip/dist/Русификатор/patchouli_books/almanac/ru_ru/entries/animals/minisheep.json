@@ -1,0 +1,17 @@
+{
+  "name": "Мини-овца",
+  "category": "patchouli:animals",
+  "icon": "society:fine_wool",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: :coin: 1,024$(li)Молоко: Sheep Молоко$(li)Перезарядка молока: 2 дн.$(li)Shear drops: Шерсть, Fine Шерсть $(li)Добыча: Сырая баранина, Шерсть$(br2)$(l)Notes$()$(br)Fine Шерсть only drops at 6+ hearts of affection"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:minisheep",
+      "scale": 0.8,
+      "text": "Пушистее не бывает! Шерсть лучше не найти!"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Мублум",
+    "category": "patchouli:animals",
+    "icon": "betterarcheology:growth_totem",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: Не продаётся$(li)Молоко: Молоко$(li)Перезарядка молока: 1 день$(li)Добыча: Тотем роста (5% шанс)$(li)Выпадает: Сырая говядина, кожа$(br2)$(l)Примечания$()$(br)Для добычи требуется 10 сердец привязанности."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "buzzier_bees:moobloom",
+            "scale": 0.8,
+            "text": "Иногда она будет радовать вас особым цветком."
+        }
+    ]
+}

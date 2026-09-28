@@ -1,0 +1,17 @@
+{
+  "name": "Утка",
+  "category": "patchouli:animals",
+  "icon": "untitledduckmod:duck_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: :coin: 512$(li)Яйцо: Duck Яйцо$(li)Добыча: Raw Duck, Duck Перо$(br2)$(l)Notes$()$(br)Hungry Ducks don't lay eggs, and unhappy ones lay them a lot less."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "untitledduckmod:duck",
+      "scale": 0.8,
+      "text": "Утки имеют более качественные перья и мясо, поэтому их выгоднее разводить ради добычи, чем кур."
+    }
+  ]
+}

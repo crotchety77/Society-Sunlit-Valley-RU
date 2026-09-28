@@ -1,0 +1,30 @@
+{
+  "name": "Личи",
+  "category": "patchouli:tree_crops",
+  "icon": "pamhc2trees:lycheeitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 16$(li)🌐 §5Year-round§r$(li)Урожайность: 3$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/lychee)Lychee Tree$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Личи",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "F": "pamhc2trees:pamlychee[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

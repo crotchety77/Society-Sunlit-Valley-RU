@@ -1,0 +1,49 @@
+{
+    "name": "Виноград 🌐",
+    "category": "patchouli:crops",
+    "icon": "vinery:red_grape",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 4$(li)🌐 §5Круглый год$(br2)$(l)Примечания$()$(br)Виноград можно найти в определённых биомах в зависимости от его названия. Его можно выращивать на траве или на верхней части виноградных стеблей для ускорения роста."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Виноградный стебель",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "vinery:grapevine_stem[age=4,grape=red]",
+                    "F": "vinery:grapevine_stem"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Виноградный куст",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "vinery:red_grape_bush[age=3]",
+                    "F": "minecraft:grass_block"
+                }
+            }
+        }
+    ]
+}

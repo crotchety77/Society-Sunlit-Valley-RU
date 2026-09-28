@@ -1,0 +1,83 @@
+{
+  "name": "Дерево азимины 🍂",
+  "category": "patchouli:trees",
+  "icon": "pamhc2trees:pawpaw_sapling",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)🍂 §4Осень§r $(li)Размер: 1x1$(li)Растёт:$(l:tree_crops/pawpaw)8x Азимина$(/l)$(br2)$(l)Примечания$()$(li)Саженцы выигрываются в Призовом автомате."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Дерево азимины",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "L": "minecraft:oak_leaves",
+          "W": "minecraft:oak_log[axis=y]",
+          "F": "pamhc2trees:pampawpaw[age=7]"
+        },
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "LLLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            " FFF ",
+            " FWF ",
+            " FFF ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ]
+      }
+    }
+  ]
+}

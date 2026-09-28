@@ -1,0 +1,30 @@
+{
+  "name": "Морковь",
+  "category": "patchouli:crops",
+  "icon": "minecraft:carrot",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 23$(li)🌼 §2Spring§r 🍂 §4Autumn$(li)Цена семян: :coin: 2$(li)Урожайность: 1-3$(li)Время созревания: 7 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Carrot 🌼🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:carrots[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

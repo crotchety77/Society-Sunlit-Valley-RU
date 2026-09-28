@@ -1,0 +1,17 @@
+{
+  "name": "Яблоплёнок",
+  "category": "patchouli:animals",
+  "icon": "minecraft:apple",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not Sold$(li)Яйцо: Яблоко$(li)Добыча: Сырая курятина, Перо$(br2)$(l)Notes$()$(br)Hungry or unhappy (less than 2 hearts of affection) Chapples don't lay Яблокоs"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "etcetera:chapple",
+      "scale": 0.8,
+      "text": "Странная мутация, рождённая из яйцо-яблока, найденного в сундуке с сокровищами."
+    }
+  ]
+}

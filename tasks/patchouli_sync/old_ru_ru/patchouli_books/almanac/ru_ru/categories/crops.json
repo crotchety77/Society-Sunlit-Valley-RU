@@ -1,0 +1,6 @@
+{
+    "name": "Урожай",
+    "description": "Обзор всех сельскохозяйственных культур. Здесь указано, как их получить и сколько дней они растут.",
+    "icon": "minecraft:netherite_hoe",
+    "category": "patchouli:crops"
+}

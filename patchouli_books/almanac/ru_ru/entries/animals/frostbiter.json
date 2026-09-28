@@ -1,0 +1,17 @@
+{
+  "name": "Хладокус",
+  "category": "patchouli:animals",
+  "icon": "windswept:frozen_branch",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Молоко: Молоко$(li)Перезарядка молока: 1 дн.$(li)Forage: Frozen Branch, Artifact Shards$(br2)$(l)Notes$()$(br)Foraging requires 5+ hearts. Can be tamed with Holly Berries."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "windswept:frostbiter",
+      "scale": 0.6,
+      "text": "Друг или заморозишь?"
+    }
+  ]
+}

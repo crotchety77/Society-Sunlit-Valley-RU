@@ -1,0 +1,17 @@
+{
+    "name": "Аксолотль",
+    "category": "patchouli:pets",
+    "icon": "beachparty:rubber_ring_axolotl",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Друг-аксолотль, Плавучий круг с аксолотлем"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:axolotl",
+            "scale": 0.8,
+            "text": "Обитатель пышных пещер, который любит охотиться на рыб"
+        }
+    ]
+}

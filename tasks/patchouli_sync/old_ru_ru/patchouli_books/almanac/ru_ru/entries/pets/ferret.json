@@ -1,0 +1,17 @@
+{
+    "name": "Хорёк",
+    "category": "patchouli:pets",
+    "icon": "minecraft:iron_shovel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Яйцо призыва паука-скакуна$(br)$(l)Предмет для приручения:$()$(br)Сырой кролик$(br2)$(l)Примечания$()$(br)Можно найти на равнинах и в лесах."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "crittersandcompanions:ferret",
+            "scale": 0.7,
+            "text": "Они могут выкапывать вещи, если покормить их сырой курицей!"
+        }
+    ]
+}

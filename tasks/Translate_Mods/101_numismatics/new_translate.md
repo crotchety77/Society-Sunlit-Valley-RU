@@ -54,7 +54,7 @@
   "block.numismatics.vendor.tooltip.summary": "Позволяет торговать предметами через магазины, созданные игроками. _ПКМ_ для совершения сделки, _крадучись_ для настройки.",
   "block.numismatics.vendor.tooltip.trade_item": "Товар",
   "command.numismatics.arguments.enum.invalid": "Ошибка: Недопустимое значение '%s'. Допустимые: %s",
-  "gui.numismatics.bank_terminal.balance": "Баланс: %s %s, %s¤",
+  "gui.numismatics.bank_terminal.balance": "Баланс: %s §e●",
   "gui.numismatics.trust_list": "Список доверенных",
   "gui.numismatics.vendor.full": "Торговый автомат переполнен",
   "gui.numismatics.vendor.full.named": "Торговый автомат переполнен, свяжитесь с %s, чтобы тот его опустошил",

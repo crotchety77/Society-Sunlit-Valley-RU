@@ -1,8 +1,65 @@
+const getDynamicPlushieCondition = (typeIndex, quality) => {
+    let q = (typeof quality === "number" && !isNaN(quality)) ? Math.max(0, Math.min(3, quality)) : 0;
+    let mult = q + 1; // 1, 2, 3, 4
+
+    switch (typeIndex) {
+        case 0: // aquatic
+            return `§6${5 * mult}% шанс добыть желе [Речное / Океаническое]`;
+        case 1: // woodsy
+            return [
+                `§6Добывает древесину: ${8 * mult} шт. §7Требуются брёвна в радиусе 3 [Область: 7x7x7]`,
+                `§7Брёвна не разрушаются`
+            ];
+        case 2: // eldritch
+            return `§6Добывает ${1 * mult} шт. сырого серебра при сборе`;
+        case 3: // wrathful
+            return `§6Добывает ${3 * mult} шт. сырого свинца при сборе`;
+        case 4: // sommelier
+            return `§6${25 * mult}% шанс сделать продукт ремесленным`;
+        case 5: // sunlit
+            return `§6${5 * mult}% шанс добыть Солнечный кристалл`;
+        case 6: // hungry
+            return `§6${10 * mult}% шанс повторно собрать продукцию в тот же день`;
+        case 7: // anxious
+            return `§6+${25 * mult}% к базовому шансу редкого сбора`;
+        case 8: // shy
+            let radius = 3 - q;
+            let side = radius * 2 + 1;
+            return radius === 0
+                ? `§6Двойная продукция: гарантировано`
+                : `§6Двойная продукция: нет других игрушек в радиусе ${radius} [Область: ${side}x${side}x${side}]`;
+        case 9: // cheerful
+            let reqOtherToys = 28 - 4 * mult; // total count > (28 - 4*mult) -> other toys >= (28 - 4*mult)
+            return `§6Двойная продукция: требуется от ${reqOtherToys} других игрушек рядом [Область: 5x5x5]`;
+        case 10: // chill
+            return `§6Добывает ${1 * mult} шт. безупречных алмазов при сборе`;
+        case 11: // machiavellian
+            return `§6Добывает ${1 * mult} шт. иридиевого лома при сборе`;
+        case 12: // cutesy
+            return `§6Добывает ${1 * mult} шт. коробок с мебелью при сборе`;
+        case 13: // fashionista
+            let reqFurniture = 28 - 4 * mult; // count >= T
+            return `§6Двойная продукция: требуется от ${reqFurniture} мебели рядом [Область: 5x5x5]`;
+        case 14: // neutral
+        default:
+            return `§6${10 * mult}% шанс получить в 2 раза больше продукции`;
+    }
+};
+
 ItemEvents.tooltip((tooltip) => {
     global.plushies.forEach((plush) => {
         tooltip.addAdvanced(plush, (item, advanced, text) => {
             if (item.nbt) {
-                let type = global.plushieTraits[Number(item.nbt.getInt("type"))];
+                let rawType = item.nbt.getInt("type");
+                let typeIndex = (typeof rawType === "number" && rawType >= 0 && rawType < global.plushieTraits.length) ? rawType : 14;
+                let type = global.plushieTraits[typeIndex] || global.plushieTraits[14];
+                let quality = 0;
+                if (item.nbt.getCompound("quality_food")) {
+                    quality = item.nbt.getCompound("quality_food").getInt("quality");
+                    if (isNaN(quality) || quality < 0) quality = 0;
+                    if (quality > 3) quality = 3;
+                }
+
                 if (tooltip.shift) {
                     text.add(1, [
                         Text.translatable("tooltip.society.plushies.trait"),
@@ -14,13 +71,14 @@ ItemEvents.tooltip((tooltip) => {
                     text.add(2, [
                         Text.translate(`society.item.plushie.trait.description`).darkGray(),
                     ]);
-                    let description = Text.translate(
-                        `society.item.plushie.${type.trait}.description`
-                    )
-                        .getString()
-                        .split("\n");
-                    text.add(3, [Text.gray(description[0])]);
-                    text.add(4, [description[1]]);
+                    let conditionLines = getDynamicPlushieCondition(typeIndex, quality);
+                    if (Array.isArray(conditionLines)) {
+                        conditionLines.forEach((line, idx) => {
+                            text.add(3 + idx, [Text.of(line)]);
+                        });
+                    } else {
+                        text.add(3, [Text.of(conditionLines)]);
+                    }
                 } else {
                     if (item.nbt.getCompound("quality_food"))
                         text.add(1, [

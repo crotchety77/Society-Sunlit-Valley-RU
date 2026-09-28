@@ -1,0 +1,49 @@
+{
+  "name": "Искажённый виноград",
+  "category": "patchouli:crops",
+  "icon": "nethervinery:warped_grape",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 8$(li)🌼 §2Spring§r 🍂 §4Autumn$(br2)$(l)Notes$()$(br)Grapes can be found in their corresponding Незер Biome depending on the name. All grapes must be grown on Grapevine Stems and Lattices"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Искажённый виноград 🌼🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "vinery:grapevine_stem[age=4,grape=warped]",
+          "F": "vinery:grapevine_stem"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Искажённый виноград 🌼🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "nethervinery:warped_grape_bush[age=3]",
+          "F": "minecraft:warped_nylium"
+        }
+      }
+    }
+  ]
+}

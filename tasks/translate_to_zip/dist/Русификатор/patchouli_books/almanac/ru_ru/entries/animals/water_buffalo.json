@@ -1,0 +1,17 @@
+{
+  "name": "Буйвол",
+  "category": "patchouli:animals",
+  "icon": "society:large_buffalo_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not Sold$(li)Молоко: Buffalo Молоко$(li)Перезарядка молока: 1 дн.$(li)Добыча: Raw Buffalo Meat, Кожа$(br2)$(l)Notes$()$(br)Found along rivers, and especially in Savanna biomes"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "meadow:water_buffalo",
+      "scale": 0.7,
+      "text": "Крупные и коренастые, их добыча и молоко высоко ценятся."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Слива 🍂",
+  "category": "patchouli:tree_crops",
+  "icon": "pamhc2trees:plumitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 96$(li)🍂 §4Осень§r$(li)Урожайность: 1$(li)Стадии роста: 8$(br2)$(l)Примечания$()$(li)См.: $(l:trees/pams/plum)Сливовое дерево$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Сливовое дерево",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "F": "pamhc2trees:pamplum[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

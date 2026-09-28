@@ -1,0 +1,17 @@
+{
+    "name": "Кошка",
+    "category": "patchouli:pets",
+    "icon": "minecraft:cod",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Шапка «Кошачьи ушки», окаменелость оцелота$(br2)$(l)Приручение$()$(br)Рыба"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:cat",
+            "scale": 0.7,
+            "text": "Назовите своего рыжего кота Кокито, а серого — Базиль"
+        }
+    ]
+}

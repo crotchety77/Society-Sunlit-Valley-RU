@@ -1,0 +1,34 @@
+{
+  "name": "Рис",
+  "category": "patchouli:crops",
+  "icon": "farmersdelight:rice",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 16$(li)🔥 §6Лето§r 🍂 §4Осень$(li)Цена семян: :coin: 64$(li)Урожайность: 1$(li)Время созревания: 6 дн.$(li)Regrow time: 3 дн.$(br2)$(l)Notes$()$(br)Must be planted in shallow water on farmland. "
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Рис 🔥🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "U"
+          ],
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "U": "farmersdelight:rice_panicles[age=3]",
+          "0": "farmersdelight:rice[age=3,supporting=true]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

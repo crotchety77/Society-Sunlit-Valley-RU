@@ -1,0 +1,30 @@
+{
+  "name": "Личи 🌐",
+  "category": "patchouli:tree_crops",
+  "icon": "pamhc2trees:lycheeitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 16$(li)🌐 §5Круглый год§r$(li)Урожайность: 3$(li)Стадий роста: 8$(br2)$(l)Примечания$()$(li)См.: $(l:trees/pams/lychee)Дерево личи$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Дерево личи",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "F": "pamhc2trees:pamlychee[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

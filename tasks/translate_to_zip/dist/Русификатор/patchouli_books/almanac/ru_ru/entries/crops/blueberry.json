@@ -1,0 +1,30 @@
+{
+  "name": "Черника",
+  "category": "patchouli:crops",
+  "icon": "society:blueberry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 24$(li)🔥 §6Summer§r$(li)Цена семян: :coin: 8$(li)Урожайность: 3-4$(li)Время созревания: 7 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Blueberry 🔥",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:blueberry[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

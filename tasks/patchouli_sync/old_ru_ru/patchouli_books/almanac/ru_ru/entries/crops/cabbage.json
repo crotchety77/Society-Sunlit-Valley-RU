@@ -1,0 +1,30 @@
+{
+    "name": "Капуста 🍂❆",
+    "category": "patchouli:crops",
+    "icon": "farmersdelight:cabbage",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 70$(li)🍂 §4Осень §r❆ §bЗима$(li)Цена семян: :coin: 64$(li)Урожай: 1$(li)Время роста: 7 дней$(br2)$(l)Примечания$()$(br)Семена можно купить только у Мастера-культиватора"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Посев капусты",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "farmersdelight:cabbages[age=7]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

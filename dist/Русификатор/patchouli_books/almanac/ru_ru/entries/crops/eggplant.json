@@ -1,0 +1,30 @@
+{
+  "name": "Баклажан",
+  "category": "patchouli:crops",
+  "icon": "society:eggplant",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 42$(li)🍂 §4Autumn$(li)Цена семян: :coin: 8$(li)Урожайность: 1$(li)Время созревания: 6 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Eggplant 🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:eggplant[age=6]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

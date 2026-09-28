@@ -1,0 +1,17 @@
+{
+    "name": "Ёж",
+    "category": "patchouli:pets",
+    "icon": "supplementaries:bamboo_spikes",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Голова Соника$(br2)$(l)Примечания$()$(br)Можно найти в лесах."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wildernature:hedgehog",
+            "scale": 0.7,
+            "text": "Начитанное животное, известное своими различными дилеммами."
+        }
+    ]
+}

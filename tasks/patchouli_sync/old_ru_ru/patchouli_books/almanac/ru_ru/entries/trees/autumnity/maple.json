@@ -1,0 +1,74 @@
+{
+    "name": "Кленовое дерево 🌐",
+    "category": "patchouli:trees",
+    "icon": "autumnity:maple_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)🌐 §5Круглый год§r$(li)Размер: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Кленовое дерево",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  LL ",
+                        " L0L ",
+                        " LL  ",
+                        "     "
+                    ],
+                    [
+                        "  L  ",
+                        "LLLL ",
+                        "LLLLL",
+                        " LLL ",
+                        "  L  "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        " LL  ",
+                        "LLLLL",
+                        "LLWLL",
+                        " LLLL",
+                        " LL  "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "autumnity:maple_leaves",
+                    "L": "autumnity:maple_leaves",
+                    "W": "autumnity:maple_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Паучок Слайм",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:webby\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Structure: Skull Cavern Mineshafts, Обычный мир Mineshaft chests, Dungeon chests$(li)Balloon Boxes: Red$(br2)$(l)Risks:$()$(br)Climbs walls! Causes Slowness effect when upset."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Паучок Слайм",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:webby\"}",
+      "scale": 0.9,
+      "text": ""
+    }
+  ]
+}

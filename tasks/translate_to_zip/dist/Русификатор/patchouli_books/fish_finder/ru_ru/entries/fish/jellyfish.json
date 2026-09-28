@@ -1,0 +1,18 @@
+{
+  "name": "Медуза",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:jellyfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 56$(li)§0🌼 §2Весна§0 §0🔥 §6Лето§0$(li)Вода: Океан$(li)Погода: Любая$(li)Время: Ночь"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:jellyfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Действуй как медуза, будь рыбой."
+    }
+  ]
+}

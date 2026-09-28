@@ -1,0 +1,18 @@
+{
+  "name": "Меднопламенный антиас",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_copperflame_anthias",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 320$(li)§0🍂 §4Осень§0 §0❆ §bЗима§0$(li)Вода: Океан$(li)Погода: Ясно$(li)Время: Ночь"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:copperflame",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Я не большой любитель мятного шоколадного мороженого."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Фламинго",
+    "category": "patchouli:animals",
+    "icon": "society:flamingo_egg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: не продаётся$(li)Яйцо: Яйцо фламинго$(li)Добыча: Перо$(br2)$(l)Примечания$()$(br)Для снесения яиц требуется 4+ сердец. Можно найти в джунглях, не размножаются."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wildernature:flamingo",
+            "scale": 0.5,
+            "text": "Покажи свой естественный оттенок, Фламинго!"
+        }
+    ]
+}

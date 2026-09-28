@@ -1,0 +1,18 @@
+{
+  "name": "Salmon",
+  "category": "patchouli:fish",
+  "icon": "minecraft:salmon",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 24$(li)§0🔥 §6Лето §0🍂 §4Осень§0$(li)Вода: Река$(li)Погода: Любая$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:salmon",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Лосось."
+    }
+  ]
+}

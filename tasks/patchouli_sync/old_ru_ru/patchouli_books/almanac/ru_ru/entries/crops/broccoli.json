@@ -1,0 +1,30 @@
+{
+    "name": "Брокколи 🍂",
+    "category": "patchouli:crops",
+    "icon": "veggiesdelight:broccoli",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 54$(li)🍂 §4Осень$(li)Цена семян: Не продаются$(li)Урожай: 1$(li)Время роста: 5 дней"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Куст брокколи",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "veggiesdelight:broccoli_crop[age=5]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

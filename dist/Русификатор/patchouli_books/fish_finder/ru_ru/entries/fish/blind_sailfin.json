@@ -1,0 +1,18 @@
+{
+  "name": "Слепой парусник",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_blind_sailfin",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 224$(li)§0🌼 §2Весна§0$(li)Вода: Река$(li)Погода: Любая$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:blindsailfin",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Слепой? И плывёт? Звучит как-то опасно."
+    }
+  ]
+}

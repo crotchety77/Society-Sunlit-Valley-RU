@@ -1,0 +1,30 @@
+{
+    "name": "Хмель 🔥",
+    "category": "patchouli:crops",
+    "icon": "brewery:hops",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 21$(li)🔥 §6Лето§r$(li)Урожай: 2$(li)Время роста: 6 дней$(br2)$(l)Примечания$()$(br)Встречается в таёжных биомах."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Куст хмеля",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "brewery:hop_trellis[age=6]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

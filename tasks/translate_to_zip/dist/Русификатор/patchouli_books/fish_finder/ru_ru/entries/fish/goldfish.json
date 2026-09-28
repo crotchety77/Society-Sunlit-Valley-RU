@@ -1,0 +1,18 @@
+{
+  "name": "Золотая рыбка",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:goldfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 512$(li)🔥 §6Лето§0$(li)Вода: Океан$(li)Погода: Ясно$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:starshell_turtle",
+      "scale": 0,
+      "rotate": true,
+      "text": "Честно говоря, удачи вам с поимкой одной из них."
+    }
+  ]
+}

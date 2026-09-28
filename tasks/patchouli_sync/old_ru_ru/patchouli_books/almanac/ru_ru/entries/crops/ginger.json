@@ -1,0 +1,30 @@
+{
+    "name": "Имбирь ❆",
+    "category": "patchouli:crops",
+    "icon": "snowyspirit:ginger",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 24$(li)❆ §bЗима$(li)Цена семян: :coin: 4$(li)Урожай: 1$(li)Время роста: 7 дней"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Росток имбиря",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "snowyspirit:ginger[age=7]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

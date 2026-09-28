@@ -1,0 +1,17 @@
+{
+  "name": "Овца",
+  "category": "patchouli:animals",
+  "icon": "society:large_sheep_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: :coin: 1,024$(li)Молоко: Sheep Молоко$(li)Перезарядка молока: 2 дн.$(li)Shear drops: Шерсть, Fine Шерсть (50% chance) $(li)Добыча: Сырая баранина, Шерсть$(br2)$(l)Notes$()$(br)Fine Шерсть only drops at 5+ hearts of affection"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sheep",
+      "scale": 0.8,
+      "text": "Универсальное сельскохозяйственное животное с множеством применений. Не лучший вариант для дойки."
+    }
+  ]
+}

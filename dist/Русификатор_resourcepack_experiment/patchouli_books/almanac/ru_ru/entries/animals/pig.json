@@ -1,0 +1,17 @@
+{
+  "name": "Свинья",
+  "category": "patchouli:animals",
+  "icon": "society:truffle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: :coin: 8,192$(li)Forage: Truffle (20% chance)$(li)Добыча: Сырая свинина$(br2)$(l)Notes$()$(br)Foraging requires 4+ hearts of affection."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:pig",
+      "scale": 0.7,
+      "text": "Простые и капризные, они требуют много внимания, прежде чем начнут выкапывать ценные трюфели."
+    }
+  ]
+}

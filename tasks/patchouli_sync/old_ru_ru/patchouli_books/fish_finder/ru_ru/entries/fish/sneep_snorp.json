@@ -1,0 +1,18 @@
+{
+  "name": "Снип Снорп",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_sneep_snorp",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 16$(li)§0🔥 §6Лето§0$(li)Вода: Океан$(li)Погода: Любая$(li)Время: Любое"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:sneep_snorp",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "СНИП СНОРП."
+    }
+  ]
+}

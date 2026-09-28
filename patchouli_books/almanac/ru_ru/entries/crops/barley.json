@@ -1,0 +1,30 @@
+{
+  "name": "Ячмень",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:barley",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 11$(li)🍂 §4Autumn §r❆ §bWinter$(li)Цена семян: :coin: 2$(li)Урожайность: 2$(li)Время созревания: 4 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Ячмень 🍂❆",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:barley_crop[age=4]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

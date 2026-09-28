@@ -1,0 +1,30 @@
+{
+  "name": "Лук",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:onion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 12$(li)🌼 §2Spring§r$(li)Цена семян: :coin: 4$(li)Урожайность: 1-4$(li)Время созревания: 4 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Лук 🌼",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:onion_crop[age=4]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

@@ -103,6 +103,13 @@ if (fs.existsSync(addTooltipsSrc)) {
     console.log(`✅ Синхронизирован основной скрипт подсказок addTooltips.js -> ${addTooltipsTarget}`);
 }
 
+const addAdvTooltipsSrc = path.join(localBase, 'game_data/client_scripts/tooltips/addAdvancedTooltips.js');
+const addAdvTooltipsTarget = path.join(modpackKubejs, 'client_scripts/tooltips/addAdvancedTooltips.js');
+if (fs.existsSync(addAdvTooltipsSrc)) {
+    fs.copyFileSync(addAdvTooltipsSrc, addAdvTooltipsTarget);
+    console.log(`✅ Синхронизирован скрипт продвинутых подсказок addAdvancedTooltips.js -> ${addAdvTooltipsTarget}`);
+}
+
 const jeiScriptSource = path.join(localBase, 'kubejs_scripts/client/universalGiftsJei.js');
 const jeiScriptTarget = path.join(modpackKubejs, 'client_scripts/universalGiftsJei.js');
 if (fs.existsSync(jeiScriptSource)) {

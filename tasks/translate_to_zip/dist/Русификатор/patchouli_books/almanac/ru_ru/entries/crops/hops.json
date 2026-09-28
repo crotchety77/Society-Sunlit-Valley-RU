@@ -1,0 +1,30 @@
+{
+  "name": "Хмель",
+  "category": "patchouli:crops",
+  "icon": "brewery:hops",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 21$(li)🔥 §6Summer§r$(li)Урожайность: 2$(li)Время созревания: 6 дн.$(br2)$(l)Notes$()$(br)Found in taiga-like biomes."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Хмель 🔥",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "brewery:hop_trellis[age=6]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

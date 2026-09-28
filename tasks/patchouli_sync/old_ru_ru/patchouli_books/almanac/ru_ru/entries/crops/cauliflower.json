@@ -1,0 +1,30 @@
+{
+    "name": "Цветная капуста 🌼",
+    "category": "patchouli:crops",
+    "icon": "veggiesdelight:cauliflower",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 48$(li)🌼 §2Весна§r$(li)Цена семян: :coin: 6$(li)Урожай: 2$(li)Время роста: 7 дней"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Куст цветной капусты",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "veggiesdelight:cauliflower_crop[age=7]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

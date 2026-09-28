@@ -1,0 +1,19 @@
+{
+  "name": "Аэромоно",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_aero_mono",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 128$(li)§0❆ §bЗима§0$(li)Вода: Пресная$(li)Погода: Любая$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:aero_mono",
+      "scale": 0.8,
+      "rotate": true,
+      "offset": -0.3,
+      "text": "Запас воздуха? Я думал, ты рыба."
+    }
+  ]
+}

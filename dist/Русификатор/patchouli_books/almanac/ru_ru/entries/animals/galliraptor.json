@@ -1,0 +1,17 @@
+{
+  "name": "Галлираптор",
+  "category": "patchouli:animals",
+  "icon": "farmlife:galliraptor_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not Sold$(li)Яйцо: Galliraptor Яйцо$(li)Добыча: Raw Galliraptor, Перо$(br2)$(l)Notes$()$(br)Engineered by using a Lunar Mutation Serum on a Goober. Hungry Galliraptors don't lay eggs, and unhappy ones lay them a lot less."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "farmlife:galliraptor",
+      "scale": 0.7,
+      "text": "Он доисторический? Или постисторический?"
+    }
+  ]
+}

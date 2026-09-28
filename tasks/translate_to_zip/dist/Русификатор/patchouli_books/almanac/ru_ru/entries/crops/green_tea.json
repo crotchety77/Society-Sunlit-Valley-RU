@@ -1,0 +1,30 @@
+{
+  "name": "Лист зелёного чая",
+  "category": "patchouli:crops",
+  "icon": "herbalbrews:green_tea_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 4$(li)🌼 §2Spring§r 🔥 §6Лето§r 🍂 §4Осень$(li)Урожайность: 1$(li)Время созревания: 3 дн.$(br2)$(l)Notes$()$(br)Found in Green Balloons.$(br)Green Tea Leaf blocks can be placed in-world to slowly dry"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Лист зелёного чая 🌼🔥🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "herbalbrews:tea_plant[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

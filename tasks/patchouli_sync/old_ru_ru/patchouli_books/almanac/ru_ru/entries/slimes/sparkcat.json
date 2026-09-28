@@ -1,0 +1,17 @@
+{
+    "name": "Искрокот",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местоположение:$()$(li)Структура: Спаунеры слизней в Теневых пустошах (Пещера Черепа)$(br2)$(l)Опасности:$()$(br)Когда расстроен, бьёт молнией. В ярости сильно взрывается и очень скользкий. Крайне нестабильное настроение."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Искрокот-слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:sparkcat\"}",
+            "scale": 0.9
+        }
+    ]
+}

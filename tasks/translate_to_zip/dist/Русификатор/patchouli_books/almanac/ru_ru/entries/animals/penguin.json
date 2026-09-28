@@ -1,0 +1,17 @@
+{
+  "name": "Пингвин",
+  "category": "patchouli:animals",
+  "icon": "society:penguin_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Яйцо: Penguin Яйцо$(li)Добыча: Перо$(br2)$(l)Notes$()$(br)Яйцоs require 2+ hearts. Can be found in Frozen Океанs and Ice Spikes biomes."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:penguin",
+      "scale": 0.5,
+      "text": "Я как Пингвин, но я моб из Майнкрафта."
+    }
+  ]
+}

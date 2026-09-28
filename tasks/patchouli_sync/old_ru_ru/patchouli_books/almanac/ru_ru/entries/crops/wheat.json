@@ -1,0 +1,30 @@
+{
+    "name": "Пшеница 🔥🍂",
+    "category": "patchouli:crops",
+    "icon": "minecraft:wheat",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 46$(li)🔥 §6Лето§r 🍂 §4Осень$(li)Цена семян: :coin: 8$(li)Урожай: 1$(li)Время роста: 7 дней"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Посев пшеницы",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:wheat[age=7]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

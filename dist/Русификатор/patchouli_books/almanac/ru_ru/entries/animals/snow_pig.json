@@ -1,0 +1,17 @@
+{
+  "name": "Снежная свинья",
+  "category": "patchouli:animals",
+  "icon": "snowpig:frozen_porkchop",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Forage: Truffle (20% chance)$(li)Добыча: Frozen Porkchop$(br2)$(l)Notes$()$(br)Foraging requires 4+ hearts of affection. Can be found in snowy biomes, and not affected by the Winter cold."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "snowpig:snow_pig",
+      "scale": 0.7,
+      "text": "Свинья, которую, кажется, поглотил мороз. Может, есть способ их создать..."
+    }
+  ]
+}

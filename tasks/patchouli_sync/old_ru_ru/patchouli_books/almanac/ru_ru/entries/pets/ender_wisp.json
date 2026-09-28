@@ -1,0 +1,17 @@
+{
+    "name": "Эндер-огонёк",
+    "category": "patchouli:pets",
+    "icon": "minecraft:ender_pearl",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Шапка «Ушки Пика»"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "legendarycreatures:ender_wisp",
+            "scale": 0.7,
+            "text": "При убийстве с них выпадают мешочки с опытом, но зачем вам это делать?"
+        }
+    ]
+}

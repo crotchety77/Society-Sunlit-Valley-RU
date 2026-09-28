@@ -1,0 +1,17 @@
+{
+  "name": "Обертораптор",
+  "category": "patchouli:animals",
+  "icon": "species:wraptor_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Яйцо: Wraptor Яйцо $(br2)$(l)Notes$()$(br)Яйцоs require 2+ hearts. Can be found in Искажённый лесs. Will despawn if not nametagged!"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:wraptor",
+      "scale": 0.8,
+      "text": "Они ненавидят находиться вне уютного тепла Незера."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Водяной",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:puddle\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местоположения:$()$(li)Крабовые ловушки: наживка для крабовых ловушек, элитная наживка для крабовых ловушек$(li)Места для рыбалки$(br2)$(l)Риски:$()$(br)Имеет шипы и становится несчастным, когда находится вне воды!"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Водяной слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:puddle\"}",
+            "scale": 0.9
+        }
+    ]
+}

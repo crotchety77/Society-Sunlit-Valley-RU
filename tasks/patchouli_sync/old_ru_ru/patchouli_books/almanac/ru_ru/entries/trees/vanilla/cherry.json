@@ -1,0 +1,116 @@
+{
+  "name": "Вишнёвое дерево 🌼",
+  "category": "patchouli:trees",
+  "icon": "minecraft:cherry_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)🌼 §2Весна§r $(li)Цена саженца: :coin: 8$(li)Размер: 1x1"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Вишнёвое дерево",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "              ",
+            "              ",
+            "  LLL    LLL  ",
+            "  LLL    LLL  ",
+            "  LLL    LLL  ",
+            "              ",
+            "              "
+          ],
+          [
+            "              ",
+            " LLLL   LLLLL ",
+            " LLLLL  LLLLL ",
+            " LLLLL  LLLLL ",
+            " LLLLL  LLLLL ",
+            " LLLLL  LLLLL ",
+            "              "
+          ],
+          [
+            " LLLL   LLLL  ",
+            "LLLLLL  LLLLLL",
+            "LLLLLLLLLLLLLL",
+            "LLLLLLLLLLLLLL",
+            "LLLLLLLLLLLLLL",
+            "LLLLLLLLLLLLLL",
+            " LLLLL   LLL  "
+          ],
+          [
+            " LL L   LLL L ",
+            "LLLLLL LLLLLLL",
+            "LLLLLLLLLLLLLL",
+            " LLTWL LLWTLLL",
+            "LLLLLLLLLLLLLL",
+            " LLLLL LLLLLLL",
+            " LLLLL  LLLLL "
+          ],
+          [
+            "  L      LL   ",
+            "  LLLL  LLLLL ",
+            " LLLLL  LLLLL ",
+            " LLLTW  LWLLL ",
+            " LLLLL  LLLLL ",
+            "  LLLL  LLLL  ",
+            "  L  L  L L   "
+          ],
+          [
+            "              ",
+            "  L           ",
+            "              ",
+            "       WTT  L ",
+            "              ",
+            "              ",
+            "              "
+          ],
+          [
+            "              ",
+            "              ",
+            "              ",
+            "       W      ",
+            "              ",
+            "              ",
+            "              "
+          ],
+          [
+            "              ",
+            "              ",
+            "              ",
+            "       W      ",
+            "              ",
+            "              ",
+            "              "
+          ],
+          [
+            "              ",
+            "              ",
+            "              ",
+            "       W      ",
+            "              ",
+            "              ",
+            "              "
+          ],
+          [
+            "              ",
+            "              ",
+            "              ",
+            "       0      ",
+            "              ",
+            "              ",
+            "              "
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:cherry_log[axis=y]",
+          "L": "minecraft:cherry_leaves",
+          "W": "minecraft:cherry_log[axis=y]",
+          "T": "minecraft:cherry_log[axis=z]"
+        }
+      }
+    }
+  ]
+}

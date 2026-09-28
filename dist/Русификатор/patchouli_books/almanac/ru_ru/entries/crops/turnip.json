@@ -1,0 +1,30 @@
+{
+  "name": "Репа",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:turnip",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 36$(li)🌼 §2Spring§r$(li)Цена семян: :coin: 6$(li)Урожайность: 1$(li)Время созревания: 5 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Репа 🌼",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:turnip_crop[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

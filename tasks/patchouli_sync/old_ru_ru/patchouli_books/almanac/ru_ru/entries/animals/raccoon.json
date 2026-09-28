@@ -1,0 +1,17 @@
+{
+    "name": "Енот",
+    "category": "patchouli:animals",
+    "icon": "furniture:trash_bag",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: не продаётся$(li)Добыча: ...мусор? (шанс 50%)$(li)Дроп: консервная банка$(br2)$(l)Примечания$()$(br)Для добычи нужно 3+ сердца. Можно найти в равнинных биомах."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wildernature:raccoon",
+            "scale": 0.7,
+            "text": "Эти малыши — лучшие друзья гниющих слизней!"
+        }
+    ]
+}

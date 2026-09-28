@@ -1,0 +1,30 @@
+{
+  "name": "Апельсин 🔥",
+  "category": "patchouli:tree_crops",
+  "icon": "atmospheric:orange",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 96$(li)🔥 §6Лето§r$(li)Урожай: 1$(li)Стадии роста: 8$(br2)$(l)Примечания$()$(li)См.: $(l:trees/pams/orange)Апельсиновое дерево$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Апельсиновое дерево",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "F": "pamhc2trees:pamorange[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

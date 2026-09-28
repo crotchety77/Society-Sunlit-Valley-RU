@@ -1,0 +1,17 @@
+{
+    "name": "Сладкий",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:sweet\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местоположение:$()$(li)Синтез сердец$(br2)$(l)Риски:$()$(br)В раздражённом состоянии накладывает эффект «Скорость». Крайне переменчивое настроение."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Сладкий слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:sweet\"}",
+            "scale": 0.9
+        }
+    ]
+}

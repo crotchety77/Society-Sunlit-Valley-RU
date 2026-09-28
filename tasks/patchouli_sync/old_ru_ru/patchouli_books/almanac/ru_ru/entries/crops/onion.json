@@ -1,0 +1,30 @@
+{
+    "name": "Лук 🌼",
+    "category": "patchouli:crops",
+    "icon": "farm_and_charm:onion",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 12$(li)🌼 §2Весна§r$(li)Цена семян: :coin: 4$(li)Урожай: 1-4$(li)Время роста: 4 дня"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Грядка лука",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "farm_and_charm:onion_crop[age=4]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

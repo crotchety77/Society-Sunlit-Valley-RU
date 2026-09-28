@@ -1,0 +1,17 @@
+{
+  "name": "Слюпик",
+  "category": "patchouli:animals",
+  "icon": "species:petrified_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Яйцо: Petrified Яйцо (25% chance)$(br2)$(l)Notes$()$(br)Яйцоs require 5+ hearts."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:goober",
+      "scale": 0.8,
+      "text": "Для вылупления их яйцам необходимо тепло магмы."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Имбирь",
+  "category": "patchouli:crops",
+  "icon": "snowyspirit:ginger",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 24$(li)❆ §bWinter$(li)Цена семян: :coin: 4$(li)Урожайность: 1$(li)Время созревания: 7 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Имбирь ❆",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "snowyspirit:ginger[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

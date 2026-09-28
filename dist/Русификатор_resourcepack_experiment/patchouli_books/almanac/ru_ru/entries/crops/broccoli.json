@@ -1,0 +1,30 @@
+{
+  "name": "Брокколи",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:broccoli",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 54$(li)🍂 §4Autumn$(li)Цена семян: Not sold$(li)Урожайность: 1$(li)Время созревания: 5 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Брокколи 🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:broccoli_crop[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

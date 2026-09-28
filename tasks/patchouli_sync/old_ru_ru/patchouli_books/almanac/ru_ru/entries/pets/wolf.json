@@ -1,0 +1,17 @@
+{
+    "name": "Волк",
+    "category": "patchouli:pets",
+    "icon": "minecraft:bone",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Шапка «Длинные лисьи уши», окаменелость волка$(br2)$(l)Предмет для приручения:$()$(br)Кость"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:wolf",
+            "scale": 0.7,
+            "text": "Лучший друг каждого"
+        }
+    ]
+}

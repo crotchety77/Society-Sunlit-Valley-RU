@@ -1,0 +1,17 @@
+{
+  "name": "Курица",
+  "category": "patchouli:animals",
+  "icon": "minecraft:egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: :coin: 256$(li)Яйцо: Яйцо$(li)Добыча: Сырая курятина, Перо$(br2)$(l)Notes$()$(br)Hungry Chickens don't lay eggs, and unhappy ones lay them a lot less."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:chicken",
+      "scale": 0.8,
+      "text": "Этим скромным птицам не требуется особого внимания, только еда."
+    }
+  ]
+}

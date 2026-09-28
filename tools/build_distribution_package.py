@@ -137,6 +137,9 @@ def main():
             ru_file = os.path.join(k_assets, ns, 'lang', 'ru_ru.json')
             if os.path.exists(ru_file):
                 z.write(ru_file, f'assets/{ns}/lang/ru_ru.json')
+        pack_icon = os.path.join(workspace_root, 'dist', 'image', 'pack.png')
+        if os.path.exists(pack_icon):
+            z.write(pack_icon, 'pack.png')
         tex_dir = os.path.join(k_assets, 'society', 'textures', 'gui')
         if os.path.exists(tex_dir):
             for f in os.listdir(tex_dir):

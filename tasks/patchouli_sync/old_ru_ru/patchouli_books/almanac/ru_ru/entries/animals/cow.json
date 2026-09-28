@@ -1,0 +1,17 @@
+{
+    "name": "Корова",
+    "category": "patchouli:animals",
+    "icon": "society:large_milk",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: :coin: 512$(li)Молоко: Молоко$(li)Перезарядка молока: 1 день$(li)Добыча: Сырая говядина, Кожа"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:cow",
+            "scale": 0.8,
+            "text": "Ваше базовое сельскохозяйственное животное. Легко разводить, но стоит немного."
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Маракуйя 🌼",
+  "category": "patchouli:tree_crops",
+  "icon": "atmospheric:passion_fruit",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 128$(li)🌼 §2Весна§r§r$(li)Урожайность: 1$(li)Стадии роста: 8$(br2)$(l)Примечания$()$(li)См.: $(l:trees/pams/passionfruit)Дерево маракуйи$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Дерево маракуйи",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "F": "pamhc2trees:pampassionfruit[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

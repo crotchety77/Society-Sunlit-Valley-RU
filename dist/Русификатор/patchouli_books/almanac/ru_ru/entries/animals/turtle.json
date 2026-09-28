@@ -1,0 +1,17 @@
+{
+  "name": "Морская черепаха",
+  "category": "patchouli:animals",
+  "icon": "minecraft:turtle_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not Sold$(li)Яйцо: Turtle Яйцо"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:turtle",
+      "scale": 0.8,
+      "text": "Part of the Turtle club"
+    }
+  ]
+}

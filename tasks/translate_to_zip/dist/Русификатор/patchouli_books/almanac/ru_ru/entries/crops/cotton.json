@@ -1,0 +1,30 @@
+{
+  "name": "Цветок хлопка",
+  "category": "patchouli:crops",
+  "icon": "etcetera:cotton_flower",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 24$(li)🔥 §6Summer§r$(li)Урожайность: 2$(li)Время созревания: 3 дн.$(br2)$(l)Notes$()$(br)Found in green balloons, dig spots, and Forest Mojos."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Цветок хлопка 🔥",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "etcetera:cotton[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

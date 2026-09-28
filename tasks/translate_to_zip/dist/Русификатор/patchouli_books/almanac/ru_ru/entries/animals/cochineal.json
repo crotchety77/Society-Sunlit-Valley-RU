@@ -1,0 +1,17 @@
+{
+  "name": "Кошениль",
+  "category": "patchouli:animals",
+  "icon": "atmospheric:carmine_husk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Forage: Carmine Husk, Dragonfruit (50% chance) $(li)Добыча: Carmine Husk$(br2)$(l)Notes$()$(br)Foraging requires 1+ hearts."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "atmospheric:cochineal",
+      "scale": 0.5,
+      "text": "Сущий кошмар. Надеюсь, ваши красивые блоки того стоят."
+    }
+  ]
+}

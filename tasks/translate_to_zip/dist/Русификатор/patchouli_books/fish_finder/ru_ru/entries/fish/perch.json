@@ -1,0 +1,18 @@
+{
+  "name": "Окунь",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:perch",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 16$(li)§0🌼 §2Весна§0 §0🍂 §4Осень§0 §0❆ §bЗима§0$(li)Вода: Пресная$(li)Погода: Любая$(li)Время: Spring, Autumn (День), Winter (Ночь)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:perch",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Птицы так не поступают."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Медведь гризли",
+    "category": "patchouli:pets",
+    "icon": "buzzier_bees:honey_apple",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Печать Биомоники$(br2)$(l)Примечания$()$(br)Можно найти только с помощью яйца призыва, которое скрыто в поиске JEI."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "buzzier_bees:grizzly_bear",
+            "scale": 0.6,
+            "text": "Интересно, откуда они берутся..."
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Золотой",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местоположение:$()$(li)Слияние сердец$(br2)$(l)Риски:$()$(br)В расстроенном состоянии вызывает эффект «Дурное знамение» и единовременно выкачивает 512 :coin: с банковских счетов ближайших игроков. Крайне переменчивое настроение."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Золотой слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:gold\"}",
+            "scale": 0.9
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Всполох Незера",
+    "category": "patchouli:pets",
+    "icon": "minecraft:blaze_powder",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Яйцо призыва всполоха Незера"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "legendarycreatures:nether_wisp",
+            "scale": 0.7,
+            "text": "Всё, о чём они просят, — чтобы вы любили их друзей."
+        }
+    ]
+}

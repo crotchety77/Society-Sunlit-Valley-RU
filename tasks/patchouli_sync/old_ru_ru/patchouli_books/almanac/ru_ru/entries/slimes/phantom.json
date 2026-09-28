@@ -1,0 +1,17 @@
+{
+    "name": "Фантом",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:phantom\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местоположение:$()$(li)Биом: Теневые пустоши (Пещера Черепа)$(br2)$(l)Риски:$()$(br)Когда недоволен, летает и накладывает эффект домашнего очага (телепортирует к точке возрождения)."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Слизень-фантом",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:phantom\"}",
+            "scale": 0.9
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Криэйт Слайм",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:mechanic\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Will hold an item given to it until killed/split."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Криэйт Слайм",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:mechanic\"}",
+      "scale": 0.9,
+      "text": ""
+    }
+  ]
+}

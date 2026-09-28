@@ -1,0 +1,17 @@
+{
+    "name": "Орби",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:orby\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местоположение:$()$(li)Структура: Древний город$(br2)$(l)Риски:$()$(br)Получает эффект «Сила I» и накладывает «Тьму», когда расстроен. Превращает отрицательные эффекты других слизней в положительные. Будет держать предмет, который ему дали, до тех пор, пока его не убьют/разделят."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Слизень-орби",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:orby\"}",
+            "scale": 0.9
+        }
+    ]
+}

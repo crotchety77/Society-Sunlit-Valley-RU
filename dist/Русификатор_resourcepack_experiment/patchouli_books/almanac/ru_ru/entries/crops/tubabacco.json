@@ -1,0 +1,30 @@
+{
+  "name": "Лист тубакко",
+  "category": "patchouli:crops",
+  "icon": "society:tubabacco_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 87$(li)🌼 §2Spring§r ❆ §bWinter$(li)Цена семян: :coin: 512$(li)Урожайность: 1$(li)Время созревания: 9 дн.$(br2)$(l)Notes$()$(br)Семена sold in Market after first year"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Tubabacco 🌼❆",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:tubabacco_leaf[age=9]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

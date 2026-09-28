@@ -1,0 +1,560 @@
+[
+  {
+    "num": 1,
+    "mod": "whimsy_deco",
+    "name": "fufu_plushie",
+    "orig_id": "whimsy_deco:fufu_plushie",
+    "adv_id": "whimsy_deco:adv_fufu_plushie",
+    "en_name": "Fufu Plushie",
+    "ru_name": "Плюшевый Фуфу"
+  },
+  {
+    "num": 2,
+    "mod": "whimsy_deco",
+    "name": "flower_pig_plushie",
+    "orig_id": "whimsy_deco:flower_pig_plushie",
+    "adv_id": "whimsy_deco:adv_flower_pig_plushie",
+    "en_name": "Flower Pig Plushie",
+    "ru_name": "Плюшевая свинка с цветком"
+  },
+  {
+    "num": 3,
+    "mod": "whimsy_deco",
+    "name": "golden_pig_plushie",
+    "orig_id": "whimsy_deco:golden_pig_plushie",
+    "adv_id": "whimsy_deco:adv_golden_pig_plushie",
+    "en_name": "Golden Pig Plushie",
+    "ru_name": "Золотая плюшевая свинка"
+  },
+  {
+    "num": 4,
+    "mod": "whimsy_deco",
+    "name": "big_panda_plushie",
+    "orig_id": "whimsy_deco:big_panda_plushie",
+    "adv_id": "whimsy_deco:adv_big_panda_plushie",
+    "en_name": "Big Panda Plushie",
+    "ru_name": "Большая плюшевая панда"
+  },
+  {
+    "num": 5,
+    "mod": "whimsy_deco",
+    "name": "singing_frog_plushie",
+    "orig_id": "whimsy_deco:singing_frog_plushie",
+    "adv_id": "whimsy_deco:adv_singing_frog_plushie",
+    "en_name": "Singing Frog Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 6,
+    "mod": "whimsy_deco",
+    "name": "vocal_doll",
+    "orig_id": "whimsy_deco:vocal_doll",
+    "adv_id": "whimsy_deco:adv_vocal_doll",
+    "en_name": "Vocal Doll",
+    "ru_name": "Поющая кукла"
+  },
+  {
+    "num": 7,
+    "mod": "whimsy_deco",
+    "name": "red_vocal_doll",
+    "orig_id": "whimsy_deco:red_vocal_doll",
+    "adv_id": "whimsy_deco:adv_red_vocal_doll",
+    "en_name": "Red Vocal Doll",
+    "ru_name": "Красная поющая кукла"
+  },
+  {
+    "num": 8,
+    "mod": "tanukidecor",
+    "name": "mayoral_mini_figure",
+    "orig_id": "tanukidecor:mayoral_mini_figure",
+    "adv_id": "tanukidecor:adv_mayoral_mini_figure",
+    "en_name": "Mayoral Mini Figure",
+    "ru_name": "Мини-фигурка мэра"
+  },
+  {
+    "num": 9,
+    "mod": "tanukidecor",
+    "name": "developer_mini_figure",
+    "orig_id": "tanukidecor:developer_mini_figure",
+    "adv_id": "tanukidecor:adv_developer_mini_figure",
+    "en_name": "Developer Mini Figure",
+    "ru_name": "Мини-фигурка разработчика"
+  },
+  {
+    "num": 10,
+    "mod": "perfectplushies",
+    "name": "red_fox_plushie",
+    "orig_id": "perfectplushies:red_fox_plushie",
+    "adv_id": "perfectplushies:adv_red_fox_plushie",
+    "en_name": "Red Fox Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 11,
+    "mod": "perfectplushies",
+    "name": "snow_fox_plushie",
+    "orig_id": "perfectplushies:snow_fox_plushie",
+    "adv_id": "perfectplushies:adv_snow_fox_plushie",
+    "en_name": "Snow Fox Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 12,
+    "mod": "perfectplushies",
+    "name": "fennec_fox_plushie",
+    "orig_id": "perfectplushies:fennec_fox_plushie",
+    "adv_id": "perfectplushies:adv_fennec_fox_plushie",
+    "en_name": "Fennec Fox Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 13,
+    "mod": "perfectplushies",
+    "name": "red_ruffed_lemur_plushie",
+    "orig_id": "perfectplushies:red_ruffed_lemur_plushie",
+    "adv_id": "perfectplushies:adv_red_ruffed_lemur_plushie",
+    "en_name": "Red Ruffed Lemur Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 14,
+    "mod": "perfectplushies",
+    "name": "red_panda_plushie",
+    "orig_id": "perfectplushies:red_panda_plushie",
+    "adv_id": "perfectplushies:adv_red_panda_plushie",
+    "en_name": "Red Panda Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 15,
+    "mod": "perfectplushies",
+    "name": "raccoon_plushie",
+    "orig_id": "perfectplushies:raccoon_plushie",
+    "adv_id": "perfectplushies:adv_raccoon_plushie",
+    "en_name": "Raccoon Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 16,
+    "mod": "perfectplushies",
+    "name": "capybara_plushie",
+    "orig_id": "perfectplushies:capybara_plushie",
+    "adv_id": "perfectplushies:adv_capybara_plushie",
+    "en_name": "Capybara Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 17,
+    "mod": "perfectplushies",
+    "name": "dog_plushie",
+    "orig_id": "perfectplushies:dog_plushie",
+    "adv_id": "perfectplushies:adv_dog_plushie",
+    "en_name": "Dog Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 18,
+    "mod": "perfectplushies",
+    "name": "cat_plushie",
+    "orig_id": "perfectplushies:cat_plushie",
+    "adv_id": "perfectplushies:adv_cat_plushie",
+    "en_name": "Cat Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 19,
+    "mod": "perfectplushies",
+    "name": "dolphin_plushie",
+    "orig_id": "perfectplushies:dolphin_plushie",
+    "adv_id": "perfectplushies:adv_dolphin_plushie",
+    "en_name": "Dolphin Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 20,
+    "mod": "perfectplushies",
+    "name": "brown_rabbit_plushie",
+    "orig_id": "perfectplushies:brown_rabbit_plushie",
+    "adv_id": "perfectplushies:adv_brown_rabbit_plushie",
+    "en_name": "Brown Rabbit Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 21,
+    "mod": "perfectplushies",
+    "name": "white_rabbit_plushie",
+    "orig_id": "perfectplushies:white_rabbit_plushie",
+    "adv_id": "perfectplushies:adv_white_rabbit_plushie",
+    "en_name": "White Rabbit Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 22,
+    "mod": "perfectplushies",
+    "name": "frog_plushie",
+    "orig_id": "perfectplushies:frog_plushie",
+    "adv_id": "perfectplushies:adv_frog_plushie",
+    "en_name": "Frog Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 23,
+    "mod": "perfectplushies",
+    "name": "goose_plushie",
+    "orig_id": "perfectplushies:goose_plushie",
+    "adv_id": "perfectplushies:adv_goose_plushie",
+    "en_name": "Goose Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 24,
+    "mod": "perfectplushies",
+    "name": "duck_plushie",
+    "orig_id": "perfectplushies:duck_plushie",
+    "adv_id": "perfectplushies:adv_duck_plushie",
+    "en_name": "Duck Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 25,
+    "mod": "perfectplushies",
+    "name": "rubber_duck_plushie",
+    "orig_id": "perfectplushies:rubber_duck_plushie",
+    "adv_id": "perfectplushies:adv_rubber_duck_plushie",
+    "en_name": "Rubber Duck Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 26,
+    "mod": "perfectplushies",
+    "name": "robin_plushie",
+    "orig_id": "perfectplushies:robin_plushie",
+    "adv_id": "perfectplushies:adv_robin_plushie",
+    "en_name": "Robin Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 27,
+    "mod": "perfectplushies",
+    "name": "hummingbird_plushie",
+    "orig_id": "perfectplushies:hummingbird_plushie",
+    "adv_id": "perfectplushies:adv_hummingbird_plushie",
+    "en_name": "Hummingbird Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 28,
+    "mod": "perfectplushies",
+    "name": "hippo_plushie",
+    "orig_id": "perfectplushies:hippo_plushie",
+    "adv_id": "perfectplushies:adv_hippo_plushie",
+    "en_name": "Hippo Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 29,
+    "mod": "perfectplushies",
+    "name": "mouse_plushie",
+    "orig_id": "perfectplushies:mouse_plushie",
+    "adv_id": "perfectplushies:adv_mouse_plushie",
+    "en_name": "Mouse Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 30,
+    "mod": "perfectplushies",
+    "name": "turtle_plushie",
+    "orig_id": "perfectplushies:turtle_plushie",
+    "adv_id": "perfectplushies:adv_turtle_plushie",
+    "en_name": "Turtle Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 31,
+    "mod": "perfectplushies",
+    "name": "doe_plushie",
+    "orig_id": "perfectplushies:doe_plushie",
+    "adv_id": "perfectplushies:adv_doe_plushie",
+    "en_name": "Doe Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 32,
+    "mod": "perfectplushies",
+    "name": "reindeer_plushie",
+    "orig_id": "perfectplushies:reindeer_plushie",
+    "adv_id": "perfectplushies:adv_reindeer_plushie",
+    "en_name": "Reindeer Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 33,
+    "mod": "perfectplushies",
+    "name": "bear_plushie",
+    "orig_id": "perfectplushies:bear_plushie",
+    "adv_id": "perfectplushies:adv_bear_plushie",
+    "en_name": "Bear Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 34,
+    "mod": "perfectplushies",
+    "name": "koala_plushie",
+    "orig_id": "perfectplushies:koala_plushie",
+    "adv_id": "perfectplushies:adv_koala_plushie",
+    "en_name": "Koala Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 35,
+    "mod": "perfectplushies",
+    "name": "panda_plushie",
+    "orig_id": "perfectplushies:panda_plushie",
+    "adv_id": "perfectplushies:adv_panda_plushie",
+    "en_name": "Panda Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 36,
+    "mod": "perfectplushies",
+    "name": "lion_cub_plushie",
+    "orig_id": "perfectplushies:lion_cub_plushie",
+    "adv_id": "perfectplushies:adv_lion_cub_plushie",
+    "en_name": "Lion Cub Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 37,
+    "mod": "perfectplushies",
+    "name": "elephant_plushie",
+    "orig_id": "perfectplushies:elephant_plushie",
+    "adv_id": "perfectplushies:adv_elephant_plushie",
+    "en_name": "Elephant Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 38,
+    "mod": "perfectplushies",
+    "name": "monkey_plushie",
+    "orig_id": "perfectplushies:monkey_plushie",
+    "adv_id": "perfectplushies:adv_monkey_plushie",
+    "en_name": "Monkey Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 39,
+    "mod": "perfectplushies",
+    "name": "seal_plushie",
+    "orig_id": "perfectplushies:seal_plushie",
+    "adv_id": "perfectplushies:adv_seal_plushie",
+    "en_name": "Seal Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 40,
+    "mod": "perfectplushies",
+    "name": "hedgehog_plushie",
+    "orig_id": "perfectplushies:hedgehog_plushie",
+    "adv_id": "perfectplushies:adv_hedgehog_plushie",
+    "en_name": "Hedgehog Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 41,
+    "mod": "perfectplushies",
+    "name": "aye_aye_plushie",
+    "orig_id": "perfectplushies:aye_aye_plushie",
+    "adv_id": "perfectplushies:adv_aye_aye_plushie",
+    "en_name": "Aye Aye Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 42,
+    "mod": "perfectplushies",
+    "name": "quokka_plushie",
+    "orig_id": "perfectplushies:quokka_plushie",
+    "adv_id": "perfectplushies:adv_quokka_plushie",
+    "en_name": "Quokka Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 43,
+    "mod": "kata",
+    "name": "ace_kata_doll",
+    "orig_id": "kata:ace_kata_doll",
+    "adv_id": "kata:adv_ace_kata_doll",
+    "en_name": "Ace Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 44,
+    "mod": "kata",
+    "name": "dipp_kata_doll",
+    "orig_id": "kata:dipp_kata_doll",
+    "adv_id": "kata:adv_dipp_kata_doll",
+    "en_name": "Dipp Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 45,
+    "mod": "kata",
+    "name": "foomin_kata_doll",
+    "orig_id": "kata:foomin_kata_doll",
+    "adv_id": "kata:adv_foomin_kata_doll",
+    "en_name": "Foomin Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 46,
+    "mod": "kata",
+    "name": "havana_kata_doll",
+    "orig_id": "kata:havana_kata_doll",
+    "adv_id": "kata:adv_havana_kata_doll",
+    "en_name": "Havana Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 47,
+    "mod": "kata",
+    "name": "honey_kata_doll",
+    "orig_id": "kata:honey_kata_doll",
+    "adv_id": "kata:adv_honey_kata_doll",
+    "en_name": "Honey Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 48,
+    "mod": "kata",
+    "name": "ichigo_kata_doll",
+    "orig_id": "kata:ichigo_kata_doll",
+    "adv_id": "kata:adv_ichigo_kata_doll",
+    "en_name": "Ichigo Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 49,
+    "mod": "kata",
+    "name": "johnson_kata_doll",
+    "orig_id": "kata:johnson_kata_doll",
+    "adv_id": "kata:adv_johnson_kata_doll",
+    "en_name": "Johnson Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 50,
+    "mod": "kata",
+    "name": "june_kata_doll",
+    "orig_id": "kata:june_kata_doll",
+    "adv_id": "kata:adv_june_kata_doll",
+    "en_name": "June Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 51,
+    "mod": "kata",
+    "name": "jungle_kata_doll",
+    "orig_id": "kata:jungle_kata_doll",
+    "adv_id": "kata:adv_jungle_kata_doll",
+    "en_name": "Jungle Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 52,
+    "mod": "kata",
+    "name": "prince_kata_doll",
+    "orig_id": "kata:prince_kata_doll",
+    "adv_id": "kata:adv_prince_kata_doll",
+    "en_name": "Prince Kata Doll",
+    "ru_name": null
+  },
+  {
+    "num": 53,
+    "mod": "kata",
+    "name": "geraldine_plushie",
+    "orig_id": "kata:geraldine_plushie",
+    "adv_id": "kata:adv_geraldine_plushie",
+    "en_name": "Geraldine Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 54,
+    "mod": "cluttered",
+    "name": "pastel_bunny_plushie",
+    "orig_id": "cluttered:pastel_bunny_plushie",
+    "adv_id": "cluttered:adv_pastel_bunny_plushie",
+    "en_name": "Pastel Bunny Plush",
+    "ru_name": "Пастельный плюшевый зайчик"
+  },
+  {
+    "num": 55,
+    "mod": "cluttered",
+    "name": "sand_seal_plush_blue",
+    "orig_id": "cluttered:sand_seal_plush_blue",
+    "adv_id": "cluttered:adv_sand_seal_plush_blue",
+    "en_name": "Blue Sandseal Plush",
+    "ru_name": "Синий плюшевый песчаный котик"
+  },
+  {
+    "num": 56,
+    "mod": "cluttered",
+    "name": "sand_seal_plush_green",
+    "orig_id": "cluttered:sand_seal_plush_green",
+    "adv_id": "cluttered:adv_sand_seal_plush_green",
+    "en_name": "Green Sandseal Plush",
+    "ru_name": "Зелёный плюшевый песчаный котик"
+  },
+  {
+    "num": 57,
+    "mod": "cluttered",
+    "name": "sand_seal_plush_red",
+    "orig_id": "cluttered:sand_seal_plush_red",
+    "adv_id": "cluttered:adv_sand_seal_plush_red",
+    "en_name": "Red Sandseal Plush",
+    "ru_name": "Красный плюшевый песчаный котик"
+  },
+  {
+    "num": 58,
+    "mod": "cluttered",
+    "name": "teddy_bear",
+    "orig_id": "cluttered:teddy_bear",
+    "adv_id": "cluttered:adv_teddy_bear",
+    "en_name": "Teddy Bear",
+    "ru_name": "Плюшевый мишка"
+  },
+  {
+    "num": 59,
+    "mod": "kata",
+    "name": "fredbear_plushie",
+    "orig_id": "kata:fredbear_plushie",
+    "adv_id": "kata:adv_fredbear_plushie",
+    "en_name": "Fredbear Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 60,
+    "mod": "kata",
+    "name": "shiny_fredbear_plushie",
+    "orig_id": "kata:shiny_fredbear_plushie",
+    "adv_id": "kata:adv_shiny_fredbear_plushie",
+    "en_name": "Shiny Fredbear Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 61,
+    "mod": "kata",
+    "name": "princess_fredbear_plushie",
+    "orig_id": "kata:princess_fredbear_plushie",
+    "adv_id": "kata:adv_princess_fredbear_plushie",
+    "en_name": "Princess Fredbear Plushie",
+    "ru_name": null
+  },
+  {
+    "num": 62,
+    "mod": "kata",
+    "name": "chimera",
+    "orig_id": "kata:chimera",
+    "adv_id": "kata:adv_chimera",
+    "en_name": "Chimera Plushie",
+    "ru_name": null
+  }
+]

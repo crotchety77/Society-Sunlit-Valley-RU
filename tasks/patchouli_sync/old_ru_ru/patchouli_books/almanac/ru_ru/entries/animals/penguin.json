@@ -1,0 +1,17 @@
+{
+    "name": "Пингвин",
+    "category": "patchouli:animals",
+    "icon": "society:penguin_egg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: не продаётся$(li)Яйцо: яйцо пингвина$(li)Добыча: перо$(br2)$(l)Примечания$()$(br)Для снесения яиц требуется 2+ сердца. Можно найти в биомах замороженных океанов и ледяных пиков."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wildernature:penguin",
+            "scale": 0.5,
+            "text": "Я как Пингвин, но я моб из Майнкрафта."
+        }
+    ]
+}

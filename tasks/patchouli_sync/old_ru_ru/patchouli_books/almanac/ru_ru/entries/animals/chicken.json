@@ -1,0 +1,17 @@
+{
+    "name": "Курица",
+    "category": "patchouli:animals",
+    "icon": "minecraft:egg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Статистика$()$(li)Цена: :coin: 256$(li)Яйцо: Яйцо$(li)Добыча: Сырая курятина, Перо$(br2)$(l)Примечания$()$(br)Голодные куры не несут яиц, а несчастные делают это гораздо реже."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:chicken",
+            "scale": 0.8,
+            "text": "Этим скромным птицам не требуется особого внимания, только еда."
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Большое искажённое молоко",
+  "category": "patchouli:animals",
+  "icon": "society:large_warped_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not Sold$(li)Молоко: Warped Молоко$(li)Перезарядка молока: 2 дн.$(li)Shear drops: Warped Шерсть$(li)Добыча: Warped Шерсть, Сырая говядина, Кожа$(br2)$(l)Notes$()$(br)They spawn randomly in warped forests"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Warped Wooly Cow",
+      "entity": "meadow:wooly_cow{Variant:2}",
+      "scale": 0.8,
+      "text": "Сыр из её молока — дорогой деликатес."
+    }
+  ]
+}

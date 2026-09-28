@@ -1,0 +1,17 @@
+{
+    "name": "Светящийся",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:luminous\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Места обитания:$()$(li)Структура: спаунеры слизней в Незере$(li)Места раскопок: блоки Незера$(br2)$(l)Риски:$()$(br)Вызывает эффект «Свечение», когда расстроен."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Светящийся слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:luminous\"}",
+            "scale": 0.9
+        }
+    ]
+}

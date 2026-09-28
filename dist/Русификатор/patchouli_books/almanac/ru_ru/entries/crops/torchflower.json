@@ -1,0 +1,30 @@
+{
+  "name": "Torchflower 🔥",
+  "category": "patchouli:crops",
+  "icon": "minecraft:torchflower",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 128$(li)🔥 §6Summer§r$(li)Урожайность: 1$(li)Время созревания: 4 дн.$(br2)$(l)Notes$()$(br)Семена dug up by Sniffers"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Torchflower 🔥",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:torchflower",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

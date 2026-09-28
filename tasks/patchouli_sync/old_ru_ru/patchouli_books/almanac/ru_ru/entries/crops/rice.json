@@ -1,0 +1,34 @@
+{
+    "name": "Рис 🔥🍂",
+    "category": "patchouli:crops",
+    "icon": "farmersdelight:rice",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 16$(li)🔥 §6Лето§r 🍂 §4Осень$(li)Цена семян: :coin: 64$(li)Урожай: 1$(li)Время роста: 6 дней$(li)Время повторного роста: 3 дня$(br2)$(l)Примечания$()$(br)Необходимо сажать на вспаханную землю на мелководье. "
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Посев льна",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "U"
+                    ],
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "farmersdelight:rice[age=3,supporting=true]",
+                    "U": "farmersdelight:rice_panicles[age=3]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

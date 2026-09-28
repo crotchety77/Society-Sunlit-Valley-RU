@@ -1,0 +1,17 @@
+{
+  "name": "Индюк",
+  "category": "patchouli:animals",
+  "icon": "autumnity:turkey_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not Sold$(li)Яйцо: Turkey Яйцо$(li)Добыча: Raw Turkey, Перо$(br2)$(l)Notes$()$(br)Hungry Turkey don't lay eggs, and unhappy ones lay them a lot less.. Turkeys lay eggs slower than other birds."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "autumnity:turkey",
+      "scale": 0.8,
+      "text": "Все всегда будут благодарны за восхитительный майонез из индейки."
+    }
+  ]
+}

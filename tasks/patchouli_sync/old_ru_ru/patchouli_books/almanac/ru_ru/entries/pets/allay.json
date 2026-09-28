@@ -1,0 +1,17 @@
+{
+    "name": "Эллей",
+    "category": "patchouli:pets",
+    "icon": "minecraft:amethyst_shard",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Шляпа «Ушки Чи»"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:allay",
+            "scale": 0.8,
+            "text": "В качестве альтернативы, попробуйте улучшение «Магнит» из мода Sophisticated Storage."
+        }
+    ]
+}

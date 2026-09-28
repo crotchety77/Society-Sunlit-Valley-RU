@@ -1,0 +1,17 @@
+{
+    "name": "Костлявый",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:bony\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Места обитания:$()$(li)Биом: Долина песка душ$(li)Структура: Спаунеры слизней в Верхнем мире$(li)Места раскопок: Любые$(li)Коробки с шарами: Красные$(br2)$(l)Опасности:$()$(br)Просто рад здесь находиться!"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Костлявый слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:bony\"}",
+            "scale": 0.9
+        }
+    ]
+}

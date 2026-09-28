@@ -1,0 +1,18 @@
+{
+  "name": "Чёрная рыба",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:blackfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 24$(li)§0🍂 §4Осень§0 §0❆ §bЗима§0$(li)Вода: Океан$(li)Погода: Любая$(li)Время: Любая"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:blackfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Это ты, Тиликум?"
+    }
+  ]
+}

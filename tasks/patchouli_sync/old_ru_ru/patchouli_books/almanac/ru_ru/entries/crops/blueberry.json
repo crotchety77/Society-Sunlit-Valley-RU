@@ -1,0 +1,30 @@
+{
+    "name": "Черника 🔥",
+    "category": "patchouli:crops",
+    "icon": "society:blueberry",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 24$(li)🔥 §6Лето§r$(li)Цена семян: :coin: 4$(li)Урожай: 3-4$(li)Время роста: 7 дней"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Растение черники",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "society:blueberry[age=7]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

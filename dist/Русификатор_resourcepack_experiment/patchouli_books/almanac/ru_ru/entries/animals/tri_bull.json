@@ -1,0 +1,17 @@
+{
+  "name": "Большое молоко три-быка",
+  "category": "patchouli:animals",
+  "icon": "society:large_tri_bull_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not Sold$(li)Молоко: Tri-Bull Молоко$(li)Перезарядка молока: 1 дн.$(li)Добыча: Raw Tri-Bull Shank, Кожа $(br2)$(l)Notes$()$(br)Engineered by using a Lunar Mutation Serum on a Cow."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "farmlife:domestic_tribull",
+      "scale": 0.6,
+      "text": "Он не из этого мира... Поедание его сыра очищает вас от эффектов зелий."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Нюхач",
+    "category": "patchouli:animals",
+    "icon": "minecraft:sniffer_egg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: Не продаётся$(li)Яйцо: Яйцо нюхача$(li)Добыча: Осколки артефактов$(br2)$(l)Примечания$()$(br)Для добычи требуется 5+ сердец."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:sniffer",
+            "scale": 0.8,
+            "text": "Они любят копаться в земле в поисках старых вещей."
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Собака",
+    "category": "patchouli:pets",
+    "icon": "farm_and_charm:dog_food",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Овечья окаменелость$(br)$(l)Предмет для приручения:$()$(br)Кость$(br2)$(l)Примечания$()$(br)Можно найти на равнинах."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wildernature:dog",
+            "scale": 0.7,
+            "text": "Не очень любит кошек"
+        }
+    ]
+}

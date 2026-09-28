@@ -1,0 +1,17 @@
+{
+    "name": "Всевидящий",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:all_seeing\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Местонахождение:$()$(li)Слияние сердец$(br2)$(l)Опасности:$()$(br)Карабкается по стенам и накладывает эффект отравления, когда недоволен."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Всевидящий слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:all_seeing\"}",
+            "scale": 0.9
+        }
+    ]
+}

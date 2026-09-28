@@ -1,0 +1,34 @@
+{
+  "name": "Pitcher Plant 🔥",
+  "category": "patchouli:crops",
+  "icon": "minecraft:pitcher_plant",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 128$(li)🔥 §6Summer§r$(li)Урожайность: 1$(li)Growth Время: 4 дн.$(br2)$(l)Notes$()$(br)Семена dug up by Sniffers"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Pitcher Plant 🔥",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "U"
+          ],
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "U": "minecraft:pitcher_crop[age=4,half=upper]",
+          "0": "minecraft:pitcher_crop[age=4,half=lower]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

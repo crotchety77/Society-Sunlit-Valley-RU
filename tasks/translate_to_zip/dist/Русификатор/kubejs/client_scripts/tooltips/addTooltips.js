@@ -1281,6 +1281,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("pamhc2trees:starfruit_sapling", Text.translatable("tooltip.society.starfruit_sapling"));
   tooltip.add("strawstatues:straw_statue", Text.translatable("tooltip.society.straw_statue"));
   tooltip.add("numismatics_utils:portable_bank_terminal", Text.translatable("tooltip.society.portable_bank_terminal"));
+  tooltip.add("vintagedelight:organic_mash", Text.translatable("tooltip.society.organic_mash"));
 
 
   tooltip.addAdvanced("society:miracle_potion", (item, advanced, text) => {

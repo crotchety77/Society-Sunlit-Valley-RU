@@ -1,0 +1,17 @@
+{
+  "name": "Сиба-ину",
+  "category": "patchouli:pets",
+  "icon": "minecraft:arrow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Eevee Ears Hat$(br2)$(l)Taming item:$()$(br)Bone"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "quark:shiba",
+      "scale": 0.7,
+      "text": "Любят играть в апорт со стрелами"
+    }
+  ]
+}

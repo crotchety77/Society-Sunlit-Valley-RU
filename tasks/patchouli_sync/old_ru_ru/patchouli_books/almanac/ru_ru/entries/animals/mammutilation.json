@@ -1,0 +1,53 @@
+{
+    "name": "Маммутиляция",
+    "category": "patchouli:animals",
+    "icon": "species:ichor_bottle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Молоко: Бутылка с ихором$(li)Перезарядка молока: 2 дня$(li)Добыча: нет$(br2)$(l)Примечания$()$(br)Их нужно воссоздать, как показано на изображении справа, и ударить молнией. Их останки можно найти вмёрзшими в лёд под водой..."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Соберите, а затем ждите молнию",
+            "enable_visualize": true,
+            "symmetrical": true,
+            "multiblock": {
+                "pattern": [
+                    [
+                        " BBB ",
+                        "SBBBN",
+                        " BBB ",
+                        "     "
+                    ],
+                    [
+                        " BBB ",
+                        " B0B ",
+                        "TBPBT",
+                        "T   T"
+                    ],
+                    [
+                        " BBB ",
+                        " BBB ",
+                        " BBB ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "#species:mammutilation_body_blocks",
+                    "T": "minecraft:bone_block[axis=x]",
+                    "P": "minecraft:carved_pumpkin[facing=east]",
+                    "B": "#species:mammutilation_body_blocks",
+                    "S": "minecraft:lightning_rod[facing=north]",
+                    "N": "minecraft:lightning_rod[facing=south]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:mammutilation",
+            "scale": 0.8,
+            "text": "Мерзость природы, затерянная во времени..."
+        }
+    ]
+}

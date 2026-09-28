@@ -1,0 +1,30 @@
+{
+  "name": "Салат латук",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:lettuce",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 24$(li)🌼 §2Spring§r$(li)Цена семян: :coin: 4$(li)Урожайность: 1$(li)Время созревания: 3 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Салат латук 🌼",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:lettuce_crop[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

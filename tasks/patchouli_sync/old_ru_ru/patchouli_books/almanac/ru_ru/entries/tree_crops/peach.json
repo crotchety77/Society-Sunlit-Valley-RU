@@ -1,0 +1,30 @@
+{
+  "name": "Персик 🔥",
+  "category": "patchouli:tree_crops",
+  "icon": "pamhc2trees:peachitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 64$(li)🔥 §6Лето§r$(li)Урожайность: 1$(li)Стадии роста: 8$(br2)$(l)Примечания$()$(li)См.: $(l:trees/pams/peach)Персиковое дерево$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Апельсиновое дерево",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "F": "pamhc2trees:pampeach[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

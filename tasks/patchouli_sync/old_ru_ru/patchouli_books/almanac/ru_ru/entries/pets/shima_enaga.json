@@ -1,0 +1,17 @@
+{
+    "name": "Сима-энага",
+    "category": "patchouli:pets",
+    "icon": "relics:elytra_booster",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Ускоритель для элитр$(br)$(l)Предмет для приручения:$()$(br)Семена$(br2)$(l)Примечания$()$(br)Можно найти в снежных биомах."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "crittersandcompanions:shima_enaga",
+            "scale": 0.7,
+            "text": "Милая снежная птичка!!!@"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Рыба-глаз",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:eyeball_fish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 408$(li)Измерение: Незер$(li)Биом: Багровый лес"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:eyeball_fish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Отсылка к Террарии???"
+    }
+  ]
+}

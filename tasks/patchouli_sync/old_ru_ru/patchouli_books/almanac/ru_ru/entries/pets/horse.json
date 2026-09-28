@@ -1,0 +1,17 @@
+{
+    "name": "Лошадь",
+    "category": "patchouli:pets",
+    "icon": "relics:horse_flute",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Флейта для лошади"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:horse",
+            "scale": 0.7,
+            "text": "Дешевле, чем машина!"
+        }
+    ]
+}

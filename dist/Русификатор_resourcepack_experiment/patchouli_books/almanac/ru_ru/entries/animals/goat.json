@@ -1,0 +1,17 @@
+{
+  "name": "Коза",
+  "category": "patchouli:animals",
+  "icon": "society:large_goat_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: :coin: 16,384$(li)Молоко: Goat Молоко$(li)Перезарядка молока: 2 дн.$(li)Добыча: Goat Horn$(br2)$(l)Notes$()$(br)Goat Horns are an Adventurer product, which can be taken advantage of"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:goat",
+      "scale": 0.8,
+      "text": "Трудно разводить, но ценность их рогов и сыра стоит затраченных усилий."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Пылающий",
+    "category": "patchouli:slimes",
+    "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:blazing\"}}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Места обитания:$()$(li)Биом: Пещеры из чернокамня (Пещера Черепа)$(li)Структура: Крепость Незера, сундуки в бастионах, спаунеры слизней Незера$(li)Раскопки: блоки Незера$(br2)$(l)Риски:$()$(br)Поджигает блоки, когда голоден, и увеличивает урон от огня, когда зол."
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Пылающий слизень",
+            "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:blazing\"}",
+            "scale": 0.9
+        }
+    ]
+}

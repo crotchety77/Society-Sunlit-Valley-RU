@@ -1,0 +1,17 @@
+{
+  "name": "Лягушка",
+  "category": "patchouli:animals",
+  "icon": "society:ribbit_gadget",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Forage: Sap (30% chance), Frog Leg (10% chance),Ribbit Gadget (5% chance), Froglights (25% chance)$(br2)$(l)Notes$()$(br)Foraging requires 1+ hearts. Can be found in Болото biomes. Can be tamed with Spider Eyes"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:frog",
+      "scale": 0.7,
+      "text": "Любит выполнять заказы, ненавидит слизней!"
+    }
+  ]
+}

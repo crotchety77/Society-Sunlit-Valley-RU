@@ -1,0 +1,17 @@
+{
+    "name": "Губер",
+    "category": "patchouli:animals",
+    "icon": "species:petrified_egg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: Не продаётся$(li)Яйцо: Окаменевшее яйцо (шанс 25%)$(br2)$(l)Примечания$()$(br)Для откладывания яиц требуется 5+ сердец."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:goober",
+            "scale": 0.8,
+            "text": "Для вылупления их яйцам необходимо тепло магмы."
+        }
+    ]
+}

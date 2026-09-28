@@ -1,0 +1,17 @@
+{
+    "name": "Обморозитель",
+    "category": "patchouli:animals",
+    "icon": "windswept:frozen_branch",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: не продаётся$(li)Молоко: молоко$(li)Перезарядка молока: 1 день$(li)Добыча: Замёрзшая ветвь, Осколки артефактов$(br2)$(l)Примечания$()$(br)Для добычи требуется 5+ сердец. Можно приручить падубовыми ягодами."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "windswept:frostbiter",
+            "scale": 0.6,
+            "text": "Друг или заморозишь?"
+        }
+    ]
+}

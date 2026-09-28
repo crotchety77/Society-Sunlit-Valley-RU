@@ -1,0 +1,30 @@
+{
+  "name": "Сладкие ягоды",
+  "category": "patchouli:crops",
+  "icon": "minecraft:sweet_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 2$(li)🌼 §2Spring§r ❆ §bWinter$(li)Урожайность: 1-2/2-3$(li)Время созревания: 2/3 дн.$(li)Regrow Время: 1/2 дн.$(br2)$(l)Notes:$()$(br)Found in Taiga-like biomes.$(br)No seeds, simply plant the fruit.$(br)Has 2 harvestable stages"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Sweet Berries 🌼❆",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:sweet_berry_bush[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

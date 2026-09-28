@@ -1,0 +1,17 @@
+{
+  "name": "Фламинго",
+  "category": "patchouli:animals",
+  "icon": "society:flamingo_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Яйцо: Flamingo Яйцо$(li)Добыча: Перо$(br2)$(l)Notes$()$(br)Яйцоs require 4+ hearts. Cannot breed."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:flamingo",
+      "scale": 0.5,
+      "text": "Покажи свой естественный оттенок, Фламинго!"
+    }
+  ]
+}

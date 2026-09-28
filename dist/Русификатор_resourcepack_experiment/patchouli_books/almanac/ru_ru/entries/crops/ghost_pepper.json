@@ -1,0 +1,30 @@
+{
+  "name": "Перец чили",
+  "category": "patchouli:crops",
+  "icon": "vintagedelight:ghost_pepper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 36$(li)🔥 §6Summer§r$(li)Цена семян: :coin: 64$(li)Урожайность: 2-3$(li)Время созревания: 7 дн.$(br2)$(l)Notes$()$(br)Семена sold in Market after first year."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Перец чили 🔥",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "vintagedelight:ghost_pepper_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

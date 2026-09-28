@@ -1,0 +1,17 @@
+{
+    "name": "Сиба",
+    "category": "patchouli:pets",
+    "icon": "minecraft:arrow",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Шляпа с ушками Иви$(br2)$(l)Предмет для приручения:$()$(br)Кость"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "quark:shiba",
+            "scale": 0.7,
+            "text": "Любят играть в апорт со стрелами"
+        }
+    ]
+}

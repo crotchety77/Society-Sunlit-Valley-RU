@@ -232,5 +232,11 @@
   "subtitle.block.tanukidecor.mini_figure.squeak": "Мини-фигурка пищит",
   "subtitle.block.tanukidecor.pocket_watch.tick": "Карманные часы тикают",
   "subtitle.block.tanukidecor.recognizable_clock.chime": "Настенные часы бьют",
-  "subtitle.block.tanukidecor.slate_clock.chime": "Сланцевые часы бьют"
+  "subtitle.block.tanukidecor.slate_clock.chime": "Сланцевые часы бьют",
+  "block.tanukidecor.adv_mayoral_mini_figure": "Мини-фигурка мэра",
+  "item.tanukidecor.adv_mayoral_mini_figure": "Мини-фигурка мэра",
+  "item.tanukidecor.mayoral_mini_figure": "Мини-фигурка мэра",
+  "block.tanukidecor.adv_developer_mini_figure": "Мини-фигурка разработчика",
+  "item.tanukidecor.adv_developer_mini_figure": "Мини-фигурка разработчика",
+  "item.tanukidecor.developer_mini_figure": "Мини-фигурка разработчика"
 }

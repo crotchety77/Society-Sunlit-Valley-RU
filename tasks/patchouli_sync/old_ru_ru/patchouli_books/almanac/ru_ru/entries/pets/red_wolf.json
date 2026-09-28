@@ -1,0 +1,17 @@
+{
+    "name": "Красный волк",
+    "category": "patchouli:pets",
+    "icon": "species:wicked_treat",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Знамя волчьего ловца, Волчья окаменелость$(br)$(l)Предмет для приручения:$()$(br)Кость$(br2)$(l)Примечания$()$(br)Можно найти в старовозрастной сосновой тайге."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wildernature:red_wolf",
+            "scale": 0.7,
+            "text": "Красный волк! Чего ещё желать??"
+        }
+    ]
+}

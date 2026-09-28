@@ -1,0 +1,30 @@
+{
+  "name": "Ягоды гиро",
+  "category": "patchouli:crops",
+  "icon": "vintagedelight:gearo_berry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 24$(li)🌼 §2Spring$(li)Урожайность: 1-2$(li)Время созревания: 4 дн.$(li)Regrow time: 2 дн.$(br2)$(l)Notes$()$(br)Obtained from Botania's Elven Trade and rarely from Juicy Slime plorts.$(br)No seeds, simply plant the fruit."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Ягоды гиро 🌼",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "vintagedelight:gearo_berry_bush[age=4]",
+          "F": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Олень",
+  "category": "patchouli:animals",
+  "icon": "society:dried_foul_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Forage: Dried Berries (25% chance)$(li)Добыча: Venison, Кожа$(br2)$(l)Notes$()$(br)Foraging requires 3+ hearts. Can be found in Forest biomes."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:deer",
+      "scale": 0.7,
+      "text": "Олени будут искать дикие ягоды и делиться ими, если вы им нравитесь! Интересно, почему они сушёные..."
+    }
+  ]
+}

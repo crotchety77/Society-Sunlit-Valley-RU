@@ -1,0 +1,194 @@
+{
+    "name": "Палисандровое дерево 🌐",
+    "category": "patchouli:trees",
+    "icon": "atmospheric:rosewood_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)🌐 §5Круглогодично§r$(li)Размер: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Палисандровое дерево",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "            ",
+                        "       LLL  ",
+                        "      LLLLL ",
+                        "      LLLLL ",
+                        "      LLLLL ",
+                        "       LLL  ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "      LLLLL ",
+                        "     LLLLLLL",
+                        "     LLLLLLL",
+                        "     LLLWLLL",
+                        "     LLLLLLL",
+                        "     LLLLLLL",
+                        "      LLLLL ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "       LLL  ",
+                        "      LLLLL ",
+                        "      LLWLL ",
+                        "      LLLLL ",
+                        "       LLL  ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "        W   ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "     LLL    ",
+                        "    LLLLL   ",
+                        "    LLWTT   ",
+                        "  LLLLLLL   ",
+                        " LLLLLLL    ",
+                        " LLLLL      ",
+                        " LLLLL      ",
+                        "  LLL       ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        " LLLLLW     ",
+                        "LLLLLLL     ",
+                        "LLLLLLL     ",
+                        "LLLWLLL     ",
+                        "LLLLLLL     ",
+                        "LLLLLLL     ",
+                        " LLLLL      "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "      W     ",
+                        "            ",
+                        "            ",
+                        "   W        ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "      W     ",
+                        "            ",
+                        "            ",
+                        "   W        ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "   WTTT     ",
+                        "   T        ",
+                        "   T        ",
+                        "   T        ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "   W        ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "   W        ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "   W        ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "   W        ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "            ",
+                        "   W        ",
+                        "      0     ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:air",
+                    "L": "atmospheric:rosewood_leaves",
+                    "W": "atmospheric:rosewood_log[axis=y]",
+                    "T": "atmospheric:rosewood_log[axis=z]"
+                }
+            }
+        }
+    ]
+}

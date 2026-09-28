@@ -1,0 +1,17 @@
+{
+  "name": "Снуфлик",
+  "category": "patchouli:animals",
+  "icon": "snuffles:snuffle_fluff",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Shear drops: Snuffle Fluff, Frosty Fluff, Fine Шерсть (50% chance), Frozen Hair (20% chance) $(li)Добыча: Frozen Tear$(br2)$(l)Notes$()$(br)Fine Шерсть only drops at 5+ hearts of affection. Frozen Hair requires 7+. Will slowly regrow fur overtime, and become frosty in the snow."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "snuffles:snuffle",
+      "scale": 0.8,
+      "text": "Можно покормить шариками слизи, чтобы изменить их причёску!!!"
+    }
+  ]
+}

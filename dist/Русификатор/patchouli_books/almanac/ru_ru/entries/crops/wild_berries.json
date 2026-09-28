@@ -1,0 +1,30 @@
+{
+  "name": "Дикие ягоды",
+  "category": "patchouli:crops",
+  "icon": "windswept:wild_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 8$(li)❆ §bWinter$(li)Урожайность: 1-2$(li)Время созревания: 2/3 дн.$(li)Regrow Время: 1/2 дн.$(br2)$(l)Notes:$()$(br)Found in snowy biomes.$(br)No seeds, simply plant the fruit."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Дикие ягоды ❆",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "windswept:wild_berry_bush[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

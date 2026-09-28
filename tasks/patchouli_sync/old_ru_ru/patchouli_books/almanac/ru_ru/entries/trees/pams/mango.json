@@ -1,0 +1,83 @@
+{
+  "name": "Манговое дерево 🔥",
+  "category": "patchouli:trees",
+  "icon": "pamhc2trees:mango_sapling",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Статистика$()$(li)🔥 §6Лето§r $(li)Цена: :coin: 16,384$(li)Размер: 1x1$(li)Выращивает:$(l:tree_crops/mango)8 шт. манго$(/l)$(br2)$(l)Примечания$()$(li)Саженцы можно купить у Мастера-культиватора."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Манговое дерево",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "L": "minecraft:jungle_leaves",
+          "W": "minecraft:jungle_log[axis=y]",
+          "F": "pamhc2trees:pammango[age=7]"
+        },
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "LLLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            " FFF ",
+            " FWF ",
+            " FFF ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ]
+      }
+    }
+  ]
+}

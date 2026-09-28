@@ -1,0 +1,30 @@
+{
+    "name": "Морковь 🌼🍂",
+    "category": "patchouli:crops",
+    "icon": "minecraft:carrot",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 23$(li)🌼 §2Весна§r 🍂 §4Осень$(li)Цена семян: :coin: 2$(li)Урожай: 1-3$(li)Время роста: 7 дней"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Грядка моркови",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:carrots[age=7]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

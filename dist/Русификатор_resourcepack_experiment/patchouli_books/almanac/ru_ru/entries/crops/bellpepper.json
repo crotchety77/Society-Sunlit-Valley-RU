@@ -1,0 +1,30 @@
+{
+  "name": "Болгарский перец",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:bellpepper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 32$(li)🔥 §6Summer§r$(li)Цена семян: :coin: 64$(li)Урожайность: 1-3$(li)Время созревания: 7 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Болгарский перец 🔥",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:bellpepper_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

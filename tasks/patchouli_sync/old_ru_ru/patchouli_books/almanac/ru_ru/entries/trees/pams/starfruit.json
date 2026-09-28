@@ -1,0 +1,83 @@
+{
+  "name": "Дерево карамболы 🌐",
+  "category": "patchouli:trees",
+  "icon": "pamhc2trees:starfruit_sapling",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Статистика$()$(li)🌐 §5Круглый год§r$(li)Цена: :coin: 81,920$(li)Размер: 1x1$(li)Выращивает:$(l:tree_crops/starfruit)8x Карамбола$(/l)$(br2)$(l)Заметки$()$(li)Саженцы можно купить у Мастера-культиватора.$(li)Дополнительно стоит 4x призматических осколка."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Дерево карамболы",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "L": "minecraft:jungle_leaves",
+          "W": "minecraft:jungle_log[axis=y]",
+          "F": "pamhc2trees:pamstarfruit[age=7]"
+        },
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "LLLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            " FFF ",
+            " FWF ",
+            " FFF ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ]
+      }
+    }
+  ]
+}

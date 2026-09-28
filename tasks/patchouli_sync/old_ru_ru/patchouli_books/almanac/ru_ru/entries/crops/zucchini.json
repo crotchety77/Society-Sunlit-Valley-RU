@@ -1,0 +1,30 @@
+{
+    "name": "Цукини 🔥",
+    "category": "patchouli:crops",
+    "icon": "veggiesdelight:zucchini",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 72$(li)🔥 §6Лето§r $(li)Цена семян: Не продаются$(li)Урожай: 1-2$(li)Время роста: 7 дней"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Посевы цукини",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "veggiesdelight:zucchini_crop[age=7]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

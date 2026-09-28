@@ -1,0 +1,30 @@
+{
+  "name": "Томат",
+  "category": "patchouli:crops",
+  "icon": "farmersdelight:tomato",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 24$(li)🌼 §2Spring§r 🔥 §6Лето§r 🍂 §4Осень$(li)Цена семян: :coin: 4$(li)Урожайность: 1$(li)Время созревания: 4 дн.$(li)Regrow Время: 3 дн.$(br2)$(l)Notes$()$(br)Can grow into rope above.$(br)Rarely drops Rotten Tomatos."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Томат 🌼🔥🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farmersdelight:tomatoes[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Клюква",
+  "category": "patchouli:crops",
+  "icon": "society:cranberry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 18$(li)🍂 §6Summer§r$(li)Цена семян: :coin: 12$(li)Урожайность: 3-4$(li)Время созревания: 5 дн."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Cranberry 🍂",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:cranberry[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

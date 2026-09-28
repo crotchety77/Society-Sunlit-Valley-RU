@@ -1,0 +1,74 @@
+{
+  "name": "Саженец красного клёна",
+  "category": "patchouli:trees",
+  "icon": "autumnity:red_maple_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)🌐 §5Year-round§r$(li)Size: 1x1"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Посадка: Саженец красного клёна",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "  LL ",
+            " L0L ",
+            " LL  ",
+            "     "
+          ],
+          [
+            "  L  ",
+            "LLLL ",
+            "LLLLL",
+            " LLL ",
+            "  L  "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            " LL  ",
+            "LLLLL",
+            "LLWLL",
+            " LLLL",
+            " LL  "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "0": "autumnity:red_maple_leaves",
+          "L": "autumnity:red_maple_leaves",
+          "W": "autumnity:maple_log[axis=y]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Адская гончая",
+    "category": "patchouli:pets",
+    "icon": "minecraft:coal",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Возможные подарки:$()$(br)Шапка с фейерверком$(br2)$(l)Приручение$()$(br)Получите эффект «Огнестойкость» и накормите их углём."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "quark:foxhound",
+            "scale": 0.7,
+            "text": "Эти огненные друзья ускоряют печи, на которых сидят."
+        }
+    ]
+}

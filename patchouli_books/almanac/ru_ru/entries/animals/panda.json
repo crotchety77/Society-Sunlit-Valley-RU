@@ -1,0 +1,17 @@
+{
+  "name": "Панда",
+  "category": "patchouli:animals",
+  "icon": "pamhc2trees:mangoitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: Not sold$(li)Forage: Random tropical fruits (75% chance)$(br2)$(l)Notes$()$(br)Foraging requires 2+ hearts. Pandas have trouble with fertility and Miracle Potions have a high chance of failing..."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:panda",
+      "scale": 0.8,
+      "text": "Они любят делиться найденными фруктами. Откуда вообще берутся эти фрукты...?"
+    }
+  ]
+}

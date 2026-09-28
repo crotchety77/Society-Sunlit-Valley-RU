@@ -1,0 +1,18 @@
+{
+  "name": "Щука",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:gar",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li):coin: 88$(li)§0🍂 §4Осень§0$(li)Вода: Пресная$(li)Погода: Дождь Snow$(li)Время: День"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:gar",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Кто-нибудь, достаньте свои ключи от Гара."
+    }
+  ]
+}

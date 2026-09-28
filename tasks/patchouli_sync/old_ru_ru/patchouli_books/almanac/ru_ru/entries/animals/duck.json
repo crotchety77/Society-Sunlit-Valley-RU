@@ -1,0 +1,17 @@
+{
+    "name": "Утка",
+    "category": "patchouli:animals",
+    "icon": "untitledduckmod:duck_egg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)Цена: :coin: 512$(li)Яйцо: Утиное яйцо$(li)Добыча: Сырая утка, Утиное перо$(br2)$(l)Примечания$()$(br)Голодные утки не несут яиц, а несчастные — несут их гораздо реже."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "untitledduckmod:duck",
+            "scale": 0.8,
+            "text": "Утки имеют более качественные перья и мясо, поэтому их выгоднее разводить ради добычи, чем кур."
+        }
+    ]
+}

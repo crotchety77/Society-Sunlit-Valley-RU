@@ -1,0 +1,30 @@
+{
+    "name": "Овёс 🔥",
+    "category": "patchouli:crops",
+    "icon": "farm_and_charm:oat",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li):coin: 36$(li)🔥 §6Лето§r $(li)Цена семян: :coin: 4$(li)Урожай: 1$(li)Время роста: 5 дней"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Посев овса",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        "F"
+                    ]
+                ],
+                "mapping": {
+                    "0": "farm_and_charm:oat_crop[age=5]",
+                    "F": "minecraft:farmland[moisture=7]"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Кошка",
+  "category": "patchouli:pets",
+  "icon": "minecraft:cod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Neko Ears hat, Ocelot-Fossil$(br2)$(l)Taming$()$(br)Fish"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cat",
+      "scale": 0.7,
+      "text": "Назовите своего рыжего кота Кокито, а серого — Базиль"
+    }
+  ]
+}

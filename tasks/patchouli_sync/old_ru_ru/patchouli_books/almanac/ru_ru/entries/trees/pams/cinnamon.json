@@ -1,0 +1,82 @@
+{
+    "name": "Коричное дерево 🍂❆",
+    "category": "patchouli:trees",
+    "icon": "pamhc2trees:cinnamon_sapling",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Характеристики$()$(li)🍂 §4Осень§r ❆ §bЗима§r $(li)Размер: 1x1$(li)Вырастает:$(l:tree_crops/cinnamon)4-6 корицы$(/l)$(br2)$(l)Примечания$()$(li)Саженцы можно обменять у экзотического торговца."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Коричное дерево",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:jungle_leaves",
+                    "L": "minecraft:jungle_leaves",
+                    "W": "pamhc2trees:pamcinnamon[age=7]"
+                },
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  L  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "LLLLL",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLLL"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ]
+            }
+        }
+    ]
+}

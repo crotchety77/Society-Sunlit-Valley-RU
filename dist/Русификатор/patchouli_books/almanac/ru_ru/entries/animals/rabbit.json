@@ -1,0 +1,17 @@
+{
+  "name": "Кролик",
+  "category": "patchouli:animals",
+  "icon": "minecraft:rabbit_foot",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Характеристики$()$(li)Цена: :coin: 4,096$(li)Forage: Fine Шерсть (50% chance), Rabbit's Foot (16% chance)$(li)Добыча: Raw Rabbit, Rabbit Hide$(br2)$(l)Notes$()$(br)Foraging Fine Шерсть requires 3+ hearts & Rabbit's Foot requires 7+."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:rabbit",
+      "scale": 0.8,
+      "text": "Они ненавидят, когда их гладят, но если вы им достаточно понравитесь, они отдадут вам свои лишние лапки... Как-то так..."
+    }
+  ]
+}
